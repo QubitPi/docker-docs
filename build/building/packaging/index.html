@@ -17,25 +17,25 @@
   name="keywords"
   content="build, buildx, buildkit, getting, started, dockerfile"
 />
-<link rel="canonical" href="https://docs.docker.com/build/building/packaging/" />
+<link rel="canonical" href="https://docker.qubitpi.org/build/building/packaging/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="Learn about Dockerfiles and how to use them with Docker Images to build and package your software"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Packaging your software" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/build/building/packaging/" />
+<meta property="og:url" content="https://docker.qubitpi.org/build/building/packaging/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Packaging your software\"","description":"\"Learn about Dockerfiles and how to use them with Docker Images to build and package your software\"","url":"https:\/\/docs.docker.com\/build\/building\/packaging\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Packaging your software\"","description":"\"Learn about Dockerfiles and how to use them with Docker Images to build and package your software\"","url":"https:\/\/docker.qubitpi.org\/build\/building\/packaging\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11586,7 +11586,7 @@ Early Access"
 Dockerfile is a text file containing instructions for building your source
 code. The Dockerfile instruction syntax is defined by the specification
 reference in the 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/"
       >Dockerfile reference</a
     >.</p>
 <p>Here are the most common types of instructions:</p>
@@ -11600,35 +11600,35 @@ reference in the
 <tbody>
 <tr>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#from"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#from"
       ><code>FROM &lt;image&gt;</code></a
     ></td>
 <td>Defines a base for your image.</td>
 </tr>
 <tr>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#run"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#run"
       ><code>RUN &lt;command&gt;</code></a
     ></td>
 <td>Executes any commands in a new layer on top of the current image and commits the result. <code>RUN</code> also has a shell form for running commands.</td>
 </tr>
 <tr>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#workdir"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#workdir"
       ><code>WORKDIR &lt;directory&gt;</code></a
     ></td>
 <td>Sets the working directory for any <code>RUN</code>, <code>CMD</code>, <code>ENTRYPOINT</code>, <code>COPY</code>, and <code>ADD</code> instructions that follow it in the Dockerfile.</td>
 </tr>
 <tr>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#copy"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#copy"
       ><code>COPY &lt;src&gt; &lt;dest&gt;</code></a
     ></td>
 <td>Copies new files or directories from <code>&lt;src&gt;</code> and adds them to the filesystem of the container at the path <code>&lt;dest&gt;</code>.</td>
 </tr>
 <tr>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#cmd"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#cmd"
       ><code>CMD &lt;command&gt;</code></a
     ></td>
 <td>Lets you define the default program that is run once you start the container based on this image. Each Dockerfile only has one <code>CMD</code>, and only the last <code>CMD</code> instance is respected when multiple exist.</td>
@@ -11653,7 +11653,7 @@ convention is to name these <code>&lt;something&gt;.Dockerfile</code>. You can s
 Dockerfile filename using the <code>--file</code> flag for the <code>docker build</code> command.
 Refer to the
 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/buildx/build/#file"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/build/#file"
       ><code>docker build</code> CLI reference</a
     >
 to learn about the <code>--file</code> flag.</p>
@@ -11792,21 +11792,21 @@ dependencies installed and that automatically starts your application.</p>
 </h3>
 
 <p>The first line to add to a Dockerfile is a 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#syntax"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#syntax"
       ><code># syntax</code> parser directive</a
     >.
 While optional, this directive instructs the Docker builder what syntax to use
 when parsing the Dockerfile, and allows older Docker versions with <a
       class="link"
-      href="https://docs.docker.com/build/buildkit/#getting-started"
+      href="https://docker.qubitpi.org/build/buildkit/#getting-started"
       >BuildKit enabled</a
     >
 to use a specific 
-    <a class="link" href="https://docs.docker.com/build/dockerfile/frontend/"
+    <a class="link" href="https://docker.qubitpi.org/build/dockerfile/frontend/"
       >Dockerfile frontend</a
     > before
 starting the build. 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#parser-directives"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#parser-directives"
       >Parser directives</a
     >
 must appear before any other comment, whitespace, or Dockerfile instruction in
@@ -11861,7 +11861,7 @@ the syntax before building, making sure you are using the most current version.<
   </div>
 </div>
 <p>The 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#from"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#from"
       ><code>FROM</code> instruction</a
     > sets your base
 image to the 22.04 release of Ubuntu. All instructions that follow are executed
@@ -11905,7 +11905,7 @@ contains a large set of official images that you can use for this purpose.</p>
   </div>
 </div>
 <p>This 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#run"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#run"
       ><code>RUN</code> instruction</a
     > executes a
 shell in Ubuntu that updates the APT package index and installs Python tools in
@@ -11971,7 +11971,7 @@ use the command to install the flask web framework.</p>
 
 <p>The next instruction uses the
 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#copy"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#copy"
       ><code>COPY</code> instruction</a
     > to copy the
 <code>hello.py</code> file from the local build context into the root directory of our image.</p>
@@ -11994,7 +11994,7 @@ use the command to install the flask web framework.</p>
   </div>
 </div>
 <p>A 
-    <a class="link" href="https://docs.docker.com/build/building/context/"
+    <a class="link" href="https://docker.qubitpi.org/build/building/context/"
       >build context</a
     > is the set of files that you can access
 in Dockerfile instructions such as <code>COPY</code> and <code>ADD</code>.</p>
@@ -12009,7 +12009,7 @@ of the build container.</p>
 
 <p>If your application uses environment variables, you can set environment variables
 in your Docker build using the 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#env"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#env"
       ><code>ENV</code> instruction</a
     >.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
@@ -12041,7 +12041,7 @@ flask wouldn't know where to find our application to be able to run it.</p>
 </h3>
 
 <p>The 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#expose"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#expose"
       ><code>EXPOSE</code> instruction</a
     > marks that
 our final image has a service listening on port <code>8000</code>.</p>
@@ -12073,7 +12073,7 @@ team members understand what this application is doing.</p>
 </h3>
 
 <p>Finally, 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#cmd"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#cmd"
       ><code>CMD</code> instruction</a
     > sets the
 command that is run when the user starts a container based on this image.</p>
@@ -12120,7 +12120,7 @@ It's also possible to use the &quot;shell form&quot;:</p>
 for example in how they trap signals like <code>SIGTERM</code> and <code>SIGKILL</code>.
 For more information about these differences, see
 
-    <a class="link" href="https://docs.docker.com/reference/dockerfile/#shell-and-exec-form"
+    <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#shell-and-exec-form"
       >Shell and exec form</a
     ></p>
 
@@ -12157,7 +12157,7 @@ For more information about these differences, see
 <p>The <code>-t test:latest</code> option specifies the name and tag of the image.</p>
 <p>The single dot (<code>.</code>) at the end of the command sets the
 
-    <a class="link" href="https://docs.docker.com/build/building/context/"
+    <a class="link" href="https://docker.qubitpi.org/build/building/context/"
       >build context</a
     > to the current directory. This means that the
 build expects to find the Dockerfile and the <code>hello.py</code> file in the directory
@@ -12195,13 +12195,13 @@ Docker host.</p>
 <p>If you are interested in examples in other languages, such as Go, check out
 our <a
       class="link"
-      href="https://docs.docker.com/language/"
+      href="https://docker.qubitpi.org/language/"
       >language-specific guides</a
     > in the Guides section.</p>
 <p>For more information about building, including advanced use cases and patterns,
 refer to the <a
       class="link"
-      href="https://docs.docker.com/build/guide/"
+      href="https://docker.qubitpi.org/build/guide/"
       >Build with Docker</a
     > guide.</p>
 
@@ -12226,7 +12226,7 @@ refer to the <a
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fbuild%2fbuilding%2fpackaging%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fbuild%2fbuilding%2fpackaging%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>

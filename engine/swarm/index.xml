@@ -2,128 +2,128 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Swarm mode overview on Docker Docs</title>
-    <link>https://docs.docker.com/engine/swarm/</link>
+    <link>https://docker.qubitpi.org/engine/swarm/</link>
     <description>Recent content in Swarm mode overview on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/engine/swarm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/engine/swarm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Administer and maintain a swarm of Docker Engines</title>
-      <link>https://docs.docker.com/engine/swarm/admin_guide/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/admin_guide/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/admin_guide/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/admin_guide/</guid>
       <description>When you run a swarm of Docker Engines, manager nodes are the key components for managing the swarm and storing the swarm state. It is important to understand some key features of manager nodes to properly deploy and maintain the swarm.&#xA;Refer to How nodes work for a brief overview of Docker Swarm mode and the difference between manager and worker nodes.&#xA;Operate manager nodes in a swarm Swarm manager nodes use the Raft Consensus Algorithm to manage the swarm state.</description>
     </item>
     <item>
       <title>Deploy a stack to a swarm</title>
-      <link>https://docs.docker.com/engine/swarm/stack-deploy/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/stack-deploy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/stack-deploy/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/stack-deploy/</guid>
       <description>When running Docker Engine in swarm mode, you can use docker stack deploy to deploy a complete application stack to the swarm. The deploy command accepts a stack description in the form of a Compose file.&#xA;Note&#xA;The docker stack deploy command uses the legacy Compose file version 3 format, used by Compose V1. The latest format, defined by the Compose specification isn&#39;t compatible with the docker stack deploy command.</description>
     </item>
     <item>
       <title>Deploy services to a swarm</title>
-      <link>https://docs.docker.com/engine/swarm/services/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/services/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/services/</guid>
       <description>Swarm services use a declarative model, which means that you define the desired state of the service, and rely upon Docker to maintain this state. The state includes information such as (but not limited to):&#xA;The image name and tag the service containers should run How many containers participate in the service Whether any ports are exposed to clients outside the swarm Whether the service should start automatically when Docker starts The specific behavior that happens when the service is restarted (such as whether a rolling restart is used) Characteristics of the nodes where the service can run (such as resource constraints and placement preferences) For an overview of Swarm mode, see Swarm mode key concepts.</description>
     </item>
     <item>
       <title>How nodes work</title>
-      <link>https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/how-swarm-mode-works/nodes/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/nodes/</guid>
       <description>Swarm mode lets you create a cluster of one or more Docker Engines called a swarm. A swarm consists of one or more nodes: physical or virtual machines running Docker Engine.&#xA;There are two types of nodes: managers and workers.&#xA;If you haven&#39;t already, read through the Swarm mode overview and key concepts.&#xA;Manager nodes Manager nodes handle cluster management tasks:&#xA;Maintaining cluster state Scheduling services Serving Swarm mode HTTP API endpoints Using a Raft implementation, the managers maintain a consistent internal state of the entire swarm and all the services running on it.</description>
     </item>
     <item>
       <title>How services work</title>
-      <link>https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/services/</guid>
       <description>To deploy an application image when Docker Engine is in Swarm mode, you create a service. Frequently a service is the image for a microservice within the context of some larger application. Examples of services might include an HTTP server, a database, or any other type of executable program that you wish to run in a distributed environment.&#xA;When you create a service, you specify which container image to use and which commands to execute inside running containers.</description>
     </item>
     <item>
       <title>Join nodes to a swarm</title>
-      <link>https://docs.docker.com/engine/swarm/join-nodes/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/join-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/join-nodes/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/join-nodes/</guid>
       <description>When you first create a swarm, you place a single Docker Engine into Swarm mode. To take full advantage of Swarm mode you can add nodes to the swarm:&#xA;Adding worker nodes increases capacity. When you deploy a service to a swarm, the engine schedules tasks on available nodes whether they are worker nodes or manager nodes. When you add workers to your swarm, you increase the scale of the swarm to handle tasks without affecting the manager raft consensus.</description>
     </item>
     <item>
       <title>Lock your swarm to protect its encryption key</title>
-      <link>https://docs.docker.com/engine/swarm/swarm_manager_locking/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/swarm_manager_locking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/swarm_manager_locking/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/swarm_manager_locking/</guid>
       <description>The Raft logs used by swarm managers are encrypted on disk by default. This at-rest encryption protects your service&#39;s configuration and data from attackers who gain access to the encrypted Raft logs. One of the reasons this feature was introduced was in support of the Docker secrets feature.&#xA;When Docker restarts, both the TLS key used to encrypt communication among swarm nodes and the key used to encrypt and decrypt Raft logs on disk are loaded into each manager node&#39;s memory.</description>
     </item>
     <item>
       <title>Manage nodes in a swarm</title>
-      <link>https://docs.docker.com/engine/swarm/manage-nodes/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/manage-nodes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/manage-nodes/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/manage-nodes/</guid>
       <description>As part of the swarm management lifecycle, you may need to:&#xA;List nodes in the swarm Inspect an individual node Update a node Leave the swarm List nodes To view a list of nodes in the swarm run docker node ls from a manager node:&#xA;$ docker node ls ID HOSTNAME STATUS AVAILABILITY MANAGER STATUS 46aqrk4e473hjbt745z53cr3t node-5 Ready Active Reachable 61pi3d91s0w3b90ijw3deeb2q node-4 Ready Active Reachable a5b2m3oghd48m8eu391pefq5u node-3 Ready Active e7p8btxeu3ioshyuj6lxiv6g0 node-2 Ready Active ehkv3bcimagdese79dn78otj5 * node-1 Ready Active Leader The AVAILABILITY column shows whether or not the scheduler can assign tasks to the node:</description>
     </item>
     <item>
       <title>Manage sensitive data with Docker secrets</title>
-      <link>https://docs.docker.com/engine/swarm/secrets/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/secrets/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/secrets/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/secrets/</guid>
       <description>About secrets In terms of Docker Swarm services, a secret is a blob of data, such as a password, SSH private key, SSL certificate, or another piece of data that should not be transmitted over a network or stored unencrypted in a Dockerfile or in your application&#39;s source code. You can use Docker secrets to centrally manage this data and securely transmit it to only those containers that need access to it.</description>
     </item>
     <item>
       <title>Manage swarm security with public key infrastructure (PKI)</title>
-      <link>https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/pki/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/how-swarm-mode-works/pki/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/pki/</guid>
       <description>The Swarm mode public key infrastructure (PKI) system built into Docker makes it simple to securely deploy a container orchestration system. The nodes in a swarm use mutual Transport Layer Security (TLS) to authenticate, authorize, and encrypt the communications with other nodes in the swarm.&#xA;When you create a swarm by running docker swarm init, Docker designates itself as a manager node. By default, the manager node generates a new root Certificate Authority (CA) along with a key pair, which are used to secure communications with other nodes that join the swarm.</description>
     </item>
     <item>
       <title>Manage swarm service networks</title>
-      <link>https://docs.docker.com/engine/swarm/networking/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/networking/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/networking/</guid>
       <description>This page describes networking for swarm services.&#xA;Swarm and types of traffic A Docker swarm generates two different kinds of traffic:&#xA;Control and management plane traffic: This includes swarm management messages, such as requests to join or leave the swarm. This traffic is always encrypted.&#xA;Application data plane traffic: This includes container traffic and traffic to and from external clients.&#xA;Key network concepts The following three network concepts are important to swarm services:</description>
     </item>
     <item>
       <title>Raft consensus in swarm mode</title>
-      <link>https://docs.docker.com/engine/swarm/raft/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/raft/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/raft/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/raft/</guid>
       <description>When Docker Engine runs in Swarm mode, manager nodes implement the Raft Consensus Algorithm to manage the global cluster state.&#xA;The reason why Swarm mode is using a consensus algorithm is to make sure that all the manager nodes that are in charge of managing and scheduling tasks in the cluster are storing the same consistent state.&#xA;Having the same consistent state across the cluster means that in case of a failure, any Manager node can pick up the tasks and restore the services to a stable state.</description>
     </item>
     <item>
       <title>Run Docker Engine in swarm mode</title>
-      <link>https://docs.docker.com/engine/swarm/swarm-mode/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/swarm-mode/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/swarm-mode/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/swarm-mode/</guid>
       <description>When you first install and start working with Docker Engine, Swarm mode is disabled by default. When you enable Swarm mode, you work with the concept of services managed through the docker service command.&#xA;There are two ways to run the engine in Swarm mode:&#xA;Create a new swarm, covered in this article. Join an existing swarm. When you run the engine in Swarm mode on your local machine, you can create and test services based upon images you&#39;ve created or other available images.</description>
     </item>
     <item>
       <title>Store configuration data using Docker Configs</title>
-      <link>https://docs.docker.com/engine/swarm/configs/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/configs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/configs/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/configs/</guid>
       <description>About configs Docker swarm service configs allow you to store non-sensitive information, such as configuration files, outside a service&#39;s image or running containers. This allows you to keep your images as generic as possible, without the need to bind-mount configuration files into the containers or use environment variables.&#xA;Configs operate in a similar way to secrets, except that they are not encrypted at rest and are mounted directly into the container&#39;s filesystem without the use of RAM disks.</description>
     </item>
     <item>
       <title>Swarm mode key concepts</title>
-      <link>https://docs.docker.com/engine/swarm/key-concepts/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/key-concepts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/key-concepts/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/key-concepts/</guid>
       <description>This topic introduces some of the concepts unique to the cluster management and orchestration features of Docker Engine 1.12.&#xA;What is a swarm? The cluster management and orchestration features embedded in Docker Engine are built using swarmkit. Swarmkit is a separate project which implements Docker&#39;s orchestration layer and is used directly within Docker.&#xA;A swarm consists of multiple Docker hosts which run in Swarm mode and act as managers, to manage membership and delegation, and workers, which run swarm services.</description>
     </item>
     <item>
       <title>Swarm task states</title>
-      <link>https://docs.docker.com/engine/swarm/how-swarm-mode-works/swarm-task-states/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/swarm-task-states/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/how-swarm-mode-works/swarm-task-states/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/swarm-task-states/</guid>
       <description>Docker lets you create services, which can start tasks. A service is a description of a desired state, and a task does the work. Work is scheduled on swarm nodes in this sequence:&#xA;Create a service by using docker service create. The request goes to a Docker manager node. The Docker manager node schedules the service to run on particular nodes. Each service can start multiple tasks. Each task has a life cycle, with states like NEW, PENDING, and COMPLETE.</description>
     </item>
     <item>
       <title>Use Swarm mode routing mesh</title>
-      <link>https://docs.docker.com/engine/swarm/ingress/</link>
+      <link>https://docker.qubitpi.org/engine/swarm/ingress/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/swarm/ingress/</guid>
+      <guid>https://docker.qubitpi.org/engine/swarm/ingress/</guid>
       <description>Docker Engine Swarm mode makes it easy to publish ports for services to make them available to resources outside the swarm. All nodes participate in an ingress routing mesh. The routing mesh enables each node in the swarm to accept connections on published ports for any service running in the swarm, even if there&#39;s no task running on the node. The routing mesh routes all incoming requests to published ports on available nodes to an active container.</description>
     </item>
   </channel>

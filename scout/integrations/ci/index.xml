@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Using Docker Scout in continuous integration on Docker Docs</title>
-    <link>https://docs.docker.com/scout/integrations/ci/</link>
+    <link>https://docker.qubitpi.org/scout/integrations/ci/</link>
     <description>Recent content in Using Docker Scout in continuous integration on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/scout/integrations/ci/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/scout/integrations/ci/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Integrate Docker Scout with Circle CI</title>
-      <link>https://docs.docker.com/scout/integrations/ci/circle-ci/</link>
+      <link>https://docker.qubitpi.org/scout/integrations/ci/circle-ci/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/scout/integrations/ci/circle-ci/</guid>
+      <guid>https://docker.qubitpi.org/scout/integrations/ci/circle-ci/</guid>
       <description>The following examples runs when triggered in CircleCI. When triggered, it checks out the &amp;quot;docker/scout-demo-service:latest&amp;quot; image and tag and then uses Docker Scout to create a CVE report.&#xA;Add the following to a .circleci/config.yml file.&#xA;First, set up the rest of the workflow. Add the following to the YAML file:&#xA;version: 2.1 jobs: build: docker: - image: cimg/base:stable environment: IMAGE_TAG: docker/scout-demo-service:latest This defines the container image the workflow uses and an environment variable for the image.</description>
     </item>
     <item>
       <title>Integrate Docker Scout with GitHub Actions</title>
-      <link>https://docs.docker.com/scout/integrations/ci/gha/</link>
+      <link>https://docker.qubitpi.org/scout/integrations/ci/gha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/scout/integrations/ci/gha/</guid>
+      <guid>https://docker.qubitpi.org/scout/integrations/ci/gha/</guid>
       <description>The following example shows how to set up a Docker Scout workflow with GitHub Actions. Triggered by a pull request, the action builds the image and uses Docker Scout to compare the new version to the version of that image running in production.&#xA;This workflow uses the docker/scout-action GitHub Action to run the docker scout compare command to visualize how images for pull request stack up against the image you run in production.</description>
     </item>
     <item>
       <title>Integrate Docker Scout with GitLab CI</title>
-      <link>https://docs.docker.com/scout/integrations/ci/gitlab/</link>
+      <link>https://docker.qubitpi.org/scout/integrations/ci/gitlab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/scout/integrations/ci/gitlab/</guid>
+      <guid>https://docker.qubitpi.org/scout/integrations/ci/gitlab/</guid>
       <description>The following examples runs in GitLab CI in a repository containing a Docker image&#39;s definition and contents. Triggered by a commit, the pipeline builds the image. If the commit was to the default branch, it uses Docker Scout to get a CVE report. If the commit was to a different branch, it uses Docker Scout to compare the new version to the current published version.&#xA;Steps First, set up the rest of the workflow.</description>
     </item>
     <item>
       <title>Integrate Docker Scout with Jenkins</title>
-      <link>https://docs.docker.com/scout/integrations/ci/jenkins/</link>
+      <link>https://docker.qubitpi.org/scout/integrations/ci/jenkins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/scout/integrations/ci/jenkins/</guid>
+      <guid>https://docker.qubitpi.org/scout/integrations/ci/jenkins/</guid>
       <description>You can add the following stage and steps definition to a Jenkinsfile to run Docker Scout as part of a Jenkins pipeline. The pipeline needs a DOCKER_HUB credential containing the username and password for authenticating to Docker Hub. It also needs an environment variable defined for the image and tag.&#xA;pipeline { agent { // Agent details } environment { DOCKER_HUB = credentials(&amp;#39;jenkins-docker-hub-credentials&amp;#39;) IMAGE_TAG = &amp;#39;myorg/scout-demo-service:latest&amp;#39; } stages { stage(&amp;#39;Analyze image&amp;#39;) { steps { // Install Docker Scout sh &amp;#39;curl -sSfL https://raw.</description>
     </item>
     <item>
       <title>Integrate Docker Scout with Microsoft Azure DevOps Pipelines</title>
-      <link>https://docs.docker.com/scout/integrations/ci/azure/</link>
+      <link>https://docker.qubitpi.org/scout/integrations/ci/azure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/scout/integrations/ci/azure/</guid>
+      <guid>https://docker.qubitpi.org/scout/integrations/ci/azure/</guid>
       <description>The following examples runs in an Azure DevOps-connected repository containing a Docker image&#39;s definition and contents. Triggered by a commit to the main branch, the pipeline builds the image and uses Docker Scout to create a CVE report.&#xA;First, set up the rest of the workflow and set up the variables available to all pipeline steps. Add the following to an azure-pipelines.yml file:&#xA;trigger: - main resources: - repo: self variables: tag: &amp;#34;$(Build.</description>
     </item>
   </channel>

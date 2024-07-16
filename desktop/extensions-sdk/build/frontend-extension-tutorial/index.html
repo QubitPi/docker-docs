@@ -17,25 +17,25 @@
   name="keywords"
   content="Docker, extensions, sdk, build"
 />
-<link rel="canonical" href="https://docs.docker.com/desktop/extensions-sdk/build/frontend-extension-tutorial/" />
+<link rel="canonical" href="https://docker.qubitpi.org/desktop/extensions-sdk/build/frontend-extension-tutorial/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="Advanced frontend extension tutorial"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Create an advanced frontend extension" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/desktop/extensions-sdk/build/frontend-extension-tutorial/" />
+<meta property="og:url" content="https://docker.qubitpi.org/desktop/extensions-sdk/build/frontend-extension-tutorial/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Create an advanced frontend extension\"","description":"\"Advanced frontend extension tutorial\"","url":"https:\/\/docs.docker.com\/desktop\/extensions-sdk\/build\/frontend-extension-tutorial\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Create an advanced frontend extension\"","description":"\"Advanced frontend extension tutorial\"","url":"https:\/\/docker.qubitpi.org\/desktop\/extensions-sdk\/build\/frontend-extension-tutorial\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11551,7 +11551,7 @@ Early Access"
     </div>
     <p>To start creating your extension, you first need a directory with files which range from the extension’s source code to the required extension-specific files. This page provides information on how to set up an extension with a more advanced frontend.</p>
 <p>Before you start, make sure you have installed the latest version of 
-    <a class="link" href="https://docs.docker.com/desktop/release-notes/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/release-notes/"
       >Docker Desktop</a
     >.</p>
 
@@ -11563,7 +11563,7 @@ Early Access"
 
 <p>The quickest way to create a new extension is to run <code>docker extension init my-extension</code> as in the
 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/quickstart/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/quickstart/"
       >Quickstart</a
     >. This creates a new directory <code>my-extension</code> that contains a fully functional extension.</p>
 <blockquote class="tip"><p><strong>Tip</strong></p>
@@ -11850,7 +11850,7 @@ The <code>root</code> property is the path to the frontend application in the ex
 system to deploy it on the host.
 The <code>src</code> property is the path to the HTML entry point of the frontend application within the <code>root</code> folder.</p>
 <p>For more information on the <code>ui</code> section of the <code>metadata.json</code>, see 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/architecture/metadata/#ui-section"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/architecture/metadata/#ui-section"
       >Metadata</a
     >.</p>
 
@@ -11986,7 +11986,7 @@ provide you with type definitions for the extension APIs and auto-completion in 
 >
   <img
     loading="lazy"
-    src="https://docs.docker.com/desktop/extensions-sdk/build/images/types-autocomplete.png"
+    src="https://docker.qubitpi.org/desktop/extensions-sdk/build/images/types-autocomplete.png"
     alt="Auto completion in an IDE"
     
     
@@ -12008,7 +12008,7 @@ provide you with type definitions for the extension APIs and auto-completion in 
       <img
         loading="lazy"
         class="rounded max-w-full max-h-full"
-        src="https://docs.docker.com/desktop/extensions-sdk/build/images/types-autocomplete.png"
+        src="https://docker.qubitpi.org/desktop/extensions-sdk/build/images/types-autocomplete.png"
         alt="Auto completion in an IDE"
       />
     </div>
@@ -12199,7 +12199,7 @@ command and display the result in a table.</p>
 >
   <img
     loading="lazy"
-    src="https://docs.docker.com/desktop/extensions-sdk/build/images/react-extension.png"
+    src="https://docker.qubitpi.org/desktop/extensions-sdk/build/images/react-extension.png"
     alt="Screenshot of the container list."
     
     
@@ -12221,7 +12221,7 @@ command and display the result in a table.</p>
       <img
         loading="lazy"
         class="rounded max-w-full max-h-full"
-        src="https://docs.docker.com/desktop/extensions-sdk/build/images/react-extension.png"
+        src="https://docker.qubitpi.org/desktop/extensions-sdk/build/images/react-extension.png"
         alt="Screenshot of the container list."
       />
     </div>
@@ -12347,7 +12347,7 @@ The Extension UI code can also perform interactions with Docker Desktop, such as
 when you need to debug it.</p>
 <blockquote class="tip"><p><strong>Tip</strong></p>
 <p>You can turn on 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/dev/test-debug/#hot-reloading-whilst-developing-the-ui"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/dev/test-debug/#hot-reloading-whilst-developing-the-ui"
       >hot reloading</a
     > to avoid the need to
 rebuild the extension every time you make a change.</p>
@@ -12361,28 +12361,28 @@ rebuild the extension every time you make a change.</p>
 
 <ul>
 <li>Add a 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/build/backend-extension-tutorial/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/build/backend-extension-tutorial/"
       >backend</a
     > to your extension.</li>
 <li>Learn how to 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/dev/test-debug/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/dev/test-debug/"
       >test and debug</a
     > your extension.</li>
 <li>Learn how to 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/dev/continuous-integration/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/dev/continuous-integration/"
       >setup CI for your extension</a
     >.</li>
 <li>Learn more about extensions <a
       class="link"
-      href="https://docs.docker.com/desktop/extensions-sdk/architecture/"
+      href="https://docker.qubitpi.org/desktop/extensions-sdk/architecture/"
       >architecture</a
     >.</li>
 <li>For more information and guidelines on building the UI, see the 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/design/design-guidelines/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/design/design-guidelines/"
       >Design and UI styling section</a
     >.</li>
 <li>If you want to set up user authentication for the extension, see 
-    <a class="link" href="https://docs.docker.com/desktop/extensions-sdk/guides/oauth2-flow/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/extensions-sdk/guides/oauth2-flow/"
       >Authentication</a
     >.</li>
 </ul>
@@ -12408,7 +12408,7 @@ rebuild the extension every time you make a change.</p>
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fdesktop%2fextensions-sdk%2fbuild%2ffrontend-extension-tutorial%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fdesktop%2fextensions-sdk%2fbuild%2ffrontend-extension-tutorial%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>

@@ -17,25 +17,25 @@
   name="keywords"
   content="ci, github, actions, gha, buildkit, buildx"
 />
-<link rel="canonical" href="https://docs.docker.com/build/ci/github-actions/configure-builder/" />
+<link rel="canonical" href="https://docker.qubitpi.org/build/ci/github-actions/configure-builder/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="Configuring BuildKit instances for building in CI with GitHub Actions"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Configuring your GitHub Actions builder" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/build/ci/github-actions/configure-builder/" />
+<meta property="og:url" content="https://docker.qubitpi.org/build/ci/github-actions/configure-builder/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Configuring your GitHub Actions builder\"","description":"\"Configuring BuildKit instances for building in CI with GitHub Actions\"","url":"https:\/\/docs.docker.com\/build\/ci\/github-actions\/configure-builder\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Configuring your GitHub Actions builder\"","description":"\"Configuring BuildKit instances for building in CI with GitHub Actions\"","url":"https:\/\/docker.qubitpi.org\/build\/ci\/github-actions\/configure-builder\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11709,7 +11709,7 @@ or set the <code>--debug</code> buildkitd flag in the
 >
   <img
     loading="lazy"
-    src="https://docs.docker.com/build/ci/github-actions/images/buildkit-container-logs.png"
+    src="https://docker.qubitpi.org/build/ci/github-actions/images/buildkit-container-logs.png"
     alt="BuildKit container logs"
     
     
@@ -11731,7 +11731,7 @@ or set the <code>--debug</code> buildkitd flag in the
       <img
         loading="lazy"
         class="rounded max-w-full max-h-full"
-        src="https://docs.docker.com/build/ci/github-actions/images/buildkit-container-logs.png"
+        src="https://docker.qubitpi.org/build/ci/github-actions/images/buildkit-container-logs.png"
         alt="BuildKit container logs"
       />
     </div>
@@ -11745,11 +11745,11 @@ or set the <code>--debug</code> buildkitd flag in the
 </h2>
 
 <p>You can provide a 
-    <a class="link" href="https://docs.docker.com/build/buildkit/toml-configuration/"
+    <a class="link" href="https://docker.qubitpi.org/build/buildkit/toml-configuration/"
       >BuildKit configuration</a
     >
 to your builder if you're using the 
-    <a class="link" href="https://docs.docker.com/build/drivers/docker-container/"
+    <a class="link" href="https://docker.qubitpi.org/build/drivers/docker-container/"
       ><code>docker-container</code> driver</a
     >
 (default) with the <code>config</code> or <code>config-inline</code> inputs:</p>
@@ -11795,7 +11795,7 @@ workflow with the <code>config-inline</code> input:</p>
   </div>
 </div>
 <p>For more information about using a registry mirror, see 
-    <a class="link" href="https://docs.docker.com/build/buildkit/configure/#registry-mirror"
+    <a class="link" href="https://docker.qubitpi.org/build/buildkit/configure/#registry-mirror"
       >Registry mirror</a
     >.</p>
 
@@ -11869,7 +11869,7 @@ a dedicated BuildKit config file from your repository if you want with the
 
 <p>Buildx supports running builds on multiple machines. This is useful for building
 
-    <a class="link" href="https://docs.docker.com/build/building/multi-platform/"
+    <a class="link" href="https://docker.qubitpi.org/build/building/multi-platform/"
       >multi-platform images</a
     > on native nodes for
 more complicated cases that aren't handled by QEMU. Building on native nodes
@@ -11892,7 +11892,7 @@ fields:</p>
 <td><code>name</code></td>
 <td>String</td>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/buildx/create/#node"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#node"
       >Name of the node</a
     >. If empty, it's the name of the builder it belongs to, with an index number suffix. This is useful to set it if you want to modify/remove a node in an underlying step of you workflow.</td>
 </tr>
@@ -11900,7 +11900,7 @@ fields:</p>
 <td><code>endpoint</code></td>
 <td>String</td>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/buildx/create/#description"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#description"
       >Docker context or endpoint</a
     > of the node to add to the builder</td>
 </tr>
@@ -11908,7 +11908,7 @@ fields:</p>
 <td><code>driver-opts</code></td>
 <td>List</td>
 <td>List of additional 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/buildx/create/#driver-opt"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#driver-opt"
       >driver-specific options</a
     ></td>
 </tr>
@@ -11916,7 +11916,7 @@ fields:</p>
 <td><code>buildkitd-flags</code></td>
 <td>String</td>
 <td>
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/buildx/create/#buildkitd-flags"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#buildkitd-flags"
       >Flags for buildkitd</a
     > daemon</td>
 </tr>
@@ -11924,14 +11924,14 @@ fields:</p>
 <td><code>platforms</code></td>
 <td>String</td>
 <td>Fixed 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/buildx/create/#platform"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#platform"
       >platforms</a
     > for the node. If not empty, values take priority over the detected ones.</td>
 </tr>
 </tbody>
 </table>
 <p>Here is an example using remote nodes with the 
-    <a class="link" href="https://docs.docker.com/build/drivers/remote/"
+    <a class="link" href="https://docker.qubitpi.org/build/drivers/remote/"
       ><code>remote</code> driver</a
     >
 and 
@@ -12001,7 +12001,7 @@ using SSH or TLS.</p>
 </h3>
 
 <p>To be able to connect to an SSH endpoint using the 
-    <a class="link" href="https://docs.docker.com/build/drivers/docker-container/"
+    <a class="link" href="https://docker.qubitpi.org/build/drivers/docker-container/"
       ><code>docker-container</code> driver</a
     >,
 you have to set up the SSH private key and configuration on the GitHub Runner:</p>
@@ -12050,7 +12050,7 @@ you have to set up the SSH private key and configuration on the GitHub Runner:</
 </h3>
 
 <p>You can also 
-    <a class="link" href="https://docs.docker.com/build/drivers/remote/#example-remote-buildkit-in-docker-container"
+    <a class="link" href="https://docker.qubitpi.org/build/drivers/remote/#example-remote-buildkit-in-docker-container"
       >set up a remote BuildKit instance</a
     >
 using the remote driver. To ease the integration in your workflow, you can use
@@ -12160,7 +12160,7 @@ some packages may be particularly resource-intensive to build and require more
 compute. Or they require a builder equipped with a particular capability or
 hardware.</p>
 <p>For more information about remote builder, see 
-    <a class="link" href="https://docs.docker.com/build/drivers/remote/"
+    <a class="link" href="https://docker.qubitpi.org/build/drivers/remote/"
       ><code>remote</code> driver</a
     >
 and the 
@@ -12234,7 +12234,7 @@ and the
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fbuild%2fci%2fgithub-actions%2fconfigure-builder%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fbuild%2fci%2fgithub-actions%2fconfigure-builder%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>

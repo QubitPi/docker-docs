@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About storage drivers on Docker Docs</title>
-    <link>https://docs.docker.com/storage/storagedriver/</link>
+    <link>https://docker.qubitpi.org/storage/storagedriver/</link>
     <description>Recent content in About storage drivers on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/storage/storagedriver/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/storage/storagedriver/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker storage drivers</title>
-      <link>https://docs.docker.com/storage/storagedriver/select-storage-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/select-storage-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/select-storage-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/select-storage-driver/</guid>
       <description>Ideally, very little data is written to a container&#39;s writable layer, and you use Docker volumes to write data. However, some workloads require you to be able to write to the container&#39;s writable layer. This is where storage drivers come in.&#xA;Docker supports several storage drivers, using a pluggable architecture. The storage driver controls how images and containers are stored and managed on your Docker host. After you have read the storage driver overview, the next step is to choose the best storage driver for your workloads.</description>
     </item>
     <item>
       <title>Use the AUFS storage driver</title>
-      <link>https://docs.docker.com/storage/storagedriver/aufs-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/aufs-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/aufs-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/aufs-driver/</guid>
       <description>Deprecated&#xA;The AuFS storage driver has been deprecated, and is removed in Docker Engine v24.0. If you are using AufS, you must migrate to a supported storage driver before upgrading to Docker Engine v24.0. Read the Docker storage drivers page for supported storage drivers.&#xA;AUFS is a union filesystem. The aufs storage driver was previously the default storage driver used for managing images and layers on Docker for Ubuntu, and for Debian versions prior to Stretch.</description>
     </item>
     <item>
       <title>Use the BTRFS storage driver</title>
-      <link>https://docs.docker.com/storage/storagedriver/btrfs-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/btrfs-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/btrfs-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/btrfs-driver/</guid>
       <description>Btrfs is a copy-on-write filesystem that supports many advanced storage technologies, making it a good fit for Docker. Btrfs is included in the mainline Linux kernel.&#xA;Docker&#39;s btrfs storage driver leverages many Btrfs features for image and container management. Among these features are block-level operations, thin provisioning, copy-on-write snapshots, and ease of administration. You can combine multiple physical block devices into a single Btrfs filesystem.&#xA;This page refers to Docker&#39;s Btrfs storage driver as btrfs and the overall Btrfs Filesystem as Btrfs.</description>
     </item>
     <item>
       <title>Use the Device Mapper storage driver (deprecated)</title>
-      <link>https://docs.docker.com/storage/storagedriver/device-mapper-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/device-mapper-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/device-mapper-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/device-mapper-driver/</guid>
       <description>Deprecated&#xA;The Device Mapper driver has been deprecated, and is removed in Docker Engine v25.0. If you are using Device Mapper, you must migrate to a supported storage driver before upgrading to Docker Engine v25.0. Read the Docker storage drivers page for supported storage drivers.&#xA;Device Mapper is a kernel-based framework that underpins many advanced volume management technologies on Linux. Docker&#39;s devicemapper storage driver leverages the thin provisioning and snapshotting capabilities of this framework for image and container management.</description>
     </item>
     <item>
       <title>Use the OverlayFS storage driver</title>
-      <link>https://docs.docker.com/storage/storagedriver/overlayfs-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/overlayfs-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/overlayfs-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/overlayfs-driver/</guid>
       <description>OverlayFS is a union filesystem.&#xA;This page refers to the Linux kernel driver as OverlayFS and to the Docker storage driver as overlay2.&#xA;Note&#xA;For fuse-overlayfs driver, check Rootless mode documentation.&#xA;Prerequisites OverlayFS is the recommended storage driver, and supported if you meet the following prerequisites:&#xA;Version 4.0 or higher of the Linux kernel, or RHEL or CentOS using version 3.10.0-514 of the kernel or higher.&#xA;The overlay2 driver is supported on xfs backing filesystems, but only with d_type=true enabled.</description>
     </item>
     <item>
       <title>Use the VFS storage driver</title>
-      <link>https://docs.docker.com/storage/storagedriver/vfs-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/vfs-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/vfs-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/vfs-driver/</guid>
       <description>The VFS storage driver isn&#39;t a union filesystem. Each layer is a directory on disk, and there is no copy-on-write support. To create a new layer, a &amp;quot;deep copy&amp;quot; is done of the previous layer. This leads to lower performance and more space used on disk than other storage drivers. However, it is robust, stable, and works in every environment. It can also be used as a mechanism to verify other storage back-ends against, in a testing environment.</description>
     </item>
     <item>
       <title>Use the ZFS storage driver</title>
-      <link>https://docs.docker.com/storage/storagedriver/zfs-driver/</link>
+      <link>https://docker.qubitpi.org/storage/storagedriver/zfs-driver/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/storage/storagedriver/zfs-driver/</guid>
+      <guid>https://docker.qubitpi.org/storage/storagedriver/zfs-driver/</guid>
       <description>ZFS is a next generation filesystem that supports many advanced storage technologies such as volume management, snapshots, checksumming, compression and deduplication, replication and more.&#xA;It was created by Sun Microsystems (now Oracle Corporation) and is open sourced under the CDDL license. Due to licensing incompatibilities between the CDDL and GPL, ZFS cannot be shipped as part of the mainline Linux kernel. However, the ZFS On Linux (ZoL) project provides an out-of-tree kernel module and userspace tools which can be installed separately.</description>
     </item>
   </channel>

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Content trust in Docker on Docker Docs</title>
-    <link>https://docs.docker.com/engine/security/trust/</link>
+    <link>https://docker.qubitpi.org/engine/security/trust/</link>
     <description>Recent content in Content trust in Docker on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/engine/security/trust/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/engine/security/trust/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Automation with content trust</title>
-      <link>https://docs.docker.com/engine/security/trust/trust_automation/</link>
+      <link>https://docker.qubitpi.org/engine/security/trust/trust_automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/security/trust/trust_automation/</guid>
+      <guid>https://docker.qubitpi.org/engine/security/trust/trust_automation/</guid>
       <description>It is very common for Docker Content Trust to be built into existing automation systems. To allow tools to wrap Docker and push trusted content, there are environment variables that can be passed through to the client.&#xA;This guide follows the steps as described in Signing images with Docker Content Trust. Make sure you understand and follow the prerequisites.&#xA;When working directly with the Notary client, it uses its own set of environment variables.</description>
     </item>
     <item>
       <title>Delegations for content trust</title>
-      <link>https://docs.docker.com/engine/security/trust/trust_delegation/</link>
+      <link>https://docker.qubitpi.org/engine/security/trust/trust_delegation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/security/trust/trust_delegation/</guid>
+      <guid>https://docker.qubitpi.org/engine/security/trust/trust_delegation/</guid>
       <description>Delegations in Docker Content Trust (DCT) allow you to control who can and cannot sign an image tag. A delegation will have a pair of private and public delegation keys. A delegation could contain multiple pairs of keys and contributors in order to a) allow multiple users to be part of a delegation, and b) to support key rotation.&#xA;The most important delegation within Docker Content Trust is targets/releases. This is seen as the canonical source of a trusted image tag, and without a contributor&#39;s key being under this delegation, they will be unable to sign a tag.</description>
     </item>
     <item>
       <title>Deploy Notary Server with Compose</title>
-      <link>https://docs.docker.com/engine/security/trust/deploying_notary/</link>
+      <link>https://docker.qubitpi.org/engine/security/trust/deploying_notary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/security/trust/deploying_notary/</guid>
+      <guid>https://docker.qubitpi.org/engine/security/trust/deploying_notary/</guid>
       <description>The easiest way to deploy Notary Server is by using Docker Compose. To follow the procedure on this page, you must have already installed Docker Compose.&#xA;Clone the Notary repository.&#xA;$ git clone https://github.com/theupdateframework/notary.git Build and start Notary Server with the sample certificates.&#xA;$ docker compose up -d For more detailed documentation about how to deploy Notary Server, see the instructions to run a Notary service as well as the Notary repository for more information.</description>
     </item>
     <item>
       <title>Manage keys for content trust</title>
-      <link>https://docs.docker.com/engine/security/trust/trust_key_mng/</link>
+      <link>https://docker.qubitpi.org/engine/security/trust/trust_key_mng/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/security/trust/trust_key_mng/</guid>
+      <guid>https://docker.qubitpi.org/engine/security/trust/trust_key_mng/</guid>
       <description>Trust for an image tag is managed through the use of keys. Docker&#39;s content trust makes use of five different types of keys:&#xA;Key Description root key Root of content trust for an image tag. When content trust is enabled, you create the root key once. Also known as the offline key, because it should be kept offline. targets This key allows you to sign image tags, to manage delegations including delegated keys or permitted delegation paths.</description>
     </item>
     <item>
       <title>Play in a content trust sandbox</title>
-      <link>https://docs.docker.com/engine/security/trust/trust_sandbox/</link>
+      <link>https://docker.qubitpi.org/engine/security/trust/trust_sandbox/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/engine/security/trust/trust_sandbox/</guid>
+      <guid>https://docker.qubitpi.org/engine/security/trust/trust_sandbox/</guid>
       <description>This page explains how to set up and use a sandbox for experimenting with trust. The sandbox allows you to configure and try trust operations locally without impacting your production images.&#xA;Before working through this sandbox, you should have read through the trust overview.&#xA;Prerequisites These instructions assume you are running in Linux or macOS. You can run this sandbox on a local machine or on a virtual machine. You need to have privileges to run docker commands on your local machine or in the VM.</description>
     </item>
   </channel>

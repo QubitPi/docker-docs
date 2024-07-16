@@ -2,86 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Configs on Docker Docs</title>
-    <link>https://docs.docker.com/config/</link>
+    <link>https://docker.qubitpi.org/config/</link>
     <description>Recent content in Configs on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/config/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/config/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CLI completion</title>
-      <link>https://docs.docker.com/config/completion/</link>
+      <link>https://docker.qubitpi.org/config/completion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/completion/</guid>
+      <guid>https://docker.qubitpi.org/config/completion/</guid>
       <description>You can generate a shell completion script for the Docker CLI using the docker completion command. The completion script gives you word completion for commands, flags, and Docker objects (such as container and volume names) when you hit &amp;lt;Tab&amp;gt; as you type into your terminal.&#xA;You can generate completion scripts for the following shells:&#xA;Bash Zsh fish Bash To get Docker CLI completion with Bash, you first need to install the bash-completion package which contains a number of Bash functions for shell completion.</description>
     </item>
     <item>
       <title>Docker object labels</title>
-      <link>https://docs.docker.com/config/labels-custom-metadata/</link>
+      <link>https://docker.qubitpi.org/config/labels-custom-metadata/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/labels-custom-metadata/</guid>
+      <guid>https://docker.qubitpi.org/config/labels-custom-metadata/</guid>
       <description>Labels are a mechanism for applying metadata to Docker objects, including:&#xA;Images Containers Local daemons Volumes Networks Swarm nodes Swarm services You can use labels to organize your images, record licensing information, annotate relationships between containers, volumes, and networks, or in any way that makes sense for your business or application.&#xA;Label keys and values A label is a key-value pair, stored as a string. You can specify multiple labels for an object, but each key must be unique within an object.</description>
     </item>
     <item>
       <title>Filter commands</title>
-      <link>https://docs.docker.com/config/filter/</link>
+      <link>https://docker.qubitpi.org/config/filter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/filter/</guid>
+      <guid>https://docker.qubitpi.org/config/filter/</guid>
       <description>You can use the --filter flag to scope your commands. When filtering, the commands only include entries that match the pattern you specify.&#xA;Using filters The --filter flag expects a key-value pair separated by an operator.&#xA;$ docker COMMAND --filter &amp;#34;KEY=VALUE&amp;#34; The key represents the field that you want to filter on. The value is the pattern that the specified field must match. The operator can be either equals (=) or not equals (!</description>
     </item>
     <item>
       <title>Format command and log output</title>
-      <link>https://docs.docker.com/config/formatting/</link>
+      <link>https://docker.qubitpi.org/config/formatting/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/formatting/</guid>
+      <guid>https://docker.qubitpi.org/config/formatting/</guid>
       <description>Docker supports Go templates which you can use to manipulate the output format of certain commands and log drivers.&#xA;Docker provides a set of basic functions to manipulate template elements. All of these examples use the docker inspect command, but many other CLI commands have a --format flag, and many of the CLI command references include examples of customizing the output format.&#xA;Note&#xA;When using the --format flag, you need observe your shell environment.</description>
     </item>
     <item>
       <title>Live restore</title>
-      <link>https://docs.docker.com/config/containers/live-restore/</link>
+      <link>https://docker.qubitpi.org/config/containers/live-restore/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/containers/live-restore/</guid>
+      <guid>https://docker.qubitpi.org/config/containers/live-restore/</guid>
       <description>By default, when the Docker daemon terminates, it shuts down running containers. You can configure the daemon so that containers remain running if the daemon becomes unavailable. This functionality is called live restore. The live restore option helps reduce container downtime due to daemon crashes, planned outages, or upgrades.&#xA;Note&#xA;Live restore isn&#39;t supported for Windows containers, but it does work for Linux containers running on Docker Desktop for Windows.</description>
     </item>
     <item>
       <title>OpenTelemetry for the Docker CLI</title>
-      <link>https://docs.docker.com/config/otel/</link>
+      <link>https://docker.qubitpi.org/config/otel/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/otel/</guid>
+      <guid>https://docker.qubitpi.org/config/otel/</guid>
       <description>Introduced in Docker Engine version 26.1.0 The Docker CLI supports OpenTelemetry instrumentation for emitting metrics about command invocations. This is disabled by default. You can configure the CLI to start emitting metrics to the endpoint that you specify. This allows you to capture information about your docker command invocations for more insight into your Docker usage.&#xA;Exporting metrics is opt-in, and you control where data is being sent by specifying the destination address of the metrics collector.</description>
     </item>
     <item>
       <title>Prune unused Docker objects</title>
-      <link>https://docs.docker.com/config/pruning/</link>
+      <link>https://docker.qubitpi.org/config/pruning/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/pruning/</guid>
+      <guid>https://docker.qubitpi.org/config/pruning/</guid>
       <description>Docker takes a conservative approach to cleaning up unused objects (often referred to as &amp;quot;garbage collection&amp;quot;), such as images, containers, volumes, and networks. These objects are generally not removed unless you explicitly ask Docker to do so. This can cause Docker to use extra disk space. For each type of object, Docker provides a prune command. In addition, you can use docker system prune to clean up multiple types of objects at once.</description>
     </item>
     <item>
       <title>Run multiple processes in a container</title>
-      <link>https://docs.docker.com/config/containers/multi-service_container/</link>
+      <link>https://docker.qubitpi.org/config/containers/multi-service_container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/containers/multi-service_container/</guid>
+      <guid>https://docker.qubitpi.org/config/containers/multi-service_container/</guid>
       <description>A container&#39;s main running process is the ENTRYPOINT and/or CMD at the end of the Dockerfile. It&#39;s best practice to separate areas of concern by using one service per container. That service may fork into multiple processes (for example, Apache web server starts multiple worker processes). It&#39;s ok to have multiple processes, but to get the most benefit out of Docker, avoid one container being responsible for multiple aspects of your overall application.</description>
     </item>
     <item>
       <title>Runtime metrics</title>
-      <link>https://docs.docker.com/config/containers/runmetrics/</link>
+      <link>https://docker.qubitpi.org/config/containers/runmetrics/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/containers/runmetrics/</guid>
+      <guid>https://docker.qubitpi.org/config/containers/runmetrics/</guid>
       <description>Docker stats You can use the docker stats command to live stream a container&#39;s runtime metrics. The command supports CPU, memory usage, memory limit, and network IO metrics.&#xA;The following is a sample output from the docker stats command&#xA;$ docker stats redis1 redis2 CONTAINER CPU % MEM USAGE / LIMIT MEM % NET I/O BLOCK I/O redis1 0.07% 796 KB / 64 MB 1.21% 788 B / 648 B 3.</description>
     </item>
     <item>
       <title>Runtime options with Memory, CPUs, and GPUs</title>
-      <link>https://docs.docker.com/config/containers/resource_constraints/</link>
+      <link>https://docker.qubitpi.org/config/containers/resource_constraints/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/containers/resource_constraints/</guid>
+      <guid>https://docker.qubitpi.org/config/containers/resource_constraints/</guid>
       <description>By default, a container has no resource constraints and can use as much of a given resource as the host&#39;s kernel scheduler allows. Docker provides ways to control how much memory, or CPU a container can use, setting runtime configuration flags of the docker run command. This section provides details on when you should set such limits and the possible implications of setting them.&#xA;Many of these features require your kernel to support Linux capabilities.</description>
     </item>
     <item>
       <title>Start containers automatically</title>
-      <link>https://docs.docker.com/config/containers/start-containers-automatically/</link>
+      <link>https://docker.qubitpi.org/config/containers/start-containers-automatically/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/config/containers/start-containers-automatically/</guid>
+      <guid>https://docker.qubitpi.org/config/containers/start-containers-automatically/</guid>
       <description>Docker provides restart policies to control whether your containers start automatically when they exit, or when Docker restarts. Restart policies start linked containers in the correct order. Docker recommends that you use restart policies, and avoid using process managers to start containers.&#xA;Restart policies are different from the --live-restore flag of the dockerd command. Using --live-restore lets you to keep your containers running during a Docker upgrade, though networking and user input are interrupted.</description>
     </item>
   </channel>

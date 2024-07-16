@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Overview of the Docker workshop on Docker Docs</title>
-    <link>https://docs.docker.com/guides/workshop/</link>
+    <link>https://docker.qubitpi.org/guides/workshop/</link>
     <description>Recent content in Overview of the Docker workshop on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/guides/workshop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/guides/workshop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Containerize an application</title>
-      <link>https://docs.docker.com/guides/workshop/02_our_app/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/02_our_app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/02_our_app/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/02_our_app/</guid>
       <description>For the rest of this guide, you&#39;ll be working with a simple todo list manager that runs on Node.js. If you&#39;re not familiar with Node.js, don&#39;t worry. This guide doesn&#39;t require any prior experience with JavaScript.&#xA;Prerequisites You have installed the latest version of Docker Desktop. You have installed a Git client. You have an IDE or a text editor to edit files. Docker recommends using Visual Studio Code. Get the app Before you can run the application, you need to get the application source code onto your machine.</description>
     </item>
     <item>
       <title>Image-building best practices</title>
-      <link>https://docs.docker.com/guides/workshop/09_image_best/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/09_image_best/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/09_image_best/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/09_image_best/</guid>
       <description>Image layering Using the docker image history command, you can see the command that was used to create each layer within an image.&#xA;Use the docker image history command to see the layers in the getting-started image you created.&#xA;$ docker image history getting-started You should get output that looks something like the following.&#xA;IMAGE CREATED CREATED BY SIZE COMMENT a78a40cbf866 18 seconds ago /bin/sh -c #(nop) CMD [&amp;#34;node&amp;#34; &amp;#34;src/index.</description>
     </item>
     <item>
       <title>Multi container apps</title>
-      <link>https://docs.docker.com/guides/workshop/07_multi_container/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/07_multi_container/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/07_multi_container/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/07_multi_container/</guid>
       <description>Up to this point, you&#39;ve been working with single container apps. But, now you will add MySQL to the application stack. The following question often arises - &amp;quot;Where will MySQL run? Install it in the same container or run it separately?&amp;quot; In general, each container should do one thing and do it well. The following are a few reasons to run the container separately:&#xA;There&#39;s a good chance you&#39;d have to scale APIs and front-ends differently than databases.</description>
     </item>
     <item>
       <title>Persist the DB</title>
-      <link>https://docs.docker.com/guides/workshop/05_persisting_data/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/05_persisting_data/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/05_persisting_data/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/05_persisting_data/</guid>
       <description>In case you didn&#39;t notice, your todo list is empty every single time you launch the container. Why is this? In this part, you&#39;ll dive into how the container is working.&#xA;The container&#39;s filesystem When a container runs, it uses the various layers from an image for its filesystem. Each container also gets its own &amp;quot;scratch space&amp;quot; to create/update/remove files. Any changes won&#39;t be seen in another container, even if they&#39;re using the same image.</description>
     </item>
     <item>
       <title>Share the application</title>
-      <link>https://docs.docker.com/guides/workshop/04_sharing_app/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/04_sharing_app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/04_sharing_app/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/04_sharing_app/</guid>
       <description>Now that you&#39;ve built an image, you can share it. To share Docker images, you have to use a Docker registry. The default registry is Docker Hub and is where all of the images you&#39;ve used have come from.&#xA;Docker ID&#xA;A Docker ID lets you access Docker Hub, which is the world&#39;s largest library and community for container images. Create a Docker ID for free if you don&#39;t have one.</description>
     </item>
     <item>
       <title>Update the application</title>
-      <link>https://docs.docker.com/guides/workshop/03_updating_app/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/03_updating_app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/03_updating_app/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/03_updating_app/</guid>
       <description>In part 2, you containerized a todo application. In this part, you&#39;ll update the application and image. You&#39;ll also learn how to stop and remove a container.&#xA;Update the source code In the following steps, you&#39;ll change the &amp;quot;empty text&amp;quot; when you don&#39;t have any todo list items to &amp;quot;You have no todo items yet! Add one above!&amp;quot;&#xA;In the src/static/js/app.js file, update line 56 to use the new empty text.</description>
     </item>
     <item>
       <title>Use bind mounts</title>
-      <link>https://docs.docker.com/guides/workshop/06_bind_mounts/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/06_bind_mounts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/06_bind_mounts/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/06_bind_mounts/</guid>
       <description>In part 5, you used a volume mount to persist the data in your database. A volume mount is a great choice when you need somewhere persistent to store your application data.&#xA;A bind mount is another type of mount, which lets you share a directory from the host&#39;s filesystem into the container. When working on an application, you can use a bind mount to mount source code into the container.</description>
     </item>
     <item>
       <title>Use Docker Compose</title>
-      <link>https://docs.docker.com/guides/workshop/08_using_compose/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/08_using_compose/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/08_using_compose/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/08_using_compose/</guid>
       <description>Docker Compose is a tool that helps you define and share multi-container applications. With Compose, you can create a YAML file to define the services and with a single command, you can spin everything up or tear it all down.&#xA;The big advantage of using Compose is you can define your application stack in a file, keep it at the root of your project repository (it&#39;s now version controlled), and easily enable someone else to contribute to your project.</description>
     </item>
     <item>
       <title>What next after the Docker workshop</title>
-      <link>https://docs.docker.com/guides/workshop/10_what_next/</link>
+      <link>https://docker.qubitpi.org/guides/workshop/10_what_next/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/guides/workshop/10_what_next/</guid>
+      <guid>https://docker.qubitpi.org/guides/workshop/10_what_next/</guid>
       <description>Although you&#39;re done with the workshop, there&#39;s still a lot more to learn about containers.&#xA;Here are a few other areas to look at next.&#xA;Container orchestration Running containers in production is tough. You don&#39;t want to log into a machine and simply run a docker run or docker compose up. Why not? Well, what happens if the containers die? How do you scale across several machines? Container orchestration solves this problem.</description>
     </item>
   </channel>

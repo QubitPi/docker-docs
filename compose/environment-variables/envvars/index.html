@@ -17,25 +17,25 @@
   name="keywords"
   content="fig, composition, compose, docker, orchestration, cli, reference"
 />
-<link rel="canonical" href="https://docs.docker.com/compose/environment-variables/envvars/" />
+<link rel="canonical" href="https://docker.qubitpi.org/compose/environment-variables/envvars/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="Compose pre-defined environment variables"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Set or change pre-defined environment variables in Docker Compose" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/compose/environment-variables/envvars/" />
+<meta property="og:url" content="https://docker.qubitpi.org/compose/environment-variables/envvars/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Set or change pre-defined environment variables in Docker Compose\"","description":"\"Compose pre-defined environment variables\"","url":"https:\/\/docs.docker.com\/compose\/environment-variables\/envvars\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Set or change pre-defined environment variables in Docker Compose\"","description":"\"Compose pre-defined environment variables\"","url":"https:\/\/docker.qubitpi.org\/compose\/environment-variables\/envvars\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11600,21 +11600,21 @@ Early Access"
 <p>You can set or change the pre-defined environment variables:</p>
 <ul>
 <li>Within your Compose file using the 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/set-environment-variables/#use-the-environment-attribute"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/set-environment-variables/#use-the-environment-attribute"
       ><code>environment</code> attribute</a
     ></li>
 <li>With the <code>env-file</code> attribute and an 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/set-environment-variables/#use-the-env_file-attribute"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/set-environment-variables/#use-the-env_file-attribute"
       >environment file</a
     ></li>
 <li>From the command line</li>
 <li>From your 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/variable-interpolation/#substitute-from-the-shell"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/variable-interpolation/#substitute-from-the-shell"
       >shell</a
     ></li>
 </ul>
 <p>When changing or setting any environment variables, be aware of 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/envvars-precedence/"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/envvars-precedence/"
       >Environment variable precedence</a
     >.</p>
 
@@ -11651,11 +11651,11 @@ underscores, and must begin with a lowercase letter or decimal digit. If the
 constraint, you must use one of the other mechanisms.</p>
 <p>See also the <a
       class="link"
-      href="https://docs.docker.com/compose/reference/#command-options-overview-and-help"
+      href="https://docker.qubitpi.org/compose/reference/#command-options-overview-and-help"
       >command-line options overview</a
     > and <a
       class="link"
-      href="https://docs.docker.com/compose/reference/#use--p-to-specify-a-project-name"
+      href="https://docker.qubitpi.org/compose/reference/#use--p-to-specify-a-project-name"
       >using <code>-p</code> to specify a project name</a
     >.</p>
 
@@ -11679,11 +11679,11 @@ constraint, you must use one of the other mechanisms.</p>
 <p>Example: <code>COMPOSE_FILE=docker-compose.yml:docker-compose.prod.yml</code>.</p>
 <p>See also the <a
       class="link"
-      href="https://docs.docker.com/compose/reference/#command-options-overview-and-help"
+      href="https://docker.qubitpi.org/compose/reference/#command-options-overview-and-help"
       >command-line options overview</a
     > and <a
       class="link"
-      href="https://docs.docker.com/compose/reference/#use--f-to-specify-name-and-path-of-one-or-more-compose-files"
+      href="https://docker.qubitpi.org/compose/reference/#use--f-to-specify-name-and-path-of-one-or-more-compose-files"
       >using <code>-f</code> to specify name and path of one or more Compose files</a
     >.</p>
 
@@ -11703,11 +11703,11 @@ Services with matching profiles are started as well as any services for which no
 <p>Example: <code>COMPOSE_PROFILES=frontend,debug</code><br>
 This example enables all services matching both the <code>frontend</code> and <code>debug</code> profiles and services without a profile.</p>
 <p>See also 
-    <a class="link" href="https://docs.docker.com/compose/profiles/"
+    <a class="link" href="https://docker.qubitpi.org/compose/profiles/"
       >Using profiles with Compose</a
     > and the <a
       class="link"
-      href="https://docs.docker.com/compose/reference/#use---profile-to-specify-one-or-more-active-profiles"
+      href="https://docker.qubitpi.org/compose/reference/#use---profile-to-specify-one-or-more-active-profiles"
       ><code>--profile</code> command-line option</a
     >.</p>
 
@@ -11841,10 +11841,10 @@ The default value is false to clearly separate the output streams between Compos
 </h3>
 
 <p>When enabled, Compose displays a navigation menu where you can choose to open the Compose stack in Docker Desktop, switch on 
-    <a class="link" href="https://docs.docker.com/compose/file-watch/"
+    <a class="link" href="https://docker.qubitpi.org/compose/file-watch/"
       ><code>watch</code> mode</a
     >, or use 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/debug/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/debug/"
       >Docker Debug</a
     >.</p>
 <ul>
@@ -11868,7 +11868,7 @@ The default value is false to clearly separate the output streams between Compos
 </h3>
 
 <p>This is an opt-out variable. When turned off it deactivates the experimental features such as the navigation menu or 
-    <a class="link" href="https://docs.docker.com/desktop/synchronized-file-sharing/"
+    <a class="link" href="https://docker.qubitpi.org/desktop/synchronized-file-sharing/"
       >Synchronized file shares</a
     >.</p>
 <ul>
@@ -11893,14 +11893,14 @@ The default value is false to clearly separate the output streams between Compos
 
 <p>The following environment variables have no effect in Compose V2.
 For more information, see 
-    <a class="link" href="https://docs.docker.com/compose/migrate/"
+    <a class="link" href="https://docker.qubitpi.org/compose/migrate/"
       >Migrate to Compose V2</a
     >.</p>
 <ul>
 <li><code>COMPOSE_API_VERSION</code>
 By default the API version is negotiated with the server. Use <code>DOCKER_API_VERSION</code>.<br>
 See the 
-    <a class="link" href="https://docs.docker.com/engine/reference/commandline/cli/#environment-variables"
+    <a class="link" href="https://docker.qubitpi.org/engine/reference/commandline/cli/#environment-variables"
       >Docker CLI environment variable reference</a
     > page.</li>
 <li><code>COMPOSE_HTTP_TIMEOUT</code></li>
@@ -11932,7 +11932,7 @@ Use <code>DOCKER_BUILDKIT</code> to select between BuildKit and the classic buil
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fcompose%2fenvironment-variables%2fenvvars%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fcompose%2fenvironment-variables%2fenvvars%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>

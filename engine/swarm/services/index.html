@@ -17,25 +17,25 @@
   name="keywords"
   content="guide, swarm, mode, swarm, service"
 />
-<link rel="canonical" href="https://docs.docker.com/engine/swarm/services/" />
+<link rel="canonical" href="https://docker.qubitpi.org/engine/swarm/services/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="Deploy services to a swarm"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Deploy services to a swarm" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/engine/swarm/services/" />
+<meta property="og:url" content="https://docker.qubitpi.org/engine/swarm/services/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Deploy services to a swarm\"","description":"\"Deploy services to a swarm\"","url":"https:\/\/docs.docker.com\/engine\/swarm\/services\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Deploy services to a swarm\"","description":"\"Deploy services to a swarm\"","url":"https:\/\/docker.qubitpi.org\/engine\/swarm\/services\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11633,12 +11633,12 @@ whether a rolling restart is used)</li>
 constraints and placement preferences)</li>
 </ul>
 <p>For an overview of Swarm mode, see 
-    <a class="link" href="https://docs.docker.com/engine/swarm/key-concepts/"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/key-concepts/"
       >Swarm mode key concepts</a
     >.
 For an overview of how services work, see
 
-    <a class="link" href="https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/services/"
       >How services work</a
     >.</p>
 
@@ -11699,7 +11699,7 @@ was created and started successfully, use the <code>docker service ls</code> com
 state if its image is unavailable, if no node meets the requirements you
 configure for the service, or for other reasons. See
 
-    <a class="link" href="https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/#pending-services"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/how-swarm-mode-works/services/#pending-services"
       >Pending services</a
     > for more
 information.</p>
@@ -12061,11 +12061,11 @@ define a configuration at service creation, you can also update an existing
 service's configuration in a similar way.</p>
 <p>See the command-line references for
 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/service/create/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/service/create/"
       ><code>docker service create</code></a
     > and
 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/service/update/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/service/update/"
       ><code>docker service update</code></a
     >, or run
 one of those commands with the <code>--help</code> flag.</p>
@@ -12156,7 +12156,7 @@ different ways, depending on your desired outcome.</p>
 <p>If you specify a tag, the manager (or the Docker client, if you use
 <a
       class="link"
-      href="https://docs.docker.com/engine/security/trust/"
+      href="https://docker.qubitpi.org/engine/security/trust/"
       >content trust</a
     >) resolves that tag to a digest.
 When the request to create a container task is received on a worker node, the
@@ -12251,7 +12251,7 @@ of the image.</p>
 <p><strong>Note</strong>&gt;</p>
 <p>If <a
       class="link"
-      href="https://docs.docker.com/engine/security/trust/"
+      href="https://docker.qubitpi.org/engine/security/trust/"
       >content trust</a
     > is
 enabled, the client actually resolves the image's tag to a digest before
@@ -12350,7 +12350,7 @@ points to and updates the service tasks to use that digest.</p>
 <p><strong>Note</strong></p>
 <p>If you use <a
       class="link"
-      href="https://docs.docker.com/engine/security/trust/"
+      href="https://docker.qubitpi.org/engine/security/trust/"
       >content trust</a
     >, the Docker
 client resolves image and the swarm manager receives the image and digest,
@@ -12467,7 +12467,7 @@ ports of the service tasks to interact with the service. When a user or process
 connects to a service, any worker node running a service task may respond. For
 more details about swarm service networking, see
 
-    <a class="link" href="https://docs.docker.com/engine/swarm/networking/"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/networking/"
       >Manage swarm service networks</a
     >.</p>
 
@@ -12708,11 +12708,11 @@ to the overlay network:</p>
 </div>
 <p>For more information on overlay networking and service discovery, refer to
 
-    <a class="link" href="https://docs.docker.com/engine/swarm/networking/"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/networking/"
       >Attach services to an overlay network</a
     > and
 
-    <a class="link" href="https://docs.docker.com/network/drivers/overlay/"
+    <a class="link" href="https://docker.qubitpi.org/network/drivers/overlay/"
       >Docker swarm mode overlay network security model</a
     >.</p>
 
@@ -12725,7 +12725,7 @@ to the overlay network:</p>
 <p>To create a service with access to Docker-managed secrets, use the <code>--secret</code>
 flag. For more information, see
 
-    <a class="link" href="https://docs.docker.com/engine/swarm/secrets/"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/secrets/"
       >Manage sensitive strings (secrets) for Docker services</a
     ></p>
 
@@ -12900,7 +12900,7 @@ deploys a service to the node. You can apply constraints to the
 service based upon node attributes and metadata or engine metadata. For more
 information on constraints, refer to the <code>docker service create</code>
 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/service/create/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/service/create/"
       >CLI reference</a
     >.</p>
 
@@ -12928,7 +12928,7 @@ Docker daemon, might be killed by the kernel OOM killer. To prevent this from
 happening, ensure that your application runs on hosts with adequate memory and
 see
 
-    <a class="link" href="https://docs.docker.com/config/containers/resource_constraints/#understand-the-risks-of-running-out-of-memory"
+    <a class="link" href="https://docker.qubitpi.org/config/containers/resource_constraints/#understand-the-risks-of-running-out-of-memory"
       >Understand the risks of running out of memory</a
     >.</p>
 <p>Swarm services allow you to use resource constraints, placement preferences, and
@@ -12943,7 +12943,7 @@ labels to ensure that your service is deployed to the appropriate swarm nodes.</
 <p>Use placement constraints to control the nodes a service can be assigned to. In
 the following example, the service only runs on nodes with the
 
-    <a class="link" href="https://docs.docker.com/engine/swarm/manage-nodes/#add-or-remove-label-metadata"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/manage-nodes/#add-or-remove-label-metadata"
       >label</a
     > <code>region</code> set
 to <code>east</code>. If no appropriately-labelled nodes are available, tasks will wait in
@@ -13012,7 +13012,7 @@ and CPU/memory constraints. Be careful not to use settings that are not
 possible to fulfill.</p>
 <p>For more information on constraints, refer to the <code>docker service create</code>
 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/service/create/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/service/create/"
       >CLI reference</a
     >.</p>
 
@@ -13125,7 +13125,7 @@ possible to fulfill.</p>
 >
   <img
     loading="lazy"
-    src="https://docs.docker.com/engine/swarm/images/placement_prefs.png"
+    src="https://docker.qubitpi.org/engine/swarm/images/placement_prefs.png"
     alt="How placement preferences work"
     
     
@@ -13147,7 +13147,7 @@ possible to fulfill.</p>
       <img
         loading="lazy"
         class="rounded max-w-full max-h-full"
-        src="https://docs.docker.com/engine/swarm/images/placement_prefs.png"
+        src="https://docker.qubitpi.org/engine/swarm/images/placement_prefs.png"
         alt="How placement preferences work"
       />
     </div>
@@ -13418,7 +13418,7 @@ pattern, specify the driver and its options with the <code>--mount</code> flag:<
 </div>
 <p>For more information on how to create data volumes and the use of volume
 drivers, see 
-    <a class="link" href="https://docs.docker.com/storage/volumes/"
+    <a class="link" href="https://docker.qubitpi.org/storage/volumes/"
       >Use volumes</a
     >.</p>
 
@@ -13650,16 +13650,16 @@ service's name and the ID of the node where the container is running:</p>
 
 <ul>
 <li>
-    <a class="link" href="https://docs.docker.com/engine/swarm/admin_guide/"
+    <a class="link" href="https://docker.qubitpi.org/engine/swarm/admin_guide/"
       >Swarm administration guide</a
     ></li>
 <li>
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/"
       >Docker Engine command line reference</a
     ></li>
 <li><a
       class="link"
-      href="https://docs.docker.com/engine/swarm/swarm-tutorial/"
+      href="https://docker.qubitpi.org/engine/swarm/swarm-tutorial/"
       >Swarm mode tutorial</a
     ></li>
 </ul>
@@ -13685,7 +13685,7 @@ service's name and the ID of the node where the container is running:</p>
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fengine%2fswarm%2fservices%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fengine%2fswarm%2fservices%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>

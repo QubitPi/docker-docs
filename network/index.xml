@@ -2,58 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Networking overview on Docker Docs</title>
-    <link>https://docs.docker.com/network/</link>
+    <link>https://docker.qubitpi.org/network/</link>
     <description>Recent content in Networking overview on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Configure Docker to use a proxy server</title>
-      <link>https://docs.docker.com/network/proxy/</link>
+      <link>https://docker.qubitpi.org/network/proxy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/proxy/</guid>
+      <guid>https://docker.qubitpi.org/network/proxy/</guid>
       <description>This page describes how to configure the Docker CLI to use proxies via environment variables in containers.&#xA;This page doesn&#39;t describe how to configure proxies for the Docker daemon. For instructions on configuring Docker Desktop to use HTTP/HTTPS proxies, see proxies on Mac, proxies on Windows, and proxies on Linux.&#xA;If you&#39;re running Docker Engine without Docker Desktop, refer to Configure the Docker daemon to use a proxy to learn how to configure a proxy server for the Docker daemon (dockerd) itself.</description>
     </item>
     <item>
       <title>Legacy container links</title>
-      <link>https://docs.docker.com/network/links/</link>
+      <link>https://docker.qubitpi.org/network/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/links/</guid>
+      <guid>https://docker.qubitpi.org/network/links/</guid>
       <description>Warning&#xA;The --link flag is a legacy feature of Docker. It may eventually be removed. Unless you absolutely need to continue using it, we recommend that you use user-defined networks to facilitate communication between two containers instead of using --link. One feature that user-defined networks do not support that you can do with --link is sharing environment variables between containers. However, you can use other mechanisms such as volumes to share environment variables between containers in a more controlled way.</description>
     </item>
     <item>
       <title>Networking using a macvlan network</title>
-      <link>https://docs.docker.com/network/network-tutorial-macvlan/</link>
+      <link>https://docker.qubitpi.org/network/network-tutorial-macvlan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/network-tutorial-macvlan/</guid>
+      <guid>https://docker.qubitpi.org/network/network-tutorial-macvlan/</guid>
       <description>This series of tutorials deals with networking standalone containers which connect to macvlan networks. In this type of network, the Docker host accepts requests for multiple MAC addresses at its IP address, and routes those requests to the appropriate container. For other networking topics, see the overview.&#xA;Goal The goal of these tutorials is to set up a bridged macvlan network and attach a container to it, then set up an 802.</description>
     </item>
     <item>
       <title>Networking using the host network</title>
-      <link>https://docs.docker.com/network/network-tutorial-host/</link>
+      <link>https://docker.qubitpi.org/network/network-tutorial-host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/network-tutorial-host/</guid>
+      <guid>https://docker.qubitpi.org/network/network-tutorial-host/</guid>
       <description>This series of tutorials deals with networking standalone containers which bind directly to the Docker host&#39;s network, with no network isolation. For other networking topics, see the overview.&#xA;Goal The goal of this tutorial is to start a nginx container which binds directly to port 80 on the Docker host. From a networking point of view, this is the same level of isolation as if the nginx process were running directly on the Docker host and not in a container.</description>
     </item>
     <item>
       <title>Networking with overlay networks</title>
-      <link>https://docs.docker.com/network/network-tutorial-overlay/</link>
+      <link>https://docker.qubitpi.org/network/network-tutorial-overlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/network-tutorial-overlay/</guid>
+      <guid>https://docker.qubitpi.org/network/network-tutorial-overlay/</guid>
       <description>This series of tutorials deals with networking for swarm services. For networking with standalone containers, see Networking with standalone containers. If you need to learn more about Docker networking in general, see the overview.&#xA;This page includes the following tutorials. You can run each of them on Linux, Windows, or a Mac, but for the last one, you need a second Docker host running elsewhere.&#xA;Use the default overlay network demonstrates how to use the default overlay network that Docker sets up for you automatically when you initialize or join a swarm.</description>
     </item>
     <item>
       <title>Networking with standalone containers</title>
-      <link>https://docs.docker.com/network/network-tutorial-standalone/</link>
+      <link>https://docker.qubitpi.org/network/network-tutorial-standalone/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/network-tutorial-standalone/</guid>
+      <guid>https://docker.qubitpi.org/network/network-tutorial-standalone/</guid>
       <description>This series of tutorials deals with networking for standalone Docker containers. For networking with swarm services, see Networking with swarm services. If you need to learn more about Docker networking in general, see the overview.&#xA;This topic includes two different tutorials. You can run each of them on Linux, Windows, or a Mac, but for the last one, you need a second Docker host running elsewhere.&#xA;Use the default bridge network demonstrates how to use the default bridge network that Docker sets up for you automatically.</description>
     </item>
     <item>
       <title>Packet filtering and firewalls</title>
-      <link>https://docs.docker.com/network/packet-filtering-firewalls/</link>
+      <link>https://docker.qubitpi.org/network/packet-filtering-firewalls/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/packet-filtering-firewalls/</guid>
+      <guid>https://docker.qubitpi.org/network/packet-filtering-firewalls/</guid>
       <description>On Linux, Docker creates iptables and ip6tables rules to implement network isolation, port publishing and filtering.&#xA;Because these rules are required for the correct functioning of Docker bridge networks, you should not modify the rules created by Docker.&#xA;But, if you are running Docker on a host exposed to the internet, you will probably want to add iptables policies that prevent unauthorized access to containers or other services running on your host.</description>
     </item>
   </channel>

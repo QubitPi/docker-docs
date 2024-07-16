@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cache storage backends on Docker Docs</title>
-    <link>https://docs.docker.com/build/cache/backends/</link>
+    <link>https://docker.qubitpi.org/build/cache/backends/</link>
     <description>Recent content in Cache storage backends on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/build/cache/backends/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/build/cache/backends/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Amazon S3 cache</title>
-      <link>https://docs.docker.com/build/cache/backends/s3/</link>
+      <link>https://docker.qubitpi.org/build/cache/backends/s3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/build/cache/backends/s3/</guid>
+      <guid>https://docker.qubitpi.org/build/cache/backends/s3/</guid>
       <description>Experimental&#xA;This is an experimental feature. The interface and behavior are unstable and may change in future releases.&#xA;The s3 cache storage uploads your resulting build cache to Amazon S3 file storage service or other S3-compatible services, such as MinIO.&#xA;This cache storage backend is not supported with the default docker driver. To use this feature, create a new builder using a different driver. See Build drivers for more information.</description>
     </item>
     <item>
       <title>Azure Blob Storage cache</title>
-      <link>https://docs.docker.com/build/cache/backends/azblob/</link>
+      <link>https://docker.qubitpi.org/build/cache/backends/azblob/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/build/cache/backends/azblob/</guid>
+      <guid>https://docker.qubitpi.org/build/cache/backends/azblob/</guid>
       <description>Experimental&#xA;This is an experimental feature. The interface and behavior are unstable and may change in future releases.&#xA;The azblob cache store uploads your resulting build cache to Azure&#39;s blob storage service.&#xA;This cache storage backend is not supported with the default docker driver. To use this feature, create a new builder using a different driver. See Build drivers for more information.&#xA;Synopsis $ docker buildx build --push -t &amp;lt;registry&amp;gt;/&amp;lt;image&amp;gt; \ --cache-to type=azblob,name=&amp;lt;cache-image&amp;gt;[,parameters.</description>
     </item>
     <item>
       <title>GitHub Actions cache</title>
-      <link>https://docs.docker.com/build/cache/backends/gha/</link>
+      <link>https://docker.qubitpi.org/build/cache/backends/gha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/build/cache/backends/gha/</guid>
+      <guid>https://docker.qubitpi.org/build/cache/backends/gha/</guid>
       <description>Experimental&#xA;This is an experimental feature. The interface and behavior are unstable and may change in future releases.&#xA;The GitHub Actions cache utilizes the GitHub-provided Action&#39;s cache or other cache services supporting the GitHub Actions cache protocol. This is the recommended cache to use inside your GitHub Actions workflows, as long as your use case falls within the size and usage limits set by GitHub.&#xA;This cache storage backend is not supported with the default docker driver.</description>
     </item>
     <item>
       <title>Inline cache</title>
-      <link>https://docs.docker.com/build/cache/backends/inline/</link>
+      <link>https://docker.qubitpi.org/build/cache/backends/inline/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/build/cache/backends/inline/</guid>
+      <guid>https://docker.qubitpi.org/build/cache/backends/inline/</guid>
       <description>The inline cache storage backend is the simplest way to get an external cache and is easy to get started using if you&#39;re already building and pushing an image.&#xA;The downside of inline cache is that it doesn&#39;t scale with multi-stage builds as well as the other drivers do. It also doesn&#39;t offer separation between your output artifacts and your cache output. This means that if you&#39;re using a particularly complex build flow, or not exporting your images directly to a registry, then you may want to consider the registry cache.</description>
     </item>
     <item>
       <title>Local cache</title>
-      <link>https://docs.docker.com/build/cache/backends/local/</link>
+      <link>https://docker.qubitpi.org/build/cache/backends/local/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/build/cache/backends/local/</guid>
+      <guid>https://docker.qubitpi.org/build/cache/backends/local/</guid>
       <description>The local cache store is a simple cache option that stores your cache as files in a directory on your filesystem, using an OCI image layout for the underlying directory structure. Local cache is a good choice if you&#39;re just testing, or if you want the flexibility to self-manage a shared storage solution.&#xA;Synopsis $ docker buildx build --push -t &amp;lt;registry&amp;gt;/&amp;lt;image&amp;gt; \ --cache-to type=local,dest=path/to/local/dir[,parameters...] \ --cache-from type=local,src=path/to/local/dir . The following table describes the available CSV parameters that you can pass to --cache-to and --cache-from.</description>
     </item>
     <item>
       <title>Registry cache</title>
-      <link>https://docs.docker.com/build/cache/backends/registry/</link>
+      <link>https://docker.qubitpi.org/build/cache/backends/registry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/build/cache/backends/registry/</guid>
+      <guid>https://docker.qubitpi.org/build/cache/backends/registry/</guid>
       <description>The registry cache storage can be thought of as an extension to the inline cache. Unlike the inline cache, the registry cache is entirely separate from the image, which allows for more flexible usage - registry-backed cache can do everything that the inline cache can do, and more:&#xA;Allows for separating the cache and resulting image artifacts so that you can distribute your final image without the cache inside. It can efficiently cache multi-stage builds in max mode, instead of only the final stage.</description>
     </item>
   </channel>

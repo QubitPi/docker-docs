@@ -17,25 +17,25 @@
   name="keywords"
   content="compose, orchestration, environment, environment, variables, container, environment, variables"
 />
-<link rel="canonical" href="https://docs.docker.com/compose/environment-variables/set-environment-variables/" />
+<link rel="canonical" href="https://docker.qubitpi.org/compose/environment-variables/set-environment-variables/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="How to set, use, and manage environment variables with Compose"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Set environment variables within your container&#39;s environment" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/compose/environment-variables/set-environment-variables/" />
+<meta property="og:url" content="https://docker.qubitpi.org/compose/environment-variables/set-environment-variables/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Set environment variables within your container's environment\"","description":"\"How to set, use, and manage environment variables with Compose\"","url":"https:\/\/docs.docker.com\/compose\/environment-variables\/set-environment-variables\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Set environment variables within your container's environment\"","description":"\"How to set, use, and manage environment variables with Compose\"","url":"https:\/\/docker.qubitpi.org\/compose\/environment-variables\/set-environment-variables\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11556,7 +11556,7 @@ Early Access"
     <p>A container's environment is not set until there's an explicit entry in the service configuration to make this happen. With Compose, there are two ways you can set environment variables in your containers with your Compose file.</p>
 <blockquote class="tip"><p><strong>Tip</strong></p>
 <p>Don't use environment variables to pass sensitive information, such as passwords, in to your containers. Use 
-    <a class="link" href="https://docs.docker.com/compose/use-secrets/"
+    <a class="link" href="https://docker.qubitpi.org/compose/use-secrets/"
       >secrets</a
     > instead.</p>
 </blockquote>
@@ -11569,7 +11569,7 @@ Early Access"
 
 <p>You can set environment variables directly in your container's environment with the
 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/05-services/#environment"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/05-services/#environment"
       ><code>environment</code> attribute</a
     > in your <code>compose.yml</code>.</p>
 <p>It supports both list and mapping syntax:</p>
@@ -11617,7 +11617,7 @@ Early Access"
   </div>
 </div>
 <p>See 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/05-services/#environment"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/05-services/#environment"
       ><code>environment</code> attribute</a
     > for more examples on how to use it.</p>
 
@@ -11655,7 +11655,7 @@ Early Access"
 <ul>
 <li>
 <p>You can also take advantage of 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/variable-interpolation/#interpolation-syntax"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/variable-interpolation/#interpolation-syntax"
       >interpolation</a
     >. In the following example, the result is similar to the one above but Compose gives you a warning if the <code>DEBUG</code> variable is not set in the shell environment or in an <code>.env</code> file in the project directory.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
@@ -11688,10 +11688,10 @@ Early Access"
 </h2>
 
 <p>A container's environment can also be set using 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/variable-interpolation/#env-file"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/variable-interpolation/#env-file"
       ><code>.env</code> files</a
     > along with the 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/05-services/#env_file"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/05-services/#env_file"
       ><code>env_file</code> attribute</a
     >.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
@@ -11717,7 +11717,7 @@ Early Access"
 <p>Using an <code>.env</code> file lets you to use the same file for use by a plain <code>docker run --env-file ...</code> command, or to share the same <code>.env</code> file within multiple services without the need to duplicate a long <code>environment</code> YAML block.</p>
 <p>It can also help you keep your environment variables separate from your main configuration file, providing a more organized and secure way to manage sensitive information, as you do not need to place your <code>.env</code> file in the root of your project's directory.</p>
 <p>The 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/05-services/#env_file"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/05-services/#env_file"
       ><code>env_file</code> attribute</a
     > also lets you use multiple <code>.env</code> files in your Compose application.</p>
 <p>The paths to your <code>.env</code> file, specified in the <code>env_file</code> attribute, are relative to the location of your <code>compose.yml</code> file.</p>
@@ -11735,7 +11735,7 @@ Early Access"
 <ul>
 <li>If multiple files are specified, they are evaluated in order and can override values set in previous files.</li>
 <li>In addition, as the <code>.env</code> file supports 
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/variable-interpolation/"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/variable-interpolation/"
       >interpolation</a
     >, it is possible to combine those with values set by <code>environment</code>.</li>
 <li>As of Docker Compose version 2.24.0, you can set your <code>.env</code> file, defined by the <code>env_file</code> attribute, to be optional by using the <code>required</code> field. When <code>required</code> is set to <code>false</code> and the <code>.env</code> file is missing, Compose silently ignores the entry.
@@ -11835,19 +11835,19 @@ Early Access"
 
 <ul>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/envvars-precedence/"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/envvars-precedence/"
       >Understand environment variable precedence</a
     >.</li>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/envvars/"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/envvars/"
       >Set or change predefined environment variables</a
     ></li>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/best-practices/"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/best-practices/"
       >Explore best practices</a
     ></li>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/environment-variables/variable-interpolation/"
+    <a class="link" href="https://docker.qubitpi.org/compose/environment-variables/variable-interpolation/"
       >Understand interpolation</a
     ></li>
 </ul>
@@ -11873,7 +11873,7 @@ Early Access"
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fcompose%2fenvironment-variables%2fset-environment-variables%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fcompose%2fenvironment-variables%2fset-environment-variables%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>

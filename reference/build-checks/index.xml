@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Build checks on Docker Docs</title>
-    <link>https://docs.docker.com/reference/build-checks/</link>
+    <link>https://docker.qubitpi.org/reference/build-checks/</link>
     <description>Recent content in Build checks on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/reference/build-checks/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/reference/build-checks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ConsistentInstructionCasing</title>
-      <link>https://docs.docker.com/reference/build-checks/consistent-instruction-casing/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/consistent-instruction-casing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/consistent-instruction-casing/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/consistent-instruction-casing/</guid>
       <description>Output Command &amp;#39;EntryPoint&amp;#39; should be consistently cased Description Instruction keywords should use consistent casing (all lowercase or all uppercase). Using a case that mixes uppercase and lowercase, such as PascalCase or snakeCase, letters result in poor readability.&#xA;Examples ❌ Bad: don&#39;t mix uppercase and lowercase.&#xA;From alpine Run echo hello &amp;gt; /greeting.txt EntRYpOiNT [&amp;#34;cat&amp;#34;, &amp;#34;/greeting.txt&amp;#34;] ✅ Good: all uppercase.&#xA;FROM alpine RUN echo hello &amp;gt; /greeting.txt ENTRYPOINT [&amp;#34;cat&amp;#34;, &amp;#34;/greeting.txt&amp;#34;] ✅ Good: all lowercase.</description>
     </item>
     <item>
       <title>DuplicateStageName</title>
-      <link>https://docs.docker.com/reference/build-checks/duplicate-stage-name/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/duplicate-stage-name/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/duplicate-stage-name/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/duplicate-stage-name/</guid>
       <description> Output Duplicate stage name &amp;#39;foo-base&amp;#39;, stage names should be unique Description Defining multiple stages with the same name results in an error because the builder is unable to uniquely resolve the stage name reference.&#xA;Examples ❌ Bad: builder is declared as a stage name twice.&#xA;FROM debian:latest AS builder RUN apt-get update; apt-get install -y curl FROM golang:latest AS builder ✅ Good: stages have unique names.&#xA;FROM debian:latest AS deb-builder RUN apt-get update; apt-get install -y curl FROM golang:latest AS go-builder </description>
     </item>
     <item>
       <title>FileConsistentCommandCasing</title>
-      <link>https://docs.docker.com/reference/build-checks/file-consistent-command-casing/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/file-consistent-command-casing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/file-consistent-command-casing/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/file-consistent-command-casing/</guid>
       <description>Output Example warning:&#xA;Command &amp;#39;foo&amp;#39; should match the case of the command majority (uppercase) Description Instructions within a Dockerfile should have consistent casing through out the entire files. Instructions are not case-sensitive, but the convention is to use uppercase for instruction keywords to make it easier to distinguish keywords from arguments.&#xA;Whether you prefer instructions to be uppercase or lowercase, you should make sure you use consistent casing to help improve readability of the Dockerfile.</description>
     </item>
     <item>
       <title>FromAsCasing</title>
-      <link>https://docs.docker.com/reference/build-checks/from-as-casing/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/from-as-casing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/from-as-casing/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/from-as-casing/</guid>
       <description>Output &amp;#39;as&amp;#39; and &amp;#39;FROM&amp;#39; keywords&amp;#39; casing do not match Description While Dockerfile keywords can be either uppercase or lowercase, mixing case styles is not recommended for readability. This rule reports violations where mixed case style occurs for a FROM instruction with an AS keyword declaring a stage name.&#xA;Examples ❌ Bad: FROM is uppercase, AS is lowercase.&#xA;FROM debian:latest as builder ✅ Good: FROM and AS are both uppercase</description>
     </item>
     <item>
       <title>JSONArgsRecommended</title>
-      <link>https://docs.docker.com/reference/build-checks/json-args-recommended/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/json-args-recommended/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/json-args-recommended/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/json-args-recommended/</guid>
       <description>Output JSON arguments recommended for ENTRYPOINT/CMD to prevent unintended behavior related to OS signals Description ENTRYPOINT and CMD instructions both support two different syntaxes for arguments:&#xA;Shell form: CMD my-cmd start Exec form: CMD [&amp;quot;my-cmd&amp;quot;, &amp;quot;start&amp;quot;] When you use shell form, the executable runs as a child process to a shell, which doesn&#39;t pass signals. This means that the program running in the container can&#39;t detect OS signals like SIGTERM and SIGKILL and respond to them correctly.</description>
     </item>
     <item>
       <title>LegacyKeyValueFormat</title>
-      <link>https://docs.docker.com/reference/build-checks/legacy-key-value-format/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/legacy-key-value-format/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/legacy-key-value-format/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/legacy-key-value-format/</guid>
       <description>Output &amp;#34;ENV key=value&amp;#34; should be used instead of legacy &amp;#34;ENV key value&amp;#34; format Description The correct format for declaring environment variables and build arguments in a Dockerfile is ENV key=value and ARG key=value, where the variable name (key) and value (value) are separated by an equals sign (=). Historically, Dockerfiles have also supported a space separator between the key and the value (for example, ARG key value). This legacy format is deprecated, and you should only use the format with the equals sign.</description>
     </item>
     <item>
       <title>MaintainerDeprecated</title>
-      <link>https://docs.docker.com/reference/build-checks/maintainer-deprecated/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/maintainer-deprecated/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/maintainer-deprecated/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/maintainer-deprecated/</guid>
       <description> Output MAINTAINER instruction is deprecated in favor of using label Description The MAINTAINER instruction, used historically for specifying the author of the Dockerfile, is deprecated. To set author metadata for an image, use the org.opencontainers.image.authors OCI label.&#xA;Examples ❌ Bad: don&#39;t use the MAINTAINER instruction&#xA;MAINTAINER moby@example.com ✅ Good: specify the author using the org.opencontainers.image.authors label&#xA;LABEL org.opencontainers.image.authors=&amp;#34;moby@example.com&amp;#34; </description>
     </item>
     <item>
       <title>MultipleInstructionsDisallowed</title>
-      <link>https://docs.docker.com/reference/build-checks/multiple-instructions-disallowed/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/multiple-instructions-disallowed/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/multiple-instructions-disallowed/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/multiple-instructions-disallowed/</guid>
       <description>Output Multiple CMD instructions should not be used in the same stage because only the last one will be used Description If you have multiple CMD, HEALTHCHECK, or ENTRYPOINT instructions in your Dockerfile, only the last occurrence is used. An image can only ever have one CMD, HEALTHCHECK, and ENTRYPOINT.&#xA;Examples ❌ Bad: Duplicate instructions.&#xA;FROM alpine CMD echo &amp;#34;Hello, Norway!&amp;#34; CMD echo &amp;#34;Hello, Sweden!&amp;#34; # Only &amp;#34;Hello, Sweden!&amp;#34; will be printed ✅ Good: only one CMD instruction.</description>
     </item>
     <item>
       <title>NoEmptyContinuation</title>
-      <link>https://docs.docker.com/reference/build-checks/no-empty-continuation/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/no-empty-continuation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/no-empty-continuation/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/no-empty-continuation/</guid>
       <description>Output Empty continuation line found in: RUN apk add gnupg curl Description Support for empty continuation (/) lines have been deprecated and will generate errors in future versions of the Dockerfile syntax.&#xA;Empty continuation lines are empty lines following a newline escape:&#xA;FROM alpine RUN apk add \ gnupg \ curl Support for such empty lines is deprecated, and a future BuildKit release will remove support for this syntax entirely, causing builds to break.</description>
     </item>
     <item>
       <title>ReservedStageName</title>
-      <link>https://docs.docker.com/reference/build-checks/reserved-stage-name/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/reserved-stage-name/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/reserved-stage-name/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/reserved-stage-name/</guid>
       <description> Output &amp;#39;scratch&amp;#39; is reserved and should not be used as a stage name Description Reserved words should not be used as names for stages in multi-stage builds. The reserved words are:&#xA;context scratch Examples ❌ Bad: scratch and context are reserved names.&#xA;FROM alpine AS scratch FROM alpine AS context ✅ Good: the stage name builder is not reserved.&#xA;FROM alpine AS builder </description>
     </item>
     <item>
       <title>StageNameCasing</title>
-      <link>https://docs.docker.com/reference/build-checks/stage-name-casing/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/stage-name-casing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/stage-name-casing/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/stage-name-casing/</guid>
       <description> Output Stage name &amp;#39;BuilderBase&amp;#39; should be lowercase Description To help distinguish Dockerfile instruction keywords from identifiers, this rule forces names of stages in a multi-stage Dockerfile to be all lowercase.&#xA;Examples ❌ Bad: mixing uppercase and lowercase characters in the stage name.&#xA;FROM alpine AS BuilderBase ✅ Good: stage name is all in lowercase.&#xA;FROM alpine AS builder-base </description>
     </item>
     <item>
       <title>UndefinedArgInFrom</title>
-      <link>https://docs.docker.com/reference/build-checks/undefined-arg-in-from/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/undefined-arg-in-from/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/undefined-arg-in-from/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/undefined-arg-in-from/</guid>
       <description>Output FROM argument &amp;#39;VARIANT&amp;#39; is not declared Description This rule warns for cases where you&#39;re consuming an undefined build argument in FROM instructions.&#xA;Interpolating build arguments in FROM instructions can be a good way to add flexibility to your build, and lets you pass arguments that overriding the base image of a stage. For example, you might use a build argument to specify the image tag:&#xA;ARG ALPINE_VERSION=3.20 FROM alpine:${ALPINE_VERSION} This makes it possible to run the build with a different alpine version by specifying a build argument:</description>
     </item>
     <item>
       <title>UndefinedVar</title>
-      <link>https://docs.docker.com/reference/build-checks/undefined-var/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/undefined-var/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/undefined-var/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/undefined-var/</guid>
       <description>Output Usage of undefined variable &amp;#39;$foo&amp;#39; Description Before you reference an environment variable or a build argument in a RUN instruction, you should ensure that the variable is declared in the Dockerfile, using the ARG or ENV instructions.&#xA;Attempting to access an environment variable without explicitly declaring it doesn&#39;t necessarily result in a build error, but it may yield an unexpected result or an error later on in the build process.</description>
     </item>
     <item>
       <title>WorkdirRelativePath</title>
-      <link>https://docs.docker.com/reference/build-checks/workdir-relative-path/</link>
+      <link>https://docker.qubitpi.org/reference/build-checks/workdir-relative-path/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/reference/build-checks/workdir-relative-path/</guid>
+      <guid>https://docker.qubitpi.org/reference/build-checks/workdir-relative-path/</guid>
       <description>Output Relative workdir &amp;#39;app/src&amp;#39; can have unexpected results if the base image changes Description When specifying WORKDIR in a build stage, you can use an absolute path, like /build, or a relative path, like ./build. Using a relative path means that the working directory is relative to whatever the previous working directory was. So if your base image uses /usr/local/foo as a working directory, and you specify a relative directory like WORKDIR build, the effective working directory becomes /usr/local/foo/build.</description>
     </item>
   </channel>

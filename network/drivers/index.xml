@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network drivers overview on Docker Docs</title>
-    <link>https://docs.docker.com/network/drivers/</link>
+    <link>https://docker.qubitpi.org/network/drivers/</link>
     <description>Recent content in Network drivers overview on Docker Docs</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://docs.docker.com/network/drivers/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docker.qubitpi.org/network/drivers/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bridge network driver</title>
-      <link>https://docs.docker.com/network/drivers/bridge/</link>
+      <link>https://docker.qubitpi.org/network/drivers/bridge/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/drivers/bridge/</guid>
+      <guid>https://docker.qubitpi.org/network/drivers/bridge/</guid>
       <description>In terms of networking, a bridge network is a Link Layer device which forwards traffic between network segments. A bridge can be a hardware device or a software device running within a host machine&#39;s kernel.&#xA;In terms of Docker, a bridge network uses a software bridge which lets containers connected to the same bridge network communicate, while providing isolation from containers that aren&#39;t connected to that bridge network. The Docker bridge driver automatically installs rules in the host machine so that containers on different bridge networks can&#39;t communicate directly with each other.</description>
     </item>
     <item>
       <title>Host network driver</title>
-      <link>https://docs.docker.com/network/drivers/host/</link>
+      <link>https://docker.qubitpi.org/network/drivers/host/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/drivers/host/</guid>
+      <guid>https://docker.qubitpi.org/network/drivers/host/</guid>
       <description>If you use the host network mode for a container, that container&#39;s network stack isn&#39;t isolated from the Docker host (the container shares the host&#39;s networking namespace), and the container doesn&#39;t get its own IP-address allocated. For instance, if you run a container which binds to port 80 and you use host networking, the container&#39;s application is available on port 80 on the host&#39;s IP address.&#xA;Note&#xA;Given that the container does not have its own IP-address when using host mode networking, port-mapping doesn&#39;t take effect, and the -p, --publish, -P, and --publish-all option are ignored, producing a warning instead:</description>
     </item>
     <item>
       <title>IPvlan network driver</title>
-      <link>https://docs.docker.com/network/drivers/ipvlan/</link>
+      <link>https://docker.qubitpi.org/network/drivers/ipvlan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/drivers/ipvlan/</guid>
+      <guid>https://docker.qubitpi.org/network/drivers/ipvlan/</guid>
       <description>The IPvlan driver gives users total control over both IPv4 and IPv6 addressing. The VLAN driver builds on top of that in giving operators complete control of layer 2 VLAN tagging and even IPvlan L3 routing for users interested in underlay network integration. For overlay deployments that abstract away physical constraints see the multi-host overlay driver.&#xA;IPvlan is a new twist on the tried and true network virtualization technique. The Linux implementations are extremely lightweight because rather than using the traditional Linux bridge for isolation, they are associated to a Linux Ethernet interface or sub-interface to enforce separation between networks and connectivity to the physical network.</description>
     </item>
     <item>
       <title>Macvlan network driver</title>
-      <link>https://docs.docker.com/network/drivers/macvlan/</link>
+      <link>https://docker.qubitpi.org/network/drivers/macvlan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/drivers/macvlan/</guid>
+      <guid>https://docker.qubitpi.org/network/drivers/macvlan/</guid>
       <description>Some applications, especially legacy applications or applications which monitor network traffic, expect to be directly connected to the physical network. In this type of situation, you can use the macvlan network driver to assign a MAC address to each container&#39;s virtual network interface, making it appear to be a physical network interface directly connected to the physical network. In this case, you need to designate a physical interface on your Docker host to use for the Macvlan, as well as the subnet and gateway of the network.</description>
     </item>
     <item>
       <title>None network driver</title>
-      <link>https://docs.docker.com/network/drivers/none/</link>
+      <link>https://docker.qubitpi.org/network/drivers/none/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/drivers/none/</guid>
+      <guid>https://docker.qubitpi.org/network/drivers/none/</guid>
       <description>If you want to completely isolate the networking stack of a container, you can use the --network none flag when starting the container. Within the container, only the loopback device is created.&#xA;The following example shows the output of ip link show in an alpine container using the none network driver.&#xA;$ docker run --rm --network none alpine:latest ip link show 1: lo: &amp;lt;LOOPBACK,UP,LOWER_UP&amp;gt; mtu 65536 qdisc noqueue state UNKNOWN qlen 1000 link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00 No IPv6 loopback address is configured for containers using the none driver.</description>
     </item>
     <item>
       <title>Overlay network driver</title>
-      <link>https://docs.docker.com/network/drivers/overlay/</link>
+      <link>https://docker.qubitpi.org/network/drivers/overlay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.docker.com/network/drivers/overlay/</guid>
+      <guid>https://docker.qubitpi.org/network/drivers/overlay/</guid>
       <description>The overlay network driver creates a distributed network among multiple Docker daemon hosts. This network sits on top of (overlays) the host-specific networks, allowing containers connected to it to communicate securely when encryption is enabled. Docker transparently handles routing of each packet to and from the correct Docker daemon host and the correct destination container.&#xA;You can create user-defined overlay networks using docker network create, in the same way that you can create user-defined bridge networks.</description>
     </item>
   </channel>

@@ -17,25 +17,25 @@
   name="keywords"
   content="compose, docker, compose, compose, specification, compose, model"
 />
-<link rel="canonical" href="https://docs.docker.com/compose/compose-application-model/" />
+<link rel="canonical" href="https://docker.qubitpi.org/compose/compose-application-model/" />
 
 
 
 <link
   rel="icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <link
   rel="apple-touch-icon"
   type="image/x-icon"
-  href="https://docs.docker.com/favicons/docs@2x.ico"
+  href="https://docker.qubitpi.org/favicons/docs@2x.ico"
   sizes="129x128"
 />
 <meta
   name="msapplication-TileImage"
-  content="https://docs.docker.com/favicons/docs@2x.ico"
+  content="https://docker.qubitpi.org/favicons/docs@2x.ico"
 />
 
 <meta name="theme-color" content="#2496ed" />
@@ -49,12 +49,12 @@
   content="Understand how Compose works and the Compose application model with an illustrative example"
 />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:domain" content="https://docs.docker.com/" />
+<meta name="twitter:domain" content="https://docker.qubitpi.org/" />
 <meta name="twitter:site" content="@docker_docs" />
 <meta name="twitter:url" content="https://twitter.com/docker_docs" />
 <meta
   name="twitter:image:src"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="How Compose works" />
@@ -63,22 +63,22 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
 <meta
   property="og:image"
   itemprop="image primaryImageOfPage"
-  content="https://docs.docker.com/assets/images/thumbnail.webp"
+  content="https://docker.qubitpi.org/assets/images/thumbnail.webp"
 />
 <meta property="og:locale" content="en_US" />
-<meta property="og:url" content="https://docs.docker.com/compose/compose-application-model/" />
+<meta property="og:url" content="https://docker.qubitpi.org/compose/compose-application-model/" />
 <meta property="og:site_name" content="Docker Documentation" />
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 11:57:49 &#43;0000 UTC"
+  content="2024-07-16 12:04:18 &#43;0000 UTC"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"How Compose works\"","description":"\"Understand how Compose works and the Compose application model with an illustrative example\"","url":"https:\/\/docs.docker.com\/compose\/compose-application-model\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"How Compose works\"","description":"\"Understand how Compose works and the Compose application model with an illustrative example\"","url":"https:\/\/docker.qubitpi.org\/compose\/compose-application-model\/"}</script>
 <script
     src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
     type="text/javascript"
@@ -138,13 +138,13 @@
 body > img { display: none }
 </style>
 
-<link href="https://docs.docker.com/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
+<link href="https://docker.qubitpi.org/css/styles.min.a1da898781ed501bfb22092a7411d0094c297108a3af2cb2a80d211a3324d480.css" rel="stylesheet" />
 
 
 <script>(()=>{function t(){let e=localStorage.getItem("theme-preference");return e||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}var r=t();document.firstElementChild.className=r==="dark"?"dark":"light";localStorage.setItem("theme-preference",r);})();
 </script>
 
-<script defer src="https://docs.docker.com/scripts.js"></script>
+<script defer src="https://docker.qubitpi.org/scripts.js"></script>
 
 
 
@@ -183,7 +183,7 @@ body > img { display: none }
       
       <div>
         
-        <a title="Docker Docs home page" href="https://docs.docker.com/">
+        <a title="Docker Docs home page" href="https://docker.qubitpi.org/">
           <div><?xml version="1.0" encoding="UTF-8"?>
 <svg height="22" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3477.6 530.79">
   <defs>
@@ -11547,7 +11547,7 @@ Early Access"
       >Compose CLI</a
     >.</p>
 <p>The Compose file, or <code>compose.yaml</code> file, follows the rules provided by the 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/"
       >Compose Specification</a
     > in how to define multi-container applications. This is the Docker Compose implementation of the formal 
   <a
@@ -11566,23 +11566,23 @@ Early Access"
 
   <div x-show="open" x-collapse class="px-4">
     <p>Computing components of an application are defined as 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/05-services/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/05-services/"
       >services</a
     >. A service is an abstract concept implemented on platforms by running the same container image, and configuration, one or more times.</p>
 <p>Services communicate with each other through 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/06-networks/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/06-networks/"
       >networks</a
     >. In the Compose Specification, a network is a platform capability abstraction to establish an IP route between containers within services connected together.</p>
 <p>Services store and share persistent data into 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/07-volumes/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/07-volumes/"
       >volumes</a
     >. The Specification describes such a persistent data as a high-level filesystem mount with global options.</p>
 <p>Some services require configuration data that is dependent on the runtime or platform. For this, the Specification defines a dedicated 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/08-configs/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/08-configs/"
       >configs</a
     > concept. From a service container point of view, configs are comparable to volumes, in that they are files mounted into the container. But the actual definition involves distinct platform resources and services, which are abstracted by this type.</p>
 <p>A 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/09-secrets/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/09-secrets/"
       >secret</a
     > is a specific flavor of configuration data for sensitive data that should not be exposed without security considerations. Secrets are made available to services as files mounted into their containers, but the platform-specific resources to provide sensitive data are specific enough to deserve a distinct concept and definition within the Compose specification.</p>
 <blockquote>
@@ -11590,7 +11590,7 @@ Early Access"
 <p>With volumes, configs and secrets you can have a simple declaration at the top-level and then add more platform-specific information at the service level.</p>
 </blockquote>
 <p>A project is an individual deployment of an application specification on a platform. A project's name, set with the top-level 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/04-version-and-name/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/04-version-and-name/"
       ><code>name</code></a
     > attribute, is used to group
 resources together and isolate them from other applications or other installation of the same Compose-specified application with distinct parameters. If you are creating resources on a platform, you must prefix resource names by project and
@@ -11612,25 +11612,25 @@ set the label <code>com.docker.compose.project</code>.</p>
 Compose also supports <code>docker-compose.yaml</code> and <code>docker-compose.yml</code> for backwards compatibility of earlier versions.
 If both files exist, Compose prefers the canonical <code>compose.yaml</code>.</p>
 <p>You can use 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/10-fragments/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/10-fragments/"
       >fragments</a
     > and 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/11-extension/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/11-extension/"
       >extensions</a
     > to keep your Compose file efficient and easy to maintain.</p>
 <p>Multiple Compose files can be 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/13-merge/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/13-merge/"
       >merged</a
     > together to define the application model. The combination of YAML files is implemented by appending or overriding YAML elements based on the Compose file order you set.
 Simple attributes and maps get overridden by the highest order Compose file, lists get merged by appending. Relative
 paths are resolved based on the first Compose file's parent folder, whenever complimentary files being
 merged are hosted in other folders. As some Compose file elements can both be expressed as single strings or complex objects, merges apply to
 the expanded form. For more information, see 
-    <a class="link" href="https://docs.docker.com/compose/multiple-compose-files/"
+    <a class="link" href="https://docker.qubitpi.org/compose/multiple-compose-files/"
       >Working with multiple Compose files</a
     ></p>
 <p>If you want to reuse other Compose files, or factor out parts of your application model into separate Compose files, you can also use 
-    <a class="link" href="https://docs.docker.com/compose/compose-file/14-include/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/14-include/"
       ><code>include</code></a
     >. This is useful if your Compose application is dependent on another application which is managed by a different team, or needs to be shared with others.</p>
 
@@ -11729,7 +11729,7 @@ the expanded form. For more information, see
   </div>
 </div>
 <p>For a full list of all the Compose CLI commands, see the 
-    <a class="link" href="https://docs.docker.com/reference/cli/docker/compose/"
+    <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/compose/"
       >reference documentation</a
     >.</p>
 
@@ -11762,7 +11762,7 @@ the expanded form. For more information, see
 >
   <img
     loading="lazy"
-    src="https://docs.docker.com/compose/images/compose-application.webp"
+    src="https://docker.qubitpi.org/compose/images/compose-application.webp"
     alt="Compose application example"
     
     
@@ -11784,7 +11784,7 @@ the expanded form. For more information, see
       <img
         loading="lazy"
         class="rounded max-w-full max-h-full"
-        src="https://docs.docker.com/compose/images/compose-application.webp"
+        src="https://docker.qubitpi.org/compose/images/compose-application.webp"
         alt="Compose application example"
       />
     </div>
@@ -11886,15 +11886,15 @@ the expanded form. For more information, see
 
 <ul>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/gettingstarted/"
+    <a class="link" href="https://docker.qubitpi.org/compose/gettingstarted/"
       >Quickstart</a
     ></li>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/samples-for-compose/"
+    <a class="link" href="https://docker.qubitpi.org/compose/samples-for-compose/"
       >Explore some sample applications</a
     ></li>
 <li>
-    <a class="link" href="https://docs.docker.com/compose/compose-file/"
+    <a class="link" href="https://docker.qubitpi.org/compose/compose-file/"
       >Familiarize yourself with the Compose Specification</a
     ></li>
 </ul>
@@ -11920,7 +11920,7 @@ the expanded form. For more information, see
 <p class="flex items-center gap-2">
   <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m378-332 363-363q9.067-9 21.533-9Q775-704 784-694.947q9 9.052 9 21.5Q793-661 784-652L399-267q-9 9-21 9t-21-9L175-449q-9-9.067-8.5-21.533Q167-483 176.053-492q9.052-9 21.5-9Q210-501 219-492l159 160Z"/></svg></span>
   <a class="link" target="_blank" rel="noopener"
-    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocs.docker.com%2fcompose%2fcompose-application-model%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
+    href="https://github.com/docker/docs/issues/new?template=doc_issue.yml&location=https%3a%2f%2fdocker.qubitpi.org%2fcompose%2fcompose-application-model%2f&labels=status%2Ftriage">Request changes<span class="icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T429-780H180v600h600v-249q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T840-429v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.375-8.675-8.625-8.676-8.625-21.5 0-12.825 8.625-21.325T549-840h291v291q0 12.75-8.675 21.375-8.676 8.625-21.5 8.625-12.825 0-21.325-8.625T780-549v-188Z"/></svg>
     </span></a>
   </a>
