@@ -5,7 +5,9 @@ services:
       target: build-base
     ports:
       - "1313:1313"
-    entrypoint: ["hugo", "server", "--bind", "0.0.0.0"]
+    entrypoint: ["hugo", "--destination", "github-pages-out"]
+    volumes:
+      - ./github-pages-out:/src/github-pages-out
     develop:
       watch:
         - action: sync
