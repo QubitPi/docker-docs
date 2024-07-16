@@ -63,7 +63,7 @@
 <meta
   property="og:updated_time"
   itemprop="dateUpdated"
-  content="2024-07-16 19:43:32 &#43;0800 &#43;0800"
+  content="2024-07-16 11:57:49 &#43;0000 UTC"
 />
 <meta
   property="og:image"
@@ -76,7 +76,7 @@
 <meta
   property="article:published_time"
   itemprop="datePublished"
-  content="2024-07-16 19:43:32 &#43;0800 &#43;0800"
+  content="2024-07-16 11:57:49 &#43;0000 UTC"
 />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"dockerd\"","description":"\"The daemon command description and usage\"","url":"https:\/\/docs.docker.com\/reference\/cli\/dockerd\/"}</script>
 <script
@@ -7731,6 +7731,178 @@ requests via three different types of Socket: <code>unix</code>, <code>tcp</code
 <p>By default, a <code>unix</code> domain socket (or IPC socket) is created at
 <code>/var/run/docker.sock</code>, requiring either <code>root</code> permission, or <code>docker</code> group
 membership.</p>
+<blockquote>
+<p><strong>Note</strong> What is /var/run/docker.sock?</p>
+<p><code>/var/run/docker.sock</code> is the default Unix socket. Sockets are meant for communication between processes on the same
+host.</p>
+
+  
+  
+    
+
+
+
+
+
+
+
+<figure
+  x-data="{ zoom: false }"
+  @click="zoom = ! zoom"
+  class="cursor-pointer hover:opacity-90"
+>
+  <img
+    loading="lazy"
+    src="https://docs.docker.com/reference/cli/img/docker-docker-unix-socket.png"
+    alt="Error loading docker-docker-unix-socket.png"
+    
+    
+    class="rounded mx-auto"
+  />
+  
+  <template x-teleport="body">
+    <div
+      x-show="zoom"
+      @click="zoom = false"
+      x-transition.opacity.duration.250ms
+      class="fixed z-20 inset-0 flex items-center justify-center bg-black/70 p-6"
+    >
+      <button
+        class="text-white fixed z-30 top-6 right-8 icon-svg"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M480-438 270-228q-9 9-21 9t-21-9q-9-9-9-21t9-21l210-210-210-210q-9-9-9-21t9-21q9-9 21-9t21 9l210 210 210-210q9-9 21-9t21 9q9 9 9 21t-9 21L522-480l210 210q9 9 9 21t-9 21q-9 9-21 9t-21-9L480-438Z"/></svg>
+      </button>
+      <img
+        loading="lazy"
+        class="rounded max-w-full max-h-full"
+        src="https://docs.docker.com/reference/cli/img/docker-docker-unix-socket.png"
+        alt="Error loading docker-docker-unix-socket.png"
+      />
+    </div>
+  </template>
+</figure>
+<p>Docker daemon by default listens to <strong>docker.sock</strong>. If Docker client and daemon are running on the same host, we
+can the <code>/var/run/docker.sock</code> to manage containers, which means we can mount the Docker socket from the host into
+the container.</p>
+<p>For example, if we run the following command, it will return the version of the docker engine.</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'Y3VybCAtLXVuaXgtc29ja2V0IC92YXIvcnVuL2RvY2tlci5zb2NrIGh0dHA6Ly9sb2NhbGhvc3QvdmVyc2lvbg==', copying: false }"
+      class="absolute right-3 top-3 z-20 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">curl --unix-socket /var/run/docker.sock http://localhost/version
+</span></span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p><em>Things get little trickier when we run docker inside docker</em>, in which case we have to run docker with the default
+Unix socket <code>docker.sock</code> as <em>a volume</em>. For example</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'ZG9ja2VyIHJ1biAtdiAvdmFyL3J1bi9kb2NrZXIuc29jazovdmFyL3J1bi9kb2NrZXIuc29jayAtaXQgZG9ja2Vy', copying: false }"
+      class="absolute right-3 top-3 z-20 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">docker run -v /var/run/docker.sock:/var/run/docker.sock -it docker
+</span></span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>Our mental model might look like this:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'Ky0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rCnwgICAgICAgICAgICAgICAgICAgSG9zdCAgICAgICAgICAgICAgICAgICAgfAp8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwKfCAgKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rICB8CnwgIHwgICAgICAgICAgICAgQ29udGFpbmVyIEEgICAgICAgICAgICAgfCAgfAp8ICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgIHwKfCAgfCAgKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rICB8ICB8CnwgIHwgIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgfCAgfAp8ICB8ICB8ICAgICAgICAgIENvbnRhaW5lciBCICAgICAgICAgIHwgIHwgIHwKfCAgfCAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICB8ICB8CnwgIHwgIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgfCAgfAp8ICB8ICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHwgIHwgIHwKfCAgfCAgfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8ICB8ICB8CnwgIHwgIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfCAgfCAgfAp8ICB8ICArLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSsgIHwgIHwKfCAgKy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rICB8CistLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKw==', copying: false }"
+      class="absolute right-3 top-3 z-20 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">+-------------------------------------------+
+</span></span><span class="line"><span class="cl">|                   Host                    |
+</span></span><span class="line"><span class="cl">|                                           |
+</span></span><span class="line"><span class="cl">|  +-------------------------------------+  |
+</span></span><span class="line"><span class="cl">|  |             Container A             |  |
+</span></span><span class="line"><span class="cl">|  |                                     |  |
+</span></span><span class="line"><span class="cl">|  |  +-------------------------------+  |  |
+</span></span><span class="line"><span class="cl">|  |  |                               |  |  |
+</span></span><span class="line"><span class="cl">|  |  |          Container B          |  |  |
+</span></span><span class="line"><span class="cl">|  |  |                               |  |  |
+</span></span><span class="line"><span class="cl">|  |  |                               |  |  |
+</span></span><span class="line"><span class="cl">|  |  |                               |  |  |
+</span></span><span class="line"><span class="cl">|  |  |                               |  |  |
+</span></span><span class="line"><span class="cl">|  |  |                               |  |  |
+</span></span><span class="line"><span class="cl">|  |  +-------------------------------+  |  |
+</span></span><span class="line"><span class="cl">|  +-------------------------------------+  |
+</span></span><span class="line"><span class="cl">+-------------------------------------------+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>From within the container A, we should be able to execute docker commands for building and pushing images to the
+registry.</p>
+<p><strong>Here, the actual docker operations in A happen on the VM host running our base docker container rather than from
+within the container A</strong>. Although container A has access to the Docker socket and is able to start container B, A
+is starting B as &quot;sibling&quot; container instead of &quot;child&quot; container. The setup looks like Docker-in-Docker, feels like
+Docker-in-Docker, but it's not Docker-in-Docker: when this container A will create more containers, those containers
+will be created in the top-level Docker. We will not experience nesting side effects, and the build cache will be
+shared across multiple invocations. Hence the correct mental model shall look like this:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'Ky0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rCnwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAp8ICAgICAgICAgICAgICAgICAgIEhvc3QgICAgICAgICAgICAgICAgICAgIHwKfCAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB8CnwgKy0tLS0tLS0tLS0tLS0tLS0tLSsgKy0tLS0tLS0tLS0tLS0tLS0tLSsgfAp8IHwgICAgICAgICAgICAgICAgICB8IHwgICAgICAgICAgICAgICAgICB8IHwKfCB8ICAgICAgICAgICAgICAgICAgfCB8ICAgICAgICAgICAgICAgICAgfCB8CnwgfCAgIENvbnRhaW5lciBBICAgIHwgfCAgICBDb250YWluZXIgQiAgIHwgfAp8IHwgICAgICAgICAgICAgICAgICB8IHwgICAgICAgICAgICAgICAgICB8IHwKfCB8ICAgICAgICAgICAgICAgICAgfCB8ICAgICAgICAgICAgICAgICAgfCB8CnwgfCAgICAgICAgICAgICAgICAgIHwgfCAgICAgICAgICAgICAgICAgIHwgfAp8IHwgICAgICAgICAgICAgICAgICB8IHwgICAgICAgICAgICAgICAgICB8IHwKfCArLS0tLS0tLS0tLS0tLS0tLS0tKyArLS0tLS0tLS0tLS0tLS0tLS0tKyB8CnwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfAorLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLSs=', copying: false }"
+      class="absolute right-3 top-3 z-20 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">+-------------------------------------------+
+</span></span><span class="line"><span class="cl">|                                           |
+</span></span><span class="line"><span class="cl">|                   Host                    |
+</span></span><span class="line"><span class="cl">|                                           |
+</span></span><span class="line"><span class="cl">| +------------------+ +------------------+ |
+</span></span><span class="line"><span class="cl">| |                  | |                  | |
+</span></span><span class="line"><span class="cl">| |                  | |                  | |
+</span></span><span class="line"><span class="cl">| |   Container A    | |    Container B   | |
+</span></span><span class="line"><span class="cl">| |                  | |                  | |
+</span></span><span class="line"><span class="cl">| |                  | |                  | |
+</span></span><span class="line"><span class="cl">| |                  | |                  | |
+</span></span><span class="line"><span class="cl">| |                  | |                  | |
+</span></span><span class="line"><span class="cl">| +------------------+ +------------------+ |
+</span></span><span class="line"><span class="cl">|                                           |
+</span></span><span class="line"><span class="cl">+-------------------------------------------+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p><strong>Just a word of caution</strong>: If a container gets access to <code>docker.sock</code>, it means it has more privileges over docker
+daemon. So when used in real projects, understand the security risks, and use it.</p>
+</blockquote>
 <p>If you need to access the Docker daemon remotely, you need to enable the tcp
 Socket. When using a TCP socket, the Docker daemon provides un-encrypted and
 un-authenticated direct access to the Docker daemon by default. You should secure
