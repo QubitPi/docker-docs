@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker Build Cloud on Docker Docs</title>
+    <link>https://docs.docker.com/build-cloud/</link>
+    <description>Recent content in Docker Build Cloud on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docs.docker.com/build-cloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Building with Docker Build Cloud</title>
+      <link>https://docs.docker.com/build-cloud/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/build-cloud/usage/</guid>
+      <description>To build using Docker Build Cloud, invoke a build command and specify the name of the builder using the --builder flag.&#xA;$ docker buildx build --builder cloud-&amp;lt;ORG&amp;gt;-&amp;lt;BUILDER_NAME&amp;gt; --tag &amp;lt;IMAGE&amp;gt; . Use by default If you want to use Docker Build Cloud without having to specify the --builder flag each time, you can set it as the default builder.&#xA;CLI Docker Desktop Run the following command:&#xA;$ docker buildx use cloud-&amp;lt;ORG&amp;gt;-&amp;lt;BUILDER_NAME&amp;gt; --global Open the Docker Desktop settings and navigate to the Builders tab.</description>
+    </item>
+    <item>
+      <title>Docker Build Cloud setup</title>
+      <link>https://docs.docker.com/build-cloud/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/build-cloud/setup/</guid>
+      <description>Before you can start using Docker Build Cloud, you must add the builder to your local environment.&#xA;Prerequisites To get started with Docker Build Cloud, you need to:&#xA;Download and install Docker Desktop version 4.26.0 or later. Sign up for a Docker Build Cloud subscription in the Docker Build Cloud Dashboard. Use Docker Build Cloud without Docker Desktop To use Docker Build Cloud without Docker Desktop, you must download and install a version of Buildx with support for Docker Build Cloud (the cloud driver).</description>
+    </item>
+    <item>
+      <title>Optimize for building in the cloud</title>
+      <link>https://docs.docker.com/build-cloud/optimization/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/build-cloud/optimization/</guid>
+      <description>Docker Build Cloud runs your builds remotely, and not on the machine where you invoke the build. This means that file transfers between the client and builder happen over the network.&#xA;Transferring files over the network has a higher latency and lower bandwidth than local transfers. Docker Build Cloud has several features to mitigate this:&#xA;It uses attached storage volumes for build cache, which makes reading and writing cache very fast.</description>
+    </item>
+    <item>
+      <title>Use Docker Build Cloud in CI</title>
+      <link>https://docs.docker.com/build-cloud/ci/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/build-cloud/ci/</guid>
+      <description>Using Docker Build Cloud in CI can speed up your build pipelines, which means less time spent waiting and context switching. You control your CI workflows as usual, and delegate the build execution to Docker Build Cloud.&#xA;Building with Docker Build Cloud in CI involves the following steps:&#xA;Sign in to a Docker account. Set up Buildx and connect to the builder. Run the build. When using Docker Build Cloud in CI, it&#39;s recommended that you push the result to a registry directly, rather than loading the image and then pushing it.</description>
+    </item>
+  </channel>
+</rss>

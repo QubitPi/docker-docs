@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Docker Docs</title>
+    <link>https://docs.docker.com/compose/compose-file/</link>
+    <description>Recent content in Overview on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docs.docker.com/compose/compose-file/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compose Build Specification</title>
+      <link>https://docs.docker.com/compose/compose-file/build/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/build/</guid>
+      <description>Build is an optional part of the Compose Specification. It tells Compose how to (re)build an application from source and lets you define the build process within a Compose file in a portable way. build can be either specified as a single string defining a context path, or as a detailed build definition. In the former case, the whole path is used as a Docker context to execute a Docker build, looking for a canonical Dockerfile at the root of the directory.</description>
+    </item>
+    <item>
+      <title>Compose Deploy Specification</title>
+      <link>https://docs.docker.com/compose/compose-file/deploy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/deploy/</guid>
+      <description>Deploy is an optional part of the Compose Specification. It provides a set of deployment specifications for managing the behavior of containers across different environments. Attributes endpoint_mode endpoint_mode specifies a service discovery method for external clients connecting to a service. The Compose Deploy Specification defines two canonical values:&#xA;endpoint_mode: vip: Assigns the service a virtual IP (VIP) that acts as the front end for clients to reach the service on a network.</description>
+    </item>
+    <item>
+      <title>Compose Develop Specification</title>
+      <link>https://docs.docker.com/compose/compose-file/develop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/develop/</guid>
+      <description>Note:&#xA;Develop is an optional part of the Compose Specification. It is available with Docker Compose version 2.22.0 and later.&#xA;This page defines how Compose behaves to efficiently assist you and defines the development constraints and workflows set by Compose. Only a subset of Compose file services may require a develop subsection.&#xA;Illustrative example services: frontend: image: example/webapp build: ./webapp develop: watch: # sync static content - path: ./webapp/html action: sync target: /var/www ignore: - node_modules/ backend: image: example/backend build: .</description>
+    </item>
+    <item>
+      <title>Configs top-level elements</title>
+      <link>https://docs.docker.com/compose/compose-file/08-configs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/08-configs/</guid>
+      <description>Configs let services to adapt their behaviour without the need to rebuild a Docker image. As with volumes, configs are mounted as files into a container&#39;s filesystem. The location of the mount point within the container defaults to /&amp;lt;config-name&amp;gt; in Linux containers and C:\&amp;lt;config-name&amp;gt; in Windows containers. Services can only access configs when explicitly granted by a configs attribute within the services top-level element.&#xA;By default, the config:&#xA;Is owned by the user running the container command but can be overridden by service configuration.</description>
+    </item>
+    <item>
+      <title>Extensions</title>
+      <link>https://docs.docker.com/compose/compose-file/11-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/11-extension/</guid>
+      <description>Extensions can be used to make your Compose file more efficient and easier to maintain.&#xA;Use the prefix x- as a top-level element to modularize configurations that you want to reuse. Compose ignores any fields that start with x-, this is the sole exception where Compose silently ignores unrecognized fields.&#xA;Extensions can also be used with anchors and aliases.&#xA;They also can be used within any structure in a Compose file where user-defined keys are not expected.</description>
+    </item>
+    <item>
+      <title>Fragments</title>
+      <link>https://docs.docker.com/compose/compose-file/10-fragments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/10-fragments/</guid>
+      <description>With Compose, you can use built-in YAML features to make your Compose file neater and more efficient. Anchors and aliases let you create re-usable blocks. This is useful if you start to find common configurations that span multiple services. Having re-usable blocks minimizes potential mistakes. Anchors are created using the &amp;amp; sign. The sign is followed by an alias name. You can use this alias with the * sign later to reference the value following the anchor.</description>
+    </item>
+    <item>
+      <title>Include</title>
+      <link>https://docs.docker.com/compose/compose-file/14-include/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/14-include/</guid>
+      <description>Introduced in Docker Compose version 2.20.0 A Compose application can declare dependency on another Compose application. This is useful if:&#xA;You want to reuse other Compose files. You need to factor out parts of your application model into separate Compose files so they can be managed separately or shared with others. Teams need to keep a Compose file reasonably complicated for the limited amount of resources it has to declare for it&#39;s own sub-domain, within a larger deployment.</description>
+    </item>
+    <item>
+      <title>Interpolation</title>
+      <link>https://docs.docker.com/compose/compose-file/12-interpolation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/12-interpolation/</guid>
+      <description>Values in a Compose file can be set by variables and interpolated at runtime. Compose files use a Bash-like syntax ${VARIABLE}. Both $VARIABLE and ${VARIABLE} syntax is supported. For braced expressions, the following formats are supported:&#xA;Direct substitution ${VAR} -&amp;gt; value of VAR Default value ${VAR:-default} -&amp;gt; value of VAR if set and non-empty, otherwise default ${VAR-default} -&amp;gt; value of VAR if set, otherwise default Required value ${VAR:?error} -&amp;gt; value of VAR if set and non-empty, otherwise exit with error ${VAR?</description>
+    </item>
+    <item>
+      <title>Legacy versions</title>
+      <link>https://docs.docker.com/compose/compose-file/legacy-versions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/legacy-versions/</guid>
+      <description>The legacy versions of the Compose file reference has moved to the V1 branch of the Compose repository. They are no longer being actively maintained.&#xA;The latest and recommended version of the Compose file format is defined by the Compose Specification. This format merges the 2.x and 3.x versions and is implemented by Compose 1.27.0+. For more information, see the History and development of Docker Compose.</description>
+    </item>
+    <item>
+      <title>Merge</title>
+      <link>https://docs.docker.com/compose/compose-file/13-merge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/13-merge/</guid>
+      <description>Compose lets you define a Compose application model through multiple Compose files. When doing so, Compose follows certain rules to merge Compose files. These rules are outlined below.&#xA;Mapping A YAML mapping gets merged by adding missing entries and merging the conflicting ones.&#xA;Merging the following example YAML trees:&#xA;services: foo: key1: value1 key2: value2 services: foo: key2: VALUE key3: value3 Results in a Compose application model equivalent to the YAML tree:</description>
+    </item>
+    <item>
+      <title>Networks top-level elements</title>
+      <link>https://docs.docker.com/compose/compose-file/06-networks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/06-networks/</guid>
+      <description>Networks let services communicate with each other. By default Compose sets up a single network for your app. Each container for a service joins the default network and is both reachable by other containers on that network, and discoverable by the service&#39;s name. The top-level networks element lets you configure named networks that can be reused across multiple services. To use a network across multiple services, you must explicitly grant each service access by using the networks attribute within the services top-level element.</description>
+    </item>
+    <item>
+      <title>Profiles</title>
+      <link>https://docs.docker.com/compose/compose-file/15-profiles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/15-profiles/</guid>
+      <description>With profiles you can define a set of active profiles so your Compose application model is adjusted for various usages and environments.&#xA;The services top-level element supports a profiles attribute to define a list of named profiles. Services without a profiles attribute are always enabled.&#xA;A service is ignored by Compose when none of the listed profiles match the active ones, unless the service is explicitly targeted by a command. In that case its profile is added to the set of active profiles.</description>
+    </item>
+    <item>
+      <title>Secrets top-level elements</title>
+      <link>https://docs.docker.com/compose/compose-file/09-secrets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/09-secrets/</guid>
+      <description>Secrets are a flavor of Configs focusing on sensitive data, with specific constraint for this usage.&#xA;Services can only access secrets when explicitly granted by a secrets attribute within the services top-level element.&#xA;The top-level secrets declaration defines or references sensitive data that is granted to the services in your Compose application. The source of the secret is either file or environment.&#xA;file: The secret is created with the contents of the file at the specified path.</description>
+    </item>
+    <item>
+      <title>Services top-level elements</title>
+      <link>https://docs.docker.com/compose/compose-file/05-services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/05-services/</guid>
+      <description>A service is an abstract definition of a computing resource within an application which can be scaled or replaced independently from other components. Services are backed by a set of containers, run by the platform according to replication requirements and placement constraints. As services are backed by containers, they are defined by a Docker image and set of runtime arguments. All containers within a service are identically created with these arguments.</description>
+    </item>
+    <item>
+      <title>Version and name top-level elements</title>
+      <link>https://docs.docker.com/compose/compose-file/04-version-and-name/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/04-version-and-name/</guid>
+      <description>Version top-level element (obsolete) The top-level version property is defined by the Compose Specification for backward compatibility. It is only informative and you&#39;ll receive a warning message that it is obsolete if used.&#xA;Compose doesn&#39;t use version to select an exact schema to validate the Compose file, but prefers the most recent schema when it&#39;s implemented.&#xA;Compose validates whether it can fully parse the Compose file. If some fields are unknown, typically because the Compose file was written with fields defined by a newer version of the Specification, you&#39;ll receive a warning message.</description>
+    </item>
+    <item>
+      <title>Volumes top-level element</title>
+      <link>https://docs.docker.com/compose/compose-file/07-volumes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/compose/compose-file/07-volumes/</guid>
+      <description>Volumes are persistent data stores implemented by the container engine. Compose offers a neutral way for services to mount volumes, and configuration parameters to allocate them to infrastructure. The top-level volumes declaration lets you configure named volumes that can be reused across multiple services. To use a volume across multiple services, you must explicitly grant each service access by using the volumes attribute within the services top-level element. The volumes attribute has additional syntax that provides more granular control.</description>
+    </item>
+  </channel>
+</rss>

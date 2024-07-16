@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview of the Extensions SDK on Docker Docs</title>
+    <link>https://docs.docker.com/desktop/extensions-sdk/</link>
+    <description>Recent content in Overview of the Extensions SDK on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docs.docker.com/desktop/extensions-sdk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/BackendV0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/BackendV0/</guid>
+      <description>Interface: BackendV0 Container Methods execInContainer ▸ execInContainer(container, cmd): Promise&amp;lt; ExecResultV0&amp;gt;&#xA;Executes a command inside a container.&#xA;const output = await window.ddClient.backend.execInContainer(container, cmd); console.log(output); Warning&#xA;It will be removed in a future version.&#xA;Parameters Name Type Description container string - cmd string The command to be executed. Returns Promise&amp;lt; ExecResultV0&amp;gt;&#xA;HTTP Methods get ▸ get(url): Promise&amp;lt;unknown&amp;gt;&#xA;Performs an HTTP GET request to a backend service.&#xA;window.ddClient.backend .get(&amp;#34;/some/service&amp;#34;) .then((value: any) =&amp;gt; console.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/DesktopUI/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/DesktopUI/</guid>
+      <description>Interface: DesktopUI Since&#xA;0.2.0&#xA;Properties toast • Readonly toast: Toast&#xA;dialog • Readonly dialog: Dialog&#xA;navigate • Readonly navigate: NavigationIntents</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Dialog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Dialog/</guid>
+      <description>Interface: Dialog Allows opening native dialog boxes.&#xA;Since&#xA;0.2.3&#xA;Methods showOpenDialog ▸ showOpenDialog(dialogProperties): Promise&amp;lt; OpenDialogResult&amp;gt;&#xA;Display a native open dialog. Lets you select a file or a folder.&#xA;ddClient.desktopUI.dialog.showOpenDialog({properties: [&amp;#39;openFile&amp;#39;]}); Parameters Name Type Description dialogProperties any Properties to specify the open dialog behaviour, see https://www.electronjs.org/docs/latest/api/dialog#dialogshowopendialogbrowserwindow-options. Returns Promise&amp;lt; OpenDialogResult&amp;gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Docker/</guid>
+      <description>Interface: Docker Since&#xA;0.2.0&#xA;Properties cli • Readonly cli: DockerCommand&#xA;You can also directly execute the Docker binary.&#xA;const output = await ddClient.docker.cli.exec(&amp;#34;volume&amp;#34;, [ &amp;#34;ls&amp;#34;, &amp;#34;--filter&amp;#34;, &amp;#34;dangling=true&amp;#34; ]); Output:&#xA;{ &amp;#34;stderr&amp;#34;: &amp;#34;...&amp;#34;, &amp;#34;stdout&amp;#34;: &amp;#34;...&amp;#34; } For convenience, the command result object also has methods to easily parse it depending on output format. See ExecResult instead.&#xA;Streams the output as a result of the execution of a Docker command. It is useful when the output of the command is too long, or you need to get the output as a stream.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/DockerCommand/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/DockerCommand/</guid>
+      <description>Interface: DockerCommand Since&#xA;0.2.0&#xA;Properties exec • exec: Exec</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/DockerDesktopClient/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/DockerDesktopClient/</guid>
+      <description>Interface: DockerDesktopClient An amalgam of the v0 and v1 interfaces of the Docker Desktop API client, provided for backwards compatibility reasons. Unless you&#39;re working with a legacy extension, use the v1 type instead.&#xA;Properties backend • Readonly backend: undefined | BackendV0&#xA;The window.ddClient.backend object can be used to communicate with the backend defined in the vm section of the extension metadata. The client is already connected to the backend.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Exec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Exec/</guid>
+      <description>Interface: Exec Callable Exec ▸ Exec(cmd, args, options?): Promise&amp;lt; ExecResult&amp;gt;&#xA;Executes a command.&#xA;Since&#xA;0.2.0&#xA;Parameters Name Type Description cmd string The command to execute. args string[] The arguments of the command to execute. options? ExecOptions The list of options. Returns Promise&amp;lt; ExecResult&amp;gt;&#xA;A promise that will resolve once the command finishes.&#xA;Exec ▸ Exec(cmd, args, options): ExecProcess&#xA;Streams the result of a command if stream is specified in the options parameter.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecOptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecOptions/</guid>
+      <description>Interface: ExecOptions Since&#xA;0.3.0&#xA;Hierarchy ExecOptions&#xA;↳ SpawnOptions&#xA;Properties cwd • Optional cwd: string&#xA;env • Optional env: ProcessEnv</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecProcess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecProcess/</guid>
+      <description>Interface: ExecProcess Since&#xA;0.2.3&#xA;Methods close ▸ close(): void&#xA;Close the process started by exec(streamingOptions)&#xA;Returns void</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecResult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecResult/</guid>
+      <description>Interface: ExecResult Since&#xA;0.2.0&#xA;Hierarchy RawExecResult&#xA;↳ ExecResult&#xA;Methods lines ▸ lines(): string[]&#xA;Split output lines.&#xA;Returns string[]&#xA;The list of lines.&#xA;parseJsonLines ▸ parseJsonLines(): any[]&#xA;Parse each output line as a JSON object.&#xA;Returns any[]&#xA;The list of lines where each line is a JSON object.&#xA;parseJsonObject ▸ parseJsonObject(): any&#xA;Parse a well-formed JSON output.&#xA;Returns any&#xA;The JSON object.&#xA;Properties cmd • Optional Readonly cmd: string&#xA;Inherited from RawExecResult.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecResultV0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecResultV0/</guid>
+      <description>Interface: ExecResultV0 Properties cmd • Optional Readonly cmd: string&#xA;killed • Optional Readonly killed: boolean&#xA;signal • Optional Readonly signal: string&#xA;code • Optional Readonly code: number&#xA;stdout • Readonly stdout: string&#xA;stderr • Readonly stderr: string&#xA;Methods lines ▸ lines(): string[]&#xA;Split output lines.&#xA;Returns string[]&#xA;The list of lines.&#xA;parseJsonLines ▸ parseJsonLines(): any[]&#xA;Parse each output line as a JSON object.&#xA;Returns any[]&#xA;The list of lines where each line is a JSON object.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecStreamOptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExecStreamOptions/</guid>
+      <description>Interface: ExecStreamOptions Since&#xA;0.2.2&#xA;Properties onOutput • Optional onOutput: (data: { stdout: string ; stderr?: undefined } | { stdout?: undefined ; stderr: string }) =&amp;gt; void&#xA;Type declaration ▸ (data): void&#xA;Invoked when receiving output from command execution. By default, the output is split into chunks at arbitrary boundaries. If you prefer the output to be split into complete lines, set splitOutputLines to true. The callback is then invoked once for each line.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Extension/</guid>
+      <description>Interface: Extension Since&#xA;0.2.0&#xA;Properties vm • Optional Readonly vm: ExtensionVM&#xA;host • Optional Readonly host: ExtensionHost&#xA;image • Readonly image: string&#xA;Since&#xA;0.3.3</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExtensionCli/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExtensionCli/</guid>
+      <description>Interface: ExtensionCli Since&#xA;0.2.0&#xA;Properties exec • exec: Exec</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExtensionHost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExtensionHost/</guid>
+      <description>Interface: ExtensionHost Since&#xA;0.2.0&#xA;Properties cli • Readonly cli: ExtensionCli&#xA;Executes a command in the host.&#xA;For example, execute the shipped binary kubectl -h command in the host:&#xA;await ddClient.extension.host.cli.exec(&amp;#34;kubectl&amp;#34;, [&amp;#34;-h&amp;#34;]); Streams the output of the command executed in the backend container or in the host.&#xA;Provided the kubectl binary is shipped as part of your extension, you can spawn the kubectl -h command in the host:&#xA;await ddClient.extension.host.cli.exec(&amp;#34;kubectl&amp;#34;, [&amp;#34;-h&amp;#34;], { stream: { onOutput(data): void { // As we can receive both `stdout` and `stderr`, we wrap them in a JSON object JSON.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExtensionVM/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ExtensionVM/</guid>
+      <description>Interface: ExtensionVM Since&#xA;0.2.0&#xA;Properties cli • Readonly cli: ExtensionCli&#xA;Executes a command in the backend container.&#xA;Example: Execute the command ls -l inside the backend container:&#xA;await ddClient.extension.vm.cli.exec( &amp;#34;ls&amp;#34;, [&amp;#34;-l&amp;#34;] ); Streams the output of the command executed in the backend container.&#xA;When the extension defines its own compose.yaml file with multiple containers, the command is executed on the first container defined. Change the order in which containers are defined to execute commands on another container.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Host/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Host/</guid>
+      <description>Interface: Host Since&#xA;0.2.0&#xA;Methods openExternal ▸ openExternal(url): void&#xA;Opens an external URL with the system default browser.&#xA;Since&#xA;0.2.0&#xA;ddClient.host.openExternal(&amp;#34;https://docker.com&amp;#34;); Parameters Name Type Description url string The URL the browser will open (must have the protocol http or https). Returns void&#xA;Properties platform • platform: string&#xA;Returns a string identifying the operating system platform. See https://nodejs.org/api/os.html#osplatform&#xA;Since&#xA;0.2.2&#xA;arch • arch: string&#xA;Returns the operating system CPU architecture. See https://nodejs.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/HttpService/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/HttpService/</guid>
+      <description>Interface: HttpService Since&#xA;0.2.0&#xA;Methods get ▸ get(url): Promise&amp;lt;unknown&amp;gt;&#xA;Performs an HTTP GET request to a backend service.&#xA;ddClient.extension.vm.service .get(&amp;#34;/some/service&amp;#34;) .then((value: any) =&amp;gt; console.log(value) Parameters Name Type Description url string The URL of the backend service. Returns Promise&amp;lt;unknown&amp;gt;&#xA;post ▸ post(url, data): Promise&amp;lt;unknown&amp;gt;&#xA;Performs an HTTP POST request to a backend service.&#xA;ddClient.extension.vm.service .post(&amp;#34;/some/service&amp;#34;, { ... }) .then((value: any) =&amp;gt; console.log(value)); Parameters Name Type Description url string The URL of the backend service.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/NavigationIntents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/NavigationIntents/</guid>
+      <description>Interface: NavigationIntents Since&#xA;0.2.0&#xA;Container Methods viewContainers ▸ viewContainers(): Promise&amp;lt;void&amp;gt;&#xA;Navigate to the Containers tab in Docker Desktop.&#xA;ddClient.desktopUI.navigate.viewContainers() Returns Promise&amp;lt;void&amp;gt;&#xA;viewContainer ▸ viewContainer(id): Promise&amp;lt;void&amp;gt;&#xA;Navigate to the Container tab in Docker Desktop.&#xA;await ddClient.desktopUI.navigate.viewContainer(id) Parameters Name Type Description id string The full container id, e.g. 46b57e400d801762e9e115734bf902a2450d89669d85881058a46136520aca28. You can use the --no-trunc flag as part of the docker ps command to display the full container id. Returns Promise&amp;lt;void&amp;gt;&#xA;A promise that fails if the container doesn&#39;t exist.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/OpenDialogResult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/OpenDialogResult/</guid>
+      <description>Interface: OpenDialogResult Since&#xA;0.2.3&#xA;Properties canceled • Readonly canceled: boolean&#xA;Whether the dialog was canceled.&#xA;filePaths • Readonly filePaths: string[]&#xA;An array of file paths chosen by the user. If the dialog is cancelled this will be an empty array.&#xA;bookmarks • Optional Readonly bookmarks: string[]&#xA;macOS only. An array matching the filePaths array of base64 encoded strings which contains security scoped bookmark data. securityScopedBookmarks must be enabled for this to be populated.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/RawExecResult/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/RawExecResult/</guid>
+      <description>Interface: RawExecResult Since&#xA;0.2.0&#xA;Hierarchy RawExecResult&#xA;↳ ExecResult&#xA;Properties cmd • Optional Readonly cmd: string&#xA;killed • Optional Readonly killed: boolean&#xA;signal • Optional Readonly signal: string&#xA;code • Optional Readonly code: number&#xA;stdout • Readonly stdout: string&#xA;stderr • Readonly stderr: string</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/RequestConfig/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/RequestConfig/</guid>
+      <description>Interface: RequestConfig Since&#xA;0.2.0&#xA;Properties url • Readonly url: string&#xA;method • Readonly method: string&#xA;headers • Readonly headers: Record&amp;lt;string, string&amp;gt;&#xA;data • Readonly data: any</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/RequestConfigV0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/RequestConfigV0/</guid>
+      <description>Interface: RequestConfigV0 Properties url • Readonly url: string&#xA;method • Readonly method: string&#xA;headers • Readonly headers: Record&amp;lt;string, string&amp;gt;&#xA;data • Readonly data: any</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ServiceError/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/ServiceError/</guid>
+      <description>Interface: ServiceError Error thrown when an HTTP response is received with a status code that falls out to the range of 2xx.&#xA;Since&#xA;0.2.0&#xA;Properties name • name: string&#xA;message • message: string&#xA;statusCode • statusCode: number</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/SpawnOptions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/SpawnOptions/</guid>
+      <description>Interface: SpawnOptions Since&#xA;0.3.0&#xA;Hierarchy ExecOptions&#xA;↳ SpawnOptions&#xA;Properties cwd • Optional cwd: string&#xA;Inherited from ExecOptions. cwd&#xA;env • Optional env: ProcessEnv&#xA;Inherited from ExecOptions. env&#xA;stream • stream: ExecStreamOptions</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Toast/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/interfaces/Toast/</guid>
+      <description>Interface: Toast Toasts provide a brief notification to the user. They appear temporarily and shouldn&#39;t interrupt the user experience. They also don&#39;t require user input to disappear.&#xA;Since&#xA;0.2.0&#xA;Methods success ▸ success(msg): void&#xA;Display a toast message of type success.&#xA;ddClient.desktopUI.toast.success(&amp;#34;message&amp;#34;); Parameters Name Type Description msg string The message to display in the toast. Returns void&#xA;warning ▸ warning(msg): void&#xA;Display a toast message of type warning.&#xA;ddClient.desktopUI.toast.warning(&amp;#34;message&amp;#34;); Parameters Name Type Description msg string The message to display in the warning.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/README/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/reference/README/</guid>
+      <description> Extensions API Reference Dashboard Interfaces Host NavigationIntents Toast Other Interfaces ExecResultV0 RequestConfigV0 BackendV0 OpenDialogResult Dialog Docker DockerCommand ExecOptions SpawnOptions Exec ExecProcess ExecStreamOptions ExecResult RawExecResult Extension DesktopUI ExtensionVM ExtensionHost ExtensionCli HttpService RequestConfig ServiceError DockerDesktopClient </description>
+    </item>
+    <item>
+      <title>Add a backend to your extension</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/build/backend-extension-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/build/backend-extension-tutorial/</guid>
+      <description>Your extension can ship a backend part with which the frontend can interact with. This page provides information on why and how to add a backend.&#xA;Before you start, make sure you have installed the latest version of Docker Desktop.&#xA;Tip&#xA;Check the Quickstart guide and docker extension init &amp;lt;my-extension&amp;gt;. They provide a better base for your extension as it&#39;s more up-to-date and related to your install of Docker Desktop.</description>
+    </item>
+    <item>
+      <title>Continuous Integration (CI)</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/continuous-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/continuous-integration/</guid>
+      <description>In order to help validate your extension and ensure it&#39;s functional, the Extension SDK provides tools to help you setup continuous integration for your extension.&#xA;Important&#xA;The Docker Desktop Action and the extension-test-helper library are both experimental.&#xA;Setup CI environment with GitHub Actions You need Docker Desktop to be able to install and validate your extension. You can start Docker Desktop in GitHub Actions using the Docker Desktop Action, by adding the following to a workflow file:</description>
+    </item>
+    <item>
+      <title>Create a simple extension</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/build/minimal-frontend-extension/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/build/minimal-frontend-extension/</guid>
+      <description>To start creating your extension, you first need a directory with files which range from the extension’s source code to the required extension-specific files. This page provides information on how to set up a minimal frontend extension based on plain HTML.&#xA;Before you start, make sure you have installed the latest version of Docker Desktop.&#xA;Tip&#xA;If you want to start a codebase for your new extension, our Quickstart guide and docker extension init &amp;lt;my-extension&amp;gt; provides a better base for your extension.</description>
+    </item>
+    <item>
+      <title>Create an advanced frontend extension</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/build/frontend-extension-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/build/frontend-extension-tutorial/</guid>
+      <description>To start creating your extension, you first need a directory with files which range from the extension’s source code to the required extension-specific files. This page provides information on how to set up an extension with a more advanced frontend.&#xA;Before you start, make sure you have installed the latest version of Docker Desktop.&#xA;Extension folder structure The quickest way to create a new extension is to run docker extension init my-extension as in the Quickstart.</description>
+    </item>
+    <item>
+      <title>Dashboard</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/dashboard/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/dashboard/</guid>
+      <description>User notifications Toasts provide a brief notification to the user. They appear temporarily and shouldn&#39;t interrupt the user experience. They also don&#39;t require user input to disappear.&#xA;success ▸ success(msg): void&#xA;Use to display a toast message of type success.&#xA;ddClient.desktopUI.toast.success(&amp;#34;message&amp;#34;); warning ▸ warning(msg): void&#xA;Use to display a toast message of type warning.&#xA;ddClient.desktopUI.toast.warning(&amp;#34;message&amp;#34;); error ▸ error(msg): void&#xA;Use to display a toast message of type error.&#xA;ddClient.desktopUI.toast.error(&amp;#34;message&amp;#34;); For more details about method parameters and the return types available, see Toast API reference.</description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/docker/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/docker/</guid>
+      <description>Docker objects ▸ listContainers(options?): Promise&amp;lt;unknown&amp;gt;&#xA;To get the list of containers:&#xA;const containers = await ddClient.docker.listContainers(); ▸ listImages(options?): Promise&amp;lt;unknown&amp;gt;&#xA;To get the list of local container images:&#xA;const images = await ddClient.docker.listImages(); See the Docker API reference for details about these methods.&#xA;Deprecated access to Docker objects&#xA;The methods below are deprecated and will be removed in a future version. Use the methods specified above.&#xA;const containers = await window.</description>
+    </item>
+    <item>
+      <title>Extension Backend</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/backend/</guid>
+      <description>The ddClient.extension.vm object can be used to communicate with the backend defined in the vm section of the extension metadata.&#xA;get ▸ get(url): Promise&amp;lt;unknown&amp;gt;&#xA;Performs an HTTP GET request to a backend service.&#xA;ddClient.extension.vm.service .get(&amp;#34;/some/service&amp;#34;) .then((value: any) =&amp;gt; console.log(value) See Service API Reference for other methods such as POST, UPDATE, and DELETE.&#xA;Deprecated extension backend communication&#xA;The methods below that use window.ddClient.backend are deprecated and will be removed in a future version.</description>
+    </item>
+    <item>
+      <title>Extension UI API</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/overview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/overview/</guid>
+      <description>The extensions UI runs in a sandboxed environment and doesn&#39;t have access to any electron or nodejs APIs.&#xA;The extension UI API provides a way for the frontend to perform different actions and communicate with the Docker Desktop dashboard or the underlying system.&#xA;JavaScript API libraries, with Typescript support, are available in order to get all the API definitions in to your extension code.&#xA;@docker/extension-api-client gives access to the extension API entrypoint DockerDesktopCLient.</description>
+    </item>
+    <item>
+      <title>Interacting with Kubernetes from an extension</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/guides/kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/guides/kubernetes/</guid>
+      <description>The Extensions SDK does not provide any API methods to directly interact with the Docker Desktop managed Kubernetes cluster or any other created using other tools such as KinD. However, this page provides a way for you to use other SDK APIs to interact indirectly with a Kubernetes cluster from your extension.&#xA;To request an API that directly interacts with Docker Desktop-managed Kubernetes, you can upvote this issue in the Extensions SDK GitHub repository.</description>
+    </item>
+    <item>
+      <title>Invoke host binaries</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/guides/invoke-host-binaries/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/guides/invoke-host-binaries/</guid>
+      <description>In some cases, your extension may need to invoke some command from the host. For example, you might want to invoke the CLI of your cloud provider to create a new resource, or the CLI of a tool your extension provides, or even a shell script that you want to run on the host.&#xA;You could do that by executing the CLI from a container with the extension SDK. But this CLI needs to access the host&#39;s filesystem, which isn&#39;t easy nor fast if it runs in a container.</description>
+    </item>
+    <item>
+      <title>Navigation</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/api/dashboard-routes-navigation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/api/dashboard-routes-navigation/</guid>
+      <description>ddClient.desktopUI.navigate enables navigation to specific screens of Docker Desktop such as the containers tab, the images tab, or a specific container&#39;s logs.&#xA;For example, navigate to a given container logs:&#xA;const id = &amp;#39;8c7881e6a107&amp;#39;; try { await ddClient.desktopUI.navigate.viewContainerLogs(id); } catch (e) { console.error(e); ddClient.desktopUI.toast.error( `Failed to navigate to logs for container &amp;#34;${id}&amp;#34;.` ); } Parameters Name Type Description id string The full container id, e.g. 46b57e400d801762e9e115734bf902a2450d89669d85881058a46136520aca28. You can use the --no-trunc flag as part of the docker ps command to display the full container id.</description>
+    </item>
+    <item>
+      <title>OAuth 2.0 flow</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/guides/oauth2-flow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/guides/oauth2-flow/</guid>
+      <description>Note&#xA;This page assumes that you already have an Identity Provider (IdP), such as Google, Entra ID (formerly Azure AD) or Okta, which handles the authentication process and returns an access token.&#xA;Learn how you can let users authenticate from your extension using OAuth 2.0 via a web browser, and return to your extension.&#xA;In OAuth 2.0, the term &amp;quot;grant type&amp;quot; refers to the way an application gets an access token.</description>
+    </item>
+    <item>
+      <title>Quickstart</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/quickstart/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/quickstart/</guid>
+      <description>Follow this guide to get started with creating a basic Docker extension. The Quickstart guide automatically generates boilerplate files for you.&#xA;Prerequisites Docker Desktop NodeJS Go Note&#xA;NodeJS and Go are only required when you follow the quickstart guide to create an extension. It uses the docker extension init command to automatically generate boilerplate files. This command uses a template based on a ReactJS and Go application.&#xA;In Docker Desktop settings, ensure you can install the extension you&#39;re developing.</description>
+    </item>
+    <item>
+      <title>Test and debug</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/test-debug/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/test-debug/</guid>
+      <description>In order to improve the developer experience, Docker Desktop provides a set of tools to help you test and debug your extension.&#xA;Open Chrome DevTools In order to open the Chrome DevTools for your extension when you select the Extensions tab, run:&#xA;$ docker extension dev debug &amp;lt;name-of-your-extensions&amp;gt; Each subsequent click on the extension tab also opens Chrome DevTools. To stop this behaviour, run:&#xA;$ docker extension dev reset &amp;lt;name-of-your-extensions&amp;gt; After an extension is deployed, it is also possible to open Chrome DevTools from the UI extension part using a variation of the Konami Code.</description>
+    </item>
+    <item>
+      <title>The build and publish process</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/process/</guid>
+      <description>This documentation is structured so that it matches the steps you need to take when creating your extension.&#xA;There are two main parts to creating a Docker extension:&#xA;Build the foundations Publish the extension Note&#xA;You do not need to pay to create a Docker extension. The Docker Extension SDK is licensed under the Apache 2.0 License and is free to use. Anyone can create new extensions and share them without constraints.</description>
+    </item>
+    <item>
+      <title>Usage overview</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/dev/usage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/dev/usage/</guid>
+      <description>The Extensions CLI is an extension development tool that is used to manage Docker extensions. Actions include install, list, remove, and validate extensions.&#xA;docker extension enable turns on Docker extensions. docker extension dev commands for extension development. docker extension disable turns off Docker extensions. docker extension init creates a new Docker extension. docker extension install installs a Docker extension with the specified image. docker extension ls list installed Docker extensions. docker extension rm removes a Docker extension.</description>
+    </item>
+    <item>
+      <title>Use the Docker socket from the extension backend</title>
+      <link>https://docs.docker.com/desktop/extensions-sdk/guides/use-docker-socket-from-backend/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/desktop/extensions-sdk/guides/use-docker-socket-from-backend/</guid>
+      <description>Extensions can invoke Docker commands directly from the frontend with the SDK.&#xA;In some cases, it is useful to also interact with Docker Engine from the backend.&#xA;Extension backend containers can mount the Docker socket and use it to interact with Docker Engine from the extension backend logic. Learn more about the Docker Engine socket&#xA;However, when mounting the Docker socket from an extension container that lives in the Desktop virtual machine, you want to mount the Docker socket from inside the VM, and not mount /var/run/docker.</description>
+    </item>
+  </channel>
+</rss>

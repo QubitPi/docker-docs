@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker daemon configuration overview on Docker Docs</title>
+    <link>https://docs.docker.com/config/daemon/</link>
+    <description>Recent content in Docker daemon configuration overview on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docs.docker.com/config/daemon/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Collect Docker metrics with Prometheus</title>
+      <link>https://docs.docker.com/config/daemon/prometheus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/prometheus/</guid>
+      <description>Prometheus is an open-source systems monitoring and alerting toolkit. You can configure Docker as a Prometheus target.&#xA;Warning&#xA;The available metrics and the names of those metrics are in active development and may change at any time.&#xA;Currently, you can only monitor Docker itself. You can&#39;t currently monitor your application using the Docker target.&#xA;Example The following example shows you how to configure your Docker daemon, set up Prometheus to run as a container on your local machine, and monitor your Docker instance using Prometheus.</description>
+    </item>
+    <item>
+      <title>Configure remote access for Docker daemon</title>
+      <link>https://docs.docker.com/config/daemon/remote-access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/remote-access/</guid>
+      <description>By default, the Docker daemon listens for connections on a Unix socket to accept requests from local clients. You can configure Docker to accept requests from remote clients by configuring it to listen on an IP address and port as well as the Unix socket.&#xA;Warning&#xA;Configuring Docker to accept connections from remote clients can leave you vulnerable to unauthorized access to the host and other attacks.&#xA;It&#39;s critically important that you understand the security implications of opening Docker to the network.</description>
+    </item>
+    <item>
+      <title>Configure the daemon to use a proxy</title>
+      <link>https://docs.docker.com/config/daemon/proxy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/proxy/</guid>
+      <description>If your organization uses a proxy server to connect to the internet, you may need to configure the Docker daemon to use the proxy server. The daemon uses a proxy server to access images stored on Docker Hub and other registries, and to reach other nodes in a Docker swarm.&#xA;This page describes how to configure a proxy for the Docker daemon. For instructions on configuring proxy settings for the Docker CLI, see Configure Docker to use a proxy server.</description>
+    </item>
+    <item>
+      <title>Enable IPv6 support</title>
+      <link>https://docs.docker.com/config/daemon/ipv6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/ipv6/</guid>
+      <description>IPv6 is only supported on Docker daemons running on Linux hosts.&#xA;Create an IPv6 network Using docker network create:&#xA;$ docker network create --ipv6 ip6net Using docker network create, specifying an IPv6 subnet:&#xA;$ docker network create --ipv6 --subnet 2001:db8::/64 ip6net Using a Docker Compose file:&#xA;networks: ip6net: enable_ipv6: true ipam: config: - subnet: 2001:db8::/64 You can now run containers that attach to the ip6net network.&#xA;$ docker run --rm --network ip6net -p 80:80 traefik/whoami This publishes port 80 on both IPv6 and IPv4.</description>
+    </item>
+    <item>
+      <title>Read the daemon logs</title>
+      <link>https://docs.docker.com/config/daemon/logs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/logs/</guid>
+      <description>The daemon logs may help you diagnose problems. The logs may be saved in one of a few locations, depending on the operating system configuration and the logging subsystem used:&#xA;Operating system Location Linux Use the command journalctl -xu docker.service (or read /var/log/syslog or /var/log/messages, depending on your Linux Distribution) macOS (dockerd logs) ~/Library/Containers/com.docker.docker/Data/log/vm/dockerd.log macOS (containerd logs) ~/Library/Containers/com.docker.docker/Data/log/vm/containerd.log Windows (WSL2) (dockerd logs) %LOCALAPPDATA%\Docker\log\vm\dockerd.log Windows (WSL2) (containerd logs) %LOCALAPPDATA%\Docker\log\vm\containerd.log Windows (Windows containers) Logs are in the Windows Event Log To view the dockerd logs on macOS, open a terminal Window, and use the tail command with the -f flag to &amp;quot;follow&amp;quot; the logs.</description>
+    </item>
+    <item>
+      <title>Start the daemon</title>
+      <link>https://docs.docker.com/config/daemon/start/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/start/</guid>
+      <description>This page shows how to start the daemon, either manually or using OS utilities.&#xA;Start the daemon using operating system utilities On a typical installation the Docker daemon is started by a system utility, not manually by a user. This makes it easier to automatically start Docker when the machine reboots.&#xA;The command to start Docker depends on your operating system. Check the correct page under Install Docker.&#xA;Start with systemd On some operating systems, like Ubuntu and Debian, the Docker daemon service starts automatically.</description>
+    </item>
+    <item>
+      <title>Troubleshooting the Docker daemon</title>
+      <link>https://docs.docker.com/config/daemon/troubleshoot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docs.docker.com/config/daemon/troubleshoot/</guid>
+      <description>This page describes how to troubleshoot and debug the daemon if you run into issues.&#xA;You can turn on debugging on the daemon to learn about the runtime activity of the daemon and to aid in troubleshooting. If the daemon is unresponsive, you can also force a full stack trace of all threads to be added to the daemon log by sending the SIGUSR signal to the Docker daemon.&#xA;Daemon Unable to connect to the Docker daemon Cannot connect to the Docker daemon.</description>
+    </item>
+  </channel>
+</rss>
