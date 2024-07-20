@@ -33,7 +33,7 @@
       <link>https://docker.qubitpi.org/build/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://docker.qubitpi.org/build/release-notes/</guid>
-      <description>This page contains information about the new features, improvements, and bug fixes in Docker Buildx.&#xA;0.14.0 2024-04-18 The full release note for this release is available on GitHub.&#xA;Enhancements Add support for --print=lint (experimental). docker/buildx#2404, docker/buildx#2406 Fix JSON formatting for custom implementations of print sub-requests in frontends. docker/buildx#2374 Provenance records are now set when building with --metadata-file. docker/buildx#2280 Add Git authentication support for remote definitions. docker/buildx#2363 New default-load driver option for the docker-container, remote, and kubernetes drivers to load build results to the Docker Engine image store by default.</description>
+      <description>This page contains information about the new features, improvements, and bug fixes in Docker Buildx.&#xA;0.16.0 2024-07-11 The full release note for this release is available on GitHub.&#xA;New Bake command now supports --call and --check flags and call attribute in target definitions for selecting custom frontend methods. docker/buildx#2556, docker/buildx#2576 Experimental Bake now supports --list-targets and --list-variables flags for inspecting the definition and possible configuration options for your project. docker/buildx#2556 Bake definition variables and targets supports new description attribute for defining text-based description that can be inspected using e.</description>
     </item>
     <item>
       <title>Build secrets</title>
@@ -82,7 +82,7 @@
       <link>https://docker.qubitpi.org/build/dockerfile/release-notes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://docker.qubitpi.org/build/dockerfile/release-notes/</guid>
-      <description>This page contains information about the new features, improvements, known issues, and bug fixes in Dockerfile reference.&#xA;For usage, see the Dockerfile frontend syntax page.&#xA;1.7.0 2024-03-06 Stable # syntax=docker/dockerfile:1.7 Variable expansion now allows string substitutions and trimming. moby/buildkit#4427, moby/buildkit#4287 Named contexts with local sources now correctly transfer only the files used in the Dockerfile instead of the full source directory. moby/buildkit#4161 Dockerfile now better validates the order of stages and returns nice errors with stack traces if stages are in incorrect order.</description>
+      <description>This page contains information about the new features, improvements, known issues, and bug fixes in Dockerfile reference.&#xA;For usage, see the Dockerfile frontend syntax page.&#xA;1.9.0 2024-07-11 The full release note for this release is available on GitHub.&#xA;# syntax=docker/dockerfile:1.9.0 Add new validation rules: SecretsUsedInArgOrEnv InvalidDefaultArgInFrom RedundantTargetPlatform CopyIgnoredFile (experimental) FromPlatformFlagConstDisallowed Many performance improvements for working with big Dockerfiles. moby/buildkit#5067, moby/buildkit#5029 Fix possible panic when building Dockerfile without defined stages. moby/buildkit#5150 Fix incorrect JSON parsing that could cause some incorrect JSON values to pass without producing an error.</description>
     </item>
     <item>
       <title>Multi-platform images</title>
