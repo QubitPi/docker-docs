@@ -183,6 +183,84 @@ By default, a `unix` domain socket (or IPC socket) is created at
 `/var/run/docker.sock`, requiring either `root` permission, or `docker` group
 membership.
 
+> **Note** What is /var/run/docker.sock?
+>
+> `/var/run/docker.sock` is the default Unix socket. Sockets are meant for communication between processes on the same
+> host.
+>
+> ![Error loading docker-docker-unix-socket.png](images/docker-docker-unix-socket.png)
+>
+>
+> Docker daemon by default listens to **docker.sock**. If Docker client and daemon are running on the same host, we
+> can the `/var/run/docker.sock` to manage containers, which means we can mount the Docker socket from the host into
+> the container.
+>
+> For example, if we run the following command, it will return the version of the docker engine.
+>
+> ```console
+> curl --unix-socket /var/run/docker.sock http://localhost/version
+> ```
+>
+> _Things get little trickier when we run docker inside docker_, in which case we have to run docker with the default
+> Unix socket `docker.sock` as _a volume_. For example
+>
+> ```console
+> docker run -v /var/run/docker.sock:/var/run/docker.sock -it docker
+> ```
+>
+> Our mental model might look like this:
+>
+> ```text
+> +-------------------------------------------+
+> |                   Host                    |
+> |                                           |
+> |  +-------------------------------------+  |
+> |  |             Container A             |  |
+> |  |                                     |  |
+> |  |  +-------------------------------+  |  |
+> |  |  |                               |  |  |
+> |  |  |          Container B          |  |  |
+> |  |  |                               |  |  |
+> |  |  |                               |  |  |
+> |  |  |                               |  |  |
+> |  |  |                               |  |  |
+> |  |  |                               |  |  |
+> |  |  +-------------------------------+  |  |
+> |  +-------------------------------------+  |
+> +-------------------------------------------+
+> ```
+>
+> From within the container A, we should be able to execute docker commands for building and pushing images to the
+> registry.
+>
+> **Here, the actual docker operations in A happen on the VM host running our base docker container rather than from
+> within the container A**. Although container A has access to the Docker socket and is able to start container B, A
+> is starting B as "sibling" container instead of "child" container. The setup looks like Docker-in-Docker, feels like
+> Docker-in-Docker, but it's not Docker-in-Docker: when this container A will create more containers, those containers
+> will be created in the top-level Docker. We will not experience nesting side effects, and the build cache will be
+> shared across multiple invocations. Hence the correct mental model shall look like this:
+>
+> ```text
+> +-------------------------------------------+
+> |                                           |
+> |                   Host                    |
+> |                                           |
+> | +------------------+ +------------------+ |
+> | |                  | |                  | |
+> | |                  | |                  | |
+> | |   Container A    | |    Container B   | |
+> | |                  | |                  | |
+> | |                  | |                  | |
+> | |                  | |                  | |
+> | |                  | |                  | |
+> | +------------------+ +------------------+ |
+> |                                           |
+> +-------------------------------------------+
+> ```
+>
+> **Just a word of caution**: If a container gets access to `docker.sock`, it means it has more privileges over docker
+> daemon. So when used in real projects, understand the security risks, and use it.
+
 If you need to access the Docker daemon remotely, you need to enable the tcp
 Socket. When using a TCP socket, the Docker daemon provides un-encrypted and
 un-authenticated direct access to the Docker daemon by default. You should secure
