@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Reuse upstream's build logic and, when done, fetch them out from container into "github-pages-out" on host
+      - name: Build documentation HTML in Docker and fetch them out from container into "github-pages-out" on host
         run: mkdir github-pages-out && docker compose up
       - name: Load CNAME
         run: echo docker.qubitpi.org > github-pages-out/CNAME
