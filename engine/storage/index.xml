@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Storage on Docker Docs</title>
+    <link>https://docker.qubitpi.org/engine/storage/</link>
+    <description>Recent content in Storage on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docker.qubitpi.org/engine/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Volumes</title>
+      <link>https://docker.qubitpi.org/engine/storage/volumes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/storage/volumes/</guid>
+      <description>&lt;p&gt;Volumes are persistent data stores for containers, created and managed by&#xA;Docker. You can create a volume explicitly using the &lt;code&gt;docker volume create&lt;/code&gt;&#xA;command, or Docker can create a volume during container or service creation.&lt;/p&gt;&#xA;&lt;p&gt;When you create a volume, it&#39;s stored within a directory on the Docker&#xA;host. When you mount the volume into a container, this directory is what&#39;s&#xA;mounted into the container. This is similar to the way that bind mounts work,&#xA;except that volumes are managed by Docker and are isolated from the core&#xA;functionality of the host machine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bind mounts</title>
+      <link>https://docker.qubitpi.org/engine/storage/bind-mounts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/storage/bind-mounts/</guid>
+      <description>&lt;p&gt;When you use a bind mount, a file or directory on the host machine is mounted&#xA;from the host into a container. By contrast, when you use a volume, a new&#xA;directory is created within Docker&#39;s storage directory on the host machine, and&#xA;Docker manages that directory&#39;s contents.&lt;/p&gt;&#xA;&#xA;&lt;h2 class=&#34; scroll-mt-20&#34; id=&#34;when-to-use-bind-mounts&#34;&gt;&#xA;  &lt;a class=&#34;text-black dark:text-white no-underline hover:underline&#34; href=&#34;#when-to-use-bind-mounts&#34;&gt;&#xA;    When to use bind mounts&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;Bind mounts are appropriate for the following types of use case:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>tmpfs mounts</title>
+      <link>https://docker.qubitpi.org/engine/storage/tmpfs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/storage/tmpfs/</guid>
+      <description>&lt;p&gt;&#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/storage/volumes/&#34;&gt;Volumes&lt;/a&gt; and &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/storage/bind-mounts/&#34;&gt;bind mounts&lt;/a&gt; let you share files&#xA;between the host machine and container so that you can persist data even after&#xA;the container is stopped.&lt;/p&gt;&#xA;&lt;p&gt;If you&#39;re running Docker on Linux, you have a third option: tmpfs mounts.&#xA;When you create a container with a tmpfs mount, the container can create&#xA;files outside the container&#39;s writable layer.&lt;/p&gt;&#xA;&lt;p&gt;As opposed to volumes and bind mounts, a tmpfs mount is temporary, and only&#xA;persisted in the host memory. When the container stops, the tmpfs mount is&#xA;removed, and files written there won&#39;t be persisted.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>containerd image store with Docker Engine</title>
+      <link>https://docker.qubitpi.org/engine/storage/containerd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/storage/containerd/</guid>
+      <description>&lt;blockquote&#xA;    &#xA;    class=&#34;px-4 border-l-4 border-blue-light dark:border-blue-dark&#34;&gt;&#xA;    &lt;p class=&#34;flex gap-2 items-center text-blue-light dark:text-blue-dark&#34;&gt;&#xA;      &lt;span class=&#34;icon-svg pb-1&#34;&gt;&#xA;        &lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; viewBox=&#34;0 -960 960 960&#34;&gt;&lt;path d=&#34;M483.18-280q12.82 0 21.32-8.63 8.5-8.62 8.5-21.37v-180q0-12.75-8.68-21.38-8.67-8.62-21.5-8.62-12.82 0-21.32 8.62-8.5 8.63-8.5 21.38v180q0 12.75 8.68 21.37 8.67 8.63 21.5 8.63Zm-3.2-314q14.02 0 23.52-9.2T513-626q0-14.45-9.48-24.22-9.48-9.78-23.5-9.78t-23.52 9.78Q447-640.45 447-626q0 13.6 9.48 22.8 9.48 9.2 23.5 9.2Zm.29 514q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Z&#34;/&gt;&lt;/svg&gt;&#xA;      &lt;/span&gt;&#xA;      &lt;strong&gt;Note&lt;/strong&gt;&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;&lt;p&gt;The containerd image store is an experimental feature of Docker Engine.&#xA;If you&#39;re using Docker Desktop, refer to the instructions on the&#xA;&#xA;    &#xA;    &#xA;  &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/desktop/features/containerd/&#34;&gt;containerd image store with Docker Desktop page&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

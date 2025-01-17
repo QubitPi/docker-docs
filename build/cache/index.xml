@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docker build cache on Docker Docs</title>
+    <link>https://docker.qubitpi.org/build/cache/</link>
+    <description>Recent content in Docker build cache on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docker.qubitpi.org/build/cache/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build cache invalidation</title>
+      <link>https://docker.qubitpi.org/build/cache/invalidation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/build/cache/invalidation/</guid>
+      <description>&lt;p&gt;When building an image, Docker steps through the instructions in your&#xA;Dockerfile, executing each in the order specified. For each instruction, the&#xA;&#xA;    &#xA;    &#xA;  &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/build/builders/&#34;&gt;builder&lt;/a&gt; checks whether it can reuse the&#xA;instruction from the build cache.&lt;/p&gt;&#xA;&#xA;&lt;h2 class=&#34; scroll-mt-20&#34; id=&#34;general-rules&#34;&gt;&#xA;  &lt;a class=&#34;text-black dark:text-white no-underline hover:underline&#34; href=&#34;#general-rules&#34;&gt;&#xA;    General rules&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;The basic rules of build cache invalidation are as follows:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;The builder begins by checking if the base image is already cached. Each&#xA;subsequent instruction is compared against the cached layers. If no cached&#xA;layer matches the instruction exactly, the cache is invalidated.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Build garbage collection</title>
+      <link>https://docker.qubitpi.org/build/cache/garbage-collection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/build/cache/garbage-collection/</guid>
+      <description>&lt;p&gt;While &#xA;    &#xA;    &#xA;  &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/reference/cli/docker/builder/prune/&#34;&gt;&lt;code&gt;docker builder prune&lt;/code&gt;&lt;/a&gt;&#xA;or &#xA;    &#xA;    &#xA;  &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/reference/cli/docker/buildx/prune/&#34;&gt;&lt;code&gt;docker buildx prune&lt;/code&gt;&lt;/a&gt;&#xA;commands run at once, Garbage Collection (GC) runs periodically and follows an&#xA;ordered list of prune policies. The BuildKit daemon clears the build cache when&#xA;the cache size becomes too big, or when the cache age expires.&lt;/p&gt;&#xA;&lt;p&gt;For most users, the default GC behavior is sufficient and doesn&#39;t require any&#xA;intervention. Advanced users, particularly those working with large-scale&#xA;builds, self-managed builders, or constrained storage environments, might&#xA;benefit from customizing these settings to better align with their workflow&#xA;needs. The following sections explain how GC works and provide guidance on&#xA;tailoring its behavior through custom configuration.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Optimize cache usage in builds</title>
+      <link>https://docker.qubitpi.org/build/cache/optimize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/build/cache/optimize/</guid>
+      <description>&lt;p&gt;When building with Docker, a layer is reused from the build cache if the&#xA;instruction and the files it depends on hasn&#39;t changed since it was previously&#xA;built. Reusing layers from the cache speeds up the build process because Docker&#xA;doesn&#39;t have to rebuild the layer again.&lt;/p&gt;&#xA;&lt;p&gt;Here are a few techniques you can use to optimize build caching and speed up&#xA;the build process:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;  &lt;a class=&#34;link&#34; href=&#34;#order-your-layers&#34;&gt;Order your layers&lt;/a&gt;: Putting the commands in your&#xA;Dockerfile into a logical order can help you avoid unnecessary cache&#xA;invalidation.&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a class=&#34;link&#34; href=&#34;#keep-the-context-small&#34;&gt;Keep the context small&lt;/a&gt;: The context is the set of&#xA;files and directories that are sent to the builder to process a build&#xA;instruction. Keeping the context as small as possible reduces the amount of data that&#xA;needs to be sent to the builder, and reduces the likelihood of cache&#xA;invalidation.&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a class=&#34;link&#34; href=&#34;#use-bind-mounts&#34;&gt;Use bind mounts&lt;/a&gt;: Bind mounts let you mount a file or&#xA;directory from the host machine into the build container. Using bind mounts&#xA;can help you avoid unnecessary layers in the image, which can slow down the&#xA;build process.&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a class=&#34;link&#34; href=&#34;#use-cache-mounts&#34;&gt;Use cache mounts&lt;/a&gt;: Cache mounts let you specify a&#xA;persistent package cache to be used during builds. The persistent cache helps&#xA;speed up build steps, especially steps that involve installing packages using&#xA;a package manager. Having a persistent cache for packages means that even if&#xA;you rebuild a layer, you only download new or changed packages.&lt;/li&gt;&#xA;&lt;li&gt;&#xA;  &lt;a class=&#34;link&#34; href=&#34;#use-an-external-cache&#34;&gt;Use an external cache&lt;/a&gt;: An external cache lets you&#xA;store build cache at a remote location. The external cache image can be&#xA;shared between multiple builds, and across different environments.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h2 class=&#34; scroll-mt-20&#34; id=&#34;order-your-layers&#34;&gt;&#xA;  &lt;a class=&#34;text-black dark:text-white no-underline hover:underline&#34; href=&#34;#order-your-layers&#34;&gt;&#xA;    Order your layers&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;Putting the commands in your Dockerfile into a logical order is a great place&#xA;to start. Because a change causes a rebuild for steps that follow, try to make&#xA;expensive steps appear near the beginning of the Dockerfile. Steps that change&#xA;often should appear near the end of the Dockerfile, to avoid triggering&#xA;rebuilds of layers that haven&#39;t changed.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

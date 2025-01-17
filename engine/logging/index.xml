@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>View container logs on Docker Docs</title>
+    <link>https://docker.qubitpi.org/engine/logging/</link>
+    <description>Recent content in View container logs on Docker Docs</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://docker.qubitpi.org/engine/logging/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Configure logging drivers</title>
+      <link>https://docker.qubitpi.org/engine/logging/configure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/logging/configure/</guid>
+      <description>&lt;p&gt;Docker includes multiple logging mechanisms to help you get information from&#xA;running containers and services. These mechanisms are called logging drivers.&#xA;Each Docker daemon has a default logging driver, which each container uses&#xA;unless you configure it to use a different logging driver, or log driver for&#xA;short.&lt;/p&gt;&#xA;&lt;p&gt;As a default, Docker uses the &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/logging/drivers/json-file/&#34;&gt;&lt;code&gt;json-file&lt;/code&gt; logging driver&lt;/a&gt;, which&#xA;caches container logs as JSON internally. In addition to using the logging drivers&#xA;included with Docker, you can also implement and use &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/logging/plugins/&#34;&gt;logging driver plugins&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Customize log driver output</title>
+      <link>https://docker.qubitpi.org/engine/logging/log_tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/logging/log_tags/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;tag&lt;/code&gt; log option specifies how to format a tag that identifies the&#xA;container&#39;s log messages. By default, the system uses the first 12 characters of&#xA;the container ID. To override this behavior, specify a &lt;code&gt;tag&lt;/code&gt; option:&lt;/p&gt;&#xA;&lt;div data-pagefind-ignore class=&#34;scroll-mt-20&#34; x-data x-ref=&#34;root&#34;&gt;&#xA;  &#xA;  &lt;div class=&#34;group relative&#34;&gt;&#xA;    &lt;button x-data=&#34;{ code: &#39;JCBkb2NrZXIgcnVuIC0tbG9nLWRyaXZlcj1mbHVlbnRkIC0tbG9nLW9wdCBmbHVlbnRkLWFkZHJlc3M9bXlob3N0LmxvY2FsOjI0MjI0IC0tbG9nLW9wdCB0YWc9Im1haWxlciI=&#39;, copying: false }&#34;&#xA;      class=&#34;absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600&#34; title=&#34;copy&#34; @click=&#34;window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$&gt;]\s+/gm, &#39;&#39;));&#xA;      copying = true;&#xA;      setTimeout(() =&gt; copying = false, 2000);&#34;&gt;&#xA;      &lt;span :class=&#34;{ &#39;group-hover:block&#39; : !copying }&#34; class=&#34;icon-svg hidden&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; viewBox=&#34;0 -960 960 960&#34;&gt;&lt;path d=&#34;M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;&#xA;      &lt;span :class=&#34;{ &#39;group-hover:block&#39; : copying }&#34; class=&#34;icon-svg hidden&#34;&gt;&lt;svg xmlns=&#34;http://www.w3.org/2000/svg&#34; width=&#34;48&#34; height=&#34;48&#34; viewBox=&#34;0 -960 960 960&#34;&gt;&lt;path d=&#34;m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z&#34;/&gt;&lt;/svg&gt;&lt;/span&gt;&#xA;    &lt;/button&gt;&#xA;     &#xA;    &lt;div class=&#34;syntax-light dark:syntax-dark&#34;&gt;&#xA;      &#xA;        &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-console&#34; data-lang=&#34;console&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gp&#34;&gt;$&lt;/span&gt; docker run --log-driver&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;fluentd --log-opt fluentd-address&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;myhost.local:24224 --log-opt &lt;span class=&#34;nv&#34;&gt;tag&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;mailer&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;      &#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Docker supports some special template markup you can use when specifying a tag&#39;s value:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Use a logging driver plugin</title>
+      <link>https://docker.qubitpi.org/engine/logging/plugins/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/logging/plugins/</guid>
+      <description>&lt;p&gt;Docker logging plugins allow you to extend and customize Docker&#39;s logging&#xA;capabilities beyond those of the &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/logging/configure/&#34;&gt;built-in logging drivers&lt;/a&gt;.&#xA;A logging service provider can&#xA;&#xA;    &#xA;    &#xA;  &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/extend/plugins_logging/&#34;&gt;implement their own plugins&lt;/a&gt; and make them&#xA;available on Docker Hub, or a private registry. This topic shows&#xA;how a user of that logging service can configure Docker to use the plugin.&lt;/p&gt;&#xA;&#xA;&lt;h2 class=&#34; scroll-mt-20&#34; id=&#34;install-the-logging-driver-plugin&#34;&gt;&#xA;  &lt;a class=&#34;text-black dark:text-white no-underline hover:underline&#34; href=&#34;#install-the-logging-driver-plugin&#34;&gt;&#xA;    Install the logging driver plugin&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;To install a logging driver plugin, use &lt;code&gt;docker plugin install &amp;lt;org/image&amp;gt;&lt;/code&gt;,&#xA;using the information provided by the plugin developer.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Use docker logs with remote logging drivers</title>
+      <link>https://docker.qubitpi.org/engine/logging/dual-logging/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://docker.qubitpi.org/engine/logging/dual-logging/</guid>
+      <description>&lt;h2 class=&#34; scroll-mt-20&#34; id=&#34;overview&#34;&gt;&#xA;  &lt;a class=&#34;text-black dark:text-white no-underline hover:underline&#34; href=&#34;#overview&#34;&gt;&#xA;    Overview&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&#xA;&lt;p&gt;You can use the &lt;code&gt;docker logs&lt;/code&gt; command to read container logs regardless of the&#xA;configured logging driver or plugin. Docker Engine uses the &#xA;  &lt;a class=&#34;link&#34; href=&#34;https://docker.qubitpi.org/engine/logging/drivers/local/&#34;&gt;&lt;code&gt;local&lt;/code&gt;&lt;/a&gt;&#xA;logging driver to act as cache for reading the latest logs of your containers.&#xA;This is called dual logging. By default, the cache has log-file rotation&#xA;enabled, and is limited to a maximum of 5 files of 20 MB each (before&#xA;compression) per container.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
