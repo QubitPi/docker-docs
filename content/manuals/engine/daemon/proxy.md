@@ -37,6 +37,25 @@ Configuring the daemon directly takes precedence over environment variables.
 
 ## Daemon configuration
 
+> [!IMPORTANT]
+>
+> [On Ubuntu server, things are little different](https://stackoverflow.com/a/76643435):
+> 
+> Create or edit the __/etc/systemd/system/docker.service.d/proxy.conf__ file and add:
+> 
+> ```text
+> [Service]
+> Environment="HTTP_PROXY=socks5h://127.0.0.1:<PROXY_PORT>"
+> Environment="HTTPS_PROXY=socks5h://127.0.0.1:<PROXY_PORT>"
+> ```
+>
+> Replace `<PROXY_PORT>` with the actual proxy port. Then, reload systemd and restart Docker:
+> 
+> ```console
+> $ sudo systemctl daemon-reload
+> $ sudo systemctl restart docker docker.service
+> ```
+
 You may configure proxy behavior for the daemon in the `daemon.json` file,
 or using CLI flags for the `--http-proxy` or `--https-proxy` flags for the
 `dockerd` command. Configuration using `daemon.json` is recommended.
