@@ -47,7 +47,7 @@ FROM build-base AS build
 # HUGO_ENV sets the hugo.Environment (production, development, preview)
 ARG HUGO_ENV="development"
 # DOCS_URL sets the base URL for the site
-ARG DOCS_URL="https://docs.docker.com"
+ARG DOCS_URL="https://docker.qubitpi.org"
 ENV HUGO_CACHEDIR="/tmp/hugo_cache"
 RUN --mount=type=cache,target=/tmp/hugo_cache \
     hugo --gc --minify -e $HUGO_ENV -b $DOCS_URL
