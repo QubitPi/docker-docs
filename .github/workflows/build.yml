@@ -58,6 +58,7 @@ jobs:
           targets: release
       -
         name: Check Cloudfront config
+        if: github.repository_owner != 'QubitPi'
         uses: docker/bake-action@v6
         with:
           source: .
