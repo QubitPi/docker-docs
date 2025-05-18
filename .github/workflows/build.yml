@@ -64,6 +64,7 @@ jobs:
             *.cache-to=type=gha,scope=build,mode=max
       -
         name: Check Cloudfront config
+        if: github.repository_owner != 'QubitPi'
         uses: docker/bake-action@v6
         with:
           source: .
