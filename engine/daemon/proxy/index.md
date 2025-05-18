@@ -41,8 +41,8 @@ Configuring the daemon directly takes precedence over environment variables.
 > Replace `<PROXY_PORT>` with the actual proxy port. Then, reload systemd and restart Docker:
 > 
 > ```console
-> sudo systemctl daemon-reload
-> sudo systemctl restart docker docker.service
+> $ sudo systemctl daemon-reload
+> $ sudo systemctl restart docker docker.service
 > ```
 
 You may configure proxy behavior for the daemon in the `daemon.json` file,
