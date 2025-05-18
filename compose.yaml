@@ -5,9 +5,12 @@ services:
       target: build-base
     ports:
       - "1313:1313"
-    entrypoint: ["hugo", "--destination", "github-pages-out"]
+    # If upstream changes "/project/public", use
+    # entrypoint: ["hugo", "server", "--bind", "0.0.0.0"]
+    # for the next line and jump into the container to see the latest doc path
+    entrypoint: ["hugo", "--destination", "/project/public"]
     volumes:
-      - ./github-pages-out:/src/github-pages-out
+      - ${DEPLOYMENT_DIR}:/project/public
     develop:
       watch:
         - action: sync
