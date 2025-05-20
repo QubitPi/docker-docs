@@ -9193,6 +9193,12 @@ body > img { display: none }
         
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#upgrade-requires-administrator-privileges">Upgrade requires administrator privileges</a>
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#persistent-notification-telling-me-an-application-has-changed-my-desktop-configurations">Persistent notification telling me an application has changed my Desktop configurations</a>
         </li>
         
@@ -9649,9 +9655,9 @@ Docker app.</p>
 </h2>
 
 
-<h3 class=" scroll-mt-20" id="persistent-notification-telling-me-an-application-has-changed-my-desktop-configurations">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#persistent-notification-telling-me-an-application-has-changed-my-desktop-configurations">
-    Persistent notification telling me an application has changed my Desktop configurations
+<h3 class=" scroll-mt-20" id="upgrade-requires-administrator-privileges">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#upgrade-requires-administrator-privileges">
+    Upgrade requires administrator privileges
   </a>
 </h3>
 
@@ -9662,11 +9668,53 @@ Docker app.</p>
   </a>
 </h4>
 
-<p>You receive this notification because the Configuration integrity check feature has detected that a third-party application has altered your Docker Desktop configuration. This usually happens due to incorrect or missing symlinks. The notification ensures you are aware of these changes so you can review and repair any potential issues to maintain system reliability.</p>
-<p>Opening the notification presents a pop-up window which provides detailed information about the detected integrity issues.</p>
+<p>On macOS, users without administrator privileges cannot perform in-app upgrades from the Docker Desktop Dashboard.</p>
 
 <h4 class=" scroll-mt-20" id="solution-5">
   <a class="text-black dark:text-white no-underline hover:underline" href="#solution-5">
+    Solution
+  </a>
+</h4>
+
+
+
+
+  <blockquote
+    
+    class="px-4 border-l-4 border-violet-light dark:border-violet-dark">
+    <p class="flex gap-2 items-center text-violet-light dark:text-violet-dark">
+      <span class="icon-svg pb-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M480-281q14 0 24.5-10.5T515-316q0-14-10.5-24.5T480-351q-14 0-24.5 10.5T445-316q0 14 10.5 24.5T480-281Zm0-144q13 0 21.5-8.5T510-455v-203q0-13-8.5-21.5T480-688q-13 0-21.5 8.5T450-658v203q0 13 8.5 21.5T480-425ZM355-120q-12 0-23.5-5T312-138L138-312q-8-8-13-19.5t-5-23.5v-250q0-12 5-23.5t13-19.5l174-174q8-8 19.5-13t23.5-5h250q12 0 23.5 5t19.5 13l174 174q8 8 13 19.5t5 23.5v250q0 12-5 23.5T822-312L648-138q-8 8-19.5 13t-23.5 5H355Z"/></svg>
+      </span>
+      <strong>Important</strong>
+    </p>
+    <p>Do not uninstall the current version before upgrading. Doing so deletes all local Docker containers, images, and volumes.</p>
+  </blockquote>
+
+<p>To upgrade Docker Desktop:</p>
+<ul>
+<li>Ask an administrator to install the newer version over the existing one.</li>
+<li>Use the []<code>--user</code> install flag](/manuals/desktop/setup/install/mac-install.md#security-and-access) if appropriate for your setup.</li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="persistent-notification-telling-me-an-application-has-changed-my-desktop-configurations">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#persistent-notification-telling-me-an-application-has-changed-my-desktop-configurations">
+    Persistent notification telling me an application has changed my Desktop configurations
+  </a>
+</h3>
+
+
+<h4 class=" scroll-mt-20" id="cause-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-5">
+    Cause
+  </a>
+</h4>
+
+<p>You receive this notification because the Configuration integrity check feature has detected that a third-party application has altered your Docker Desktop configuration. This usually happens due to incorrect or missing symlinks. The notification ensures you are aware of these changes so you can review and repair any potential issues to maintain system reliability.</p>
+<p>Opening the notification presents a pop-up window which provides detailed information about the detected integrity issues.</p>
+
+<h4 class=" scroll-mt-20" id="solution-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-6">
     Solution
   </a>
 </h4>
@@ -9691,8 +9739,8 @@ runs in the background. The process does not consume any resources unless
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="cause-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-5">
+<h4 class=" scroll-mt-20" id="cause-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-6">
     Cause
   </a>
 </h4>
@@ -9705,8 +9753,8 @@ specifically, the
     rel="noopener">Apple Hypervisor
 framework<span class="pl-1 icon-svg icon-sm"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg></span></a>.</p>
 
-<h4 class=" scroll-mt-20" id="solution-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-6">
+<h4 class=" scroll-mt-20" id="solution-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-7">
     Solution
   </a>
 </h4>
@@ -9760,16 +9808,16 @@ in the Apple documentation, and Docker Desktop
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="cause-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-6">
+<h4 class=" scroll-mt-20" id="cause-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-7">
     Cause
   </a>
 </h4>
 
 <p>In Docker Desktop version 4.19, gVisor replaced VPNKit to enhance the performance of VM networking when using the Virtualization framework on macOS 13 and later.</p>
 
-<h4 class=" scroll-mt-20" id="solution-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-7">
+<h4 class=" scroll-mt-20" id="solution-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-8">
     Solution
   </a>
 </h4>
@@ -9819,8 +9867,8 @@ in the Apple documentation, and Docker Desktop
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="cause-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-7">
+<h4 class=" scroll-mt-20" id="cause-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-8">
     Cause
   </a>
 </h4>
@@ -9830,8 +9878,8 @@ Windows 10 builds. The conflict
 typically occurs after a Windows update and
 manifests as an error response from the Docker daemon and a Docker Desktop start failure.</p>
 
-<h4 class=" scroll-mt-20" id="solution-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-8">
+<h4 class=" scroll-mt-20" id="solution-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-9">
     Solution
   </a>
 </h4>
@@ -9846,8 +9894,8 @@ add Docker to the exclusions/exceptions in your antivirus software.</p>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="cause-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-8">
+<h4 class=" scroll-mt-20" id="cause-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-9">
     Cause
   </a>
 </h4>
@@ -9865,8 +9913,8 @@ to a default value of
 (<code>read</code>, <code>write</code>, <code>execute</code> permissions for <code>user</code> and for <code>group</code>).</p>
 <p>The default permissions on shared volumes are not configurable.</p>
 
-<h4 class=" scroll-mt-20" id="solution-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-9">
+<h4 class=" scroll-mt-20" id="solution-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-10">
     Solution
   </a>
 </h4>
@@ -9885,8 +9933,8 @@ working with applications that require different permissions, either:</p>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="cause-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-9">
+<h4 class=" scroll-mt-20" id="cause-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-10">
     Cause
   </a>
 </h4>
@@ -9898,8 +9946,8 @@ commands ultimately get passed to Unix commands inside a Unix based container
 (for example, a shell script passed to <code>/bin/sh</code>). If Windows style line endings
 are used, <code>docker run</code> fails with syntax errors.</p>
 
-<h4 class=" scroll-mt-20" id="solution-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-10">
+<h4 class=" scroll-mt-20" id="solution-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-11">
     Solution
   </a>
 </h4>
@@ -9939,8 +9987,8 @@ are used, <code>docker run</code> fails with syntax errors.</p>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="cause-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-10">
+<h4 class=" scroll-mt-20" id="cause-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-11">
     Cause
   </a>
 </h4>
@@ -9968,8 +10016,8 @@ are used, <code>docker run</code> fails with syntax errors.</p>
 </div>
 <p>It adds a <code>/work</code> directory to the target container to mirror the specified path.</p>
 
-<h4 class=" scroll-mt-20" id="solution-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-11">
+<h4 class=" scroll-mt-20" id="solution-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-12">
     Solution
   </a>
 </h4>
@@ -10072,8 +10120,8 @@ the Windows-style path and provides the appropriate conversion to mount the dire
   </div>
 </div>
 
-<h4 class=" scroll-mt-20" id="cause-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-11">
+<h4 class=" scroll-mt-20" id="cause-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-12">
     Cause
   </a>
 </h4>
@@ -10083,8 +10131,8 @@ preprocessing on the command line.</p>
 <p>This affects <code>$(pwd)</code>, colon-separated paths, and tilde (<code>~</code>)</p>
 <p>Also, the <code>\</code> character has a special meaning in Git Bash.</p>
 
-<h4 class=" scroll-mt-20" id="solution-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-12">
+<h4 class=" scroll-mt-20" id="solution-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-13">
     Solution
   </a>
 </h4>
@@ -10137,8 +10185,8 @@ preprocessing on the command line.</p>
 <code>Wsl/Service/RegisterDistro/CreateVm/HCS/HCS_E_HYPERV_NOT_INSTALLED</code>. Manually executing <code>wsl</code> commands
 also fails with the same error code.</p>
 
-<h4 class=" scroll-mt-20" id="cause-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-12">
+<h4 class=" scroll-mt-20" id="cause-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-13">
     Cause
   </a>
 </h4>
@@ -10493,16 +10541,16 @@ Virtual Box) and video game installers turn off hypervisor on boot. To turn it b
   </div>
 </div>
 
-<h4 class=" scroll-mt-20" id="cause-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-13">
+<h4 class=" scroll-mt-20" id="cause-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-14">
     Cause
   </a>
 </h4>
 
 <p>The user is not part of the <code>docker-users</code> group, which is required for permissions.</p>
 
-<h4 class=" scroll-mt-20" id="solution-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-13">
+<h4 class=" scroll-mt-20" id="solution-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solution-14">
     Solution
   </a>
 </h4>
@@ -10717,6 +10765,12 @@ Virtual Box) and video game installers turn off hypervisor on boot. To turn it b
         </li>
         
   <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#upgrade-requires-administrator-privileges">Upgrade requires administrator privileges</a>
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
         <li>
           <a class="link lg:no-underline" href="#persistent-notification-telling-me-an-application-has-changed-my-desktop-configurations">Persistent notification telling me an application has changed my Desktop configurations</a>
         </li>
