@@ -1091,10 +1091,30 @@ registry. The default registry is Docker Hub and is where all of the images you'
   </a>
 </h2>
 
+<p>Let's try to push the image to Docker Hub.</p>
 <ol>
 <li>
-<p>In the command line, run the <code>docker push</code> command that you see on Docker
-Hub. Note that your command will have your Docker ID, not &quot;docker&quot;. For example, <code>docker push YOUR-USER-NAME/getting-started</code>.</p>
+<p>In the command line, run the following commmand:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'ZG9ja2VyIHB1c2ggZG9ja2VyL2dldHRpbmctc3RhcnRlZA==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">docker push docker/getting-started
+</span></span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>You'll see an error like this:</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
@@ -1116,12 +1136,32 @@ Hub. Note that your command will have your Docker ID, not &quot;docker&quot;. Fo
     </div>
   </div>
 </div>
-<p>Why did it fail? The push command was looking for an image named <code>docker/getting-started</code>, but
-didn't find one. If you run <code>docker image ls</code>, you won't see one either.</p>
-<p>To fix this, you need to tag your existing image you've built to give it another name.</p>
+<p>This failure is expected because the image isn't tagged correctly yet.
+Docker is looking for an image name <code>docker/getting started</code>, but your
+local image is still named <code>getting-started</code>.</p>
+<p>You can confirm this by running:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'ZG9ja2VyIGltYWdlIGxz', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">docker image ls
+</span></span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
 </li>
 <li>
-<p>Sign in to Docker Hub using the command <code>docker login -u YOUR-USER-NAME</code>.</p>
+<p>To fix this, first sign in to Docker Hub using your Docker ID: <code>docker login YOUR-USER-NAME</code>.</p>
 </li>
 <li>
 <p>Use the <code>docker tag</code> command to give the <code>getting-started</code> image a new name. Replace <code>YOUR-USER-NAME</code> with your Docker ID.</p>

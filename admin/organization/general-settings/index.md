@@ -3,11 +3,12 @@ Organization settings
 
 This section describes how to manage organization settings in the Docker Admin Console.
 
-## Configure general information
+## Configure organization information
 
 General organization information appears on your organization landing page in the Admin Console.
 
 This information includes:
+
  - Organization Name
  - Company
  - Location
@@ -18,7 +19,7 @@ To edit this information:
 
 1. Sign in to the [Admin Console](https://admin.docker.com).
 2. Select your company on the **Choose profile** page.
-3. Under **Organization settings**, select **General**.
+3. Under **Organization settings**, select **Organization information**.
 4. Specify the organization information and select **Save**.
 
 ## Next steps
