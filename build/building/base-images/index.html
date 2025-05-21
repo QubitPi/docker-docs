@@ -9345,7 +9345,7 @@ which you can also use to build Ubuntu images.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'JCBzdWRvIGRlYm9vdHN0cmFwIGZvY2FsIGZvY2FsID4gL2Rldi9udWxsCiQgc3VkbyB0YXIgLUMgZm9jYWwgLWMgLiB8IGRvY2tlciBpbXBvcnQgLSBmb2NhbAoKc2hhMjU2OjgxZWM5YTU1YTkyYTU2MTgxNjFmNjhhZTY5MWQwOTJiZjE0ZDcwMDEyOTA5MzE1ODI5N2IzZDAxNTkzZjRlZTMKCiQgZG9ja2VyIHJ1biBmb2NhbCBjYXQgL2V0Yy9sc2ItcmVsZWFzZQoKRElTVFJJQl9JRD1VYnVudHUKRElTVFJJQl9SRUxFQVNFPTIwLjA0CkRJU1RSSUJfQ09ERU5BTUU9Zm9jYWwKRElTVFJJQl9ERVNDUklQVElPTj0iVWJ1bnR1IDIwLjA0IExUUyI=', copying: false }"
+    <button x-data="{ code: 'JCBzdWRvIGRlYm9vdHN0cmFwIG5vYmxlIG5vYmxlID4gL2Rldi9udWxsCiQgc3VkbyB0YXIgLUMgbm9ibGUgLWMgLiB8IGRvY2tlciBpbXBvcnQgLSBub2JsZQoKc2hhMjU2OjgxZWM5YTU1YTkyYTU2MTgxNjFmNjhhZTY5MWQwOTJiZjE0ZDcwMDEyOTA5MzE1ODI5N2IzZDAxNTkzZjRlZTMKCiQgZG9ja2VyIHJ1biBub2JsZSBjYXQgL2V0Yy9sc2ItcmVsZWFzZQoKRElTVFJJQl9JRD1VYnVudHUKRElTVFJJQl9SRUxFQVNFPTI0LjA0CkRJU1RSSUJfQ09ERU5BTUU9bm9ibGUKRElTVFJJQl9ERVNDUklQVElPTj0iVWJ1bnR1IDI0LjA0LjIgTFRTIg==', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9355,17 +9355,17 @@ which you can also use to build Ubuntu images.</p>
      
     <div class="syntax-light dark:syntax-dark">
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl">$ sudo debootstrap focal focal &gt; /dev/null<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>$ sudo tar -C focal -c . <span class="p">|</span> docker import - focal<span class="err">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl">$ sudo debootstrap noble noble &gt; /dev/null<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>$ sudo tar -C noble -c . <span class="p">|</span> docker import - noble<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span>sha256:81ec9a55a92a5618161f68ae691d092bf14d700129093158297b3d01593f4ee3<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span>$ docker run focal cat /etc/lsb-release<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span>$ docker run noble cat /etc/lsb-release<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_ID</span><span class="o">=</span>Ubuntu<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_RELEASE</span><span class="o">=</span>20.04<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_CODENAME</span><span class="o">=</span>focal<span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_DESCRIPTION</span><span class="o">=</span><span class="s2">&#34;Ubuntu 20.04 LTS&#34;</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_RELEASE</span><span class="o">=</span>24.04<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_CODENAME</span><span class="o">=</span>noble<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="nv">DISTRIB_DESCRIPTION</span><span class="o">=</span><span class="s2">&#34;Ubuntu 24.04.2 LTS&#34;</span></span></span></code></pre></div>
       
     </div>
   </div>

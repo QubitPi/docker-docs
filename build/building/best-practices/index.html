@@ -9591,12 +9591,12 @@ see
 image. This is useful because it lets publishers update tags to point to
 newer versions of an image. And as an image consumer, it means you
 automatically get the new version when you re-build your image.</p>
-<p>For example, if you specify <code>FROM alpine:3.19</code> in your Dockerfile, <code>3.19</code>
-resolves to the latest patch version for <code>3.19</code>.</p>
+<p>For example, if you specify <code>FROM alpine:3.21</code> in your Dockerfile, <code>3.21</code>
+resolves to the latest patch version for <code>3.21</code>.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQpGUk9NIGFscGluZTozLjE5', copying: false }"
+    <button x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQpGUk9NIGFscGluZTozLjIx', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9607,12 +9607,12 @@ resolves to the latest patch version for <code>3.19</code>.</p>
     <div class="syntax-light dark:syntax-dark">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="c"># syntax=docker/dockerfile:1</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> alpine:3.19</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> alpine:3.21</span></span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>At one point in time, the <code>3.19</code> tag might point to version 3.19.1 of the
+<p>At one point in time, the <code>3.21</code> tag might point to version 3.21.1 of the
 image. If you rebuild the image 3 months later, the same tag might point to a
 different version, such as 3.19.4. This publishing workflow is best practice,
 and most publishers use this tagging strategy, but it isn't enforced.</p>
@@ -9623,11 +9623,11 @@ an audit trail of the exact image versions that you're using.</p>
 specific digest. By pinning your images to a digest, you're guaranteed to
 always use the same image version, even if a publisher replaces the tag with a
 new image. For example, the following Dockerfile pins the Alpine image to the
-same tag as earlier, <code>3.19</code>, but this time with a digest reference as well.</p>
+same tag as earlier, <code>3.21</code>, but this time with a digest reference as well.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQpGUk9NIGFscGluZTozLjE5QHNoYTI1NjoxM2I3ZTYyZThkZjgwMjY0ZGJiNzQ3OTk1NzA1YTk4NmFhNTMwNDE1NzYzYTZjNThmODRhM2NhOGFmOWE1YmNk', copying: false }"
+    <button x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQpGUk9NIGFscGluZTozLjIxQHNoYTI1NjphODU2MGIzNmU4YjgyMTA2MzRmNzdkOWY3ZjllZmQ3ZmZhNDYzZTM4MGI3NWUyZTc0YWZmNDUxMWRmM2VmODhj', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9638,14 +9638,14 @@ same tag as earlier, <code>3.19</code>, but this time with a digest reference as
     <div class="syntax-light dark:syntax-dark">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="c"># syntax=docker/dockerfile:1</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> alpine:3.19@sha256:13b7e62e8df80264dbb747995705a986aa530415763a6c58f84a3ca8af9a5bcd</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> alpine:3.21@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c</span></span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>With this Dockerfile, even if the publisher updates the <code>3.19</code> tag, your builds
+<p>With this Dockerfile, even if the publisher updates the <code>3.21</code> tag, your builds
 would still use the pinned image version:
-<code>13b7e62e8df80264dbb747995705a986aa530415763a6c58f84a3ca8af9a5bcd</code>.</p>
+<code>a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c</code>.</p>
 <p>While this helps you avoid unexpected changes, it's also more tedious to have
 to look up and include the image digest for base image versions manually each
 time you want to update it. And you're opting out of automated security fixes,

@@ -629,7 +629,7 @@ body > img { display: none }
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'IyBVc2UgdGhlIG9mZmljaWFsIEdvbGFuZyBpbWFnZSBhcyB0aGUgYmFzZQpGUk9NIGdvbGFuZzoxLjI0LWFscGluZSBBUyBidWlsZGVyCgojIFNldCBlbnZpcm9ubWVudCB2YXJpYWJsZXMKRU5WIENHT19FTkFCTEVEPTAgXAogICAgR09PUz1saW51eCBcCiAgICBHT0FSQ0g9YW1kNjQKCiMgU2V0IHdvcmtpbmcgZGlyZWN0b3J5IGluc2lkZSB0aGUgY29udGFpbmVyCldPUktESVIgL2J1aWxkCgojIENvcHkgZ28ubW9kIGFuZCBnby5zdW0gZmlsZXMgZm9yIGRlcGVuZGVuY3kgaW5zdGFsbGF0aW9uCkNPUFkgZ28ubW9kIGdvLnN1bSAuLwoKIyBEb3dubG9hZCBkZXBlbmRlbmNpZXMKUlVOIGdvIG1vZCBkb3dubG9hZAoKIyBDb3B5IHRoZSBlbnRpcmUgYXBwbGljYXRpb24gc291cmNlCkNPUFkgLiAuCgojIEJ1aWxkIHRoZSBHbyBiaW5hcnkKUlVOIGdvIGJ1aWxkIC1vIC9hcHAgLgoKIyBGaW5hbCBsaWdodHdlaWdodCBzdGFnZQpGUk9NIGFscGluZTozLjE3IEFTIGZpbmFsCgojIENvcHkgdGhlIGNvbXBpbGVkIGJpbmFyeSBmcm9tIHRoZSBidWlsZGVyIHN0YWdlCkNPUFkgLS1mcm9tPWJ1aWxkZXIgL2FwcCAvYmluL2FwcAoKIyBFeHBvc2UgdGhlIGFwcGxpY2F0aW9uJ3MgcG9ydApFWFBPU0UgODAwMAoKIyBSdW4gdGhlIGFwcGxpY2F0aW9uCkNNRCBbImJpbi9hcHAiXQ==', copying: false }"
+    <button x-data="{ code: 'IyBVc2UgdGhlIG9mZmljaWFsIEdvbGFuZyBpbWFnZSBhcyB0aGUgYmFzZQpGUk9NIGdvbGFuZzoxLjI0LWFscGluZSBBUyBidWlsZGVyCgojIFNldCBlbnZpcm9ubWVudCB2YXJpYWJsZXMKRU5WIENHT19FTkFCTEVEPTAgXAogICAgR09PUz1saW51eCBcCiAgICBHT0FSQ0g9YW1kNjQKCiMgU2V0IHdvcmtpbmcgZGlyZWN0b3J5IGluc2lkZSB0aGUgY29udGFpbmVyCldPUktESVIgL2J1aWxkCgojIENvcHkgZ28ubW9kIGFuZCBnby5zdW0gZmlsZXMgZm9yIGRlcGVuZGVuY3kgaW5zdGFsbGF0aW9uCkNPUFkgZ28ubW9kIGdvLnN1bSAuLwoKIyBEb3dubG9hZCBkZXBlbmRlbmNpZXMKUlVOIGdvIG1vZCBkb3dubG9hZAoKIyBDb3B5IHRoZSBlbnRpcmUgYXBwbGljYXRpb24gc291cmNlCkNPUFkgLiAuCgojIEJ1aWxkIHRoZSBHbyBiaW5hcnkKUlVOIGdvIGJ1aWxkIC1vIC9hcHAgLgoKIyBGaW5hbCBsaWdodHdlaWdodCBzdGFnZQpGUk9NIGFscGluZTozLjIxIEFTIGZpbmFsCgojIENvcHkgdGhlIGNvbXBpbGVkIGJpbmFyeSBmcm9tIHRoZSBidWlsZGVyIHN0YWdlCkNPUFkgLS1mcm9tPWJ1aWxkZXIgL2FwcCAvYmluL2FwcAoKIyBFeHBvc2UgdGhlIGFwcGxpY2F0aW9uJ3MgcG9ydApFWFBPU0UgODAwMAoKIyBSdW4gdGhlIGFwcGxpY2F0aW9uCkNNRCBbImJpbi9hcHAiXQ==', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -663,7 +663,7 @@ body > img { display: none }
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">RUN</span> go build -o /app .<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># Final lightweight stage</span><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> alpine:3.17 AS final</span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> alpine:3.21 AS final</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="c"># Copy the compiled binary from the builder stage</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">COPY</span> --from<span class="o">=</span>builder /app /bin/app<span class="err">
@@ -692,7 +692,7 @@ body > img { display: none }
 </li>
 <li>
 <p><strong>Final stage</strong>: This stage uses the official Alpine image as the base and copies the compiled binary from the build stage. It also exposes the application's port and runs the application.</p>
-<p>You use the <code>alpine:3.17</code> image as the base image for the final stage. You copy the compiled binary from the build stage to the final image. You expose the application's port using the <code>EXPOSE</code> instruction and run the application using the <code>CMD</code> instruction.</p>
+<p>You use the <code>alpine:3.21</code> image as the base image for the final stage. You copy the compiled binary from the build stage to the final image. You expose the application's port using the <code>EXPOSE</code> instruction and run the application using the <code>CMD</code> instruction.</p>
 <p>Apart from the multi-stage build, the Dockerfile also follows best practices such as using the official images, setting the working directory, and copying only the necessary files to the final image. You can further optimize the Dockerfile by other best practices.</p>
 </li>
 </ol>

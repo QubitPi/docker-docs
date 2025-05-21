@@ -9428,7 +9428,7 @@ extract the full source code of the Dockerfile used to build the image:</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGltYWdldG9vbHMgaW5zcGVjdCA8bmFtZXNwYWNlPi88aW1hZ2U&#43;Ojx2ZXJzaW9uPiBcCiAgICAtLWZvcm1hdCAne3sgcmFuZ2UgKGluZGV4IC5Qcm92ZW5hbmNlLlNMU0EubWV0YWRhdGEgImh0dHBzOi8vbW9ieXByb2plY3Qub3JnL2J1aWxka2l0QHYxI21ldGFkYXRhIikuc291cmNlLmluZm9zIH19e3sgaWYgZXEgLmZpbGVuYW1lICJEb2NrZXJmaWxlIiB9fXt7IC5kYXRhIH19e3sgZW5kIH19e3sgZW5kIH19JyB8IGJhc2U2NCAtZApGUk9NIHVidW50dToyMC4wNApSVU4gYXB0LWdldCB1cGRhdGUKLi4u', copying: false }"
+    <button x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGltYWdldG9vbHMgaW5zcGVjdCA8bmFtZXNwYWNlPi88aW1hZ2U&#43;Ojx2ZXJzaW9uPiBcCiAgICAtLWZvcm1hdCAne3sgcmFuZ2UgKGluZGV4IC5Qcm92ZW5hbmNlLlNMU0EubWV0YWRhdGEgImh0dHBzOi8vbW9ieXByb2plY3Qub3JnL2J1aWxka2l0QHYxI21ldGFkYXRhIikuc291cmNlLmluZm9zIH19e3sgaWYgZXEgLmZpbGVuYW1lICJEb2NrZXJmaWxlIiB9fXt7IC5kYXRhIH19e3sgZW5kIH19e3sgZW5kIH19JyB8IGJhc2U2NCAtZApGUk9NIHVidW50dToyNC4wNApSVU4gYXB0LWdldCB1cGRhdGUKLi4u', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9440,7 +9440,7 @@ extract the full source code of the Dockerfile used to build the image:</p>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker buildx imagetools inspect &lt;namespace&gt;/&lt;image&gt;:&lt;version&gt; <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">    --format &#39;{{ range (index .Provenance.SLSA.metadata &#34;https://mobyproject.org/buildkit@v1#metadata&#34;).source.infos }}{{ if eq .filename &#34;Dockerfile&#34; }}{{ .data }}{{ end }}{{ end }}&#39; | base64 -d
-</span></span></span><span class="line"><span class="cl"><span class="go">FROM ubuntu:20.04
+</span></span></span><span class="line"><span class="cl"><span class="go">FROM ubuntu:24.04
 </span></span></span><span class="line"><span class="cl"><span class="go">RUN apt-get update
 </span></span></span><span class="line"><span class="cl"><span class="go">...
 </span></span></span></code></pre></div>

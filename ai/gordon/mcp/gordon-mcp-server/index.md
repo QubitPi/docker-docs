@@ -1,8 +1,6 @@
 Gordon as an MCP server
 
 
-## Gordon as an MCP server
-
 In addition to functioning as an MCP client, Gordon can also act as an MCP
 server. This means that all the tools configured in the toolbox section of
 Gordon can be exposed to another MCP client like Claude Desktop, Cursor and

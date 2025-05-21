@@ -9222,7 +9222,7 @@ You can use either <code>docker-compose</code> or <code>docker compose</code> co
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'c2VydmljZXM6CiAgdGVzdDoKICAgIGltYWdlOiBudmlkaWEvY3VkYToxMi4zLjEtYmFzZS11YnVudHUyMC4wNAogICAgY29tbWFuZDogbnZpZGlhLXNtaQogICAgZGVwbG95OgogICAgICByZXNvdXJjZXM6CiAgICAgICAgcmVzZXJ2YXRpb25zOgogICAgICAgICAgZGV2aWNlczoKICAgICAgICAgICAgLSBkcml2ZXI6IG52aWRpYQogICAgICAgICAgICAgIGNvdW50OiAxCiAgICAgICAgICAgICAgY2FwYWJpbGl0aWVzOiBbZ3B1XQ==', copying: false }"
+    <button x-data="{ code: 'c2VydmljZXM6CiAgdGVzdDoKICAgIGltYWdlOiBudmlkaWEvY3VkYToxMi45LjAtYmFzZS11YnVudHUyMi4wNAogICAgY29tbWFuZDogbnZpZGlhLXNtaQogICAgZGVwbG95OgogICAgICByZXNvdXJjZXM6CiAgICAgICAgcmVzZXJ2YXRpb25zOgogICAgICAgICAgZGV2aWNlczoKICAgICAgICAgICAgLSBkcml2ZXI6IG52aWRpYQogICAgICAgICAgICAgIGNvdW50OiAxCiAgICAgICAgICAgICAgY2FwYWJpbGl0aWVzOiBbZ3B1XQ==', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9234,7 +9234,7 @@ You can use either <code>docker-compose</code> or <code>docker compose</code> co
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">services</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">test</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nvidia/cuda:12.3.1-base-ubuntu20.04</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">nvidia/cuda:12.9.0-base-ubuntu22.04</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l">nvidia-smi</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">deploy</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">resources</span><span class="p">:</span><span class="w">
