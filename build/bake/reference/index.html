@@ -9253,6 +9253,15 @@ body > img { display: none }
         
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#variable-typing">Variable typing</a>
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#overriding-variables">Overriding variables</a>
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#built-in-variables">Built-in variables</a>
         </li>
         <li>
@@ -9862,7 +9871,7 @@ example adds annotations to both the image index and manifests.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dGFyZ2V0ICJkZWZhdWx0IiB7CiAgb3V0cHV0ID0gW3sgdHlwZSA9ICJpbWFnZSIsIG5hbWUgPSAiZm9vIiB9XQogIGFubm90YXRpb25zID0gWyJpbmRleCxtYW5pZmVzdDpvcmcub3BlbmNvbnRhaW5lcnMuaW1hZ2UuYXV0aG9ycz1kdmRrc24iXQp9', copying: false }"
+    <button x-data="{ code: 'dGFyZ2V0ICJkZWZhdWx0IiB7CiAgb3V0cHV0ID0gWwogICAgewogICAgICB0eXBlID0gImltYWdlIgogICAgICBuYW1lID0gImZvbyIKICAgIH0KICBdCiAgYW5ub3RhdGlvbnMgPSBbImluZGV4LG1hbmlmZXN0Om9yZy5vcGVuY29udGFpbmVycy5pbWFnZS5hdXRob3JzPWR2ZGtzbiJdCn0=', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9873,7 +9882,12 @@ example adds annotations to both the image index and manifests.</p>
     <div class="syntax-light dark:syntax-dark">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;default&#34;</span> {
-</span></span><span class="line"><span class="cl"><span class="n">  output</span> <span class="o">=</span><span class="n"> [{ type</span> <span class="o">=</span><span class="n"> &#34;image&#34;, name</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span> }<span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">  output</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;image&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      name</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">  annotations</span> <span class="o">=</span><span class="n"> [&#34;index,manifest:org.opencontainers.image.authors</span><span class="o">=</span><span class="k">dvdksn</span><span class="err">&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
       
@@ -9902,7 +9916,7 @@ This attribute accepts the long-form CSV version of attestation parameters.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dGFyZ2V0ICJkZWZhdWx0IiB7CiAgYXR0ZXN0ID0gWwogICAgewogICAgICB0eXBlID0gInByb3ZlbmFuY2UiLAogICAgICBtb2RlID0gIm1heCIsCiAgICB9LAogICAgewogICAgICB0eXBlID0gInNib20iLAogICAgfQogIF0KfQ==', copying: false }"
+    <button x-data="{ code: 'dGFyZ2V0ICJkZWZhdWx0IiB7CiAgYXR0ZXN0ID0gWwogICAgewogICAgICB0eXBlID0gInByb3ZlbmFuY2UiCiAgICAgIG1vZGUgPSAibWF4IgogICAgfSwKICAgIHsKICAgICAgdHlwZSA9ICJzYm9tIgogICAgfQogIF0KfQ==', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9915,11 +9929,11 @@ This attribute accepts the long-form CSV version of attestation parameters.</p>
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;default&#34;</span> {
 </span></span><span class="line"><span class="cl"><span class="n">  attest</span> <span class="o">=</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;provenance&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="n">      mode</span> <span class="o">=</span> <span class="s2">&#34;max&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;provenance&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      mode</span> <span class="o">=</span> <span class="s2">&#34;max&#34;</span>
 </span></span><span class="line"><span class="cl">    }<span class="p">,</span>
 </span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;sbom&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;sbom&#34;</span>
 </span></span><span class="line"><span class="cl">    }
 </span></span><span class="line"><span class="cl">  <span class="p">]</span>
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
@@ -9950,7 +9964,7 @@ This takes a list value, so you can specify multiple cache sources.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dGFyZ2V0ICJhcHAiIHsKICBjYWNoZS1mcm9tID0gWwogICAgewogICAgICB0eXBlID0gInMzIiwKICAgICAgcmVnaW9uID0gImV1LXdlc3QtMSIsCiAgICAgIGJ1Y2tldCA9ICJteWJ1Y2tldCIKICAgIH0sCiAgICB7CiAgICAgIHR5cGUgPSAicmVnaXN0cnkiLAogICAgICByZWYgPSAidXNlci9yZXBvOmNhY2hlIgogICAgfQogIF0KfQ==', copying: false }"
+    <button x-data="{ code: 'dGFyZ2V0ICJhcHAiIHsKICBjYWNoZS1mcm9tID0gWwogICAgewogICAgICB0eXBlID0gInMzIgogICAgICByZWdpb24gPSAiZXUtd2VzdC0xIgogICAgICBidWNrZXQgPSAibXlidWNrZXQiCiAgICB9LAogICAgewogICAgICB0eXBlID0gInJlZ2lzdHJ5IgogICAgICByZWYgPSAidXNlci9yZXBvOmNhY2hlIgogICAgfQogIF0KfQ==', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -9963,12 +9977,12 @@ This takes a list value, so you can specify multiple cache sources.</p>
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;app&#34;</span> {
 </span></span><span class="line"><span class="cl"><span class="n">  cache-from</span> <span class="o">=</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;s3&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="n">      region</span> <span class="o">=</span> <span class="s2">&#34;eu-west-1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;s3&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      region</span> <span class="o">=</span> <span class="s2">&#34;eu-west-1&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="n">      bucket</span> <span class="o">=</span> <span class="s2">&#34;mybucket&#34;</span>
 </span></span><span class="line"><span class="cl">    }<span class="p">,</span>
 </span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;registry&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;registry&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="n">      ref</span> <span class="o">=</span> <span class="s2">&#34;user/repo:cache&#34;</span>
 </span></span><span class="line"><span class="cl">    }
 </span></span><span class="line"><span class="cl">  <span class="p">]</span>
@@ -10000,7 +10014,7 @@ This takes a list value, so you can specify multiple cache export targets.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dGFyZ2V0ICJhcHAiIHsKICBjYWNoZS10byA9IFsKICAgIHsKICAgICAgdHlwZSA9ICJzMyIsCiAgICAgIHJlZ2lvbiA9ICJldS13ZXN0LTEiLAogICAgICBidWNrZXQgPSAibXlidWNrZXQiCiAgICB9LAogICAgewogICAgICB0eXBlID0gImlubGluZSIsCiAgICB9CiAgXQp9', copying: false }"
+    <button x-data="{ code: 'dGFyZ2V0ICJhcHAiIHsKICBjYWNoZS10byA9IFsKICAgIHsKICAgICAgdHlwZSA9ICJzMyIKICAgICAgcmVnaW9uID0gImV1LXdlc3QtMSIKICAgICAgYnVja2V0ID0gIm15YnVja2V0IgogICAgfSwKICAgIHsKICAgICAgdHlwZSA9ICJpbmxpbmUiCiAgICB9CiAgXQp9', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -10013,12 +10027,12 @@ This takes a list value, so you can specify multiple cache export targets.</p>
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;app&#34;</span> {
 </span></span><span class="line"><span class="cl"><span class="n">  cache-to</span> <span class="o">=</span> <span class="p">[</span>
 </span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;s3&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="n">      region</span> <span class="o">=</span> <span class="s2">&#34;eu-west-1&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;s3&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      region</span> <span class="o">=</span> <span class="s2">&#34;eu-west-1&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="n">      bucket</span> <span class="o">=</span> <span class="s2">&#34;mybucket&#34;</span>
 </span></span><span class="line"><span class="cl">    }<span class="p">,</span>
 </span></span><span class="line"><span class="cl">    {
-</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;inline&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;inline&#34;</span>
 </span></span><span class="line"><span class="cl">    }
 </span></span><span class="line"><span class="cl">  <span class="p">]</span>
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
@@ -10198,7 +10212,7 @@ a context based on the pattern of the context value.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'IyBkb2NrZXItYmFrZS5oY2wKdGFyZ2V0ICJhcHAiIHsKICAgIGNvbnRleHRzID0gewogICAgICAgIGFscGluZSA9ICJkb2NrZXItaW1hZ2U6Ly9hbHBpbmU6My4xMyIKICAgIH0KfQ==', copying: false }"
+    <button x-data="{ code: 'IyBkb2NrZXItYmFrZS5oY2wKdGFyZ2V0ICJhcHAiIHsKICBjb250ZXh0cyA9IHsKICAgIGFscGluZSA9ICJkb2NrZXItaW1hZ2U6Ly9hbHBpbmU6My4xMyIKICB9Cn0=', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -10210,9 +10224,9 @@ a context based on the pattern of the context value.</p>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="c1"># docker-bake.hcl
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">target</span> <span class="s2">&#34;app&#34;</span> {
-</span></span><span class="line"><span class="cl"><span class="n">    contexts</span> <span class="o">=</span> {
-</span></span><span class="line"><span class="cl"><span class="n">        alpine</span> <span class="o">=</span> <span class="s2">&#34;docker-image://alpine:3.13&#34;</span>
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl"><span class="n">  contexts</span> <span class="o">=</span> {
+</span></span><span class="line"><span class="cl"><span class="n">    alpine</span> <span class="o">=</span> <span class="s2">&#34;docker-image://alpine:3.13&#34;</span>
+</span></span><span class="line"><span class="cl">  }
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
       
     </div>
@@ -10248,7 +10262,7 @@ a context based on the pattern of the context value.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'IyBkb2NrZXItYmFrZS5oY2wKdGFyZ2V0ICJhcHAiIHsKICAgIGNvbnRleHRzID0gewogICAgICAgIHNyYyA9ICIuLi9wYXRoL3RvL3NvdXJjZSIKICAgIH0KfQ==', copying: false }"
+    <button x-data="{ code: 'IyBkb2NrZXItYmFrZS5oY2wKdGFyZ2V0ICJhcHAiIHsKICBjb250ZXh0cyA9IHsKICAgIHNyYyA9ICIuLi9wYXRoL3RvL3NvdXJjZSIKICB9Cn0=', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -10260,9 +10274,9 @@ a context based on the pattern of the context value.</p>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="c1"># docker-bake.hcl
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">target</span> <span class="s2">&#34;app&#34;</span> {
-</span></span><span class="line"><span class="cl"><span class="n">    contexts</span> <span class="o">=</span> {
-</span></span><span class="line"><span class="cl"><span class="n">        src</span> <span class="o">=</span> <span class="s2">&#34;../path/to/source&#34;</span>
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl"><span class="n">  contexts</span> <span class="o">=</span> {
+</span></span><span class="line"><span class="cl"><span class="n">    src</span> <span class="o">=</span> <span class="s2">&#34;../path/to/source&#34;</span>
+</span></span><span class="line"><span class="cl">  }
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
       
     </div>
@@ -10316,7 +10330,7 @@ merged into one.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'IyBkb2NrZXItYmFrZS5oY2wKdGFyZ2V0ICJiYXNlIiB7CiAgICBkb2NrZXJmaWxlID0gImJhc2VhcHAuRG9ja2VyZmlsZSIKfQp0YXJnZXQgImFwcCIgewogICAgY29udGV4dHMgPSB7CiAgICAgICAgYmFzZWFwcCA9ICJ0YXJnZXQ6YmFzZSIKICAgIH0KfQ==', copying: false }"
+    <button x-data="{ code: 'IyBkb2NrZXItYmFrZS5oY2wKdGFyZ2V0ICJiYXNlIiB7CiAgZG9ja2VyZmlsZSA9ICJiYXNlYXBwLkRvY2tlcmZpbGUiCn0KCnRhcmdldCAiYXBwIiB7CiAgY29udGV4dHMgPSB7CiAgICBiYXNlYXBwID0gInRhcmdldDpiYXNlIgogIH0KfQ==', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -10328,12 +10342,13 @@ merged into one.</p>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="c1"># docker-bake.hcl
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">target</span> <span class="s2">&#34;base&#34;</span> {
-</span></span><span class="line"><span class="cl"><span class="n">    dockerfile</span> <span class="o">=</span> <span class="s2">&#34;baseapp.Dockerfile&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">  dockerfile</span> <span class="o">=</span> <span class="s2">&#34;baseapp.Dockerfile&#34;</span>
 </span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;app&#34;</span> {
-</span></span><span class="line"><span class="cl"><span class="n">    contexts</span> <span class="o">=</span> {
-</span></span><span class="line"><span class="cl"><span class="n">        baseapp</span> <span class="o">=</span> <span class="s2">&#34;target:base&#34;</span>
-</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl"><span class="n">  contexts</span> <span class="o">=</span> {
+</span></span><span class="line"><span class="cl"><span class="n">    baseapp</span> <span class="o">=</span> <span class="s2">&#34;target:base&#34;</span>
+</span></span><span class="line"><span class="cl">  }
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
       
     </div>
@@ -10371,7 +10386,7 @@ functionality.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dGFyZ2V0ICJsaW50IiB7CiAgICBkZXNjcmlwdGlvbiA9ICJSdW5zIGdvbGFuZ2NpLWxpbnQgdG8gZGV0ZWN0IHN0eWxlIGVycm9ycyIKICAgIGFyZ3MgPSB7CiAgICAgICAgR09MQU5HQ0lfTElOVF9WRVJTSU9OID0gbnVsbAogICAgfQogICAgZG9ja2VyZmlsZSA9ICJsaW50LkRvY2tlcmZpbGUiCn0=', copying: false }"
+    <button x-data="{ code: 'dGFyZ2V0ICJsaW50IiB7CiAgZGVzY3JpcHRpb24gPSAiUnVucyBnb2xhbmdjaS1saW50IHRvIGRldGVjdCBzdHlsZSBlcnJvcnMiCiAgYXJncyA9IHsKICAgIEdPTEFOR0NJX0xJTlRfVkVSU0lPTiA9IG51bGwKICB9CiAgZG9ja2VyZmlsZSA9ICJsaW50LkRvY2tlcmZpbGUiCn0=', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -10382,11 +10397,11 @@ functionality.</p>
     <div class="syntax-light dark:syntax-dark">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;lint&#34;</span> {
-</span></span><span class="line"><span class="cl"><span class="n">    description</span> <span class="o">=</span> <span class="s2">&#34;Runs golangci-lint to detect style errors&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">    args</span> <span class="o">=</span> {
-</span></span><span class="line"><span class="cl"><span class="n">        GOLANGCI_LINT_VERSION</span> <span class="o">=</span> <span class="k">null</span>
-</span></span><span class="line"><span class="cl">    }
-</span></span><span class="line"><span class="cl"><span class="n">    dockerfile</span> <span class="o">=</span> <span class="s2">&#34;lint.Dockerfile&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">  description</span> <span class="o">=</span> <span class="s2">&#34;Runs golangci-lint to detect style errors&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">  args</span> <span class="o">=</span> {
+</span></span><span class="line"><span class="cl"><span class="n">    GOLANGCI_LINT_VERSION</span> <span class="o">=</span> <span class="k">null</span>
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl"><span class="n">  dockerfile</span> <span class="o">=</span> <span class="s2">&#34;lint.Dockerfile&#34;</span>
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
       
     </div>
@@ -11134,7 +11149,7 @@ This is the same as the
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dmFyaWFibGUgIkhPTUUiIHsKICBkZWZhdWx0ID0gbnVsbAp9Cgp0YXJnZXQgImRlZmF1bHQiIHsKICBzZWNyZXQgPSBbCiAgICB7IHR5cGUgPSAiZW52IiwgaWQgPSAiS1VCRUNPTkZJRyIgfSwKICAgIHsgdHlwZSA9ICJmaWxlIiwgaWQgPSAiYXdzIiwgc3JjID0gIiR7SE9NRX0vLmF3cy9jcmVkZW50aWFscyIgfSwKICBdCn0=', copying: false }"
+    <button x-data="{ code: 'dmFyaWFibGUgIkhPTUUiIHsKICBkZWZhdWx0ID0gbnVsbAp9Cgp0YXJnZXQgImRlZmF1bHQiIHsKICBzZWNyZXQgPSBbCiAgICB7CiAgICAgIHR5cGUgPSAiZW52IgogICAgICBpZCA9ICJLVUJFQ09ORklHIgogICAgfSwKICAgIHsKICAgICAgdHlwZSA9ICJmaWxlIgogICAgICBpZCA9ICJhd3MiCiAgICAgIHNyYyA9ICIke0hPTUV9Ly5hd3MvY3JlZGVudGlhbHMiCiAgICB9CiAgXQp9', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -11150,8 +11165,15 @@ This is the same as the
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;default&#34;</span> {
 </span></span><span class="line"><span class="cl"><span class="n">  secret</span> <span class="o">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl"><span class="n">    { type</span> <span class="o">=</span><span class="n"> &#34;env&#34;, id</span> <span class="o">=</span> <span class="s2">&#34;KUBECONFIG&#34;</span> }<span class="p">,</span>
-</span></span><span class="line"><span class="cl"><span class="n">    { type</span> <span class="o">=</span><span class="n"> &#34;file&#34;, id</span> <span class="o">=</span><span class="n"> &#34;aws&#34;, src</span> <span class="o">=</span> <span class="s2">&#34;${HOME}/.aws/credentials&#34;</span> }<span class="p">,</span>
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;env&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      id</span> <span class="o">=</span> <span class="s2">&#34;KUBECONFIG&#34;</span>
+</span></span><span class="line"><span class="cl">    }<span class="p">,</span>
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl"><span class="n">      type</span> <span class="o">=</span> <span class="s2">&#34;file&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      id</span> <span class="o">=</span> <span class="s2">&#34;aws&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">      src</span> <span class="o">=</span> <span class="s2">&#34;${HOME}/.aws/credentials&#34;</span>
+</span></span><span class="line"><span class="cl">    }
 </span></span><span class="line"><span class="cl">  <span class="p">]</span>
 </span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
       
@@ -11510,7 +11532,7 @@ or interpolate them in attribute values in your Bake file.</p>
 <div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
   
   <div class="group relative">
-    <button x-data="{ code: 'dmFyaWFibGUgIlRBRyIgewogIGRlZmF1bHQgPSAibGF0ZXN0Igp9Cgp0YXJnZXQgIndlYmFwcC1kZXYiIHsKICBkb2NrZXJmaWxlID0gIkRvY2tlcmZpbGUud2ViYXBwIgogIHRhZ3MgPSBbImRvY2tlci5pby91c2VybmFtZS93ZWJhcHA6JHtUQUd9Il0KfQ==', copying: false }"
+    <button x-data="{ code: 'dmFyaWFibGUgIlRBRyIgewogIHR5cGUgPSBzdHJpbmcKICBkZWZhdWx0ID0gImxhdGVzdCIKfQoKdGFyZ2V0ICJ3ZWJhcHAtZGV2IiB7CiAgZG9ja2VyZmlsZSA9ICJEb2NrZXJmaWxlLndlYmFwcCIKICB0YWdzID0gWyJkb2NrZXIuaW8vdXNlcm5hbWUvd2ViYXBwOiR7VEFHfSJdCn0=', copying: false }"
       class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);">
@@ -11521,6 +11543,7 @@ or interpolate them in attribute values in your Bake file.</p>
     <div class="syntax-light dark:syntax-dark">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">variable</span> <span class="s2">&#34;TAG&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">string</span>
 </span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="s2">&#34;latest&#34;</span>
 </span></span><span class="line"><span class="cl">}
 </span></span><span class="line"><span class="cl">
@@ -11552,6 +11575,357 @@ overriding the default <code>latest</code> value shown in the previous example.<
     <div class="syntax-light dark:syntax-dark">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">TAG</span><span class="o">=</span>dev docker buildx bake webapp-dev
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>Variables can also be assigned an explicit type.
+If provided, it will be used to validate the default value (if set), as well as any overrides.
+This is particularly useful when using complex types which are intended to be overridden.
+The previous example could be expanded to apply an arbitrary series of tags.</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'dmFyaWFibGUgIlRBR1MiIHsKICBkZWZhdWx0ID0gWyJsYXRlc3QiXQogIHR5cGUgPSBsaXN0KHN0cmluZykKfQoKdGFyZ2V0ICJ3ZWJhcHAtZGV2IiB7CiAgZG9ja2VyZmlsZSA9ICJEb2NrZXJmaWxlLndlYmFwcCIKICB0YWdzID0gW2ZvciB0YWcgaW4gVEFHUzogImRvY2tlci5pby91c2VybmFtZS93ZWJhcHA6JHt0YWd9Il0KfQ==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">variable</span> <span class="s2">&#34;TAGS&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;latest&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">list</span><span class="p">(</span><span class="k">string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">target</span> <span class="s2">&#34;webapp-dev&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  dockerfile</span> <span class="o">=</span> <span class="s2">&#34;Dockerfile.webapp&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">  tags</span> <span class="o">=</span> <span class="p">[</span><span class="k">for</span> <span class="k">tag</span> <span class="k">in</span> <span class="k">TAGS</span><span class="err">:</span> <span class="s2">&#34;docker.io/username/webapp:${tag}&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>This example shows how to generate three tags without changing the file
+or using custom functions/parsing:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'JCBUQUdTPWRldixsYXRlc3QsMiBkb2NrZXIgYnVpbGR4IGJha2Ugd2ViYXBwLWRldg==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">TAGS</span><span class="o">=</span>dev,latest,2 docker buildx bake webapp-dev
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+
+<h3 class=" scroll-mt-20" id="variable-typing">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#variable-typing">
+    Variable typing
+  </a>
+</h3>
+
+<p>The following primitive types are available:</p>
+<ul>
+<li><code>string</code></li>
+<li><code>number</code></li>
+<li><code>bool</code></li>
+</ul>
+<p>The type is expressed like a keyword; it must be expressed as a literal:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'dmFyaWFibGUgIk9LIiB7CiAgdHlwZSA9IHN0cmluZwp9CgojIGNhbm5vdCBiZSBhbiBhY3R1YWwgc3RyaW5nCnZhcmlhYmxlICJCQUQiIHsKICB0eXBlID0gInN0cmluZyIKfQoKIyBjYW5ub3QgYmUgdGhlIHJlc3VsdCBvZiBhbiBleHByZXNzaW9uCnZhcmlhYmxlICJBTFNPX0JBRCIgewogIHR5cGUgPSBsb3dlcigic3RyaW5nIikKfQ==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">variable</span> <span class="s2">&#34;OK&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">string</span>
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># cannot be an actual string
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;BAD&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="s2">&#34;string&#34;</span>
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># cannot be the result of an expression
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;ALSO_BAD&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">lower</span><span class="p">(</span><span class="s2">&#34;string&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>Specifying primitive types can be valuable to show intent (especially when a default is not provided),
+but bake will generally behave as expected without explicit typing.</p>
+<p>Complex types are expressed with &quot;type constructors&quot;; they are:</p>
+<ul>
+<li><code>tuple([&lt;type&gt;,...])</code></li>
+<li><code>list(&lt;type&gt;)</code></li>
+<li><code>set(&lt;type&gt;)</code></li>
+<li><code>map(&lt;type&gt;)</code></li>
+<li><code>object({&lt;attr&gt;=&lt;type&gt;},...})</code></li>
+</ul>
+<p>The following are examples of each of those, as well as how the (optional) default value would be expressed:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'IyBzdHJ1Y3R1cmVkIHdheSB0byBleHByZXNzICIxLjIuMy1hbHBoYSIKdmFyaWFibGUgIk1ZX1ZFUlNJT04iIHsKICB0eXBlID0gdHVwbGUoW251bWJlciwgbnVtYmVyLCBudW1iZXIsIHN0cmluZ10pCiAgZGVmYXVsdCA9IFsxLCAyLCAzLCAiYWxwaGEiXQp9CgojIEpESyB2ZXJzaW9ucyB1c2VkIGluIGEgbWF0cml4IGJ1aWxkCnZhcmlhYmxlICJKREtfVkVSU0lPTlMiIHsKICB0eXBlID0gbGlzdChudW1iZXIpCiAgZGVmYXVsdCA9IFsxMSwgMTcsIDIxXQp9CgojIGJldHRlciB3YXkgdG8gZXhwcmVzcyB0aGUgcHJldmlvdXMgZXhhbXBsZTsgdGhpcyB3aWxsIGFsc28KIyBlbmZvcmNlIHNldCBzZW1hbnRpY3MgYW5kIGFsbG93IHVzZSBvZiBzZXQtYmFzZWQgZnVuY3Rpb25zCnZhcmlhYmxlICJKREtfVkVSU0lPTlMiIHsKICB0eXBlID0gc2V0KG51bWJlcikKICBkZWZhdWx0ID0gWzExLCAxNywgMjFdCn0KCiMgd2l0aCB0aGUgaGVscCBvZiBsb29rdXAoKSwgdHJhbnNsYXRlIGEgJ2ZlYXR1cmUnIHRvIGEgdGFnCnZhcmlhYmxlICJGRUFUVVJFX1RPX05BTUUiIHsKICB0eXBlID0gbWFwKHN0cmluZykKICBkZWZhdWx0ID0ge2ZlYXR1cmVBID0gInNsaW0iLCBmZWF0dXJlQiA9ICJ0aW55In0KfQoKIyBtYXAgYSBicmFuY2ggbmFtZSB0byBhIHJlZ2lzdHJ5IGxvY2F0aW9uCnZhcmlhYmxlICJQVVNIX0RFU1RJTkFUSU9OIiB7CiAgdHlwZSA9IG9iamVjdCh7YnJhbmNoID0gc3RyaW5nLCByZWdpc3RyeSA9IHN0cmluZ30pCiAgZGVmYXVsdCA9IHticmFuY2ggPSAibWFpbiIsIHJlZ2lzdHJ5ID0gInByb2QtcmVnaXN0cnkuaW52YWxpZC5jb20ifQp9CgojIG1ha2UgdGhlIHByZXZpb3VzIGV4YW1wbGUgbW9yZSB1c2VmdWwgd2l0aCBjb21wb3NpdGlvbgp2YXJpYWJsZSAiUFVTSF9ERVNUSU5BVElPTlMiIHsKICB0eXBlID0gbGlzdChvYmplY3Qoe2JyYW5jaCA9IHN0cmluZywgcmVnaXN0cnkgPSBzdHJpbmd9KSkKICBkZWZhdWx0ID0gWwogICAge2JyYW5jaCA9ICJkZXZlbG9wIiwgcmVnaXN0cnkgPSAidGVzdC1yZWdpc3RyeS5pbnZhbGlkLmNvbSJ9LAogICAge2JyYW5jaCA9ICJtYWluIiwgcmVnaXN0cnkgPSAicHJvZC1yZWdpc3RyeS5pbnZhbGlkLmNvbSJ9LAogIF0KfQ==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="c1"># structured way to express &#34;1.2.3-alpha&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;MY_VERSION&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">tuple</span><span class="p">([</span><span class="k">number</span><span class="p">,</span> <span class="k">number</span><span class="p">,</span> <span class="k">number</span><span class="p">,</span> <span class="k">string</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="s2">&#34;alpha&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># JDK versions used in a matrix build
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;JDK_VERSIONS&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">list</span><span class="p">(</span><span class="k">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="p">[</span><span class="m">11</span><span class="p">,</span> <span class="m">17</span><span class="p">,</span> <span class="m">21</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># better way to express the previous example; this will also
+</span></span></span><span class="line"><span class="cl"><span class="c1"># enforce set semantics and allow use of set-based functions
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;JDK_VERSIONS&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">set</span><span class="p">(</span><span class="k">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="p">[</span><span class="m">11</span><span class="p">,</span> <span class="m">17</span><span class="p">,</span> <span class="m">21</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># with the help of lookup(), translate a &#39;feature&#39; to a tag
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;FEATURE_TO_NAME&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">map</span><span class="p">(</span><span class="k">string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span><span class="n"> {featureA</span> <span class="o">=</span><span class="n"> &#34;slim&#34;, featureB</span> <span class="o">=</span> <span class="s2">&#34;tiny&#34;</span>}
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># map a branch name to a registry location
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;PUSH_DESTINATION&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span><span class="n"> object({branch</span> <span class="o">=</span><span class="n"> string, registry</span> <span class="o">=</span> <span class="k">string</span>}<span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span><span class="n"> {branch</span> <span class="o">=</span><span class="n"> &#34;main&#34;, registry</span> <span class="o">=</span> <span class="s2">&#34;prod-registry.invalid.com&#34;</span>}
+</span></span><span class="line"><span class="cl">}<span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1">
+</span></span></span><span class="line"><span class="cl"><span class="c1"># make the previous example more useful with composition
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">variable</span> <span class="s2">&#34;PUSH_DESTINATIONS&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span><span class="n"> list(object({branch</span> <span class="o">=</span><span class="n"> string, registry</span> <span class="o">=</span> <span class="k">string</span>}<span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl"><span class="n">    {branch</span> <span class="o">=</span><span class="n"> &#34;develop&#34;, registry</span> <span class="o">=</span> <span class="s2">&#34;test-registry.invalid.com&#34;</span>}<span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="n">    {branch</span> <span class="o">=</span><span class="n"> &#34;main&#34;, registry</span> <span class="o">=</span> <span class="s2">&#34;prod-registry.invalid.com&#34;</span>}<span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">]</span>
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>Note that in each example, the default value would be valid even if typing was not present.
+If typing was omitted, the first three would all be considered <code>tuple</code>;
+you would be restricted to functions that operate on <code>tuple</code> and, for example, not be able to add elements.
+Similarly, the third and fourth would both be considered <code>object</code>, with the limits and semantics of that type.
+In short, in the absence of a type, any value delimited with <code>[]</code> is a <code>tuple</code>
+and value delimited with <code>{}</code> is an <code>object</code>.
+Explicit typing for complex types not only opens up the ability to use functions applicable to that specialized type,
+but is also a precondition for providing overrides.</p>
+
+
+
+  <blockquote
+    
+    class="px-4 border-l-4 border-blue-light dark:border-blue-dark">
+    <p class="flex gap-2 items-center text-blue-light dark:text-blue-dark">
+      <span class="icon-svg pb-1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M483.18-280q12.82 0 21.32-8.63 8.5-8.62 8.5-21.37v-180q0-12.75-8.68-21.38-8.67-8.62-21.5-8.62-12.82 0-21.32 8.62-8.5 8.63-8.5 21.38v180q0 12.75 8.68 21.37 8.67 8.63 21.5 8.63Zm-3.2-314q14.02 0 23.52-9.2T513-626q0-14.45-9.48-24.22-9.48-9.78-23.5-9.78t-23.52 9.78Q447-640.45 447-626q0 13.6 9.48 22.8 9.48 9.2 23.5 9.2Zm.29 514q-82.74 0-155.5-31.5Q252-143 197.5-197.5t-86-127.34Q80-397.68 80-480.5t31.5-155.66Q143-709 197.5-763t127.34-85.5Q397.68-880 480.5-880t155.66 31.5Q709-817 763-763t85.5 127Q880-563 880-480.27q0 82.74-31.5 155.5Q817-252 763-197.68q-54 54.31-127 86Q563-80 480.27-80Z"/></svg>
+      </span>
+      <strong>Note</strong>
+    </p>
+    <p>See 
+  <a
+    class="link"
+    href="https://github.com/hashicorp/hcl/tree/main/ext/typeexpr"
+    rel="noopener">HCL Type Expressions<span class="pl-1 icon-svg icon-sm"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg></span></a> page for more details.</p>
+  </blockquote>
+
+
+<h3 class=" scroll-mt-20" id="overriding-variables">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#overriding-variables">
+    Overriding variables
+  </a>
+</h3>
+
+<p>As mentioned in the 
+  <a class="link" href="#variable">intro to variables</a>, primitive types (<code>string</code>, <code>number</code>, and <code>bool</code>)
+can be overridden without typing and will generally behave as expected.
+(When explicit typing is not provided, a variable is assumed to be primitive when the default value lacks <code>{}</code> or <code>[]</code> delimiters;
+a variable with neither typing nor a default value is treated as <code>string</code>.)
+Naturally, these same overrides can be used alongside explicit typing too;
+they may help in edge cases where you want <code>VAR=true</code> to be a <code>string</code>, where without typing,
+it may be a <code>string</code> or a <code>bool</code> depending on how/where it's used.
+Overriding a variable with a complex type can only be done when the type is provided.
+This is still done via environment variables, but the values can be provided via CSV or JSON.</p>
+
+<h4 class=" scroll-mt-20" id="csv-overrides">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#csv-overrides">
+    CSV overrides
+  </a>
+</h4>
+
+<p>This is considered the canonical method and is well suited to interactive usage.
+It is assumed that <code>list</code> and <code>set</code> will be the most common complex type,
+as well as the most common complex type designed to be overridden.
+Thus, there is full CSV support for <code>list</code> and <code>set</code>
+(and <code>tuple</code>; despite being considered a structural type, it is more like a collection type in this regard).</p>
+<p>There is limited support for <code>map</code> and <code>object</code> and no support for composite types;
+for these advanced cases, an alternative mechanism 
+  <a class="link" href="#json-overrides">using JSON</a> is available.</p>
+
+<h4 class=" scroll-mt-20" id="json-overrides">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#json-overrides">
+    JSON overrides
+  </a>
+</h4>
+
+<p>Overrides can also be provided via JSON.
+This is the only method available for providing some complex types and may be convenient if overrides are already JSON
+(for example, if they come from a JSON API).
+It can also be used when dealing with values are difficult or impossible to specify using CSV (e.g., values containing quotes or commas).
+To use JSON, simply append <code>_JSON</code> to the variable name.
+In this contrived example, CSV cannot handle the second value; despite being a supported CSV type, JSON must be used:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'dmFyaWFibGUgIlZBTFMiIHsKICB0eXBlID0gbGlzdChzdHJpbmcpCiAgZGVmYXVsdCA9IFsic29tZSIsICJsaXN0Il0KfQ==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">variable</span> <span class="s2">&#34;VALS&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">list</span><span class="p">(</span><span class="k">string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;some&#34;, &#34;list&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'JCBjYXQgZGF0YS5qc29uClsiaGVsbG8iLCJ3aXRoLGNvbW1hIiwid2l0aFwicXVvdGUiXQokIFZBTFNfSlNPTj0kKDwgZGF0YS5qc29uKSBkb2NrZXIgYnVpbGR4IGJha2UKCiMgQ1NWIGVxdWl2YWxlbnQsIHRob3VnaCB0aGUgc2Vjb25kIHZhbHVlIGNhbm5vdCBiZSBleHByZXNzZWQgYXQgYWxsIAokIFZBTFM9J2hlbGxvLCJ3aXRoIiJxdW90ZSInIGRvY2tlciBidWlsZHggYmFrZQ==', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> cat data.json
+</span></span><span class="line"><span class="cl"><span class="go">[&#34;hello&#34;,&#34;with,comma&#34;,&#34;with\&#34;quote&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="gp">$</span> <span class="nv">VALS_JSON</span><span class="o">=</span><span class="k">$(</span>&lt; data.json<span class="k">)</span> docker buildx bake
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> CSV equivalent, though the second value cannot be expressed at all 
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">VALS</span><span class="o">=</span><span class="s1">&#39;hello,&#34;with&#34;&#34;quote&#34;&#39;</span> docker buildx bake
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>This example illustrates some precedence and usage rules:</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'dmFyaWFibGUgIkZPTyIgewogIHR5cGUgPSBzdHJpbmcKICBkZWZhdWx0ID0gImZvbyIKfQoKdmFyaWFibGUgIkZPT19KU09OIiB7CiAgdHlwZSA9IHN0cmluZwogIGRlZmF1bHQgPSAiZm9vIgp9', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-hcl" data-lang="hcl"><span class="line"><span class="cl"><span class="k">variable</span> <span class="s2">&#34;FOO&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">string</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+</span></span><span class="line"><span class="cl">}
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">variable</span> <span class="s2">&#34;FOO_JSON&#34;</span> {
+</span></span><span class="line"><span class="cl"><span class="n">  type</span> <span class="o">=</span> <span class="k">string</span>
+</span></span><span class="line"><span class="cl"><span class="n">  default</span> <span class="o">=</span> <span class="s2">&#34;foo&#34;</span>
+</span></span><span class="line"><span class="cl">}</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>The variable <code>FOO</code> can <em>only</em> be overridden using CSV because <code>FOO_JSON</code>, which would typically used for a JSON override,
+is already a defined variable.
+Since <code>FOO_JSON</code> is an actual variable, setting that environment variable would be expected to a CSV value.
+A JSON override <em>is</em> possible for this variable, using environment variable <code>FOO_JSON_JSON</code>.</p>
+<div data-pagefind-ignore class="scroll-mt-20" x-data x-ref="root">
+  
+  <div class="group relative">
+    <button x-data="{ code: 'IyBUaGVzZSB0aHJlZSBhcmUgYWxsIGVxdWl2YWxlbnQsIHNldHRpbmcgdmFyaWFibGUgRk9PPWJhcgokIEZPTz1iYXIgZG9ja2VyIGJ1aWxkeCBiYWtlIDwuLi4&#43;CiQgRk9PPSdiYXInIGRvY2tlciBidWlsZHggYmFrZSA8Li4uPgokIEZPTz0iYmFyIiBkb2NrZXIgYnVpbGR4IGJha2UgPC4uLj4KCiMgU2V0cyAqb25seSogdmFyaWFibGUgRk9PX0pTT047IEZPTyBpcyB1bnRvdWNoZWQKJCBGT09fSlNPTj1iYXIgZG9ja2VyIGJ1aWxkeCBiYWtlIDwuLi4&#43;CgojIFRoaXMgYWxzbyBzZXRzIEZPT19KU09OLCBidXQgd2lsbCBmYWlsIGR1ZSB0byBub3QgYmVpbmcgdmFsaWQgSlNPTgokIEZPT19KU09OX0pTT049YmFyIGRvY2tlciBidWlsZHggYmFrZSA8Li4uPgoKIyBUaGVzZSBhcmUgYWxsIGVxdWl2YWxlbnQKJCBjYXQgZGF0YS5qc29uCiJiYXIiCiQgRk9PX0pTT05fSlNPTj0kKDwgZGF0YS5qc29uKSBkb2NrZXIgYnVpbGR4IGJha2UgPC4uLj4KJCBGT09fSlNPTl9KU09OPSciYmFyIicgZG9ja2VyIGJ1aWxkeCBiYWtlIDwuLi4&#43;CiQgRk9PX0pTT049YmFyIGRvY2tlciBidWlsZHggYmFrZSA8Li4uPgoKIyBUaGlzIHJlc3VsdHMgaW4gc2V0dGluZyB0d28gZGlmZmVyZW50IHZhcmlhYmxlcywgYm90aCBzcGVjaWZpZWQgYXMgQ1NWIChGT089YmFyIGFuZCBGT09fSlNPTj0iYmF6IikKJCBGT089YmFyIEZPT19KU09OPSciYmF6IicgZG9ja2VyIGJ1aWxkeCBiYWtlIDwuLi4&#43;CgojIFRoZXNlIHJlZmVyIHRvIHRoZSBzYW1lIHZhcmlhYmxlIHdpdGggRk9PX0pTT05fSlNPTiBoYXZpbmcgcHJlY2VkZW5jZSBhbmQgcmVhZCBhcyBKU09OIChGT09fSlNPTj1iYXopCiQgRk9PX0pTT049YmFyIEZPT19KU09OX0pTT049JyJiYXoiJyBkb2NrZXIgYnVpbGR4IGJha2UgPC4uLj4=', copying: false }"
+      class="absolute right-3 top-3 z-10 text-gray-light-300 dark:text-gray-dark-600" title="copy" @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);">
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span>
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span>
+    </button>
+     
+    <div class="syntax-light dark:syntax-dark">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Console" data-lang="Console"><span class="line"><span class="cl"><span class="gp">#</span> These three are all equivalent, setting variable <span class="nv">FOO</span><span class="o">=</span>bar
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO</span><span class="o">=</span>bar docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span> docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO</span><span class="o">=</span><span class="s2">&#34;bar&#34;</span> docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> Sets *only* variable FOO_JSON<span class="p">;</span> FOO is untouched
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO_JSON</span><span class="o">=</span>bar docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> This also sets FOO_JSON, but will fail due to not being valid JSON
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO_JSON_JSON</span><span class="o">=</span>bar docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> These are all equivalent
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> cat data.json
+</span></span><span class="line"><span class="cl"><span class="go">&#34;bar&#34;
+</span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="gp">$</span> <span class="nv">FOO_JSON_JSON</span><span class="o">=</span><span class="k">$(</span>&lt; data.json<span class="k">)</span> docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO_JSON_JSON</span><span class="o">=</span><span class="s1">&#39;&#34;bar&#34;&#39;</span> docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO_JSON</span><span class="o">=</span>bar docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> This results in setting two different variables, both specified as CSV <span class="o">(</span><span class="nv">FOO</span><span class="o">=</span>bar and <span class="nv">FOO_JSON</span><span class="o">=</span><span class="s2">&#34;baz&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO</span><span class="o">=</span>bar <span class="nv">FOO_JSON</span><span class="o">=</span><span class="s1">&#39;&#34;baz&#34;&#39;</span> docker buildx bake &lt;...&gt;
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> These refer to the same variable with FOO_JSON_JSON having precedence and <span class="nb">read</span> as JSON <span class="o">(</span><span class="nv">FOO_JSON</span><span class="o">=</span>baz<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> <span class="nv">FOO_JSON</span><span class="o">=</span>bar <span class="nv">FOO_JSON_JSON</span><span class="o">=</span><span class="s1">&#39;&#34;baz&#34;&#39;</span> docker buildx bake &lt;...&gt;
 </span></span></code></pre></div>
       
     </div>
@@ -12075,6 +12449,15 @@ are also supported:</p>
         </li>
         
   <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#variable-typing">Variable typing</a>
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#overriding-variables">Overriding variables</a>
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
         <li>
           <a class="link lg:no-underline" href="#built-in-variables">Built-in variables</a>
         </li>
