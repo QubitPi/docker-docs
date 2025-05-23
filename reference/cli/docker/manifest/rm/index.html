@@ -4879,6 +4879,56 @@ body > img { display: none }
     </ul>
   </li>
 
+  
+  
+  <li x-data="{ expanded: false }">
+    <div class="rounded px-4 w-full flex items-center justify-between">
+      <div class="w-full py-2 truncate">
+          
+          <button @click="expanded = !expanded"
+            class="w-full text-left select-none hover:text-blue-light hover:dark:text-blue-dark">
+            
+  Registry API
+
+          </button>
+      </div>
+      <button @click="expanded = !expanded" class="hover:bg-gray-light-300 hover:dark:bg-gray-dark-300 rounded">
+        <span :class="{ 'hidden' : expanded }" class="icon-svg ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
+        </span>
+        <span :class="{ 'hidden' : !expanded }" class="icon-svg hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M316-400q-6.75 0-10.87-4.64-4.13-4.63-4.13-10.81 0-1.55 5-10.55l158-157q3-3 7.06-5 4.07-2 8.94-2 4.88 0 8.94 2t7.06 5l158 157q2 2 3.5 4.76 1.5 2.77 1.5 5.92 0 6.32-4.12 10.82-4.13 4.5-10.88 4.5H316Z"/></svg>
+        </span>
+      </button>
+    </div>
+    <ul :class="{ 'hidden' : !expanded }" class="hidden ml-3">
+      
+    
+    <li class="rounded px-4 hover:text-blue-light hover:dark:text-blue-dark
+      ">
+      <a  class="py-2 w-full truncate block"
+        href="https://docker.qubitpi.org/reference/api/registry/latest/" title="Latest">
+        
+  Latest
+
+      </a>
+    </li>
+
+    
+    <li class="rounded px-4 hover:text-blue-light hover:dark:text-blue-dark
+      ">
+      <a  class="py-2 w-full truncate block"
+        href="https://docker.qubitpi.org/reference/api/registry/auth/" title="Registry authentication">
+        
+  Registry authentication
+
+      </a>
+    </li>
+
+
+    </ul>
+  </li>
+
 
     </ul>
   </li>
