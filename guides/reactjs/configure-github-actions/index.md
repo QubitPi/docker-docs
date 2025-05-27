@@ -1,4 +1,4 @@
-Configure CI/CD for your React.js application
+Automate your builds with GitHub Actions
 
 
 ## Prerequisites

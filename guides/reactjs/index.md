@@ -45,6 +45,6 @@ Once you've completed the React.js getting started modules, you’ll be ready to
 
 - [Run React.js tests in a container](https://docs.docker.com/guides/reactjs/run-tests/)
 
-- [Configure CI/CD for your React.js application](https://docs.docker.com/guides/reactjs/configure-ci-cd/)
+- [Automate your builds with GitHub Actions](https://docs.docker.com/guides/reactjs/configure-github-actions/)
 
 - [Test your React.js deployment](https://docs.docker.com/guides/reactjs/deploy/)
