@@ -4,11 +4,33 @@ Build release notes
 This page contains information about the new features, improvements, and bug
 fixes in [Docker Buildx](https://github.com/docker/buildx).
 
+## 0.24.0
+
+{{< release-date date="2025-05-21" >}}
+
+The full release notes for this release are available
+[on GitHub](https://github.com/docker/buildx/releases/tag/v0.24.0).
+
+### Enhancements
+
+- New `type` attribute added to the `variable` block in Bake to allow explicit typing of variables. [docker/buildx#3167](https://github.com/docker/buildx/pull/3167), [docker/buildx#3189](https://github.com/docker/buildx/pull/3189), [docker/buildx#3198](https://github.com/docker/buildx/pull/3198)
+- New `--finalize` flag added to the `history export` command to finalize build traces before exporting. [docker/buildx#3152](https://github.com/docker/buildx/pull/3152)
+- Compose compatibility has been updated to v2.6.3. [docker/buildx#3191](https://github.com/docker/buildx/pull/3191), [docker/buildx#3171](https://github.com/docker/buildx/pull/3171)
+
+### Bug fixes
+
+- Fix issue where some builds may leave behind temporary files after completion. [docker/buildx#3133](https://github.com/docker/buildx/pull/3133)
+- Fix wrong image ID returned when building with Docker when containerd-snapshotter is enabled. [docker/buildx#3136](https://github.com/docker/buildx/pull/3136)
+- Fix possible panic when using empty `call` definition with Bake. [docker/buildx#3168](https://github.com/docker/buildx/pull/3168)
+- Fix possible malformed Dockerfile path with Bake on Windows. [docker/buildx#3141](https://github.com/docker/buildx/pull/3141)
+- Fix current builder not being available in JSON output for `ls` command. [docker/buildx#3179](https://github.com/docker/buildx/pull/3179)
+- Fix OTEL context not being propagated to Docker daemon. [docker/buildx#3146](https://github.com/docker/buildx/pull/3146)
+
 ## 0.23.0
 
 {{< release-date date="2025-04-15" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.23.0).
 
 ### New
@@ -31,7 +53,7 @@ The full release note for this release is available
 
 {{< release-date date="2025-03-18" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.22.0).
 
 ### New
@@ -56,7 +78,7 @@ The full release note for this release is available
 
 {{< release-date date="2025-02-19" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.21.0).
 
 ### New
@@ -84,7 +106,7 @@ The full release note for this release is available
 
 {{< release-date date="2025-01-23" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.20.1).
 
 ### Bug fixes
@@ -96,7 +118,7 @@ The full release note for this release is available
 
 {{< release-date date="2025-01-20" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.20.0).
 
 > [!NOTE]
@@ -139,7 +161,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-11-27" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.19.1).
 
 ### Bug fixes
@@ -154,7 +176,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-11-27" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.19.0).
 
 ### New
@@ -196,7 +218,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-10-31" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.18.0).
 
 ### New
@@ -231,7 +253,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-09-13" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.17.1).
 
 ### Bug fixes
@@ -250,7 +272,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-09-10" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.17.0).
 
 ### New
@@ -302,7 +324,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-07-25" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.16.2).
 
 ### Bug fixes
@@ -313,7 +335,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-07-18" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.16.1).
 
 ### Bug fixes
@@ -325,7 +347,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-07-11" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.16.0).
 
 ### New
@@ -359,7 +381,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-06-18" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.15.1).
 
 ### Bug fixes
@@ -371,7 +393,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-06-11" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.15.0).
 
 ### New
@@ -400,7 +422,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-04-18" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.14.0).
 
 ### Enhancements
@@ -448,7 +470,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-03-13" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.13.1).
 
 ### Bug fixes
@@ -460,7 +482,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-03-06" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.13.0).
 
 ### New
@@ -502,7 +524,7 @@ The full release note for this release is available
 
 {{< release-date date="2024-01-12" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.12.1).
 
 ### Bug fixes and enhancements
@@ -514,7 +536,7 @@ The full release note for this release is available
 
 {{< release-date date="2023-11-16" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.12.0).
 
 ### New
@@ -607,7 +629,7 @@ The full release note for this release is available
 
 {{< release-date date="2023-07-18" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.11.2).
 
 ### Bug fixes and enhancements
@@ -621,7 +643,7 @@ The full release note for this release is available
 
 {{< release-date date="2023-07-05" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.11.1).
 
 ### Bug fixes and enhancements
@@ -639,7 +661,7 @@ The full release note for this release is available
 
 {{< release-date date="2023-06-13" >}}
 
-The full release note for this release is available
+The full release notes for this release are available
 [on GitHub](https://github.com/docker/buildx/releases/tag/v0.11.0).
 
 ### New
