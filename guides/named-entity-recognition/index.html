@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.efebee07c034408af6f43530afca99e7e7821d5494eed4e676cc41fe446c65d1.css"
-            integrity="sha256-7&#43;vuB8A0QIr29DUwr8qZ5&#43;eCHVSU7tTmdsxB/kRsZdE="
+            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
+            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
             crossorigin="anonymous"
           />
         
@@ -303,7 +303,7 @@
     x-cloak
     class="bg-background-light dark:bg-background-dark absolute top-full right-0 z-50 w-screen max-w-xl rounded-sm px-6 py-4 shadow-lg"
   >
-    <div id="search-bar-results"><div class="p-2 text-gray-200 dark:text-gray-500">Start typing to search… or try <button @click="open=false" class="open-kapa-widget link">Ask AI</button></div>
+    <div id="search-bar-results"><div class="p-2 text-gray-500 dark:text-gray-400">Start typing to search… or try <button @click="open=false" class="open-kapa-widget link">Ask AI</button></div>
       
     </div>
   </div>
@@ -327,7 +327,7 @@
       async function search(e) {
         const query = e.target.value;
         if (query === "") {
-          searchBarResults.innerHTML = `\u003cdiv class=\u0022p-2 text-gray-200 dark:text-gray-500\u0022\u003eStart typing to search… or try \u003cbutton @click=\u0022open=false\u0022 class=\u0022open-kapa-widget link\u0022\u003eAsk AI\u003c\/button\u003e\u003c\/div\u003e`;
+          searchBarResults.innerHTML = `\u003cdiv class=\u0022p-2 text-gray-500 dark:text-gray-400\u0022\u003eStart typing to search… or try \u003cbutton @click=\u0022open=false\u0022 class=\u0022open-kapa-widget link\u0022\u003eAsk AI\u003c\/button\u003e\u003c\/div\u003e`;
           return;
         }
         const search = await pagefind.debouncedSearch(query);
@@ -423,7 +423,7 @@
               }
           }
       })"
-        class="bg-background-toc dark:bg-background-toc fixed top-0 z-40 hidden h-screen w-full flex-none overflow-x-hidden overflow-y-auto md:sticky md:top-16 md:z-auto md:block md:h-[calc(100vh-64px)] md:w-[300px]"
+        class="bg-background-toc dark:bg-background-toc fixed top-0 z-40 hidden h-screen w-full flex-none overflow-x-hidden overflow-y-auto md:sticky md:top-16 md:z-auto md:block md:h-[calc(100vh-64px)] md:w-[320px]"
         :class="{ 'hidden': ! $store.showSidebar }"
       >
         
@@ -434,7 +434,7 @@
           x-transition.opacity
         ></div>
         <div
-          class="bg-background-toc dark:bg-background-toc z-50 w-full p-4 md:block md:w-[300px]"
+          class="bg-background-toc dark:bg-background-toc z-50 w-full p-3 md:block md:w-[300px]"
         >
           
           <button class="my-4 md:hidden" @click="$store.showSidebar = false">
@@ -507,9 +507,7 @@ using Docker.</div>
   <div class="space-y-4">
     <div class="flex flex-wrap gap-2">
         
-  <span
-    class="border-divider-light dark:border-divider-dark inline-flex items-center gap-1 rounded-full border bg-gray-100 px-2 text-sm text-gray-200 select-none dark:bg-gray-800 dark:text-gray-400"
-  >
+  <span class="chip">
     <img
       class="py-1"
       height="18"
@@ -520,17 +518,14 @@ using Docker.</div>
     <span>Python</span>
   </span>
         
-  <a
-    class="border-divider-light dark:border-divider-dark bg-gray-00 inline-flex items-center rounded-full border px-2 text-sm text-gray-800 select-none hover:bg-gray-100 dark:bg-gray-800 dark:text-gray-200 hover:dark:bg-gray-700"
-    href="https://docker.qubitpi.org/tags/ai/"
-  >
+  <a class="chip" href="https://docker.qubitpi.org/tags/ai/">
     <span class="icon-svg icon-sm pb-0.5">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m338-319-35 137q-2 10-9.5 16t-17.5 6q-14 0-23-11t-5-25l31-123H158q-14 0-23.5-11.5T129-356q2-10 10-16.5t19-6.5h136l51-202H224q-14 0-23.5-11.5T195-618q2-10 10-16.5t19-6.5h136l34-137q2-10 9.5-16t17.5-6q14 0 22.5 10.5T449-765l-30 124h203l34-137q2-10 9.5-16t17.5-6q14 0 22.5 10.5T711-765l-30 124h121q14 0 23.5 11.5T831-604q-2 10-10 16.5t-19 6.5H666l-51 202h121q14 0 23.5 11.5T765-342q-2 10-10 16.5t-19 6.5H600l-35 137q-2 10-9.5 16t-17.5 6q-14 0-23-11t-5-25l31-123H338Zm15-60h203l51-202H404l-51 202Z"/></svg>
     </span>
     <span>AI</span>
   </a>
     </div>
-      <div class="flex gap-2 text-gray-200 dark:text-gray-500">
+      <div class="flex gap-2 text-gray-400 dark:text-gray-400">
         <span class="icon-svg"
           ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M513-492v-171q0-13-8.5-21.5T483-693q-13 0-21.5 8.5T453-663v183q0 6 2 11t6 10l144 149q9 10 22.5 9.5T650-310q9-9 9-22t-9-22L513-492ZM480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-82 31.5-155t86-127.5Q252-817 325-848.5T480-880q82 0 155 31.5t127.5 86Q817-708 848.5-635T880-480q0 82-31.5 155t-86 127.5Q708-143 635-111.5T480-80Z"/></svg></span
         >
@@ -1826,129 +1821,6 @@ and then set up the environment and run the application using Docker.</p>
 </div>
 
   <div class="prose dark:prose-invert max-w-4xl">
-    <div class="md-dropdown ml-auto hidden lg:block">
-      <details id="markdownDropdown" class="group relative z-10 inline-block" data-heap-id="markdown-dropdown">
-    <summary
-      class="inline-flex cursor-pointer items-center gap-0 rounded-sm border border-gray-600 bg-white px-2 py-2
-      text-base font-semibold text-gray-600 transition-colors hover:bg-gray-50 dark:border-gray-50 dark:bg-gray-950 dark:text-gray-100 dark:hover:bg-gray-900"
-      data-heap-id="markdown-dropdown-toggle"
-    >
-      <span>Page options</span>
-      <span class="icon-svg transition-transform group-open:rotate-180">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
-      </span>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-      </svg>
-    </summary>
-
-    
-    <div
-      class="absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-sm border border-gray-300 bg-white p-2 text-sm text-black shadow-md [display:none] group-open:[display:block] dark:border-gray-100 dark:text-gray-100 dark:bg-gray-950"
-      data-heap-id="markdown-dropdown-menu"
-    >
-      <button
-        onclick="copyMarkdown()"
-        data-heap-id="copy-markdown-button"
-        class="sub-button"
-      >
-        <span class="icon-svg mt-[2px] text-base leading-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg>
-        </span>
-        <span class="icon-svg hidden mt-[2px] text-base leading-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg>
-        </span>
-        <div class="leading-tight">
-          <div class="text-base">Copy page as Markdown for LLMs</div>
-        </div>
-      </button>
-
-      <button
-        onclick="viewPlainText()"
-        data-heap-id="view-markdown-button"
-        class="sub-button"
-      >
-        <span class="icon-svg mt-[2px] text-base leading-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M349-250h262q12.75 0 21.38-8.68 8.62-8.67 8.62-21.5 0-12.82-8.62-21.32-8.63-8.5-21.38-8.5H349q-12.75 0-21.37 8.68-8.63 8.67-8.63 21.5 0 12.82 8.63 21.32 8.62 8.5 21.37 8.5Zm0-170h262q12.75 0 21.38-8.68 8.62-8.67 8.62-21.5 0-12.82-8.62-21.32-8.63-8.5-21.38-8.5H349q-12.75 0-21.37 8.68-8.63 8.67-8.63 21.5 0 12.82 8.63 21.32 8.62 8.5 21.37 8.5ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h336q12.44 0 23.72 5T599-862l183 183q8 8 13 19.28 5 11.28 5 23.72v496q0 24-18 42t-42 18H220Zm331-584q0 12.75 8.63 21.37Q568.25-634 581-634h159L551-820v156Z"/></svg>
-        </span>
-        <div class="leading-tight">
-          <div class="text-base">View page as plain text</div>
-        </div>
-      </button>
-
-      <button
-        onclick="openInDocsAI()"
-        data-heap-id="search-docs-ai-button"
-        class="sub-button"
-      >
-        <span class="icon-svg mt-[2px] text-base leading-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M378-329q-108.16 0-183.08-75Q120-479 120-585t75-181q75-75 181.5-75t181 75Q632-691 632-584.85 632-542 618-502q-14 40-42 75l242 240q9 8.56 9 21.78T818-143q-9 9-22.22 9-13.22 0-21.78-9L533-384q-30 26-69.96 40.5Q423.08-329 378-329Zm-1-60q81.25 0 138.13-57.5Q572-504 572-585t-56.87-138.5Q458.25-781 377-781q-82.08 0-139.54 57.5Q180-666 180-585t57.46 138.5Q294.92-389 377-389Z"/></svg>
-        </span>
-        <div class="leading-tight">
-          <div class="text-base">Ask questions with Docs AI</div>
-        </div>
-      </button>
-    </div>
-  </details>
-
-  <script>
-    function getCurrentPlaintextUrl() {
-      const url = window.location.href.split("#")[0].replace(/\/$/, "");
-      return `${url}/index.md`;
-    }
-
-    function copyMarkdown() {
-      fetch(getCurrentPlaintextUrl())
-        .then((response) => response.text())
-        .then((text) => {
-          navigator.clipboard.writeText(text).then(() => {
-            const button = document.querySelector('[data-heap-id="copy-markdown-button"]');
-            if (!button) return;
-
-            const icons = button.querySelectorAll(".icon-svg");
-            const copyIcon = icons[0];
-            const checkIcon = icons[1];
-
-            copyIcon.classList.add("hidden");
-            checkIcon.classList.remove("hidden");
-
-            setTimeout(() => {
-              copyIcon.classList.remove("hidden");
-              checkIcon.classList.add("hidden");
-            }, 2000);
-          });
-        })
-        .catch((err) => {
-          console.error("Error copying markdown:", err);
-        });
-    }
-
-    function viewPlainText() {
-      window.open(getCurrentPlaintextUrl(), "_blank");
-    }
-
-    function openInDocsAI() {
-      const kapaButton = document.querySelector(".open-kapa-widget");
-      if (kapaButton) {
-        kapaButton.click();
-      } else {
-        alert("Couldn't find Docs AI.");
-      }
-    }
-
-    document.addEventListener("click", function (event) {
-      const dropdown = document.getElementById("markdownDropdown");
-
-      if (!dropdown) return;
-
-      const isClickInside = dropdown.contains(event.target);
-
-      if (!isClickInside && dropdown.hasAttribute("open")) {
-        dropdown.removeAttribute("open");
-      }
-    });
-  </script>
-
-    </div>
     
   </div>
 
