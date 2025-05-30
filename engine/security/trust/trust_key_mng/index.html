@@ -13741,10 +13741,12 @@ the image repository:</p>
 <p>The timestamp and snapshot keys are safely generated and stored in a signing server
 that is deployed alongside the Docker registry. These keys are generated in a backend
 service that isn't directly exposed to the internet and are encrypted at rest. Use the Notary CLI to 
-  <a
-    class="link"
-    href="https://github.com/theupdateframework/notary/blob/master/docs/advanced_usage.md#rotate-keys"
-    rel="noopener">manage your snapshot key locally<span class="pl-1 icon-svg icon-sm"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg></span></a>.</p>
+  <a class="link" href="https://github.com/theupdateframework/notary/blob/master/docs/advanced_usage.md#rotate-keys" rel="noopener">
+    manage your snapshot key locally
+    <span class="pl-1 icon-svg icon-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
+    </span>
+  </a>.</p>
 </li>
 </ul>
 <p>Delegation keys are optional, and not generated as part of the normal <code>docker</code>
@@ -13844,10 +13846,12 @@ Yubikey is prioritized over keys stored in the filesystem. When you initialize a
 new repository with content trust, Docker Engine looks for a root key locally. If a
 key is not found and the Yubikey 4 exists, Docker Engine creates a root key in the
 Yubikey 4. Consult the 
-  <a
-    class="link"
-    href="https://github.com/theupdateframework/notary/blob/master/docs/advanced_usage.md#use-a-yubikey"
-    rel="noopener">Notary documentation<span class="pl-1 icon-svg icon-sm"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg></span></a>
+  <a class="link" href="https://github.com/theupdateframework/notary/blob/master/docs/advanced_usage.md#use-a-yubikey" rel="noopener">
+    Notary documentation
+    <span class="pl-1 icon-svg icon-sm">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
+    </span>
+  </a>
 for more details.</p>
 <p>Prior to Docker Engine 1.11, this feature was only in the experimental branch.</p>
 
@@ -13882,7 +13886,7 @@ for more details.</p>
     <div class="admonition-content">
       <p>If a publisher loses keys it means losing the ability to sign images for the repositories in
 question. If you lose a key, send an email to 
-  <a class="link" href="">Docker Hub Support</a>.
+  <a class="link" href="mailto:hub-support@docker.com">Docker Hub Support</a>.
 As a reminder, the loss of a root key is not recoverable.</p>
     </div>
   </blockquote>

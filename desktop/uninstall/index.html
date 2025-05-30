@@ -14352,7 +14352,7 @@ You can remove the directory <code>/Users/&lt;USER_HOME&gt;/Library/Containers/c
   <div class="group relative">
     
     <button
-      x-data="{ code: 'JCBzdWRvIHBhY21hbiByZW1vdmUgZG9ja2VyLWRlc2t0b3A=', copying: false }"
+      x-data="{ code: 'JCBzdWRvIHBhY21hbiAtUm5zIGRvY2tlci1kZXNrdG9w', copying: false }"
       class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
       title="copy"
       @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
@@ -14370,22 +14370,22 @@ You can remove the directory <code>/Users/&lt;USER_HOME&gt;/Library/Containers/c
     
     <div class="syntax-light dark:syntax-dark not-prose">
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo pacman remove docker-desktop
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo pacman -Rns docker-desktop
 </span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>This removes the Docker Desktop package itself but doesn’t delete all of its files or settings.</p>
+<p>This removes the Docker Desktop package along with its configuration files and dependencies not required by other packages.</p>
 </li>
 <li>
-<p>Manually remove leftover file.</p>
+<p>Manually remove leftover files.</p>
 <div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
   
   <div class="group relative">
     
     <button
-      x-data="{ code: 'JCBybSAtciAkSE9NRS8uZG9ja2VyL2Rlc2t0b3AKJCBzdWRvIHJtIC91c3IvbG9jYWwvYmluL2NvbS5kb2NrZXIuY2xpCiQgc3VkbyBhcHQgcHVyZ2UgZG9ja2VyLWRlc2t0b3A=', copying: false }"
+      x-data="{ code: 'JCBybSAtciAkSE9NRS8uZG9ja2VyL2Rlc2t0b3A=', copying: false }"
       class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
       title="copy"
       @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
@@ -14404,14 +14404,12 @@ You can remove the directory <code>/Users/&lt;USER_HOME&gt;/Library/Containers/c
     <div class="syntax-light dark:syntax-dark not-prose">
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> rm -r <span class="nv">$HOME</span>/.docker/desktop
-</span></span><span class="line"><span class="cl"><span class="gp">$</span> sudo rm /usr/local/bin/com.docker.cli
-</span></span><span class="line"><span class="cl"><span class="gp">$</span> sudo apt purge docker-desktop
 </span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>This removes configuration and data files at <code>$HOME/.docker/desktop</code>, the symlink at <code>/usr/local/bin/com.docker.cli</code>, and purges the remaining systemd service files.</p>
+<p>This removes configuration and data files at <code>$HOME/.docker/desktop</code>.</p>
 </li>
 <li>
 <p>Clean up Docker config settings. In <code>$HOME/.docker/config.json</code>, remove the <code>credsStore</code> and <code>currentContext</code> properties.</p>
