@@ -51,6 +51,8 @@ https://github.com/docker/cli
 
 - [docker manifest](https://docs.docker.com/reference/cli/docker/manifest/)
 
+- [docker model](https://docs.docker.com/reference/cli/docker/model/)
+
 - [docker network](https://docs.docker.com/reference/cli/docker/network/)
 
 - [docker node](https://docs.docker.com/reference/cli/docker/node/)
