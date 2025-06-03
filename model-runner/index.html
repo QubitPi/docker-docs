@@ -13,7 +13,7 @@
 <meta name="description" content="Learn how to use Docker Model Runner to manage and run AI models." />
 <meta
   name="keywords"
-  content="Docker, ai, model, runner, docker, deskotp, llm"
+  content="Docker, ai, model, runner, docker, desktop, docker, engine, llm"
 />
 <link rel="canonical" href="https://docker.qubitpi.org/model-runner/" />
 
@@ -13983,6 +13983,11 @@
             >Enable DMR in Docker Desktop</a
           >
         </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-dmr-in-docker-engine"
+            >Enable DMR in Docker Engine</a
+          >
+        </li>
   </ul>
         <li>
           <a class="link lg:no-underline" href="#integrate-the-docker-model-runner-into-your-software-development-lifecycle"
@@ -14100,7 +14105,7 @@
     
       <div class="flex flex-wrap gap-1">
         <span class="font-bold">Requires:</span>
-        <span>Docker Desktop 4.40 and later</span>
+        <span>Docker Engine or Docker Desktop (Windows) 4.41+ or Docker Desktop (MacOS) 4.40+</span>
         <span class="icon-svg">
           <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M140-240q-24 0-42-18t-18-42v-480q0-24 18-42t42-18h367q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H140v480h680v-109q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v109q0 24-18 42t-42 18H652l39 38q5 5 7 10.54 2 5.55 2 11.46v30q0 12.75-8.62 21.37Q682.75-120 670-120H290q-12.75 0-21.37-8.63Q260-137.25 260-150v-31q0-5.57 2-10.78 2-5.22 7-10.22l38-38H140Zm457-221v-349q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v349l100-99q9-8 21.1-8.5 12.1-.5 20.9 8.5 9 9 9 21t-9 21L627-346 455-518q-9-9-9-21t9-21q9-9 21-9t21 9l100 99Z"/></svg>
         </span>
@@ -14201,6 +14206,174 @@
 <li>If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the <strong>Enable GPU-backed inference</strong> setting.</li>
 </ol>
 <p>You can now use the <code>docker model</code> command in the CLI and view and interact with your local models in the <strong>Models</strong> tab in the Docker Desktop Dashboard.</p>
+
+<h3 class=" scroll-mt-20" id="enable-dmr-in-docker-engine">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-dmr-in-docker-engine">
+    Enable DMR in Docker Engine
+  </a>
+</h3>
+
+<ol>
+<li>
+<p>Ensure you have installed 
+  <a class="link" href="/engine/install/">Docker Engine</a>.</p>
+</li>
+<li>
+<p>DMR is available as a package. To install it, run:</p>
+
+
+
+
+
+
+
+<div
+  
+    x-data="{ selected: 'Ubuntu/Debian' }"
+  
+  aria-role="tabpanel"
+>
+  <div aria-role="tablist" class="space-x-2">
+    
+      <button
+        class="p-1"
+        :class="selected === 'Ubuntu/Debian' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'Ubuntu/Debian'"
+        
+      >
+        Ubuntu/Debian
+      </button>
+    
+      <button
+        class="p-1"
+        :class="selected === 'RPM-base-distributions' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'RPM-base-distributions'"
+        
+      >
+        RPM-base distributions
+      </button>
+    
+  </div>
+  <hr class="!mt-0" />
+  <div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'Ubuntu/Debian' && 'hidden'"
+      >
+        <div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+  
+  <div class="group relative">
+    
+    <button
+      x-data="{ code: 'JCBzdWRvIGFwdC1nZXQgdXBkYXRlCiQgc3VkbyBhcHQtZ2V0IGluc3RhbGwgZG9ja2VyLW1vZGVsLXBsdWdpbg==', copying: false }"
+      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
+      title="copy"
+      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+    >
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+      >
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+      >
+    </button>
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo apt-get update
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> sudo apt-get install docker-model-plugin
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+
+      </div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'RPM-base-distributions' && 'hidden'"
+      >
+        <div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+  
+  <div class="group relative">
+    
+    <button
+      x-data="{ code: 'JCBzdWRvIGRuZiB1cGRhdGUKJCBzdWRvIGRuZiBpbnN0YWxsIGRvY2tlci1tb2RlbC1wbHVnaW4=', copying: false }"
+      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
+      title="copy"
+      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+    >
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+      >
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+      >
+    </button>
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo dnf update
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> sudo dnf install docker-model-plugin
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+
+      </div>
+    
+  </div>
+  <hr />
+</div>
+
+</li>
+<li>
+<p>Test the installation:</p>
+<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+  
+  <div class="group relative">
+    
+    <button
+      x-data="{ code: 'JCBkb2NrZXIgbW9kZWwgdmVyc2lvbgokIGRvY2tlciBtb2RlbCBydW4gYWkvc21vbGxtMg==', copying: false }"
+      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
+      title="copy"
+      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+    >
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+      >
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+      >
+    </button>
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker model version
+</span></span><span class="line"><span class="cl"><span class="gp">$</span> docker model run ai/smollm2
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+</li>
+</ol>
 
 <h2 class=" scroll-mt-20" id="integrate-the-docker-model-runner-into-your-software-development-lifecycle">
   <a class="text-black dark:text-white no-underline hover:underline" href="#integrate-the-docker-model-runner-into-your-software-development-lifecycle">
@@ -14756,6 +14929,11 @@ See
         <li>
           <a class="link lg:no-underline" href="#enable-dmr-in-docker-desktop"
             >Enable DMR in Docker Desktop</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-dmr-in-docker-engine"
+            >Enable DMR in Docker Engine</a
           >
         </li>
   </ul>

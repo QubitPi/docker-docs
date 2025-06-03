@@ -32,6 +32,37 @@ Models are pulled from Docker Hub the first time they're used and stored locally
 
 You can now use the `docker model` command in the CLI and view and interact with your local models in the **Models** tab in the Docker Desktop Dashboard.
 
+### Enable DMR in Docker Engine
+
+1. Ensure you have installed [Docker Engine](/engine/install/).
+2. DMR is available as a package. To install it, run:
+
+   {{< tabs >}}
+   {{< tab name="Ubuntu/Debian">}}
+
+   ```console
+   $ sudo apt-get update
+   $ sudo apt-get install docker-model-plugin
+   ```
+
+   {{< /tab >}}
+   {{< tab name="RPM-base distributions">}}
+
+   ```console
+   $ sudo dnf update
+   $ sudo dnf install docker-model-plugin
+   ```
+
+   {{< /tab >}}
+   {{< /tabs >}}
+
+3. Test the installation:
+
+   ```console
+   $ docker model version
+   $ docker model run ai/smollm2
+   ```
+
 ## Integrate the Docker Model Runner into your software development lifecycle
 
 You can now start building your Generative AI application powered by the Docker Model Runner.

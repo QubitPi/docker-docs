@@ -14398,14 +14398,107 @@ addresses that exist within a host.</p>
 <p>But, particularly with IPv6 you may prefer to avoid using NAT and instead
 arrange for external routing to container addresses (&quot;direct routing&quot;).</p>
 <p>To access containers on a bridge network from outside the Docker host,
-you must set up routing to the bridge network via an address on the Docker
-host. This can be achieved using static routes, Border Gateway Protocol
-(BGP), or any other means appropriate for your network.</p>
-<p>Within a local layer 2 network, remote hosts can set up static routes
-to a container network using the Docker daemon host's address on the local
-network. Those hosts can access containers directly. For remote hosts
-outside the local network, direct access to containers requires router
-configuration to enable the necessary routing.</p>
+you must first set up routing to the bridge network via an address on the
+Docker host. This can be achieved using static routes, Border Gateway Protocol (BGP),
+or any other means appropriate for your network. For example, within
+a local layer 2 network, remote hosts can set up static routes to a container
+network via the Docker daemon host's address on the local network.</p>
+
+<h4 class=" scroll-mt-20" id="direct-routing-to-containers-in-bridge-networks">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#direct-routing-to-containers-in-bridge-networks">
+    Direct routing to containers in bridge networks
+  </a>
+</h4>
+
+<p>By default, remote hosts are not allowed direct access to container IP
+addresses in Docker's Linux bridge networks. They can only access ports
+published to host IP addresses.</p>
+<p>To allow direct access to any published port, on any container, in any
+Linux bridge network, use daemon option <code>&quot;allow-direct-routing&quot;: true</code>
+in <code>/etc/docker/daemon.json</code> or the equivalent <code>--allow-direct-routing</code>.</p>
+<p>To allow direct routing from anywhere to containers in a specific bridge
+network, see 
+  <a class="link" href="#gateway-modes">Gateway modes</a>.</p>
+<p>Or, to allow direct routing via specific host interfaces, to a specific
+bridge network, use the following option when creating the network:</p>
+<ul>
+<li><code>com.docker.network.bridge.trusted_host_interfaces</code></li>
+</ul>
+
+<h4 class=" scroll-mt-20" id="example">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#example">
+    Example
+  </a>
+</h4>
+
+<p>Create a network where published ports on container IP addresses can be
+accessed directly from interfaces <code>vxlan.1</code> and <code>eth3</code>:</p>
+<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+  
+  <div class="group relative">
+    
+    <button
+      x-data="{ code: 'JCBkb2NrZXIgbmV0d29yayBjcmVhdGUgLS1zdWJuZXQgMTkyLjAuMi4wLzI0IC0taXAtcmFuZ2UgMTkyLjAuMi4wLzI5IC1vIGNvbS5kb2NrZXIubmV0d29yay5icmlkZ2UudHJ1c3RlZF9ob3N0X2ludGVyZmFjZXM9InZ4bGFuLjE6ZXRoMyIgbXluZXQ=', copying: false }"
+      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
+      title="copy"
+      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+    >
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+      >
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+      >
+    </button>
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker network create --subnet 192.0.2.0/24 --ip-range 192.0.2.0/29 -o com.docker.network.bridge.trusted_host_interfaces<span class="o">=</span><span class="s2">&#34;vxlan.1:eth3&#34;</span> mynet
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>Run a container in that network, publishing its port 80 to port 8080 on
+the host's loopback interface:</p>
+<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+  
+  <div class="group relative">
+    
+    <button
+      x-data="{ code: 'JCBkb2NrZXIgcnVuIC1kIC0taXAgMTkyLjAuMi4xMDAgLXAgMTI3LjAuMC4xOjgwODA6ODAgbmdpbng=', copying: false }"
+      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
+      title="copy"
+      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+    >
+      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+      >
+      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+      >
+    </button>
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose">
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker run -d --ip 192.0.2.100 -p 127.0.0.1:8080:80 nginx
+</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>The web server running on the container's port 80 can now be accessed
+from the Docker host at <code>http://127.0.0.1:8080</code>, or directly at
+<code>http://192.0.2.100:80</code>. If remote hosts on networks connected to
+interfaces <code>vxlan.1</code> and <code>eth3</code> have a route to the <code>192.0.2.0/24</code>
+network inside the Docker host, they can also access the web server
+via <code>http://192.0.2.100:80</code>.</p>
 
 <h4 class=" scroll-mt-20" id="gateway-modes">
   <a class="text-black dark:text-white no-underline hover:underline" href="#gateway-modes">
@@ -14468,8 +14561,8 @@ listening on that bridge address (including services listening on &quot;any&quot
 address, <code>0.0.0.0</code> or <code>::</code>). No address is assigned to the bridge when the
 network is created with gateway mode <code>isolated</code>.</p>
 
-<h4 class=" scroll-mt-20" id="example">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#example">
+<h4 class=" scroll-mt-20" id="example-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#example-1">
     Example
   </a>
 </h4>
