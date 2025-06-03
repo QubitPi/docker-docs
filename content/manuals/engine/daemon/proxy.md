@@ -37,9 +37,9 @@ Configuring the daemon directly takes precedence over environment variables.
 
 ## Daemon configuration
 
-> [!IMPORTANT]
+> [!NOTE]
 >
-> [On Ubuntu server, things are little different](https://stackoverflow.com/a/76643435):
+> [Configuring socks5 proxy On Ubuntu server](https://stackoverflow.com/a/76643435):
 > 
 > Create or edit the __/etc/systemd/system/docker.service.d/proxy.conf__ file and add:
 > 
@@ -55,6 +55,13 @@ Configuring the daemon directly takes precedence over environment variables.
 > $ sudo systemctl daemon-reload
 > $ sudo systemctl restart docker docker.service
 > ```
+>
+> Note that this works for `docker pull` only. Therefore we cannot have any `docker build` in deployment because
+> there are operations during `docker build` that also require resource access vis proxy. For this reason, it is
+> recommended to publish Docker images to either public Docker Hub or private Container Registry, such as
+> [Docker Registry](https://distribution.qubitpi.org/) (with [UI](https://github.com/QubitPi/docker-registry-ui)
+> support) or
+> [GitHub Packages](https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images)
 
 You may configure proxy behavior for the daemon in the `daemon.json` file,
 or using CLI flags for the `--http-proxy` or `--https-proxy` flags for the
