@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -9293,28 +9293,36 @@ and optionally, volumes.</p>
         
         
       
-      <div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+      <div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc3lzdGVtIHBydW5lCgpXQVJOSU5HISBUaGlzIHdpbGwgcmVtb3ZlOgogICAgICAgIC0gYWxsIHN0b3BwZWQgY29udGFpbmVycwogICAgICAgIC0gYWxsIG5ldHdvcmtzIG5vdCB1c2VkIGJ5IGF0IGxlYXN0IG9uZSBjb250YWluZXIKICAgICAgICAtIGFsbCBkYW5nbGluZyBpbWFnZXMKICAgICAgICAtIHVudXNlZCBidWlsZCBjYWNoZQpBcmUgeW91IHN1cmUgeW91IHdhbnQgdG8gY29udGludWU/IFt5L05dIHkKCkRlbGV0ZWQgQ29udGFpbmVyczoKZjQ0ZjliODE5NDhiMzkxOTU5MGQ1Zjc5YTY4MGQ4Mzc4ZjExMzliNDE5NTJlMjE5ODMwYTMzMDI3YzgwYzg2Nwo3OTI3NzZlNjhhYzlkNzViY2U0MDkyYmMxYjVjYzE3Yjc3OWJjOTI2YWIwNGY0MTg1YWVjOWJmMWMwZDQ2NDFmCgpEZWxldGVkIE5ldHdvcmtzOgpuZXR3b3JrMQpuZXR3b3JrMgoKRGVsZXRlZCBJbWFnZXM6CnVudGFnZ2VkOiBoZWxsby13b3JsZEBzaGEyNTY6ZjNiM2IyOGE0NTE2MDgwNWJiMTY1NDJjOTUzMTg4ODUxOTQzMGU5ZTZkNmZmYzA5ZDcyMjYxYjBkMjZmZjc0ZgpkZWxldGVkOiBzaGEyNTY6MTgxNWM4MjY1MmMwM2JmZDg2NDRhZmRhMjZmYjE4NGYyZWQ4OTFkOTIxYjIwYTA3MDNiNDY3NjhmOTc1NWM1NwpkZWxldGVkOiBzaGEyNTY6NDU3NjE0NjljOTY1NDIxYTkyYTY5Y2M1MGU5MmMwMWUwY2ZhOTRmZTAyNmNkZDEyMzM0NDVlYTAwZTk2Mjg5YQoKVG90YWwgcmVjbGFpbWVkIHNwYWNlOiAxLjg0a0I=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc3lzdGVtIHBydW5lCgpXQVJOSU5HISBUaGlzIHdpbGwgcmVtb3ZlOgogICAgICAgIC0gYWxsIHN0b3BwZWQgY29udGFpbmVycwogICAgICAgIC0gYWxsIG5ldHdvcmtzIG5vdCB1c2VkIGJ5IGF0IGxlYXN0IG9uZSBjb250YWluZXIKICAgICAgICAtIGFsbCBkYW5nbGluZyBpbWFnZXMKICAgICAgICAtIHVudXNlZCBidWlsZCBjYWNoZQpBcmUgeW91IHN1cmUgeW91IHdhbnQgdG8gY29udGludWU/IFt5L05dIHkKCkRlbGV0ZWQgQ29udGFpbmVyczoKZjQ0ZjliODE5NDhiMzkxOTU5MGQ1Zjc5YTY4MGQ4Mzc4ZjExMzliNDE5NTJlMjE5ODMwYTMzMDI3YzgwYzg2Nwo3OTI3NzZlNjhhYzlkNzViY2U0MDkyYmMxYjVjYzE3Yjc3OWJjOTI2YWIwNGY0MTg1YWVjOWJmMWMwZDQ2NDFmCgpEZWxldGVkIE5ldHdvcmtzOgpuZXR3b3JrMQpuZXR3b3JrMgoKRGVsZXRlZCBJbWFnZXM6CnVudGFnZ2VkOiBoZWxsby13b3JsZEBzaGEyNTY6ZjNiM2IyOGE0NTE2MDgwNWJiMTY1NDJjOTUzMTg4ODUxOTQzMGU5ZTZkNmZmYzA5ZDcyMjYxYjBkMjZmZjc0ZgpkZWxldGVkOiBzaGEyNTY6MTgxNWM4MjY1MmMwM2JmZDg2NDRhZmRhMjZmYjE4NGYyZWQ4OTFkOTIxYjIwYTA3MDNiNDY3NjhmOTc1NWM1NwpkZWxldGVkOiBzaGEyNTY6NDU3NjE0NjljOTY1NDIxYTkyYTY5Y2M1MGU5MmMwMWUwY2ZhOTRmZTAyNmNkZDEyMzM0NDVlYTAwZTk2Mjg5YQoKVG90YWwgcmVjbGFpbWVkIHNwYWNlOiAxLjg0a0I=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker system prune
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -9347,28 +9355,36 @@ and optionally, volumes.</p>
 <p>By default, volumes aren't removed to prevent important data from being
 deleted if there is currently no container using the volume. Use the <code>--volumes</code>
 flag when running the command to prune anonymous volumes as well:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc3lzdGVtIHBydW5lIC1hIC0tdm9sdW1lcwoKV0FSTklORyEgVGhpcyB3aWxsIHJlbW92ZToKICAgICAgICAtIGFsbCBzdG9wcGVkIGNvbnRhaW5lcnMKICAgICAgICAtIGFsbCBuZXR3b3JrcyBub3QgdXNlZCBieSBhdCBsZWFzdCBvbmUgY29udGFpbmVyCiAgICAgICAgLSBhbGwgYW5vbnltb3VzIHZvbHVtZXMgbm90IHVzZWQgYnkgYXQgbGVhc3Qgb25lIGNvbnRhaW5lcgogICAgICAgIC0gYWxsIGltYWdlcyB3aXRob3V0IGF0IGxlYXN0IG9uZSBjb250YWluZXIgYXNzb2NpYXRlZCB0byB0aGVtCiAgICAgICAgLSBhbGwgYnVpbGQgY2FjaGUKQXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGNvbnRpbnVlPyBbeS9OXSB5CgpEZWxldGVkIENvbnRhaW5lcnM6CjA5OThhYTM3MTg1YTFhNzAzNmIwZTEyY2YxYWMxYjY0NDJkY2ZhMzBhNWM5NjUwYTQyZWQ1MDEwMDQ2ZjE5NWIKNzM5NThiZmI4ODRmYTgxZmE0Y2M2YmFmNjEwNTU2NjdlOTQwZWEyMzU3YjQwMzZhY2JiZTI1YTYwZjQ0MmE0ZAoKRGVsZXRlZCBOZXR3b3JrczoKbXktbmV0d29yay1hCm15LW5ldHdvcmstYgoKRGVsZXRlZCBWb2x1bWVzOgpuYW1lZC12b2wKCkRlbGV0ZWQgSW1hZ2VzOgp1bnRhZ2dlZDogbXktY3VybDpsYXRlc3QKZGVsZXRlZDogc2hhMjU2OjdkODg1ODIxMjFmMmEyOTAzMWQ5MjAxNzc1NGQ2MmEwZDFhMjE1Yzk3ZThmMDEwNmM1ODY1NDZlNzQwNDQ0N2QKZGVsZXRlZDogc2hhMjU2OmRkMTRhOTNkODM1OTNkNDAyNDE1MmY4NWQ3YzYzZjc2YWFhNGU3M2UyMjgzNzdiYTFkMTMwZWY1MTQ5ZjRkOGIKdW50YWdnZWQ6IGFscGluZTozLjMKZGVsZXRlZDogc2hhMjU2OjY5NWYzZDA0MTI1ZGIzMjY2ZDRhYjdiYmIzYzZiMjNhYTQyOTM5MjNlNzYyYWEyNTYyYzU0ZjQ5YTI4ZjAwOWYKdW50YWdnZWQ6IGFscGluZTpsYXRlc3QKZGVsZXRlZDogc2hhMjU2OmVlNDYwMzI2MGRhYWZlMWE4YzJmM2I3OGZkNzYwOTIyOTE4YWIyNDQxY2JiMjg1M2VkNWM0MzllNTljNTJmOTYKZGVsZXRlZDogc2hhMjU2OjkwMDdmNTk4N2RiMzUzZWMzOThhMjIzYmM1YTEzNWM1YTk2MDE3OThiYTIwYTFhYmJhNTM3ZWEyZjhhYzc2NWYKZGVsZXRlZDogc2hhMjU2OjcxZmE5MGM4ZjA0NzY5Yzk3MjE0NTlkNWFhMDkzNmRiNjQwYjkyYzhjOTFjOWI1ODliNTRhYmQ0MTJkMTIwYWIKZGVsZXRlZDogc2hhMjU2OmJiMWMzMzU3YjNjMzBlY2UyNmU2NjA0YWVhN2QyZWMwYWNlNDE2NmZmMzRjMzYxNjcwMTI3OWMyMjQ0NGMwZjMKdW50YWdnZWQ6IG15LWpxOmxhdGVzdApkZWxldGVkOiBzaGEyNTY6NmU2NmQ3MjQ1NDJhZjliYzRjNGFiZjRhOTA5NzkxZDcyNjBiNmQwMTEwZDhlMjIwNzA4YjA5ZTRlZTEzMjJlMQpkZWxldGVkOiBzaGEyNTY6MDdiM2ZhODlkNGIxNzAwOWViMzk4OGRmYzU5MmM3ZDMwYWIzYmE1MmQyMDA3ODMyZGZmY2Y2ZDQwZTNlZGE3ZgpkZWxldGVkOiBzaGEyNTY6M2E4OGE1YzgxZWI1YzI4M2U3MmRiMmRiYzZkNjVjYmZkOGU4MGI2Yzg5YmI2ZTcxNGNmYWFhMGVlZDk5YzU0OAoKVG90YWwgcmVjbGFpbWVkIHNwYWNlOiAxMy41IE1C', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc3lzdGVtIHBydW5lIC1hIC0tdm9sdW1lcwoKV0FSTklORyEgVGhpcyB3aWxsIHJlbW92ZToKICAgICAgICAtIGFsbCBzdG9wcGVkIGNvbnRhaW5lcnMKICAgICAgICAtIGFsbCBuZXR3b3JrcyBub3QgdXNlZCBieSBhdCBsZWFzdCBvbmUgY29udGFpbmVyCiAgICAgICAgLSBhbGwgYW5vbnltb3VzIHZvbHVtZXMgbm90IHVzZWQgYnkgYXQgbGVhc3Qgb25lIGNvbnRhaW5lcgogICAgICAgIC0gYWxsIGltYWdlcyB3aXRob3V0IGF0IGxlYXN0IG9uZSBjb250YWluZXIgYXNzb2NpYXRlZCB0byB0aGVtCiAgICAgICAgLSBhbGwgYnVpbGQgY2FjaGUKQXJlIHlvdSBzdXJlIHlvdSB3YW50IHRvIGNvbnRpbnVlPyBbeS9OXSB5CgpEZWxldGVkIENvbnRhaW5lcnM6CjA5OThhYTM3MTg1YTFhNzAzNmIwZTEyY2YxYWMxYjY0NDJkY2ZhMzBhNWM5NjUwYTQyZWQ1MDEwMDQ2ZjE5NWIKNzM5NThiZmI4ODRmYTgxZmE0Y2M2YmFmNjEwNTU2NjdlOTQwZWEyMzU3YjQwMzZhY2JiZTI1YTYwZjQ0MmE0ZAoKRGVsZXRlZCBOZXR3b3JrczoKbXktbmV0d29yay1hCm15LW5ldHdvcmstYgoKRGVsZXRlZCBWb2x1bWVzOgpuYW1lZC12b2wKCkRlbGV0ZWQgSW1hZ2VzOgp1bnRhZ2dlZDogbXktY3VybDpsYXRlc3QKZGVsZXRlZDogc2hhMjU2OjdkODg1ODIxMjFmMmEyOTAzMWQ5MjAxNzc1NGQ2MmEwZDFhMjE1Yzk3ZThmMDEwNmM1ODY1NDZlNzQwNDQ0N2QKZGVsZXRlZDogc2hhMjU2OmRkMTRhOTNkODM1OTNkNDAyNDE1MmY4NWQ3YzYzZjc2YWFhNGU3M2UyMjgzNzdiYTFkMTMwZWY1MTQ5ZjRkOGIKdW50YWdnZWQ6IGFscGluZTozLjMKZGVsZXRlZDogc2hhMjU2OjY5NWYzZDA0MTI1ZGIzMjY2ZDRhYjdiYmIzYzZiMjNhYTQyOTM5MjNlNzYyYWEyNTYyYzU0ZjQ5YTI4ZjAwOWYKdW50YWdnZWQ6IGFscGluZTpsYXRlc3QKZGVsZXRlZDogc2hhMjU2OmVlNDYwMzI2MGRhYWZlMWE4YzJmM2I3OGZkNzYwOTIyOTE4YWIyNDQxY2JiMjg1M2VkNWM0MzllNTljNTJmOTYKZGVsZXRlZDogc2hhMjU2OjkwMDdmNTk4N2RiMzUzZWMzOThhMjIzYmM1YTEzNWM1YTk2MDE3OThiYTIwYTFhYmJhNTM3ZWEyZjhhYzc2NWYKZGVsZXRlZDogc2hhMjU2OjcxZmE5MGM4ZjA0NzY5Yzk3MjE0NTlkNWFhMDkzNmRiNjQwYjkyYzhjOTFjOWI1ODliNTRhYmQ0MTJkMTIwYWIKZGVsZXRlZDogc2hhMjU2OmJiMWMzMzU3YjNjMzBlY2UyNmU2NjA0YWVhN2QyZWMwYWNlNDE2NmZmMzRjMzYxNjcwMTI3OWMyMjQ0NGMwZjMKdW50YWdnZWQ6IG15LWpxOmxhdGVzdApkZWxldGVkOiBzaGEyNTY6NmU2NmQ3MjQ1NDJhZjliYzRjNGFiZjRhOTA5NzkxZDcyNjBiNmQwMTEwZDhlMjIwNzA4YjA5ZTRlZTEzMjJlMQpkZWxldGVkOiBzaGEyNTY6MDdiM2ZhODlkNGIxNzAwOWViMzk4OGRmYzU5MmM3ZDMwYWIzYmE1MmQyMDA3ODMyZGZmY2Y2ZDQwZTNlZGE3ZgpkZWxldGVkOiBzaGEyNTY6M2E4OGE1YzgxZWI1YzI4M2U3MmRiMmRiYzZkNjVjYmZkOGU4MGI2Yzg5YmI2ZTcxNGNmYWFhMGVlZDk5YzU0OAoKVG90YWwgcmVjbGFpbWVkIHNwYWNlOiAxMy41IE1C', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker system prune -a --volumes
 </span></span><span class="line"><span class="cl"><span class="err">

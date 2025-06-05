@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -11570,28 +11570,36 @@ documentation.</p>
   </a>
 </h3>
 
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIHJlZGlzOjcuNC4xCgpkbXUxZXB0NGN4Y2ZlOGs4bGh0dXgzcm8zCgokIGRvY2tlciBzZXJ2aWNlIGNyZWF0ZSAtLW1vZGUgZ2xvYmFsIC0tbmFtZSByZWRpczIgcmVkaXM6Ny40LjEKCmE4cTlkYXNhYWZ1ZGZzOHE4dzMydWRhc3MKCiQgZG9ja2VyIHNlcnZpY2UgbHMKCklEICAgICAgICAgICAgTkFNRSAgICBNT0RFICAgICAgICBSRVBMSUNBUyAgSU1BR0UKZG11MWVwdDRjeGNmICByZWRpcyAgIHJlcGxpY2F0ZWQgIDEvMSAgICAgICByZWRpczo3LjQuMQphOHE5ZGFzYWFmdWQgIHJlZGlzMiAgZ2xvYmFsICAgICAgMS8xICAgICAgIHJlZGlzOjcuNC4x', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIHJlZGlzOjcuNC4xCgpkbXUxZXB0NGN4Y2ZlOGs4bGh0dXgzcm8zCgokIGRvY2tlciBzZXJ2aWNlIGNyZWF0ZSAtLW1vZGUgZ2xvYmFsIC0tbmFtZSByZWRpczIgcmVkaXM6Ny40LjEKCmE4cTlkYXNhYWZ1ZGZzOHE4dzMydWRhc3MKCiQgZG9ja2VyIHNlcnZpY2UgbHMKCklEICAgICAgICAgICAgTkFNRSAgICBNT0RFICAgICAgICBSRVBMSUNBUyAgSU1BR0UKZG11MWVwdDRjeGNmICByZWRpcyAgIHJlcGxpY2F0ZWQgIDEvMSAgICAgICByZWRpczo3LjQuMQphOHE5ZGFzYWFmdWQgIHJlZGlzMiAgZ2xvYmFsICAgICAgMS8xICAgICAgIHJlZGlzOjcuNC4x', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name redis redis:7.4.1
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -11622,28 +11630,36 @@ documentation.</p>
 <code>--with-registry-auth</code> flag with <code>docker service create</code>, after logging in. If
 your image is stored on <code>registry.example.com</code>, which is a private registry, use
 a command like the following:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgbG9naW4gcmVnaXN0cnkuZXhhbXBsZS5jb20KCiQgZG9ja2VyIHNlcnZpY2UgIGNyZWF0ZSBcCiAgLS13aXRoLXJlZ2lzdHJ5LWF1dGggXAogIC0tbmFtZSBteV9zZXJ2aWNlIFwKICByZWdpc3RyeS5leGFtcGxlLmNvbS9hY21lL215X2ltYWdlOmxhdGVzdA==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgbG9naW4gcmVnaXN0cnkuZXhhbXBsZS5jb20KCiQgZG9ja2VyIHNlcnZpY2UgIGNyZWF0ZSBcCiAgLS13aXRoLXJlZ2lzdHJ5LWF1dGggXAogIC0tbmFtZSBteV9zZXJ2aWNlIFwKICByZWdpc3RyeS5leGFtcGxlLmNvbS9hY21lL215X2ltYWdlOmxhdGVzdA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker login registry.example.com
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -11668,28 +11684,36 @@ nodes are able to log in to the registry and pull the image.</p>
 
 <p>Use the <code>--replicas</code> flag to set the number of replica tasks for a replicated
 service. The following command creates a <code>redis</code> service with <code>5</code> replica tasks:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIC0tcmVwbGljYXM9NSByZWRpczo3LjQuMQoKNGNkZ2Z5a3k3b3p3aDNodGpmdzBkMTJxdg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIC0tcmVwbGljYXM9NSByZWRpczo3LjQuMQoKNGNkZ2Z5a3k3b3p3aDNodGpmdzBkMTJxdg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name redis --replicas<span class="o">=</span><span class="m">5</span> redis:7.4.1
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -11705,28 +11729,36 @@ some time. The <code>REPLICAS</code> column shows both the actual and desired nu
 of replica tasks for the service.</p>
 <p>In the following example the desired state is  <code>5</code> replicas, but the current
 number of <code>RUNNING</code> tasks is <code>3</code>:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBscwoKSUQgICAgICAgICAgICBOQU1FICAgTU9ERSAgICAgICAgUkVQTElDQVMgIElNQUdFCjRjZGdmeWt5N296dyAgcmVkaXMgIHJlcGxpY2F0ZWQgIDMvNSAgICAgICByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBscwoKSUQgICAgICAgICAgICBOQU1FICAgTU9ERSAgICAgICAgUkVQTElDQVMgIElNQUdFCjRjZGdmeWt5N296dyAgcmVkaXMgIHJlcGxpY2F0ZWQgIDMvNSAgICAgICByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service ls
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -11739,28 +11771,36 @@ number of <code>RUNNING</code> tasks is <code>3</code>:</p>
 </div>
 <p>Once all the tasks are created and <code>RUNNING</code>, the actual number of tasks is
 equal to the desired number:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBscwoKSUQgICAgICAgICAgICBOQU1FICAgTU9ERSAgICAgICAgUkVQTElDQVMgIElNQUdFCjRjZGdmeWt5N296dyAgcmVkaXMgIHJlcGxpY2F0ZWQgIDUvNSAgICAgICByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBscwoKSUQgICAgICAgICAgICBOQU1FICAgTU9ERSAgICAgICAgUkVQTElDQVMgIElNQUdFCjRjZGdmeWt5N296dyAgcmVkaXMgIHJlcGxpY2F0ZWQgIDUvNSAgICAgICByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service ls
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -11782,28 +11822,36 @@ equal to the desired number:</p>
 
   <a class="link" href="/reference/cli/docker/secret/create/">secret</a>.</p>
 <p>Create a service specifying a secret:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIC0tc2VjcmV0IHNlY3JldC5qc29uIHJlZGlzOjcuNC4xCgo0Y2RnZnlreTdvendoM2h0amZ3MGQxMnF2', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIC0tc2VjcmV0IHNlY3JldC5qc29uIHJlZGlzOjcuNC4xCgo0Y2RnZnlreTdvendoM2h0amZ3MGQxMnF2', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name redis --secret secret.json redis:7.4.1
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -11814,28 +11862,36 @@ equal to the desired number:</p>
   </div>
 </div>
 <p>Create a service specifying the secret, target, user/group ID, and mode:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIFwKICAgIC0tc2VjcmV0IHNvdXJjZT1zc2gta2V5LHRhcmdldD1zc2ggXAogICAgLS1zZWNyZXQgc291cmNlPWFwcC1rZXksdGFyZ2V0PWFwcCx1aWQ9MTAwMCxnaWQ9MTAwMSxtb2RlPTA0MDAgXAogICAgcmVkaXM6Ny40LjEKCjRjZGdmeWt5N296d2gzaHRqZncwZDEycXY=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIFwKICAgIC0tc2VjcmV0IHNvdXJjZT1zc2gta2V5LHRhcmdldD1zc2ggXAogICAgLS1zZWNyZXQgc291cmNlPWFwcC1rZXksdGFyZ2V0PWFwcCx1aWQ9MTAwMCxnaWQ9MTAwMSxtb2RlPTA0MDAgXAogICAgcmVkaXM6Ny40LjEKCjRjZGdmeWt5N296d2gzaHRqZncwZDEycXY=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name redis <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">    --secret source=ssh-key,target=ssh \
@@ -11870,28 +11926,36 @@ and have file mode <code>0444</code> or world-readable. You can specify the <cod
 as numerical IDs or names. When using names, the provided group/user names must
 pre-exist in the container. The <code>mode</code> is specified as a 4-number sequence such
 as <code>0755</code>.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lPXJlZGlzIC0tY29uZmlnIHJlZGlzLWNvbmYgcmVkaXM6Ny40LjE=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lPXJlZGlzIC0tY29uZmlnIHJlZGlzLWNvbmYgcmVkaXM6Ny40LjE=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name<span class="o">=</span>redis --config redis-conf redis:7.4.1
 </span></span></code></pre></div>
@@ -11900,28 +11964,36 @@ as <code>0755</code>.</p>
   </div>
 </div>
 <p>Create a service with a config and specify the target location and file mode:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIFwKICAtLWNvbmZpZyBzb3VyY2U9cmVkaXMtY29uZix0YXJnZXQ9L2V0Yy9yZWRpcy9yZWRpcy5jb25mLG1vZGU9MDQwMCByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIFwKICAtLWNvbmZpZyBzb3VyY2U9cmVkaXMtY29uZix0YXJnZXQ9L2V0Yy9yZWRpcy9yZWRpcy5jb25mLG1vZGU9MDQwMCByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name redis <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --config source=redis-conf,target=/etc/redis/redis.conf,mode=0400 redis:7.4.1
@@ -11941,28 +12013,36 @@ the container. If a target is specified, that is used as the filename.</p>
   </a>
 </h3>
 
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgMTAgXAogIC0tbmFtZSByZWRpcyBcCiAgLS11cGRhdGUtZGVsYXkgMTBzIFwKICAtLXVwZGF0ZS1wYXJhbGxlbGlzbSAyIFwKICByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgMTAgXAogIC0tbmFtZSByZWRpcyBcCiAgLS11cGRhdGUtZGVsYXkgMTBzIFwKICAtLXVwZGF0ZS1wYXJhbGxlbGlzbSAyIFwKICByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --replicas 10 \
@@ -11989,28 +12069,36 @@ tutorial</a>.</p>
 </h3>
 
 <p>This sets an environment variable for all tasks in a service. For example:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLXJlcGxpY2FzIDUgXAogIC0tZW52IE1ZVkFSPWZvbyBcCiAgcmVkaXM6Ny40LjE=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLXJlcGxpY2FzIDUgXAogIC0tZW52IE1ZVkFSPWZvbyBcCiAgcmVkaXM6Ny40LjE=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name redis_2 \
@@ -12024,28 +12112,36 @@ tutorial</a>.</p>
 </div>
 <p>To specify multiple environment variables, specify multiple <code>--env</code> flags, each
 with a separate key-value pair.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLXJlcGxpY2FzIDUgXAogIC0tZW52IE1ZVkFSPWZvbyBcCiAgLS1lbnYgTVlWQVIyPWJhciBcCiAgcmVkaXM6Ny40LjE=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLXJlcGxpY2FzIDUgXAogIC0tZW52IE1ZVkFSPWZvbyBcCiAgLS1lbnYgTVlWQVIyPWJhciBcCiAgcmVkaXM6Ny40LjE=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name redis_2 \
@@ -12067,28 +12163,36 @@ with a separate key-value pair.</p>
 
 <p>This option sets the docker service containers hostname to a specific string.
 For example:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIC0taG9zdG5hbWUgbXlyZWRpcyByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIHJlZGlzIC0taG9zdG5hbWUgbXlyZWRpcyByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name redis --hostname myredis redis:7.4.1
 </span></span></code></pre></div>
@@ -12105,28 +12209,36 @@ For example:</p>
 
 <p>A label is a <code>key=value</code> pair that applies metadata to a service. To label a
 service with two labels:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLWxhYmVsIGNvbS5leGFtcGxlLmZvbz0iYmFyIiBcCiAgLS1sYWJlbCBiYXI9YmF6IFwKICByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLWxhYmVsIGNvbS5leGFtcGxlLmZvbz0iYmFyIiBcCiAgLS1sYWJlbCBiYXI9YmF6IFwKICByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name redis_2 \
@@ -12481,28 +12593,36 @@ which are used for <code>selinux</code> labeling.</p>
 </h4>
 
 <p>The following example creates a service that uses a named volume:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBteS1zZXJ2aWNlIFwKICAtLXJlcGxpY2FzIDMgXAogIC0tbW91bnQgdHlwZT12b2x1bWUsc291cmNlPW15LXZvbHVtZSxkZXN0aW5hdGlvbj0vcGF0aC9pbi9jb250YWluZXIsdm9sdW1lLWxhYmVsPSJjb2xvcj1yZWQiLHZvbHVtZS1sYWJlbD0ic2hhcGU9cm91bmQiIFwKICBuZ2lueDphbHBpbmU=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBteS1zZXJ2aWNlIFwKICAtLXJlcGxpY2FzIDMgXAogIC0tbW91bnQgdHlwZT12b2x1bWUsc291cmNlPW15LXZvbHVtZSxkZXN0aW5hdGlvbj0vcGF0aC9pbi9jb250YWluZXIsdm9sdW1lLWxhYmVsPSJjb2xvcj1yZWQiLHZvbHVtZS1sYWJlbD0ic2hhcGU9cm91bmQiIFwKICBuZ2lueDphbHBpbmU=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name my-service \
@@ -12537,28 +12657,36 @@ be deployed on a different node.</p>
 
 <p>The following command creates a service with three replicas with an anonymous
 volume on <code>/path/in/container</code>:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBteS1zZXJ2aWNlIFwKICAtLXJlcGxpY2FzIDMgXAogIC0tbW91bnQgdHlwZT12b2x1bWUsZGVzdGluYXRpb249L3BhdGgvaW4vY29udGFpbmVyIFwKICBuZ2lueDphbHBpbmU=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBteS1zZXJ2aWNlIFwKICAtLXJlcGxpY2FzIDMgXAogIC0tbW91bnQgdHlwZT12b2x1bWUsZGVzdGluYXRpb249L3BhdGgvaW4vY29udGFpbmVyIFwKICBuZ2lueDphbHBpbmU=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name my-service \
@@ -12583,28 +12711,36 @@ the task using them is complete.</p>
 
 <p>The following example bind-mounts a host directory at <code>/path/in/container</code> in
 the containers backing the service:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBteS1zZXJ2aWNlIFwKICAtLW1vdW50IHR5cGU9YmluZCxzb3VyY2U9L3BhdGgvb24vaG9zdCxkZXN0aW5hdGlvbj0vcGF0aC9pbi9jb250YWluZXIgXAogIG5naW54OmFscGluZQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBteS1zZXJ2aWNlIFwKICAtLW1vdW50IHR5cGU9YmluZCxzb3VyY2U9L3BhdGgvb24vaG9zdCxkZXN0aW5hdGlvbj0vcGF0aC9pbi9jb250YWluZXIgXAogIG5naW54OmFscGluZQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name my-service \
@@ -12626,28 +12762,36 @@ the containers backing the service:</p>
 service. A replicated service runs as many tasks as specified, while a global
 service runs on each active node in the swarm.</p>
 <p>The following command creates a global service:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogLS1uYW1lIHJlZGlzXzIgXAogLS1tb2RlIGdsb2JhbCBcCiByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogLS1uYW1lIHJlZGlzXzIgXAogLS1tb2RlIGdsb2JhbCBcCiByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go"> --name redis_2 \
@@ -12749,28 +12893,36 @@ the
   <a class="link" href="/reference/cli/docker/node/update/"><code>docker node update</code></a> command.</p>
 <p>For example, the following limits tasks for the redis service to nodes where the
 node type label equals queue:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLWNvbnN0cmFpbnQgbm9kZS5wbGF0Zm9ybS5vcz09bGludXggXAogIC0tY29uc3RyYWludCBub2RlLmxhYmVscy50eXBlPT1xdWV1ZSBcCiAgcmVkaXM6Ny40LjE=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSByZWRpc18yIFwKICAtLWNvbnN0cmFpbnQgbm9kZS5wbGF0Zm9ybS5vcz09bGludXggXAogIC0tY29uc3RyYWludCBub2RlLmxhYmVscy50eXBlPT1xdWV1ZSBcCiAgcmVkaXM6Ny40LjE=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name redis_2 \
@@ -12787,28 +12939,36 @@ that no suitable node is found, but the scheduler will start a reconciliation
 loop and deploy the service once a suitable node becomes available.</p>
 <p>In the example below, no node satisfying the constraint was found, causing the
 service to not reconcile with the desired state:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSB3ZWIgXAogIC0tY29uc3RyYWludCBub2RlLmxhYmVscy5yZWdpb249PWVhc3QgXAogIG5naW54OmFscGluZQoKbHgxd3JoaHBtYmJ1MHd1azB5YndzMzBiYwpvdmVyYWxsIHByb2dyZXNzOiAwIG91dCBvZiAxIHRhc2tzCjEvMTogbm8gc3VpdGFibGUgbm9kZSAoc2NoZWR1bGluZyBjb25zdHJhaW50cyBub3Qgc2F0aXNmaWVkIG9uIDUgbm9kZXMpCgokIGRvY2tlciBzZXJ2aWNlIGxzCklEICAgICAgICAgICAgICAgICAgTkFNRSAgICAgTU9ERSAgICAgICAgIFJFUExJQ0FTICAgSU1BR0UgICAgICAgICAgICAgICBQT1JUUwpiNmx3dzE3aHJyNGUgICAgICAgIHdlYiAgICAgIHJlcGxpY2F0ZWQgICAwLzEgICAgICAgIG5naW54OmFscGluZQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSB3ZWIgXAogIC0tY29uc3RyYWludCBub2RlLmxhYmVscy5yZWdpb249PWVhc3QgXAogIG5naW54OmFscGluZQoKbHgxd3JoaHBtYmJ1MHd1azB5YndzMzBiYwpvdmVyYWxsIHByb2dyZXNzOiAwIG91dCBvZiAxIHRhc2tzCjEvMTogbm8gc3VpdGFibGUgbm9kZSAoc2NoZWR1bGluZyBjb25zdHJhaW50cyBub3Qgc2F0aXNmaWVkIG9uIDUgbm9kZXMpCgokIGRvY2tlciBzZXJ2aWNlIGxzCklEICAgICAgICAgICAgICAgICAgTkFNRSAgICAgTU9ERSAgICAgICAgIFJFUExJQ0FTICAgSU1BR0UgICAgICAgICAgICAgICBQT1JUUwpiNmx3dzE3aHJyNGUgICAgICAgIHdlYiAgICAgIHJlcGxpY2F0ZWQgICAwLzEgICAgICAgIG5naW54OmFscGluZQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name web \
@@ -12829,28 +12989,36 @@ service to not reconcile with the desired state:</p>
 </div>
 <p>After adding the <code>region=east</code> label to a node in the cluster, the service
 reconciles, and the desired number of replicas are deployed:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgbm9kZSB1cGRhdGUgLS1sYWJlbC1hZGQgcmVnaW9uPWVhc3QgeXN3ZTJkbTRjNWZkZ3RzcmxpMWU4eWE1bAp5c3dlMmRtNGM1ZmRndHNybGkxZTh5YTVsCgokIGRvY2tlciBzZXJ2aWNlIGxzCklEICAgICAgICAgICAgICAgICAgTkFNRSAgICAgTU9ERSAgICAgICAgIFJFUExJQ0FTICAgSU1BR0UgICAgICAgICAgICAgICBQT1JUUwpiNmx3dzE3aHJyNGUgICAgICAgIHdlYiAgICAgIHJlcGxpY2F0ZWQgICAxLzEgICAgICAgIG5naW54OmFscGluZQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgbm9kZSB1cGRhdGUgLS1sYWJlbC1hZGQgcmVnaW9uPWVhc3QgeXN3ZTJkbTRjNWZkZ3RzcmxpMWU4eWE1bAp5c3dlMmRtNGM1ZmRndHNybGkxZTh5YTVsCgokIGRvY2tlciBzZXJ2aWNlIGxzCklEICAgICAgICAgICAgICAgICAgTkFNRSAgICAgTU9ERSAgICAgICAgIFJFUExJQ0FTICAgSU1BR0UgICAgICAgICAgICAgICBQT1JUUwpiNmx3dzE3aHJyNGUgICAgICAgIHdlYiAgICAgIHJlcGxpY2F0ZWQgICAxLzEgICAgICAgIG5naW54OmFscGluZQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker node update --label-add <span class="nv">region</span><span class="o">=</span>east yswe2dm4c5fdgtsrli1e8ya5l
 </span></span><span class="line"><span class="cl"><span class="go">yswe2dm4c5fdgtsrli1e8ya5l
@@ -12873,28 +13041,36 @@ reconciles, and the desired number of replicas are deployed:</p>
 <p>You can set up the service to divide tasks evenly over different categories of
 nodes. One example of where this can be useful is to balance tasks over a set
 of datacenters or availability zones. The example below illustrates this:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgOSBcCiAgLS1uYW1lIHJlZGlzXzIgXAogIC0tcGxhY2VtZW50LXByZWYgc3ByZWFkPW5vZGUubGFiZWxzLmRhdGFjZW50ZXIgXAogIHJlZGlzOjcuNC4x', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgOSBcCiAgLS1uYW1lIHJlZGlzXzIgXAogIC0tcGxhY2VtZW50LXByZWYgc3ByZWFkPW5vZGUubGFiZWxzLmRhdGFjZW50ZXIgXAogIHJlZGlzOjcuNC4x', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --replicas 9 \
@@ -12944,28 +13120,36 @@ in the order given when making scheduling decisions.</p>
 <p>The following example sets up a service with multiple placement preferences.
 Tasks are spread first over the various datacenters, and then over racks
 (as indicated by the respective labels):</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgOSBcCiAgLS1uYW1lIHJlZGlzXzIgXAogIC0tcGxhY2VtZW50LXByZWYgJ3NwcmVhZD1ub2RlLmxhYmVscy5kYXRhY2VudGVyJyBcCiAgLS1wbGFjZW1lbnQtcHJlZiAnc3ByZWFkPW5vZGUubGFiZWxzLnJhY2snIFwKICByZWRpczo3LjQuMQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgOSBcCiAgLS1uYW1lIHJlZGlzXzIgXAogIC0tcGxhY2VtZW50LXByZWYgJ3NwcmVhZD1ub2RlLmxhYmVscy5kYXRhY2VudGVyJyBcCiAgLS1wbGFjZW1lbnQtcHJlZiAnc3ByZWFkPW5vZGUubGFiZWxzLnJhY2snIFwKICByZWRpczo3LjQuMQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --replicas 9 \
@@ -12996,28 +13180,36 @@ available that meets the criteria, the task is not scheduled, but remains in a
 pending state.</p>
 <p>The following example requires that 4GB of memory be available and reservable
 on a given node before scheduling the service to run on that node.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1yZXNlcnZlLW1lbW9yeT00R0IgLS1uYW1lPXRvby1iaWcgbmdpbng6YWxwaW5l', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1yZXNlcnZlLW1lbW9yeT00R0IgLS1uYW1lPXRvby1iaWcgbmdpbng6YWxwaW5l', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --reserve-memory<span class="o">=</span>4GB --name<span class="o">=</span>too-big nginx:alpine
 </span></span></code></pre></div>
@@ -13032,28 +13224,36 @@ memory limit. Use <code>--limit-memory</code> to ensure that a task uses no more
 given amount of memory on a node. This example limits the amount of memory used
 by the task to 4GB. The task will be scheduled even if each of your nodes has
 only 2GB of memory, because <code>--limit-memory</code> is an upper limit.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1saW1pdC1tZW1vcnk9NEdCIC0tbmFtZT10b28tYmlnIG5naW54OmFscGluZQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1saW1pdC1tZW1vcnk9NEdCIC0tbmFtZT10b28tYmlnIG5naW54OmFscGluZQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --limit-memory<span class="o">=</span>4GB --name<span class="o">=</span>too-big nginx:alpine
 </span></span></code></pre></div>
@@ -13112,28 +13312,36 @@ The following command creates a nginx service with 2 replica tasks but only one 
 and let <code>--replicas-max-per-node</code> setting make sure that replicas are not migrated to another datacenter during
 maintenance or datacenter failure.</p>
 <p>The example below illustrates this:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBuZ2lueCBcCiAgLS1yZXBsaWNhcyAyIFwKICAtLXJlcGxpY2FzLW1heC1wZXItbm9kZSAxIFwKICAtLXBsYWNlbWVudC1wcmVmICdzcHJlYWQ9bm9kZS5sYWJlbHMuZGF0YWNlbnRlcicgXAogIG5naW54', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tbmFtZSBuZ2lueCBcCiAgLS1yZXBsaWNhcyAyIFwKICAtLXJlcGxpY2FzLW1heC1wZXItbm9kZSAxIFwKICAtLXBsYWNlbWVudC1wcmVmICdzcHJlYWQ9bm9kZS5sYWJlbHMuZGF0YWNlbnRlcicgXAogIG5naW54', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name nginx \
@@ -13156,28 +13364,36 @@ maintenance or datacenter failure.</p>
 <p>You can use overlay networks to connect one or more services within the swarm.</p>
 <p>First, create an overlay network on a manager node the docker network create
 command:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgbmV0d29yayBjcmVhdGUgLS1kcml2ZXIgb3ZlcmxheSBteS1uZXR3b3JrCgpldGpwdTU5Y3lrcnB0cmd3MHowaGs1c25m', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgbmV0d29yayBjcmVhdGUgLS1kcml2ZXIgb3ZlcmxheSBteS1uZXR3b3JrCgpldGpwdTU5Y3lrcnB0cmd3MHowaGs1c25m', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker network create --driver overlay my-network
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -13191,28 +13407,36 @@ command:</p>
 access to the network.</p>
 <p>When you create a service and pass the <code>--network</code> flag to attach the service to
 the overlay network:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgMyBcCiAgLS1uZXR3b3JrIG15LW5ldHdvcmsgXAogIC0tbmFtZSBteS13ZWIgXAogIG5naW54Cgo3MTZ0aHlsc25kcW1hODFqNmtra2I1YXVz', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogIC0tcmVwbGljYXMgMyBcCiAgLS1uZXR3b3JrIG15LW5ldHdvcmsgXAogIC0tbmFtZSBteS13ZWIgXAogIG5naW54Cgo3MTZ0aHlsc25kcW1hODFqNmtra2I1YXVz', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --replicas 3 \
@@ -13243,28 +13467,36 @@ the overlay network:</p>
 using the <code>--publish</code> flag. The <code>--publish</code> flag can take two different styles
 of arguments. The short version is positional, and allows you to specify the
 published port and target port separated by a colon (<code>:</code>).</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15X3dlYiAtLXJlcGxpY2FzIDMgLS1wdWJsaXNoIDgwODA6ODAgbmdpbng=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15X3dlYiAtLXJlcGxpY2FzIDMgLS1wdWJsaXNoIDgwODA6ODAgbmdpbng=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name my_web --replicas <span class="m">3</span> --publish 8080:80 nginx
 </span></span></code></pre></div>
@@ -13276,28 +13508,36 @@ published port and target port separated by a colon (<code>:</code>).</p>
 more options. The long format is preferred. You cannot specify the service's
 mode when using the short format. Here is an example of using the long format
 for the same service as above:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15X3dlYiAtLXJlcGxpY2FzIDMgLS1wdWJsaXNoIHB1Ymxpc2hlZD04MDgwLHRhcmdldD04MCBuZ2lueA==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15X3dlYiAtLXJlcGxpY2FzIDMgLS1wdWJsaXNoIHB1Ymxpc2hlZD04MDgwLHRhcmdldD04MCBuZ2lueA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name my_web --replicas <span class="m">3</span> --publish <span class="nv">published</span><span class="o">=</span>8080,target<span class="o">=</span><span class="m">80</span> nginx
 </span></span></code></pre></div>
@@ -13442,28 +13682,36 @@ provided by the Go's
 
 <p>In this example, we are going to set the template of the created containers based on the
 service's name, the node's ID and hostname where it sits.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogICAgLS1uYW1lIGhvc3R0ZW1wbCBcCiAgICAtLWhvc3RuYW1lPSJ7ey5Ob2RlLkhvc3RuYW1lfX0te3suTm9kZS5JRH19LXt7LlNlcnZpY2UuTmFtZX19IlwKICAgIGJ1c3lib3ggdG9wCgp2YThldzMwZ3JvZmhqb3ljaGJyNmlvdDhjCgokIGRvY2tlciBzZXJ2aWNlIHBzIHZhOGV3MzBncm9maGpveWNoYnI2aW90OGMKCklEICAgICAgICAgICAgTkFNRSAgICAgICAgIElNQUdFICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOT0RFICAgICAgICAgIERFU0lSRUQgU1RBVEUgIENVUlJFTlQgU1RBVEUgICAgICAgICAgICAgICBFUlJPUiAgUE9SVFMKd280MXc4aGc4cWFuICBob3N0dGVtcGwuMSAgYnVzeWJveDpsYXRlc3RAc2hhMjU2OjI5ZjVkNTZkMTI2ODQ4ODdiZGZhNTBkY2QyOWZjMzFlZWE0YWFmNGFkM2JlYzQzZGFmMTkwMjZhN2NlNjk5MTIgIDJlN2E4YTljNGRhMiAgUnVubmluZyAgICAgICAgUnVubmluZyBhYm91dCBhIG1pbnV0ZSBhZ28KCiQgZG9ja2VyIGluc3BlY3QgLS1mb3JtYXQ9Int7LkNvbmZpZy5Ib3N0bmFtZX19IiAyZTdhOGE5YzRkYTItd280MXc4aGc4cWFueHdqd3NnNGt4cHByai1ob3N0dGVtcGwKCngzdGkwZXJnMTFyanBnNjRtNzVrZWoybXotaG9zdHRlbXBs', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogICAgLS1uYW1lIGhvc3R0ZW1wbCBcCiAgICAtLWhvc3RuYW1lPSJ7ey5Ob2RlLkhvc3RuYW1lfX0te3suTm9kZS5JRH19LXt7LlNlcnZpY2UuTmFtZX19IlwKICAgIGJ1c3lib3ggdG9wCgp2YThldzMwZ3JvZmhqb3ljaGJyNmlvdDhjCgokIGRvY2tlciBzZXJ2aWNlIHBzIHZhOGV3MzBncm9maGpveWNoYnI2aW90OGMKCklEICAgICAgICAgICAgTkFNRSAgICAgICAgIElNQUdFICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBOT0RFICAgICAgICAgIERFU0lSRUQgU1RBVEUgIENVUlJFTlQgU1RBVEUgICAgICAgICAgICAgICBFUlJPUiAgUE9SVFMKd280MXc4aGc4cWFuICBob3N0dGVtcGwuMSAgYnVzeWJveDpsYXRlc3RAc2hhMjU2OjI5ZjVkNTZkMTI2ODQ4ODdiZGZhNTBkY2QyOWZjMzFlZWE0YWFmNGFkM2JlYzQzZGFmMTkwMjZhN2NlNjk5MTIgIDJlN2E4YTljNGRhMiAgUnVubmluZyAgICAgICAgUnVubmluZyBhYm91dCBhIG1pbnV0ZSBhZ28KCiQgZG9ja2VyIGluc3BlY3QgLS1mb3JtYXQ9Int7LkNvbmZpZy5Ib3N0bmFtZX19IiAyZTdhOGE5YzRkYTItd280MXc4aGc4cWFueHdqd3NnNGt4cHByai1ob3N0dGVtcGwKCngzdGkwZXJnMTFyanBnNjRtNzVrZWoybXotaG9zdHRlbXBs', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">    --name hosttempl \
@@ -13495,28 +13743,36 @@ service's name, the node's ID and hostname where it sits.</p>
 <p>By default, tasks scheduled on Windows nodes are run using the default isolation mode
 configured for this particular node. To force a specific isolation mode, you can use
 the <code>--isolation</code> flag:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15c2VydmljZSAtLWlzb2xhdGlvbj1wcm9jZXNzIG1pY3Jvc29mdC9uYW5vc2VydmVy', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15c2VydmljZSAtLWlzb2xhdGlvbj1wcm9jZXNzIG1pY3Jvc29mdC9uYW5vc2VydmVy', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name myservice --isolation<span class="o">=</span>process microsoft/nanoserver
 </span></span></code></pre></div>
@@ -13539,28 +13795,36 @@ the <code>--isolation</code> flag:</p>
 
 <p>You can narrow the kind of nodes your task can land on through the using the
 <code>--generic-resource</code> flag (if the nodes advertise these resources):</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogICAgLS1uYW1lIGN1ZGEgXAogICAgLS1nZW5lcmljLXJlc291cmNlICJOVklESUEtR1BVPTIiIFwKICAgIC0tZ2VuZXJpYy1yZXNvdXJjZSAiU1NEPTEiIFwKICAgIG52aWRpYS9jdWRh', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogICAgLS1uYW1lIGN1ZGEgXAogICAgLS1nZW5lcmljLXJlc291cmNlICJOVklESUEtR1BVPTIiIFwKICAgIC0tZ2VuZXJpYy1yZXNvdXJjZSAiU1NEPTEiIFwKICAgIG52aWRpYS9jdWRh', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">    --name cuda \
@@ -13584,28 +13848,36 @@ and then stop, as opposed to running long-running daemons. When a Task
 belonging to a job exits successfully (return value 0), the Task is marked as
 &quot;Completed&quot;, and is not run again.</p>
 <p>Jobs are started by using one of two modes, <code>replicated-job</code> or <code>global-job</code></p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15am9iIFwKICAgICAgICAgICAgICAgICAgICAgICAgLS1tb2RlIHJlcGxpY2F0ZWQtam9iIFwKICAgICAgICAgICAgICAgICAgICAgICAgYmFzaCAidHJ1ZSI=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgLS1uYW1lIG15am9iIFwKICAgICAgICAgICAgICAgICAgICAgICAgLS1tb2RlIHJlcGxpY2F0ZWQtam9iIFwKICAgICAgICAgICAgICAgICAgICAgICAgYmFzaCAidHJ1ZSI=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create --name myjob <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">                        --mode replicated-job \
@@ -13640,28 +13912,36 @@ will specify total number of iterations of a job to execute.</p>
 <p>By default, all replicas of a replicated job will launch at once. To control
 the total number of replicas that are executing simultaneously at any one time,
 the <code>--max-concurrent</code> flag can be used:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogICAgLS1uYW1lIG15dGhyb3R0bGVkam9iIFwKICAgIC0tbW9kZSByZXBsaWNhdGVkLWpvYiBcCiAgICAtLXJlcGxpY2FzIDEwIFwKICAgIC0tbWF4LWNvbmN1cnJlbnQgMiBcCiAgICBiYXNoICJ0cnVlIg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc2VydmljZSBjcmVhdGUgXAogICAgLS1uYW1lIG15dGhyb3R0bGVkam9iIFwKICAgIC0tbW9kZSByZXBsaWNhdGVkLWpvYiBcCiAgICAtLXJlcGxpY2FzIDEwIFwKICAgIC0tbWF4LWNvbmN1cnJlbnQgMiBcCiAgICBiYXNoICJ0cnVlIg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker service create <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">    --name mythrottledjob \

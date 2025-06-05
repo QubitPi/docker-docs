@@ -18,8 +18,7 @@ with MCP servers running as containers.
 {{< grid >}}
 
 
-- [Built-in tools](https://docs.docker.com/ai/gordon/mcp/built-in-tools/)
 
-- [Gordon as an MCP server](https://docs.docker.com/ai/gordon/mcp/gordon-mcp-server/)
+- [Built-in tools](https://docs.docker.com/ai/gordon/mcp/built-in-tools/)
 
 - [YAML configuration](https://docs.docker.com/ai/gordon/mcp/yaml/)

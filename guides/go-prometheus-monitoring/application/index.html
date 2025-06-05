@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -882,28 +882,36 @@
 <p>Clone the sample application to use with this guide. Open a terminal, change
 directory to a directory that you want to work in, and run the following
 command to clone the repository:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL2RvY2tlcnNhbXBsZXMvZ28tcHJvbWV0aGV1cy1tb25pdG9yaW5nLmdpdCA=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL2RvY2tlcnNhbXBsZXMvZ28tcHJvbWV0aGV1cy1tb25pdG9yaW5nLmdpdCA=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> git clone https://github.com/dockersamples/go-prometheus-monitoring.git 
 </span></span></code></pre></div>
@@ -912,28 +920,36 @@ command to clone the repository:</p>
   </div>
 </div>
 <p>Once you cloned you will see the following content structure inside <code>go-prometheus-monitoring</code> directory,</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'Z28tcHJvbWV0aGV1cy1tb25pdG9yaW5nCuKUnOKUgOKUgCBDT05UUklCVVRJTkcubWQK4pSc4pSA4pSAIERvY2tlcgrilIIgICDilJzilIDilIAgZ3JhZmFuYS55bWwK4pSCICAg4pSU4pSA4pSAIHByb21ldGhldXMueW1sCuKUnOKUgOKUgCBkYXNoYm9hcmQuanNvbgrilJzilIDilIAgRG9ja2VyZmlsZQrilJzilIDilIAgTElDRU5TRQrilJzilIDilIAgUkVBRE1FLm1kCuKUnOKUgOKUgCBjb21wb3NlLnlhbWwK4pSc4pSA4pSAIGdvLm1vZArilJzilIDilIAgZ28uc3VtCuKUlOKUgOKUgCBtYWluLmdv', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'Z28tcHJvbWV0aGV1cy1tb25pdG9yaW5nCuKUnOKUgOKUgCBDT05UUklCVVRJTkcubWQK4pSc4pSA4pSAIERvY2tlcgrilIIgICDilJzilIDilIAgZ3JhZmFuYS55bWwK4pSCICAg4pSU4pSA4pSAIHByb21ldGhldXMueW1sCuKUnOKUgOKUgCBkYXNoYm9hcmQuanNvbgrilJzilIDilIAgRG9ja2VyZmlsZQrilJzilIDilIAgTElDRU5TRQrilJzilIDilIAgUkVBRE1FLm1kCuKUnOKUgOKUgCBjb21wb3NlLnlhbWwK4pSc4pSA4pSAIGdvLm1vZArilJzilIDilIAgZ28uc3VtCuKUlOKUgOKUgCBtYWluLmdv', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">go-prometheus-monitoring
 </span></span><span class="line"><span class="cl">├── CONTRIBUTING.md
@@ -971,28 +987,36 @@ command to clone the repository:</p>
 </h2>
 
 <p>The following is the complete logic of the application you will find in <code>main.go</code>.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'cGFja2FnZSBtYWluCgppbXBvcnQgKAoJInN0cmNvbnYiCgoJImdpdGh1Yi5jb20vZ2luLWdvbmljL2dpbiIKCSJnaXRodWIuY29tL3Byb21ldGhldXMvY2xpZW50X2dvbGFuZy9wcm9tZXRoZXVzIgoJImdpdGh1Yi5jb20vcHJvbWV0aGV1cy9jbGllbnRfZ29sYW5nL3Byb21ldGhldXMvcHJvbWh0dHAiCikKCi8vIERlZmluZSBtZXRyaWNzCnZhciAoCglIdHRwUmVxdWVzdFRvdGFsID0gcHJvbWV0aGV1cy5OZXdDb3VudGVyVmVjKHByb21ldGhldXMuQ291bnRlck9wdHN7CgkJTmFtZTogImFwaV9odHRwX3JlcXVlc3RfdG90YWwiLAoJCUhlbHA6ICJUb3RhbCBudW1iZXIgb2YgcmVxdWVzdHMgcHJvY2Vzc2VkIGJ5IHRoZSBBUEkiLAoJfSwgW11zdHJpbmd7InBhdGgiLCAic3RhdHVzIn0pCgoJSHR0cFJlcXVlc3RFcnJvclRvdGFsID0gcHJvbWV0aGV1cy5OZXdDb3VudGVyVmVjKHByb21ldGhldXMuQ291bnRlck9wdHN7CgkJTmFtZTogImFwaV9odHRwX3JlcXVlc3RfZXJyb3JfdG90YWwiLAoJCUhlbHA6ICJUb3RhbCBudW1iZXIgb2YgZXJyb3JzIHJldHVybmVkIGJ5IHRoZSBBUEkiLAoJfSwgW11zdHJpbmd7InBhdGgiLCAic3RhdHVzIn0pCikKCi8vIEN1c3RvbSByZWdpc3RyeSAod2l0aG91dCBkZWZhdWx0IEdvIG1ldHJpY3MpCnZhciBjdXN0b21SZWdpc3RyeSA9IHByb21ldGhldXMuTmV3UmVnaXN0cnkoKQoKLy8gUmVnaXN0ZXIgbWV0cmljcyB3aXRoIGN1c3RvbSByZWdpc3RyeQpmdW5jIGluaXQoKSB7CgljdXN0b21SZWdpc3RyeS5NdXN0UmVnaXN0ZXIoSHR0cFJlcXVlc3RUb3RhbCwgSHR0cFJlcXVlc3RFcnJvclRvdGFsKQp9CgpmdW5jIG1haW4oKSB7Cglyb3V0ZXIgOj0gZ2luLkRlZmF1bHQoKQoKCS8vIFJlZ2lzdGVyIC9tZXRyaWNzIGJlZm9yZSBtaWRkbGV3YXJlCglyb3V0ZXIuR0VUKCIvbWV0cmljcyIsIFByb21ldGhldXNIYW5kbGVyKCkpCgkKCXJvdXRlci5Vc2UoUmVxdWVzdE1ldHJpY3NNaWRkbGV3YXJlKCkpCglyb3V0ZXIuR0VUKCIvaGVhbHRoIiwgZnVuYyhjICpnaW4uQ29udGV4dCkgewoJCWMuSlNPTigyMDAsIGdpbi5IewoJCQkibWVzc2FnZSI6ICJVcCBhbmQgcnVubmluZyEiLAoJCX0pCgl9KQoJcm91dGVyLkdFVCgiL3YxL3VzZXJzIiwgZnVuYyhjICpnaW4uQ29udGV4dCkgewoJCWMuSlNPTigyMDAsIGdpbi5IewoJCQkibWVzc2FnZSI6ICJIZWxsbyBmcm9tIC92MS91c2VycyIsCgkJfSkKCX0pCgoJcm91dGVyLlJ1bigiOjgwMDAiKQp9CgovLyBDdXN0b20gbWV0cmljcyBoYW5kbGVyIHdpdGggY3VzdG9tIHJlZ2lzdHJ5CmZ1bmMgUHJvbWV0aGV1c0hhbmRsZXIoKSBnaW4uSGFuZGxlckZ1bmMgewoJaCA6PSBwcm9taHR0cC5IYW5kbGVyRm9yKGN1c3RvbVJlZ2lzdHJ5LCBwcm9taHR0cC5IYW5kbGVyT3B0c3t9KQoJcmV0dXJuIGZ1bmMoYyAqZ2luLkNvbnRleHQpIHsKCQloLlNlcnZlSFRUUChjLldyaXRlciwgYy5SZXF1ZXN0KQoJfQp9CgovLyBNaWRkbGV3YXJlIHRvIHJlY29yZCBpbmNvbWluZyByZXF1ZXN0cyBtZXRyaWNzCmZ1bmMgUmVxdWVzdE1ldHJpY3NNaWRkbGV3YXJlKCkgZ2luLkhhbmRsZXJGdW5jIHsKCXJldHVybiBmdW5jKGMgKmdpbi5Db250ZXh0KSB7CgkJcGF0aCA6PSBjLlJlcXVlc3QuVVJMLlBhdGgKCQljLk5leHQoKQoJCXN0YXR1cyA6PSBjLldyaXRlci5TdGF0dXMoKQoJCWlmIHN0YXR1cyA8IDQwMCB7CgkJCUh0dHBSZXF1ZXN0VG90YWwuV2l0aExhYmVsVmFsdWVzKHBhdGgsIHN0cmNvbnYuSXRvYShzdGF0dXMpKS5JbmMoKQoJCX0gZWxzZSB7CgkJCUh0dHBSZXF1ZXN0RXJyb3JUb3RhbC5XaXRoTGFiZWxWYWx1ZXMocGF0aCwgc3RyY29udi5JdG9hKHN0YXR1cykpLkluYygpCgkJfQoJfQp9', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'cGFja2FnZSBtYWluCgppbXBvcnQgKAoJInN0cmNvbnYiCgoJImdpdGh1Yi5jb20vZ2luLWdvbmljL2dpbiIKCSJnaXRodWIuY29tL3Byb21ldGhldXMvY2xpZW50X2dvbGFuZy9wcm9tZXRoZXVzIgoJImdpdGh1Yi5jb20vcHJvbWV0aGV1cy9jbGllbnRfZ29sYW5nL3Byb21ldGhldXMvcHJvbWh0dHAiCikKCi8vIERlZmluZSBtZXRyaWNzCnZhciAoCglIdHRwUmVxdWVzdFRvdGFsID0gcHJvbWV0aGV1cy5OZXdDb3VudGVyVmVjKHByb21ldGhldXMuQ291bnRlck9wdHN7CgkJTmFtZTogImFwaV9odHRwX3JlcXVlc3RfdG90YWwiLAoJCUhlbHA6ICJUb3RhbCBudW1iZXIgb2YgcmVxdWVzdHMgcHJvY2Vzc2VkIGJ5IHRoZSBBUEkiLAoJfSwgW11zdHJpbmd7InBhdGgiLCAic3RhdHVzIn0pCgoJSHR0cFJlcXVlc3RFcnJvclRvdGFsID0gcHJvbWV0aGV1cy5OZXdDb3VudGVyVmVjKHByb21ldGhldXMuQ291bnRlck9wdHN7CgkJTmFtZTogImFwaV9odHRwX3JlcXVlc3RfZXJyb3JfdG90YWwiLAoJCUhlbHA6ICJUb3RhbCBudW1iZXIgb2YgZXJyb3JzIHJldHVybmVkIGJ5IHRoZSBBUEkiLAoJfSwgW11zdHJpbmd7InBhdGgiLCAic3RhdHVzIn0pCikKCi8vIEN1c3RvbSByZWdpc3RyeSAod2l0aG91dCBkZWZhdWx0IEdvIG1ldHJpY3MpCnZhciBjdXN0b21SZWdpc3RyeSA9IHByb21ldGhldXMuTmV3UmVnaXN0cnkoKQoKLy8gUmVnaXN0ZXIgbWV0cmljcyB3aXRoIGN1c3RvbSByZWdpc3RyeQpmdW5jIGluaXQoKSB7CgljdXN0b21SZWdpc3RyeS5NdXN0UmVnaXN0ZXIoSHR0cFJlcXVlc3RUb3RhbCwgSHR0cFJlcXVlc3RFcnJvclRvdGFsKQp9CgpmdW5jIG1haW4oKSB7Cglyb3V0ZXIgOj0gZ2luLkRlZmF1bHQoKQoKCS8vIFJlZ2lzdGVyIC9tZXRyaWNzIGJlZm9yZSBtaWRkbGV3YXJlCglyb3V0ZXIuR0VUKCIvbWV0cmljcyIsIFByb21ldGhldXNIYW5kbGVyKCkpCgkKCXJvdXRlci5Vc2UoUmVxdWVzdE1ldHJpY3NNaWRkbGV3YXJlKCkpCglyb3V0ZXIuR0VUKCIvaGVhbHRoIiwgZnVuYyhjICpnaW4uQ29udGV4dCkgewoJCWMuSlNPTigyMDAsIGdpbi5IewoJCQkibWVzc2FnZSI6ICJVcCBhbmQgcnVubmluZyEiLAoJCX0pCgl9KQoJcm91dGVyLkdFVCgiL3YxL3VzZXJzIiwgZnVuYyhjICpnaW4uQ29udGV4dCkgewoJCWMuSlNPTigyMDAsIGdpbi5IewoJCQkibWVzc2FnZSI6ICJIZWxsbyBmcm9tIC92MS91c2VycyIsCgkJfSkKCX0pCgoJcm91dGVyLlJ1bigiOjgwMDAiKQp9CgovLyBDdXN0b20gbWV0cmljcyBoYW5kbGVyIHdpdGggY3VzdG9tIHJlZ2lzdHJ5CmZ1bmMgUHJvbWV0aGV1c0hhbmRsZXIoKSBnaW4uSGFuZGxlckZ1bmMgewoJaCA6PSBwcm9taHR0cC5IYW5kbGVyRm9yKGN1c3RvbVJlZ2lzdHJ5LCBwcm9taHR0cC5IYW5kbGVyT3B0c3t9KQoJcmV0dXJuIGZ1bmMoYyAqZ2luLkNvbnRleHQpIHsKCQloLlNlcnZlSFRUUChjLldyaXRlciwgYy5SZXF1ZXN0KQoJfQp9CgovLyBNaWRkbGV3YXJlIHRvIHJlY29yZCBpbmNvbWluZyByZXF1ZXN0cyBtZXRyaWNzCmZ1bmMgUmVxdWVzdE1ldHJpY3NNaWRkbGV3YXJlKCkgZ2luLkhhbmRsZXJGdW5jIHsKCXJldHVybiBmdW5jKGMgKmdpbi5Db250ZXh0KSB7CgkJcGF0aCA6PSBjLlJlcXVlc3QuVVJMLlBhdGgKCQljLk5leHQoKQoJCXN0YXR1cyA6PSBjLldyaXRlci5TdGF0dXMoKQoJCWlmIHN0YXR1cyA8IDQwMCB7CgkJCUh0dHBSZXF1ZXN0VG90YWwuV2l0aExhYmVsVmFsdWVzKHBhdGgsIHN0cmNvbnYuSXRvYShzdGF0dXMpKS5JbmMoKQoJCX0gZWxzZSB7CgkJCUh0dHBSZXF1ZXN0RXJyb3JUb3RhbC5XaXRoTGFiZWxWYWx1ZXMocGF0aCwgc3RyY29udi5JdG9hKHN0YXR1cykpLkluYygpCgkJfQoJfQp9', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">package</span> <span class="nx">main</span>
 </span></span><span class="line"><span class="cl">
@@ -1072,28 +1096,36 @@ command to clone the repository:</p>
   </div>
 </div>
 <p>In this part of the code, you have imported the required packages <code>gin</code>, <code>prometheus</code>, and <code>promhttp</code>. Then you have defined a couple of variables, <code>HttpRequestTotal</code> and <code>HttpRequestErrorTotal</code> are Prometheus counter metrics, and <code>customRegistry</code> is a custom registry that will be used to register these metrics. The name of the metric is a string that you can use to identify the metric. The help string is a string that will be shown when you query the <code>/metrics</code> endpoint to understand the metric. The reason you are using the custom registry is so avoid the default Go metrics that are registered by default by the Prometheus client. Then using the <code>init</code> function you are registering the metrics with the custom registry.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'aW1wb3J0ICgKCSJzdHJjb252IgoKCSJnaXRodWIuY29tL2dpbi1nb25pYy9naW4iCgkiZ2l0aHViLmNvbS9wcm9tZXRoZXVzL2NsaWVudF9nb2xhbmcvcHJvbWV0aGV1cyIKCSJnaXRodWIuY29tL3Byb21ldGhldXMvY2xpZW50X2dvbGFuZy9wcm9tZXRoZXVzL3Byb21odHRwIgopCgovLyBEZWZpbmUgbWV0cmljcwp2YXIgKAoJSHR0cFJlcXVlc3RUb3RhbCA9IHByb21ldGhldXMuTmV3Q291bnRlclZlYyhwcm9tZXRoZXVzLkNvdW50ZXJPcHRzewoJCU5hbWU6ICJhcGlfaHR0cF9yZXF1ZXN0X3RvdGFsIiwKCQlIZWxwOiAiVG90YWwgbnVtYmVyIG9mIHJlcXVlc3RzIHByb2Nlc3NlZCBieSB0aGUgQVBJIiwKCX0sIFtdc3RyaW5neyJwYXRoIiwgInN0YXR1cyJ9KQoKCUh0dHBSZXF1ZXN0RXJyb3JUb3RhbCA9IHByb21ldGhldXMuTmV3Q291bnRlclZlYyhwcm9tZXRoZXVzLkNvdW50ZXJPcHRzewoJCU5hbWU6ICJhcGlfaHR0cF9yZXF1ZXN0X2Vycm9yX3RvdGFsIiwKCQlIZWxwOiAiVG90YWwgbnVtYmVyIG9mIGVycm9ycyByZXR1cm5lZCBieSB0aGUgQVBJIiwKCX0sIFtdc3RyaW5neyJwYXRoIiwgInN0YXR1cyJ9KQopCgovLyBDdXN0b20gcmVnaXN0cnkgKHdpdGhvdXQgZGVmYXVsdCBHbyBtZXRyaWNzKQp2YXIgY3VzdG9tUmVnaXN0cnkgPSBwcm9tZXRoZXVzLk5ld1JlZ2lzdHJ5KCkKCi8vIFJlZ2lzdGVyIG1ldHJpY3Mgd2l0aCBjdXN0b20gcmVnaXN0cnkKZnVuYyBpbml0KCkgewoJY3VzdG9tUmVnaXN0cnkuTXVzdFJlZ2lzdGVyKEh0dHBSZXF1ZXN0VG90YWwsIEh0dHBSZXF1ZXN0RXJyb3JUb3RhbCkKfQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'aW1wb3J0ICgKCSJzdHJjb252IgoKCSJnaXRodWIuY29tL2dpbi1nb25pYy9naW4iCgkiZ2l0aHViLmNvbS9wcm9tZXRoZXVzL2NsaWVudF9nb2xhbmcvcHJvbWV0aGV1cyIKCSJnaXRodWIuY29tL3Byb21ldGhldXMvY2xpZW50X2dvbGFuZy9wcm9tZXRoZXVzL3Byb21odHRwIgopCgovLyBEZWZpbmUgbWV0cmljcwp2YXIgKAoJSHR0cFJlcXVlc3RUb3RhbCA9IHByb21ldGhldXMuTmV3Q291bnRlclZlYyhwcm9tZXRoZXVzLkNvdW50ZXJPcHRzewoJCU5hbWU6ICJhcGlfaHR0cF9yZXF1ZXN0X3RvdGFsIiwKCQlIZWxwOiAiVG90YWwgbnVtYmVyIG9mIHJlcXVlc3RzIHByb2Nlc3NlZCBieSB0aGUgQVBJIiwKCX0sIFtdc3RyaW5neyJwYXRoIiwgInN0YXR1cyJ9KQoKCUh0dHBSZXF1ZXN0RXJyb3JUb3RhbCA9IHByb21ldGhldXMuTmV3Q291bnRlclZlYyhwcm9tZXRoZXVzLkNvdW50ZXJPcHRzewoJCU5hbWU6ICJhcGlfaHR0cF9yZXF1ZXN0X2Vycm9yX3RvdGFsIiwKCQlIZWxwOiAiVG90YWwgbnVtYmVyIG9mIGVycm9ycyByZXR1cm5lZCBieSB0aGUgQVBJIiwKCX0sIFtdc3RyaW5neyJwYXRoIiwgInN0YXR1cyJ9KQopCgovLyBDdXN0b20gcmVnaXN0cnkgKHdpdGhvdXQgZGVmYXVsdCBHbyBtZXRyaWNzKQp2YXIgY3VzdG9tUmVnaXN0cnkgPSBwcm9tZXRoZXVzLk5ld1JlZ2lzdHJ5KCkKCi8vIFJlZ2lzdGVyIG1ldHJpY3Mgd2l0aCBjdXN0b20gcmVnaXN0cnkKZnVuYyBpbml0KCkgewoJY3VzdG9tUmVnaXN0cnkuTXVzdFJlZ2lzdGVyKEh0dHBSZXF1ZXN0VG90YWwsIEh0dHBSZXF1ZXN0RXJyb3JUb3RhbCkKfQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kn">import</span> <span class="p">(</span>
 </span></span><span class="line"><span class="cl">	<span class="s">&#34;strconv&#34;</span>
@@ -1128,28 +1160,36 @@ command to clone the repository:</p>
   </div>
 </div>
 <p>In the <code>main</code> function, you have created a new instance of the <code>gin</code> framework and created three routes. You can see the health endpoint that is on path <code>/health</code> that will return a JSON with <code>{&quot;message&quot;: &quot;Up and running!&quot;}</code> and the <code>/v1/users</code> endpoint that will return a JSON with <code>{&quot;message&quot;: &quot;Hello from /v1/users&quot;}</code>. The third route is for the <code>/metrics</code> endpoint that will return the metrics in the Prometheus format. Then you have <code>RequestMetricsMiddleware</code> middleware, it will be called for every request made to the API. It will record the incoming requests metrics like status codes and paths. Finally, you are running the gin application on port 8000.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'ZnVuYyBtYWluKCkgewoJcm91dGVyIDo9IGdpbi5EZWZhdWx0KCkKCgkvLyBSZWdpc3RlciAvbWV0cmljcyBiZWZvcmUgbWlkZGxld2FyZQoJcm91dGVyLkdFVCgiL21ldHJpY3MiLCBQcm9tZXRoZXVzSGFuZGxlcigpKQoJCglyb3V0ZXIuVXNlKFJlcXVlc3RNZXRyaWNzTWlkZGxld2FyZSgpKQoJcm91dGVyLkdFVCgiL2hlYWx0aCIsIGZ1bmMoYyAqZ2luLkNvbnRleHQpIHsKCQljLkpTT04oMjAwLCBnaW4uSHsKCQkJIm1lc3NhZ2UiOiAiVXAgYW5kIHJ1bm5pbmchIiwKCQl9KQoJfSkKCXJvdXRlci5HRVQoIi92MS91c2VycyIsIGZ1bmMoYyAqZ2luLkNvbnRleHQpIHsKCQljLkpTT04oMjAwLCBnaW4uSHsKCQkJIm1lc3NhZ2UiOiAiSGVsbG8gZnJvbSAvdjEvdXNlcnMiLAoJCX0pCgl9KQoKCXJvdXRlci5SdW4oIjo4MDAwIikKfQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'ZnVuYyBtYWluKCkgewoJcm91dGVyIDo9IGdpbi5EZWZhdWx0KCkKCgkvLyBSZWdpc3RlciAvbWV0cmljcyBiZWZvcmUgbWlkZGxld2FyZQoJcm91dGVyLkdFVCgiL21ldHJpY3MiLCBQcm9tZXRoZXVzSGFuZGxlcigpKQoJCglyb3V0ZXIuVXNlKFJlcXVlc3RNZXRyaWNzTWlkZGxld2FyZSgpKQoJcm91dGVyLkdFVCgiL2hlYWx0aCIsIGZ1bmMoYyAqZ2luLkNvbnRleHQpIHsKCQljLkpTT04oMjAwLCBnaW4uSHsKCQkJIm1lc3NhZ2UiOiAiVXAgYW5kIHJ1bm5pbmchIiwKCQl9KQoJfSkKCXJvdXRlci5HRVQoIi92MS91c2VycyIsIGZ1bmMoYyAqZ2luLkNvbnRleHQpIHsKCQljLkpTT04oMjAwLCBnaW4uSHsKCQkJIm1lc3NhZ2UiOiAiSGVsbG8gZnJvbSAvdjEvdXNlcnMiLAoJCX0pCgl9KQoKCXJvdXRlci5SdW4oIjo4MDAwIikKfQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-golang" data-lang="golang"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="nx">router</span> <span class="o">:=</span> <span class="nx">gin</span><span class="p">.</span><span class="nf">Default</span><span class="p">()</span>
@@ -1176,28 +1216,36 @@ command to clone the repository:</p>
   </div>
 </div>
 <p>Now comes the middleware function <code>RequestMetricsMiddleware</code>. This function is called for every request made to the API. It increments the <code>HttpRequestTotal</code> counter (different counter for different paths and status codes) if the status code is less than or equal to 400. If the status code is greater than 400, it increments the <code>HttpRequestErrorTotal</code> counter (different counter for different paths and status codes). The <code>PrometheusHandler</code> function is the custom handler that will be called for the <code>/metrics</code> endpoint. It will return the metrics in the Prometheus format.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'Ly8gQ3VzdG9tIG1ldHJpY3MgaGFuZGxlciB3aXRoIGN1c3RvbSByZWdpc3RyeQpmdW5jIFByb21ldGhldXNIYW5kbGVyKCkgZ2luLkhhbmRsZXJGdW5jIHsKCWggOj0gcHJvbWh0dHAuSGFuZGxlckZvcihjdXN0b21SZWdpc3RyeSwgcHJvbWh0dHAuSGFuZGxlck9wdHN7fSkKCXJldHVybiBmdW5jKGMgKmdpbi5Db250ZXh0KSB7CgkJaC5TZXJ2ZUhUVFAoYy5Xcml0ZXIsIGMuUmVxdWVzdCkKCX0KfQoKLy8gTWlkZGxld2FyZSB0byByZWNvcmQgaW5jb21pbmcgcmVxdWVzdHMgbWV0cmljcwpmdW5jIFJlcXVlc3RNZXRyaWNzTWlkZGxld2FyZSgpIGdpbi5IYW5kbGVyRnVuYyB7CglyZXR1cm4gZnVuYyhjICpnaW4uQ29udGV4dCkgewoJCXBhdGggOj0gYy5SZXF1ZXN0LlVSTC5QYXRoCgkJYy5OZXh0KCkKCQlzdGF0dXMgOj0gYy5Xcml0ZXIuU3RhdHVzKCkKCQlpZiBzdGF0dXMgPCA0MDAgewoJCQlIdHRwUmVxdWVzdFRvdGFsLldpdGhMYWJlbFZhbHVlcyhwYXRoLCBzdHJjb252Lkl0b2Eoc3RhdHVzKSkuSW5jKCkKCQl9IGVsc2UgewoJCQlIdHRwUmVxdWVzdEVycm9yVG90YWwuV2l0aExhYmVsVmFsdWVzKHBhdGgsIHN0cmNvbnYuSXRvYShzdGF0dXMpKS5JbmMoKQoJCX0KCX0KfQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'Ly8gQ3VzdG9tIG1ldHJpY3MgaGFuZGxlciB3aXRoIGN1c3RvbSByZWdpc3RyeQpmdW5jIFByb21ldGhldXNIYW5kbGVyKCkgZ2luLkhhbmRsZXJGdW5jIHsKCWggOj0gcHJvbWh0dHAuSGFuZGxlckZvcihjdXN0b21SZWdpc3RyeSwgcHJvbWh0dHAuSGFuZGxlck9wdHN7fSkKCXJldHVybiBmdW5jKGMgKmdpbi5Db250ZXh0KSB7CgkJaC5TZXJ2ZUhUVFAoYy5Xcml0ZXIsIGMuUmVxdWVzdCkKCX0KfQoKLy8gTWlkZGxld2FyZSB0byByZWNvcmQgaW5jb21pbmcgcmVxdWVzdHMgbWV0cmljcwpmdW5jIFJlcXVlc3RNZXRyaWNzTWlkZGxld2FyZSgpIGdpbi5IYW5kbGVyRnVuYyB7CglyZXR1cm4gZnVuYyhjICpnaW4uQ29udGV4dCkgewoJCXBhdGggOj0gYy5SZXF1ZXN0LlVSTC5QYXRoCgkJYy5OZXh0KCkKCQlzdGF0dXMgOj0gYy5Xcml0ZXIuU3RhdHVzKCkKCQlpZiBzdGF0dXMgPCA0MDAgewoJCQlIdHRwUmVxdWVzdFRvdGFsLldpdGhMYWJlbFZhbHVlcyhwYXRoLCBzdHJjb252Lkl0b2Eoc3RhdHVzKSkuSW5jKCkKCQl9IGVsc2UgewoJCQlIdHRwUmVxdWVzdEVycm9yVG90YWwuV2l0aExhYmVsVmFsdWVzKHBhdGgsIHN0cmNvbnYuSXRvYShzdGF0dXMpKS5JbmMoKQoJCX0KCX0KfQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-golang" data-lang="golang"><span class="line"><span class="cl"><span class="c1">// Custom metrics handler with custom registry</span>
 </span></span><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">PrometheusHandler</span><span class="p">()</span> <span class="nx">gin</span><span class="p">.</span><span class="nx">HandlerFunc</span> <span class="p">{</span>
@@ -1235,28 +1283,36 @@ command to clone the repository:</p>
 <p>Make sure you are still inside <code>go-prometheus-monitoring</code> directory in the terminal, and run the following command. Install the dependencies by running <code>go mod tidy</code> and then build and run the application by running <code>go run main.go</code>. Then visit <code>http://localhost:8000/health</code> or <code>http://localhost:8000/v1/users</code>. You should see the output <code>{&quot;message&quot;: &quot;Up and running!&quot;}</code> or <code>{&quot;message&quot;: &quot;Hello from /v1/users&quot;}</code>. If you are able to see this then your app is successfully up and running.</p>
 <p>Now, check your application's metrics by accessing the <code>/metrics</code> endpoint.
 Open <code>http://localhost:8000/metrics</code> in your browser. You should see similar output to the following.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IyBIRUxQIGFwaV9odHRwX3JlcXVlc3RfZXJyb3JfdG90YWwgVG90YWwgbnVtYmVyIG9mIGVycm9ycyByZXR1cm5lZCBieSB0aGUgQVBJCiMgVFlQRSBhcGlfaHR0cF9yZXF1ZXN0X2Vycm9yX3RvdGFsIGNvdW50ZXIKYXBpX2h0dHBfcmVxdWVzdF9lcnJvcl90b3RhbHtwYXRoPSIvIixzdGF0dXM9IjQwNCJ9IDEKYXBpX2h0dHBfcmVxdWVzdF9lcnJvcl90b3RhbHtwYXRoPSIvL3YxL3VzZXJzIixzdGF0dXM9IjQwNCJ9IDEKYXBpX2h0dHBfcmVxdWVzdF9lcnJvcl90b3RhbHtwYXRoPSIvZmF2aWNvbi5pY28iLHN0YXR1cz0iNDA0In0gMQojIEhFTFAgYXBpX2h0dHBfcmVxdWVzdF90b3RhbCBUb3RhbCBudW1iZXIgb2YgcmVxdWVzdHMgcHJvY2Vzc2VkIGJ5IHRoZSBBUEkKIyBUWVBFIGFwaV9odHRwX3JlcXVlc3RfdG90YWwgY291bnRlcgphcGlfaHR0cF9yZXF1ZXN0X3RvdGFse3BhdGg9Ii9oZWFsdGgiLHN0YXR1cz0iMjAwIn0gMgphcGlfaHR0cF9yZXF1ZXN0X3RvdGFse3BhdGg9Ii92MS91c2VycyIsc3RhdHVzPSIyMDAifSAx', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IyBIRUxQIGFwaV9odHRwX3JlcXVlc3RfZXJyb3JfdG90YWwgVG90YWwgbnVtYmVyIG9mIGVycm9ycyByZXR1cm5lZCBieSB0aGUgQVBJCiMgVFlQRSBhcGlfaHR0cF9yZXF1ZXN0X2Vycm9yX3RvdGFsIGNvdW50ZXIKYXBpX2h0dHBfcmVxdWVzdF9lcnJvcl90b3RhbHtwYXRoPSIvIixzdGF0dXM9IjQwNCJ9IDEKYXBpX2h0dHBfcmVxdWVzdF9lcnJvcl90b3RhbHtwYXRoPSIvL3YxL3VzZXJzIixzdGF0dXM9IjQwNCJ9IDEKYXBpX2h0dHBfcmVxdWVzdF9lcnJvcl90b3RhbHtwYXRoPSIvZmF2aWNvbi5pY28iLHN0YXR1cz0iNDA0In0gMQojIEhFTFAgYXBpX2h0dHBfcmVxdWVzdF90b3RhbCBUb3RhbCBudW1iZXIgb2YgcmVxdWVzdHMgcHJvY2Vzc2VkIGJ5IHRoZSBBUEkKIyBUWVBFIGFwaV9odHRwX3JlcXVlc3RfdG90YWwgY291bnRlcgphcGlfaHR0cF9yZXF1ZXN0X3RvdGFse3BhdGg9Ii9oZWFsdGgiLHN0YXR1cz0iMjAwIn0gMgphcGlfaHR0cF9yZXF1ZXN0X3RvdGFse3BhdGg9Ii92MS91c2VycyIsc3RhdHVzPSIyMDAifSAx', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="c1"># HELP api_http_request_error_total Total number of errors returned by the API</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># TYPE api_http_request_error_total counter</span>

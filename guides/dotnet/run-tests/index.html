@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -913,28 +913,36 @@ tests in Docker when developing and when building.</p>
 
 <p>The sample application already has an xUnit test inside the <code>tests</code> directory. When developing locally, you can use Compose to run your tests.</p>
 <p>Run the following command in the <code>docker-dotnet-sample</code> directory to run the tests inside a container.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSBydW4gLS1idWlsZCAtLXJtIHNlcnZlciBkb3RuZXQgdGVzdCAvc291cmNlL3Rlc3Rz', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSBydW4gLS1idWlsZCAtLXJtIHNlcnZlciBkb3RuZXQgdGVzdCAvc291cmNlL3Rlc3Rz', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker compose run --build --rm server dotnet <span class="nb">test</span> /source/tests
 </span></span></code></pre></div>
@@ -943,28 +951,36 @@ tests in Docker when developing and when building.</p>
   </div>
 </div>
 <p>You should see output that contains the following.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'U3RhcnRpbmcgdGVzdCBleGVjdXRpb24sIHBsZWFzZSB3YWl0Li4uCkEgdG90YWwgb2YgMSB0ZXN0IGZpbGVzIG1hdGNoZWQgdGhlIHNwZWNpZmllZCBwYXR0ZXJuLgoKUGFzc2VkISAgLSBGYWlsZWQ6ICAgICAwLCBQYXNzZWQ6ICAgICAxLCBTa2lwcGVkOiAgICAgMCwgVG90YWw6ICAgICAxLCBEdXJhdGlvbjogPCAxIG1zIC0gL3NvdXJjZS90ZXN0cy9iaW4vRGVidWcvbmV0OC4wL3Rlc3RzLmRsbCAobmV0OC4wKQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'U3RhcnRpbmcgdGVzdCBleGVjdXRpb24sIHBsZWFzZSB3YWl0Li4uCkEgdG90YWwgb2YgMSB0ZXN0IGZpbGVzIG1hdGNoZWQgdGhlIHNwZWNpZmllZCBwYXR0ZXJuLgoKUGFzc2VkISAgLSBGYWlsZWQ6ICAgICAwLCBQYXNzZWQ6ICAgICAxLCBTa2lwcGVkOiAgICAgMCwgVG90YWw6ICAgICAxLCBEdXJhdGlvbjogPCAxIG1zIC0gL3NvdXJjZS90ZXN0cy9iaW4vRGVidWcvbmV0OC4wL3Rlc3RzLmRsbCAobmV0OC4wKQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">Starting test execution, please wait...
 </span></span></span><span class="line"><span class="cl"><span class="go">A total of 1 test files matched the specified pattern.
@@ -986,28 +1002,36 @@ tests in Docker when developing and when building.</p>
 
 <p>To run your tests when building, you need to update your Dockerfile. You can create a new test stage that runs the tests, or run the tests in the existing build stage. For this guide, update the Dockerfile to run the tests in the build stage.</p>
 <p>The following is the updated Dockerfile.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQoKRlJPTSAtLXBsYXRmb3JtPSRCVUlMRFBMQVRGT1JNIG1jci5taWNyb3NvZnQuY29tL2RvdG5ldC9zZGs6OC4wLWFscGluZSBBUyBidWlsZApBUkcgVEFSR0VUQVJDSApDT1BZIC4gL3NvdXJjZQpXT1JLRElSIC9zb3VyY2Uvc3JjClJVTiAtLW1vdW50PXR5cGU9Y2FjaGUsaWQ9bnVnZXQsdGFyZ2V0PS9yb290Ly5udWdldC9wYWNrYWdlcyBcCiAgICBkb3RuZXQgcHVibGlzaCAtYSAke1RBUkdFVEFSQ0gvYW1kNjQveDY0fSAtLXVzZS1jdXJyZW50LXJ1bnRpbWUgLS1zZWxmLWNvbnRhaW5lZCBmYWxzZSAtbyAvYXBwClJVTiBkb3RuZXQgdGVzdCAvc291cmNlL3Rlc3RzCgpGUk9NIG1jci5taWNyb3NvZnQuY29tL2RvdG5ldC9zZGs6OC4wLWFscGluZSBBUyBkZXZlbG9wbWVudApDT1BZIC4gL3NvdXJjZQpXT1JLRElSIC9zb3VyY2Uvc3JjCkNNRCBkb3RuZXQgcnVuIC0tbm8tbGF1bmNoLXByb2ZpbGUKCkZST00gbWNyLm1pY3Jvc29mdC5jb20vZG90bmV0L2FzcG5ldDo4LjAtYWxwaW5lIEFTIGZpbmFsCldPUktESVIgL2FwcApDT1BZIC0tZnJvbT1idWlsZCAvYXBwIC4KQVJHIFVJRD0xMDAwMQpSVU4gYWRkdXNlciBcCiAgICAtLWRpc2FibGVkLXBhc3N3b3JkIFwKICAgIC0tZ2Vjb3MgIiIgXAogICAgLS1ob21lICIvbm9uZXhpc3RlbnQiIFwKICAgIC0tc2hlbGwgIi9zYmluL25vbG9naW4iIFwKICAgIC0tbm8tY3JlYXRlLWhvbWUgXAogICAgLS11aWQgIiR7VUlEfSIgXAogICAgYXBwdXNlcgpVU0VSIGFwcHVzZXIKRU5UUllQT0lOVCBbImRvdG5ldCIsICJteVdlYkFwcC5kbGwiXQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQoKRlJPTSAtLXBsYXRmb3JtPSRCVUlMRFBMQVRGT1JNIG1jci5taWNyb3NvZnQuY29tL2RvdG5ldC9zZGs6OC4wLWFscGluZSBBUyBidWlsZApBUkcgVEFSR0VUQVJDSApDT1BZIC4gL3NvdXJjZQpXT1JLRElSIC9zb3VyY2Uvc3JjClJVTiAtLW1vdW50PXR5cGU9Y2FjaGUsaWQ9bnVnZXQsdGFyZ2V0PS9yb290Ly5udWdldC9wYWNrYWdlcyBcCiAgICBkb3RuZXQgcHVibGlzaCAtYSAke1RBUkdFVEFSQ0gvYW1kNjQveDY0fSAtLXVzZS1jdXJyZW50LXJ1bnRpbWUgLS1zZWxmLWNvbnRhaW5lZCBmYWxzZSAtbyAvYXBwClJVTiBkb3RuZXQgdGVzdCAvc291cmNlL3Rlc3RzCgpGUk9NIG1jci5taWNyb3NvZnQuY29tL2RvdG5ldC9zZGs6OC4wLWFscGluZSBBUyBkZXZlbG9wbWVudApDT1BZIC4gL3NvdXJjZQpXT1JLRElSIC9zb3VyY2Uvc3JjCkNNRCBkb3RuZXQgcnVuIC0tbm8tbGF1bmNoLXByb2ZpbGUKCkZST00gbWNyLm1pY3Jvc29mdC5jb20vZG90bmV0L2FzcG5ldDo4LjAtYWxwaW5lIEFTIGZpbmFsCldPUktESVIgL2FwcApDT1BZIC0tZnJvbT1idWlsZCAvYXBwIC4KQVJHIFVJRD0xMDAwMQpSVU4gYWRkdXNlciBcCiAgICAtLWRpc2FibGVkLXBhc3N3b3JkIFwKICAgIC0tZ2Vjb3MgIiIgXAogICAgLS1ob21lICIvbm9uZXhpc3RlbnQiIFwKICAgIC0tc2hlbGwgIi9zYmluL25vbG9naW4iIFwKICAgIC0tbm8tY3JlYXRlLWhvbWUgXAogICAgLS11aWQgIiR7VUlEfSIgXAogICAgYXBwdXNlcgpVU0VSIGFwcHVzZXIKRU5UUllQT0lOVCBbImRvdG5ldCIsICJteVdlYkFwcC5kbGwiXQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="c"># syntax=docker/dockerfile:1</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
@@ -1043,28 +1067,36 @@ tests in Docker when developing and when building.</p>
   </div>
 </div>
 <p>Run the following command to build an image using the build stage as the target and view the test results. Include <code>--progress=plain</code> to view the build output, <code>--no-cache</code> to ensure the tests always run, and <code>--target build</code> to target the build stage.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgYnVpbGQgLXQgZG90bmV0LWRvY2tlci1pbWFnZS10ZXN0IC0tcHJvZ3Jlc3M9cGxhaW4gLS1uby1jYWNoZSAtLXRhcmdldCBidWlsZCAu', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgYnVpbGQgLXQgZG90bmV0LWRvY2tlci1pbWFnZS10ZXN0IC0tcHJvZ3Jlc3M9cGxhaW4gLS1uby1jYWNoZSAtLXRhcmdldCBidWlsZCAu', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker build -t dotnet-docker-image-test --progress<span class="o">=</span>plain --no-cache --target build .
 </span></span></code></pre></div>
@@ -1073,28 +1105,36 @@ tests in Docker when developing and when building.</p>
   </div>
 </div>
 <p>You should see output containing the following.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IzExIFtidWlsZCA1LzVdIFJVTiBkb3RuZXQgdGVzdCAvc291cmNlL3Rlc3RzCiMxMSAxLjU2NCAgIERldGVybWluaW5nIHByb2plY3RzIHRvIHJlc3RvcmUuLi4KIzExIDMuNDIxICAgUmVzdG9yZWQgL3NvdXJjZS9zcmMvbXlXZWJBcHAuY3Nwcm9qIChpbiAxLjAyIHNlYykuCiMxMSAxOS40MiAgIFJlc3RvcmVkIC9zb3VyY2UvdGVzdHMvdGVzdHMuY3Nwcm9qIChpbiAxNy4wNSBzZWMpLgojMTEgMjcuOTEgICBteVdlYkFwcCAtPiAvc291cmNlL3NyYy9iaW4vRGVidWcvbmV0OC4wL215V2ViQXBwLmRsbAojMTEgMjguNDcgICB0ZXN0cyAtPiAvc291cmNlL3Rlc3RzL2Jpbi9EZWJ1Zy9uZXQ4LjAvdGVzdHMuZGxsCiMxMSAyOC40OSBUZXN0IHJ1biBmb3IgL3NvdXJjZS90ZXN0cy9iaW4vRGVidWcvbmV0OC4wL3Rlc3RzLmRsbCAoLk5FVENvcmVBcHAsVmVyc2lvbj12OC4wKQojMTEgMjguNjcgTWljcm9zb2Z0IChSKSBUZXN0IEV4ZWN1dGlvbiBDb21tYW5kIExpbmUgVG9vbCBWZXJzaW9uIDE3LjMuMyAoeDY0KQojMTEgMjguNjcgQ29weXJpZ2h0IChjKSBNaWNyb3NvZnQgQ29ycG9yYXRpb24uICBBbGwgcmlnaHRzIHJlc2VydmVkLgojMTEgMjguNjgKIzExIDI4Ljk3IFN0YXJ0aW5nIHRlc3QgZXhlY3V0aW9uLCBwbGVhc2Ugd2FpdC4uLgojMTEgMjkuMDMgQSB0b3RhbCBvZiAxIHRlc3QgZmlsZXMgbWF0Y2hlZCB0aGUgc3BlY2lmaWVkIHBhdHRlcm4uCiMxMSAzMi4wNwojMTEgMzIuMDggUGFzc2VkISAgLSBGYWlsZWQ6ICAgICAwLCBQYXNzZWQ6ICAgICAxLCBTa2lwcGVkOiAgICAgMCwgVG90YWw6ICAgICAxLCBEdXJhdGlvbjogPCAxIG1zIC0gL3NvdXJjZS90ZXN0cy9iaW4vRGVidWcvbmV0OC4wL3Rlc3RzLmRsbCAobmV0OC4wKQojMTEgRE9ORSAzMi4ycw==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IzExIFtidWlsZCA1LzVdIFJVTiBkb3RuZXQgdGVzdCAvc291cmNlL3Rlc3RzCiMxMSAxLjU2NCAgIERldGVybWluaW5nIHByb2plY3RzIHRvIHJlc3RvcmUuLi4KIzExIDMuNDIxICAgUmVzdG9yZWQgL3NvdXJjZS9zcmMvbXlXZWJBcHAuY3Nwcm9qIChpbiAxLjAyIHNlYykuCiMxMSAxOS40MiAgIFJlc3RvcmVkIC9zb3VyY2UvdGVzdHMvdGVzdHMuY3Nwcm9qIChpbiAxNy4wNSBzZWMpLgojMTEgMjcuOTEgICBteVdlYkFwcCAtPiAvc291cmNlL3NyYy9iaW4vRGVidWcvbmV0OC4wL215V2ViQXBwLmRsbAojMTEgMjguNDcgICB0ZXN0cyAtPiAvc291cmNlL3Rlc3RzL2Jpbi9EZWJ1Zy9uZXQ4LjAvdGVzdHMuZGxsCiMxMSAyOC40OSBUZXN0IHJ1biBmb3IgL3NvdXJjZS90ZXN0cy9iaW4vRGVidWcvbmV0OC4wL3Rlc3RzLmRsbCAoLk5FVENvcmVBcHAsVmVyc2lvbj12OC4wKQojMTEgMjguNjcgTWljcm9zb2Z0IChSKSBUZXN0IEV4ZWN1dGlvbiBDb21tYW5kIExpbmUgVG9vbCBWZXJzaW9uIDE3LjMuMyAoeDY0KQojMTEgMjguNjcgQ29weXJpZ2h0IChjKSBNaWNyb3NvZnQgQ29ycG9yYXRpb24uICBBbGwgcmlnaHRzIHJlc2VydmVkLgojMTEgMjguNjgKIzExIDI4Ljk3IFN0YXJ0aW5nIHRlc3QgZXhlY3V0aW9uLCBwbGVhc2Ugd2FpdC4uLgojMTEgMjkuMDMgQSB0b3RhbCBvZiAxIHRlc3QgZmlsZXMgbWF0Y2hlZCB0aGUgc3BlY2lmaWVkIHBhdHRlcm4uCiMxMSAzMi4wNwojMTEgMzIuMDggUGFzc2VkISAgLSBGYWlsZWQ6ICAgICAwLCBQYXNzZWQ6ICAgICAxLCBTa2lwcGVkOiAgICAgMCwgVG90YWw6ICAgICAxLCBEdXJhdGlvbjogPCAxIG1zIC0gL3NvdXJjZS90ZXN0cy9iaW4vRGVidWcvbmV0OC4wL3Rlc3RzLmRsbCAobmV0OC4wKQojMTEgRE9ORSAzMi4ycw==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">#</span><span class="m">11</span> <span class="o">[</span>build 5/5<span class="o">]</span> RUN dotnet <span class="nb">test</span> /source/tests
 </span></span><span class="line"><span class="cl"><span class="gp">#</span><span class="m">11</span> 1.564   Determining projects to restore...

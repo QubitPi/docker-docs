@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -6709,22 +6709,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/ai/gordon/mcp/gordon-mcp-server/"
-        title="Gordon as an MCP server"
-      >
-        
-  Gordon as an MCP server
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/ai/gordon/mcp/yaml/"
         title="YAML configuration"
       >
@@ -6744,17 +6728,21 @@
     </ul>
   </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+  
+  
+  <li class="" x-data="{ expanded: false }">
+    <div
+      class=" flex w-full items-center justify-between rounded-sm"
     >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/model-runner/"
-        title="Docker Model Runner"
-      >
-        
+      <div class="navbar-entry-margin w-full truncate">
+          
+          
+          <a
+            
+            class="hover:text-blue block select-none hover:dark:text-blue-400"
+            href="https://docker.qubitpi.org/ai/model-runner/"
+          >
+            
   Docker Model Runner
     <span><span
   class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
@@ -6763,8 +6751,36 @@
 
     </span>
 
-      </a>
-    </li>
+          </a>
+      </div>
+      
+      <button
+        @click="expanded = !expanded"
+        class="rounded-sm hover:bg-gray-200 hover:dark:bg-gray-800"
+      >
+        <span
+          :class="{ 'hidden' : expanded }"
+          class="icon-svg "
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
+        </span>
+        <span
+          :class="{ 'hidden' : !expanded }"
+          class="icon-svg hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M316-400q-6.75 0-10.87-4.64-4.13-4.63-4.13-10.81 0-1.55 5-10.55l158-157q3-3 7.06-5 4.07-2 8.94-2 4.88 0 8.94 2t7.06 5l158 157q2 2 3.5 4.76 1.5 2.77 1.5 5.92 0 6.32-4.12 10.82-4.13 4.5-10.88 4.5H316Z"/></svg>
+        </span>
+      </button>
+    </div>
+    <ul
+      :class="{ 'hidden' : !expanded }"
+      class="hidden ml-3"
+    >
+      
+
+
+    </ul>
+  </li>
 
   
   
@@ -6783,8 +6799,8 @@
             
   MCP Catalog and Toolkit
     <span><span
-  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
-  >New</span
+  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
+  >Beta</span
 >
 
     </span>
@@ -7785,124 +7801,6 @@
       >
         
   Use WSL
-
-      </a>
-    </li>
-
-
-
-    </ul>
-  </li>
-
-  
-  
-  <li class="" x-data="{ expanded: false }">
-    <div
-      class=" flex w-full items-center justify-between rounded-sm"
-    >
-      <div class="navbar-entry-margin w-full truncate">
-          
-          
-          <a
-            
-            class="hover:text-blue block select-none hover:dark:text-blue-400"
-            href="https://docker.qubitpi.org/desktop/features/dev-environments/"
-          >
-            
-  Dev Environments
-    <span><span
-  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
-  >Beta</span
->
-
-    </span>
-
-          </a>
-      </div>
-      
-      <button
-        @click="expanded = !expanded"
-        class="rounded-sm hover:bg-gray-200 hover:dark:bg-gray-800"
-      >
-        <span
-          :class="{ 'hidden' : expanded }"
-          class="icon-svg "
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
-        </span>
-        <span
-          :class="{ 'hidden' : !expanded }"
-          class="icon-svg hidden"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M316-400q-6.75 0-10.87-4.64-4.13-4.63-4.13-10.81 0-1.55 5-10.55l158-157q3-3 7.06-5 4.07-2 8.94-2 4.88 0 8.94 2t7.06 5l158 157q2 2 3.5 4.76 1.5 2.77 1.5 5.92 0 6.32-4.12 10.82-4.13 4.5-10.88 4.5H316Z"/></svg>
-        </span>
-      </button>
-    </div>
-    <ul
-      :class="{ 'hidden' : !expanded }"
-      class="hidden ml-3"
-    >
-      
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-environments/create-dev-env/"
-        title="Launch a dev environment"
-      >
-        
-  Launch a dev environment
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-environments/set-up/"
-        title="Set up a dev environment"
-      >
-        
-  Set up a dev environment
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-environments/share/"
-        title="Distribute your dev environment"
-      >
-        
-  Distribute your dev environment
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-environments/dev-cli/"
-        title="Use the docker dev CLI plugin"
-      >
-        
-  Use the docker dev CLI plugin
 
       </a>
     </li>
@@ -14093,28 +13991,36 @@ profile is generated from the following
 <p>When you run a container, it uses the <code>docker-default</code> policy unless you
 override it with the <code>security-opt</code> option. For example, the following
 explicitly specifies the default policy:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgcnVuIC0tcm0gLWl0IC0tc2VjdXJpdHktb3B0IGFwcGFybW9yPWRvY2tlci1kZWZhdWx0IGhlbGxvLXdvcmxk', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgcnVuIC0tcm0gLWl0IC0tc2VjdXJpdHktb3B0IGFwcGFybW9yPWRvY2tlci1kZWZhdWx0IGhlbGxvLXdvcmxk', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker run --rm -it --security-opt <span class="nv">apparmor</span><span class="o">=</span>docker-default hello-world
 </span></span></code></pre></div>
@@ -14130,28 +14036,36 @@ explicitly specifies the default policy:</p>
 </h2>
 
 <p>To load a new profile into AppArmor for use with containers:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBhcHBhcm1vcl9wYXJzZXIgLXIgLVcgL3BhdGgvdG8veW91cl9wcm9maWxl', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBhcHBhcm1vcl9wYXJzZXIgLXIgLVcgL3BhdGgvdG8veW91cl9wcm9maWxl', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> apparmor_parser -r -W /path/to/your_profile
 </span></span></code></pre></div>
@@ -14160,28 +14074,36 @@ explicitly specifies the default policy:</p>
   </div>
 </div>
 <p>Then, run the custom profile with <code>--security-opt</code>:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgcnVuIC0tcm0gLWl0IC0tc2VjdXJpdHktb3B0IGFwcGFybW9yPXlvdXJfcHJvZmlsZSBoZWxsby13b3JsZA==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgcnVuIC0tcm0gLWl0IC0tc2VjdXJpdHktb3B0IGFwcGFybW9yPXlvdXJfcHJvZmlsZSBoZWxsby13b3JsZA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker run --rm -it --security-opt <span class="nv">apparmor</span><span class="o">=</span>your_profile hello-world
 </span></span></code></pre></div>
@@ -14190,28 +14112,36 @@ explicitly specifies the default policy:</p>
   </div>
 </div>
 <p>To unload a profile from AppArmor:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IyB1bmxvYWQgdGhlIHByb2ZpbGUKJCBhcHBhcm1vcl9wYXJzZXIgLVIgL3BhdGgvdG8vcHJvZmlsZQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IyB1bmxvYWQgdGhlIHByb2ZpbGUKJCBhcHBhcm1vcl9wYXJzZXIgLVIgL3BhdGgvdG8vcHJvZmlsZQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">#</span> unload the profile
 </span></span><span class="line"><span class="cl"><span class="gp">$</span> apparmor_parser -R /path/to/profile
@@ -14255,28 +14185,36 @@ below resources with regard to AppArmor profile syntax.</p>
 
 <p>In this example, you create a custom AppArmor profile for Nginx. Below is the
 custom profile.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'I2luY2x1ZGUgPHR1bmFibGVzL2dsb2JhbD4KCgpwcm9maWxlIGRvY2tlci1uZ2lueCBmbGFncz0oYXR0YWNoX2Rpc2Nvbm5lY3RlZCxtZWRpYXRlX2RlbGV0ZWQpIHsKICAjaW5jbHVkZSA8YWJzdHJhY3Rpb25zL2Jhc2U&#43;CgogIG5ldHdvcmsgaW5ldCB0Y3AsCiAgbmV0d29yayBpbmV0IHVkcCwKICBuZXR3b3JrIGluZXQgaWNtcCwKCiAgZGVueSBuZXR3b3JrIHJhdywKCiAgZGVueSBuZXR3b3JrIHBhY2tldCwKCiAgZmlsZSwKICB1bW91bnQsCgogIGRlbnkgL2Jpbi8qKiB3bCwKICBkZW55IC9ib290LyoqIHdsLAogIGRlbnkgL2Rldi8qKiB3bCwKICBkZW55IC9ldGMvKiogd2wsCiAgZGVueSAvaG9tZS8qKiB3bCwKICBkZW55IC9saWIvKiogd2wsCiAgZGVueSAvbGliNjQvKiogd2wsCiAgZGVueSAvbWVkaWEvKiogd2wsCiAgZGVueSAvbW50LyoqIHdsLAogIGRlbnkgL29wdC8qKiB3bCwKICBkZW55IC9wcm9jLyoqIHdsLAogIGRlbnkgL3Jvb3QvKiogd2wsCiAgZGVueSAvc2Jpbi8qKiB3bCwKICBkZW55IC9zcnYvKiogd2wsCiAgZGVueSAvdG1wLyoqIHdsLAogIGRlbnkgL3N5cy8qKiB3bCwKICBkZW55IC91c3IvKiogd2wsCgogIGF1ZGl0IC8qKiB3LAoKICAvdmFyL3J1bi9uZ2lueC5waWQgdywKCiAgL3Vzci9zYmluL25naW54IGl4LAoKICBkZW55IC9iaW4vZGFzaCBtcndrbHgsCiAgZGVueSAvYmluL3NoIG1yd2tseCwKICBkZW55IC91c3IvYmluL3RvcCBtcndrbHgsCgoKICBjYXBhYmlsaXR5IGNob3duLAogIGNhcGFiaWxpdHkgZGFjX292ZXJyaWRlLAogIGNhcGFiaWxpdHkgc2V0dWlkLAogIGNhcGFiaWxpdHkgc2V0Z2lkLAogIGNhcGFiaWxpdHkgbmV0X2JpbmRfc2VydmljZSwKCiAgZGVueSBAe1BST0N9LyogdywgICAjIGRlbnkgd3JpdGUgZm9yIGFsbCBmaWxlcyBkaXJlY3RseSBpbiAvcHJvYyAobm90IGluIGEgc3ViZGlyKQogICMgZGVueSB3cml0ZSB0byBmaWxlcyBub3QgaW4gL3Byb2MvPG51bWJlcj4vKiogb3IgL3Byb2Mvc3lzLyoqCiAgZGVueSBAe1BST0N9L3tbXjEtOV0sW14xLTldW14wLTldLFteMS05c11bXjAtOXldW14wLTlzXSxbXjEtOV1bXjAtOV1bXjAtOV1bXjAtOV0qfS8qKiB3LAogIGRlbnkgQHtQUk9DfS9zeXMvW15rXSoqIHcsICAjIGRlbnkgL3Byb2Mvc3lzIGV4Y2VwdCAvcHJvYy9zeXMvayogKGVmZmVjdGl2ZWx5IC9wcm9jL3N5cy9rZXJuZWwpCiAgZGVueSBAe1BST0N9L3N5cy9rZXJuZWwvez8sPz8sW15zXVteaF1bXm1dKip9IHcsICAjIGRlbnkgZXZlcnl0aGluZyBleGNlcHQgc2htKiBpbiAvcHJvYy9zeXMva2VybmVsLwogIGRlbnkgQHtQUk9DfS9zeXNycS10cmlnZ2VyIHJ3a2x4LAogIGRlbnkgQHtQUk9DfS9tZW0gcndrbHgsCiAgZGVueSBAe1BST0N9L2ttZW0gcndrbHgsCiAgZGVueSBAe1BST0N9L2tjb3JlIHJ3a2x4LAoKICBkZW55IG1vdW50LAoKICBkZW55IC9zeXMvW15mXSovKiogd2tseCwKICBkZW55IC9zeXMvZltec10qLyoqIHdrbHgsCiAgZGVueSAvc3lzL2ZzL1teY10qLyoqIHdrbHgsCiAgZGVueSAvc3lzL2ZzL2NbXmddKi8qKiB3a2x4LAogIGRlbnkgL3N5cy9mcy9jZ1tecl0qLyoqIHdrbHgsCiAgZGVueSAvc3lzL2Zpcm13YXJlLyoqIHJ3a2x4LAogIGRlbnkgL3N5cy9rZXJuZWwvc2VjdXJpdHkvKiogcndrbHgsCn0=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'I2luY2x1ZGUgPHR1bmFibGVzL2dsb2JhbD4KCgpwcm9maWxlIGRvY2tlci1uZ2lueCBmbGFncz0oYXR0YWNoX2Rpc2Nvbm5lY3RlZCxtZWRpYXRlX2RlbGV0ZWQpIHsKICAjaW5jbHVkZSA8YWJzdHJhY3Rpb25zL2Jhc2U&#43;CgogIG5ldHdvcmsgaW5ldCB0Y3AsCiAgbmV0d29yayBpbmV0IHVkcCwKICBuZXR3b3JrIGluZXQgaWNtcCwKCiAgZGVueSBuZXR3b3JrIHJhdywKCiAgZGVueSBuZXR3b3JrIHBhY2tldCwKCiAgZmlsZSwKICB1bW91bnQsCgogIGRlbnkgL2Jpbi8qKiB3bCwKICBkZW55IC9ib290LyoqIHdsLAogIGRlbnkgL2Rldi8qKiB3bCwKICBkZW55IC9ldGMvKiogd2wsCiAgZGVueSAvaG9tZS8qKiB3bCwKICBkZW55IC9saWIvKiogd2wsCiAgZGVueSAvbGliNjQvKiogd2wsCiAgZGVueSAvbWVkaWEvKiogd2wsCiAgZGVueSAvbW50LyoqIHdsLAogIGRlbnkgL29wdC8qKiB3bCwKICBkZW55IC9wcm9jLyoqIHdsLAogIGRlbnkgL3Jvb3QvKiogd2wsCiAgZGVueSAvc2Jpbi8qKiB3bCwKICBkZW55IC9zcnYvKiogd2wsCiAgZGVueSAvdG1wLyoqIHdsLAogIGRlbnkgL3N5cy8qKiB3bCwKICBkZW55IC91c3IvKiogd2wsCgogIGF1ZGl0IC8qKiB3LAoKICAvdmFyL3J1bi9uZ2lueC5waWQgdywKCiAgL3Vzci9zYmluL25naW54IGl4LAoKICBkZW55IC9iaW4vZGFzaCBtcndrbHgsCiAgZGVueSAvYmluL3NoIG1yd2tseCwKICBkZW55IC91c3IvYmluL3RvcCBtcndrbHgsCgoKICBjYXBhYmlsaXR5IGNob3duLAogIGNhcGFiaWxpdHkgZGFjX292ZXJyaWRlLAogIGNhcGFiaWxpdHkgc2V0dWlkLAogIGNhcGFiaWxpdHkgc2V0Z2lkLAogIGNhcGFiaWxpdHkgbmV0X2JpbmRfc2VydmljZSwKCiAgZGVueSBAe1BST0N9LyogdywgICAjIGRlbnkgd3JpdGUgZm9yIGFsbCBmaWxlcyBkaXJlY3RseSBpbiAvcHJvYyAobm90IGluIGEgc3ViZGlyKQogICMgZGVueSB3cml0ZSB0byBmaWxlcyBub3QgaW4gL3Byb2MvPG51bWJlcj4vKiogb3IgL3Byb2Mvc3lzLyoqCiAgZGVueSBAe1BST0N9L3tbXjEtOV0sW14xLTldW14wLTldLFteMS05c11bXjAtOXldW14wLTlzXSxbXjEtOV1bXjAtOV1bXjAtOV1bXjAtOV0qfS8qKiB3LAogIGRlbnkgQHtQUk9DfS9zeXMvW15rXSoqIHcsICAjIGRlbnkgL3Byb2Mvc3lzIGV4Y2VwdCAvcHJvYy9zeXMvayogKGVmZmVjdGl2ZWx5IC9wcm9jL3N5cy9rZXJuZWwpCiAgZGVueSBAe1BST0N9L3N5cy9rZXJuZWwvez8sPz8sW15zXVteaF1bXm1dKip9IHcsICAjIGRlbnkgZXZlcnl0aGluZyBleGNlcHQgc2htKiBpbiAvcHJvYy9zeXMva2VybmVsLwogIGRlbnkgQHtQUk9DfS9zeXNycS10cmlnZ2VyIHJ3a2x4LAogIGRlbnkgQHtQUk9DfS9tZW0gcndrbHgsCiAgZGVueSBAe1BST0N9L2ttZW0gcndrbHgsCiAgZGVueSBAe1BST0N9L2tjb3JlIHJ3a2x4LAoKICBkZW55IG1vdW50LAoKICBkZW55IC9zeXMvW15mXSovKiogd2tseCwKICBkZW55IC9zeXMvZltec10qLyoqIHdrbHgsCiAgZGVueSAvc3lzL2ZzL1teY10qLyoqIHdrbHgsCiAgZGVueSAvc3lzL2ZzL2NbXmddKi8qKiB3a2x4LAogIGRlbnkgL3N5cy9mcy9jZ1tecl0qLyoqIHdrbHgsCiAgZGVueSAvc3lzL2Zpcm13YXJlLyoqIHJ3a2x4LAogIGRlbnkgL3N5cy9rZXJuZWwvc2VjdXJpdHkvKiogcndrbHgsCn0=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;tunables/global&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span>
@@ -14364,28 +14302,36 @@ use another.</p>
 </li>
 <li>
 <p>Load the profile.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBzdWRvIGFwcGFybW9yX3BhcnNlciAtciAtVyAvZXRjL2FwcGFybW9yLmQvY29udGFpbmVycy9kb2NrZXItbmdpbng=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBzdWRvIGFwcGFybW9yX3BhcnNlciAtciAtVyAvZXRjL2FwcGFybW9yLmQvY29udGFpbmVycy9kb2NrZXItbmdpbng=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo apparmor_parser -r -W /etc/apparmor.d/containers/docker-nginx
 </span></span></code></pre></div>
@@ -14397,28 +14343,36 @@ use another.</p>
 <li>
 <p>Run a container with the profile.</p>
 <p>To run nginx in detached mode:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgcnVuIC0tc2VjdXJpdHktb3B0ICJhcHBhcm1vcj1kb2NrZXItbmdpbngiIFwKICAgICAtcCA4MDo4MCAtZCAtLW5hbWUgYXBwYXJtb3Itbmdpbnggbmdpbng=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgcnVuIC0tc2VjdXJpdHktb3B0ICJhcHBhcm1vcj1kb2NrZXItbmdpbngiIFwKICAgICAtcCA4MDo4MCAtZCAtLW5hbWUgYXBwYXJtb3Itbmdpbnggbmdpbng=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker run --security-opt <span class="s2">&#34;apparmor=docker-nginx&#34;</span> <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">     -p 80:80 -d --name apparmor-nginx nginx
@@ -14430,28 +14384,36 @@ use another.</p>
 </li>
 <li>
 <p>Exec into the running container.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgY29udGFpbmVyIGV4ZWMgLWl0IGFwcGFybW9yLW5naW54IGJhc2g=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgY29udGFpbmVyIGV4ZWMgLWl0IGFwcGFybW9yLW5naW54IGJhc2g=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker container <span class="nb">exec</span> -it apparmor-nginx bash
 </span></span></code></pre></div>
@@ -14462,28 +14424,36 @@ use another.</p>
 </li>
 <li>
 <p>Try some operations to test the profile.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'cm9vdEA2ZGE1YTJhOTMwYjk6fiMgcGluZyA4LjguOC44CnBpbmc6IExhY2tpbmcgcHJpdmlsZWdlIGZvciByYXcgc29ja2V0LgoKcm9vdEA2ZGE1YTJhOTMwYjk6LyMgdG9wCmJhc2g6IC91c3IvYmluL3RvcDogUGVybWlzc2lvbiBkZW5pZWQKCnJvb3RANmRhNWEyYTkzMGI5On4jIHRvdWNoIH4vdGhpbmcKdG91Y2g6IGNhbm5vdCB0b3VjaCAndGhpbmcnOiBQZXJtaXNzaW9uIGRlbmllZAoKcm9vdEA2ZGE1YTJhOTMwYjk6LyMgc2gKYmFzaDogL2Jpbi9zaDogUGVybWlzc2lvbiBkZW5pZWQKCnJvb3RANmRhNWEyYTkzMGI5Oi8jIGRhc2gKYmFzaDogL2Jpbi9kYXNoOiBQZXJtaXNzaW9uIGRlbmllZA==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'cm9vdEA2ZGE1YTJhOTMwYjk6fiMgcGluZyA4LjguOC44CnBpbmc6IExhY2tpbmcgcHJpdmlsZWdlIGZvciByYXcgc29ja2V0LgoKcm9vdEA2ZGE1YTJhOTMwYjk6LyMgdG9wCmJhc2g6IC91c3IvYmluL3RvcDogUGVybWlzc2lvbiBkZW5pZWQKCnJvb3RANmRhNWEyYTkzMGI5On4jIHRvdWNoIH4vdGhpbmcKdG91Y2g6IGNhbm5vdCB0b3VjaCAndGhpbmcnOiBQZXJtaXNzaW9uIGRlbmllZAoKcm9vdEA2ZGE1YTJhOTMwYjk6LyMgc2gKYmFzaDogL2Jpbi9zaDogUGVybWlzc2lvbiBkZW5pZWQKCnJvb3RANmRhNWEyYTkzMGI5Oi8jIGRhc2gKYmFzaDogL2Jpbi9kYXNoOiBQZXJtaXNzaW9uIGRlbmllZA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">root@6da5a2a930b9:~# ping 8.8.8.8
 </span></span></span><span class="line"><span class="cl"><span class="go">ping: Lacking privilege for raw socket.
@@ -14526,28 +14496,36 @@ use another.</p>
 regard to AppArmor.</p>
 <p>AppArmor sends quite verbose messaging to <code>dmesg</code>. Usually an AppArmor line
 looks like the following:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'WyA1NDQyLjg2NDY3M10gYXVkaXQ6IHR5cGU9MTQwMCBhdWRpdCgxNDUzODMwOTkyLjg0NTozNyk6IGFwcGFybW9yPSJBTExPV0VEIiBvcGVyYXRpb249Im9wZW4iIHByb2ZpbGU9Ii91c3IvYmluL2RvY2tlciIgbmFtZT0iL2hvbWUvamVzc2llL2RvY2tlci9tYW4vbWFuMS9kb2NrZXItYXR0YWNoLjEiIHBpZD0xMDkyMyBjb21tPSJkb2NrZXIiIHJlcXVlc3RlZF9tYXNrPSJyIiBkZW5pZWRfbWFzaz0iciIgZnN1aWQ9MTAwMCBvdWlkPTA=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'WyA1NDQyLjg2NDY3M10gYXVkaXQ6IHR5cGU9MTQwMCBhdWRpdCgxNDUzODMwOTkyLjg0NTozNyk6IGFwcGFybW9yPSJBTExPV0VEIiBvcGVyYXRpb249Im9wZW4iIHByb2ZpbGU9Ii91c3IvYmluL2RvY2tlciIgbmFtZT0iL2hvbWUvamVzc2llL2RvY2tlci9tYW4vbWFuMS9kb2NrZXItYXR0YWNoLjEiIHBpZD0xMDkyMyBjb21tPSJkb2NrZXIiIHJlcXVlc3RlZF9tYXNrPSJyIiBkZW5pZWRfbWFzaz0iciIgZnN1aWQ9MTAwMCBvdWlkPTA=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">[ 5442.864673] audit: type=1400 audit(1453830992.845:37): apparmor=&#34;ALLOWED&#34; operation=&#34;open&#34; profile=&#34;/usr/bin/docker&#34; name=&#34;/home/jessie/docker/man/man1/docker-attach.1&#34; pid=10923 comm=&#34;docker&#34; requested_mask=&#34;r&#34; denied_mask=&#34;r&#34; fsuid=1000 ouid=0</span></span></code></pre></div>
       
@@ -14557,28 +14535,36 @@ looks like the following:</p>
 <p>In the above example, you can see <code>profile=/usr/bin/docker</code>. This means the
 user has the <code>docker-engine</code> (Docker Engine daemon) profile loaded.</p>
 <p>Look at another log line:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'WyAzMjU2LjY4OTEyMF0gdHlwZT0xNDAwIGF1ZGl0KDE0MDU0NTQwNDEuMzQxOjczKTogYXBwYXJtb3I9IkRFTklFRCIgb3BlcmF0aW9uPSJwdHJhY2UiIHByb2ZpbGU9ImRvY2tlci1kZWZhdWx0IiBwaWQ9MTc2NTEgY29tbT0iZG9ja2VyIiByZXF1ZXN0ZWRfbWFzaz0icmVjZWl2ZSIgZGVuaWVkX21hc2s9InJlY2VpdmUi', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'WyAzMjU2LjY4OTEyMF0gdHlwZT0xNDAwIGF1ZGl0KDE0MDU0NTQwNDEuMzQxOjczKTogYXBwYXJtb3I9IkRFTklFRCIgb3BlcmF0aW9uPSJwdHJhY2UiIHByb2ZpbGU9ImRvY2tlci1kZWZhdWx0IiBwaWQ9MTc2NTEgY29tbT0iZG9ja2VyIiByZXF1ZXN0ZWRfbWFzaz0icmVjZWl2ZSIgZGVuaWVkX21hc2s9InJlY2VpdmUi', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">[ 3256.689120] type=1400 audit(1405454041.341:73): apparmor=&#34;DENIED&#34; operation=&#34;ptrace&#34; profile=&#34;docker-default&#34; pid=17651 comm=&#34;docker&#34; requested_mask=&#34;receive&#34; denied_mask=&#34;receive&#34;</span></span></code></pre></div>
       
@@ -14597,28 +14583,36 @@ default unless in <code>privileged</code> mode. This line shows that apparmor ha
 
 <p>If you need to check which profiles are loaded,  you can use <code>aa-status</code>. The
 output looks like:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBzdWRvIGFhLXN0YXR1cwphcHBhcm1vciBtb2R1bGUgaXMgbG9hZGVkLgoxNCBwcm9maWxlcyBhcmUgbG9hZGVkLgoxIHByb2ZpbGVzIGFyZSBpbiBlbmZvcmNlIG1vZGUuCiAgIGRvY2tlci1kZWZhdWx0CjEzIHByb2ZpbGVzIGFyZSBpbiBjb21wbGFpbiBtb2RlLgogICAvdXNyL2Jpbi9kb2NrZXIKICAgL3Vzci9iaW4vZG9ja2VyLy8vYmluL2NhdAogICAvdXNyL2Jpbi9kb2NrZXIvLy9iaW4vcHMKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi9hcHBhcm1vcl9wYXJzZXIKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi9hdXBsaW5rCiAgIC91c3IvYmluL2RvY2tlci8vL3NiaW4vYmxraWQKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi9pcHRhYmxlcwogICAvdXNyL2Jpbi9kb2NrZXIvLy9zYmluL21rZTJmcwogICAvdXNyL2Jpbi9kb2NrZXIvLy9zYmluL21vZHByb2JlCiAgIC91c3IvYmluL2RvY2tlci8vL3NiaW4vdHVuZTJmcwogICAvdXNyL2Jpbi9kb2NrZXIvLy9zYmluL3h0YWJsZXMtbXVsdGkKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi96ZnMKICAgL3Vzci9iaW4vZG9ja2VyLy8vdXNyL2Jpbi94egozOCBwcm9jZXNzZXMgaGF2ZSBwcm9maWxlcyBkZWZpbmVkLgozNyBwcm9jZXNzZXMgYXJlIGluIGVuZm9yY2UgbW9kZS4KICAgZG9ja2VyLWRlZmF1bHQgKDYwNDQpCiAgIC4uLgogICBkb2NrZXItZGVmYXVsdCAoMzE4OTkpCjEgcHJvY2Vzc2VzIGFyZSBpbiBjb21wbGFpbiBtb2RlLgogICAvdXNyL2Jpbi9kb2NrZXIgKDI5NzU2KQowIHByb2Nlc3NlcyBhcmUgdW5jb25maW5lZCBidXQgaGF2ZSBhIHByb2ZpbGUgZGVmaW5lZC4=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBzdWRvIGFhLXN0YXR1cwphcHBhcm1vciBtb2R1bGUgaXMgbG9hZGVkLgoxNCBwcm9maWxlcyBhcmUgbG9hZGVkLgoxIHByb2ZpbGVzIGFyZSBpbiBlbmZvcmNlIG1vZGUuCiAgIGRvY2tlci1kZWZhdWx0CjEzIHByb2ZpbGVzIGFyZSBpbiBjb21wbGFpbiBtb2RlLgogICAvdXNyL2Jpbi9kb2NrZXIKICAgL3Vzci9iaW4vZG9ja2VyLy8vYmluL2NhdAogICAvdXNyL2Jpbi9kb2NrZXIvLy9iaW4vcHMKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi9hcHBhcm1vcl9wYXJzZXIKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi9hdXBsaW5rCiAgIC91c3IvYmluL2RvY2tlci8vL3NiaW4vYmxraWQKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi9pcHRhYmxlcwogICAvdXNyL2Jpbi9kb2NrZXIvLy9zYmluL21rZTJmcwogICAvdXNyL2Jpbi9kb2NrZXIvLy9zYmluL21vZHByb2JlCiAgIC91c3IvYmluL2RvY2tlci8vL3NiaW4vdHVuZTJmcwogICAvdXNyL2Jpbi9kb2NrZXIvLy9zYmluL3h0YWJsZXMtbXVsdGkKICAgL3Vzci9iaW4vZG9ja2VyLy8vc2Jpbi96ZnMKICAgL3Vzci9iaW4vZG9ja2VyLy8vdXNyL2Jpbi94egozOCBwcm9jZXNzZXMgaGF2ZSBwcm9maWxlcyBkZWZpbmVkLgozNyBwcm9jZXNzZXMgYXJlIGluIGVuZm9yY2UgbW9kZS4KICAgZG9ja2VyLWRlZmF1bHQgKDYwNDQpCiAgIC4uLgogICBkb2NrZXItZGVmYXVsdCAoMzE4OTkpCjEgcHJvY2Vzc2VzIGFyZSBpbiBjb21wbGFpbiBtb2RlLgogICAvdXNyL2Jpbi9kb2NrZXIgKDI5NzU2KQowIHByb2Nlc3NlcyBhcmUgdW5jb25maW5lZCBidXQgaGF2ZSBhIHByb2ZpbGUgZGVmaW5lZC4=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo aa-status
 </span></span><span class="line"><span class="cl"><span class="go">apparmor module is loaded.

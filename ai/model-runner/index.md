@@ -3,34 +3,36 @@ Docker Model Runner
 
 {{< summary-bar feature_name="Docker Model Runner" >}}
 
-The Docker Model Runner plugin lets you:
+## Key features
 
-- [Pull models from Docker Hub](https://hub.docker.com/u/ai)
-- Run AI models directly from the command line
-- Manage local models (add, list, remove)
-- Interact with models using a submitted prompt or in chat mode in the CLI or Docker Desktop Dashboard
-- Push models to Docker Hub
+- [Pull and push models to and from Docker Hub](https://hub.docker.com/u/ai)
+- Run and interact with AI models directly from the command line or from the Docker Desktop GUI
+- Manage local models and display logs
+
+## How it works
 
 Models are pulled from Docker Hub the first time they're used and stored locally. They're loaded into memory only at runtime when a request is made, and unloaded when not in use to optimize resources. Since models can be large, the initial pull may take some time — but after that, they're cached locally for faster access. You can interact with the model using [OpenAI-compatible APIs](#what-api-endpoints-are-available).
 
 > [!TIP]
 >
-> Using Testcontainers or Docker Compose? [Testcontainers for Java](https://java.testcontainers.org/modules/docker_model_runner/) and [Go](https://golang.testcontainers.org/modules/dockermodelrunner/), and [Docker Compose](/manuals/compose/how-tos/model-runner.md) now support Docker Model Runner.
+> Using Testcontainers or Docker Compose?
+> [Testcontainers for Java](https://java.testcontainers.org/modules/docker_model_runner/)
+> and [Go](https://golang.testcontainers.org/modules/dockermodelrunner/), and
+> [Docker Compose](/manuals/compose/how-tos/model-runner.md) now support Docker Model Runner.
 
 ## Enable Docker Model Runner
 
 ### Enable DMR in Docker Desktop
 
-1. Navigate to the **Features in development** tab in settings.
-2. Under the **Experimental features** tab, select **Access experimental features**.
-3. Select **Apply and restart**.
-4. Quit and reopen Docker Desktop to ensure the changes take effect.
-5. Open the **Settings** view in Docker Desktop.
-6. Navigate to **Features in development**.
-7. From the **Beta** tab, tick the **Enable Docker Model Runner** setting.
-8. If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the **Enable GPU-backed inference** setting.
+1. Navigate to the **Beta features** tab in settings.
+2. Tick the **Enable Docker Model Runner** setting.
+3. If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the **Enable GPU-backed inference** setting.
 
 You can now use the `docker model` command in the CLI and view and interact with your local models in the **Models** tab in the Docker Desktop Dashboard.
+
+> [!IMPORTANT]
+>
+> For Docker Desktop versions 4.41 and earlier, this settings lived under the **Experimental features** tab on the **Features in development** page.
 
 ### Enable DMR in Docker Engine
 
@@ -63,7 +65,58 @@ You can now use the `docker model` command in the CLI and view and interact with
    $ docker model run ai/smollm2
    ```
 
-## Integrate the Docker Model Runner into your software development lifecycle
+## Pull a model
+
+Models are cached locally.
+
+{{< tabs >}}
+{{< tab name="From Docker Desktop">}}
+
+1. Select **Models** and select the **Docker Hub** tab.
+2. Find the model of your choice and select **Pull**.
+
+{{< /tab >}}
+{{< tab name="From the Docker CLI">}}
+
+Use the [`docker model pull` command](/reference/cli/docker/).
+
+{{< /tab >}}
+{{< /tabs >}}
+
+## Run a model
+
+{{< tabs >}}
+{{< tab name="From Docker Desktop">}}
+
+Select **Models** and select the **Local** tab and click the play button.
+The interactive chat screen opens.
+
+{{< /tab >}}
+{{< tab name="From the Docker CLI">}}
+
+Use the [`docker model run` command](/reference/cli/docker/).
+
+{{< /tab >}}
+{{< /tabs >}}
+
+## Troubleshooting
+
+To troubleshoot potential issues, display the logs:
+
+{{< tabs >}}
+{{< tab name="From Docker Desktop">}}
+
+Select **Models** and select the **Logs** tab.
+
+{{< /tab >}}
+{{< tab name="From the Docker CLI">}}
+
+Use the [`docker model log` command](/reference/cli/docker/).
+
+{{< /tab >}}
+{{< /tabs >}}
+
+## Example: Integrate Docker Model Runner into your software development lifecycle
 
 You can now start building your Generative AI application powered by the Docker Model Runner.
 
@@ -99,8 +152,32 @@ See [the reference docs](/reference/cli/docker/model/).
 
 Once the feature is enabled, new API endpoints are available under the following base URLs:
 
+{{< tabs >}}
+{{< tab name="Docker Desktop">}}
+
 - From containers: `http://model-runner.docker.internal/`
-- From host processes: `http://localhost:12434/`, assuming you have enabled TCP host access on default port 12434.
+- From host processes: `http://localhost:12434/`, assuming TCP host access is
+  enabled on the default port (12434).
+
+{{< /tab >}}
+{{< tab name="Docker Engine">}}
+
+- From containers: `http://172.17.0.1:12434/` (with `172.17.0.1` representing the host gateway address)
+- From host processes: `http://localhost:12434/`
+
+> [!NOTE]
+> The `172.17.0.1` interface may not be available by default to containers
+ within a Compose project.
+> In this case, add an `extra_hosts` directive to your Compose service YAML:
+> 
+> ```yaml
+> extra_hosts:
+>   - "model-runner.docker.internal:host-gateway"
+> ```
+> Then you can access the Docker Model Runner APIs at http://model-runner.docker.internal:12434/
+
+{{< /tab >}}
+{{</tabs >}}
 
 Docker Model management endpoints:
 
@@ -126,7 +203,6 @@ with `/exp/vDD4.40`.
 
 > [!NOTE]
 > You can omit `llama.cpp` from the path. For example: `POST /engines/v1/chat/completions`.
-
 
 ### How do I interact through the OpenAI API?
 
@@ -244,11 +320,4 @@ The Docker Model CLI currently lacks consistent support for specifying models by
 
 Thanks for trying out Docker Model Runner. Give feedback or report any bugs you may find through the **Give feedback** link next to the **Enable Docker Model Runner** setting.
 
-## Disable the feature
 
-To disable Docker Model Runner:
-
-1. Open the **Settings** view in Docker Desktop.
-2. Navigate to the **Beta** tab in **Features in development**.
-3. Clear the **Enable Docker Model Runner** checkbox.
-4. Select **Apply & restart**.

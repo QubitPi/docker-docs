@@ -45,7 +45,7 @@ subscription management for organizations.
 
 - [Docker Build Cloud](https://docs.docker.com/build-cloud/)
 
-- [Docker Model Runner](https://docs.docker.com/model-runner/)
+- [Docker Model Runner](https://docs.docker.com/ai/model-runner/)
 
 - [Docker accounts](https://docs.docker.com/accounts/)
 

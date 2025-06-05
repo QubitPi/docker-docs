@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -9664,28 +9664,36 @@ For information about JSON Lines, see
 
 <p>You'll need two shells for this example.</p>
 <p><strong>Shell 1: Listening for events:</strong></p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgZXZlbnRz', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgZXZlbnRz', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker events
 </span></span></code></pre></div>
@@ -9694,28 +9702,36 @@ For information about JSON Lines, see
   </div>
 </div>
 <p><strong>Shell 2: Start and Stop containers:</strong></p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgY3JlYXRlIC0tbmFtZSB0ZXN0IGFscGluZTpsYXRlc3QgdG9wCiQgZG9ja2VyIHN0YXJ0IHRlc3QKJCBkb2NrZXIgc3RvcCB0ZXN0', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgY3JlYXRlIC0tbmFtZSB0ZXN0IGFscGluZTpsYXRlc3QgdG9wCiQgZG9ja2VyIHN0YXJ0IHRlc3QKJCBkb2NrZXIgc3RvcCB0ZXN0', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker create --name <span class="nb">test</span> alpine:latest top
 </span></span><span class="line"><span class="cl"><span class="gp">$</span> docker start <span class="nb">test</span>
@@ -9726,28 +9742,36 @@ For information about JSON Lines, see
   </div>
 </div>
 <p><strong>Shell 1: (Again .. now showing events):</strong></p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'MjAxNy0wMS0wNVQwMDozNTo1OC44NTk0MDExNzcrMDg6MDAgY29udGFpbmVyIGNyZWF0ZSAwZmRiNDhhZGRjODI4NzFlYjM0ZWIyM2E4NDdjZmQwMzNkZWRkMWEwYTM3YmVmMmU2ZDllYjM4NzBmYzdmZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzAzNjMxOTAzKzA4OjAwIG5ldHdvcmsgY29ubmVjdCBlMmUxZjVjZWRhMDlkNDMwMGYzYTg0NmYwYWNmYWE5YThiYjBkODllNzc1ZWI3NDRjNWFjZWNkNjBlMDUyOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowNC43OTUwMzE2MDkrMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODMwMjY4NzQ3KzA4OjAwIGNvbnRhaW5lciBraWxsIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QsIHNpZ25hbD0xNSkKMjAxNy0wMS0wNVQwMDozNjowOS44NDAxODYzMzgrMDg6MDAgY29udGFpbmVyIGRpZSAwZmRiLi4uZmYzNyAoZXhpdENvZGU9MTQzLCBpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODgwMTEzNjYzKzA4OjAwIG5ldHdvcmsgZGlzY29ubmVjdCBlMmUuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowOS44OTAyMTQwNTMrMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCk=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'MjAxNy0wMS0wNVQwMDozNTo1OC44NTk0MDExNzcrMDg6MDAgY29udGFpbmVyIGNyZWF0ZSAwZmRiNDhhZGRjODI4NzFlYjM0ZWIyM2E4NDdjZmQwMzNkZWRkMWEwYTM3YmVmMmU2ZDllYjM4NzBmYzdmZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzAzNjMxOTAzKzA4OjAwIG5ldHdvcmsgY29ubmVjdCBlMmUxZjVjZWRhMDlkNDMwMGYzYTg0NmYwYWNmYWE5YThiYjBkODllNzc1ZWI3NDRjNWFjZWNkNjBlMDUyOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowNC43OTUwMzE2MDkrMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODMwMjY4NzQ3KzA4OjAwIGNvbnRhaW5lciBraWxsIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QsIHNpZ25hbD0xNSkKMjAxNy0wMS0wNVQwMDozNjowOS44NDAxODYzMzgrMDg6MDAgY29udGFpbmVyIGRpZSAwZmRiLi4uZmYzNyAoZXhpdENvZGU9MTQzLCBpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODgwMTEzNjYzKzA4OjAwIG5ldHdvcmsgZGlzY29ubmVjdCBlMmUuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowOS44OTAyMTQwNTMrMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCk=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">2017-01-05T00:35:58.859401177+08:00 container create 0fdb48addc82871eb34eb23a847cfd033dedd1a0a37bef2e6d9eb3870fc7ff37 (image=alpine:latest, name=test)
 </span></span></span><span class="line"><span class="cl"><span class="go">2017-01-05T00:36:04.703631903+08:00 network connect e2e1f5ceda09d4300f3a846f0acfaa9a8bb0d89e775eb744c5acecd60e0529e2 (container=0fdb...ff37, name=bridge, type=bridge)
@@ -9771,28 +9795,36 @@ For information about JSON Lines, see
 
 <p>You can filter the output by an absolute timestamp or relative time on the host
 machine, using the following different time formats:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tc2luY2UgMTQ4MzI4MzgwNAoyMDE3LTAxLTA1VDAwOjM1OjQxLjI0MTc3Mjk1MyswODowMCB2b2x1bWUgY3JlYXRlIHRlc3RWb2wgKGRyaXZlcj1sb2NhbCkKMjAxNy0wMS0wNVQwMDozNTo1OC44NTk0MDExNzcrMDg6MDAgY29udGFpbmVyIGNyZWF0ZSBkOWNkLi4uNGQ3MCAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA0LjcwMzYzMTkwMyswODowMCBuZXR3b3JrIGNvbm5lY3QgZTJlMS4uLjI5ZTIgKGNvbnRhaW5lcj0wZmRiLi4uZmYzNywgbmFtZT1icmlkZ2UsIHR5cGU9YnJpZGdlKQoyMDE3LTAxLTA1VDAwOjM2OjA0Ljc5NTAzMTYwOSswODowMCBjb250YWluZXIgc3RhcnQgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowOS44MzAyNjg3NDcrMDg6MDAgY29udGFpbmVyIGtpbGwgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCwgc2lnbmFsPTE1KQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg0MDE4NjMzOCswODowMCBjb250YWluZXIgZGllIDBmZGIuLi5mZjM3IChleGl0Q29kZT0xNDMsIGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowOS44ODAxMTM2NjMrMDg6MDAgbmV0d29yayBkaXNjb25uZWN0IGUyZS4uLjI5ZTIgKGNvbnRhaW5lcj0wZmRiLi4uZmYzNywgbmFtZT1icmlkZ2UsIHR5cGU9YnJpZGdlKQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg5MDIxNDA1MyswODowMCBjb250YWluZXIgc3RvcCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoKJCBkb2NrZXIgZXZlbnRzIC0tc2luY2UgJzIwMTctMDEtMDUnCjIwMTctMDEtMDVUMDA6MzU6NDEuMjQxNzcyOTUzKzA4OjAwIHZvbHVtZSBjcmVhdGUgdGVzdFZvbCAoZHJpdmVyPWxvY2FsKQoyMDE3LTAxLTA1VDAwOjM1OjU4Ljg1OTQwMTE3NyswODowMCBjb250YWluZXIgY3JlYXRlIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzAzNjMxOTAzKzA4OjAwIG5ldHdvcmsgY29ubmVjdCBlMmUxLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzk1MDMxNjA5KzA4OjAwIGNvbnRhaW5lciBzdGFydCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5LjgzMDI2ODc0NyswODowMCBjb250YWluZXIga2lsbCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0LCBzaWduYWw9MTUpCjIwMTctMDEtMDVUMDA6MzY6MDkuODQwMTg2MzM4KzA4OjAwIGNvbnRhaW5lciBkaWUgMGZkYi4uLmZmMzcgKGV4aXRDb2RlPTE0MywgaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg4MDExMzY2MyswODowMCBuZXR3b3JrIGRpc2Nvbm5lY3QgZTJlLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDkuODkwMjE0MDUzKzA4OjAwIGNvbnRhaW5lciBzdG9wIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCgokIGRvY2tlciBldmVudHMgLS1zaW5jZSAnMjAxMy0wOS0wM1QxNTo0OToyOScKMjAxNy0wMS0wNVQwMDozNTo0MS4yNDE3NzI5NTMrMDg6MDAgdm9sdW1lIGNyZWF0ZSB0ZXN0Vm9sIChkcml2ZXI9bG9jYWwpCjIwMTctMDEtMDVUMDA6MzU6NTguODU5NDAxMTc3KzA4OjAwIGNvbnRhaW5lciBjcmVhdGUgZDljZC4uLjRkNzAgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowNC43MDM2MzE5MDMrMDg6MDAgbmV0d29yayBjb25uZWN0IGUyZTEuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowNC43OTUwMzE2MDkrMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODMwMjY4NzQ3KzA4OjAwIGNvbnRhaW5lciBraWxsIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QsIHNpZ25hbD0xNSkKMjAxNy0wMS0wNVQwMDozNjowOS44NDAxODYzMzgrMDg6MDAgY29udGFpbmVyIGRpZSAwZmRiLi4uZmYzNyAoZXhpdENvZGU9MTQzLCBpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODgwMTEzNjYzKzA4OjAwIG5ldHdvcmsgZGlzY29ubmVjdCBlMmUuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowOS44OTAyMTQwNTMrMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKCiQgZG9ja2VyIGV2ZW50cyAtLXNpbmNlICcxMG0nCjIwMTctMDEtMDVUMDA6MzU6NDEuMjQxNzcyOTUzKzA4OjAwIHZvbHVtZSBjcmVhdGUgdGVzdFZvbCAoZHJpdmVyPWxvY2FsKQoyMDE3LTAxLTA1VDAwOjM1OjU4Ljg1OTQwMTE3NyswODowMCBjb250YWluZXIgY3JlYXRlIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzAzNjMxOTAzKzA4OjAwIG5ldHdvcmsgY29ubmVjdCBlMmUxLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzk1MDMxNjA5KzA4OjAwIGNvbnRhaW5lciBzdGFydCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5LjgzMDI2ODc0NyswODowMCBjb250YWluZXIga2lsbCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0LCBzaWduYWw9MTUpCjIwMTctMDEtMDVUMDA6MzY6MDkuODQwMTg2MzM4KzA4OjAwIGNvbnRhaW5lciBkaWUgMGZkYi4uLmZmMzcgKGV4aXRDb2RlPTE0MywgaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg4MDExMzY2MyswODowMCBuZXR3b3JrIGRpc2Nvbm5lY3QgZTJlLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDkuODkwMjE0MDUzKzA4OjAwIGNvbnRhaW5lciBzdG9wIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCgokIGRvY2tlciBldmVudHMgLS1zaW5jZSAnMjAxNy0wMS0wNVQwMDozNTozMCcgLS11bnRpbCAnMjAxNy0wMS0wNVQwMDozNjowNScKMjAxNy0wMS0wNVQwMDozNTo0MS4yNDE3NzI5NTMrMDg6MDAgdm9sdW1lIGNyZWF0ZSB0ZXN0Vm9sIChkcml2ZXI9bG9jYWwpCjIwMTctMDEtMDVUMDA6MzU6NTguODU5NDAxMTc3KzA4OjAwIGNvbnRhaW5lciBjcmVhdGUgZDljZC4uLjRkNzAgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowNC43MDM2MzE5MDMrMDg6MDAgbmV0d29yayBjb25uZWN0IGUyZTEuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowNC43OTUwMzE2MDkrMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3Qp', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tc2luY2UgMTQ4MzI4MzgwNAoyMDE3LTAxLTA1VDAwOjM1OjQxLjI0MTc3Mjk1MyswODowMCB2b2x1bWUgY3JlYXRlIHRlc3RWb2wgKGRyaXZlcj1sb2NhbCkKMjAxNy0wMS0wNVQwMDozNTo1OC44NTk0MDExNzcrMDg6MDAgY29udGFpbmVyIGNyZWF0ZSBkOWNkLi4uNGQ3MCAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA0LjcwMzYzMTkwMyswODowMCBuZXR3b3JrIGNvbm5lY3QgZTJlMS4uLjI5ZTIgKGNvbnRhaW5lcj0wZmRiLi4uZmYzNywgbmFtZT1icmlkZ2UsIHR5cGU9YnJpZGdlKQoyMDE3LTAxLTA1VDAwOjM2OjA0Ljc5NTAzMTYwOSswODowMCBjb250YWluZXIgc3RhcnQgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowOS44MzAyNjg3NDcrMDg6MDAgY29udGFpbmVyIGtpbGwgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCwgc2lnbmFsPTE1KQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg0MDE4NjMzOCswODowMCBjb250YWluZXIgZGllIDBmZGIuLi5mZjM3IChleGl0Q29kZT0xNDMsIGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowOS44ODAxMTM2NjMrMDg6MDAgbmV0d29yayBkaXNjb25uZWN0IGUyZS4uLjI5ZTIgKGNvbnRhaW5lcj0wZmRiLi4uZmYzNywgbmFtZT1icmlkZ2UsIHR5cGU9YnJpZGdlKQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg5MDIxNDA1MyswODowMCBjb250YWluZXIgc3RvcCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoKJCBkb2NrZXIgZXZlbnRzIC0tc2luY2UgJzIwMTctMDEtMDUnCjIwMTctMDEtMDVUMDA6MzU6NDEuMjQxNzcyOTUzKzA4OjAwIHZvbHVtZSBjcmVhdGUgdGVzdFZvbCAoZHJpdmVyPWxvY2FsKQoyMDE3LTAxLTA1VDAwOjM1OjU4Ljg1OTQwMTE3NyswODowMCBjb250YWluZXIgY3JlYXRlIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzAzNjMxOTAzKzA4OjAwIG5ldHdvcmsgY29ubmVjdCBlMmUxLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzk1MDMxNjA5KzA4OjAwIGNvbnRhaW5lciBzdGFydCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5LjgzMDI2ODc0NyswODowMCBjb250YWluZXIga2lsbCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0LCBzaWduYWw9MTUpCjIwMTctMDEtMDVUMDA6MzY6MDkuODQwMTg2MzM4KzA4OjAwIGNvbnRhaW5lciBkaWUgMGZkYi4uLmZmMzcgKGV4aXRDb2RlPTE0MywgaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg4MDExMzY2MyswODowMCBuZXR3b3JrIGRpc2Nvbm5lY3QgZTJlLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDkuODkwMjE0MDUzKzA4OjAwIGNvbnRhaW5lciBzdG9wIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCgokIGRvY2tlciBldmVudHMgLS1zaW5jZSAnMjAxMy0wOS0wM1QxNTo0OToyOScKMjAxNy0wMS0wNVQwMDozNTo0MS4yNDE3NzI5NTMrMDg6MDAgdm9sdW1lIGNyZWF0ZSB0ZXN0Vm9sIChkcml2ZXI9bG9jYWwpCjIwMTctMDEtMDVUMDA6MzU6NTguODU5NDAxMTc3KzA4OjAwIGNvbnRhaW5lciBjcmVhdGUgZDljZC4uLjRkNzAgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowNC43MDM2MzE5MDMrMDg6MDAgbmV0d29yayBjb25uZWN0IGUyZTEuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowNC43OTUwMzE2MDkrMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODMwMjY4NzQ3KzA4OjAwIGNvbnRhaW5lciBraWxsIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QsIHNpZ25hbD0xNSkKMjAxNy0wMS0wNVQwMDozNjowOS44NDAxODYzMzgrMDg6MDAgY29udGFpbmVyIGRpZSAwZmRiLi4uZmYzNyAoZXhpdENvZGU9MTQzLCBpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDkuODgwMTEzNjYzKzA4OjAwIG5ldHdvcmsgZGlzY29ubmVjdCBlMmUuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowOS44OTAyMTQwNTMrMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKCiQgZG9ja2VyIGV2ZW50cyAtLXNpbmNlICcxMG0nCjIwMTctMDEtMDVUMDA6MzU6NDEuMjQxNzcyOTUzKzA4OjAwIHZvbHVtZSBjcmVhdGUgdGVzdFZvbCAoZHJpdmVyPWxvY2FsKQoyMDE3LTAxLTA1VDAwOjM1OjU4Ljg1OTQwMTE3NyswODowMCBjb250YWluZXIgY3JlYXRlIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzAzNjMxOTAzKzA4OjAwIG5ldHdvcmsgY29ubmVjdCBlMmUxLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDQuNzk1MDMxNjA5KzA4OjAwIGNvbnRhaW5lciBzdGFydCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5LjgzMDI2ODc0NyswODowMCBjb250YWluZXIga2lsbCAwZmRiLi4uZmYzNyAoaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0LCBzaWduYWw9MTUpCjIwMTctMDEtMDVUMDA6MzY6MDkuODQwMTg2MzM4KzA4OjAwIGNvbnRhaW5lciBkaWUgMGZkYi4uLmZmMzcgKGV4aXRDb2RlPTE0MywgaW1hZ2U9YWxwaW5lOmxhdGVzdCwgbmFtZT10ZXN0KQoyMDE3LTAxLTA1VDAwOjM2OjA5Ljg4MDExMzY2MyswODowMCBuZXR3b3JrIGRpc2Nvbm5lY3QgZTJlLi4uMjllMiAoY29udGFpbmVyPTBmZGIuLi5mZjM3LCBuYW1lPWJyaWRnZSwgdHlwZT1icmlkZ2UpCjIwMTctMDEtMDVUMDA6MzY6MDkuODkwMjE0MDUzKzA4OjAwIGNvbnRhaW5lciBzdG9wIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCgokIGRvY2tlciBldmVudHMgLS1zaW5jZSAnMjAxNy0wMS0wNVQwMDozNTozMCcgLS11bnRpbCAnMjAxNy0wMS0wNVQwMDozNjowNScKMjAxNy0wMS0wNVQwMDozNTo0MS4yNDE3NzI5NTMrMDg6MDAgdm9sdW1lIGNyZWF0ZSB0ZXN0Vm9sIChkcml2ZXI9bG9jYWwpCjIwMTctMDEtMDVUMDA6MzU6NTguODU5NDAxMTc3KzA4OjAwIGNvbnRhaW5lciBjcmVhdGUgZDljZC4uLjRkNzAgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDozNjowNC43MDM2MzE5MDMrMDg6MDAgbmV0d29yayBjb25uZWN0IGUyZTEuLi4yOWUyIChjb250YWluZXI9MGZkYi4uLmZmMzcsIG5hbWU9YnJpZGdlLCB0eXBlPWJyaWRnZSkKMjAxNy0wMS0wNVQwMDozNjowNC43OTUwMzE2MDkrMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3Qp', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker events --since <span class="m">1483283804</span>
 </span></span><span class="line"><span class="cl"><span class="go">2017-01-05T00:35:41.241772953+08:00 volume create testVol (driver=local)
@@ -9853,28 +9885,36 @@ machine, using the following different time formats:</p>
 
 <p>The following commands show several different ways to filter the <code>docker event</code>
 output.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICdldmVudD1zdG9wJwoKMjAxNy0wMS0wNVQwMDo0MDoyMi44ODAxNzU0MjArMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0MToxNy44ODgxMDQxODIrMDg6MDAgY29udGFpbmVyIHN0b3AgMmE4Zi4uLjRlNzggKGltYWdlPWFscGluZSwgbmFtZT1raWNrYXNzX2JyYXR0YWluKQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICdpbWFnZT1hbHBpbmUnCgoyMDE3LTAxLTA1VDAwOjQxOjU1Ljc4NDI0MDIzNiswODowMCBjb250YWluZXIgY3JlYXRlIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lcikKMjAxNy0wMS0wNVQwMDo0MTo1NS45MTMxNTY3ODMrMDg6MDAgY29udGFpbmVyIHN0YXJ0IGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lcikKMjAxNy0wMS0wNVQwMDo0MjowMS4xMDY4NzUyNDkrMDg6MDAgY29udGFpbmVyIGtpbGwgZDljZC4uLjRkNzAgKGltYWdlPWFscGluZSwgbmFtZT1oYXBweV9tZWl0bmVyLCBzaWduYWw9MTUpCjIwMTctMDEtMDVUMDA6NDI6MTEuMTExOTM0MDQxKzA4OjAwIGNvbnRhaW5lciBraWxsIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lciwgc2lnbmFsPTkpCjIwMTctMDEtMDVUMDA6NDI6MTEuMTE5NTc4MjA0KzA4OjAwIGNvbnRhaW5lciBkaWUgZDljZC4uLjRkNzAgKGV4aXRDb2RlPTEzNywgaW1hZ2U9YWxwaW5lLCBuYW1lPWhhcHB5X21laXRuZXIpCjIwMTctMDEtMDVUMDA6NDI6MTEuMTczMjc2NjExKzA4OjAwIGNvbnRhaW5lciBzdG9wIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lcikKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnY29udGFpbmVyPXRlc3QnCgoyMDE3LTAxLTA1VDAwOjQzOjAwLjEzOTcxOTkzNCswODowMCBjb250YWluZXIgc3RhcnQgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0MzowOS4yNTk5NTEwODYrMDg6MDAgY29udGFpbmVyIGtpbGwgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCwgc2lnbmFsPTE1KQoyMDE3LTAxLTA1VDAwOjQzOjA5LjI3MDEwMjcxNSswODowMCBjb250YWluZXIgZGllIDBmZGIuLi5mZjM3IChleGl0Q29kZT0xNDMsIGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0MzowOS4zMTI1NTY0NDArMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnY29udGFpbmVyPXRlc3QnIC0tZmlsdGVyICdjb250YWluZXI9ZDljZGIxNTI1ZWE4JwoKMjAxNy0wMS0wNVQwMDo0NDoxMS41MTcwNzE5ODErMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6NDQ6MTcuNjg1ODcwOTAxKzA4OjAwIGNvbnRhaW5lciBzdGFydCBkOWNkLi4uNGQ3MCAoaW1hZ2U9YWxwaW5lLCBuYW1lPWhhcHB5X21laXRuZXIpCjIwMTctMDEtMDVUMDA6NDQ6MjkuNzU3NjU4NDcwKzA4OjAwIGNvbnRhaW5lciBraWxsIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QsIHNpZ25hbD05KQoyMDE3LTAxLTA1VDAwOjQ0OjI5Ljc2NzcxODUxMCswODowMCBjb250YWluZXIgZGllIDBmZGIuLi5mZjM3IChleGl0Q29kZT0xMzcsIGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0NDoyOS44MTU3OTgzNDQrMDg6MDAgY29udGFpbmVyIGRlc3Ryb3kgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnY29udGFpbmVyPXRlc3QnIC0tZmlsdGVyICdldmVudD1zdG9wJwoKMjAxNy0wMS0wNVQwMDo0NjoxMy42NjQwOTk1MDUrMDg6MDAgY29udGFpbmVyIHN0b3AgYTlkMS4uLmUxMzAgKGltYWdlPWFscGluZSwgbmFtZT10ZXN0KQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICd0eXBlPXZvbHVtZScKCjIwMTUtMTItMjNUMjE6MDU6MjguMTM2MjEyNjg5WiB2b2x1bWUgY3JlYXRlIHRlc3QtZXZlbnQtdm9sdW1lLWxvY2FsIChkcml2ZXI9bG9jYWwpCjIwMTUtMTItMjNUMjE6MDU6MjguMzgzNDYyNzE3WiB2b2x1bWUgbW91bnQgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKHJlYWQvd3JpdGU9dHJ1ZSwgY29udGFpbmVyPTU2MmYuLi41MDI1LCBkZXN0aW5hdGlvbj0vZm9vLCBkcml2ZXI9bG9jYWwsIHByb3BhZ2F0aW9uPXJwcml2YXRlKQoyMDE1LTEyLTIzVDIxOjA1OjI4LjY1MDMxNDI2NVogdm9sdW1lIHVubW91bnQgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKGNvbnRhaW5lcj01NjJmLi4uNTAyNSwgZHJpdmVyPWxvY2FsKQoyMDE1LTEyLTIzVDIxOjA1OjI4LjcxNjIxODQwNVogdm9sdW1lIGRlc3Ryb3kgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKGRyaXZlcj1sb2NhbCkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAndHlwZT1uZXR3b3JrJwoKMjAxNS0xMi0yM1QyMTozODoyNC43MDU3MDkxMzNaIG5ldHdvcmsgY3JlYXRlIDhiMTEuLi4yYzViIChuYW1lPXRlc3QtZXZlbnQtbmV0d29yay1sb2NhbCwgdHlwZT1icmlkZ2UpCjIwMTUtMTItMjNUMjE6Mzg6MjUuMTE5NjI1MTIzWiBuZXR3b3JrIGNvbm5lY3QgOGIxMS4uLjJjNWIgKG5hbWU9dGVzdC1ldmVudC1uZXR3b3JrLWxvY2FsLCBjb250YWluZXI9YjRiZS4uLmM1NGUsIHR5cGU9YnJpZGdlKQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICdjb250YWluZXI9Y29udGFpbmVyXzEnIC0tZmlsdGVyICdjb250YWluZXI9Y29udGFpbmVyXzInCgoyMDE0LTA5LTAzVDE1OjQ5OjI5Ljk5OTk5OTk5OVowNzowMCBjb250YWluZXIgZGllIDQzODZmYjk3ODY3ZCAoaW1hZ2U9dWJ1bnR1OjI0LjA0KQoyMDE0LTA1LTEwVDE3OjQyOjE0Ljk5OTk5OTk5OVowNzowMCBjb250YWluZXIgc3RvcCA0Mzg2ZmI5Nzg2N2QgKGltYWdlPXVidW50dToyNC4wNCkKMjAxNC0wNS0xMFQxNzo0MjoxNC45OTk5OTk5OTlaMDc6MDAgY29udGFpbmVyIGRpZSA3ODA1YzFkMzU2MzIgKGltYWdlcj1yZWRpczo3LjIpCjIwMTQtMDktMDNUMTU6NDk6MjkuOTk5OTk5OTk5WjA3OjAwIGNvbnRhaW5lciBzdG9wIDc4MDVjMWQzNTYzMiAoaW1hZ2U9cmVkaXM6Ny4yKQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICd0eXBlPXZvbHVtZScKCjIwMTUtMTItMjNUMjE6MDU6MjguMTM2MjEyNjg5WiB2b2x1bWUgY3JlYXRlIHRlc3QtZXZlbnQtdm9sdW1lLWxvY2FsIChkcml2ZXI9bG9jYWwpCjIwMTUtMTItMjNUMjE6MDU6MjguMzgzNDYyNzE3WiB2b2x1bWUgbW91bnQgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKHJlYWQvd3JpdGU9dHJ1ZSwgY29udGFpbmVyPTU2MmZlMTA2NzFlOTI3M2RhMjVlZWQzNmNkY2UyNjE1OTA4NWFjN2VlNjcwNzEwNWZkNTM0ODY2MzQwYTUwMjUsIGRlc3RpbmF0aW9uPS9mb28sIGRyaXZlcj1sb2NhbCwgcHJvcGFnYXRpb249cnByaXZhdGUpCjIwMTUtMTItMjNUMjE6MDU6MjguNjUwMzE0MjY1WiB2b2x1bWUgdW5tb3VudCB0ZXN0LWV2ZW50LXZvbHVtZS1sb2NhbCAoY29udGFpbmVyPTU2MmZlMTA2NzFlOTI3M2RhMjVlZWQzNmNkY2UyNjE1OTA4NWFjN2VlNjcwNzEwNWZkNTM0ODY2MzQwYTUwMjUsIGRyaXZlcj1sb2NhbCkKMjAxNS0xMi0yM1QyMTowNToyOC43MTYyMTg0MDVaIHZvbHVtZSBkZXN0cm95IHRlc3QtZXZlbnQtdm9sdW1lLWxvY2FsIChkcml2ZXI9bG9jYWwpCgokIGRvY2tlciBldmVudHMgLS1maWx0ZXIgJ3R5cGU9bmV0d29yaycKCjIwMTUtMTItMjNUMjE6Mzg6MjQuNzA1NzA5MTMzWiBuZXR3b3JrIGNyZWF0ZSA4YjExMTIxNzk0NGJhMGJhODQ0YTY1YjEzZWZjZDU3ZGM0OTQ5MzJlZTI1Mjc1Nzc3NThmOTM5MzE1YmEyYzViIChuYW1lPXRlc3QtZXZlbnQtbmV0d29yay1sb2NhbCwgdHlwZT1icmlkZ2UpCjIwMTUtMTItMjNUMjE6Mzg6MjUuMTE5NjI1MTIzWiBuZXR3b3JrIGNvbm5lY3QgOGIxMTEyMTc5NDRiYTBiYTg0NGE2NWIxM2VmY2Q1N2RjNDk0OTMyZWUyNTI3NTc3NzU4ZjkzOTMxNWJhMmM1YiAobmFtZT10ZXN0LWV2ZW50LW5ldHdvcmstbG9jYWwsIGNvbnRhaW5lcj1iNGJlNjQ0MDMxYTNkOTBiNDAwZjg4YWIzZDRiZGY0ZGMyM2FkYjI1MGU2OTZiNjMyOGI4NTQ0MWFiZTJjNTRlLCB0eXBlPWJyaWRnZSkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAndHlwZT1wbHVnaW4nCgoyMDE2LTA3LTI1VDE3OjMwOjE0LjgyNTU1NzYxNlogcGx1Z2luIHB1bGwgZWM3Yjg3ZjJjZTg0MzMwZmUwNzZlNjY2ZjE3ZGZjMDQ5ZDJkN2FlMGI4MTkwNzYzZGU5NGUxZjJkMTA1OTkzZiAobmFtZT10aWJvcnZhc3Mvc2FtcGxlLXZvbHVtZS1wbHVnaW46bGF0ZXN0KQoyMDE2LTA3LTI1VDE3OjMwOjE0Ljg4ODEyNzM3MFogcGx1Z2luIGVuYWJsZSBlYzdiODdmMmNlODQzMzBmZTA3NmU2NjZmMTdkZmMwNDlkMmQ3YWUwYjgxOTA3NjNkZTk0ZTFmMmQxMDU5OTNmIChuYW1lPXRpYm9ydmFzcy9zYW1wbGUtdm9sdW1lLXBsdWdpbjpsYXRlc3QpCgokIGRvY2tlciBldmVudHMgLWYgdHlwZT1zZXJ2aWNlCgoyMDE3LTA3LTEyVDA2OjM0OjA3Ljk5OTQ0NjYyNVogc2VydmljZSBjcmVhdGUgd2o2NHN0ODlmemdjaHhuaGlxcG44cDRvaiAobmFtZT1yZXZlcmVudF9hbGJhdHRhbmkpCjIwMTctMDctMTJUMDY6MzQ6MjEuNDA1NDk2MjA3WiBzZXJ2aWNlIHJlbW92ZSB3ajY0c3Q4OWZ6Z2NoeG5oaXFwbjhwNG9qIChuYW1lPXJldmVyZW50X2FsYmF0dGFuaSkKCiQgZG9ja2VyIGV2ZW50cyAtZiB0eXBlPW5vZGUKCjIwMTctMDctMTJUMDY6MjE6NTEuOTUxNTg2NzU5WiBub2RlIHVwZGF0ZSAzeHl6NXR0cDFhMjUzcTc0ejF0aHd5d2s5IChuYW1lPWlwLTE3Mi0zMS0yMy00Miwgc3RhdGUubmV3PXJlYWR5LCBzdGF0ZS5vbGQ9dW5rbm93bikKCiQgZG9ja2VyIGV2ZW50cyAtZiB0eXBlPXNlY3JldAoKMjAxNy0wNy0xMlQwNjozMjoxMy45MTU3MDQzNjdaIHNlY3JldCBjcmVhdGUgczhvNnRtbG5uZHJnemJtZGlseXk1eW1qdSAobmFtZT1uZXdfc2VjcmV0KQoyMDE3LTA3LTEyVDA2OjMyOjM3LjA1MjY0Nzc4M1ogc2VjcmV0IHJlbW92ZSBzOG82dG1sbm5kcmd6Ym1kaWx5eTV5bWp1IChuYW1lPW5ld19zZWNyZXQpCgokICBkb2NrZXIgZXZlbnRzIC1mIHR5cGU9Y29uZmlnCjIwMTctMDctMTJUMDY6NDQ6MTMuMzQ5MDM3MTI3WiBjb25maWcgY3JlYXRlIHU5NnpsdnpkZnN5YjlzZzRtaHl4ZmgzcmwgKG5hbWU9YWJjKQoyMDE3LTA3LTEyVDA2OjQ0OjM2LjMyNzY5NDE4NFogY29uZmlnIHJlbW92ZSB1OTZ6bHZ6ZGZzeWI5c2c0bWh5eGZoM3JsIChuYW1lPWFiYykKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnc2NvcGU9c3dhcm0nCgoyMDE3LTA3LTEwVDA3OjQ2OjUwLjI1MDAyNDUwM1ogc2VydmljZSBjcmVhdGUgbThxY3h1ODA4MXdveW9mN3czamFheDZnayAobmFtZT1hZmZlY3Rpb25hdGVfd2lsc29uKQoyMDE3LTA3LTEwVDA3OjQ3OjMxLjA5Mzc5NzEzNFogc2VjcmV0IGNyZWF0ZSA2ZzVwdWZ6c3Y0MzhwOXRidmw5ajk0b2Q0IChuYW1lPW5ld19zZWNyZXQp', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICdldmVudD1zdG9wJwoKMjAxNy0wMS0wNVQwMDo0MDoyMi44ODAxNzU0MjArMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0MToxNy44ODgxMDQxODIrMDg6MDAgY29udGFpbmVyIHN0b3AgMmE4Zi4uLjRlNzggKGltYWdlPWFscGluZSwgbmFtZT1raWNrYXNzX2JyYXR0YWluKQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICdpbWFnZT1hbHBpbmUnCgoyMDE3LTAxLTA1VDAwOjQxOjU1Ljc4NDI0MDIzNiswODowMCBjb250YWluZXIgY3JlYXRlIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lcikKMjAxNy0wMS0wNVQwMDo0MTo1NS45MTMxNTY3ODMrMDg6MDAgY29udGFpbmVyIHN0YXJ0IGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lcikKMjAxNy0wMS0wNVQwMDo0MjowMS4xMDY4NzUyNDkrMDg6MDAgY29udGFpbmVyIGtpbGwgZDljZC4uLjRkNzAgKGltYWdlPWFscGluZSwgbmFtZT1oYXBweV9tZWl0bmVyLCBzaWduYWw9MTUpCjIwMTctMDEtMDVUMDA6NDI6MTEuMTExOTM0MDQxKzA4OjAwIGNvbnRhaW5lciBraWxsIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lciwgc2lnbmFsPTkpCjIwMTctMDEtMDVUMDA6NDI6MTEuMTE5NTc4MjA0KzA4OjAwIGNvbnRhaW5lciBkaWUgZDljZC4uLjRkNzAgKGV4aXRDb2RlPTEzNywgaW1hZ2U9YWxwaW5lLCBuYW1lPWhhcHB5X21laXRuZXIpCjIwMTctMDEtMDVUMDA6NDI6MTEuMTczMjc2NjExKzA4OjAwIGNvbnRhaW5lciBzdG9wIGQ5Y2QuLi40ZDcwIChpbWFnZT1hbHBpbmUsIG5hbWU9aGFwcHlfbWVpdG5lcikKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnY29udGFpbmVyPXRlc3QnCgoyMDE3LTAxLTA1VDAwOjQzOjAwLjEzOTcxOTkzNCswODowMCBjb250YWluZXIgc3RhcnQgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0MzowOS4yNTk5NTEwODYrMDg6MDAgY29udGFpbmVyIGtpbGwgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCwgc2lnbmFsPTE1KQoyMDE3LTAxLTA1VDAwOjQzOjA5LjI3MDEwMjcxNSswODowMCBjb250YWluZXIgZGllIDBmZGIuLi5mZjM3IChleGl0Q29kZT0xNDMsIGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0MzowOS4zMTI1NTY0NDArMDg6MDAgY29udGFpbmVyIHN0b3AgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnY29udGFpbmVyPXRlc3QnIC0tZmlsdGVyICdjb250YWluZXI9ZDljZGIxNTI1ZWE4JwoKMjAxNy0wMS0wNVQwMDo0NDoxMS41MTcwNzE5ODErMDg6MDAgY29udGFpbmVyIHN0YXJ0IDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QpCjIwMTctMDEtMDVUMDA6NDQ6MTcuNjg1ODcwOTAxKzA4OjAwIGNvbnRhaW5lciBzdGFydCBkOWNkLi4uNGQ3MCAoaW1hZ2U9YWxwaW5lLCBuYW1lPWhhcHB5X21laXRuZXIpCjIwMTctMDEtMDVUMDA6NDQ6MjkuNzU3NjU4NDcwKzA4OjAwIGNvbnRhaW5lciBraWxsIDBmZGIuLi5mZjM3IChpbWFnZT1hbHBpbmU6bGF0ZXN0LCBuYW1lPXRlc3QsIHNpZ25hbD05KQoyMDE3LTAxLTA1VDAwOjQ0OjI5Ljc2NzcxODUxMCswODowMCBjb250YWluZXIgZGllIDBmZGIuLi5mZjM3IChleGl0Q29kZT0xMzcsIGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKMjAxNy0wMS0wNVQwMDo0NDoyOS44MTU3OTgzNDQrMDg6MDAgY29udGFpbmVyIGRlc3Ryb3kgMGZkYi4uLmZmMzcgKGltYWdlPWFscGluZTpsYXRlc3QsIG5hbWU9dGVzdCkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnY29udGFpbmVyPXRlc3QnIC0tZmlsdGVyICdldmVudD1zdG9wJwoKMjAxNy0wMS0wNVQwMDo0NjoxMy42NjQwOTk1MDUrMDg6MDAgY29udGFpbmVyIHN0b3AgYTlkMS4uLmUxMzAgKGltYWdlPWFscGluZSwgbmFtZT10ZXN0KQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICd0eXBlPXZvbHVtZScKCjIwMTUtMTItMjNUMjE6MDU6MjguMTM2MjEyNjg5WiB2b2x1bWUgY3JlYXRlIHRlc3QtZXZlbnQtdm9sdW1lLWxvY2FsIChkcml2ZXI9bG9jYWwpCjIwMTUtMTItMjNUMjE6MDU6MjguMzgzNDYyNzE3WiB2b2x1bWUgbW91bnQgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKHJlYWQvd3JpdGU9dHJ1ZSwgY29udGFpbmVyPTU2MmYuLi41MDI1LCBkZXN0aW5hdGlvbj0vZm9vLCBkcml2ZXI9bG9jYWwsIHByb3BhZ2F0aW9uPXJwcml2YXRlKQoyMDE1LTEyLTIzVDIxOjA1OjI4LjY1MDMxNDI2NVogdm9sdW1lIHVubW91bnQgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKGNvbnRhaW5lcj01NjJmLi4uNTAyNSwgZHJpdmVyPWxvY2FsKQoyMDE1LTEyLTIzVDIxOjA1OjI4LjcxNjIxODQwNVogdm9sdW1lIGRlc3Ryb3kgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKGRyaXZlcj1sb2NhbCkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAndHlwZT1uZXR3b3JrJwoKMjAxNS0xMi0yM1QyMTozODoyNC43MDU3MDkxMzNaIG5ldHdvcmsgY3JlYXRlIDhiMTEuLi4yYzViIChuYW1lPXRlc3QtZXZlbnQtbmV0d29yay1sb2NhbCwgdHlwZT1icmlkZ2UpCjIwMTUtMTItMjNUMjE6Mzg6MjUuMTE5NjI1MTIzWiBuZXR3b3JrIGNvbm5lY3QgOGIxMS4uLjJjNWIgKG5hbWU9dGVzdC1ldmVudC1uZXR3b3JrLWxvY2FsLCBjb250YWluZXI9YjRiZS4uLmM1NGUsIHR5cGU9YnJpZGdlKQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICdjb250YWluZXI9Y29udGFpbmVyXzEnIC0tZmlsdGVyICdjb250YWluZXI9Y29udGFpbmVyXzInCgoyMDE0LTA5LTAzVDE1OjQ5OjI5Ljk5OTk5OTk5OVowNzowMCBjb250YWluZXIgZGllIDQzODZmYjk3ODY3ZCAoaW1hZ2U9dWJ1bnR1OjI0LjA0KQoyMDE0LTA1LTEwVDE3OjQyOjE0Ljk5OTk5OTk5OVowNzowMCBjb250YWluZXIgc3RvcCA0Mzg2ZmI5Nzg2N2QgKGltYWdlPXVidW50dToyNC4wNCkKMjAxNC0wNS0xMFQxNzo0MjoxNC45OTk5OTk5OTlaMDc6MDAgY29udGFpbmVyIGRpZSA3ODA1YzFkMzU2MzIgKGltYWdlcj1yZWRpczo3LjIpCjIwMTQtMDktMDNUMTU6NDk6MjkuOTk5OTk5OTk5WjA3OjAwIGNvbnRhaW5lciBzdG9wIDc4MDVjMWQzNTYzMiAoaW1hZ2U9cmVkaXM6Ny4yKQoKJCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICd0eXBlPXZvbHVtZScKCjIwMTUtMTItMjNUMjE6MDU6MjguMTM2MjEyNjg5WiB2b2x1bWUgY3JlYXRlIHRlc3QtZXZlbnQtdm9sdW1lLWxvY2FsIChkcml2ZXI9bG9jYWwpCjIwMTUtMTItMjNUMjE6MDU6MjguMzgzNDYyNzE3WiB2b2x1bWUgbW91bnQgdGVzdC1ldmVudC12b2x1bWUtbG9jYWwgKHJlYWQvd3JpdGU9dHJ1ZSwgY29udGFpbmVyPTU2MmZlMTA2NzFlOTI3M2RhMjVlZWQzNmNkY2UyNjE1OTA4NWFjN2VlNjcwNzEwNWZkNTM0ODY2MzQwYTUwMjUsIGRlc3RpbmF0aW9uPS9mb28sIGRyaXZlcj1sb2NhbCwgcHJvcGFnYXRpb249cnByaXZhdGUpCjIwMTUtMTItMjNUMjE6MDU6MjguNjUwMzE0MjY1WiB2b2x1bWUgdW5tb3VudCB0ZXN0LWV2ZW50LXZvbHVtZS1sb2NhbCAoY29udGFpbmVyPTU2MmZlMTA2NzFlOTI3M2RhMjVlZWQzNmNkY2UyNjE1OTA4NWFjN2VlNjcwNzEwNWZkNTM0ODY2MzQwYTUwMjUsIGRyaXZlcj1sb2NhbCkKMjAxNS0xMi0yM1QyMTowNToyOC43MTYyMTg0MDVaIHZvbHVtZSBkZXN0cm95IHRlc3QtZXZlbnQtdm9sdW1lLWxvY2FsIChkcml2ZXI9bG9jYWwpCgokIGRvY2tlciBldmVudHMgLS1maWx0ZXIgJ3R5cGU9bmV0d29yaycKCjIwMTUtMTItMjNUMjE6Mzg6MjQuNzA1NzA5MTMzWiBuZXR3b3JrIGNyZWF0ZSA4YjExMTIxNzk0NGJhMGJhODQ0YTY1YjEzZWZjZDU3ZGM0OTQ5MzJlZTI1Mjc1Nzc3NThmOTM5MzE1YmEyYzViIChuYW1lPXRlc3QtZXZlbnQtbmV0d29yay1sb2NhbCwgdHlwZT1icmlkZ2UpCjIwMTUtMTItMjNUMjE6Mzg6MjUuMTE5NjI1MTIzWiBuZXR3b3JrIGNvbm5lY3QgOGIxMTEyMTc5NDRiYTBiYTg0NGE2NWIxM2VmY2Q1N2RjNDk0OTMyZWUyNTI3NTc3NzU4ZjkzOTMxNWJhMmM1YiAobmFtZT10ZXN0LWV2ZW50LW5ldHdvcmstbG9jYWwsIGNvbnRhaW5lcj1iNGJlNjQ0MDMxYTNkOTBiNDAwZjg4YWIzZDRiZGY0ZGMyM2FkYjI1MGU2OTZiNjMyOGI4NTQ0MWFiZTJjNTRlLCB0eXBlPWJyaWRnZSkKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAndHlwZT1wbHVnaW4nCgoyMDE2LTA3LTI1VDE3OjMwOjE0LjgyNTU1NzYxNlogcGx1Z2luIHB1bGwgZWM3Yjg3ZjJjZTg0MzMwZmUwNzZlNjY2ZjE3ZGZjMDQ5ZDJkN2FlMGI4MTkwNzYzZGU5NGUxZjJkMTA1OTkzZiAobmFtZT10aWJvcnZhc3Mvc2FtcGxlLXZvbHVtZS1wbHVnaW46bGF0ZXN0KQoyMDE2LTA3LTI1VDE3OjMwOjE0Ljg4ODEyNzM3MFogcGx1Z2luIGVuYWJsZSBlYzdiODdmMmNlODQzMzBmZTA3NmU2NjZmMTdkZmMwNDlkMmQ3YWUwYjgxOTA3NjNkZTk0ZTFmMmQxMDU5OTNmIChuYW1lPXRpYm9ydmFzcy9zYW1wbGUtdm9sdW1lLXBsdWdpbjpsYXRlc3QpCgokIGRvY2tlciBldmVudHMgLWYgdHlwZT1zZXJ2aWNlCgoyMDE3LTA3LTEyVDA2OjM0OjA3Ljk5OTQ0NjYyNVogc2VydmljZSBjcmVhdGUgd2o2NHN0ODlmemdjaHhuaGlxcG44cDRvaiAobmFtZT1yZXZlcmVudF9hbGJhdHRhbmkpCjIwMTctMDctMTJUMDY6MzQ6MjEuNDA1NDk2MjA3WiBzZXJ2aWNlIHJlbW92ZSB3ajY0c3Q4OWZ6Z2NoeG5oaXFwbjhwNG9qIChuYW1lPXJldmVyZW50X2FsYmF0dGFuaSkKCiQgZG9ja2VyIGV2ZW50cyAtZiB0eXBlPW5vZGUKCjIwMTctMDctMTJUMDY6MjE6NTEuOTUxNTg2NzU5WiBub2RlIHVwZGF0ZSAzeHl6NXR0cDFhMjUzcTc0ejF0aHd5d2s5IChuYW1lPWlwLTE3Mi0zMS0yMy00Miwgc3RhdGUubmV3PXJlYWR5LCBzdGF0ZS5vbGQ9dW5rbm93bikKCiQgZG9ja2VyIGV2ZW50cyAtZiB0eXBlPXNlY3JldAoKMjAxNy0wNy0xMlQwNjozMjoxMy45MTU3MDQzNjdaIHNlY3JldCBjcmVhdGUgczhvNnRtbG5uZHJnemJtZGlseXk1eW1qdSAobmFtZT1uZXdfc2VjcmV0KQoyMDE3LTA3LTEyVDA2OjMyOjM3LjA1MjY0Nzc4M1ogc2VjcmV0IHJlbW92ZSBzOG82dG1sbm5kcmd6Ym1kaWx5eTV5bWp1IChuYW1lPW5ld19zZWNyZXQpCgokICBkb2NrZXIgZXZlbnRzIC1mIHR5cGU9Y29uZmlnCjIwMTctMDctMTJUMDY6NDQ6MTMuMzQ5MDM3MTI3WiBjb25maWcgY3JlYXRlIHU5NnpsdnpkZnN5YjlzZzRtaHl4ZmgzcmwgKG5hbWU9YWJjKQoyMDE3LTA3LTEyVDA2OjQ0OjM2LjMyNzY5NDE4NFogY29uZmlnIHJlbW92ZSB1OTZ6bHZ6ZGZzeWI5c2c0bWh5eGZoM3JsIChuYW1lPWFiYykKCiQgZG9ja2VyIGV2ZW50cyAtLWZpbHRlciAnc2NvcGU9c3dhcm0nCgoyMDE3LTA3LTEwVDA3OjQ2OjUwLjI1MDAyNDUwM1ogc2VydmljZSBjcmVhdGUgbThxY3h1ODA4MXdveW9mN3czamFheDZnayAobmFtZT1hZmZlY3Rpb25hdGVfd2lsc29uKQoyMDE3LTA3LTEwVDA3OjQ3OjMxLjA5Mzc5NzEzNFogc2VjcmV0IGNyZWF0ZSA2ZzVwdWZ6c3Y0MzhwOXRidmw5ajk0b2Q0IChuYW1lPW5ld19zZWNyZXQp', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker events --filter <span class="s1">&#39;event=stop&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -9979,28 +10019,36 @@ output.</p>
   </a>
 </h3>
 
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICd0eXBlPWNvbnRhaW5lcicgLS1mb3JtYXQgJ1R5cGU9e3suVHlwZX19ICBTdGF0dXM9e3suU3RhdHVzfX0gIElEPXt7LklEfX0nCgpUeXBlPWNvbnRhaW5lciAgU3RhdHVzPWNyZWF0ZSAgSUQ9MmVlMzQ5ZGFjNDA5ZTk3OTc0Y2U4ZDAxYjcwZDI1MGI4NWUwYmE4MTg5Mjk5YzEyNmE4NzgxMjMxMTk1MWUyNgpUeXBlPWNvbnRhaW5lciAgU3RhdHVzPWF0dGFjaCAgSUQ9MmVlMzQ5ZGFjNDA5ZTk3OTc0Y2U4ZDAxYjcwZDI1MGI4NWUwYmE4MTg5Mjk5YzEyNmE4NzgxMjMxMTk1MWUyNgpUeXBlPWNvbnRhaW5lciAgU3RhdHVzPXN0YXJ0ICBJRD0yZWUzNDlkYWM0MDllOTc5NzRjZThkMDFiNzBkMjUwYjg1ZTBiYTgxODkyOTljMTI2YTg3ODEyMzExOTUxZTI2ClR5cGU9Y29udGFpbmVyICBTdGF0dXM9cmVzaXplICBJRD0yZWUzNDlkYWM0MDllOTc5NzRjZThkMDFiNzBkMjUwYjg1ZTBiYTgxODkyOTljMTI2YTg3ODEyMzExOTUxZTI2ClR5cGU9Y29udGFpbmVyICBTdGF0dXM9ZGllICBJRD0yZWUzNDlkYWM0MDllOTc5NzRjZThkMDFiNzBkMjUwYjg1ZTBiYTgxODkyOTljMTI2YTg3ODEyMzExOTUxZTI2ClR5cGU9Y29udGFpbmVyICBTdGF0dXM9ZGVzdHJveSAgSUQ9MmVlMzQ5ZGFjNDA5ZTk3OTc0Y2U4ZDAxYjcwZDI1MGI4NWUwYmE4MTg5Mjk5YzEyNmE4NzgxMjMxMTk1MWUyNg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tZmlsdGVyICd0eXBlPWNvbnRhaW5lcicgLS1mb3JtYXQgJ1R5cGU9e3suVHlwZX19ICBTdGF0dXM9e3suU3RhdHVzfX0gIElEPXt7LklEfX0nCgpUeXBlPWNvbnRhaW5lciAgU3RhdHVzPWNyZWF0ZSAgSUQ9MmVlMzQ5ZGFjNDA5ZTk3OTc0Y2U4ZDAxYjcwZDI1MGI4NWUwYmE4MTg5Mjk5YzEyNmE4NzgxMjMxMTk1MWUyNgpUeXBlPWNvbnRhaW5lciAgU3RhdHVzPWF0dGFjaCAgSUQ9MmVlMzQ5ZGFjNDA5ZTk3OTc0Y2U4ZDAxYjcwZDI1MGI4NWUwYmE4MTg5Mjk5YzEyNmE4NzgxMjMxMTk1MWUyNgpUeXBlPWNvbnRhaW5lciAgU3RhdHVzPXN0YXJ0ICBJRD0yZWUzNDlkYWM0MDllOTc5NzRjZThkMDFiNzBkMjUwYjg1ZTBiYTgxODkyOTljMTI2YTg3ODEyMzExOTUxZTI2ClR5cGU9Y29udGFpbmVyICBTdGF0dXM9cmVzaXplICBJRD0yZWUzNDlkYWM0MDllOTc5NzRjZThkMDFiNzBkMjUwYjg1ZTBiYTgxODkyOTljMTI2YTg3ODEyMzExOTUxZTI2ClR5cGU9Y29udGFpbmVyICBTdGF0dXM9ZGllICBJRD0yZWUzNDlkYWM0MDllOTc5NzRjZThkMDFiNzBkMjUwYjg1ZTBiYTgxODkyOTljMTI2YTg3ODEyMzExOTUxZTI2ClR5cGU9Y29udGFpbmVyICBTdGF0dXM9ZGVzdHJveSAgSUQ9MmVlMzQ5ZGFjNDA5ZTk3OTc0Y2U4ZDAxYjcwZDI1MGI4NWUwYmE4MTg5Mjk5YzEyNmE4NzgxMjMxMTk1MWUyNg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker events --filter <span class="s1">&#39;type=container&#39;</span> --format <span class="s1">&#39;Type={{.Type}}  Status={{.Status}}  ID={{.ID}}&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -10024,28 +10072,36 @@ output.</p>
 
 <p>To list events in JSON format, use the <code>json</code> directive, which is the same
 <code>--format '{{ json . }}</code>.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tZm9ybWF0IGpzb24KCnsic3RhdHVzIjoiY3JlYXRlIiwiaWQiOiIxOTYwMTZhNTc2NzliZjQyNDI0NDg0OTE4NzQ2YTk0NzRjZDkwNWRkOTkzYzRkMGY0Li4KeyJzdGF0dXMiOiJhdHRhY2giLCJpZCI6IjE5NjAxNmE1NzY3OWJmNDI0MjQ0ODQ5MTg3NDZhOTQ3NGNkOTA1ZGQ5OTNjNGQwZjQuLgp7IlR5cGUiOiJuZXR3b3JrIiwiQWN0aW9uIjoiY29ubmVjdCIsIkFjdG9yIjp7IklEIjoiMWI1MGE1YmY3NTVmNjAyMWRmYTc4ZS4uCnsic3RhdHVzIjoic3RhcnQiLCJpZCI6IjE5NjAxNmE1NzY3OWJmNDI0MjQ0ODQ5MTg3NDZhOTQ3NGNkOTA1ZGQ5OTNjNGQwZjQyLi4KeyJzdGF0dXMiOiJyZXNpemUiLCJpZCI6IjE5NjAxNmE1NzY3OWJmNDI0MjQ0ODQ5MTg3NDZhOTQ3NGNkOTA1ZGQ5OTNjNGQwZjQuLg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgZXZlbnRzIC0tZm9ybWF0IGpzb24KCnsic3RhdHVzIjoiY3JlYXRlIiwiaWQiOiIxOTYwMTZhNTc2NzliZjQyNDI0NDg0OTE4NzQ2YTk0NzRjZDkwNWRkOTkzYzRkMGY0Li4KeyJzdGF0dXMiOiJhdHRhY2giLCJpZCI6IjE5NjAxNmE1NzY3OWJmNDI0MjQ0ODQ5MTg3NDZhOTQ3NGNkOTA1ZGQ5OTNjNGQwZjQuLgp7IlR5cGUiOiJuZXR3b3JrIiwiQWN0aW9uIjoiY29ubmVjdCIsIkFjdG9yIjp7IklEIjoiMWI1MGE1YmY3NTVmNjAyMWRmYTc4ZS4uCnsic3RhdHVzIjoic3RhcnQiLCJpZCI6IjE5NjAxNmE1NzY3OWJmNDI0MjQ0ODQ5MTg3NDZhOTQ3NGNkOTA1ZGQ5OTNjNGQwZjQyLi4KeyJzdGF0dXMiOiJyZXNpemUiLCJpZCI6IjE5NjAxNmE1NzY3OWJmNDI0MjQ0ODQ5MTg3NDZhOTQ3NGNkOTA1ZGQ5OTNjNGQwZjQuLg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker events --format json
 </span></span><span class="line"><span class="cl"><span class="err">

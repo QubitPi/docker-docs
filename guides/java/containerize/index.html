@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -940,28 +940,36 @@ application.</p>
 </h2>
 
 <p>Clone the sample application that you'll be using to your local development machine. Run the following command in a terminal to clone the repository.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cy9zcHJpbmctcGV0Y2xpbmljLmdpdA==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBnaXQgY2xvbmUgaHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cy9zcHJpbmctcGV0Y2xpbmljLmdpdA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> git clone https://github.com/spring-projects/spring-petclinic.git
 </span></span></code></pre></div>
@@ -1029,28 +1037,36 @@ feature to help streamline the process, or you can manually create the assets.</
 questions about your application. Refer to the following example to answer the
 prompts from <code>docker init</code> and use the same answers for your prompts.</p>
 <p>The sample application already contains Docker assets. You'll be prompted to overwrite the existing Docker assets. To continue with this guide, select <code>y</code> to overwrite them.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgaW5pdApXZWxjb21lIHRvIHRoZSBEb2NrZXIgSW5pdCBDTEkhCgpUaGlzIHV0aWxpdHkgd2lsbCB3YWxrIHlvdSB0aHJvdWdoIGNyZWF0aW5nIHRoZSBmb2xsb3dpbmcgZmlsZXMgd2l0aCBzZW5zaWJsZSBkZWZhdWx0cyBmb3IgeW91ciBwcm9qZWN0OgogIC0gLmRvY2tlcmlnbm9yZQogIC0gRG9ja2VyZmlsZQogIC0gY29tcG9zZS55YW1sCiAgLSBSRUFETUUuRG9ja2VyLm1kCgpMZXQncyBnZXQgc3RhcnRlZCEKCldBUk5JTkc6IFRoZSBmb2xsb3dpbmcgRG9ja2VyIGZpbGVzIGFscmVhZHkgZXhpc3QgaW4gdGhpcyBkaXJlY3Rvcnk6CiAgLSBkb2NrZXItY29tcG9zZS55bWwKPyBEbyB5b3Ugd2FudCB0byBvdmVyd3JpdGUgdGhlbT8gWWVzCj8gV2hhdCBhcHBsaWNhdGlvbiBwbGF0Zm9ybSBkb2VzIHlvdXIgcHJvamVjdCB1c2U/IEphdmEKPyBXaGF0J3MgdGhlIHJlbGF0aXZlIGRpcmVjdG9yeSAod2l0aCBhIGxlYWRpbmcgLikgZm9yIHlvdXIgYXBwPyAuL3NyYwo/IFdoYXQgdmVyc2lvbiBvZiBKYXZhIGRvIHlvdSB3YW50IHRvIHVzZT8gMjEKPyBXaGF0IHBvcnQgZG9lcyB5b3VyIHNlcnZlciBsaXN0ZW4gb24/IDgwODA=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgaW5pdApXZWxjb21lIHRvIHRoZSBEb2NrZXIgSW5pdCBDTEkhCgpUaGlzIHV0aWxpdHkgd2lsbCB3YWxrIHlvdSB0aHJvdWdoIGNyZWF0aW5nIHRoZSBmb2xsb3dpbmcgZmlsZXMgd2l0aCBzZW5zaWJsZSBkZWZhdWx0cyBmb3IgeW91ciBwcm9qZWN0OgogIC0gLmRvY2tlcmlnbm9yZQogIC0gRG9ja2VyZmlsZQogIC0gY29tcG9zZS55YW1sCiAgLSBSRUFETUUuRG9ja2VyLm1kCgpMZXQncyBnZXQgc3RhcnRlZCEKCldBUk5JTkc6IFRoZSBmb2xsb3dpbmcgRG9ja2VyIGZpbGVzIGFscmVhZHkgZXhpc3QgaW4gdGhpcyBkaXJlY3Rvcnk6CiAgLSBkb2NrZXItY29tcG9zZS55bWwKPyBEbyB5b3Ugd2FudCB0byBvdmVyd3JpdGUgdGhlbT8gWWVzCj8gV2hhdCBhcHBsaWNhdGlvbiBwbGF0Zm9ybSBkb2VzIHlvdXIgcHJvamVjdCB1c2U/IEphdmEKPyBXaGF0J3MgdGhlIHJlbGF0aXZlIGRpcmVjdG9yeSAod2l0aCBhIGxlYWRpbmcgLikgZm9yIHlvdXIgYXBwPyAuL3NyYwo/IFdoYXQgdmVyc2lvbiBvZiBKYXZhIGRvIHlvdSB3YW50IHRvIHVzZT8gMjEKPyBXaGF0IHBvcnQgZG9lcyB5b3VyIHNlcnZlciBsaXN0ZW4gb24/IDgwODA=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker init
 </span></span><span class="line"><span class="cl"><span class="go">Welcome to the Docker Init CLI!
@@ -1090,34 +1106,46 @@ directory. Both names are supported, but Compose prefers the canonical
         <p>If you don't have Docker Desktop installed or prefer creating the assets
 manually, you can create the following files in your project directory.</p>
 <p>Create a file named <code>Dockerfile</code> with the following contents.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-    <div
-      class="mb-0 rounded-sm bg-gray-100 p-2 text-sm text-gray-900 dark:bg-gray-900 dark:text-gray-200"
-    >
-      Dockerfile
+    <div class="flex w-full items-center gap-2">
+      <div
+        class="flex items-center gap-2.5 rounded bg-gray-100 px-2 py-0.5 dark:bg-gray-800"
+      >
+        <div class="font-normal text-gray-500 dark:text-gray-200">
+          Dockerfile
+        </div>
+      </div>
     </div>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQoKIyBDb21tZW50cyBhcmUgcHJvdmlkZWQgdGhyb3VnaG91dCB0aGlzIGZpbGUgdG8gaGVscCB5b3UgZ2V0IHN0YXJ0ZWQuCiMgSWYgeW91IG5lZWQgbW9yZSBoZWxwLCB2aXNpdCB0aGUgRG9ja2VyZmlsZSByZWZlcmVuY2UgZ3VpZGUgYXQKIyBodHRwczovL2RvY3MuZG9ja2VyLmNvbS9nby9kb2NrZXJmaWxlLXJlZmVyZW5jZS8KCiMgV2FudCB0byBoZWxwIHVzIG1ha2UgdGhpcyB0ZW1wbGF0ZSBiZXR0ZXI/IFNoYXJlIHlvdXIgZmVlZGJhY2sgaGVyZTogaHR0cHM6Ly9mb3Jtcy5nbGUveWJxOUtydDhqdEJMM2lDazcKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIENyZWF0ZSBhIHN0YWdlIGZvciByZXNvbHZpbmcgYW5kIGRvd25sb2FkaW5nIGRlcGVuZGVuY2llcy4KRlJPTSBlY2xpcHNlLXRlbXVyaW46MjEtamRrLWphbW15IGFzIGRlcHMKCldPUktESVIgL2J1aWxkCgojIENvcHkgdGhlIG12bncgd3JhcHBlciB3aXRoIGV4ZWN1dGFibGUgcGVybWlzc2lvbnMuCkNPUFkgLS1jaG1vZD0wNzU1IG12bncgbXZudwpDT1BZIC5tdm4vIC5tdm4vCgojIERvd25sb2FkIGRlcGVuZGVuY2llcyBhcyBhIHNlcGFyYXRlIHN0ZXAgdG8gdGFrZSBhZHZhbnRhZ2Ugb2YgRG9ja2VyJ3MgY2FjaGluZy4KIyBMZXZlcmFnZSBhIGNhY2hlIG1vdW50IHRvIC9yb290Ly5tMiBzbyB0aGF0IHN1YnNlcXVlbnQgYnVpbGRzIGRvbid0IGhhdmUgdG8KIyByZS1kb3dubG9hZCBwYWNrYWdlcy4KUlVOIC0tbW91bnQ9dHlwZT1iaW5kLHNvdXJjZT1wb20ueG1sLHRhcmdldD1wb20ueG1sIFwKICAgIC0tbW91bnQ9dHlwZT1jYWNoZSx0YXJnZXQ9L3Jvb3QvLm0yIC4vbXZudyBkZXBlbmRlbmN5OmdvLW9mZmxpbmUgLURza2lwVGVzdHMKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIENyZWF0ZSBhIHN0YWdlIGZvciBidWlsZGluZyB0aGUgYXBwbGljYXRpb24gYmFzZWQgb24gdGhlIHN0YWdlIHdpdGggZG93bmxvYWRlZCBkZXBlbmRlbmNpZXMuCiMgVGhpcyBEb2NrZXJmaWxlIGlzIG9wdGltaXplZCBmb3IgSmF2YSBhcHBsaWNhdGlvbnMgdGhhdCBvdXRwdXQgYW4gdWJlciBqYXIsIHdoaWNoIGluY2x1ZGVzCiMgYWxsIHRoZSBkZXBlbmRlbmNpZXMgbmVlZGVkIHRvIHJ1biB5b3VyIGFwcCBpbnNpZGUgYSBKVk0uIElmIHlvdXIgYXBwIGRvZXNuJ3Qgb3V0cHV0IGFuIHViZXIKIyBqYXIgYW5kIGluc3RlYWQgcmVsaWVzIG9uIGFuIGFwcGxpY2F0aW9uIHNlcnZlciBsaWtlIEFwYWNoZSBUb21jYXQsIHlvdSdsbCBuZWVkIHRvIHVwZGF0ZSB0aGlzCiMgc3RhZ2Ugd2l0aCB0aGUgY29ycmVjdCBmaWxlbmFtZSBvZiB5b3VyIHBhY2thZ2UgYW5kIHVwZGF0ZSB0aGUgYmFzZSBpbWFnZSBvZiB0aGUgImZpbmFsIiBzdGFnZQojIHVzZSB0aGUgcmVsZXZhbnQgYXBwIHNlcnZlciwgZS5nLiwgdXNpbmcgdG9tY2F0IChodHRwczovL2h1Yi5kb2NrZXIuY29tL18vdG9tY2F0LykgYXMgYSBiYXNlIGltYWdlLgpGUk9NIGRlcHMgYXMgcGFja2FnZQoKV09SS0RJUiAvYnVpbGQKCkNPUFkgLi9zcmMgc3JjLwpSVU4gLS1tb3VudD10eXBlPWJpbmQsc291cmNlPXBvbS54bWwsdGFyZ2V0PXBvbS54bWwgXAogICAgLS1tb3VudD10eXBlPWNhY2hlLHRhcmdldD0vcm9vdC8ubTIgXAogICAgLi9tdm53IHBhY2thZ2UgLURza2lwVGVzdHMgJiYgXAogICAgbXYgdGFyZ2V0LyQoLi9tdm53IGhlbHA6ZXZhbHVhdGUgLURleHByZXNzaW9uPXByb2plY3QuYXJ0aWZhY3RJZCAtcSAtRGZvcmNlU3Rkb3V0KS0kKC4vbXZudyBoZWxwOmV2YWx1YXRlIC1EZXhwcmVzc2lvbj1wcm9qZWN0LnZlcnNpb24gLXEgLURmb3JjZVN0ZG91dCkuamFyIHRhcmdldC9hcHAuamFyCgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwoKIyBDcmVhdGUgYSBzdGFnZSBmb3IgZXh0cmFjdGluZyB0aGUgYXBwbGljYXRpb24gaW50byBzZXBhcmF0ZSBsYXllcnMuCiMgVGFrZSBhZHZhbnRhZ2Ugb2YgU3ByaW5nIEJvb3QncyBsYXllciB0b29scyBhbmQgRG9ja2VyJ3MgY2FjaGluZyBieSBleHRyYWN0aW5nCiMgdGhlIHBhY2thZ2VkIGFwcGxpY2F0aW9uIGludG8gc2VwYXJhdGUgbGF5ZXJzIHRoYXQgY2FuIGJlIGNvcGllZCBpbnRvIHRoZSBmaW5hbCBzdGFnZS4KIyBTZWUgU3ByaW5nJ3MgZG9jcyBmb3IgcmVmZXJlbmNlOgojIGh0dHBzOi8vZG9jcy5zcHJpbmcuaW8vc3ByaW5nLWJvb3QvZG9jcy9jdXJyZW50L3JlZmVyZW5jZS9odG1sL2NvbnRhaW5lci1pbWFnZXMuaHRtbApGUk9NIHBhY2thZ2UgYXMgZXh0cmFjdAoKV09SS0RJUiAvYnVpbGQKClJVTiBqYXZhIC1EamFybW9kZT1sYXllcnRvb2xzIC1qYXIgdGFyZ2V0L2FwcC5qYXIgZXh0cmFjdCAtLWRlc3RpbmF0aW9uIHRhcmdldC9leHRyYWN0ZWQKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIENyZWF0ZSBhIG5ldyBzdGFnZSBmb3IgcnVubmluZyB0aGUgYXBwbGljYXRpb24gdGhhdCBjb250YWlucyB0aGUgbWluaW1hbAojIHJ1bnRpbWUgZGVwZW5kZW5jaWVzIGZvciB0aGUgYXBwbGljYXRpb24uIFRoaXMgb2Z0ZW4gdXNlcyBhIGRpZmZlcmVudCBiYXNlCiMgaW1hZ2UgZnJvbSB0aGUgaW5zdGFsbCBvciBidWlsZCBzdGFnZSB3aGVyZSB0aGUgbmVjZXNzYXJ5IGZpbGVzIGFyZSBjb3BpZWQKIyBmcm9tIHRoZSBpbnN0YWxsIHN0YWdlLgojCiMgVGhlIGV4YW1wbGUgYmVsb3cgdXNlcyBlY2xpcHNlLXR1cm1pbidzIEpSRSBpbWFnZSBhcyB0aGUgZm91bmRhdGlvbiBmb3IgcnVubmluZyB0aGUgYXBwLgojIEJ5IHNwZWNpZnlpbmcgdGhlICIxNy1qcmUtamFtbXkiIHRhZywgaXQgd2lsbCBhbHNvIHVzZSB3aGF0ZXZlciBoYXBwZW5zIHRvIGJlIHRoZQojIG1vc3QgcmVjZW50IHZlcnNpb24gb2YgdGhhdCB0YWcgd2hlbiB5b3UgYnVpbGQgeW91ciBEb2NrZXJmaWxlLgojIElmIHJlcHJvZHVjaWJpbGl0eSBpcyBpbXBvcnRhbnQsIGNvbnNpZGVyIHVzaW5nIGEgc3BlY2lmaWMgZGlnZXN0IFNIQSwgbGlrZQojIGVjbGlwc2UtdGVtdXJpbkBzaGEyNTY6OTljZWRlNDkzZGZkODg3MjBiNjEwZWI4MDc3Yzg2ODhkM2NjYTUwMDAzZDc2ZDFkNTM5YjBlZmM4Y2NhNzJiNC4KRlJPTSBlY2xpcHNlLXRlbXVyaW46MjEtanJlLWphbW15IEFTIGZpbmFsCgojIENyZWF0ZSBhIG5vbi1wcml2aWxlZ2VkIHVzZXIgdGhhdCB0aGUgYXBwIHdpbGwgcnVuIHVuZGVyLgojIFNlZSBodHRwczovL2RvY3MuZG9ja2VyLmNvbS9nby9kb2NrZXJmaWxlLXVzZXItYmVzdC1wcmFjdGljZXMvCkFSRyBVSUQ9MTAwMDEKUlVOIGFkZHVzZXIgXAogICAgLS1kaXNhYmxlZC1wYXNzd29yZCBcCiAgICAtLWdlY29zICIiIFwKICAgIC0taG9tZSAiL25vbmV4aXN0ZW50IiBcCiAgICAtLXNoZWxsICIvc2Jpbi9ub2xvZ2luIiBcCiAgICAtLW5vLWNyZWF0ZS1ob21lIFwKICAgIC0tdWlkICIke1VJRH0iIFwKICAgIGFwcHVzZXIKVVNFUiBhcHB1c2VyCgojIENvcHkgdGhlIGV4ZWN1dGFibGUgZnJvbSB0aGUgInBhY2thZ2UiIHN0YWdlLgpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvZGVwZW5kZW5jaWVzLyAuLwpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvc3ByaW5nLWJvb3QtbG9hZGVyLyAuLwpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvc25hcHNob3QtZGVwZW5kZW5jaWVzLyAuLwpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvYXBwbGljYXRpb24vIC4vCgpFWFBPU0UgODA4MAoKRU5UUllQT0lOVCBbICJqYXZhIiwgIm9yZy5zcHJpbmdmcmFtZXdvcmsuYm9vdC5sb2FkZXIubGF1bmNoLkphckxhdW5jaGVyIiBd', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQoKIyBDb21tZW50cyBhcmUgcHJvdmlkZWQgdGhyb3VnaG91dCB0aGlzIGZpbGUgdG8gaGVscCB5b3UgZ2V0IHN0YXJ0ZWQuCiMgSWYgeW91IG5lZWQgbW9yZSBoZWxwLCB2aXNpdCB0aGUgRG9ja2VyZmlsZSByZWZlcmVuY2UgZ3VpZGUgYXQKIyBodHRwczovL2RvY3MuZG9ja2VyLmNvbS9nby9kb2NrZXJmaWxlLXJlZmVyZW5jZS8KCiMgV2FudCB0byBoZWxwIHVzIG1ha2UgdGhpcyB0ZW1wbGF0ZSBiZXR0ZXI/IFNoYXJlIHlvdXIgZmVlZGJhY2sgaGVyZTogaHR0cHM6Ly9mb3Jtcy5nbGUveWJxOUtydDhqdEJMM2lDazcKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIENyZWF0ZSBhIHN0YWdlIGZvciByZXNvbHZpbmcgYW5kIGRvd25sb2FkaW5nIGRlcGVuZGVuY2llcy4KRlJPTSBlY2xpcHNlLXRlbXVyaW46MjEtamRrLWphbW15IGFzIGRlcHMKCldPUktESVIgL2J1aWxkCgojIENvcHkgdGhlIG12bncgd3JhcHBlciB3aXRoIGV4ZWN1dGFibGUgcGVybWlzc2lvbnMuCkNPUFkgLS1jaG1vZD0wNzU1IG12bncgbXZudwpDT1BZIC5tdm4vIC5tdm4vCgojIERvd25sb2FkIGRlcGVuZGVuY2llcyBhcyBhIHNlcGFyYXRlIHN0ZXAgdG8gdGFrZSBhZHZhbnRhZ2Ugb2YgRG9ja2VyJ3MgY2FjaGluZy4KIyBMZXZlcmFnZSBhIGNhY2hlIG1vdW50IHRvIC9yb290Ly5tMiBzbyB0aGF0IHN1YnNlcXVlbnQgYnVpbGRzIGRvbid0IGhhdmUgdG8KIyByZS1kb3dubG9hZCBwYWNrYWdlcy4KUlVOIC0tbW91bnQ9dHlwZT1iaW5kLHNvdXJjZT1wb20ueG1sLHRhcmdldD1wb20ueG1sIFwKICAgIC0tbW91bnQ9dHlwZT1jYWNoZSx0YXJnZXQ9L3Jvb3QvLm0yIC4vbXZudyBkZXBlbmRlbmN5OmdvLW9mZmxpbmUgLURza2lwVGVzdHMKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIENyZWF0ZSBhIHN0YWdlIGZvciBidWlsZGluZyB0aGUgYXBwbGljYXRpb24gYmFzZWQgb24gdGhlIHN0YWdlIHdpdGggZG93bmxvYWRlZCBkZXBlbmRlbmNpZXMuCiMgVGhpcyBEb2NrZXJmaWxlIGlzIG9wdGltaXplZCBmb3IgSmF2YSBhcHBsaWNhdGlvbnMgdGhhdCBvdXRwdXQgYW4gdWJlciBqYXIsIHdoaWNoIGluY2x1ZGVzCiMgYWxsIHRoZSBkZXBlbmRlbmNpZXMgbmVlZGVkIHRvIHJ1biB5b3VyIGFwcCBpbnNpZGUgYSBKVk0uIElmIHlvdXIgYXBwIGRvZXNuJ3Qgb3V0cHV0IGFuIHViZXIKIyBqYXIgYW5kIGluc3RlYWQgcmVsaWVzIG9uIGFuIGFwcGxpY2F0aW9uIHNlcnZlciBsaWtlIEFwYWNoZSBUb21jYXQsIHlvdSdsbCBuZWVkIHRvIHVwZGF0ZSB0aGlzCiMgc3RhZ2Ugd2l0aCB0aGUgY29ycmVjdCBmaWxlbmFtZSBvZiB5b3VyIHBhY2thZ2UgYW5kIHVwZGF0ZSB0aGUgYmFzZSBpbWFnZSBvZiB0aGUgImZpbmFsIiBzdGFnZQojIHVzZSB0aGUgcmVsZXZhbnQgYXBwIHNlcnZlciwgZS5nLiwgdXNpbmcgdG9tY2F0IChodHRwczovL2h1Yi5kb2NrZXIuY29tL18vdG9tY2F0LykgYXMgYSBiYXNlIGltYWdlLgpGUk9NIGRlcHMgYXMgcGFja2FnZQoKV09SS0RJUiAvYnVpbGQKCkNPUFkgLi9zcmMgc3JjLwpSVU4gLS1tb3VudD10eXBlPWJpbmQsc291cmNlPXBvbS54bWwsdGFyZ2V0PXBvbS54bWwgXAogICAgLS1tb3VudD10eXBlPWNhY2hlLHRhcmdldD0vcm9vdC8ubTIgXAogICAgLi9tdm53IHBhY2thZ2UgLURza2lwVGVzdHMgJiYgXAogICAgbXYgdGFyZ2V0LyQoLi9tdm53IGhlbHA6ZXZhbHVhdGUgLURleHByZXNzaW9uPXByb2plY3QuYXJ0aWZhY3RJZCAtcSAtRGZvcmNlU3Rkb3V0KS0kKC4vbXZudyBoZWxwOmV2YWx1YXRlIC1EZXhwcmVzc2lvbj1wcm9qZWN0LnZlcnNpb24gLXEgLURmb3JjZVN0ZG91dCkuamFyIHRhcmdldC9hcHAuamFyCgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwoKIyBDcmVhdGUgYSBzdGFnZSBmb3IgZXh0cmFjdGluZyB0aGUgYXBwbGljYXRpb24gaW50byBzZXBhcmF0ZSBsYXllcnMuCiMgVGFrZSBhZHZhbnRhZ2Ugb2YgU3ByaW5nIEJvb3QncyBsYXllciB0b29scyBhbmQgRG9ja2VyJ3MgY2FjaGluZyBieSBleHRyYWN0aW5nCiMgdGhlIHBhY2thZ2VkIGFwcGxpY2F0aW9uIGludG8gc2VwYXJhdGUgbGF5ZXJzIHRoYXQgY2FuIGJlIGNvcGllZCBpbnRvIHRoZSBmaW5hbCBzdGFnZS4KIyBTZWUgU3ByaW5nJ3MgZG9jcyBmb3IgcmVmZXJlbmNlOgojIGh0dHBzOi8vZG9jcy5zcHJpbmcuaW8vc3ByaW5nLWJvb3QvZG9jcy9jdXJyZW50L3JlZmVyZW5jZS9odG1sL2NvbnRhaW5lci1pbWFnZXMuaHRtbApGUk9NIHBhY2thZ2UgYXMgZXh0cmFjdAoKV09SS0RJUiAvYnVpbGQKClJVTiBqYXZhIC1EamFybW9kZT1sYXllcnRvb2xzIC1qYXIgdGFyZ2V0L2FwcC5qYXIgZXh0cmFjdCAtLWRlc3RpbmF0aW9uIHRhcmdldC9leHRyYWN0ZWQKCiMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjCgojIENyZWF0ZSBhIG5ldyBzdGFnZSBmb3IgcnVubmluZyB0aGUgYXBwbGljYXRpb24gdGhhdCBjb250YWlucyB0aGUgbWluaW1hbAojIHJ1bnRpbWUgZGVwZW5kZW5jaWVzIGZvciB0aGUgYXBwbGljYXRpb24uIFRoaXMgb2Z0ZW4gdXNlcyBhIGRpZmZlcmVudCBiYXNlCiMgaW1hZ2UgZnJvbSB0aGUgaW5zdGFsbCBvciBidWlsZCBzdGFnZSB3aGVyZSB0aGUgbmVjZXNzYXJ5IGZpbGVzIGFyZSBjb3BpZWQKIyBmcm9tIHRoZSBpbnN0YWxsIHN0YWdlLgojCiMgVGhlIGV4YW1wbGUgYmVsb3cgdXNlcyBlY2xpcHNlLXR1cm1pbidzIEpSRSBpbWFnZSBhcyB0aGUgZm91bmRhdGlvbiBmb3IgcnVubmluZyB0aGUgYXBwLgojIEJ5IHNwZWNpZnlpbmcgdGhlICIxNy1qcmUtamFtbXkiIHRhZywgaXQgd2lsbCBhbHNvIHVzZSB3aGF0ZXZlciBoYXBwZW5zIHRvIGJlIHRoZQojIG1vc3QgcmVjZW50IHZlcnNpb24gb2YgdGhhdCB0YWcgd2hlbiB5b3UgYnVpbGQgeW91ciBEb2NrZXJmaWxlLgojIElmIHJlcHJvZHVjaWJpbGl0eSBpcyBpbXBvcnRhbnQsIGNvbnNpZGVyIHVzaW5nIGEgc3BlY2lmaWMgZGlnZXN0IFNIQSwgbGlrZQojIGVjbGlwc2UtdGVtdXJpbkBzaGEyNTY6OTljZWRlNDkzZGZkODg3MjBiNjEwZWI4MDc3Yzg2ODhkM2NjYTUwMDAzZDc2ZDFkNTM5YjBlZmM4Y2NhNzJiNC4KRlJPTSBlY2xpcHNlLXRlbXVyaW46MjEtanJlLWphbW15IEFTIGZpbmFsCgojIENyZWF0ZSBhIG5vbi1wcml2aWxlZ2VkIHVzZXIgdGhhdCB0aGUgYXBwIHdpbGwgcnVuIHVuZGVyLgojIFNlZSBodHRwczovL2RvY3MuZG9ja2VyLmNvbS9nby9kb2NrZXJmaWxlLXVzZXItYmVzdC1wcmFjdGljZXMvCkFSRyBVSUQ9MTAwMDEKUlVOIGFkZHVzZXIgXAogICAgLS1kaXNhYmxlZC1wYXNzd29yZCBcCiAgICAtLWdlY29zICIiIFwKICAgIC0taG9tZSAiL25vbmV4aXN0ZW50IiBcCiAgICAtLXNoZWxsICIvc2Jpbi9ub2xvZ2luIiBcCiAgICAtLW5vLWNyZWF0ZS1ob21lIFwKICAgIC0tdWlkICIke1VJRH0iIFwKICAgIGFwcHVzZXIKVVNFUiBhcHB1c2VyCgojIENvcHkgdGhlIGV4ZWN1dGFibGUgZnJvbSB0aGUgInBhY2thZ2UiIHN0YWdlLgpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvZGVwZW5kZW5jaWVzLyAuLwpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvc3ByaW5nLWJvb3QtbG9hZGVyLyAuLwpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvc25hcHNob3QtZGVwZW5kZW5jaWVzLyAuLwpDT1BZIC0tZnJvbT1leHRyYWN0IGJ1aWxkL3RhcmdldC9leHRyYWN0ZWQvYXBwbGljYXRpb24vIC4vCgpFWFBPU0UgODA4MAoKRU5UUllQT0lOVCBbICJqYXZhIiwgIm9yZy5zcHJpbmdmcmFtZXdvcmsuYm9vdC5sb2FkZXIubGF1bmNoLkphckxhdW5jaGVyIiBd', copying: false }"
+        class="
+          -top-10
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div
           x-data="{ collapse: true }"
@@ -1128,10 +1156,7 @@ manually, you can create the following files in your project directory.</p>
             x-show="collapse"
             class="absolute z-10 flex h-32 w-full flex-col-reverse items-center overflow-clip pb-4"
           >
-            <button
-              @click="collapse = false"
-              class="bg-blue flex items-center rounded-full px-2 text-sm text-white dark:bg-blue-500"
-            >
+            <button @click="collapse = false" class="chip">
               <span>Show more</span>
               <span class="icon-svg"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg></span
@@ -1248,34 +1273,46 @@ manually, you can create the following files in your project directory.</p>
   </div>
 </div>
 <p>The sample already contains a Compose file. Overwrite this file to follow along with the guide. Update the<code>docker-compose.yaml</code> with the following contents.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-    <div
-      class="mb-0 rounded-sm bg-gray-100 p-2 text-sm text-gray-900 dark:bg-gray-900 dark:text-gray-200"
-    >
-      docker-compose.yaml
+    <div class="flex w-full items-center gap-2">
+      <div
+        class="flex items-center gap-2.5 rounded bg-gray-100 px-2 py-0.5 dark:bg-gray-800"
+      >
+        <div class="font-normal text-gray-500 dark:text-gray-200">
+          docker-compose.yaml
+        </div>
+      </div>
     </div>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IyBDb21tZW50cyBhcmUgcHJvdmlkZWQgdGhyb3VnaG91dCB0aGlzIGZpbGUgdG8gaGVscCB5b3UgZ2V0IHN0YXJ0ZWQuCiMgSWYgeW91IG5lZWQgbW9yZSBoZWxwLCB2aXNpdCB0aGUgRG9ja2VyIENvbXBvc2UgcmVmZXJlbmNlIGd1aWRlIGF0CiMgaHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZ28vY29tcG9zZS1zcGVjLXJlZmVyZW5jZS8KCiMgSGVyZSB0aGUgaW5zdHJ1Y3Rpb25zIGRlZmluZSB5b3VyIGFwcGxpY2F0aW9uIGFzIGEgc2VydmljZSBjYWxsZWQgInNlcnZlciIuCiMgVGhpcyBzZXJ2aWNlIGlzIGJ1aWx0IGZyb20gdGhlIERvY2tlcmZpbGUgaW4gdGhlIGN1cnJlbnQgZGlyZWN0b3J5LgojIFlvdSBjYW4gYWRkIG90aGVyIHNlcnZpY2VzIHlvdXIgYXBwbGljYXRpb24gbWF5IGRlcGVuZCBvbiBoZXJlLCBzdWNoIGFzIGEKIyBkYXRhYmFzZSBvciBhIGNhY2hlLiBGb3IgZXhhbXBsZXMsIHNlZSB0aGUgQXdlc29tZSBDb21wb3NlIHJlcG9zaXRvcnk6CiMgaHR0cHM6Ly9naXRodWIuY29tL2RvY2tlci9hd2Vzb21lLWNvbXBvc2UKc2VydmljZXM6CiAgc2VydmVyOgogICAgYnVpbGQ6CiAgICAgIGNvbnRleHQ6IC4KICAgIHBvcnRzOgogICAgICAtIDgwODA6ODA4MAojIFRoZSBjb21tZW50ZWQgb3V0IHNlY3Rpb24gYmVsb3cgaXMgYW4gZXhhbXBsZSBvZiBob3cgdG8gZGVmaW5lIGEgUG9zdGdyZVNRTAojIGRhdGFiYXNlIHRoYXQgeW91ciBhcHBsaWNhdGlvbiBjYW4gdXNlLiBgZGVwZW5kc19vbmAgdGVsbHMgRG9ja2VyIENvbXBvc2UgdG8KIyBzdGFydCB0aGUgZGF0YWJhc2UgYmVmb3JlIHlvdXIgYXBwbGljYXRpb24uIFRoZSBgZGItZGF0YWAgdm9sdW1lIHBlcnNpc3RzIHRoZQojIGRhdGFiYXNlIGRhdGEgYmV0d2VlbiBjb250YWluZXIgcmVzdGFydHMuIFRoZSBgZGItcGFzc3dvcmRgIHNlY3JldCBpcyB1c2VkCiMgdG8gc2V0IHRoZSBkYXRhYmFzZSBwYXNzd29yZC4gWW91IG11c3QgY3JlYXRlIGBkYi9wYXNzd29yZC50eHRgIGFuZCBhZGQKIyBhIHBhc3N3b3JkIG9mIHlvdXIgY2hvb3NpbmcgdG8gaXQgYmVmb3JlIHJ1bm5pbmcgYGRvY2tlciBjb21wb3NlIHVwYC4KIyAgICAgZGVwZW5kc19vbjoKIyAgICAgICBkYjoKIyAgICAgICAgIGNvbmRpdGlvbjogc2VydmljZV9oZWFsdGh5CiMgICBkYjoKIyAgICAgaW1hZ2U6IHBvc3RncmVzCiMgICAgIHJlc3RhcnQ6IGFsd2F5cwojICAgICB1c2VyOiBwb3N0Z3JlcwojICAgICBzZWNyZXRzOgojICAgICAgIC0gZGItcGFzc3dvcmQKIyAgICAgdm9sdW1lczoKIyAgICAgICAtIGRiLWRhdGE6L3Zhci9saWIvcG9zdGdyZXNxbC9kYXRhCiMgICAgIGVudmlyb25tZW50OgojICAgICAgIC0gUE9TVEdSRVNfREI9ZXhhbXBsZQojICAgICAgIC0gUE9TVEdSRVNfUEFTU1dPUkRfRklMRT0vcnVuL3NlY3JldHMvZGItcGFzc3dvcmQKIyAgICAgZXhwb3NlOgojICAgICAgIC0gNTQzMgojICAgICBoZWFsdGhjaGVjazoKIyAgICAgICB0ZXN0OiBbICJDTUQiLCAicGdfaXNyZWFkeSIgXQojICAgICAgIGludGVydmFsOiAxMHMKIyAgICAgICB0aW1lb3V0OiA1cwojICAgICAgIHJldHJpZXM6IDUKIyB2b2x1bWVzOgojICAgZGItZGF0YToKIyBzZWNyZXRzOgojICAgZGItcGFzc3dvcmQ6CiMgICAgIGZpbGU6IGRiL3Bhc3N3b3JkLnR4dA==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IyBDb21tZW50cyBhcmUgcHJvdmlkZWQgdGhyb3VnaG91dCB0aGlzIGZpbGUgdG8gaGVscCB5b3UgZ2V0IHN0YXJ0ZWQuCiMgSWYgeW91IG5lZWQgbW9yZSBoZWxwLCB2aXNpdCB0aGUgRG9ja2VyIENvbXBvc2UgcmVmZXJlbmNlIGd1aWRlIGF0CiMgaHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZ28vY29tcG9zZS1zcGVjLXJlZmVyZW5jZS8KCiMgSGVyZSB0aGUgaW5zdHJ1Y3Rpb25zIGRlZmluZSB5b3VyIGFwcGxpY2F0aW9uIGFzIGEgc2VydmljZSBjYWxsZWQgInNlcnZlciIuCiMgVGhpcyBzZXJ2aWNlIGlzIGJ1aWx0IGZyb20gdGhlIERvY2tlcmZpbGUgaW4gdGhlIGN1cnJlbnQgZGlyZWN0b3J5LgojIFlvdSBjYW4gYWRkIG90aGVyIHNlcnZpY2VzIHlvdXIgYXBwbGljYXRpb24gbWF5IGRlcGVuZCBvbiBoZXJlLCBzdWNoIGFzIGEKIyBkYXRhYmFzZSBvciBhIGNhY2hlLiBGb3IgZXhhbXBsZXMsIHNlZSB0aGUgQXdlc29tZSBDb21wb3NlIHJlcG9zaXRvcnk6CiMgaHR0cHM6Ly9naXRodWIuY29tL2RvY2tlci9hd2Vzb21lLWNvbXBvc2UKc2VydmljZXM6CiAgc2VydmVyOgogICAgYnVpbGQ6CiAgICAgIGNvbnRleHQ6IC4KICAgIHBvcnRzOgogICAgICAtIDgwODA6ODA4MAojIFRoZSBjb21tZW50ZWQgb3V0IHNlY3Rpb24gYmVsb3cgaXMgYW4gZXhhbXBsZSBvZiBob3cgdG8gZGVmaW5lIGEgUG9zdGdyZVNRTAojIGRhdGFiYXNlIHRoYXQgeW91ciBhcHBsaWNhdGlvbiBjYW4gdXNlLiBgZGVwZW5kc19vbmAgdGVsbHMgRG9ja2VyIENvbXBvc2UgdG8KIyBzdGFydCB0aGUgZGF0YWJhc2UgYmVmb3JlIHlvdXIgYXBwbGljYXRpb24uIFRoZSBgZGItZGF0YWAgdm9sdW1lIHBlcnNpc3RzIHRoZQojIGRhdGFiYXNlIGRhdGEgYmV0d2VlbiBjb250YWluZXIgcmVzdGFydHMuIFRoZSBgZGItcGFzc3dvcmRgIHNlY3JldCBpcyB1c2VkCiMgdG8gc2V0IHRoZSBkYXRhYmFzZSBwYXNzd29yZC4gWW91IG11c3QgY3JlYXRlIGBkYi9wYXNzd29yZC50eHRgIGFuZCBhZGQKIyBhIHBhc3N3b3JkIG9mIHlvdXIgY2hvb3NpbmcgdG8gaXQgYmVmb3JlIHJ1bm5pbmcgYGRvY2tlciBjb21wb3NlIHVwYC4KIyAgICAgZGVwZW5kc19vbjoKIyAgICAgICBkYjoKIyAgICAgICAgIGNvbmRpdGlvbjogc2VydmljZV9oZWFsdGh5CiMgICBkYjoKIyAgICAgaW1hZ2U6IHBvc3RncmVzCiMgICAgIHJlc3RhcnQ6IGFsd2F5cwojICAgICB1c2VyOiBwb3N0Z3JlcwojICAgICBzZWNyZXRzOgojICAgICAgIC0gZGItcGFzc3dvcmQKIyAgICAgdm9sdW1lczoKIyAgICAgICAtIGRiLWRhdGE6L3Zhci9saWIvcG9zdGdyZXNxbC9kYXRhCiMgICAgIGVudmlyb25tZW50OgojICAgICAgIC0gUE9TVEdSRVNfREI9ZXhhbXBsZQojICAgICAgIC0gUE9TVEdSRVNfUEFTU1dPUkRfRklMRT0vcnVuL3NlY3JldHMvZGItcGFzc3dvcmQKIyAgICAgZXhwb3NlOgojICAgICAgIC0gNTQzMgojICAgICBoZWFsdGhjaGVjazoKIyAgICAgICB0ZXN0OiBbICJDTUQiLCAicGdfaXNyZWFkeSIgXQojICAgICAgIGludGVydmFsOiAxMHMKIyAgICAgICB0aW1lb3V0OiA1cwojICAgICAgIHJldHJpZXM6IDUKIyB2b2x1bWVzOgojICAgZGItZGF0YToKIyBzZWNyZXRzOgojICAgZGItcGFzc3dvcmQ6CiMgICAgIGZpbGU6IGRiL3Bhc3N3b3JkLnR4dA==', copying: false }"
+        class="
+          -top-10
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div
           x-data="{ collapse: true }"
@@ -1286,10 +1323,7 @@ manually, you can create the following files in your project directory.</p>
             x-show="collapse"
             class="absolute z-10 flex h-32 w-full flex-col-reverse items-center overflow-clip pb-4"
           >
-            <button
-              @click="collapse = false"
-              class="bg-blue flex items-center rounded-full px-2 text-sm text-white dark:bg-blue-500"
-            >
+            <button @click="collapse = false" class="chip">
               <span>Show more</span>
               <span class="icon-svg"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg></span
@@ -1361,34 +1395,46 @@ manually, you can create the following files in your project directory.</p>
   </div>
 </div>
 <p>Create a file named <code>.dockerignore</code> with the following contents.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-    <div
-      class="mb-0 rounded-sm bg-gray-100 p-2 text-sm text-gray-900 dark:bg-gray-900 dark:text-gray-200"
-    >
-      .dockerignore
+    <div class="flex w-full items-center gap-2">
+      <div
+        class="flex items-center gap-2.5 rounded bg-gray-100 px-2 py-0.5 dark:bg-gray-800"
+      >
+        <div class="font-normal text-gray-500 dark:text-gray-200">
+          .dockerignore
+        </div>
+      </div>
     </div>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'IyBJbmNsdWRlIGFueSBmaWxlcyBvciBkaXJlY3RvcmllcyB0aGF0IHlvdSBkb24ndCB3YW50IHRvIGJlIGNvcGllZCB0byB5b3VyCiMgY29udGFpbmVyIGhlcmUgKGUuZy4sIGxvY2FsIGJ1aWxkIGFydGlmYWN0cywgdGVtcG9yYXJ5IGZpbGVzLCBldGMuKS4KIwojIEZvciBtb3JlIGhlbHAsIHZpc2l0IHRoZSAuZG9ja2VyaWdub3JlIGZpbGUgcmVmZXJlbmNlIGd1aWRlIGF0CiMgaHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZ28vYnVpbGQtY29udGV4dC1kb2NrZXJpZ25vcmUvCgoqKi8uY2xhc3NwYXRoCioqLy5kb2NrZXJpZ25vcmUKKiovLmVudgoqKi8uZ2l0CioqLy5naXRpZ25vcmUKKiovLnByb2plY3QKKiovLnNldHRpbmdzCioqLy50b29sc3RhcmdldAoqKi8udnMKKiovLnZzY29kZQoqKi8ubmV4dAoqKi8uY2FjaGUKKiovKi4qcHJvai51c2VyCioqLyouZGJtZGwKKiovKi5qZm0KKiovY2hhcnRzCioqL2RvY2tlci1jb21wb3NlKgoqKi9jb21wb3NlLnkqbWwKKiovdGFyZ2V0CioqL0RvY2tlcmZpbGUqCioqL25vZGVfbW9kdWxlcwoqKi9ucG0tZGVidWcubG9nCioqL29iagoqKi9zZWNyZXRzLmRldi55YW1sCioqL3ZhbHVlcy5kZXYueWFtbAoqKi92ZW5kb3IKTElDRU5TRQpSRUFETUUubWQ=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'IyBJbmNsdWRlIGFueSBmaWxlcyBvciBkaXJlY3RvcmllcyB0aGF0IHlvdSBkb24ndCB3YW50IHRvIGJlIGNvcGllZCB0byB5b3VyCiMgY29udGFpbmVyIGhlcmUgKGUuZy4sIGxvY2FsIGJ1aWxkIGFydGlmYWN0cywgdGVtcG9yYXJ5IGZpbGVzLCBldGMuKS4KIwojIEZvciBtb3JlIGhlbHAsIHZpc2l0IHRoZSAuZG9ja2VyaWdub3JlIGZpbGUgcmVmZXJlbmNlIGd1aWRlIGF0CiMgaHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZ28vYnVpbGQtY29udGV4dC1kb2NrZXJpZ25vcmUvCgoqKi8uY2xhc3NwYXRoCioqLy5kb2NrZXJpZ25vcmUKKiovLmVudgoqKi8uZ2l0CioqLy5naXRpZ25vcmUKKiovLnByb2plY3QKKiovLnNldHRpbmdzCioqLy50b29sc3RhcmdldAoqKi8udnMKKiovLnZzY29kZQoqKi8ubmV4dAoqKi8uY2FjaGUKKiovKi4qcHJvai51c2VyCioqLyouZGJtZGwKKiovKi5qZm0KKiovY2hhcnRzCioqL2RvY2tlci1jb21wb3NlKgoqKi9jb21wb3NlLnkqbWwKKiovdGFyZ2V0CioqL0RvY2tlcmZpbGUqCioqL25vZGVfbW9kdWxlcwoqKi9ucG0tZGVidWcubG9nCioqL29iagoqKi9zZWNyZXRzLmRldi55YW1sCioqL3ZhbHVlcy5kZXYueWFtbAoqKi92ZW5kb3IKTElDRU5TRQpSRUFETUUubWQ=', copying: false }"
+        class="
+          -top-10
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div
           x-data="{ collapse: true }"
@@ -1399,10 +1445,7 @@ manually, you can create the following files in your project directory.</p>
             x-show="collapse"
             class="absolute z-10 flex h-32 w-full flex-col-reverse items-center overflow-clip pb-4"
           >
-            <button
-              @click="collapse = false"
-              class="bg-blue flex items-center rounded-full px-2 text-sm text-white dark:bg-blue-500"
-            >
+            <button @click="collapse = false" class="chip">
               <span>Show more</span>
               <span class="icon-svg"
                 ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg></span
@@ -1489,28 +1532,36 @@ directory.</p>
 
 <p>Inside the <code>spring-petclinic</code> directory, run the following command in a
 terminal.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxk', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxk', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker compose up --build
 </span></span></code></pre></div>
@@ -1537,28 +1588,36 @@ terminal.</p>
 <p>You can run the application detached from the terminal by adding the <code>-d</code>
 option. Inside the <code>spring-petclinic</code> directory, run the following command
 in a terminal.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxkIC1k', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxkIC1k', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker compose up --build -d
 </span></span></code></pre></div>
@@ -1574,28 +1633,36 @@ in a terminal.</p>
     </span>
   </a>. You should see a simple app for a pet clinic.</p>
 <p>In the terminal, run the following command to stop the application.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSBkb3du', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgY29tcG9zZSBkb3du', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker compose down
 </span></span></code></pre></div>

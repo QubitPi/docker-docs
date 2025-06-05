@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -9279,28 +9279,36 @@ available on the volume where <code>/var/lib/docker</code> is mounted.</p>
 <p>The example below shows the output for a daemon running on Ubuntu Linux,
 using the <code>overlay2</code> storage driver. As can be seen in the output, additional
 information about the <code>overlay2</code> storage driver is shown:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgaW5mbwoKQ2xpZW50OgogVmVyc2lvbjogICAgMjUuMC4wCiBDb250ZXh0OiAgICBkZWZhdWx0CiBEZWJ1ZyBNb2RlOiBmYWxzZQogUGx1Z2luczoKICBidWlsZHg6IERvY2tlciBCdWlsZHggKERvY2tlciBJbmMuKQogICAgVmVyc2lvbjogIHYwLjEyLjEKICAgIFBhdGg6ICAgICAvdXNyL2xvY2FsL2xpYmV4ZWMvZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgKICBjb21wb3NlOiBEb2NrZXIgQ29tcG9zZSAoRG9ja2VyIEluYy4pCiAgICBWZXJzaW9uOiAgdjIuMjQuMQogICAgUGF0aDogICAgIC91c3IvbG9jYWwvbGliZXhlYy9kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWNvbXBvc2UKClNlcnZlcjoKIENvbnRhaW5lcnM6IDE0CiAgUnVubmluZzogMwogIFBhdXNlZDogMQogIFN0b3BwZWQ6IDEwCiBJbWFnZXM6IDUyCiBTZXJ2ZXIgVmVyc2lvbjogMjUuMC4wCiBTdG9yYWdlIERyaXZlcjogb3ZlcmxheWZzCiAgZHJpdmVyLXR5cGU6IGlvLmNvbnRhaW5lcmQuc25hcHNob3R0ZXIudjEKIExvZ2dpbmcgRHJpdmVyOiBqc29uLWZpbGUKIENncm91cCBEcml2ZXI6IGNncm91cGZzCiBDZ3JvdXAgVmVyc2lvbjogMgogUGx1Z2luczoKICBWb2x1bWU6IGxvY2FsCiAgTmV0d29yazogYnJpZGdlIGhvc3QgaXB2bGFuIG1hY3ZsYW4gbnVsbCBvdmVybGF5CiAgTG9nOiBhd3Nsb2dzIGZsdWVudGQgZ2NwbG9ncyBnZWxmIGpvdXJuYWxkIGpzb24tZmlsZSBsb2NhbCBzcGx1bmsgc3lzbG9nCiBDREkgc3BlYyBkaXJlY3RvcmllczoKICAvZXRjL2NkaQogIC92YXIvcnVuL2NkaQogU3dhcm06IGluYWN0aXZlCiBSdW50aW1lczogcnVuYyBpby5jb250YWluZXJkLnJ1bmMudjIKIERlZmF1bHQgUnVudGltZTogcnVuYwogSW5pdCBCaW5hcnk6IGRvY2tlci1pbml0CiBjb250YWluZXJkIHZlcnNpb246IDcxOTA5YzE4MTRjNTQ0YWM0N2FiOTFkMmU4Yjg0NzE4ZTUxN2JiOTkKIHJ1bmMgdmVyc2lvbjogdjEuMS4xMS0wLWc0YmNjYjM4CiBpbml0IHZlcnNpb246IGRlNDBhZDAKIFNlY3VyaXR5IE9wdGlvbnM6CiAgc2VjY29tcAogICBQcm9maWxlOiBidWlsdGluCiAgY2dyb3VwbnMKIEtlcm5lbCBWZXJzaW9uOiA2LjUuMTEtbGludXhraXQKIE9wZXJhdGluZyBTeXN0ZW06IEFscGluZSBMaW51eCB2My4xOQogT1NUeXBlOiBsaW51eAogQXJjaGl0ZWN0dXJlOiBhYXJjaDY0CiBDUFVzOiAxMAogVG90YWwgTWVtb3J5OiA3LjY2M0dpQgogTmFtZTogNGE3ZWQyMDZhNzBkCiBJRDogYzIwZjcyMzAtNTlhMi00ODI0LWEyZjQtZmRhNzFjOTgyZWU2CiBEb2NrZXIgUm9vdCBEaXI6IC92YXIvbGliL2RvY2tlcgogRGVidWcgTW9kZTogZmFsc2UKIEV4cGVyaW1lbnRhbDogZmFsc2UKIEluc2VjdXJlIFJlZ2lzdHJpZXM6CiAgMTI3LjAuMC4wLzgKIExpdmUgUmVzdG9yZSBFbmFibGVkOiBmYWxzZQogUHJvZHVjdCBMaWNlbnNlOiBDb21tdW5pdHkgRW5naW5l', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgaW5mbwoKQ2xpZW50OgogVmVyc2lvbjogICAgMjUuMC4wCiBDb250ZXh0OiAgICBkZWZhdWx0CiBEZWJ1ZyBNb2RlOiBmYWxzZQogUGx1Z2luczoKICBidWlsZHg6IERvY2tlciBCdWlsZHggKERvY2tlciBJbmMuKQogICAgVmVyc2lvbjogIHYwLjEyLjEKICAgIFBhdGg6ICAgICAvdXNyL2xvY2FsL2xpYmV4ZWMvZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgKICBjb21wb3NlOiBEb2NrZXIgQ29tcG9zZSAoRG9ja2VyIEluYy4pCiAgICBWZXJzaW9uOiAgdjIuMjQuMQogICAgUGF0aDogICAgIC91c3IvbG9jYWwvbGliZXhlYy9kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWNvbXBvc2UKClNlcnZlcjoKIENvbnRhaW5lcnM6IDE0CiAgUnVubmluZzogMwogIFBhdXNlZDogMQogIFN0b3BwZWQ6IDEwCiBJbWFnZXM6IDUyCiBTZXJ2ZXIgVmVyc2lvbjogMjUuMC4wCiBTdG9yYWdlIERyaXZlcjogb3ZlcmxheWZzCiAgZHJpdmVyLXR5cGU6IGlvLmNvbnRhaW5lcmQuc25hcHNob3R0ZXIudjEKIExvZ2dpbmcgRHJpdmVyOiBqc29uLWZpbGUKIENncm91cCBEcml2ZXI6IGNncm91cGZzCiBDZ3JvdXAgVmVyc2lvbjogMgogUGx1Z2luczoKICBWb2x1bWU6IGxvY2FsCiAgTmV0d29yazogYnJpZGdlIGhvc3QgaXB2bGFuIG1hY3ZsYW4gbnVsbCBvdmVybGF5CiAgTG9nOiBhd3Nsb2dzIGZsdWVudGQgZ2NwbG9ncyBnZWxmIGpvdXJuYWxkIGpzb24tZmlsZSBsb2NhbCBzcGx1bmsgc3lzbG9nCiBDREkgc3BlYyBkaXJlY3RvcmllczoKICAvZXRjL2NkaQogIC92YXIvcnVuL2NkaQogU3dhcm06IGluYWN0aXZlCiBSdW50aW1lczogcnVuYyBpby5jb250YWluZXJkLnJ1bmMudjIKIERlZmF1bHQgUnVudGltZTogcnVuYwogSW5pdCBCaW5hcnk6IGRvY2tlci1pbml0CiBjb250YWluZXJkIHZlcnNpb246IDcxOTA5YzE4MTRjNTQ0YWM0N2FiOTFkMmU4Yjg0NzE4ZTUxN2JiOTkKIHJ1bmMgdmVyc2lvbjogdjEuMS4xMS0wLWc0YmNjYjM4CiBpbml0IHZlcnNpb246IGRlNDBhZDAKIFNlY3VyaXR5IE9wdGlvbnM6CiAgc2VjY29tcAogICBQcm9maWxlOiBidWlsdGluCiAgY2dyb3VwbnMKIEtlcm5lbCBWZXJzaW9uOiA2LjUuMTEtbGludXhraXQKIE9wZXJhdGluZyBTeXN0ZW06IEFscGluZSBMaW51eCB2My4xOQogT1NUeXBlOiBsaW51eAogQXJjaGl0ZWN0dXJlOiBhYXJjaDY0CiBDUFVzOiAxMAogVG90YWwgTWVtb3J5OiA3LjY2M0dpQgogTmFtZTogNGE3ZWQyMDZhNzBkCiBJRDogYzIwZjcyMzAtNTlhMi00ODI0LWEyZjQtZmRhNzFjOTgyZWU2CiBEb2NrZXIgUm9vdCBEaXI6IC92YXIvbGliL2RvY2tlcgogRGVidWcgTW9kZTogZmFsc2UKIEV4cGVyaW1lbnRhbDogZmFsc2UKIEluc2VjdXJlIFJlZ2lzdHJpZXM6CiAgMTI3LjAuMC4wLzgKIExpdmUgUmVzdG9yZSBFbmFibGVkOiBmYWxzZQogUHJvZHVjdCBMaWNlbnNlOiBDb21tdW5pdHkgRW5naW5l', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker info
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -9374,28 +9382,36 @@ information about the <code>overlay2</code> storage driver is shown:</p>
 </h3>
 
 <p>You can also specify the output format:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgaW5mbyAtLWZvcm1hdCAne3tqc29uIC59fScKCnsiSUQiOiI0Y2VlNDQwOC0xMGQyLTRlMTctODkxYy1hNDE3MzZhYzQ1MzYiLCJDb250YWluZXJzIjoxNCwgLi4ufQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgaW5mbyAtLWZvcm1hdCAne3tqc29uIC59fScKCnsiSUQiOiI0Y2VlNDQwOC0xMGQyLTRlMTctODkxYy1hNDE3MzZhYzQ1MzYiLCJDb250YWluZXJzIjoxNCwgLi4ufQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker info --format <span class="s1">&#39;{{json .}}&#39;</span>
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -9413,28 +9429,36 @@ information about the <code>overlay2</code> storage driver is shown:</p>
 </h3>
 
 <p>Here is a sample output for a daemon running on Windows Server:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'QzpcPiBkb2NrZXIgaW5mbwoKQ2xpZW50OiBEb2NrZXIgRW5naW5lIC0gQ29tbXVuaXR5CiBWZXJzaW9uOiAgICAyNC4wLjAKIENvbnRleHQ6ICAgIGRlZmF1bHQKIERlYnVnIE1vZGU6IGZhbHNlCiBQbHVnaW5zOgogIGJ1aWxkeDogRG9ja2VyIEJ1aWxkeCAoRG9ja2VyIEluYy4pCiAgICBWZXJzaW9uOiAgdjAuMTAuNAogICAgUGF0aDogICAgIEM6XFByb2dyYW0gRmlsZXNcRG9ja2VyXGNsaS1wbHVnaW5zXGRvY2tlci1idWlsZHguZXhlCiAgY29tcG9zZTogRG9ja2VyIENvbXBvc2UgKERvY2tlciBJbmMuKQogICAgVmVyc2lvbjogIHYyLjE3LjIKICAgIFBhdGg6ICAgICBDOlxQcm9ncmFtIEZpbGVzXERvY2tlclxjbGktcGx1Z2luc1xkb2NrZXItY29tcG9zZS5leGUKClNlcnZlcjoKIENvbnRhaW5lcnM6IDEKICBSdW5uaW5nOiAwCiAgUGF1c2VkOiAwCiAgU3RvcHBlZDogMQogSW1hZ2VzOiAxNwogU2VydmVyIFZlcnNpb246IDIzLjAuMwogU3RvcmFnZSBEcml2ZXI6IHdpbmRvd3NmaWx0ZXIKIExvZ2dpbmcgRHJpdmVyOiBqc29uLWZpbGUKIFBsdWdpbnM6CiAgVm9sdW1lOiBsb2NhbAogIE5ldHdvcms6IGljcyBpbnRlcm5hbCBsMmJyaWRnZSBsMnR1bm5lbCBuYXQgbnVsbCBvdmVybGF5IHByaXZhdGUgdHJhbnNwYXJlbnQKICBMb2c6IGF3c2xvZ3MgZXR3bG9ncyBmbHVlbnRkIGdjcGxvZ3MgZ2VsZiBqc29uLWZpbGUgbG9jYWwgc3BsdW5rIHN5c2xvZwogU3dhcm06IGluYWN0aXZlCiBEZWZhdWx0IElzb2xhdGlvbjogcHJvY2VzcwogS2VybmVsIFZlcnNpb246IDEwLjAgMjAzNDggKDIwMzQ4LjEuYW1kNjRmcmUuZmVfcmVsZWFzZS4yMTA1MDctMTUwMCkKIE9wZXJhdGluZyBTeXN0ZW06IE1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciBWZXJzaW9uIDIxSDIgKE9TIEJ1aWxkIDIwMzQ4LjcwNykKIE9TVHlwZTogd2luZG93cwogQXJjaGl0ZWN0dXJlOiB4ODZfNjQKIENQVXM6IDgKIFRvdGFsIE1lbW9yeTogMy45OTkgR2lCCiBOYW1lOiBXSU4tVjBWNzBDMExVNVAKIElEOiAyODgwZDM4ZC00NjRlLTRkMDEtOTFiZC1jNzZmMzNiYTM5ODEKIERvY2tlciBSb290IERpcjogQzpcUHJvZ3JhbURhdGFcZG9ja2VyCiBEZWJ1ZyBNb2RlOiBmYWxzZQogRXhwZXJpbWVudGFsOiB0cnVlCiBJbnNlY3VyZSBSZWdpc3RyaWVzOgogIG15cmVnaXN0cnk6NTAwMAogIDEyNy4wLjAuMC84CiBSZWdpc3RyeSBNaXJyb3JzOgogICBodHRwOi8vMTkyLjE2OC4xLjIvCiAgIGh0dHA6Ly9yZWdpc3RyeS1taXJyb3IuZXhhbXBsZS5jb206NTAwMC8KIExpdmUgUmVzdG9yZSBFbmFibGVkOiBmYWxzZQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'QzpcPiBkb2NrZXIgaW5mbwoKQ2xpZW50OiBEb2NrZXIgRW5naW5lIC0gQ29tbXVuaXR5CiBWZXJzaW9uOiAgICAyNC4wLjAKIENvbnRleHQ6ICAgIGRlZmF1bHQKIERlYnVnIE1vZGU6IGZhbHNlCiBQbHVnaW5zOgogIGJ1aWxkeDogRG9ja2VyIEJ1aWxkeCAoRG9ja2VyIEluYy4pCiAgICBWZXJzaW9uOiAgdjAuMTAuNAogICAgUGF0aDogICAgIEM6XFByb2dyYW0gRmlsZXNcRG9ja2VyXGNsaS1wbHVnaW5zXGRvY2tlci1idWlsZHguZXhlCiAgY29tcG9zZTogRG9ja2VyIENvbXBvc2UgKERvY2tlciBJbmMuKQogICAgVmVyc2lvbjogIHYyLjE3LjIKICAgIFBhdGg6ICAgICBDOlxQcm9ncmFtIEZpbGVzXERvY2tlclxjbGktcGx1Z2luc1xkb2NrZXItY29tcG9zZS5leGUKClNlcnZlcjoKIENvbnRhaW5lcnM6IDEKICBSdW5uaW5nOiAwCiAgUGF1c2VkOiAwCiAgU3RvcHBlZDogMQogSW1hZ2VzOiAxNwogU2VydmVyIFZlcnNpb246IDIzLjAuMwogU3RvcmFnZSBEcml2ZXI6IHdpbmRvd3NmaWx0ZXIKIExvZ2dpbmcgRHJpdmVyOiBqc29uLWZpbGUKIFBsdWdpbnM6CiAgVm9sdW1lOiBsb2NhbAogIE5ldHdvcms6IGljcyBpbnRlcm5hbCBsMmJyaWRnZSBsMnR1bm5lbCBuYXQgbnVsbCBvdmVybGF5IHByaXZhdGUgdHJhbnNwYXJlbnQKICBMb2c6IGF3c2xvZ3MgZXR3bG9ncyBmbHVlbnRkIGdjcGxvZ3MgZ2VsZiBqc29uLWZpbGUgbG9jYWwgc3BsdW5rIHN5c2xvZwogU3dhcm06IGluYWN0aXZlCiBEZWZhdWx0IElzb2xhdGlvbjogcHJvY2VzcwogS2VybmVsIFZlcnNpb246IDEwLjAgMjAzNDggKDIwMzQ4LjEuYW1kNjRmcmUuZmVfcmVsZWFzZS4yMTA1MDctMTUwMCkKIE9wZXJhdGluZyBTeXN0ZW06IE1pY3Jvc29mdCBXaW5kb3dzIFNlcnZlciBWZXJzaW9uIDIxSDIgKE9TIEJ1aWxkIDIwMzQ4LjcwNykKIE9TVHlwZTogd2luZG93cwogQXJjaGl0ZWN0dXJlOiB4ODZfNjQKIENQVXM6IDgKIFRvdGFsIE1lbW9yeTogMy45OTkgR2lCCiBOYW1lOiBXSU4tVjBWNzBDMExVNVAKIElEOiAyODgwZDM4ZC00NjRlLTRkMDEtOTFiZC1jNzZmMzNiYTM5ODEKIERvY2tlciBSb290IERpcjogQzpcUHJvZ3JhbURhdGFcZG9ja2VyCiBEZWJ1ZyBNb2RlOiBmYWxzZQogRXhwZXJpbWVudGFsOiB0cnVlCiBJbnNlY3VyZSBSZWdpc3RyaWVzOgogIG15cmVnaXN0cnk6NTAwMAogIDEyNy4wLjAuMC84CiBSZWdpc3RyeSBNaXJyb3JzOgogICBodHRwOi8vMTkyLjE2OC4xLjIvCiAgIGh0dHA6Ly9yZWdpc3RyeS1taXJyb3IuZXhhbXBsZS5jb206NTAwMC8KIExpdmUgUmVzdG9yZSBFbmFibGVkOiBmYWxzZQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">C:\&gt; docker info
 </span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="err">

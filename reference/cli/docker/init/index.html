@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -9333,28 +9333,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the initial menu after running <code>docker init</code>. See the additional examples to view the options for each language or framework.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgaW5pdAoKV2VsY29tZSB0byB0aGUgRG9ja2VyIEluaXQgQ0xJIQoKVGhpcyB1dGlsaXR5IHdpbGwgd2FsayB5b3UgdGhyb3VnaCBjcmVhdGluZyB0aGUgZm9sbG93aW5nIGZpbGVzIHdpdGggc2Vuc2libGUgZGVmYXVsdHMgZm9yIHlvdXIgcHJvamVjdDoKICAtIC5kb2NrZXJpZ25vcmUKICAtIERvY2tlcmZpbGUKICAtIGNvbXBvc2UueWFtbAogIC0gUkVBRE1FLkRvY2tlci5tZAoKTGV0J3MgZ2V0IHN0YXJ0ZWQhCgo/IFdoYXQgYXBwbGljYXRpb24gcGxhdGZvcm0gZG9lcyB5b3VyIHByb2plY3QgdXNlPyAgW1VzZSBhcnJvd3MgdG8gbW92ZSwgdHlwZSB0byBmaWx0ZXJdCj4gUEhQIHdpdGggQXBhY2hlIC0gKGRldGVjdGVkKSBzdWl0YWJsZSBmb3IgYSBQSFAgd2ViIGFwcGxpY2F0aW9uCiAgR28gLSBzdWl0YWJsZSBmb3IgYSBHbyBzZXJ2ZXIgYXBwbGljYXRpb24KICBKYXZhIC0gc3VpdGFibGUgZm9yIGEgSmF2YSBhcHBsaWNhdGlvbiB0aGF0IHVzZXMgTWF2ZW4gYW5kIHBhY2thZ2VzIGFzIGFuIHViZXIgamFyCiAgUHl0aG9uIC0gc3VpdGFibGUgZm9yIGEgUHl0aG9uIHNlcnZlciBhcHBsaWNhdGlvbgogIE5vZGUgLSBzdWl0YWJsZSBmb3IgYSBOb2RlIHNlcnZlciBhcHBsaWNhdGlvbgogIFJ1c3QgLSBzdWl0YWJsZSBmb3IgYSBSdXN0IHNlcnZlciBhcHBsaWNhdGlvbgogIEFTUC5ORVQgQ29yZSAtIHN1aXRhYmxlIGZvciBhbiBBU1AuTkVUIENvcmUgYXBwbGljYXRpb24KICBPdGhlciAtIGdlbmVyYWwgcHVycG9zZSBzdGFydGluZyBwb2ludCBmb3IgY29udGFpbmVyaXppbmcgeW91ciBhcHBsaWNhdGlvbgogIERvbid0IHNlZSBzb21ldGhpbmcgeW91IG5lZWQ/IExldCB1cyBrbm93IQogIFF1aXQ=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgaW5pdAoKV2VsY29tZSB0byB0aGUgRG9ja2VyIEluaXQgQ0xJIQoKVGhpcyB1dGlsaXR5IHdpbGwgd2FsayB5b3UgdGhyb3VnaCBjcmVhdGluZyB0aGUgZm9sbG93aW5nIGZpbGVzIHdpdGggc2Vuc2libGUgZGVmYXVsdHMgZm9yIHlvdXIgcHJvamVjdDoKICAtIC5kb2NrZXJpZ25vcmUKICAtIERvY2tlcmZpbGUKICAtIGNvbXBvc2UueWFtbAogIC0gUkVBRE1FLkRvY2tlci5tZAoKTGV0J3MgZ2V0IHN0YXJ0ZWQhCgo/IFdoYXQgYXBwbGljYXRpb24gcGxhdGZvcm0gZG9lcyB5b3VyIHByb2plY3QgdXNlPyAgW1VzZSBhcnJvd3MgdG8gbW92ZSwgdHlwZSB0byBmaWx0ZXJdCj4gUEhQIHdpdGggQXBhY2hlIC0gKGRldGVjdGVkKSBzdWl0YWJsZSBmb3IgYSBQSFAgd2ViIGFwcGxpY2F0aW9uCiAgR28gLSBzdWl0YWJsZSBmb3IgYSBHbyBzZXJ2ZXIgYXBwbGljYXRpb24KICBKYXZhIC0gc3VpdGFibGUgZm9yIGEgSmF2YSBhcHBsaWNhdGlvbiB0aGF0IHVzZXMgTWF2ZW4gYW5kIHBhY2thZ2VzIGFzIGFuIHViZXIgamFyCiAgUHl0aG9uIC0gc3VpdGFibGUgZm9yIGEgUHl0aG9uIHNlcnZlciBhcHBsaWNhdGlvbgogIE5vZGUgLSBzdWl0YWJsZSBmb3IgYSBOb2RlIHNlcnZlciBhcHBsaWNhdGlvbgogIFJ1c3QgLSBzdWl0YWJsZSBmb3IgYSBSdXN0IHNlcnZlciBhcHBsaWNhdGlvbgogIEFTUC5ORVQgQ29yZSAtIHN1aXRhYmxlIGZvciBhbiBBU1AuTkVUIENvcmUgYXBwbGljYXRpb24KICBPdGhlciAtIGdlbmVyYWwgcHVycG9zZSBzdGFydGluZyBwb2ludCBmb3IgY29udGFpbmVyaXppbmcgeW91ciBhcHBsaWNhdGlvbgogIERvbid0IHNlZSBzb21ldGhpbmcgeW91IG5lZWQ/IExldCB1cyBrbm93IQogIFF1aXQ=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker init
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -9392,28 +9400,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>Go</code> and example input.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gR28KPyBXaGF0IHZlcnNpb24gb2YgR28gZG8geW91IHdhbnQgdG8gdXNlPyAxLjIwCj8gV2hhdCdzIHRoZSByZWxhdGl2ZSBkaXJlY3RvcnkgKHdpdGggYSBsZWFkaW5nIC4pIG9mIHlvdXIgbWFpbiBwYWNrYWdlPyAuCj8gV2hhdCBwb3J0IGRvZXMgeW91ciBzZXJ2ZXIgbGlzdGVuIG9uPyAzMzMzCgpDUkVBVEVEOiAuZG9ja2VyaWdub3JlCkNSRUFURUQ6IERvY2tlcmZpbGUKQ1JFQVRFRDogY29tcG9zZS55YW1sCkNSRUFURUQ6IFJFQURNRS5Eb2NrZXIubWQKCuKclCBZb3VyIERvY2tlciBmaWxlcyBhcmUgcmVhZHkhCgpUYWtlIGEgbW9tZW50IHRvIHJldmlldyB0aGVtIGFuZCB0YWlsb3IgdGhlbSB0byB5b3VyIGFwcGxpY2F0aW9uLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjMzMzMKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gR28KPyBXaGF0IHZlcnNpb24gb2YgR28gZG8geW91IHdhbnQgdG8gdXNlPyAxLjIwCj8gV2hhdCdzIHRoZSByZWxhdGl2ZSBkaXJlY3RvcnkgKHdpdGggYSBsZWFkaW5nIC4pIG9mIHlvdXIgbWFpbiBwYWNrYWdlPyAuCj8gV2hhdCBwb3J0IGRvZXMgeW91ciBzZXJ2ZXIgbGlzdGVuIG9uPyAzMzMzCgpDUkVBVEVEOiAuZG9ja2VyaWdub3JlCkNSRUFURUQ6IERvY2tlcmZpbGUKQ1JFQVRFRDogY29tcG9zZS55YW1sCkNSRUFURUQ6IFJFQURNRS5Eb2NrZXIubWQKCuKclCBZb3VyIERvY2tlciBmaWxlcyBhcmUgcmVhZHkhCgpUYWtlIGEgbW9tZW50IHRvIHJldmlldyB0aGVtIGFuZCB0YWlsb3IgdGhlbSB0byB5b3VyIGFwcGxpY2F0aW9uLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjMzMzMKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? Go
 </span></span></span><span class="line"><span class="cl"><span class="go">? What version of Go do you want to use? 1.20
@@ -9447,28 +9463,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>Node</code> and example input.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gTm9kZQo/IFdoYXQgdmVyc2lvbiBvZiBOb2RlIGRvIHlvdSB3YW50IHRvIHVzZT8gMTgKPyBXaGljaCBwYWNrYWdlIG1hbmFnZXIgZG8geW91IHdhbnQgdG8gdXNlPyB5YXJuCj8gRG8geW91IHdhbnQgdG8gcnVuICJ5YXJuIHJ1biBidWlsZCIgYmVmb3JlIHN0YXJ0aW5nIHlvdXIgc2VydmVyPyBZZXMKPyBXaGF0IGRpcmVjdG9yeSBpcyB5b3VyIGJ1aWxkIG91dHB1dCB0bz8gKGNvbW1hLXNlcGFyYXRlIGlmIG11bHRpcGxlKSBvdXRwdXQKPyBXaGF0IGNvbW1hbmQgZG8geW91IHdhbnQgdG8gdXNlIHRvIHN0YXJ0IHRoZSBhcHA/IG5vZGUgaW5kZXguanMKPyBXaGF0IHBvcnQgZG9lcyB5b3VyIHNlcnZlciBsaXN0ZW4gb24/IDgwMDAKCkNSRUFURUQ6IC5kb2NrZXJpZ25vcmUKQ1JFQVRFRDogRG9ja2VyZmlsZQpDUkVBVEVEOiBjb21wb3NlLnlhbWwKQ1JFQVRFRDogUkVBRE1FLkRvY2tlci5tZAoK4pyUIFlvdXIgRG9ja2VyIGZpbGVzIGFyZSByZWFkeSEKClRha2UgYSBtb21lbnQgdG8gcmV2aWV3IHRoZW0gYW5kIHRhaWxvciB0aGVtIHRvIHlvdXIgYXBwbGljYXRpb24uCgpXaGVuIHlvdSdyZSByZWFkeSwgc3RhcnQgeW91ciBhcHBsaWNhdGlvbiBieSBydW5uaW5nOiBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxkCgpZb3VyIGFwcGxpY2F0aW9uIHdpbGwgYmUgYXZhaWxhYmxlIGF0IGh0dHA6Ly9sb2NhbGhvc3Q6ODAwMAoKQ29uc3VsdCBSRUFETUUuRG9ja2VyLm1kIGZvciBtb3JlIGluZm9ybWF0aW9uIGFib3V0IHVzaW5nIHRoZSBnZW5lcmF0ZWQgZmlsZXMu', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gTm9kZQo/IFdoYXQgdmVyc2lvbiBvZiBOb2RlIGRvIHlvdSB3YW50IHRvIHVzZT8gMTgKPyBXaGljaCBwYWNrYWdlIG1hbmFnZXIgZG8geW91IHdhbnQgdG8gdXNlPyB5YXJuCj8gRG8geW91IHdhbnQgdG8gcnVuICJ5YXJuIHJ1biBidWlsZCIgYmVmb3JlIHN0YXJ0aW5nIHlvdXIgc2VydmVyPyBZZXMKPyBXaGF0IGRpcmVjdG9yeSBpcyB5b3VyIGJ1aWxkIG91dHB1dCB0bz8gKGNvbW1hLXNlcGFyYXRlIGlmIG11bHRpcGxlKSBvdXRwdXQKPyBXaGF0IGNvbW1hbmQgZG8geW91IHdhbnQgdG8gdXNlIHRvIHN0YXJ0IHRoZSBhcHA/IG5vZGUgaW5kZXguanMKPyBXaGF0IHBvcnQgZG9lcyB5b3VyIHNlcnZlciBsaXN0ZW4gb24/IDgwMDAKCkNSRUFURUQ6IC5kb2NrZXJpZ25vcmUKQ1JFQVRFRDogRG9ja2VyZmlsZQpDUkVBVEVEOiBjb21wb3NlLnlhbWwKQ1JFQVRFRDogUkVBRE1FLkRvY2tlci5tZAoK4pyUIFlvdXIgRG9ja2VyIGZpbGVzIGFyZSByZWFkeSEKClRha2UgYSBtb21lbnQgdG8gcmV2aWV3IHRoZW0gYW5kIHRhaWxvciB0aGVtIHRvIHlvdXIgYXBwbGljYXRpb24uCgpXaGVuIHlvdSdyZSByZWFkeSwgc3RhcnQgeW91ciBhcHBsaWNhdGlvbiBieSBydW5uaW5nOiBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxkCgpZb3VyIGFwcGxpY2F0aW9uIHdpbGwgYmUgYXZhaWxhYmxlIGF0IGh0dHA6Ly9sb2NhbGhvc3Q6ODAwMAoKQ29uc3VsdCBSRUFETUUuRG9ja2VyLm1kIGZvciBtb3JlIGluZm9ybWF0aW9uIGFib3V0IHVzaW5nIHRoZSBnZW5lcmF0ZWQgZmlsZXMu', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? Node
 </span></span></span><span class="line"><span class="cl"><span class="go">? What version of Node do you want to use? 18
@@ -9505,28 +9529,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>Python</code> and example input.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gUHl0aG9uCj8gV2hhdCB2ZXJzaW9uIG9mIFB5dGhvbiBkbyB5b3Ugd2FudCB0byB1c2U/IDMuOAo/IFdoYXQgcG9ydCBkbyB5b3Ugd2FudCB5b3VyIGFwcCB0byBsaXN0ZW4gb24/IDgwMDAKPyBXaGF0IGlzIHRoZSBjb21tYW5kIHRvIHJ1biB5b3VyIGFwcCAoZS5nLiwgZ3VuaWNvcm4gJ215YXBwLmV4YW1wbGU6YXBwJyAtLWJpbmQ9MC4wLjAuMDo4MDAwKT8gcHl0aG9uIC4vYXBwLnB5CgpDUkVBVEVEOiAuZG9ja2VyaWdub3JlCkNSRUFURUQ6IERvY2tlcmZpbGUKQ1JFQVRFRDogY29tcG9zZS55YW1sCkNSRUFURUQ6IFJFQURNRS5Eb2NrZXIubWQKCuKclCBZb3VyIERvY2tlciBmaWxlcyBhcmUgcmVhZHkhCgpUYWtlIGEgbW9tZW50IHRvIHJldmlldyB0aGVtIGFuZCB0YWlsb3IgdGhlbSB0byB5b3VyIGFwcGxpY2F0aW9uLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjgwMDAKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gUHl0aG9uCj8gV2hhdCB2ZXJzaW9uIG9mIFB5dGhvbiBkbyB5b3Ugd2FudCB0byB1c2U/IDMuOAo/IFdoYXQgcG9ydCBkbyB5b3Ugd2FudCB5b3VyIGFwcCB0byBsaXN0ZW4gb24/IDgwMDAKPyBXaGF0IGlzIHRoZSBjb21tYW5kIHRvIHJ1biB5b3VyIGFwcCAoZS5nLiwgZ3VuaWNvcm4gJ215YXBwLmV4YW1wbGU6YXBwJyAtLWJpbmQ9MC4wLjAuMDo4MDAwKT8gcHl0aG9uIC4vYXBwLnB5CgpDUkVBVEVEOiAuZG9ja2VyaWdub3JlCkNSRUFURUQ6IERvY2tlcmZpbGUKQ1JFQVRFRDogY29tcG9zZS55YW1sCkNSRUFURUQ6IFJFQURNRS5Eb2NrZXIubWQKCuKclCBZb3VyIERvY2tlciBmaWxlcyBhcmUgcmVhZHkhCgpUYWtlIGEgbW9tZW50IHRvIHJldmlldyB0aGVtIGFuZCB0YWlsb3IgdGhlbSB0byB5b3VyIGFwcGxpY2F0aW9uLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjgwMDAKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? Python
 </span></span></span><span class="line"><span class="cl"><span class="go">? What version of Python do you want to use? 3.8
@@ -9560,28 +9592,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>Rust</code> and example input.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gUnVzdAo/IFdoYXQgdmVyc2lvbiBvZiBSdXN0IGRvIHlvdSB3YW50IHRvIHVzZT8gMS43MC4wCj8gV2hhdCBwb3J0IGRvZXMgeW91ciBzZXJ2ZXIgbGlzdGVuIG9uPyA4MDAwCgpDUkVBVEVEOiAuZG9ja2VyaWdub3JlCkNSRUFURUQ6IERvY2tlcmZpbGUKQ1JFQVRFRDogY29tcG9zZS55YW1sCkNSRUFURUQ6IFJFQURNRS5Eb2NrZXIubWQKCuKclCBZb3VyIERvY2tlciBmaWxlcyBhcmUgcmVhZHkhCgpUYWtlIGEgbW9tZW50IHRvIHJldmlldyB0aGVtIGFuZCB0YWlsb3IgdGhlbSB0byB5b3VyIGFwcGxpY2F0aW9uLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjgwMDAKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gUnVzdAo/IFdoYXQgdmVyc2lvbiBvZiBSdXN0IGRvIHlvdSB3YW50IHRvIHVzZT8gMS43MC4wCj8gV2hhdCBwb3J0IGRvZXMgeW91ciBzZXJ2ZXIgbGlzdGVuIG9uPyA4MDAwCgpDUkVBVEVEOiAuZG9ja2VyaWdub3JlCkNSRUFURUQ6IERvY2tlcmZpbGUKQ1JFQVRFRDogY29tcG9zZS55YW1sCkNSRUFURUQ6IFJFQURNRS5Eb2NrZXIubWQKCuKclCBZb3VyIERvY2tlciBmaWxlcyBhcmUgcmVhZHkhCgpUYWtlIGEgbW9tZW50IHRvIHJldmlldyB0aGVtIGFuZCB0YWlsb3IgdGhlbSB0byB5b3VyIGFwcGxpY2F0aW9uLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjgwMDAKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? Rust
 </span></span></span><span class="line"><span class="cl"><span class="go">? What version of Rust do you want to use? 1.70.0
@@ -9614,28 +9654,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>ASP.NET Core</code> and example input.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gQVNQLk5FVCBDb3JlCj8gV2hhdCdzIHRoZSBuYW1lIG9mIHlvdXIgc29sdXRpb24ncyBtYWluIHByb2plY3Q/IG15YXBwCj8gV2hhdCB2ZXJzaW9uIG9mIC5ORVQgZG8geW91IHdhbnQgdG8gdXNlPyA2LjAKPyBXaGF0IGxvY2FsIHBvcnQgZG8geW91IHdhbnQgdG8gdXNlIHRvIGFjY2VzcyB5b3VyIHNlcnZlcj8gODAwMAoKQ1JFQVRFRDogLmRvY2tlcmlnbm9yZQpDUkVBVEVEOiBEb2NrZXJmaWxlCkNSRUFURUQ6IGNvbXBvc2UueWFtbApDUkVBVEVEOiBSRUFETUUuRG9ja2VyLm1kCgrinJQgWW91ciBEb2NrZXIgZmlsZXMgYXJlIHJlYWR5IQoKVGFrZSBhIG1vbWVudCB0byByZXZpZXcgdGhlbSBhbmQgdGFpbG9yIHRoZW0gdG8geW91ciBhcHBsaWNhdGlvbi4KCldoZW4geW91J3JlIHJlYWR5LCBzdGFydCB5b3VyIGFwcGxpY2F0aW9uIGJ5IHJ1bm5pbmc6IGRvY2tlciBjb21wb3NlIHVwIC0tYnVpbGQKCllvdXIgYXBwbGljYXRpb24gd2lsbCBiZSBhdmFpbGFibGUgYXQgaHR0cDovL2xvY2FsaG9zdDo4MDAwCgpDb25zdWx0IFJFQURNRS5Eb2NrZXIubWQgZm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgdXNpbmcgdGhlIGdlbmVyYXRlZCBmaWxlcy4=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gQVNQLk5FVCBDb3JlCj8gV2hhdCdzIHRoZSBuYW1lIG9mIHlvdXIgc29sdXRpb24ncyBtYWluIHByb2plY3Q/IG15YXBwCj8gV2hhdCB2ZXJzaW9uIG9mIC5ORVQgZG8geW91IHdhbnQgdG8gdXNlPyA2LjAKPyBXaGF0IGxvY2FsIHBvcnQgZG8geW91IHdhbnQgdG8gdXNlIHRvIGFjY2VzcyB5b3VyIHNlcnZlcj8gODAwMAoKQ1JFQVRFRDogLmRvY2tlcmlnbm9yZQpDUkVBVEVEOiBEb2NrZXJmaWxlCkNSRUFURUQ6IGNvbXBvc2UueWFtbApDUkVBVEVEOiBSRUFETUUuRG9ja2VyLm1kCgrinJQgWW91ciBEb2NrZXIgZmlsZXMgYXJlIHJlYWR5IQoKVGFrZSBhIG1vbWVudCB0byByZXZpZXcgdGhlbSBhbmQgdGFpbG9yIHRoZW0gdG8geW91ciBhcHBsaWNhdGlvbi4KCldoZW4geW91J3JlIHJlYWR5LCBzdGFydCB5b3VyIGFwcGxpY2F0aW9uIGJ5IHJ1bm5pbmc6IGRvY2tlciBjb21wb3NlIHVwIC0tYnVpbGQKCllvdXIgYXBwbGljYXRpb24gd2lsbCBiZSBhdmFpbGFibGUgYXQgaHR0cDovL2xvY2FsaG9zdDo4MDAwCgpDb25zdWx0IFJFQURNRS5Eb2NrZXIubWQgZm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgdXNpbmcgdGhlIGdlbmVyYXRlZCBmaWxlcy4=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? ASP.NET Core
 </span></span></span><span class="line"><span class="cl"><span class="go">? What&#39;s the name of your solution&#39;s main project? myapp
@@ -9669,28 +9717,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>PHP with Apache</code> and example input. The PHP with Apache template is suitable for both pure PHP applications and applications using Composer as a dependency manager. After running <code>docker init</code>, you must manually add any PHP extensions that are required by your application to the Dockerfile.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gUEhQIHdpdGggQXBhY2hlCj8gV2hhdCB2ZXJzaW9uIG9mIFBIUCBkbyB5b3Ugd2FudCB0byB1c2U/IDguMgo/IFdoYXQncyB0aGUgcmVsYXRpdmUgZGlyZWN0b3J5ICh3aXRoIGEgbGVhZGluZyAuKSBmb3IgeW91ciBhcHA/IC4vc3JjCj8gV2hhdCBsb2NhbCBwb3J0IGRvIHlvdSB3YW50IHRvIHVzZSB0byBhY2Nlc3MgeW91ciBzZXJ2ZXI/IDkwMDAKCkNSRUFURUQ6IC5kb2NrZXJpZ25vcmUKQ1JFQVRFRDogRG9ja2VyZmlsZQpDUkVBVEVEOiBjb21wb3NlLnlhbWwKQ1JFQVRFRDogUkVBRE1FLkRvY2tlci5tZAoK4pyUIFlvdXIgRG9ja2VyIGZpbGVzIGFyZSByZWFkeSEKClRha2UgYSBtb21lbnQgdG8gcmV2aWV3IHRoZW0gYW5kIHRhaWxvciB0aGVtIHRvIHlvdXIgYXBwbGljYXRpb24uCgpJZiB5b3VyIGFwcGxpY2F0aW9uIHJlcXVpcmVzIHNwZWNpZmljIFBIUCBleHRlbnNpb25zLCB5b3UgY2FuIGZvbGxvdyB0aGUgaW5zdHJ1Y3Rpb25zIGluIHRoZSBEb2NrZXJmaWxlIHRvIGFkZCB0aGVtLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjkwMDAKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gUEhQIHdpdGggQXBhY2hlCj8gV2hhdCB2ZXJzaW9uIG9mIFBIUCBkbyB5b3Ugd2FudCB0byB1c2U/IDguMgo/IFdoYXQncyB0aGUgcmVsYXRpdmUgZGlyZWN0b3J5ICh3aXRoIGEgbGVhZGluZyAuKSBmb3IgeW91ciBhcHA/IC4vc3JjCj8gV2hhdCBsb2NhbCBwb3J0IGRvIHlvdSB3YW50IHRvIHVzZSB0byBhY2Nlc3MgeW91ciBzZXJ2ZXI/IDkwMDAKCkNSRUFURUQ6IC5kb2NrZXJpZ25vcmUKQ1JFQVRFRDogRG9ja2VyZmlsZQpDUkVBVEVEOiBjb21wb3NlLnlhbWwKQ1JFQVRFRDogUkVBRE1FLkRvY2tlci5tZAoK4pyUIFlvdXIgRG9ja2VyIGZpbGVzIGFyZSByZWFkeSEKClRha2UgYSBtb21lbnQgdG8gcmV2aWV3IHRoZW0gYW5kIHRhaWxvciB0aGVtIHRvIHlvdXIgYXBwbGljYXRpb24uCgpJZiB5b3VyIGFwcGxpY2F0aW9uIHJlcXVpcmVzIHNwZWNpZmljIFBIUCBleHRlbnNpb25zLCB5b3UgY2FuIGZvbGxvdyB0aGUgaW5zdHJ1Y3Rpb25zIGluIHRoZSBEb2NrZXJmaWxlIHRvIGFkZCB0aGVtLgoKV2hlbiB5b3UncmUgcmVhZHksIHN0YXJ0IHlvdXIgYXBwbGljYXRpb24gYnkgcnVubmluZzogZG9ja2VyIGNvbXBvc2UgdXAgLS1idWlsZAoKWW91ciBhcHBsaWNhdGlvbiB3aWxsIGJlIGF2YWlsYWJsZSBhdCBodHRwOi8vbG9jYWxob3N0OjkwMDAKCkNvbnN1bHQgUkVBRE1FLkRvY2tlci5tZCBmb3IgbW9yZSBpbmZvcm1hdGlvbiBhYm91dCB1c2luZyB0aGUgZ2VuZXJhdGVkIGZpbGVzLg==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? PHP with Apache
 </span></span></span><span class="line"><span class="cl"><span class="go">? What version of PHP do you want to use? 8.2
@@ -9726,28 +9782,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the prompts that appear after selecting <code>Java</code> and example input.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gSmF2YQo/IFdoYXQgdmVyc2lvbiBvZiBKYXZhIGRvIHlvdSB3YW50IHRvIHVzZT8gMTcKPyBXaGF0J3MgdGhlIHJlbGF0aXZlIGRpcmVjdG9yeSAod2l0aCBhIGxlYWRpbmcgLikgZm9yIHlvdXIgYXBwPyAuL3NyYwo/IFdoYXQgcG9ydCBkb2VzIHlvdXIgc2VydmVyIGxpc3RlbiBvbj8gOTAwMAoKQ1JFQVRFRDogLmRvY2tlcmlnbm9yZQpDUkVBVEVEOiBEb2NrZXJmaWxlCkNSRUFURUQ6IGNvbXBvc2UueWFtbApDUkVBVEVEOiBSRUFETUUuRG9ja2VyLm1kCgrinJQgWW91ciBEb2NrZXIgZmlsZXMgYXJlIHJlYWR5IQoKVGFrZSBhIG1vbWVudCB0byByZXZpZXcgdGhlbSBhbmQgdGFpbG9yIHRoZW0gdG8geW91ciBhcHBsaWNhdGlvbi4KCldoZW4geW91J3JlIHJlYWR5LCBzdGFydCB5b3VyIGFwcGxpY2F0aW9uIGJ5IHJ1bm5pbmc6IGRvY2tlciBjb21wb3NlIHVwIC0tYnVpbGQKCllvdXIgYXBwbGljYXRpb24gd2lsbCBiZSBhdmFpbGFibGUgYXQgaHR0cDovL2xvY2FsaG9zdDo5MDAwCgpDb25zdWx0IFJFQURNRS5Eb2NrZXIubWQgZm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgdXNpbmcgdGhlIGdlbmVyYXRlZCBmaWxlcy4=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gSmF2YQo/IFdoYXQgdmVyc2lvbiBvZiBKYXZhIGRvIHlvdSB3YW50IHRvIHVzZT8gMTcKPyBXaGF0J3MgdGhlIHJlbGF0aXZlIGRpcmVjdG9yeSAod2l0aCBhIGxlYWRpbmcgLikgZm9yIHlvdXIgYXBwPyAuL3NyYwo/IFdoYXQgcG9ydCBkb2VzIHlvdXIgc2VydmVyIGxpc3RlbiBvbj8gOTAwMAoKQ1JFQVRFRDogLmRvY2tlcmlnbm9yZQpDUkVBVEVEOiBEb2NrZXJmaWxlCkNSRUFURUQ6IGNvbXBvc2UueWFtbApDUkVBVEVEOiBSRUFETUUuRG9ja2VyLm1kCgrinJQgWW91ciBEb2NrZXIgZmlsZXMgYXJlIHJlYWR5IQoKVGFrZSBhIG1vbWVudCB0byByZXZpZXcgdGhlbSBhbmQgdGFpbG9yIHRoZW0gdG8geW91ciBhcHBsaWNhdGlvbi4KCldoZW4geW91J3JlIHJlYWR5LCBzdGFydCB5b3VyIGFwcGxpY2F0aW9uIGJ5IHJ1bm5pbmc6IGRvY2tlciBjb21wb3NlIHVwIC0tYnVpbGQKCllvdXIgYXBwbGljYXRpb24gd2lsbCBiZSBhdmFpbGFibGUgYXQgaHR0cDovL2xvY2FsaG9zdDo5MDAwCgpDb25zdWx0IFJFQURNRS5Eb2NrZXIubWQgZm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgdXNpbmcgdGhlIGdlbmVyYXRlZCBmaWxlcy4=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? Java
 </span></span></span><span class="line"><span class="cl"><span class="go">? What version of Java do you want to use? 17
@@ -9781,28 +9845,36 @@ To back up an existing file before selecting to overwrite it, rename the file or
 </h3>
 
 <p>The following example shows the output after selecting <code>Other</code>.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gT3RoZXIKCkNSRUFURUQ6IC5kb2NrZXJpZ25vcmUKQ1JFQVRFRDogRG9ja2VyZmlsZQpDUkVBVEVEOiBjb21wb3NlLnlhbWwKQ1JFQVRFRDogUkVBRE1FLkRvY2tlci5tZAoK4pyUIFlvdXIgRG9ja2VyIGZpbGVzIGFyZSByZWFkeSEKClRha2UgYSBtb21lbnQgdG8gcmV2aWV3IHRoZW0gYW5kIHRhaWxvciB0aGVtIHRvIHlvdXIgYXBwbGljYXRpb24uCgpXaGVuIHlvdSdyZSByZWFkeSwgc3RhcnQgeW91ciBhcHBsaWNhdGlvbiBieSBydW5uaW5nOiBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxkCgpDb25zdWx0IFJFQURNRS5Eb2NrZXIubWQgZm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgdXNpbmcgdGhlIGdlbmVyYXRlZCBmaWxlcy4=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'PyBXaGF0IGFwcGxpY2F0aW9uIHBsYXRmb3JtIGRvZXMgeW91ciBwcm9qZWN0IHVzZT8gT3RoZXIKCkNSRUFURUQ6IC5kb2NrZXJpZ25vcmUKQ1JFQVRFRDogRG9ja2VyZmlsZQpDUkVBVEVEOiBjb21wb3NlLnlhbWwKQ1JFQVRFRDogUkVBRE1FLkRvY2tlci5tZAoK4pyUIFlvdXIgRG9ja2VyIGZpbGVzIGFyZSByZWFkeSEKClRha2UgYSBtb21lbnQgdG8gcmV2aWV3IHRoZW0gYW5kIHRhaWxvciB0aGVtIHRvIHlvdXIgYXBwbGljYXRpb24uCgpXaGVuIHlvdSdyZSByZWFkeSwgc3RhcnQgeW91ciBhcHBsaWNhdGlvbiBieSBydW5uaW5nOiBkb2NrZXIgY29tcG9zZSB1cCAtLWJ1aWxkCgpDb25zdWx0IFJFQURNRS5Eb2NrZXIubWQgZm9yIG1vcmUgaW5mb3JtYXRpb24gYWJvdXQgdXNpbmcgdGhlIGdlbmVyYXRlZCBmaWxlcy4=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="go">? What application platform does your project use? Other
 </span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="err">

@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2b2215699a8987e9f6e2e607230057d1b0a6ca9661965c14342efbca76b553fb.css"
-            integrity="sha256-KyIVaZqJh&#43;n24uYHIwBX0bCmypZhllwUNC77yna1U/s="
+            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
+            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
             crossorigin="anonymous"
           />
         
@@ -9409,28 +9409,36 @@ documentation.</p>
       
       <p>Run the <code>docker swarm ca</code> command without any options to view the current root CA certificate
 in PEM format.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc3dhcm0gY2EKCi0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpNSUlCYXpDQ0FSQ2dBd0lCQWdJVUpQem82N1FDN2c4RWJnMmFuc2prWjhDYm1hc3dDZ1lJS29aSXpqMEVBd0l3CkV6RVJNQThHQTFVRUF4TUljM2RoY20wdFkyRXdIaGNOTVRjd05UQXpNVGN4TURBd1doY05NemN3TkRJNE1UY3gKTURBd1dqQVRNUkV3RHdZRFZRUURFd2h6ZDJGeWJTMWpZVEJaTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSApBMElBQktMNi9DMHNpaFlFYjkzNXdWUFJBOE1xelBMbjNqem91ME9KUlhIc0NMY1ZFeGlnck1kZ21MQ0MrVmE0CitzSitTTFZPMWVRYnZMSEg4dXVEZEYvUU9VNmpRakJBTUE0R0ExVWREd0VCL3dRRUF3SUJCakFQQmdOVkhSTUIKQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJTZlV5NWJqVW5CQXgvQjBHa09CS3A5MVh2eHpqQUtCZ2dxaGtqTwpQUVFEQWdOSkFEQkdBaUVBbmJ2aDBwdU9TNVIvcXZ5MVBNSFkxaWtzWUtoMmFjc0dMdEwvakFJdk80QUNJUUNpCmxJd1FxTGtKNDhTUXFDakcxREJUU0JzSG1NU1JUKzZtRTJNeStaM0dLQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc3dhcm0gY2EKCi0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpNSUlCYXpDQ0FSQ2dBd0lCQWdJVUpQem82N1FDN2c4RWJnMmFuc2prWjhDYm1hc3dDZ1lJS29aSXpqMEVBd0l3CkV6RVJNQThHQTFVRUF4TUljM2RoY20wdFkyRXdIaGNOTVRjd05UQXpNVGN4TURBd1doY05NemN3TkRJNE1UY3gKTURBd1dqQVRNUkV3RHdZRFZRUURFd2h6ZDJGeWJTMWpZVEJaTUJNR0J5cUdTTTQ5QWdFR0NDcUdTTTQ5QXdFSApBMElBQktMNi9DMHNpaFlFYjkzNXdWUFJBOE1xelBMbjNqem91ME9KUlhIc0NMY1ZFeGlnck1kZ21MQ0MrVmE0CitzSitTTFZPMWVRYnZMSEg4dXVEZEYvUU9VNmpRakJBTUE0R0ExVWREd0VCL3dRRUF3SUJCakFQQmdOVkhSTUIKQWY4RUJUQURBUUgvTUIwR0ExVWREZ1FXQkJTZlV5NWJqVW5CQXgvQjBHa09CS3A5MVh2eHpqQUtCZ2dxaGtqTwpQUVFEQWdOSkFEQkdBaUVBbmJ2aDBwdU9TNVIvcXZ5MVBNSFkxaWtzWUtoMmFjc0dMdEwvakFJdk80QUNJUUNpCmxJd1FxTGtKNDhTUXFDakcxREJUU0JzSG1NU1JUKzZtRTJNeStaM0dLQT09Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker swarm ca
 </span></span><span class="line"><span class="cl"><span class="err">
@@ -9451,28 +9459,36 @@ in PEM format.</p>
 </div>
 <p>Pass the <code>--rotate</code> flag (and optionally a <code>--ca-cert</code>, along with a <code>--ca-key</code> or
 <code>--external-ca</code> parameter flag), in order to rotate the current swarm root CA.</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc3dhcm0gY2EgLS1yb3RhdGUKZGVzaXJlZCByb290IGRpZ2VzdDogc2hhMjU2OjA1ZGE3NDBjZjI1NzdhMjUyMjRjNTMwMTllMmNjZTk5YmNjNWJhMDk2NjRhZDZiYjJhOTQyNWQ5ZWJkMWI1M2UKICByb3RhdGVkIFRMUyBjZXJ0aWZpY2F0ZXM6ICBbPT09PT09PT09PT09PT09PT09PT09PT09PT4gICAgICAgICAgICAgICAgICAgICAgICAgXSAxLzIgbm9kZXMKICByb3RhdGVkIENBIGNlcnRpZmljYXRlczogICBbPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXSAwLzIgbm9kZXM=', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc3dhcm0gY2EgLS1yb3RhdGUKZGVzaXJlZCByb290IGRpZ2VzdDogc2hhMjU2OjA1ZGE3NDBjZjI1NzdhMjUyMjRjNTMwMTllMmNjZTk5YmNjNWJhMDk2NjRhZDZiYjJhOTQyNWQ5ZWJkMWI1M2UKICByb3RhdGVkIFRMUyBjZXJ0aWZpY2F0ZXM6ICBbPT09PT09PT09PT09PT09PT09PT09PT09PT4gICAgICAgICAgICAgICAgICAgICAgICAgXSAxLzIgbm9kZXMKICByb3RhdGVkIENBIGNlcnRpZmljYXRlczogICBbPiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXSAwLzIgbm9kZXM=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker swarm ca --rotate
 </span></span><span class="line"><span class="cl"><span class="go">desired root digest: sha256:05da740cf2577a25224c53019e2cce99bcc5ba09664ad6bb2a9425d9ebd1b53e
@@ -9485,28 +9501,36 @@ in PEM format.</p>
 </div>
 <p>Once the rotation os finished (all the progress bars have completed) the now-current
 CA certificate will be printed:</p>
-<div data-pagefind-ignore class="scroll-mt-2" x-data x-ref="root">
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
   
-  <div class="group relative">
+  <div class="relative w-full">
     
-    <button
-      x-data="{ code: 'JCBkb2NrZXIgc3dhcm0gY2EgLS1yb3RhdGUKZGVzaXJlZCByb290IGRpZ2VzdDogc2hhMjU2OjA1ZGE3NDBjZjI1NzdhMjUyMjRjNTMwMTllMmNjZTk5YmNjNWJhMDk2NjRhZDZiYjJhOTQyNWQ5ZWJkMWI1M2UKICByb3RhdGVkIFRMUyBjZXJ0aWZpY2F0ZXM6ICBbPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0&#43;XSAyLzIgbm9kZXMKICByb3RhdGVkIENBIGNlcnRpZmljYXRlczogICBbPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0&#43;XSAyLzIgbm9kZXMKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJhekNDQVJDZ0F3SUJBZ0lVRnluRzA0aDVScmw0bEt5QTQvRTY1dFlLZzhJd0NnWUlLb1pJemowRUF3SXcKRXpFUk1BOEdBMVVFQXhNSWMzZGhjbTB0WTJFd0hoY05NVGN3TlRFMk1EQXhNREF3V2hjTk16Y3dOVEV4TURBeApNREF3V2pBVE1SRXdEd1lEVlFRREV3aHpkMkZ5YlMxallUQlpNQk1HQnlxR1NNNDlBZ0VHQ0NxR1NNNDlBd0VICkEwSUFCQzJEdU5ySUVUUDdDN2xmaUVQazM5dFdhYVUwSTJSdW1VUDRmWDQrM20rODdqMERVMENzZW1VYWFPRzYKK1B4SGhHdTJWWFE0YzlwY3RQSGdmN3ZXZVZhalFqQkFNQTRHQTFVZER3RUIvd1FFQXdJQkJqQVBCZ05WSFJNQgpBZjhFQlRBREFRSC9NQjBHQTFVZERnUVdCQlNFTDAyejZtQ0kzU21NRG1JVE1yMTJxQ1JZMmpBS0JnZ3Foa2pPClBRUURBZ05KQURCR0FpRUEyNjNFYjUyKzgyNUVlTlFaTTBBTUUrYW9IMTMxOVpwOS9KNWlqSUxXKzZBQ0lRQ2cKZ3lnNXU5SWxpZWw5OWw3U3VNaE5lTGtyVTdmWHMrT2YxblR5eU03M2lnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQ==', copying: false }"
-      class="absolute top-3 right-3 z-10 text-gray-200 dark:text-gray-500"
-      title="copy"
-      @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'JCBkb2NrZXIgc3dhcm0gY2EgLS1yb3RhdGUKZGVzaXJlZCByb290IGRpZ2VzdDogc2hhMjU2OjA1ZGE3NDBjZjI1NzdhMjUyMjRjNTMwMTllMmNjZTk5YmNjNWJhMDk2NjRhZDZiYjJhOTQyNWQ5ZWJkMWI1M2UKICByb3RhdGVkIFRMUyBjZXJ0aWZpY2F0ZXM6ICBbPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0&#43;XSAyLzIgbm9kZXMKICByb3RhdGVkIENBIGNlcnRpZmljYXRlczogICBbPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0&#43;XSAyLzIgbm9kZXMKLS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUJhekNDQVJDZ0F3SUJBZ0lVRnluRzA0aDVScmw0bEt5QTQvRTY1dFlLZzhJd0NnWUlLb1pJemowRUF3SXcKRXpFUk1BOEdBMVVFQXhNSWMzZGhjbTB0WTJFd0hoY05NVGN3TlRFMk1EQXhNREF3V2hjTk16Y3dOVEV4TURBeApNREF3V2pBVE1SRXdEd1lEVlFRREV3aHpkMkZ5YlMxallUQlpNQk1HQnlxR1NNNDlBZ0VHQ0NxR1NNNDlBd0VICkEwSUFCQzJEdU5ySUVUUDdDN2xmaUVQazM5dFdhYVUwSTJSdW1VUDRmWDQrM20rODdqMERVMENzZW1VYWFPRzYKK1B4SGhHdTJWWFE0YzlwY3RQSGdmN3ZXZVZhalFqQkFNQTRHQTFVZER3RUIvd1FFQXdJQkJqQVBCZ05WSFJNQgpBZjhFQlRBREFRSC9NQjBHQTFVZERnUVdCQlNFTDAyejZtQ0kzU21NRG1JVE1yMTJxQ1JZMmpBS0JnZ3Foa2pPClBRUURBZ05KQURCR0FpRUEyNjNFYjUyKzgyNUVlTlFaTTBBTUUrYW9IMTMxOVpwOS9KNWlqSUxXKzZBQ0lRQ2cKZ3lnNXU5SWxpZWw5OWw3U3VNaE5lTGtyVTdmWHMrT2YxblR5eU03M2lnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQ==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
       copying = true;
       setTimeout(() => copying = false, 2000);"
-    >
-      <span :class="{ 'group-hover:block' : !copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
       >
-      <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
-        ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
-      >
-    </button>
-    
-    
-    <div class="syntax-light dark:syntax-dark not-prose">
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker swarm ca --rotate
 </span></span><span class="line"><span class="cl"><span class="go">desired root digest: sha256:05da740cf2577a25224c53019e2cce99bcc5ba09664ad6bb2a9425d9ebd1b53e
