@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14144,15 +14144,16 @@ UIDs/GIDs for the user. In the following example, the user <code>testuser</code>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Ubuntu' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Ubuntu' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14163,7 +14164,7 @@ UIDs/GIDs for the user. In the following example, the user <code>testuser</code>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Debian-GNU/Linux' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14174,7 +14175,7 @@ UIDs/GIDs for the user. In the following example, the user <code>testuser</code>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Arch-Linux' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14185,7 +14186,7 @@ UIDs/GIDs for the user. In the following example, the user <code>testuser</code>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'openSUSE-and-SLES' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14196,7 +14197,7 @@ UIDs/GIDs for the user. In the following example, the user <code>testuser</code>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'CentOS-RHEL-and-Fedora' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14207,7 +14208,6 @@ UIDs/GIDs for the user. In the following example, the user <code>testuser</code>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14466,7 +14466,6 @@ This step is not required on RHEL 9 and similar distributions.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 
@@ -14582,15 +14581,16 @@ still running rootful Docker.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'With-packages-RPM/DEB' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'With-packages-RPM/DEB' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14601,7 +14601,7 @@ still running rootful Docker.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Without-packages' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14612,7 +14612,6 @@ still running rootful Docker.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14776,7 +14775,6 @@ Since static packages are not available for <code>s390x</code>, hence it is not 
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>See 
@@ -14904,15 +14902,16 @@ remove the binary files under <code>~/bin</code>:</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'With-systemd-Highly-recommended' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'With-systemd-Highly-recommended' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14923,7 +14922,7 @@ remove the binary files under <code>~/bin</code>:</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Without-systemd' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14934,7 +14933,6 @@ remove the binary files under <code>~/bin</code>:</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -15041,7 +15039,6 @@ Locating this directory under <code>/tmp</code> might be vulnerable to TOCTOU at
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Remarks about directory paths:</p>

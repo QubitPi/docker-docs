@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -563,7 +563,7 @@
       <div class="flex flex-col items-center">
         
         <a
-          href="https://docker.qubitpi.org/guides/python/develop/"
+          href="https://docker.qubitpi.org/guides/python/configure-github-actions/"
           class="
             bg-gray-400 dark:bg-gray-500
            flex h-8 w-8 items-center justify-center rounded-full text-white no-underline"
@@ -581,8 +581,8 @@
       </div>
       
       <div class="ml-2 flex h-8 items-center self-start">
-        <a href="https://docker.qubitpi.org/guides/python/develop/">
-          Develop your app
+        <a href="https://docker.qubitpi.org/guides/python/configure-github-actions/">
+          Automate your builds with GitHub Actions
         </a>
       </div>
     </div>
@@ -592,7 +592,7 @@
       <div class="flex flex-col items-center">
         
         <a
-          href="https://docker.qubitpi.org/guides/python/configure-ci-cd/"
+          href="https://docker.qubitpi.org/guides/python/develop/"
           class="
             bg-gray-400 dark:bg-gray-500
            flex h-8 w-8 items-center justify-center rounded-full text-white no-underline"
@@ -610,8 +610,8 @@
       </div>
       
       <div class="ml-2 flex h-8 items-center self-start">
-        <a href="https://docker.qubitpi.org/guides/python/configure-ci-cd/">
-          Configure CI/CD
+        <a href="https://docker.qubitpi.org/guides/python/develop/">
+          Develop your app
         </a>
       </div>
     </div>
@@ -967,15 +967,16 @@ feature to help streamline the process, or you can manually create the assets.</
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Use-Docker-Init' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Use-Docker-Init' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -986,7 +987,7 @@ feature to help streamline the process, or you can manually create the assets.</
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Manually-create-assets' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -997,7 +998,6 @@ feature to help streamline the process, or you can manually create the assets.</
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -1655,7 +1655,6 @@ manually, you can create the following files in your project directory.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>You should now have the following contents in your <code>python-docker-example</code>
@@ -1912,8 +1911,7 @@ application using Docker.</p>
   </a>
 </h2>
 
-<p>In the next section, you'll learn how you can develop your application using
-containers.</p>
+<p>In the next section, you'll take a look at how to set up a CI pipeline using GitHub Actions.</p>
 
   </article>
   <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">
@@ -2031,9 +2029,9 @@ containers.</p>
     
         <div class="not-prose col-start-2 my-4">
           <a
-            href="https://docker.qubitpi.org/guides/python/develop/"
+            href="https://docker.qubitpi.org/guides/python/configure-github-actions/"
             class="cursor-pointer rounded-sm bg-blue-500 px-4 py-2 text-white hover:bg-blue-400 dark:bg-blue-800 dark:hover:bg-blue-700"
-            >Use containers for Python development »</a
+            >Automate your builds with GitHub Actions »</a
           >
         </div>
   </div>

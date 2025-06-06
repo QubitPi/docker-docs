@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14013,15 +14013,16 @@ subscription
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'WSL-2-backend-x86_64' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'WSL-2-backend-x86_64' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14032,7 +14033,7 @@ subscription
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Hyper-V-backend-x86_64' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14043,7 +14044,7 @@ subscription
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'WSL-2-backend-Arm-Early-Access' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14054,7 +14055,6 @@ subscription
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14331,7 +14331,6 @@ WSL 2 on Windows 10 or Windows 11:
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Containers and images created with Docker Desktop are shared between all

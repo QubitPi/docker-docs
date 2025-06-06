@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14520,15 +14520,16 @@ second uses the <code>--tmpfs</code> flag.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: '--mount' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '--mount' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14539,7 +14540,7 @@ second uses the <code>--tmpfs</code> flag.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '--tmpfs' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14550,7 +14551,6 @@ second uses the <code>--tmpfs</code> flag.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14730,7 +14730,6 @@ the <code>docker inspect</code> output:</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Stop and remove the container:</p>

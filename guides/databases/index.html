@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -808,6 +808,7 @@ CLI.</p>
 
 
 <div
+  class="tabs"
   
     
       x-data="{ selected: 'CLI' }"
@@ -817,10 +818,10 @@ CLI.</p>
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -832,7 +833,7 @@ CLI.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'GUI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -844,7 +845,6 @@ CLI.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -994,7 +994,6 @@ container is running.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 
@@ -1020,6 +1019,7 @@ can use Docker Desktop's GUI.</p>
 
 
 <div
+  class="tabs"
   
     
       x-data="{ selected: 'CLI' }"
@@ -1029,10 +1029,10 @@ can use Docker Desktop's GUI.</p>
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1044,7 +1044,7 @@ can use Docker Desktop's GUI.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'GUI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1056,7 +1056,6 @@ can use Docker Desktop's GUI.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -1135,7 +1134,6 @@ which you can manage your MySQL server directly.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Once you've accessed the container's terminal, you can run any tools available
@@ -1223,6 +1221,7 @@ the port mapped.</p>
 
 
 <div
+  class="tabs"
   
     
       x-data="{ selected: 'CLI' }"
@@ -1232,10 +1231,10 @@ the port mapped.</p>
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1247,7 +1246,7 @@ the port mapped.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'GUI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1259,7 +1258,6 @@ the port mapped.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -1476,7 +1474,6 @@ container.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>At this point, any application running on your host can access the MySQL service in the container at <code>localhost:3307</code>.</p>
@@ -1682,6 +1679,7 @@ container in the <strong>Containers</strong> view.</li>
 
 
 <div
+  class="tabs"
   
     
       x-data="{ selected: 'CLI' }"
@@ -1691,10 +1689,10 @@ container in the <strong>Containers</strong> view.</li>
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1706,7 +1704,7 @@ container in the <strong>Containers</strong> view.</li>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'GUI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1718,7 +1716,6 @@ container in the <strong>Containers</strong> view.</li>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -2316,7 +2313,6 @@ records from the <code>mytable</code> table.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>At this point, any MySQL container that mounts the <code>my-db-volume</code> will be able

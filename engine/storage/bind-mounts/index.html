@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14466,15 +14466,16 @@ one.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: '--mount' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '--mount' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14485,7 +14486,7 @@ one.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '-v' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14496,7 +14497,6 @@ one.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14596,7 +14596,6 @@ one.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Use <code>docker inspect devtest</code> to verify that the bind mount was created
@@ -14712,15 +14711,16 @@ most cases, this would result in a non-functioning container.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: '--mount' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '--mount' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14731,7 +14731,7 @@ most cases, this would result in a non-functioning container.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '-v' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14742,7 +14742,6 @@ most cases, this would result in a non-functioning container.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14848,7 +14847,6 @@ most cases, this would result in a non-functioning container.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>The container is created but does not start. Remove it:</p>
@@ -14912,15 +14910,16 @@ them by commas.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: '--mount' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '--mount' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14931,7 +14930,7 @@ them by commas.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '-v' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14942,7 +14941,6 @@ them by commas.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -15042,7 +15040,6 @@ them by commas.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Use <code>docker inspect devtest</code> to verify that the bind mount was created
@@ -15300,15 +15297,16 @@ option.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: '--mount' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '--mount' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -15319,7 +15317,7 @@ option.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === '-v' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -15330,7 +15328,6 @@ option.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -15432,7 +15429,6 @@ option.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Now if you create <code>/app/foo/</code>, <code>/app2/foo/</code> also exists.</p>

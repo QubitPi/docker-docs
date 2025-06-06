@@ -14,8 +14,8 @@ Start by containerizing an existing Python application.
 
 - [Containerize a Python application](https://docs.docker.com/guides/python/containerize/)
 
-- [Use containers for Python development](https://docs.docker.com/guides/python/develop/)
+- [Automate your builds with GitHub Actions](https://docs.docker.com/guides/python/configure-github-actions/)
 
-- [Configure CI/CD for your Python application](https://docs.docker.com/guides/python/configure-ci-cd/)
+- [Use containers for Python development](https://docs.docker.com/guides/python/develop/)
 
 - [Test your Python deployment](https://docs.docker.com/guides/python/deploy/)

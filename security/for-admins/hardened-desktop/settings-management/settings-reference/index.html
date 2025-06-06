@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14170,6 +14170,21 @@
             >Enable host-side TCP support</a
           >
         </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-docker-mcp-toolkit"
+            >Enable Docker MCP Toolkit</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-wasm"
+            >Enable Wasm</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-compose-bridge"
+            >Enable Compose Bridge</a
+          >
+        </li>
   </ul>
         <li>
           <a class="link lg:no-underline" href="#notifications"
@@ -17621,7 +17636,7 @@ third-party or unvetted plugins from being installed.</p>
 <li><strong>Use case:</strong> Enable or disable AI features like &quot;Ask Gordon&quot;.</li>
 <li><strong>Configure this setting with:</strong>
 <ul>
-<li><strong>Beta features</strong> settings in 
+<li><strong>Beta</strong> settings in 
     
     
   
@@ -17679,11 +17694,16 @@ third-party or unvetted plugins from being installed.</p>
 <li><strong>Use case:</strong> Enable or disable Docker Model Runner features.</li>
 <li><strong>Configure this setting with:</strong>
 <ul>
-<li><strong>Beta features</strong> settings in 
+<li><strong>Beta</strong> settings in 
     
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/settings-and-maintenance/settings/">Docker Desktop GUI</a></li>
+<li>Settings Management: <code>enableDockerAI</code> setting in the 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/"><code>admin-settings.json</code> file</a></li>
 </ul>
 </li>
 </ul>
@@ -17732,11 +17752,16 @@ third-party or unvetted plugins from being installed.</p>
 <li><strong>Use case:</strong> Enable or disable Docker Model Runner features.</li>
 <li><strong>Configure this setting with:</strong>
 <ul>
-<li><strong>Beta features</strong> settings in 
+<li><strong>Beta</strong> settings in 
     
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/settings-and-maintenance/settings/">Docker Desktop GUI</a></li>
+<li>Settings Management: <code>enableDockerAI</code> setting in the 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/"><code>admin-settings.json</code> file</a></li>
 </ul>
 </li>
 </ul>
@@ -17762,6 +17787,179 @@ third-party or unvetted plugins from being installed.</p>
     </div>
   </blockquote>
 
+
+<h3 class=" scroll-mt-20" id="enable-docker-mcp-toolkit">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-docker-mcp-toolkit">
+    Enable Docker MCP Toolkit
+  </a>
+</h3>
+
+<div class="overflow-x-auto">
+  <table
+  >
+    <thead class="bg-gray-100 dark:bg-gray-800">
+        <tr>
+            <th
+              class="p-2">Default value</th>
+            <th
+              class="p-2">Accepted values</th>
+            <th
+              class="p-2">Format</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td
+              class="p-2"><code>true</code></td>
+            <td
+              class="p-2"><code>true</code>, <code>false</code></td>
+            <td
+              class="p-2">Boolean</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<ul>
+<li><strong>Description:</strong> Enable 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/">Docker MCP Toolkit</a> in Docker Desktop.</li>
+<li><strong>OS:</strong> 
+
+<span
+  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
+  >All</span
+>
+
+</li>
+<li><strong>Configure this setting with:</strong>
+<ul>
+<li><strong>Beta</strong> settings in 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/desktop/settings-and-maintenance/settings/">Docker Desktop GUI</a></li>
+<li>Settings Management: <code>enableDockerMCPToolkit</code> setting in the 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/"><code>admin-settings.json</code> file</a></li>
+</ul>
+</li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="enable-wasm">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-wasm">
+    Enable Wasm
+  </a>
+</h3>
+
+<div class="overflow-x-auto">
+  <table
+  >
+    <thead class="bg-gray-100 dark:bg-gray-800">
+        <tr>
+            <th
+              class="p-2">Default value</th>
+            <th
+              class="p-2">Accepted values</th>
+            <th
+              class="p-2">Format</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td
+              class="p-2"><code>true</code></td>
+            <td
+              class="p-2"><code>true</code>, <code>false</code></td>
+            <td
+              class="p-2">Boolean</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<ul>
+<li><strong>Description:</strong> Enable 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/desktop/features/wasm/">Wasm</a> to run Wasm workloads.</li>
+<li><strong>OS:</strong> 
+
+<span
+  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
+  >All</span
+>
+
+</li>
+<li><strong>Configure this setting with:</strong>
+<ul>
+<li><strong>Beta</strong> settings in 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/desktop/settings-and-maintenance/settings/">Docker Desktop GUI</a></li>
+</ul>
+</li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="enable-compose-bridge">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-compose-bridge">
+    Enable Compose Bridge
+  </a>
+</h3>
+
+<div class="overflow-x-auto">
+  <table
+  >
+    <thead class="bg-gray-100 dark:bg-gray-800">
+        <tr>
+            <th
+              class="p-2">Default value</th>
+            <th
+              class="p-2">Accepted values</th>
+            <th
+              class="p-2">Format</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td
+              class="p-2"><code>true</code></td>
+            <td
+              class="p-2"><code>true</code>, <code>false</code></td>
+            <td
+              class="p-2">Boolean</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+<ul>
+<li><strong>Description:</strong> Enable 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/compose/bridge/">Compose Bridge</a>.</li>
+<li><strong>OS:</strong> 
+
+<span
+  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
+  >All</span
+>
+
+</li>
+<li><strong>Configure this setting with:</strong>
+<ul>
+<li><strong>Beta</strong> settings in 
+    
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/desktop/settings-and-maintenance/settings/">Docker Desktop GUI</a></li>
+</ul>
+</li>
+</ul>
 
 <h2 class=" scroll-mt-20" id="notifications">
   <a class="text-black dark:text-white no-underline hover:underline" href="#notifications">
@@ -19265,6 +19463,21 @@ overrides are possible.</p>
         <li>
           <a class="link lg:no-underline" href="#enable-host-side-tcp-support"
             >Enable host-side TCP support</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-docker-mcp-toolkit"
+            >Enable Docker MCP Toolkit</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-wasm"
+            >Enable Wasm</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#enable-compose-bridge"
+            >Enable Compose Bridge</a
           >
         </li>
   </ul>

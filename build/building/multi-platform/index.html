@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14070,15 +14070,16 @@ store. But you can push them to a container registry directly with <code>docker 
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'containerd-image-store' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'containerd-image-store' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14089,7 +14090,7 @@ store. But you can push them to a container registry directly with <code>docker 
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Custom-builder' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14100,7 +14101,6 @@ store. But you can push them to a container registry directly with <code>docker 
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14208,7 +14208,6 @@ drivers</a>.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>If you're using Docker Engine standalone and you need to build multi-platform
@@ -15123,15 +15122,16 @@ cross-compilation.</li>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Updated-Dockerfile' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Updated-Dockerfile' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -15142,7 +15142,7 @@ cross-compilation.</li>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Old-Dockerfile' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -15153,7 +15153,7 @@ cross-compilation.</li>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Diff' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -15164,7 +15164,6 @@ cross-compilation.</li>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -15328,7 +15327,6 @@ cross-compilation.</li>
       </div>
     
   </div>
-  <hr />
 </div>
 
 </li>

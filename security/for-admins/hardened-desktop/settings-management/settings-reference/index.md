@@ -775,7 +775,7 @@ third-party or unvetted plugins from being installed.
 - **OS:** {{< badge color=blue text="All" >}}
 - **Use case:** Enable or disable AI features like "Ask Gordon".
 - **Configure this setting with:**
-    - **Beta features** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
+    - **Beta** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
     - Settings Management: `enableDockerAI` setting in the [`admin-settings.json` file](/manuals/security/for-admins/hardened-desktop/settings-management/configure-json-file.md)
 
 ### Enable Docker Model Runner
@@ -788,7 +788,8 @@ third-party or unvetted plugins from being installed.
 - **OS:** {{< badge color=blue text="All" >}}
 - **Use case:** Enable or disable Docker Model Runner features.
 - **Configure this setting with:**
-    - **Beta features** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
+    - **Beta** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
+    - Settings Management: `enableDockerAI` setting in the [`admin-settings.json` file](/manuals/security/for-admins/hardened-desktop/settings-management/configure-json-file.md)
 
 ### Enable host-side TCP support
 
@@ -800,11 +801,48 @@ third-party or unvetted plugins from being installed.
 - **OS:** {{< badge color=blue text="All" >}}
 - **Use case:** Enable or disable Docker Model Runner features.
 - **Configure this setting with:**
-    - **Beta features** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
+    - **Beta** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
+    - Settings Management: `enableDockerAI` setting in the [`admin-settings.json` file](/manuals/security/for-admins/hardened-desktop/settings-management/configure-json-file.md)
+    
 
 > [!NOTE]
 >
 > This setting requires Docker Model Runner setting to be enabled first.
+
+### Enable Docker MCP Toolkit
+
+| Default value | Accepted values | Format   |
+|---------------|-----------------|----------|
+| `true`       | `true`, `false` | Boolean  |
+
+- **Description:** Enable [Docker MCP Toolkit](/manuals/ai/mcp-catalog-and-toolkit/_index.md) in Docker Desktop.
+- **OS:** {{< badge color=blue text="All" >}}
+- **Configure this setting with:**
+    - **Beta** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
+    - Settings Management: `enableDockerMCPToolkit` setting in the [`admin-settings.json` file](/manuals/security/for-admins/hardened-desktop/settings-management/configure-json-file.md)
+    
+
+### Enable Wasm
+
+| Default value | Accepted values | Format   |
+|---------------|-----------------|----------|
+| `true`       | `true`, `false` | Boolean  |
+
+- **Description:** Enable [Wasm](/manuals/desktop/features/wasm.md) to run Wasm workloads.
+- **OS:** {{< badge color=blue text="All" >}}
+- **Configure this setting with:**
+    - **Beta** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)    
+
+### Enable Compose Bridge
+
+| Default value | Accepted values | Format   |
+|---------------|-----------------|----------|
+| `true`       | `true`, `false` | Boolean  |
+
+- **Description:** Enable [Compose Bridge](/manuals/compose/bridge/_index.md).
+- **OS:** {{< badge color=blue text="All" >}}
+- **Configure this setting with:**
+    - **Beta** settings in [Docker Desktop GUI](/manuals/desktop/settings-and-maintenance/settings.md)
 
 ## Notifications
 

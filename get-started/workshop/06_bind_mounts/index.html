@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -1639,15 +1639,16 @@ bind mount.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Mac-/-Linux' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Mac-/-Linux' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1658,7 +1659,7 @@ bind mount.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Command-Prompt' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1669,7 +1670,7 @@ bind mount.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Git-Bash' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1680,7 +1681,7 @@ bind mount.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'PowerShell' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -1691,7 +1692,6 @@ bind mount.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -1871,7 +1871,6 @@ bind mount.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>The <code>--mount type=bind</code> option tells Docker to create a bind mount, where <code>src</code> is the
@@ -2140,15 +2139,16 @@ mount that does the following:</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Mac-/-Linux-CLI' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Mac-/-Linux-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -2159,7 +2159,7 @@ mount that does the following:</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'PowerShell-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -2170,7 +2170,7 @@ mount that does the following:</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Command-Prompt-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -2181,7 +2181,7 @@ mount that does the following:</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Git-Bash-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -2192,7 +2192,7 @@ mount that does the following:</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Docker-Desktop' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -2203,7 +2203,6 @@ mount that does the following:</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -2802,7 +2801,6 @@ ready to go when you see this:</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 

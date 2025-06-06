@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.aeb75f79a19d805e66e48ab4a916bd397978230e2773ec065f2ffd6d0dfdfab4.css"
-            integrity="sha256-rrdfeaGdgF5m5Iq0qRa9OXl4Iw4nc&#43;wGXy/9bQ39&#43;rQ="
+            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
+            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
             crossorigin="anonymous"
           />
         
@@ -14182,15 +14182,16 @@ and
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Ubuntu/Debian' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Ubuntu/Debian' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14201,7 +14202,7 @@ and
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'RPM-base-distributions' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14212,7 +14213,6 @@ and
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14306,7 +14306,6 @@ and
       </div>
     
   </div>
-  <hr />
 </div>
 
 </li>
@@ -14368,37 +14367,43 @@ and
 
 
 <div
+  class="tabs"
   
-    x-data="{ selected: 'From-Docker-Desktop' }"
+    
+      x-data="{ selected: 'From-Docker-Desktop' }"
+    
+    @tab-select.window="$event.detail.group === 'release' ? selected =
+    $event.detail.name : null"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'From-Docker-Desktop' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'From-Docker-Desktop'"
+          @click="$dispatch('tab-select', { group: 'release', name:
+          'From-Docker-Desktop'})"
         
       >
         From Docker Desktop
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'From-the-Docker-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'From-the-Docker-CLI'"
+          @click="$dispatch('tab-select', { group: 'release', name:
+          'From-the-Docker-CLI'})"
         
       >
         From the Docker CLI
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14422,7 +14427,6 @@ and
       </div>
     
   </div>
-  <hr />
 </div>
 
 
@@ -14440,37 +14444,43 @@ and
 
 
 <div
+  class="tabs"
   
-    x-data="{ selected: 'From-Docker-Desktop' }"
+    
+      x-data="{ selected: 'From-Docker-Desktop' }"
+    
+    @tab-select.window="$event.detail.group === 'release' ? selected =
+    $event.detail.name : null"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'From-Docker-Desktop' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'From-Docker-Desktop'"
+          @click="$dispatch('tab-select', { group: 'release', name:
+          'From-Docker-Desktop'})"
         
       >
         From Docker Desktop
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'From-the-Docker-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'From-the-Docker-CLI'"
+          @click="$dispatch('tab-select', { group: 'release', name:
+          'From-the-Docker-CLI'})"
         
       >
         From the Docker CLI
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14492,7 +14502,6 @@ The interactive chat screen opens.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 
@@ -14511,37 +14520,43 @@ The interactive chat screen opens.</p>
 
 
 <div
+  class="tabs"
   
-    x-data="{ selected: 'From-Docker-Desktop' }"
+    
+      x-data="{ selected: 'From-Docker-Desktop' }"
+    
+    @tab-select.window="$event.detail.group === 'release' ? selected =
+    $event.detail.name : null"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'From-Docker-Desktop' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'From-Docker-Desktop'"
+          @click="$dispatch('tab-select', { group: 'release', name:
+          'From-Docker-Desktop'})"
         
       >
         From Docker Desktop
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'From-the-Docker-CLI' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'From-the-Docker-CLI'"
+          @click="$dispatch('tab-select', { group: 'release', name:
+          'From-the-Docker-CLI'})"
         
       >
         From the Docker CLI
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14562,7 +14577,6 @@ The interactive chat screen opens.</p>
       </div>
     
   </div>
-  <hr />
 </div>
 
 
@@ -14679,15 +14693,16 @@ The interactive chat screen opens.</p>
 
 
 <div
+  class="tabs"
   
     x-data="{ selected: 'Docker-Desktop' }"
   
   aria-role="tabpanel"
 >
-  <div aria-role="tablist" class="space-x-2">
+  <div aria-role="tablist" class="tablist">
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Docker-Desktop' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14698,7 +14713,7 @@ The interactive chat screen opens.</p>
       </button>
     
       <button
-        class="p-1"
+        class="tab-item"
         :class="selected === 'Docker-Engine' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
@@ -14709,7 +14724,6 @@ The interactive chat screen opens.</p>
       </button>
     
   </div>
-  <hr class="!mt-0" />
   <div>
     
       <div
@@ -14804,7 +14818,6 @@ In this case, add an <code>extra_hosts</code> directive to your Compose service 
       </div>
     
   </div>
-  <hr />
 </div>
 
 <p>Docker Model management endpoints:</p>
@@ -15206,7 +15219,7 @@ See
     </div>
   </div>
 </div>
-<p>Once linked, re-run the command.</p>
+<p>Once linked, rerun the command.</p>
 
 <h3 class=" scroll-mt-20" id="no-safeguard-for-running-oversized-models">
   <a class="text-black dark:text-white no-underline hover:underline" href="#no-safeguard-for-running-oversized-models">
@@ -15214,7 +15227,12 @@ See
   </a>
 </h3>
 
-<p>Currently, Docker Model Runner doesn't include safeguards to prevent you from launching models that exceed their system's available resources. Attempting to run a model that is too large for the host machine may result in severe slowdowns or render the system temporarily unusable. This issue is particularly common when running LLMs models without sufficient GPU memory or system RAM.</p>
+<p>Currently, Docker Model Runner doesn't include safeguards to prevent you from
+launching models that exceed your system's available resources. Attempting to
+run a model that is too large for the host machine may result in severe
+slowdowns or may render the system temporarily unusable. This issue is
+particularly common when running LLMs without sufficient GPU memory or system
+RAM.</p>
 
 <h3 class=" scroll-mt-20" id="no-consistent-digest-support-in-model-cli">
   <a class="text-black dark:text-white no-underline hover:underline" href="#no-consistent-digest-support-in-model-cli">

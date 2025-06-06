@@ -302,13 +302,15 @@ For more information, see [Networking](/manuals/desktop/features/networking.md#n
 
 > [!IMPORTANT]
 >
-> For Docker Desktop versions 4.41 and earlier, these settings lived under the **Experimental features** tab on the **Features in development** page.
+> For Docker Desktop versions 4.41 and earlier, some of these settings lived under the **Experimental features** tab on the **Features in development** page.
 
 | Parameter                   | OS | Description                                                                                                                                                   | Version |
 |:----------------------------|----|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
 | `allowBetaFeatures`         |    | If `value` is set to `true`, beta features are enabled.                                                                                                       |         |
-| `enableDockerAI`            |    | If `allowBetaFeatures` is true, setting `enableDockerAI` to `true` enables [Docker AI (Ask Gordon)](/manuals/ai/gordon/_index.md).                                                            |         |
-| `enableDockerMCPToolkit`    |    | If `allowBetaFeatures` is true, setting `enableDockerMCPToolkit` to `true` enables the [MCP toolkit feature](/manuals/ai/mcp-catalog-and-toolkit/toolkit.md). |         |
+| `enableDockerAI`            |    | If `allowBetaFeatures` is true, setting `enableDockerAI` to `true` enables [Docker AI (Ask Gordon)](/manuals/ai/gordon/_index.md) by default. You can independently control this setting from the `allowBetaFeatures` setting.                                                 |         |
+| `enableInference` | | If `allowBetaFeatures` is true, setting `enableInference` to `true` enables [Docker Model Runner](/manuals/ai/model-runner/_index.md) by default. You can independently control this setting from the `allowBetaFeatures` setting. |  |
+| &nbsp; &nbsp; &nbsp; &nbsp; `enableInferenceTCP` | | Enable host-side TCP support. This setting requires Docker Model Runner setting to be enabled first. | |
+| `enableDockerMCPToolkit`    |    | If `allowBetaFeatures` is true, setting `enableDockerMCPToolkit` to `true` enables the [MCP toolkit feature](/manuals/ai/mcp-catalog-and-toolkit/toolkit.md) by default. You can independently control this setting from the `allowBetaFeatures` setting.         |         |
 | `allowExperimentalFeatures` |    | If `value` is set to `true`, experimental features are enabled.                                                                                               |   Docker Desktop version 4.41 and earlier      |
 
 ### Enhanced Container Isolation
