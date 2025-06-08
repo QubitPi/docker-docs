@@ -9,7 +9,7 @@ Service accounts
 > available. Existing Service Account agreements will be honored until their
 > current term expires, but new purchases or renewals of Enhanced Service
 > Account add-ons are no longer available and customers must renew under a new
-> subscription plan.
+> subscription.
 >
 > Docker recommends transitioning to [Organization Access Tokens
 > (OATs)](../security/for-admins/access-tokens.md), which can provide similar

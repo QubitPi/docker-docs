@@ -3,12 +3,12 @@ Scale your subscription
 
 > [!NOTE]
 >
-> Owners of legacy Docker subscription plans must upgrade their subscription to a new
-> Docker subscription plan in order to scale their subscription.
+> Owners of legacy Docker subscriptions must upgrade their subscription to a new
+> Docker subscription in order to scale their subscription.
 >
-> Legacy Docker plans apply to Docker subscribers who last purchased or renewed
+> Legacy Docker subscriptions apply to Docker subscribers who last purchased or renewed
 > their subscription before December 10, 2024. These subscribers will keep
-> their current plan and pricing until their next renewal date that falls on or
+> their current subscription and pricing until their next renewal date that falls on or
 > after December 10, 2024. To see purchase or renewal history, view your
 > [billing history](../billing/history.md). For more details about legacy
 > after December 10, 2024. For more details about legacy
@@ -16,7 +16,7 @@ Scale your subscription
 > Plans](https://www.docker.com/blog/november-2024-updated-plans-announcement/).
 
 Docker subscriptions let you scale your consumption as your needs evolve. Except
-for legacy Docker subscription plans, all paid Docker subscriptions come with
+for legacy Docker subscriptions, all paid Docker subscriptions come with
 access to Docker Hub, Docker Build Cloud, and Testcontainers Cloud with a base
 amount of consumption. See [Docker subscriptions and features](./details.md) to
 learn how much base consumption comes with each subscription. You can scale your
@@ -46,7 +46,7 @@ You can pre-purchase Docker Build Cloud build minutes in the Docker Build Cloud 
 
 1. Sign in to [Docker Home](https://app.docker.com/).
 2. Under Settings and administration, select **Billing**.
-3. On the plans and usage page, select **View build minutes**.
+3. On the plan and usage page, select **View build minutes**.
     This will launch the Docker Build Cloud settings page.
 4. Select **Add minutes**.
 5. Select your additional minute amount, then **Continue to payment**.

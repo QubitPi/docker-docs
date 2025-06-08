@@ -7142,6 +7142,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/ms-store/"
+        title="MS Store"
+      >
+        
+  MS Store
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/use-intune/"
         title="Deploy with Intune"
       >
@@ -13890,7 +13906,7 @@
 
       <hr />
     </div>
-    <p>You can pay for a subscription plan on a monthly or yearly billing cycle. You select your preferred billing cycle when you buy your subscription.</p>
+    <p>You can pay for a subscription on a monthly or yearly billing cycle. You select your preferred billing cycle when you buy your subscription.</p>
 
 
   
@@ -13909,7 +13925,7 @@
       </span>
     </div>
     <div class="admonition-content">
-      <p>Business plan is available only on yearly billing cycle.</p>
+      <p>Business subscriptions are available only on yearly billing cycle.</p>
     </div>
   </blockquote>
 
@@ -13941,7 +13957,7 @@
 <li>The next billing date reflects the new cycle. To find your next billing date, see 
   <a class="link" href="https://docker.qubitpi.org/billing/history/#view-renewal-date">View renewal date</a>.</li>
 <li>The subscription's start date resets. For example, if the start date of the monthly subscription is March 1st and the end date is April 1st, then after switching the billing duration to March 15th, 2024 the new start date is March 15th, 2024, and the new end date is March 15th, 2025.</li>
-<li>Any unused monthly subscription is prorated and applied as credit towards the new annual period. For example, if you switch from a $10 monthly subscription to a $100 annual plan, deducting the unused monthly value (in this case $5), the migration cost becomes $95 ($100 - $5). The renewal cost after March 15, 2025 is $100.</li>
+<li>Any unused monthly subscription is prorated and applied as credit towards the new annual period. For example, if you switch from a $10 monthly subscription to a $100 annual subscription, deducting the unused monthly value (in this case $5), the migration cost becomes $95 ($100 - $5). The renewal cost after March 15, 2025 is $100.</li>
 </ul>
 
 
@@ -13995,7 +14011,7 @@ updated. If you're exempt from sales tax, see
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14003,24 +14019,24 @@ updated. If you're exempt from sales tax, see
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14028,7 +14044,7 @@ updated. If you're exempt from sales tax, see
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To change your billing cycle:</p>
 <ol>
@@ -14069,13 +14085,13 @@ more information, see
     </div>
   </blockquote>
 
-<p>The billing plans and usage page will now reflect your new annual plan details.</p>
+<p>The billing plans and usage page will now reflect your new annual subscription details.</p>
 
       </div>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To change your billing cycle:</p>
 <ol>
@@ -14136,7 +14152,7 @@ more information, see
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14144,24 +14160,24 @@ more information, see
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14169,7 +14185,7 @@ more information, see
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To change your organization's billing cycle:</p>
 <ol>
@@ -14215,7 +14231,7 @@ more information, see
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To change your organization's billing cycle:</p>
 <ol>

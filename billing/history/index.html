@@ -7142,6 +7142,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/ms-store/"
+        title="MS Store"
+      >
+        
+  MS Store
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/use-intune/"
         title="Deploy with Intune"
       >
@@ -13995,7 +14011,7 @@ updated. If you're exempt from sales tax, see
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14003,24 +14019,24 @@ updated. If you're exempt from sales tax, see
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14028,7 +14044,7 @@ updated. If you're exempt from sales tax, see
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>You receive your invoice when the subscription renews. To verify your renewal date, sign in to the 
   <a class="link" href="https://app.docker.com/billing" rel="noopener">
@@ -14036,13 +14052,13 @@ updated. If you're exempt from sales tax, see
     <span class="pl-1 icon-svg icon-sm">
       <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
     </span>
-  </a>. Your renewal date and amount are displayed on your subscription plan card.</p>
+  </a>. Your renewal date and amount are displayed on your subscription card.</p>
 
       </div>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>You receive your invoice when the subscription renews. To verify your renewal date:</p>
 <ol>
@@ -14108,7 +14124,7 @@ updated. If you're exempt from sales tax, see
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14116,24 +14132,24 @@ updated. If you're exempt from sales tax, see
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14141,7 +14157,7 @@ updated. If you're exempt from sales tax, see
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To add or update your VAT number:</p>
 <ol>
@@ -14207,7 +14223,7 @@ entering a VAT number for Germany, you would enter <code>DE123456789</code>.</p>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To add or update your VAT number:</p>
 <ol>
@@ -14296,7 +14312,7 @@ entering a VAT number for Germany, you would enter <code>DE123456789</code>.</p>
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14304,24 +14320,24 @@ entering a VAT number for Germany, you would enter <code>DE123456789</code>.</p>
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14329,7 +14345,7 @@ entering a VAT number for Germany, you would enter <code>DE123456789</code>.</p>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To view billing history:</p>
 <ol>
@@ -14350,7 +14366,7 @@ entering a VAT number for Germany, you would enter <code>DE123456789</code>.</p>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To view billing history:</p>
 <ol>
@@ -14412,7 +14428,7 @@ You can find your past invoices in the <strong>Invoice History</strong> section.
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14420,24 +14436,24 @@ You can find your past invoices in the <strong>Invoice History</strong> section.
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14445,7 +14461,7 @@ You can find your past invoices in the <strong>Invoice History</strong> section.
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To view billing history:</p>
 <ol>
@@ -14466,7 +14482,7 @@ You can find your past invoices in the <strong>Invoice History</strong> section.
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To view billing history:</p>
 <ol>

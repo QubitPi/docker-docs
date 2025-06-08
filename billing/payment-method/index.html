@@ -7142,6 +7142,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/ms-store/"
+        title="MS Store"
+      >
+        
+  MS Store
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/use-intune/"
         title="Deploy with Intune"
       >
@@ -13951,7 +13967,7 @@
       </span>
     </div>
     <div class="admonition-content">
-      <p>If you want to remove all payment methods, you must first downgrade your subscription to a free plan. See 
+      <p>If you want to remove all payment methods, you must first downgrade your subscription to a free subscription. See 
   <a class="link" href="https://docker.qubitpi.org/subscription/change/">Downgrade</a>.</p>
     </div>
   </blockquote>
@@ -14041,7 +14057,7 @@ updated. If you're exempt from sales tax, see
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14049,24 +14065,24 @@ updated. If you're exempt from sales tax, see
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14074,7 +14090,7 @@ updated. If you're exempt from sales tax, see
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To add a payment method:</p>
 <ol>
@@ -14145,7 +14161,7 @@ verify the account first.</p>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To add a payment method:</p>
 <ol>
@@ -14224,7 +14240,7 @@ verify the account first.</p>
 <div
   class="tabs"
   
-    x-data="{ selected: 'Docker-plan' }"
+    x-data="{ selected: 'Docker-subscription' }"
   
   aria-role="tabpanel"
 >
@@ -14232,24 +14248,24 @@ verify the account first.</p>
     
       <button
         class="tab-item"
-        :class="selected === 'Docker-plan' &&
+        :class="selected === 'Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Docker-plan'"
+          @click="selected = 'Docker-subscription'"
         
       >
-        Docker plan
+        Docker subscription
       </button>
     
       <button
         class="tab-item"
-        :class="selected === 'Legacy-Docker-plan' &&
+        :class="selected === 'Legacy-Docker-subscription' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Legacy-Docker-plan'"
+          @click="selected = 'Legacy-Docker-subscription'"
         
       >
-        Legacy Docker plan
+        Legacy Docker subscription
       </button>
     
   </div>
@@ -14257,7 +14273,7 @@ verify the account first.</p>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Docker-plan' && 'hidden'"
+        :class="selected !== 'Docker-subscription' && 'hidden'"
       >
         <p>To add a payment method:</p>
 <ol>
@@ -14330,7 +14346,7 @@ verify the account first.</p>
     
       <div
         aria-role="tab"
-        :class="selected !== 'Legacy-Docker-plan' && 'hidden'"
+        :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
         <p>To add a payment method:</p>
 <ol>
@@ -14457,7 +14473,7 @@ based on the retry schedule.</p>
 <li>7 days after the previous attempt</li>
 </ul>
 <p>Docker also sends an email notification <code>Action Required - Credit Card Payment Failed</code> with an attached unpaid invoice after each failed payment attempt.</p>
-<p>Once the grace period is over and the invoice is still not paid, the subscription downgrades to a free plan and all paid features are disabled.</p>
+<p>Once the grace period is over and the invoice is still not paid, the subscription downgrades to a free subscription and all paid features are disabled.</p>
 
 <h2 class=" scroll-mt-20" id="redeem-a-coupon">
   <a class="text-black dark:text-white no-underline hover:underline" href="#redeem-a-coupon">
