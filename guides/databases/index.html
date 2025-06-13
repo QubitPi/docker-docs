@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -768,7 +768,6 @@ commands.</p>
 
 <p>To follow along with this guide, you must have Docker installed. To install Docker, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/get-started/get-docker/">Get Docker</a>.</p>
 
@@ -782,22 +781,10 @@ commands.</p>
 Docker Official Image available on Docker Hub. These images are a curated set
 images that follow best practices, ensuring that you have access to the latest
 features and security updates. To get started, visit
-
-  <a class="link" href="https://hub.docker.com" rel="noopener">
-    Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and search for the database you're
+<a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a> and search for the database you're
 interested in. Each image's page provides detailed instructions on how to run
 the container, customize your setup, and configure the database according to
-your needs. For more information about the MySQL image used in this guide, see the Docker Hub 
-  <a class="link" href="https://hub.docker.com/_/mysql" rel="noopener">
-    MySQL image
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> page.</p>
+your needs. For more information about the MySQL image used in this guide, see the Docker Hub <a class="link" href="https://hub.docker.com/_/mysql" rel="noopener">MySQL image</a> page.</p>
 <p>To run a database container, you can use either the Docker Desktop GUI or
 CLI.</p>
 
@@ -1009,8 +996,7 @@ administrative tasks. Docker provides a straightforward way to do this using the
 <code>docker exec</code> command. Additionally, if you prefer a graphical interface, you
 can use Docker Desktop's GUI.</p>
 <p>If you don't yet have a database container running, see
-
-  <a class="link" href="#run-a-local-containerized-database">Run a local containerized database</a>.</p>
+<a class="link" href="#run-a-local-containerized-database">Run a local containerized database</a>.</p>
 
 
 
@@ -1635,13 +1621,7 @@ for this image.</p>
 <p>Verify that the containers can communicate. For this example, you'll access
 phpMyAdmin and verify that it connects to the database.</p>
 <ol>
-<li>Open 
-  <a class="link" href="http://localhost:8080" rel="noopener">
-    http://localhost:8080
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> to access your phpMyAdmin container.</li>
+<li>Open <a class="link" href="http://localhost:8080" rel="noopener">http://localhost:8080</a> to access your phpMyAdmin container.</li>
 <li>Log in using <code>root</code> as the username and <code>my-secret-pw</code> as the password.
 You should connect to the MySQL server and see your database listed.</li>
 </ol>
@@ -2546,8 +2526,7 @@ Dockerfile and any other files needed for the build.</p>
 </ol>
 </li>
 <li>
-<p>Run your image as you did in 
-  <a class="link" href="#run-a-local-containerized-database">Run a local containerized
+<p>Run your image as you did in <a class="link" href="#run-a-local-containerized-database">Run a local containerized
 database</a>. This time, specify your
 image's name instead of <code>mysql:latest</code>. Also, you no longer need to specify
 the <code>MYSQL_DATABASE</code> environment variable as it's now defined by your
@@ -2903,13 +2882,7 @@ service name, <code>db</code>, in order to connect to the database service. For 
   </div>
 </div>
 <p>You can now access phpMyAdmin at
-
-  <a class="link" href="http://localhost:8080" rel="noopener">
-    http://localhost:8080
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and connect to your
+<a class="link" href="http://localhost:8080" rel="noopener">http://localhost:8080</a> and connect to your
 database using <code>root</code> as the username and <code>my-secret-pw</code> as the password.</p>
 </li>
 <li>
@@ -2935,21 +2908,14 @@ for more advanced database management and deployment scenarios, ensuring your
 data-driven applications remain robust and scalable.</p>
 <p>Related information:</p>
 <ul>
-<li>
-  <a class="link" href="https://hub.docker.com/search?q=database&amp;type=image" rel="noopener">
-    Docker Hub database images
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://hub.docker.com/search?q=database&amp;type=image" rel="noopener">Docker Hub database images</a></li>
 <li>
   <a class="link" href="/reference/dockerfile/">Dockerfile reference</a></li>
 <li>
   <a class="link" href="/reference/compose-file/">Compose file reference</a></li>
 <li>
   <a class="link" href="/reference/cli/docker/">CLI reference</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/reference/samples/#databases">Database samples</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/reference/samples/#databases">Database samples</a></li>
 </ul>
 
   </article>

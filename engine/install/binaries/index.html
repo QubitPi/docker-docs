@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13982,7 +13982,6 @@ Docker.</p>
 packages.</p>
 <p>On Windows and Mac, we recommend that you install 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/desktop/">Docker Desktop</a>
 instead. For Linux, we recommend that you follow the instructions specific for
@@ -13999,12 +13998,9 @@ system's package management system to manage Docker installation and upgrades.</
 Static binaries for the Docker client are available for Linux, Windows, and macOS (as <code>docker</code>).</p>
 <p>This topic discusses binary installation for Linux, Windows, and macOS:</p>
 <ul>
-<li>
-  <a class="link" href="#install-daemon-and-client-binaries-on-linux">Install daemon and client binaries on Linux</a></li>
-<li>
-  <a class="link" href="#install-client-binaries-on-macos">Install client binaries on macOS</a></li>
-<li>
-  <a class="link" href="#install-server-and-client-binaries-on-windows">Install server and client binaries on Windows</a></li>
+<li><a class="link" href="#install-daemon-and-client-binaries-on-linux">Install daemon and client binaries on Linux</a></li>
+<li><a class="link" href="#install-client-binaries-on-macos">Install client binaries on macOS</a></li>
+<li><a class="link" href="#install-server-and-client-binaries-on-windows">Install server and client binaries on Windows</a></li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="install-daemon-and-client-binaries-on-linux">
@@ -14029,43 +14025,13 @@ available for your platform is recommended.</li>
 <li><code>iptables</code> version 1.4 or higher</li>
 <li><code>git</code> version 1.7 or higher</li>
 <li>A <code>ps</code> executable, usually provided by <code>procps</code> or a similar package.</li>
-<li>
-  <a class="link" href="https://tukaani.org/xz/" rel="noopener">
-    XZ Utils
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> 4.9 or higher</li>
-<li>A 
-  <a class="link" href="https://github.com/tianon/cgroupfs-mount/blob/master/cgroupfs-mount" rel="noopener">
-    properly mounted
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<li><a class="link" href="https://tukaani.org/xz/" rel="noopener">XZ Utils</a> 4.9 or higher</li>
+<li>A <a class="link" href="https://github.com/tianon/cgroupfs-mount/blob/master/cgroupfs-mount" rel="noopener">properly mounted</a>
 <code>cgroupfs</code> hierarchy; a single, all-encompassing <code>cgroup</code> mount
 point is not sufficient. See Github issues
-
-  <a class="link" href="https://github.com/moby/moby/issues/2683" rel="noopener">
-    #2683
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
-
-  <a class="link" href="https://github.com/moby/moby/issues/3485" rel="noopener">
-    #3485
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
-
-  <a class="link" href="https://github.com/moby/moby/issues/4568" rel="noopener">
-    #4568
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>).</li>
+<a class="link" href="https://github.com/moby/moby/issues/2683" rel="noopener">#2683</a>,
+<a class="link" href="https://github.com/moby/moby/issues/3485" rel="noopener">#3485</a>,
+<a class="link" href="https://github.com/moby/moby/issues/4568" rel="noopener">#4568</a>).</li>
 </ul>
 
 <h4 class=" scroll-mt-20" id="secure-your-environment-as-much-as-possible">
@@ -14110,8 +14076,7 @@ correctly to fix any problems.</p>
 <ul>
 <li>
 <p>Enable <code>seccomp</code> security profiles if possible. See
-
-  <a class="link" href="https://docker.qubitpi.org/engine/security/seccomp/">Enabling <code>seccomp</code> for Docker</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/security/seccomp/">Enabling <code>seccomp</code> for Docker</a>.</p>
 </li>
 <li>
 <p>Enable user namespaces if possible. See the
@@ -14129,13 +14094,7 @@ correctly to fix any problems.</p>
 <ol>
 <li>
 <p>Download the static binary archive. Go to
-
-  <a class="link" href="https://download.docker.com/linux/static/stable/" rel="noopener">
-    https://download.docker.com/linux/static/stable/
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+<a class="link" href="https://download.docker.com/linux/static/stable/" rel="noopener">https://download.docker.com/linux/static/stable/</a>,
 choose your hardware platform, and download the <code>.tgz</code> file relating to the
 version of Docker Engine you want to install.</p>
 </li>
@@ -14371,7 +14330,6 @@ binary includes the Docker client only. It does not include the <code>dockerd</c
 which is required to run containers. Therefore, we recommend that you install
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/desktop/">Docker Desktop</a> instead.</p>
     </div>
@@ -14386,13 +14344,7 @@ which is required to run containers. Therefore, we recommend that you install
 <ol>
 <li>
 <p>Download the static binary archive. Go to
-
-  <a class="link" href="https://download.docker.com/mac/static/stable/" rel="noopener">
-    https://download.docker.com/mac/static/stable/
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and select <code>x86_64</code> (for Mac on Intel chip) or <code>aarch64</code> (for Mac on Apple silicon),
+<a class="link" href="https://download.docker.com/mac/static/stable/" rel="noopener">https://download.docker.com/mac/static/stable/</a> and select <code>x86_64</code> (for Mac on Intel chip) or <code>aarch64</code> (for Mac on Apple silicon),
 and then download the <code>.tgz</code> file relating to the version of Docker Engine you want
 to install.</p>
 </li>
@@ -14633,7 +14585,6 @@ Docker daemon on Windows Server, the daemon doesn't contain Docker components
 such as <code>buildx</code> and <code>compose</code>. If you're running Windows 10 or 11,
 we recommend that you install 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/desktop/">Docker Desktop</a> instead.</p>
     </div>
@@ -14646,13 +14597,7 @@ Linux containers).</p>
 <ol>
 <li>
 <p>Download the static binary archive. Go to
-
-  <a class="link" href="https://download.docker.com/win/static/stable/x86_64" rel="noopener">
-    https://download.docker.com/win/static/stable/x86_64
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and select the latest version from the list.</p>
+<a class="link" href="https://download.docker.com/win/static/stable/x86_64" rel="noopener">https://download.docker.com/win/static/stable/x86_64</a> and select the latest version from the list.</p>
 </li>
 <li>
 <p>Run the following PowerShell commands to install and extract the archive to your program files:</p>
@@ -14795,8 +14740,7 @@ version.</p>
 </h2>
 
 <ul>
-<li>Continue to 
-  <a class="link" href="https://docker.qubitpi.org/engine/install/linux-postinstall/">Post-installation steps for Linux</a>.</li>
+<li>Continue to <a class="link" href="https://docker.qubitpi.org/engine/install/linux-postinstall/">Post-installation steps for Linux</a>.</li>
 </ul>
 
   </article>

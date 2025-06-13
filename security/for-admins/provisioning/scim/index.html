@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6368,22 +6368,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7199,6 +7183,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7821,22 +7821,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13911,6 +13911,11 @@
           >
         </li>
         <li>
+          <a class="link lg:no-underline" href="#prerequisites"
+            >Prerequisites</a
+          >
+        </li>
+        <li>
           <a class="link lg:no-underline" href="#enable-scim-in-docker"
             >Enable SCIM in Docker</a
           >
@@ -13923,6 +13928,11 @@
         <li>
           <a class="link lg:no-underline" href="#set-up-role-mapping"
             >Set up role mapping</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#test-scim-provisioning"
+            >Test SCIM provisioning</a
           >
         </li>
         <li>
@@ -14036,7 +14046,6 @@ before SCIM was set up.</p>
 <p>To remove those users, delete them manually from your Docker organization.
 For more information, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/admin/organization/members/">Manage organization members</a>.</p>
     </div>
@@ -14125,12 +14134,27 @@ SCIM values.</p>
 <p>Alternatively, you can disable JIT provisioning to rely solely on SCIM.
 For details, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/security/for-admins/provisioning/just-in-time/">Just-in-Time</a>.</p>
     </div>
   </blockquote>
 
+
+<h2 class=" scroll-mt-20" id="prerequisites">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#prerequisites">
+    Prerequisites
+  </a>
+</h2>
+
+<ul>
+<li>You've 
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/">set up SSO</a>
+with Docker and verified your domain.</li>
+<li>You have access to your identity provider's administrator portal with
+permission to create and manage applications.</li>
+</ul>
 
 <h2 class=" scroll-mt-20" id="enable-scim-in-docker">
   <a class="text-black dark:text-white no-underline hover:underline" href="#enable-scim-in-docker">
@@ -14138,8 +14162,7 @@ For details, see
   </a>
 </h2>
 
-<p>You must 
-  <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/configure/">configure SSO</a> before you enable SCIM. Enforcing SSO isn't required to use SCIM.</p>
+<p>You must <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/configure/">configure SSO</a> before you enable SCIM. Enforcing SSO isn't required to use SCIM.</p>
 
 
 
@@ -14186,13 +14209,7 @@ For details, see
         :class="selected !== 'Admin-Console' && 'hidden'"
       >
         <ol>
-<li>Sign in to the 
-  <a class="link" href="https://admin.docker.com" rel="noopener">
-    Admin Console
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</li>
+<li>Sign in to the <a class="link" href="https://admin.docker.com" rel="noopener">Admin Console</a>.</li>
 <li>Select your organization or company in the left navigation drop-down menu, and then select <strong>SSO and SCIM.</strong></li>
 <li>In the SSO connections table, select the <strong>Actions</strong> icon and <strong>Setup SCIM</strong>.</li>
 <li>Copy the <strong>SCIM Base URL</strong> and <strong>API Token</strong> and paste the values into your IdP.</li>
@@ -14229,24 +14246,12 @@ For details, see
     <div class="admonition-content">
       <p>Organization management is moving to the Admin Console.</p>
 <p>Manage members, team, settings, and activity logs in the Docker Admin Console.
-Access to these features in Docker Hub will end soon. Explore the 
-  <a class="link" href="https://app.docker.com/admin" rel="noopener">
-    Admin Console
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+Access to these features in Docker Hub will end soon. Explore the <a class="link" href="https://app.docker.com/admin" rel="noopener">Admin Console</a>.</p>
     </div>
   </blockquote>
 
 <ol>
-<li>Sign in to 
-  <a class="link" href="https://hub.docker.com" rel="noopener">
-    Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</li>
+<li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
 <li>Navigate to the SSO settings page for your organization.
 <ul>
 <li>Organization: Select <strong>My Hub</strong>, your organization, <strong>Settings</strong>, and then <strong>Security</strong>.</li>
@@ -14270,21 +14275,34 @@ Access to these features in Docker Hub will end soon. Explore the
 
 <p>The user interface for your IdP may differ slightly from the following steps. You can refer to the documentation for your IdP to verify. For additional details, see the documentation for your IdP:</p>
 <ul>
-<li>
-  <a class="link" href="https://help.okta.com/en-us/Content/Topics/Apps/Apps_App_Integration_Wizard_SCIM.htm" rel="noopener">
-    Okta
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-  <a class="link" href="https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/user-provisioning" rel="noopener">
-    Entra ID (formerly Azure AD)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://help.okta.com/en-us/Content/Topics/Apps/Apps_App_Integration_Wizard_SCIM.htm" rel="noopener">Okta</a></li>
+<li><a class="link" href="https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/user-provisioning" rel="noopener">Entra ID/Azure AD SAML 2.0</a></li>
 </ul>
+
+
+  
+
+  <blockquote
+    
+    class="admonition admonition-note admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>
+      <span class="admonition-title">
+        Note
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>Microsoft does not currently support SCIM and OIDC in the same non-gallery
+application in Entra ID. This guide provides a verified workaround using a
+separate non-gallery app for SCIM provisioning. While Microsoft does not
+officially document this setup, it is widely used and supported in practice.</p>
+    </div>
+  </blockquote>
+
 
 
 
@@ -14314,13 +14332,24 @@ Access to these features in Docker Hub will end soon. Explore the
     
       <button
         class="tab-item"
+        :class="selected === 'Entra-ID-OIDC' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'Entra-ID-OIDC'"
+        
+      >
+        Entra ID (OIDC)
+      </button>
+    
+      <button
+        class="tab-item"
         :class="selected === 'Entra-ID-SAML-2.0' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
           @click="selected = 'Entra-ID-SAML-2.0'"
         
       >
-        Entra ID SAML 2.0
+        Entra ID (SAML 2.0)
       </button>
     
   </div>
@@ -14331,9 +14360,9 @@ Access to these features in Docker Hub will end soon. Explore the
         :class="selected !== 'Okta' && 'hidden'"
       >
         
-<h3 class=" scroll-mt-20" id="enable-scim">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-scim">
-    Enable SCIM
+<h3 class=" scroll-mt-20" id="step-one-enable-scim">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-one-enable-scim">
+    Step one: Enable SCIM
   </a>
 </h3>
 
@@ -14356,9 +14385,9 @@ Access to these features in Docker Hub will end soon. Explore the
 <li>Review the test results and select <strong>Save</strong>.</li>
 </ol>
 
-<h3 class=" scroll-mt-20" id="enable-synchronization">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-synchronization">
-    Enable synchronization
+<h3 class=" scroll-mt-20" id="step-two-enable-synchronization">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-two-enable-synchronization">
+    Step two: Enable synchronization
   </a>
 </h3>
 
@@ -14381,21 +14410,74 @@ Access to these features in Docker Hub will end soon. Explore the
     
       <div
         aria-role="tab"
+        :class="selected !== 'Entra-ID-OIDC' && 'hidden'"
+      >
+        <p>Microsoft does not support SCIM and OIDC in the same non-gallery application.
+You must create a second non-gallery application in Entra ID for SCIM
+provisioning.</p>
+
+<h3 class=" scroll-mt-20" id="step-one-create-a-separate-scim-app">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-one-create-a-separate-scim-app">
+    Step one: Create a separate SCIM app
+  </a>
+</h3>
+
+<ol>
+<li>In the Azure Portal, go to <strong>Microsoft Entra ID</strong> &gt; <strong>Enterprise Applications</strong> &gt;
+<strong>New application</strong>.</li>
+<li>Select <strong>Create your own application</strong>.</li>
+<li>Name your application and choose <strong>Integrate any other application you don't find in the gallery</strong>.</li>
+<li>Select <strong>Create</strong>.</li>
+</ol>
+
+<h3 class=" scroll-mt-20" id="step-two-configure-scim-provisioning">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-two-configure-scim-provisioning">
+    Step two: Configure SCIM provisioning
+  </a>
+</h3>
+
+<ol>
+<li>In your new SCIM application, go to <strong>Provisioning</strong> &gt; <strong>Get started</strong>.</li>
+<li>Set <strong>Provisioning Mode</strong> to <strong>Automatic</strong>.</li>
+<li>Under <strong>Admin Credentials</strong>:
+<ul>
+<li><strong>Tenant URL</strong>: Paste the <strong>SCIM Base URL</strong> from Docker.</li>
+<li><strong>Secret Token</strong>: Paste the <strong>SCIM API token</strong> from Docker.</li>
+</ul>
+</li>
+<li>Select <strong>Test Connection</strong> to verify.</li>
+<li>Select <strong>Save</strong> to store credentials.</li>
+</ol>
+<p>Next, <a class="link" href="#set-up-role-mapping">set up role mapping</a>.</p>
+
+      </div>
+    
+      <div
+        aria-role="tab"
         :class="selected !== 'Entra-ID-SAML-2.0' && 'hidden'"
       >
-        <ol>
-<li>In the Azure admin portal, go to <strong>Enterprise Applications</strong>, then select the <strong>Docker</strong> application you created when you set up your SSO connection.</li>
-<li>Select <strong>Provisioning</strong>, then <strong>Get Started</strong>.</li>
-<li>Select <strong>Automatic</strong> provisioning mode.</li>
-<li>Enter the <strong>SCIM Base URL</strong> and <strong>API Token</strong> from Docker into the <strong>Admin Credentials</strong> form.</li>
-<li>Test the connection, then select <strong>Save</strong>.</li>
-<li>Go to  <strong>Mappings</strong>, then select <strong>Provision Azure Active Directory Groups</strong>.</li>
-<li>Set the <strong>Enabled</strong> value to <strong>No</strong>.</li>
-<li>Select <strong>Provision Azure Active Directory Users</strong>.</li>
-<li>Remove all unsupported attributes.</li>
-<li>Select <strong>Save</strong>.</li>
-<li>Set the provisioning status to <strong>On</strong>.</li>
+        
+<h3 class=" scroll-mt-20" id="configure-scim-provisioning">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#configure-scim-provisioning">
+    Configure SCIM provisioning
+  </a>
+</h3>
+
+<ol>
+<li>In the Azure Portal, go to <strong>Microsoft Entra ID</strong> &gt; <strong>Enterprise Applications</strong>,
+and select your Docker SAML app.</li>
+<li>Select <strong>Provisioning</strong> &gt; <strong>Get started</strong>.</li>
+<li>Set <strong>Provisioning Mode</strong> to <strong>Automatic</strong>.</li>
+<li>Under <strong>Admin Credentials</strong>:
+<ul>
+<li><strong>Tenant URL</strong>: Paste the <strong>SCIM Base URL</strong> from Docker.</li>
+<li><strong>Secret Token</strong>: Paste the <strong>SCIM API token</strong> from Docker.</li>
+</ul>
+</li>
+<li>Select <strong>Test Connection</strong> to verify.</li>
+<li>Select <strong>Save</strong> to store credentials.</li>
 </ol>
+<p>Next, <a class="link" href="#set-up-role-mapping">set up role mapping</a>.</p>
 
       </div>
     
@@ -14410,7 +14492,9 @@ Access to these features in Docker Hub will end soon. Explore the
 </h2>
 
 <p>You can assign 
-  <a class="link" href="/security/for-admins/roles-and-permissions/">roles</a> to members in your organization in your IdP. To set up a role, you can use optional user-level attributes for the person you want to assign a role. In addition to roles, you can set an organization or team to override the default provisioning values set by the SSO connection.</p>
+  <a class="link" href="/security/for-admins/roles-and-permissions/">Docker roles</a> to
+users by adding optional SCIM attributes in your IdP. These attributes override
+default role and team values set in your SSO configuration.</p>
 
 
   
@@ -14429,11 +14513,13 @@ Access to these features in Docker Hub will end soon. Explore the
       </span>
     </div>
     <div class="admonition-content">
-      <p>Role mappings are supported for both SCIM and JIT provisioning. With JIT provisioning, role mapping only applies when a user is initially provisioned to the organization.</p>
+      <p>Role mappings are supported for both SCIM and Just-in-Time (JIT)
+provisioning. For JIT, role mapping applies only when the user is first
+provisioned.</p>
     </div>
   </blockquote>
 
-<p>The following table lists the supported optional user-level attributes.</p>
+<p>The following table lists the supported optional user-level attributes:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -14444,7 +14530,7 @@ Access to these features in Docker Hub will end soon. Explore the
             <th
               class="p-2">Possible values</th>
             <th
-              class="p-2">Considerations</th>
+              class="p-2">Notes</th>
         </tr>
     </thead>
     <tbody>
@@ -14452,33 +14538,32 @@ Access to these features in Docker Hub will end soon. Explore the
             <td
               class="p-2"><code>dockerRole</code></td>
             <td
-              class="p-2"><code>member</code>, <code>editor</code>, or <code>owner</code>, for a list of permissions for each role, see 
-  <a class="link" href="/security/for-admins/roles-and-permissions/">Roles and permissions</a></td>
+              class="p-2"><code>member</code>, <code>editor</code>, or <code>owner</code></td>
             <td
-              class="p-2">If you don't assign a role in the IdP, the value of the <code>dockerRole</code> attribute defaults to <code>member</code>. When you set the attribute, this overrides the default value.</td>
+              class="p-2">If not set, the user defaults to the <code>member</code> role. Setting this attribute overrides the default.<br><br>For role definitions, see <a class="link" href="https://docker.qubitpi.org/security/for-admins/roles-and-permissions/">Roles and permissions</a>.</td>
         </tr>
         <tr>
             <td
               class="p-2"><code>dockerOrg</code></td>
             <td
-              class="p-2"><code>organizationName</code>, for example, an organization named &quot;moby&quot; would be <code>moby</code></td>
+              class="p-2">Docker <code>organizationName</code> (e.g., <code>moby</code>)</td>
             <td
-              class="p-2">Setting this attribute overrides the default organization configured by the SSO connection. Also, this won't add the user to the default team. If this attribute isn't set, the user is provisioned to the default organization and the default team. If set and <code>dockerTeam</code> is also set, this provisions the user to the team within that organization.</td>
+              class="p-2">Overrides the default organization configured in your SSO connection.<br><br>If unset, the user is provisioned to the default organization. If <code>dockerOrg</code> and <code>dockerTeam</code> are both set, the user is provisioned to the team within the specified organization.</td>
         </tr>
         <tr>
             <td
               class="p-2"><code>dockerTeam</code></td>
             <td
-              class="p-2"><code>teamName</code>, for example, a team named &quot;developers&quot; would be <code>developers</code></td>
+              class="p-2">Docker <code>teamName</code> (e.g., <code>developers</code>)</td>
             <td
-              class="p-2">Setting this attribute provisions the user to the default organization and to the specified team, instead of the SSO connection's default team. This also creates the team if it doesn't exist. You can still use group mapping to provision users to teams in multiple organizations. See 
-  <a class="link" href="/security/for-admins/provisioning/group-mapping/">Group mapping</a> for more details.</td>
+              class="p-2">Provisions the user to the specified team in the default or specified organization. If the team doesn't exist, it is automatically created.<br><br>You can still use 
+  <a class="link" href="/security/for-admins/provisioning/group-mapping/">group mapping</a> to assign users to multiple teams across organizations.</td>
         </tr>
     </tbody>
   </table>
 </div>
-<p>After you set the role in the IdP, you must initiate a sync in your IdP to push the changes to Docker.</p>
-<p>The external namespace to use to set up these attributes is <code>urn:ietf:params:scim:schemas:extension:docker:2.0:User</code>.</p>
+<p>The external namespace used for these attributes is: <code>urn:ietf:params:scim:schemas:extension:docker:2.0:User</code>.
+This value is required in your IdP when creating custom SCIM attributes for Docker.</p>
 
 
 
@@ -14508,13 +14593,13 @@ Access to these features in Docker Hub will end soon. Explore the
     
       <button
         class="tab-item"
-        :class="selected === 'Entra-ID-SAML-2.0' &&
+        :class="selected === 'Entra-ID/Azure-AD-SAML-2.0-and-OIDC' &&
           'border-blue border-b-4 dark:border-b-blue-600'"
         
-          @click="selected = 'Entra-ID-SAML-2.0'"
+          @click="selected = 'Entra-ID/Azure-AD-SAML-2.0-and-OIDC'"
         
       >
-        Entra ID SAML 2.0
+        Entra ID/Azure AD (SAML 2.0 and OIDC)
       </button>
     
   </div>
@@ -14525,15 +14610,14 @@ Access to these features in Docker Hub will end soon. Explore the
         :class="selected !== 'Okta' && 'hidden'"
       >
         
-<h3 class=" scroll-mt-20" id="set-up-role-mapping-in-okta">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#set-up-role-mapping-in-okta">
-    Set up role mapping in Okta
+<h3 class=" scroll-mt-20" id="step-one-set-up-role-mapping-in-okta">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-one-set-up-role-mapping-in-okta">
+    Step one: Set up role mapping in Okta
   </a>
 </h3>
 
 <ol>
-<li>Setup 
-  <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/configure/">SSO</a> and SCIM first.</li>
+<li>Setup <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/configure/">SSO</a> and SCIM first.</li>
 <li>In the Okta admin portal, go to <strong>Directory</strong>, select <strong>Profile Editor</strong>, and then <strong>User (Default)</strong>.</li>
 <li>Select <strong>Add Attribute</strong> and configure the values for the role, organization, or team you want to add. Exact naming isn't required.</li>
 <li>Return to the <strong>Profile Editor</strong> and select your application.</li>
@@ -14545,26 +14629,26 @@ Access to these features in Docker Hub will end soon. Explore the
 <li>Select <strong>Step 2</strong> and configure the mapping from the user attribute to the Docker variables.</li>
 </ol>
 
-<h3 class=" scroll-mt-20" id="assign-roles-by-user">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#assign-roles-by-user">
-    Assign roles by user
+<h3 class=" scroll-mt-20" id="step-two-assign-roles-by-user">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-two-assign-roles-by-user">
+    Step two: Assign roles by user
   </a>
 </h3>
 
 <ol>
-<li>In the Okta admin portal, select <strong>Directory</strong>, then <strong>People</strong>.</li>
+<li>In the Okta Admin portal, select <strong>Directory</strong>, then <strong>People</strong>.</li>
 <li>Select <strong>Profile</strong>, then <strong>Edit</strong>.</li>
 <li>Select <strong>Attributes</strong> and update the attributes to the desired values.</li>
 </ol>
 
-<h3 class=" scroll-mt-20" id="assign-roles-by-group">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#assign-roles-by-group">
-    Assign roles by group
+<h3 class=" scroll-mt-20" id="step-three-assign-roles-by-group">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-three-assign-roles-by-group">
+    Step three: Assign roles by group
   </a>
 </h3>
 
 <ol>
-<li>In the Okta admin portal, select <strong>Directory</strong>, then <strong>People</strong>.</li>
+<li>In the Okta Admin portal, select <strong>Directory</strong>, then <strong>People</strong>.</li>
 <li>Select <strong>YOUR GROUP</strong>, then <strong>Applications</strong>.</li>
 <li>Open <strong>YOUR APPLICATION</strong> and select the <strong>Edit</strong> icon.</li>
 <li>Update the attributes to the desired values.</li>
@@ -14575,39 +14659,154 @@ Access to these features in Docker Hub will end soon. Explore the
     
       <div
         aria-role="tab"
-        :class="selected !== 'Entra-ID-SAML-2.0' && 'hidden'"
+        :class="selected !== 'Entra-ID/Azure-AD-SAML-2.0-and-OIDC' && 'hidden'"
       >
         
-<h3 class=" scroll-mt-20" id="set-up-role-mapping-in-azure-ad">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#set-up-role-mapping-in-azure-ad">
-    Set up role mapping in Azure AD
+<h3 class=" scroll-mt-20" id="step-one-configure-attribute-mappings">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-one-configure-attribute-mappings">
+    Step one: Configure attribute mappings
   </a>
 </h3>
 
 <ol>
-<li>Setup 
-  <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/configure/">SSO</a> and SCIM first.</li>
-<li>In the Azure AD admin portal, open <strong>Enterprise Apps</strong> and select <strong>YOUR APP</strong>.</li>
-<li>Select <strong>Provisioning</strong>, then <strong>Mappings</strong>, and <strong>Provision Azure Active Directory Users</strong>.</li>
-<li>To set up the new mapping, check <strong>Show advanced options</strong>, then select <strong>Edit attribute options</strong>.</li>
-<li>Create new entries with the desired mapping for role, organization, or group (for example, <code>urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerRole</code>) as a string type.</li>
-<li>Navigate back to <strong>Attribute Mapping</strong> for users and select <strong>Add new mapping</strong>.</li>
+<li>Complete the <a class="link" href="#enable-scim-in-docker">SCIM provisioning setup</a>.</li>
+<li>In the Azure Portal, open <strong>Microsoft Entra ID</strong> &gt; <strong>Enterprise Applications</strong>,
+and select your SCIM application.</li>
+<li>Go to <strong>Provisioning</strong> &gt; <strong>Mappings</strong> &gt; <strong>Provision Azure Active Directory Users</strong>.</li>
+<li>Add or update the following mappings:
+<ul>
+<li><code>userPrincipalName</code> -&gt; <code>userName</code></li>
+<li><code>mail</code> -&gt; <code>emails.value</code></li>
+<li>Optional. Map <code>dockerRole</code>, <code>dockerOrg</code>, or <code>dockerTeam</code> using one of the
+<a class="link" href="#step-two-choose-a-role-mapping-method">mapping methods</a>.</li>
+</ul>
+</li>
+<li>Remove any unsupported attributes to prevent sync errors.</li>
+<li>Optional. Go to <strong>Mappings</strong> &gt; <strong>Provision Azure Active Directory Groups</strong>:
+<ul>
+<li>If group provisioning causes errors, set <strong>Enabled</strong> to <strong>No</strong>.</li>
+<li>If enabling, test group mappings carefully.</li>
+</ul>
+</li>
+<li>Select <strong>Save</strong> to apply mappings.</li>
 </ol>
 
-<h3 class=" scroll-mt-20" id="expression-mapping">
+<h3 class=" scroll-mt-20" id="step-two-choose-a-role-mapping-method">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-two-choose-a-role-mapping-method">
+    Step two: Choose a role mapping method
+  </a>
+</h3>
+
+<p>You can map <code>dockerRole</code>, <code>dockerOrg</code>, or <code>dockerTeam</code> using one of the following
+methods:</p>
+
+<h4 class=" scroll-mt-20" id="expression-mapping">
   <a class="text-black dark:text-white no-underline hover:underline" href="#expression-mapping">
     Expression mapping
   </a>
+</h4>
+
+<p>Use this method if you only need to assign Docker roles like <code>member</code>, <code>editor</code>,
+or <code>owner</code>.</p>
+<ol>
+<li>In the <strong>Edit Attribute</strong> view, set the mapping type to <strong>Expression</strong>.</li>
+<li>In the <strong>Expression</strong> field:
+<ol>
+<li>If your App Roles match Docker roles exactly, use: SingleAppRoleAssignment([appRoleAssignments])</li>
+<li>If they don't match, use a switch expression: <code>Switch(SingleAppRoleAssignment([appRoleAssignments]), &quot;My Corp Admins&quot;, &quot;owner&quot;, &quot;My Corp Editors&quot;, &quot;editor&quot;, &quot;My Corp Users&quot;, &quot;member&quot;)</code></li>
+</ol>
+</li>
+<li>Set:
+<ul>
+<li><strong>Target attribute</strong>: <code>urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerRole</code></li>
+<li><strong>Match objects using this attribute</strong>: No</li>
+<li><strong>Apply this mapping</strong>: Always</li>
+</ul>
+</li>
+<li>Save your changes.</li>
+</ol>
+
+
+  
+
+  <blockquote
+    
+    class="admonition admonition-warning admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_5432_2018" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="2" width="24" height="21">
+<path d="M11.9998 9.99999V14M11.9998 18H12.0098M10.6151 4.89171L2.39019 19.0983C1.93398 19.8863 1.70588 20.2803 1.73959 20.6037C1.769 20.8857 1.91677 21.142 2.14613 21.3088C2.40908 21.5 2.86435 21.5 3.77487 21.5H20.2246C21.1352 21.5 21.5904 21.5 21.8534 21.3088C22.0827 21.142 22.2305 20.8857 22.2599 20.6037C22.2936 20.2803 22.0655 19.8863 21.6093 19.0983L13.3844 4.89171C12.9299 4.10654 12.7026 3.71396 12.4061 3.58211C12.1474 3.4671 11.8521 3.4671 11.5935 3.58211C11.2969 3.71396 11.0696 4.10655 10.6151 4.89171Z" stroke="#6C7E9D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_5432_2018)">
+<rect width="24" height="24" fill="currentColor" fill-opacity="0.8"/>
+</g>
+</svg>
+
+      </span>
+      <span class="admonition-title">
+        Warning
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>You can't use <code>dockerOrg</code> or <code>dockerTeam</code> with this method. Expression mapping
+is only compatible with one attribute.</p>
+    </div>
+  </blockquote>
+
+
+<h4 class=" scroll-mt-20" id="direct-mapping">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#direct-mapping">
+    Direct mapping
+  </a>
+</h4>
+
+<p>Use this method if you need to map multiple attributes (e.g., <code>dockerRole</code> +
+<code>dockerTeam</code>).</p>
+<ol>
+<li>For each Docker attribute, choose a unique Entra extension attribute (e.g.,
+<code>extensionAttribute1</code>, <code>extensionAttribute2</code>, etc.).</li>
+<li>In the <strong>Edit Attribute</strong> view:
+<ul>
+<li>Set mapping type to <strong>Direct</strong>.</li>
+<li>Set <strong>Source attribute</strong> to your selected extension attribute (e.g., <code>extensionAttribute1</code>).</li>
+<li>Set <strong>Target attribute</strong> to one of:
+<ul>
+<li><code>dockerRole: urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerRole</code></li>
+<li><code>dockerOrg: urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerOrg</code></li>
+<li><code>dockerTeam: urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerTeam</code></li>
+</ul>
+</li>
+<li>Set <strong>Apply this mapping</strong> to <strong>Always</strong>.</li>
+</ul>
+</li>
+<li>Save your changes.</li>
+</ol>
+<p>To assign values, you'll need to use the Microsoft Graph API.</p>
+
+<h3 class=" scroll-mt-20" id="step-three-assign-users-and-groups">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#step-three-assign-users-and-groups">
+    Step three: Assign users and groups
+  </a>
 </h3>
 
-<p>This implementation works best for roles, but can't be used along with organization and team mapping using the same method. With this approach, you can assign attributes at a group level, which members can inherit. This is the recommended approach for role mapping.</p>
+<p>For either mapping method:</p>
 <ol>
-<li>
-<p>In the <strong>Edit Attribute</strong> view, select the <strong>Expression</strong> mapping type.</p>
-</li>
-<li>
-<p>If you can create app roles named as the role directly (for example, <code>owner</code> or <code>editor</code>), in the <strong>Expression</strong> field, you can use <code>SingleAppRoleAssignment([appRoleAssignments])</code>.</p>
-<p>Alternatively, if you’re restricted to using app roles you have already defined (for example, <code>My Corp Administrators</code>) you’ll need to setup a switch for these roles. For example:</p>
+<li>In the SCIM app, go to <strong>Users and Groups</strong> &gt; <strong>Add user/group</strong>.</li>
+<li>Select the users or groups to provision to Docker.</li>
+<li>Select <strong>Assign</strong>.</li>
+</ol>
+<p>If you're using expression mapping:</p>
+<ol>
+<li>Go to <strong>App registrations</strong> &gt; your SCIM app &gt; <strong>App Roles</strong>.</li>
+<li>Create App Roles that match Docker roles.</li>
+<li>Assign users or groups to App Roles under <strong>Users and Groups</strong>.</li>
+</ol>
+<p>If you're using direct mapping:</p>
+<ol>
+<li>Go to <a class="link" href="https://developer.microsoft.com/en-us/graph/graph-explorer" rel="noopener">Microsoft Graph Explorer</a>
+and sign in as a tenant admin.</li>
+<li>Use Microsoft Graph API to assign attribute values. Example PATCH request:</li>
+</ol>
 <div
   data-pagefind-ignore
   x-data
@@ -14620,7 +14819,7 @@ Access to these features in Docker Hub will end soon. Explore the
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'U3dpdGNoKFNpbmdsZUFwcFJvbGVBc3NpZ25tZW50KFthcHBSb2xlQXNzaWdubWVudHNdKSwgIm1lbWJlciIsICJNeSBDb3JwIEFkbWluaXN0cmF0b3IiLCAib3duZXIiLCAiTXkgQ29ycCBFZGl0b3IiLCAiZWRpdG9yIilg', copying: false }"
+        x-data="{ code: 'UEFUQ0ggaHR0cHM6Ly9ncmFwaC5taWNyb3NvZnQuY29tL3YxLjAvdXNlcnMve3VzZXItaWR9CkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbgoKewogICJleHRlbnNpb25BdHRyaWJ1dGUxIjogIm93bmVyIiwKICAiZXh0ZW5zaW9uQXR0cmlidXRlMiI6ICJtb2J5IiwKICAiZXh0ZW5zaW9uQXR0cmlidXRlMyI6ICJkZXZlbG9wZXJzIgp9', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -14639,76 +14838,40 @@ Access to these features in Docker Hub will end soon. Explore the
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Switch(SingleAppRoleAssignment([appRoleAssignments]), &#34;member&#34;, &#34;My Corp Administrator&#34;, &#34;owner&#34;, &#34;My Corp Editor&#34;, &#34;editor&#34;)`</span></span></code></pre></div>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">PATCH https://graph.microsoft.com/v1.0/users/<span class="o">{</span>user-id<span class="o">}</span>
+</span></span><span class="line"><span class="cl">Content-Type: application/json
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;extensionAttribute1&#34;</span>: <span class="s2">&#34;owner&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;extensionAttribute2&#34;</span>: <span class="s2">&#34;moby&#34;</span>,
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;extensionAttribute3&#34;</span>: <span class="s2">&#34;developers&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span></span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-</li>
-<li>
-<p>Set the following fields:</p>
-<ul>
-<li><strong>Target attribute</strong>: <code>urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerRole</code></li>
-<li><strong>Match objects using this attribute</strong>: No</li>
-<li><strong>Apply this mapping</strong>: Always</li>
-</ul>
-</li>
-<li>
-<p>Save your configuration.</p>
-</li>
-</ol>
 
-<h3 class=" scroll-mt-20" id="direct-mapping">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#direct-mapping">
-    Direct mapping
-  </a>
-</h3>
 
-<p>Direct mapping is an alternative to expression mapping. This implementation works for all three mapping types at the same time. In order to assign users, you'll need to use the Microsoft Graph API.</p>
-<ol>
-<li>
-<p>In the <strong>Edit Attribute</strong> view, select the <strong>Direct</strong> mapping type.</p>
-</li>
-<li>
-<p>Set the following fields:</p>
-<ul>
-<li><strong>Source attribute</strong>: choose one of the allowed extension attributes in Entra (for example, <code>extensionAttribute1</code>)</li>
-<li><strong>Target attribute</strong>: <code>urn:ietf:params:scim:schemas:extension:docker:2.0:User:dockerRole</code></li>
-<li><strong>Match objects using this attribute</strong>: No</li>
-<li><strong>Apply this mapping</strong>: Always</li>
-</ul>
-<p>If you're setting more than one attribute, for example role and organization, you need to choose a different extension attribute for each one.</p>
-</li>
-<li>
-<p>Save your configuration.</p>
-</li>
-</ol>
+  
 
-<h3 class=" scroll-mt-20" id="assign-users">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#assign-users">
-    Assign users
-  </a>
-</h3>
+  <blockquote
+    
+    class="admonition admonition-note admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
-<p>If you used expression mapping in the previous step, navigate to <strong>App registrations</strong>, select <strong>YOUR APP</strong>, and <strong>App Roles</strong>. Create an app role for each Docker role. If possible, create it with a display name that is directly equivalent to the role in Docker, for example, <code>owner</code> instead of <code>Owner</code>. If set up this way, then you can use expression mapping to <code>SingleAppRoleAssignment([appRoleAssignments])</code>. Otherwise, a custom switch will have to be used. See 
-  <a class="link" href="#expression-mapping">Expression mapping</a>.</p>
-<p>To add a user:</p>
-<ol>
-<li>Select <strong>YOUR APP</strong>, then <strong>Users and groups</strong>.</li>
-<li>Select <strong>Add user/groups</strong>, select the user you want to add, then <strong>Select</strong> their desired role.</li>
-</ol>
-<p>To add a group:</p>
-<ol>
-<li>Select <strong>YOUR APP</strong>, then <strong>Users and groups</strong>.</li>
-<li>Select <strong>Add user/groups</strong>, select the user you want to add, then <strong>Select</strong> their desired role.</li>
-</ol>
-<p>If you used direct mapping in the previous step, go to <strong>Microsoft Graph Explorer</strong> and sign in to your tenant. You need to be a tenant admin to use this feature. Use the Microsoft Graph API to assign the extension attribute to the user with the value that corresponds to what the attribute was mapped to. See the 
-  <a class="link" href="https://learn.microsoft.com/en-us/graph/extensibility-overview?tabs=http" rel="noopener">
-    Microsoft Graph API documentation
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> on adding or updating data in extension attributes.</p>
+      </span>
+      <span class="admonition-title">
+        Note
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>You must use a different extension attribute for each SCIM field.</p>
+    </div>
+  </blockquote>
+
 
       </div>
     
@@ -14717,21 +14880,93 @@ Access to these features in Docker Hub will end soon. Explore the
 
 <p>See the documentation for your IdP for additional details:</p>
 <ul>
-<li>
-  <a class="link" href="https://help.okta.com/en-us/Content/Topics/users-groups-profiles/usgp-add-custom-user-attributes.htm" rel="noopener">
-    Okta
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-  <a class="link" href="https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/customize-application-attributes#provisioning-a-custom-extension-attribute-to-a-scim-compliant-application" rel="noopener">
-    Entra ID (formerly Azure AD)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://help.okta.com/en-us/Content/Topics/users-groups-profiles/usgp-add-custom-user-attributes.htm" rel="noopener">Okta</a></li>
+<li><a class="link" href="https://learn.microsoft.com/en-us/azure/active-directory/app-provisioning/customize-application-attributes#provisioning-a-custom-extension-attribute-to-a-scim-compliant-application" rel="noopener">Entra ID/Azure AD</a></li>
 </ul>
+
+<h2 class=" scroll-mt-20" id="test-scim-provisioning">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#test-scim-provisioning">
+    Test SCIM provisioning
+  </a>
+</h2>
+
+<p>After completing role mapping, you can test the configuration manually.</p>
+
+
+
+
+
+
+
+<div
+  class="tabs"
+  
+    x-data="{ selected: 'Okta' }"
+  
+  aria-role="tabpanel"
+>
+  <div aria-role="tablist" class="tablist">
+    
+      <button
+        class="tab-item"
+        :class="selected === 'Okta' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'Okta'"
+        
+      >
+        Okta
+      </button>
+    
+      <button
+        class="tab-item"
+        :class="selected === 'Entra-ID/Azure-AD-OIDC-and-SAML-2.0' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'Entra-ID/Azure-AD-OIDC-and-SAML-2.0'"
+        
+      >
+        Entra ID/Azure AD (OIDC and SAML 2.0)
+      </button>
+    
+  </div>
+  <div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'Okta' && 'hidden'"
+      >
+        <ol>
+<li>In the Okta admin portal, go to <strong>Directory &gt; People</strong>.</li>
+<li>Select a user you've assigned to your SCIM application.</li>
+<li>Select <strong>Provision User</strong>.</li>
+<li>Wait a few seconds, then check the Docker
+<a class="link" href="https://app.docker.com/admin" rel="noopener">Admin Console</a> under <strong>Members</strong>.</li>
+<li>If the user doesn’t appear, review logs in <strong>Reports &gt; System Log</strong> and
+confirm SCIM settings in the app.</li>
+</ol>
+
+      </div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'Entra-ID/Azure-AD-OIDC-and-SAML-2.0' && 'hidden'"
+      >
+        <ol>
+<li>In the Azure Portal, go to <strong>Microsoft Entra ID</strong> &gt; <strong>Enterprise Applications</strong>,
+and select your SCIM app.</li>
+<li>Go to <strong>Provisioning</strong> &gt; <strong>Provision on demand</strong>.</li>
+<li>Select a user or group and choose <strong>Provision</strong>.</li>
+<li>Confirm that the user appears in the Docker
+<a class="link" href="https://app.docker.com/admin" rel="noopener">Admin Console</a> under <strong>Members</strong>.</li>
+<li>If needed, check <strong>Provisioning logs</strong> for errors.</li>
+</ol>
+
+      </div>
+    
+  </div>
+</div>
+
 
 <h2 class=" scroll-mt-20" id="disable-scim">
   <a class="text-black dark:text-white no-underline hover:underline" href="#disable-scim">
@@ -14786,13 +15021,7 @@ Access to these features in Docker Hub will end soon. Explore the
         :class="selected !== 'Admin-Console' && 'hidden'"
       >
         <ol>
-<li>Sign in to the 
-  <a class="link" href="https://admin.docker.com" rel="noopener">
-    Admin Console
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</li>
+<li>Sign in to the <a class="link" href="https://admin.docker.com" rel="noopener">Admin Console</a>.</li>
 <li>Select your organization or company in the left navigation drop-down menu, and then select <strong>SSO and SCIM.</strong></li>
 <li>In the SSO connections table, select the <strong>Actions</strong> icon.</li>
 <li>Select <strong>Disable SCIM</strong>.</li>
@@ -14829,24 +15058,12 @@ Access to these features in Docker Hub will end soon. Explore the
     <div class="admonition-content">
       <p>Organization management is moving to the Admin Console.</p>
 <p>Manage members, team, settings, and activity logs in the Docker Admin Console.
-Access to these features in Docker Hub will end soon. Explore the 
-  <a class="link" href="https://app.docker.com/admin" rel="noopener">
-    Admin Console
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+Access to these features in Docker Hub will end soon. Explore the <a class="link" href="https://app.docker.com/admin" rel="noopener">Admin Console</a>.</p>
     </div>
   </blockquote>
 
 <ol>
-<li>Sign in to 
-  <a class="link" href="https://hub.docker.com" rel="noopener">
-    Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</li>
+<li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
 <li>Navigate to the SSO settings page for your organization.
 <ul>
 <li>Organization: Select <strong>My Hub</strong>, your organization, <strong>Settings</strong>, and then <strong>Security</strong>.</li>
@@ -14870,34 +15087,17 @@ Access to these features in Docker Hub will end soon. Explore the
 
 <p>The following videos demonstrate how to configure SCIM for your IdP:</p>
 <ul>
+<li><a class="link" href="https://youtu.be/c56YECO4YP4?feature=shared&amp;t=1314" rel="noopener">Video: Configure SCIM with Okta</a></li>
+<li><a class="link" href="https://youtu.be/c56YECO4YP4?feature=shared&amp;t=1998" rel="noopener">Video: Attribute mapping with Okta</a></li>
+<li><a class="link" href="https://youtu.be/bGquA8qR9jU?feature=shared&amp;t=1668" rel="noopener">Video: Configure SCIM with Entra ID/Azure AD</a></li>
+<li><a class="link" href="https://youtu.be/bGquA8qR9jU?feature=shared&amp;t=2039" rel="noopener">Video: Attribute and group mapping with Entra ID/Azure AD</a></li>
+</ul>
+<p>Refer to the following troubleshooting guide if needed:</p>
+<ul>
 <li>
-  <a class="link" href="https://youtu.be/c56YECO4YP4?feature=shared&amp;t=1314" rel="noopener">
-    Video: Configure SCIM with Okta
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-  <a class="link" href="https://youtu.be/c56YECO4YP4?feature=shared&amp;t=1998" rel="noopener">
-    Video: Attribute mapping with Okta
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-  <a class="link" href="https://youtu.be/bGquA8qR9jU?feature=shared&amp;t=1668" rel="noopener">
-    Video: Configure SCIM with Entra ID (Azure)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-  <a class="link" href="https://youtu.be/bGquA8qR9jU?feature=shared&amp;t=2039" rel="noopener">
-    Video: Attribute and group mapping with Entra ID (Azure)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/">Troubleshoot provisioning</a></li>
 </ul>
 
   </article>
@@ -14971,6 +15171,11 @@ Access to these features in Docker Hub will end soon. Explore the
           >
         </li>
         <li>
+          <a class="link lg:no-underline" href="#prerequisites"
+            >Prerequisites</a
+          >
+        </li>
+        <li>
           <a class="link lg:no-underline" href="#enable-scim-in-docker"
             >Enable SCIM in Docker</a
           >
@@ -14983,6 +15188,11 @@ Access to these features in Docker Hub will end soon. Explore the
         <li>
           <a class="link lg:no-underline" href="#set-up-role-mapping"
             >Set up role mapping</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#test-scim-provisioning"
+            >Test SCIM provisioning</a
           >
         </li>
         <li>

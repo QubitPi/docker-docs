@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13946,8 +13946,7 @@
     </div>
     <p>This document describes the Docker Engine plugins generally available in Docker
 Engine. To view information on plugins managed by Docker,
-refer to 
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/">Docker Engine plugin system</a>.</p>
+refer to <a class="link" href="https://docker.qubitpi.org/engine/extend/">Docker Engine plugin system</a>.</p>
 <p>You can extend the capabilities of the Docker Engine by loading third-party
 plugins. This page explains the types of plugins and provides links to several
 volume and network plugins for Docker.</p>
@@ -13959,11 +13958,9 @@ volume and network plugins for Docker.</p>
 </h2>
 
 <p>Plugins extend Docker's functionality. They come in specific types. For
-example, a 
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_volume/">volume plugin</a> might enable Docker
+example, a <a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_volume/">volume plugin</a> might enable Docker
 volumes to persist across multiple Docker hosts and a
-
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_network/">network plugin</a> might provide network plumbing.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_network/">network plugin</a> might provide network plumbing.</p>
 <p>Currently Docker supports authorization, volume and network driver plugins. In the future it
 will support additional plugin types.</p>
 
@@ -14003,37 +14000,19 @@ will support additional plugin types.</p>
     <tbody>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/contiv/netplugin" rel="noopener">
-    Contiv Networking
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/contiv/netplugin" rel="noopener">Contiv Networking</a></td>
             <td
               class="p-2" style="text-align: left">An open source network plugin to provide infrastructure and security policies for a multi-tenant micro services deployment, while providing an integration to physical network for non-container workload. Contiv Networking implements the remote driver and IPAM APIs available in Docker 1.9 onwards.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/openstack/kuryr" rel="noopener">
-    Kuryr Network Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/openstack/kuryr" rel="noopener">Kuryr Network Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A network plugin is developed as part of the OpenStack Kuryr project and implements the Docker networking (libnetwork) remote driver API by utilizing Neutron, the OpenStack networking service. It includes an IPAM driver as well.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/KatharaFramework/NetworkPlugin" rel="noopener">
-    Kathará Network Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/KatharaFramework/NetworkPlugin" rel="noopener">Kathará Network Plugin</a></td>
             <td
               class="p-2" style="text-align: left">Docker Network Plugin used by Kathará, an open source container-based network emulation system for showing interactive demos/lessons, testing production networks in a sandbox environment, or developing new network protocols.</td>
         </tr>
@@ -14061,373 +14040,163 @@ will support additional plugin types.</p>
     <tbody>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/Azure/azurefile-dockervolumedriver" rel="noopener">
-    Azure File Storage plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/Azure/azurefile-dockervolumedriver" rel="noopener">Azure File Storage plugin</a></td>
             <td
-              class="p-2" style="text-align: left">Lets you mount Microsoft 
-  <a class="link" href="https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/" rel="noopener">
-    Azure File Storage
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> shares to Docker containers as volumes using the SMB 3.0 protocol. 
-  <a class="link" href="https://azure.microsoft.com/blog/persistent-docker-volumes-with-azure-file-storage/" rel="noopener">
-    Learn more
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</td>
+              class="p-2" style="text-align: left">Lets you mount Microsoft <a class="link" href="https://azure.microsoft.com/blog/azure-file-storage-now-generally-available/" rel="noopener">Azure File Storage</a> shares to Docker containers as volumes using the SMB 3.0 protocol. <a class="link" href="https://azure.microsoft.com/blog/persistent-docker-volumes-with-azure-file-storage/" rel="noopener">Learn more</a>.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/RedCoolBeans/docker-volume-beegfs" rel="noopener">
-    BeeGFS Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/RedCoolBeans/docker-volume-beegfs" rel="noopener">BeeGFS Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">An open source volume plugin to create persistent volumes in a BeeGFS parallel file system.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/blockbridge/blockbridge-docker-volume" rel="noopener">
-    Blockbridge plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/blockbridge/blockbridge-docker-volume" rel="noopener">Blockbridge plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that provides access to an extensible set of container-based persistent storage options. It supports single and multi-host Docker environments with features that include tenant isolation, automated provisioning, encryption, secure deletion, snapshots and QoS.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/contiv/volplugin" rel="noopener">
-    Contiv Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/contiv/volplugin" rel="noopener">Contiv Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">An open source volume plugin that provides multi-tenant, persistent, distributed storage with intent based consumption. It has support for Ceph and NFS.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/rancher/convoy" rel="noopener">
-    Convoy plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/rancher/convoy" rel="noopener">Convoy plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin for a variety of storage back-ends including device mapper and NFS. It's a simple standalone executable written in Go and provides the framework to support vendor-specific extensions such as snapshots, backups and restore.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/omallo/docker-volume-plugin-dostorage" rel="noopener">
-    DigitalOcean Block Storage plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/omallo/docker-volume-plugin-dostorage" rel="noopener">DigitalOcean Block Storage plugin</a></td>
             <td
-              class="p-2" style="text-align: left">Integrates DigitalOcean's 
-  <a class="link" href="https://www.digitalocean.com/products/storage/" rel="noopener">
-    block storage solution
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> into the Docker ecosystem by automatically attaching a given block storage volume to a DigitalOcean droplet and making the contents of the volume available to Docker containers running on that droplet.</td>
+              class="p-2" style="text-align: left">Integrates DigitalOcean's <a class="link" href="https://www.digitalocean.com/products/storage/" rel="noopener">block storage solution</a> into the Docker ecosystem by automatically attaching a given block storage volume to a DigitalOcean droplet and making the contents of the volume available to Docker containers running on that droplet.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://www.drbd.org/en/supported-projects/docker" rel="noopener">
-    DRBD plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://www.drbd.org/en/supported-projects/docker" rel="noopener">DRBD plugin</a></td>
             <td
-              class="p-2" style="text-align: left">A volume plugin that provides highly available storage replicated by 
-  <a class="link" href="https://www.drbd.org" rel="noopener">
-    DRBD
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>. Data written to the docker volume is replicated in a cluster of DRBD nodes.</td>
+              class="p-2" style="text-align: left">A volume plugin that provides highly available storage replicated by <a class="link" href="https://www.drbd.org" rel="noopener">DRBD</a>. Data written to the docker volume is replicated in a cluster of DRBD nodes.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/ScatterHQ/flocker" rel="noopener">
-    Flocker plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/ScatterHQ/flocker" rel="noopener">Flocker plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that provides multi-host portable volumes for Docker, enabling you to run databases and other stateful containers and move them around across a cluster of machines.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/openstack/fuxi" rel="noopener">
-    Fuxi Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/openstack/fuxi" rel="noopener">Fuxi Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that is developed as part of the OpenStack Kuryr project and implements the Docker volume plugin API by utilizing Cinder, the OpenStack block storage service.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/mcuadros/gce-docker" rel="noopener">
-    gce-docker plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/mcuadros/gce-docker" rel="noopener">gce-docker plugin</a></td>
             <td
-              class="p-2" style="text-align: left">A volume plugin able to attach, format and mount Google Compute 
-  <a class="link" href="https://cloud.google.com/compute/docs/disks/persistent-disks" rel="noopener">
-    persistent-disks
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</td>
+              class="p-2" style="text-align: left">A volume plugin able to attach, format and mount Google Compute <a class="link" href="https://cloud.google.com/compute/docs/disks/persistent-disks" rel="noopener">persistent-disks</a>.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/calavera/docker-volume-glusterfs" rel="noopener">
-    GlusterFS plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/calavera/docker-volume-glusterfs" rel="noopener">GlusterFS plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that provides multi-host volumes management for Docker using GlusterFS.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/muthu-r/horcrux" rel="noopener">
-    Horcrux Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/muthu-r/horcrux" rel="noopener">Horcrux Volume Plugin</a></td>
             <td
-              class="p-2" style="text-align: left">A volume plugin that allows on-demand, version controlled access to your data. Horcrux is an open-source plugin, written in Go, and supports SCP, 
-  <a class="link" href="https://www.minio.io" rel="noopener">
-    Minio
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and Amazon S3.</td>
+              class="p-2" style="text-align: left">A volume plugin that allows on-demand, version controlled access to your data. Horcrux is an open-source plugin, written in Go, and supports SCP, <a class="link" href="https://www.minio.io" rel="noopener">Minio</a> and Amazon S3.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/hpe-storage/python-hpedockerplugin/" rel="noopener">
-    HPE 3Par Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/hpe-storage/python-hpedockerplugin/" rel="noopener">HPE 3Par Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that supports HPE 3Par and StoreVirtual iSCSI storage arrays.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://infinit.sh/documentation/docker/volume-plugin" rel="noopener">
-    Infinit volume plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://infinit.sh/documentation/docker/volume-plugin" rel="noopener">Infinit volume plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that makes it easy to mount and manage Infinit volumes using Docker.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/vdemeester/docker-volume-ipfs" rel="noopener">
-    IPFS Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/vdemeester/docker-volume-ipfs" rel="noopener">IPFS Volume Plugin</a></td>
             <td
-              class="p-2" style="text-align: left">An open source volume plugin that allows using an 
-  <a class="link" href="https://ipfs.io/" rel="noopener">
-    ipfs
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> filesystem as a volume.</td>
+              class="p-2" style="text-align: left">An open source volume plugin that allows using an <a class="link" href="https://ipfs.io/" rel="noopener">ipfs</a> filesystem as a volume.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/calavera/docker-volume-keywhiz" rel="noopener">
-    Keywhiz plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/calavera/docker-volume-keywhiz" rel="noopener">Keywhiz plugin</a></td>
             <td
               class="p-2" style="text-align: left">A plugin that provides credentials and secret management using Keywhiz as a central repository.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/linode/docker-volume-linode" rel="noopener">
-    Linode Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/linode/docker-volume-linode" rel="noopener">Linode Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A plugin that adds the ability to manage Linode Block Storage as Docker Volumes from within a Linode.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/CWSpear/local-persist" rel="noopener">
-    Local Persist Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/CWSpear/local-persist" rel="noopener">Local Persist Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that extends the default <code>local</code> driver's functionality by allowing you specify a mountpoint anywhere on the host, which enables the files to <em>always persist</em>, even if the volume is removed via <code>docker volume rm</code>.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/NetApp/netappdvp" rel="noopener">
-    NetApp Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> (nDVP)</td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/NetApp/netappdvp" rel="noopener">NetApp Plugin</a> (nDVP)</td>
             <td
               class="p-2" style="text-align: left">A volume plugin that provides direct integration with the Docker ecosystem for the NetApp storage portfolio. The nDVP package supports the provisioning and management of storage resources from the storage platform to Docker hosts, with a robust framework for adding additional platforms in the future.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/ContainX/docker-volume-netshare" rel="noopener">
-    Netshare plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/ContainX/docker-volume-netshare" rel="noopener">Netshare plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that provides volume management for NFS 3/4, AWS EFS and CIFS file systems.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://scod.hpedev.io/docker_volume_plugins/hpe_nimble_storage/index.html" rel="noopener">
-    Nimble Storage Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://scod.hpedev.io/docker_volume_plugins/hpe_nimble_storage/index.html" rel="noopener">Nimble Storage Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plug-in that integrates with Nimble Storage Unified Flash Fabric arrays. The plug-in abstracts array volume capabilities to the Docker administrator to allow self-provisioning of secure multi-tenant volumes and clones.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/libopenstorage/openstorage" rel="noopener">
-    OpenStorage Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/libopenstorage/openstorage" rel="noopener">OpenStorage Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A cluster-aware volume plugin that provides volume management for file and block storage solutions.  It implements a vendor neutral specification for implementing extensions such as CoS, encryption, and snapshots. It has example drivers based on FUSE, NFS, NBD and EBS to name a few.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/portworx/px-dev" rel="noopener">
-    Portworx Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/portworx/px-dev" rel="noopener">Portworx Volume Plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin that turns any server into a scale-out converged compute/storage node, providing container granular storage and highly available volumes across any node, using a shared-nothing storage backend that works with any docker scheduler.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/quobyte/docker-volume" rel="noopener">
-    Quobyte Volume Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/quobyte/docker-volume" rel="noopener">Quobyte Volume Plugin</a></td>
             <td
-              class="p-2" style="text-align: left">A volume plugin that connects Docker to 
-  <a class="link" href="https://www.quobyte.com/containers" rel="noopener">
-    Quobyte
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>'s data center file system, a general-purpose scalable and fault-tolerant storage platform.</td>
+              class="p-2" style="text-align: left">A volume plugin that connects Docker to <a class="link" href="https://www.quobyte.com/containers" rel="noopener">Quobyte</a>'s data center file system, a general-purpose scalable and fault-tolerant storage platform.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/emccode/rexray" rel="noopener">
-    REX-Ray plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/emccode/rexray" rel="noopener">REX-Ray plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin which is written in Go and provides advanced storage functionality for many platforms including VirtualBox, EC2, Google Compute Engine, OpenStack, and EMC.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/virtuozzo/docker-volume-ploop" rel="noopener">
-    Virtuozzo Storage and Ploop plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/virtuozzo/docker-volume-ploop" rel="noopener">Virtuozzo Storage and Ploop plugin</a></td>
             <td
               class="p-2" style="text-align: left">A volume plugin with support for Virtuozzo Storage distributed cloud file system as well as ploop devices.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/vmware/docker-volume-vsphere" rel="noopener">
-    VMware vSphere Storage Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/vmware/docker-volume-vsphere" rel="noopener">VMware vSphere Storage Plugin</a></td>
             <td
               class="p-2" style="text-align: left">Docker Volume Driver for vSphere enables customers to address persistent storage requirements for Docker containers in vSphere environments.</td>
         </tr>
@@ -14455,43 +14224,19 @@ will support additional plugin types.</p>
     <tbody>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/casbin/casbin-authz-plugin" rel="noopener">
-    Casbin AuthZ Plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/casbin/casbin-authz-plugin" rel="noopener">Casbin AuthZ Plugin</a></td>
             <td
-              class="p-2" style="text-align: left">An authorization plugin based on 
-  <a class="link" href="https://github.com/casbin/casbin" rel="noopener">
-    Casbin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, which supports access control models like ACL, RBAC, ABAC. The access control model can be customized. The policy can be persisted into file or DB.</td>
+              class="p-2" style="text-align: left">An authorization plugin based on <a class="link" href="https://github.com/casbin/casbin" rel="noopener">Casbin</a>, which supports access control models like ACL, RBAC, ABAC. The access control model can be customized. The policy can be persisted into file or DB.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/kassisol/hbm" rel="noopener">
-    HBM plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/kassisol/hbm" rel="noopener">HBM plugin</a></td>
             <td
               class="p-2" style="text-align: left">An authorization plugin that prevents from executing commands with certains parameters.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">
-  <a class="link" href="https://github.com/twistlock/authz" rel="noopener">
-    Twistlock AuthZ Broker
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></td>
+              class="p-2" style="text-align: left"><a class="link" href="https://github.com/twistlock/authz" rel="noopener">Twistlock AuthZ Broker</a></td>
             <td
               class="p-2" style="text-align: left">A basic extendable authorization plugin that runs directly on the host or inside a container. This plugin allows you to define user policies that it evaluates during authorization. Basic authorization is provided if Docker daemon is started with the --tlsverify flag (username is extracted from the certificate common name).</td>
         </tr>
@@ -14515,8 +14260,7 @@ of the plugin for help. The Docker team may not be able to assist you.</p>
 </h2>
 
 <p>If you are interested in writing a plugin for Docker, or seeing how they work
-under the hood, see the 
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/plugin_api/">Docker plugins reference</a>.</p>
+under the hood, see the <a class="link" href="https://docker.qubitpi.org/engine/extend/plugin_api/">Docker plugins reference</a>.</p>
 
   </article>
   <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">

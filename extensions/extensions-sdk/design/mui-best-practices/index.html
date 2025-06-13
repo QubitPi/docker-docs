@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6368,22 +6368,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7199,6 +7183,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7821,22 +7821,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13921,17 +13921,10 @@
 
       <hr />
     </div>
-    <p>This article assumes you're following our recommended practice by using our 
-  <a class="link" href="https://www.npmjs.com/package/@docker/docker-mui-theme" rel="noopener">
-    Material UI theme
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.
+    <p>This article assumes you're following our recommended practice by using our <a class="link" href="https://www.npmjs.com/package/@docker/docker-mui-theme" rel="noopener">Material UI theme</a>.
 Following the steps below maximizes compatibility with Docker Desktop and minimizes the work you need to do as an
 extension author. They should be considered supplementary to the non-MUI-specific guidelines found in the
-
-  <a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/design/">UI Styling overview</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/design/">UI Styling overview</a>.</p>
 
 <h2 class=" scroll-mt-20" id="assume-the-theme-can-change-at-any-time">
   <a class="text-black dark:text-white no-underline hover:underline" href="#assume-the-theme-can-change-at-any-time">
@@ -13976,29 +13969,11 @@ extension author. They should be considered supplementary to the non-MUI-specifi
 <p>Sometimes you’ll need a piece of UI that doesn’t exist in our design system. If so, we recommend that you first reach out to us. We may already have something in our internal design system, or we may be able to expand our design system to accommodate your use case.</p>
 <p>If you still decide to build it yourself after contacting us, try and define the new UI in a reuseable fashion. If you define your custom UI in just one place, it’ll make it easier to change in the future if our core theme changes. You could use:</p>
 <ul>
-<li>A new <code>variant</code> of an existing component - see 
-  <a class="link" href="https://mui.com/material-ui/customization/theme-components/#creating-new-component-variants" rel="noopener">
-    MUI docs
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li>A new <code>variant</code> of an existing component - see <a class="link" href="https://mui.com/material-ui/customization/theme-components/#creating-new-component-variants" rel="noopener">MUI docs</a></li>
 <li>A MUI mixin (a freeform bundle of reuseable styling rules defined inside a theme)</li>
-<li>A new 
-  <a class="link" href="https://mui.com/material-ui/customization/how-to-customize/#2-reusable-component" rel="noopener">
-    reuseable component
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li>A new <a class="link" href="https://mui.com/material-ui/customization/how-to-customize/#2-reusable-component" rel="noopener">reuseable component</a></li>
 </ul>
-<p>Some of the above options require you to extend our MUI theme. See the MUI documentation on 
-  <a class="link" href="https://mui.com/material-ui/customization/theming/#nesting-the-theme" rel="noopener">
-    theme composition
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>Some of the above options require you to extend our MUI theme. See the MUI documentation on <a class="link" href="https://mui.com/material-ui/customization/theming/#nesting-the-theme" rel="noopener">theme composition</a>.</p>
 
 <h2 class=" scroll-mt-20" id="whats-next">
   <a class="text-black dark:text-white no-underline hover:underline" href="#whats-next">
@@ -14007,10 +13982,8 @@ extension author. They should be considered supplementary to the non-MUI-specifi
 </h2>
 
 <ul>
-<li>Take a look at our 
-  <a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/design/">UI styling guide</a>.</li>
-<li>Learn how to 
-  <a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/extensions/">publish your extension</a>.</li>
+<li>Take a look at our <a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/design/">UI styling guide</a>.</li>
+<li>Learn how to <a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/extensions/">publish your extension</a>.</li>
 </ul>
 
   </article>

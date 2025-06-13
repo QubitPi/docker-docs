@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -1621,13 +1621,7 @@ networking. If you place the two containers on the same network, they can talk t
 </li>
 <li>
 <p>Start a MySQL container and attach it to the network. You're also going to define a few environment variables that the
-database will use to initialize the database. To learn more about the MySQL environment variables, see the &quot;Environment Variables&quot; section in the 
-  <a class="link" href="https://hub.docker.com/_/mysql/" rel="noopener">
-    MySQL Docker Hub listing
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+database will use to initialize the database. To learn more about the MySQL environment variables, see the &quot;Environment Variables&quot; section in the <a class="link" href="https://hub.docker.com/_/mysql/" rel="noopener">MySQL Docker Hub listing</a>.</p>
 
 
 
@@ -2034,13 +2028,7 @@ you see the <code>todos</code> database.</p>
 
 <p>Now that you know MySQL is up and running, you can use it. But, how do you use it? If you run
 another container on the same network, how do you find the container? Remember that each container has its own IP address.</p>
-<p>To answer the questions above and better understand container networking, you're going to make use of the 
-  <a class="link" href="https://github.com/nicolaka/netshoot" rel="noopener">
-    nicolaka/netshoot
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> container,
+<p>To answer the questions above and better understand container networking, you're going to make use of the <a class="link" href="https://github.com/nicolaka/netshoot" rel="noopener">nicolaka/netshoot</a> container,
 which ships with a lot of tools that are useful for troubleshooting or debugging networking issues.</p>
 <ol>
 <li>
@@ -2217,13 +2205,7 @@ database.</p>
     <div class="admonition-content">
       <p>While using env vars to set connection settings is generally accepted for development, it's highly discouraged
 when running applications in production. Diogo Monica, a former lead of security at Docker,
-
-  <a class="link" href="https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/" rel="noopener">
-    wrote a fantastic blog post
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://diogomonica.com/2017/03/27/why-you-shouldnt-use-env-variables-for-secret-data/" rel="noopener">wrote a fantastic blog post</a>
 explaining why.</p>
 <p>A more secure mechanism is to use the secret support provided by your container orchestration framework. In most cases,
 these secrets are mounted as files in the running container. You'll see many apps (including the MySQL image and the todo app)
@@ -2665,7 +2647,6 @@ container. You learned a little bit about container networking and service disco
 <li>
   <a class="link" href="/reference/cli/docker/">docker CLI reference</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/network/">Networking overview</a></li>

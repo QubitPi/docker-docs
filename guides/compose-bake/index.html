@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -758,7 +758,6 @@
 projects with multiple services.</p>
 <p>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/">Docker Buildx Bake</a> is a build orchestration
 tool that enables declarative configuration for your builds, much like Docker
@@ -777,11 +776,9 @@ extending the project with a production-ready build configuration.</p>
 <li>Docker Compose</li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/building/multi-stage/">Multi-stage builds</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/building/multi-platform/">Multi-platform builds</a></li>
@@ -794,13 +791,7 @@ extending the project with a production-ready build configuration.</p>
 </h2>
 
 <p>This guide will use the
-
-  <a class="link" href="https://github.com/dvdksn/example-voting-app" rel="noopener">
-    dvdksn/example-voting-app
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://github.com/dvdksn/example-voting-app" rel="noopener">dvdksn/example-voting-app</a>
 repository as an example of a monorepo using Docker Compose that can be
 extended with Bake.</p>
 <div
@@ -1102,7 +1093,6 @@ the <code>image</code> property on the service.</p>
 <p>Running <code>docker compose build</code> creates three service images with fully
 qualified image names that you can push to Docker Hub.</p>
 <p>The <code>build</code> property supports a 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/build/">wide range</a>
@@ -1620,7 +1610,6 @@ platforms, arm64 and amd64 in particular.</dd>
 <dt>Attestations</dt>
 <dd>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/">Attestations</a> are manifests
 attached to the image that describe how the image was created and what
@@ -1628,7 +1617,6 @@ components it contains. Attaching attestations to your images helps ensure that
 your images follow software supply chain best practices.</dd>
 <dt>Annotations</dt>
 <dd>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/metadata/annotations/">Annotations</a> provide descriptive
@@ -1760,31 +1748,21 @@ helps separate your development and build configuration in a reasonable way.</p>
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/">Bake documentation</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/compose-file/">Building with Bake from a Compose file</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/reference/">Bake file reference</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/guides/bake/">Mastering multi-platform builds, testing, and more with Docker Buildx Bake</a></li>
-<li>
-  <a class="link" href="https://github.com/docker/bake-action" rel="noopener">
-    Bake GitHub Action
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://github.com/docker/bake-action" rel="noopener">Bake GitHub Action</a></li>
 </ul>
 
   </article>

@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6368,22 +6368,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7199,6 +7183,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7821,22 +7821,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13949,7 +13949,6 @@ documenting vulnerabilities in the context of a software package or product.
 Docker Scout supports VEX documents to create
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/scout/explore/exceptions/">exceptions</a> for vulnerabilities in images.</p>
 
@@ -13976,7 +13975,6 @@ and it's easy to manage exceptions for multiple images. It also lets you
 create exceptions for multiple images, or your entire organization, all at
 once. For more information, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/scout/how-tos/create-exceptions-gui/">Create an exception using the GUI</a>.</p>
     </div>
@@ -13992,15 +13990,8 @@ once. For more information, see
 <p>To create exceptions using OpenVEX documents, you need:</p>
 <ul>
 <li>The latest version of Docker Desktop or the Docker Scout CLI plugin</li>
+<li>The <a class="link" href="https://github.com/openvex/vexctl" rel="noopener"><code>vexctl</code></a> command line tool.</li>
 <li>The 
-  <a class="link" href="https://github.com/openvex/vexctl" rel="noopener">
-    <code>vexctl</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> command line tool.</li>
-<li>The 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/features/containerd/">containerd image store</a> must be enabled</li>
@@ -14024,13 +14015,7 @@ CVE for a product. The possible vulnerability statuses in VEX are:</p>
 <li>Under investigation: It is not yet known whether these product versions are affected by the vulnerability. An update will be provided in a later release.</li>
 </ul>
 <p>There are multiple implementations and formats of VEX. Docker Scout supports
-the 
-  <a class="link" href="https://github.com/openvex/spec" rel="noopener">
-    OpenVex
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> implementation. Regardless of
+the <a class="link" href="https://github.com/openvex/spec" rel="noopener">OpenVex</a> implementation. Regardless of
 the specific implementation, the core idea is the same: to provide a framework
 for describing the impact of vulnerabilities. Key components of VEX regardless
 of implementation includes:</p>
@@ -14114,13 +14099,7 @@ executed in containers that run this image</li>
 <dt><code>--product</code></dt>
 <dd>Package URL (PURL) of the Docker image. A PURL is an identifier
 for the image in a standardized format, defined in the PURL
-
-  <a class="link" href="https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#docker" rel="noopener">
-    specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.
+<a class="link" href="https://github.com/package-url/purl-spec/blob/master/PURL-TYPES.rst#docker" rel="noopener">specification</a>.
 <p>Docker image PURL strings begin with a <code>pkg:docker</code> type prefix, followed by
 the image repository and version (the image tag or SHA256 digest). Unlike
 image tags, where the version is specified like <code>example/app:v1</code>, in PURL the
@@ -14153,13 +14132,7 @@ The possible values for the status label in OpenVEX are:
 status that results in CVE suppression, where the CVE is filtered out of the
 analysis results. The other statuses are useful for documentation purposes,
 but they do not work for creating exceptions. For more information about all
-the possible status labels, see 
-  <a class="link" href="https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md#status-labels" rel="noopener">
-    Status Labels
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+the possible status labels, see <a class="link" href="https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md#status-labels" rel="noopener">Status Labels</a>
 in the OpenVEX specification.</p>
 </dd>
 <dt><code>--justification</code></dt>
@@ -14176,13 +14149,7 @@ can't be executed as used by the product.
 <li><code>inline_mitigations_already_exist</code></li>
 </ul>
 <p>For more information about these values and their definitions, see
-
-  <a class="link" href="https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md#status-justifications" rel="noopener">
-    Status Justifications
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://github.com/openvex/spec/blob/main/OPENVEX-SPEC.md#status-justifications" rel="noopener">Status Justifications</a>
 in the OpenVEX specification.</p>
 </dd>
 <dt><code>--file</code></dt>
@@ -14259,24 +14226,12 @@ in the OpenVEX specification.</p>
   </div>
 </div>
 <p>Understanding how VEX documents are supposed to be structured can be a bit of a
-mouthful. The 
-  <a class="link" href="https://github.com/openvex/spec" rel="noopener">
-    OpenVEX specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+mouthful. The <a class="link" href="https://github.com/openvex/spec" rel="noopener">OpenVEX specification</a>
 describes the format and all the possible properties of documents and
 statements. For the full details, refer to the specification to learn more
 about the available fields and how to create a well-formed OpenVEX document.</p>
 <p>To learn more about the available flags and syntax of the <code>vexctl</code> CLI tool and
-how to install it, refer to the 
-  <a class="link" href="https://github.com/openvex/vexctl" rel="noopener">
-    <code>vexctl</code> GitHub repository
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+how to install it, refer to the <a class="link" href="https://github.com/openvex/vexctl" rel="noopener"><code>vexctl</code> GitHub repository</a>.</p>
 
 <h2 class=" scroll-mt-20" id="verifying-vex-documents">
   <a class="text-black dark:text-white no-underline hover:underline" href="#verifying-vex-documents">
@@ -14340,13 +14295,7 @@ way.</p>
 <li>In a Docker image PURL, the image name and version is separated by <code>@</code>.
 An image named <code>example/myapp:1.0</code> has the following PURL: <code>pkg:docker/example/myapp@1.0</code>.</li>
 <li>Remember to specify an <code>author</code> (it's a mandatory field in OpenVEX)</li>
-<li>The 
-  <a class="link" href="https://github.com/openvex/spec" rel="noopener">
-    OpenVEX specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> describes how
+<li>The <a class="link" href="https://github.com/openvex/spec" rel="noopener">OpenVEX specification</a> describes how
 and when to use <code>justification</code>, <code>impact_statement</code>, and other fields in the
 VEX documents. Specifying these in an incorrect way results in an invalid
 document. Make sure your VEX documents comply with the OpenVEX specification.</li>
@@ -14361,10 +14310,8 @@ document. Make sure your VEX documents comply with the OpenVEX specification.</l
 <p>When you've created a VEX document,
 you can attach it to your image in the following ways:</p>
 <ul>
-<li>Attach the document as an 
-  <a class="link" href="#attestation">attestation</a></li>
-<li>Embed the document in the 
-  <a class="link" href="#image-filesystem">image filesystem</a></li>
+<li>Attach the document as an <a class="link" href="#attestation">attestation</a></li>
+<li>Embed the document in the <a class="link" href="#image-filesystem">image filesystem</a></li>
 </ul>
 <p>You can't remove a VEX document from an image once it's been added. For
 documents attached as attestations, you can create a new VEX document and
@@ -14489,8 +14436,7 @@ relatively easy; just <code>COPY</code> the VEX document to the image in your Do
 <p>The downside with this approach is that you can't change or update the
 exception later. Image layers are immutable, so anything you put in the image's
 filesystem is there forever. Attaching the document as an
-
-  <a class="link" href="#attestation">attestation</a> provides better flexibility.</p>
+<a class="link" href="#attestation">attestation</a> provides better flexibility.</p>
 
 
   

@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13933,18 +13933,11 @@
 <p>This page contains information on the level of precedence each method of setting environmental variables takes.</p>
 <p>The order of precedence (highest to lowest) is as follows:</p>
 <ol>
-<li>Set using 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/set-environment-variables/#set-environment-variables-with-docker-compose-run---env"><code>docker compose run -e</code> in the CLI</a>.</li>
-<li>Set with either the <code>environment</code> or <code>env_file</code> attribute but with the value interpolated from your 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/#substitute-from-the-shell">shell</a> or an environment file. (either your default 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/#env-file"><code>.env</code> file</a>, or with the 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/#substitute-with---env-file"><code>--env-file</code> argument</a> in the CLI).</li>
-<li>Set using just the 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/set-environment-variables/#use-the-environment-attribute"><code>environment</code> attribute</a> in the Compose file.</li>
-<li>Use of the 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/set-environment-variables/#use-the-env_file-attribute"><code>env_file</code> attribute</a> in the Compose file.</li>
+<li>Set using <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/set-environment-variables/#set-environment-variables-with-docker-compose-run---env"><code>docker compose run -e</code> in the CLI</a>.</li>
+<li>Set with either the <code>environment</code> or <code>env_file</code> attribute but with the value interpolated from your <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/#substitute-from-the-shell">shell</a> or an environment file. (either your default <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/#env-file"><code>.env</code> file</a>, or with the <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/#substitute-with---env-file"><code>--env-file</code> argument</a> in the CLI).</li>
+<li>Set using just the <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/set-environment-variables/#use-the-environment-attribute"><code>environment</code> attribute</a> in the Compose file.</li>
+<li>Use of the <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/set-environment-variables/#use-the-env_file-attribute"><code>env_file</code> attribute</a> in the Compose file.</li>
 <li>Set in a container image in the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#env">ENV directive</a>.

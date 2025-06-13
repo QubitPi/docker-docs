@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6368,22 +6368,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7199,6 +7183,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7821,22 +7821,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13937,7 +13937,6 @@
     <div class="admonition-content">
       <p>If you use volumes or bind-mounts to store your container data, backing up your containers may not be needed, but make sure to remember the options that were used when creating the container or use a 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/">Docker Compose file</a> if you want to re-create your containers with the same configuration after re-installation.</p>
     </div>
@@ -13954,7 +13953,6 @@
 <li>
 <p>Commit your containers to an image with 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/container/commit/"><code>docker container commit</code></a>.</p>
 <p>Committing a container stores filesystem changes and some container configurations, such as labels and environment variables, as a local image. Be aware that environment variables may contain sensitive
@@ -13963,10 +13961,8 @@ information such as passwords or proxy-authentication, so take care when pushing
 container are not included in the image, and must be backed up separately.</p>
 <p>If you used a 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/engine/storage/#more-details-about-mount-types">named volume</a> to store container data, such as databases, refer to the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/storage/volumes/#back-up-restore-or-migrate-data-volumes">back up, restore, or migrate data volumes</a> page in the storage section.</p>
@@ -13974,11 +13970,9 @@ container are not included in the image, and must be backed up separately.</p>
 <li>
 <p>Use 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/image/push/"><code>docker push</code></a> to push any
 images you have built locally and want to keep to the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/docker-hub/">Docker Hub registry</a>.</p>
@@ -14007,14 +14001,12 @@ images you have built locally and want to keep to the
     <div class="admonition-content">
       <p>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/docker-hub/repos/">Set the repository visibility to private</a> if your image includes sensitive content.</p>
     </div>
   </blockquote>
 
 <p>Alternatively, use 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/image/save/"><code>docker image save -o images.tar image1 [image2 ...]</code></a>
@@ -14023,7 +14015,6 @@ to save any images you want to keep to a local <code>.tar</code> file.</p>
 </ol>
 <p>After backing up your data, you can uninstall the current version of Docker Desktop
 and 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/release-notes/">install a different version</a> or reset Docker Desktop to factory defaults.</p>
@@ -14123,18 +14114,15 @@ and
 <li>
 <p>Re-create your containers if needed, using 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/container/run/"><code>docker run</code></a>,
 or 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/compose/">Docker Compose</a>.</p>
 </li>
 </ol>
 <p>To restore volume data, refer to 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/storage/volumes/#back-up-restore-or-migrate-data-volumes">backup, restore, or migrate data volumes</a>.</p>

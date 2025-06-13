@@ -12,6 +12,8 @@ https://github.com/docker/compose
 
 - [docker compose alpha](https://docs.docker.com/reference/cli/docker/compose/alpha/)
 
+- [docker compose bridge](https://docs.docker.com/reference/cli/docker/compose/bridge/)
+
 - [docker compose build](https://docs.docker.com/reference/cli/docker/compose/build/)
 
 - [docker compose config](https://docs.docker.com/reference/cli/docker/compose/config/)

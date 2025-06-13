@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13965,12 +13965,10 @@
     <p>Docker plugins are out-of-process extensions which add capabilities to the
 Docker Engine.</p>
 <p>This document describes the Docker Engine plugin API. To view information on
-plugins managed by Docker Engine, refer to 
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/">Docker Engine plugin system</a>.</p>
+plugins managed by Docker Engine, refer to <a class="link" href="https://docker.qubitpi.org/engine/extend/">Docker Engine plugin system</a>.</p>
 <p>This page is intended for people who want to develop their own Docker plugin.
 If you just want to learn about or use Docker plugins, look
-
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/legacy_plugins/">here</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/extend/legacy_plugins/">here</a>.</p>
 
 <h2 class=" scroll-mt-20" id="what-plugins-are">
   <a class="text-black dark:text-white no-underline hover:underline" href="#what-plugins-are">
@@ -13980,8 +13978,7 @@ If you just want to learn about or use Docker plugins, look
 
 <p>A plugin is a process running on the same or a different host as the Docker daemon,
 which registers itself by placing a file on the daemon host in one of the plugin
-directories described in 
-  <a class="link" href="#plugin-discovery">Plugin discovery</a>.</p>
+directories described in <a class="link" href="#plugin-discovery">Plugin discovery</a>.</p>
 <p>Plugins have human-readable names, which are short, lowercase strings. For
 example, <code>flocker</code> or <code>weave</code>.</p>
 <p>Plugins can run inside or outside containers. Currently running them outside
@@ -14077,13 +14074,7 @@ soon as it finds the first plugin definition with the given name.</p>
 
 <p>Plugins should be started before Docker, and stopped after Docker. For
 example, when packaging a plugin for a platform which supports <code>systemd</code>, you
-might use 
-  <a class="link" href="https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Before=" rel="noopener">
-    <code>systemd</code> dependencies
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> to
+might use <a class="link" href="https://www.freedesktop.org/software/systemd/man/systemd.unit.html#Before=" rel="noopener"><code>systemd</code> dependencies</a> to
 manage startup and shutdown order.</p>
 <p>When upgrading a plugin, you should first stop the Docker daemon, upgrade the
 plugin, then start Docker again.</p>
@@ -14107,13 +14098,7 @@ they are activated only lazily, or on-demand, when they are needed.</p>
   </a>
 </h2>
 
-<p>Plugins may also be socket activated by <code>systemd</code>. The official 
-  <a class="link" href="https://github.com/docker/go-plugins-helpers" rel="noopener">
-    Plugins helpers
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<p>Plugins may also be socket activated by <code>systemd</code>. The official <a class="link" href="https://github.com/docker/go-plugins-helpers" rel="noopener">Plugins helpers</a>
 natively supports socket activation. In order for a plugin to be socket activated it needs
 a <code>service</code> file and a <code>socket</code> file.</p>
 <p>The <code>service</code> file (for example <code>/lib/systemd/system/your-plugin.service</code>):</p>
@@ -14283,12 +14268,9 @@ implement an HTTP server and bind this to the Unix socket mentioned in the
 After activation, the plugin will then be sent events from this subsystem.</p>
 <p>Possible values are:</p>
 <ul>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_authorization/"><code>authz</code></a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_network/"><code>NetworkDriver</code></a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_volume/"><code>VolumeDriver</code></a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_authorization/"><code>authz</code></a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_network/"><code>NetworkDriver</code></a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/extend/plugins_volume/"><code>VolumeDriver</code></a></li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="plugin-retries">
@@ -14309,13 +14291,7 @@ containers which depend on them.</p>
 </h2>
 
 <p>To ease plugins development, we're providing an <code>sdk</code> for each kind of plugins
-currently supported by Docker at 
-  <a class="link" href="https://github.com/docker/go-plugins-helpers" rel="noopener">
-    docker/go-plugins-helpers
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+currently supported by Docker at <a class="link" href="https://github.com/docker/go-plugins-helpers" rel="noopener">docker/go-plugins-helpers</a>.</p>
 
   </article>
   <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">

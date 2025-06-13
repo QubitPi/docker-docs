@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13913,20 +13913,12 @@ may include input from the keyboard or input from another command. <code>STDOUT<
 usually a command's normal output, and <code>STDERR</code> is typically used to output
 error messages. By default, <code>docker logs</code> shows the command's <code>STDOUT</code> and
 <code>STDERR</code>. To read more about I/O and Linux, see the
-
-  <a class="link" href="https://tldp.org/LDP/abs/html/io-redirection.html" rel="noopener">
-    Linux Documentation Project article on I/O redirection
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://tldp.org/LDP/abs/html/io-redirection.html" rel="noopener">Linux Documentation Project article on I/O redirection</a>.</p>
 <p>In some cases, <code>docker logs</code> may not show useful information unless you take
 additional steps.</p>
 <ul>
-<li>If you use a 
-  <a class="link" href="https://docker.qubitpi.org/engine/logging/configure/">logging driver</a> which sends logs to a file, an
-external host, a database, or another logging back-end, and have 
-  <a class="link" href="https://docker.qubitpi.org/engine/logging/dual-logging/">&quot;dual logging&quot;</a>
+<li>If you use a <a class="link" href="https://docker.qubitpi.org/engine/logging/configure/">logging driver</a> which sends logs to a file, an
+external host, a database, or another logging back-end, and have <a class="link" href="https://docker.qubitpi.org/engine/logging/dual-logging/">&quot;dual logging&quot;</a>
 disabled, <code>docker logs</code> may not show useful information.</li>
 <li>If your image runs a non-interactive process such as a web server or a
 database, that application may send its output to log files instead of <code>STDOUT</code>
@@ -13939,23 +13931,11 @@ workaround, and the official Apache <code>httpd</code> image shows another.</p>
 to <code>/dev/stdout</code>, and creates another symbolic link
 from <code>/var/log/nginx/error.log</code> to <code>/dev/stderr</code>, overwriting the log files and
 causing logs to be sent to the relevant special device instead. See the
-
-  <a class="link" href="https://github.com/nginxinc/docker-nginx/blob/8921999083def7ba43a06fabd5f80e4406651353/mainline/jessie/Dockerfile#L21-L23" rel="noopener">
-    Dockerfile
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://github.com/nginxinc/docker-nginx/blob/8921999083def7ba43a06fabd5f80e4406651353/mainline/jessie/Dockerfile#L21-L23" rel="noopener">Dockerfile</a>.</p>
 <p>The official <code>httpd</code> driver changes the <code>httpd</code> application's configuration to
 write its normal output directly to <code>/proc/self/fd/1</code> (which is <code>STDOUT</code>) and
 its errors to <code>/proc/self/fd/2</code> (which is <code>STDERR</code>). See the
-
-  <a class="link" href="https://github.com/docker-library/httpd/blob/b13054c7de5c74bbaa6d595dbe38969e6d4f860c/2.2/Dockerfile#L72-L75" rel="noopener">
-    Dockerfile
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://github.com/docker-library/httpd/blob/b13054c7de5c74bbaa6d595dbe38969e6d4f860c/2.2/Dockerfile#L72-L75" rel="noopener">Dockerfile</a>.</p>
 
 <h2 class=" scroll-mt-20" id="next-steps">
   <a class="text-black dark:text-white no-underline hover:underline" href="#next-steps">
@@ -13964,10 +13944,8 @@ its errors to <code>/proc/self/fd/2</code> (which is <code>STDERR</code>). See t
 </h2>
 
 <ul>
-<li>Configure 
-  <a class="link" href="https://docker.qubitpi.org/engine/logging/configure/">logging drivers</a>.</li>
+<li>Configure <a class="link" href="https://docker.qubitpi.org/engine/logging/configure/">logging drivers</a>.</li>
 <li>Write a 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/">Dockerfile</a>.</li>

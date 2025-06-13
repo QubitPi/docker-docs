@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13939,7 +13939,6 @@
       <p>The default project directory is the base directory of the Compose file. A custom value can also be set
 for it using the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/compose/#use--p-to-specify-a-project-name"><code>--project-directory</code> command line option</a>.</p>
     </div>
@@ -13972,16 +13971,12 @@ constraint, alternative mechanisms are available.</p>
 <p>The precedence order for each method, from highest to lowest, is as follows:</p>
 <ol>
 <li>The <code>-p</code> command line flag.</li>
+<li>The <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/envvars/">COMPOSE_PROJECT_NAME environment variable</a>.</li>
 <li>The 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/envvars/">COMPOSE_PROJECT_NAME environment variable</a>.</li>
-<li>The 
-    
     
   
-  <a class="link" href="https://docker.qubitpi.org/reference/compose-file/version-and-name/">top-level <code>name:</code> attribute</a> in your Compose file. Or the last <code>name:</code> if you 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/merge/">specify multiple Compose files</a> in the command line with the <code>-f</code> flag.</li>
-<li>The base name of the project directory containing your Compose file. Or the base name of the first Compose file if you 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/merge/">specify multiple Compose files</a> in the command line with the <code>-f</code> flag.</li>
+  <a class="link" href="https://docker.qubitpi.org/reference/compose-file/version-and-name/">top-level <code>name:</code> attribute</a> in your Compose file. Or the last <code>name:</code> if you <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/merge/">specify multiple Compose files</a> in the command line with the <code>-f</code> flag.</li>
+<li>The base name of the project directory containing your Compose file. Or the base name of the first Compose file if you <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/merge/">specify multiple Compose files</a> in the command line with the <code>-f</code> flag.</li>
 <li>The base name of the current directory if no Compose file is specified.</li>
 </ol>
 
@@ -13992,10 +13987,8 @@ constraint, alternative mechanisms are available.</p>
 </h2>
 
 <ul>
-<li>Read up on 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/">working with multiple Compose files</a>.</li>
-<li>Explore some 
-  <a class="link" href="https://docker.qubitpi.org/compose/support-and-feedback/samples-for-compose/">sample apps</a>.</li>
+<li>Read up on <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/">working with multiple Compose files</a>.</li>
+<li>Explore some <a class="link" href="https://docker.qubitpi.org/compose/support-and-feedback/samples-for-compose/">sample apps</a>.</li>
 </ul>
 
   </article>

@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13929,20 +13929,11 @@
 
       <hr />
     </div>
-    <p>With Docker Compose you use a YAML configuration file, known as the 
-  <a class="link" href="#the-compose-file">Compose file</a>, to configure your application’s services, and then you create and start all the services from your configuration with the 
-  <a class="link" href="#cli">Compose CLI</a>.</p>
+    <p>With Docker Compose you use a YAML configuration file, known as the <a class="link" href="#the-compose-file">Compose file</a>, to configure your application’s services, and then you create and start all the services from your configuration with the <a class="link" href="#cli">Compose CLI</a>.</p>
 <p>The Compose file, or <code>compose.yaml</code> file, follows the rules provided by the 
     
-    
   
-  <a class="link" href="https://docker.qubitpi.org/reference/compose-file/">Compose Specification</a> in how to define multi-container applications. This is the Docker Compose implementation of the formal 
-  <a class="link" href="https://github.com/compose-spec/compose-spec" rel="noopener">
-    Compose Specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+  <a class="link" href="https://docker.qubitpi.org/reference/compose-file/">Compose Specification</a> in how to define multi-container applications. This is the Docker Compose implementation of the formal <a class="link" href="https://github.com/compose-spec/compose-spec" rel="noopener">Compose Specification</a>.</p>
 
 
 
@@ -13970,26 +13961,21 @@
   <div x-show="open" x-collapse class="px-4">
     <p>Computing components of an application are defined as 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/services/">services</a>. A service is an abstract concept implemented on platforms by running the same container image, and configuration, one or more times.</p>
 <p>Services communicate with each other through 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/networks/">networks</a>. In the Compose Specification, a network is a platform capability abstraction to establish an IP route between containers within services connected together.</p>
 <p>Services store and share persistent data into 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/volumes/">volumes</a>. The Specification describes such a persistent data as a high-level filesystem mount with global options.</p>
 <p>Some services require configuration data that is dependent on the runtime or platform. For this, the Specification defines a dedicated 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/configs/">configs</a> concept. From a service container point of view, configs are comparable to volumes, in that they are files mounted into the container. But the actual definition involves distinct platform resources and services, which are abstracted by this type.</p>
 <p>A 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/secrets/">secret</a> is a specific flavor of configuration data for sensitive data that should not be exposed without security considerations. Secrets are made available to services as files mounted into their containers, but the platform-specific resources to provide sensitive data are specific enough to deserve a distinct concept and definition within the Compose Specification.</p>
@@ -14017,7 +14003,6 @@
 
 <p>A project is an individual deployment of an application specification on a platform. A project's name, set with the top-level 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/version-and-name/"><code>name</code></a> attribute, is used to group
 resources together and isolate them from other applications or other installation of the same Compose-specified application with distinct parameters. If you are creating resources on a platform, you must prefix resource names by project and
@@ -14040,15 +14025,12 @@ Compose also supports <code>docker-compose.yaml</code> and <code>docker-compose.
 If both files exist, Compose prefers the canonical <code>compose.yaml</code>.</p>
 <p>You can use 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/fragments/">fragments</a> and 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/extension/">extensions</a> to keep your Compose file efficient and easy to maintain.</p>
 <p>Multiple Compose files can be 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/merge/">merged</a> together to define the application model. The combination of YAML files is implemented by appending or overriding YAML elements based on the Compose file order you set.
@@ -14057,11 +14039,9 @@ paths are resolved based on the first Compose file's parent folder, whenever com
 merged are hosted in other folders. As some Compose file elements can both be expressed as single strings or complex objects, merges apply to
 the expanded form. For more information, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/">Working with multiple Compose files</a>.</p>
 <p>If you want to reuse other Compose files, or factor out parts of your application model into separate Compose files, you can also use 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/include/"><code>include</code></a>. This is useful if your Compose application is dependent on another application which is managed by a different team, or needs to be shared with others.</p>
@@ -14233,7 +14213,6 @@ the expanded form. For more information, see
   </div>
 </div>
 <p>For a full list of all the Compose CLI commands, see the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/compose/">reference documentation</a>.</p>
@@ -14427,16 +14406,13 @@ the expanded form. For more information, see
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/gettingstarted/">Quickstart</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/support-and-feedback/samples-for-compose/">Explore some sample applications</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/">Familiarize yourself with the Compose Specification</a></li>

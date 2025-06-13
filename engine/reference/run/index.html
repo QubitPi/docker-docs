@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -975,8 +975,7 @@ isolated process tree separate from the host.</p>
     </div>
   </div>
 </div>
-<p>The <code>docker run</code> command must specify an 
-  <a class="link" href="#image-references">image reference</a>
+<p>The <code>docker run</code> command must specify an <a class="link" href="#image-references">image reference</a>
 to create the container from.</p>
 
 <h3 class=" scroll-mt-20" id="image-references">
@@ -1235,43 +1234,13 @@ the container, and <code>docker attach</code> brings it to the foreground.</p>
 <p>For more information about <code>docker run</code> flags related to foreground and
 background modes, see:</p>
 <ul>
-<li>
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#detach" rel="noopener">
-    <code>docker run --detach</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>: run container in background</li>
-<li>
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#attach" rel="noopener">
-    <code>docker run --attach</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>: attach to <code>stdin</code>, <code>stdout</code>, and <code>stderr</code></li>
-<li>
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#tty" rel="noopener">
-    <code>docker run --tty</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>: allocate a pseudo-tty</li>
-<li>
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#interactive" rel="noopener">
-    <code>docker run --interactive</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>: keep <code>stdin</code> open even if not attached</li>
+<li><a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#detach" rel="noopener"><code>docker run --detach</code></a>: run container in background</li>
+<li><a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#attach" rel="noopener"><code>docker run --attach</code></a>: attach to <code>stdin</code>, <code>stdout</code>, and <code>stderr</code></li>
+<li><a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#tty" rel="noopener"><code>docker run --tty</code></a>: allocate a pseudo-tty</li>
+<li><a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#interactive" rel="noopener"><code>docker run --interactive</code></a>: keep <code>stdin</code> open even if not attached</li>
 </ul>
 <p>For more information about re-attaching to a background container, see
-
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/attach/" rel="noopener">
-    <code>docker attach</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.docker.com/reference/cli/docker/container/attach/" rel="noopener"><code>docker attach</code></a>.</p>
 
 <h2 class=" scroll-mt-20" id="container-identification">
   <a class="text-black dark:text-white no-underline hover:underline" href="#container-identification">
@@ -1315,13 +1284,7 @@ background modes, see:</p>
 </div>
 <p>The UUID identifier is a random ID assigned to the container by the daemon.</p>
 <p>The daemon generates a random string name for containers automatically. You can
-also define a custom name using 
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#name" rel="noopener">
-    the <code>--name</code> flag
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.
+also define a custom name using <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#name" rel="noopener">the <code>--name</code> flag</a>.
 Defining a <code>name</code> can be a handy way to add meaning to a container. If you
 specify a <code>name</code>, you can use it when referring to the container in a
 user-defined network. This works for both background and foreground Docker
@@ -1373,13 +1336,7 @@ containers based on the <code>nginx:alpine</code> image:</p>
   </div>
 </div>
 <p>For more information about using filters, see
-
-  <a class="link" href="https://docs.docker.com/config/filter/" rel="noopener">
-    Filtering
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.docker.com/config/filter/" rel="noopener">Filtering</a>.</p>
 
 <h2 class=" scroll-mt-20" id="container-networking">
   <a class="text-black dark:text-white no-underline hover:underline" href="#container-networking">
@@ -1443,14 +1400,8 @@ containers that attach to the network.</p>
     </div>
   </div>
 </div>
-<p>For more information about container networking, see 
-  <a class="link" href="https://docs.docker.com/network/" rel="noopener">
-    Networking
-overview
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></p>
+<p>For more information about container networking, see <a class="link" href="https://docs.docker.com/network/" rel="noopener">Networking
+overview</a></p>
 
 <h2 class=" scroll-mt-20" id="filesystem-mounts">
   <a class="text-black dark:text-white no-underline hover:underline" href="#filesystem-mounts">
@@ -1475,13 +1426,7 @@ sharing data between a container and the host.</p>
 <code>docker run</code> command.</p>
 <p>The following sections show basic examples of how to create volumes and bind
 mounts. For more in-depth examples and descriptions, refer to the section of
-the 
-  <a class="link" href="https://docs.docker.com/storage/" rel="noopener">
-    storage section
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> in the documentation.</p>
+the <a class="link" href="https://docs.docker.com/storage/" rel="noopener">storage section</a> in the documentation.</p>
 
 <h3 class=" scroll-mt-20" id="volume-mounts">
   <a class="text-black dark:text-white no-underline hover:underline" href="#volume-mounts">
@@ -2707,13 +2652,7 @@ it is possible to specify <code>--cpus</code> with a float number to achieve the
 For example, if there is 1 CPU, then <code>--cpus=0.5</code> will achieve the same result as
 setting <code>--cpu-period=50000</code> and <code>--cpu-quota=25000</code> (50% CPU).</p>
 <p>The default value for <code>--cpus</code> is <code>0.000</code>, which means there is no limit.</p>
-<p>For more information, see the 
-  <a class="link" href="https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt" rel="noopener">
-    CFS documentation on bandwidth limiting
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>For more information, see the <a class="link" href="https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt" rel="noopener">CFS documentation on bandwidth limiting</a>.</p>
 
 <h3 class=" scroll-mt-20" id="cpuset-constraint">
   <a class="text-black dark:text-white no-underline hover:underline" href="#cpuset-constraint">
@@ -2892,13 +2831,7 @@ allows the container to take 100% of a CPU resource (1 CPU). The CFS (Completely
 Scheduler) handles resource allocation for executing processes and is default
 Linux Scheduler used by the kernel. Set this value to 50000 to limit the container
 to 50% of a CPU resource. For multiple CPUs, adjust the <code>--cpu-quota</code> as necessary.
-For more information, see the 
-  <a class="link" href="https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt" rel="noopener">
-    CFS documentation on bandwidth limiting
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+For more information, see the <a class="link" href="https://www.kernel.org/doc/Documentation/scheduler/sched-bwc.txt" rel="noopener">CFS documentation on bandwidth limiting</a>.</p>
 
 <h3 class=" scroll-mt-20" id="block-io-bandwidth-blkio-constraint">
   <a class="text-black dark:text-white no-underline hover:underline" href="#block-io-bandwidth-blkio-constraint">
@@ -3402,26 +3335,14 @@ one can use this flag:</p>
 example, run a Docker daemon inside a Docker container. This is because
 by default a container is not allowed to access any devices, but a
 &quot;privileged&quot; container is given access to all devices (see
-the documentation on 
-  <a class="link" href="https://www.kernel.org/doc/Documentation/cgroup-v1/devices.txt" rel="noopener">
-    cgroups devices
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>).</p>
+the documentation on <a class="link" href="https://www.kernel.org/doc/Documentation/cgroup-v1/devices.txt" rel="noopener">cgroups devices</a>).</p>
 <p>The <code>--privileged</code> flag gives all capabilities to the container. When the operator
 executes <code>docker run --privileged</code>, Docker enables access to all devices on
 the host, and reconfigures AppArmor or SELinux to allow the container
 nearly all the same access to the host as processes running outside
 containers on the host. Use this flag with caution.
 For more information about the <code>--privileged</code> flag, see the
-
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#privileged" rel="noopener">
-    <code>docker run</code> reference
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#privileged" rel="noopener"><code>docker run</code> reference</a>.</p>
 <p>If you want to limit access to a specific device or devices you can use
 the <code>--device</code> flag. It allows you to specify one or more devices that
 will be accessible within the container.</p>
@@ -3794,20 +3715,8 @@ options which are allowed by default and can be dropped.</p>
     </tbody>
   </table>
 </div>
-<p>Further reference information is available on the 
-  <a class="link" href="https://man7.org/linux/man-pages/man7/capabilities.7.html" rel="noopener">
-    capabilities(7) - Linux man page
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
-and in the 
-  <a class="link" href="https://github.com/torvalds/linux/blob/124ea650d3072b005457faed69909221c2905a1f/include/uapi/linux/capability.h" rel="noopener">
-    Linux kernel source code
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>Further reference information is available on the <a class="link" href="https://man7.org/linux/man-pages/man7/capabilities.7.html" rel="noopener">capabilities(7) - Linux man page</a>,
+and in the <a class="link" href="https://github.com/torvalds/linux/blob/124ea650d3072b005457faed69909221c2905a1f/include/uapi/linux/capability.h" rel="noopener">Linux kernel source code</a>.</p>
 <p>Both flags support the value <code>ALL</code>, so to allow a container to use all capabilities
 except for <code>MKNOD</code>:</p>
 <div
@@ -4003,31 +3912,18 @@ use of facilities allowed by the capabilities, so you should not have to adjust 
   </a>
 </h2>
 
-<p>When you build an image from a 
-  <a class="link" href="https://docs.docker.com/reference/dockerfile/" rel="noopener">
-    Dockerfile
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+<p>When you build an image from a <a class="link" href="https://docs.docker.com/reference/dockerfile/" rel="noopener">Dockerfile</a>,
 or when committing it, you can set a number of default parameters that take
 effect when the image starts up as a container. When you run an image, you can
 override those defaults using flags for the <code>docker run</code> command.</p>
 <ul>
-<li>
-  <a class="link" href="#default-entrypoint">Default entrypoint</a></li>
-<li>
-  <a class="link" href="#default-command-and-options">Default command and options</a></li>
-<li>
-  <a class="link" href="#exposed-ports">Expose ports</a></li>
-<li>
-  <a class="link" href="#environment-variables">Environment variables</a></li>
-<li>
-  <a class="link" href="#healthchecks">Healthcheck</a></li>
-<li>
-  <a class="link" href="#user">User</a></li>
-<li>
-  <a class="link" href="#working-directory">Working directory</a></li>
+<li><a class="link" href="#default-entrypoint">Default entrypoint</a></li>
+<li><a class="link" href="#default-command-and-options">Default command and options</a></li>
+<li><a class="link" href="#exposed-ports">Expose ports</a></li>
+<li><a class="link" href="#environment-variables">Environment variables</a></li>
+<li><a class="link" href="#healthchecks">Healthcheck</a></li>
+<li><a class="link" href="#user">User</a></li>
+<li><a class="link" href="#working-directory">Working directory</a></li>
 </ul>
 
 <h3 class=" scroll-mt-20" id="default-command-and-options">

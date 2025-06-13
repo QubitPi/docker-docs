@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13962,12 +13962,10 @@ It refers to the contents of the <code>FROM</code> instruction in the Dockerfile
 </div>
 <p>For most cases, you don't need to create your own base image. Docker Hub
 contains a vast library of Docker images that are suitable for use as a base
-image in your build. 
-  <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#docker-official-images">Docker Official
+image in your build. <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#docker-official-images">Docker Official
 Images</a>
 have clear documentation, promote best practices, and are regularly updated.
-There are also 
-  <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#verified-publisher-images">Docker Verified
+There are also <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#verified-publisher-images">Docker Verified
 Publisher</a>
 images, created by trusted publishing partners, verified by Docker.</p>
 
@@ -14017,13 +14015,11 @@ special <code>FROM scratch</code> base:</p>
   </div>
 </div>
 <p>The <code>scratch</code> image is typically used to create minimal images containing only
-just what an application needs. See 
-  <a class="link" href="#create-a-minimal-base-image-using-scratch">Create a minimal base image using scratch</a>.</p>
+just what an application needs. See <a class="link" href="#create-a-minimal-base-image-using-scratch">Create a minimal base image using scratch</a>.</p>
 <p>To create a distribution base image, you can use a root filesystem, packaged as
 a <code>tar</code> file, and import it to Docker with <code>docker import</code>. The process for
 creating your own base image depends on the Linux distribution you want to
-package. See 
-  <a class="link" href="#create-a-full-image-using-tar">Create a full image using tar</a>.</p>
+package. See <a class="link" href="#create-a-full-image-using-tar">Create a full image using tar</a>.</p>
 
 <h2 class=" scroll-mt-20" id="create-a-minimal-base-image-using-scratch">
   <a class="text-black dark:text-white no-underline hover:underline" href="#create-a-minimal-base-image-using-scratch">
@@ -14035,13 +14031,7 @@ package. See
 building containers. Using the <code>scratch</code> image signals to the build process
 that you want the next command in the <code>Dockerfile</code> to be the first filesystem
 layer in your image.</p>
-<p>While <code>scratch</code> appears in Docker's 
-  <a class="link" href="https://hub.docker.com/_/scratch" rel="noopener">
-    repository on Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+<p>While <code>scratch</code> appears in Docker's <a class="link" href="https://hub.docker.com/_/scratch" rel="noopener">repository on Docker Hub</a>,
 you can't pull it, run it, or tag any image with the name <code>scratch</code>.
 Instead, you can refer to it in your <code>Dockerfile</code>.
 For example, to create a minimal container using <code>scratch</code>:</p>
@@ -14085,7 +14075,6 @@ For example, to create a minimal container using <code>scratch</code>:</p>
   </div>
 </div>
 <p>Assuming an executable binary named <code>hello</code> exists at the root of the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/concepts/context/">build context</a>.
@@ -14188,13 +14177,7 @@ reduce the image size and attack surface.</p>
 
 <p>In general, start with a working machine that is running
 the distribution you'd like to package as a base image, though that is
-not required for some tools like Debian's 
-  <a class="link" href="https://wiki.debian.org/Debootstrap" rel="noopener">
-    Debootstrap
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+not required for some tools like Debian's <a class="link" href="https://wiki.debian.org/Debootstrap" rel="noopener">Debootstrap</a>,
 which you can also use to build Ubuntu images.</p>
 <p>For example, to create an Ubuntu base image:</p>
 <div
@@ -14244,13 +14227,7 @@ which you can also use to build Ubuntu images.</p>
   </div>
 </div>
 <p>There are more example scripts for creating base images in
-
-  <a class="link" href="https://github.com/moby/moby/blob/master/contrib" rel="noopener">
-    the Moby GitHub repository
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://github.com/moby/moby/blob/master/contrib" rel="noopener">the Moby GitHub repository</a>.</p>
 
 <h2 class=" scroll-mt-20" id="more-resources">
   <a class="text-black dark:text-white no-underline hover:underline" href="#more-resources">
@@ -14262,16 +14239,13 @@ which you can also use to build Ubuntu images.</p>
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/">Dockerfile reference</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/building/best-practices/">Dockerfile best practices</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#docker-official-images">Docker Official Images</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#docker-official-images">Docker Official Images</a></li>
 </ul>
 
   </article>

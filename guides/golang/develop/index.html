@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -1044,8 +1044,7 @@
   </a>
 </h2>
 
-<p>Work through the steps of the 
-  <a class="link" href="https://docker.qubitpi.org/guides/golang/run-containers/">run your image as a container</a> module to learn how to manage the lifecycle of your containers.</p>
+<p>Work through the steps of the <a class="link" href="https://docker.qubitpi.org/guides/golang/run-containers/">run your image as a container</a> module to learn how to manage the lifecycle of your containers.</p>
 
 <h2 class=" scroll-mt-20" id="introduction">
   <a class="text-black dark:text-white no-underline hover:underline" href="#introduction">
@@ -1061,52 +1060,10 @@
   </a>
 </h2>
 
-<p>The database engine you are going to use is called 
-  <a class="link" href="https://www.cockroachlabs.com/product/" rel="noopener">
-    CockroachDB
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>. It is a modern, Cloud-native, distributed SQL database.</p>
-<p>Instead of compiling CockroachDB from the source code or using the operating system's native package manager to install CockroachDB, you are going to use the 
-  <a class="link" href="https://hub.docker.com/r/cockroachdb/cockroach" rel="noopener">
-    Docker image for CockroachDB
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and run it in a container.</p>
-<p>CockroachDB is compatible with PostgreSQL to a significant extent, and shares many conventions with the latter, particularly the default names for the environment variables. So, if you are familiar with Postgres, don't be surprised if you see some familiar environment variables names. The Go modules that work with Postgres, such as 
-  <a class="link" href="https://pkg.go.dev/github.com/jackc/pgx" rel="noopener">
-    pgx
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, 
-  <a class="link" href="https://pkg.go.dev/github.com/lib/pq" rel="noopener">
-    pq
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, 
-  <a class="link" href="https://gorm.io/index.html" rel="noopener">
-    GORM
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, and 
-  <a class="link" href="https://upper.io/v4/" rel="noopener">
-    upper/db
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> also work with CockroachDB.</p>
-<p>For more information on the relation between Go and CockroachDB, refer to the 
-  <a class="link" href="https://www.cockroachlabs.com/docs/v20.2/build-a-go-app-with-cockroachdb.html" rel="noopener">
-    CockroachDB documentation
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, although this isn't necessary to continue with the present guide.</p>
+<p>The database engine you are going to use is called <a class="link" href="https://www.cockroachlabs.com/product/" rel="noopener">CockroachDB</a>. It is a modern, Cloud-native, distributed SQL database.</p>
+<p>Instead of compiling CockroachDB from the source code or using the operating system's native package manager to install CockroachDB, you are going to use the <a class="link" href="https://hub.docker.com/r/cockroachdb/cockroach" rel="noopener">Docker image for CockroachDB</a> and run it in a container.</p>
+<p>CockroachDB is compatible with PostgreSQL to a significant extent, and shares many conventions with the latter, particularly the default names for the environment variables. So, if you are familiar with Postgres, don't be surprised if you see some familiar environment variables names. The Go modules that work with Postgres, such as <a class="link" href="https://pkg.go.dev/github.com/jackc/pgx" rel="noopener">pgx</a>, <a class="link" href="https://pkg.go.dev/github.com/lib/pq" rel="noopener">pq</a>, <a class="link" href="https://gorm.io/index.html" rel="noopener">GORM</a>, and <a class="link" href="https://upper.io/v4/" rel="noopener">upper/db</a> also work with CockroachDB.</p>
+<p>For more information on the relation between Go and CockroachDB, refer to the <a class="link" href="https://www.cockroachlabs.com/docs/v20.2/build-a-go-app-with-cockroachdb.html" rel="noopener">CockroachDB documentation</a>, although this isn't necessary to continue with the present guide.</p>
 
 <h3 class=" scroll-mt-20" id="storage">
   <a class="text-black dark:text-white no-underline hover:underline" href="#storage">
@@ -1115,7 +1072,6 @@
 </h3>
 
 <p>The point of a database is to have a persistent store of data. 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/storage/volumes/">Volumes</a> are the preferred mechanism for persisting data generated by and used by Docker containers. Thus, before you start CockroachDB, create the volume for it.</p>
@@ -1290,7 +1246,6 @@
 </div>
 <p>Your bridge network <code>mynet</code> has been created successfully. The other three networks, named <code>bridge</code>, <code>host</code>, and <code>none</code> are the default networks and they had been created by the Docker itself. While it's not relevant to this guide, you can learn more about Docker networking in the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/engine/network/">networking overview</a> section.</p>
 
@@ -1357,13 +1312,7 @@
     </div>
   </div>
 </div>
-<p>Notice a clever use of the tag <code>latest-v20.1</code> to make sure that you're pulling the latest patch version of 20.1. The diversity of available tags depend on the image maintainer. Here, your intent was to have the latest patched version of CockroachDB while not straying too far away from the known working version as the time goes by. To see the tags available for the CockroachDB image, you can go to the 
-  <a class="link" href="https://hub.docker.com/r/cockroachdb/cockroach/tags" rel="noopener">
-    CockroachDB page on Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>Notice a clever use of the tag <code>latest-v20.1</code> to make sure that you're pulling the latest patch version of 20.1. The diversity of available tags depend on the image maintainer. Here, your intent was to have the latest patched version of CockroachDB while not straying too far away from the known working version as the time goes by. To see the tags available for the CockroachDB image, you can go to the <a class="link" href="https://hub.docker.com/r/cockroachdb/cockroach/tags" rel="noopener">CockroachDB page on Docker Hub</a>.</p>
 
 <h3 class=" scroll-mt-20" id="configure-the-database-engine">
   <a class="text-black dark:text-white no-underline hover:underline" href="#configure-the-database-engine">
@@ -1613,13 +1562,7 @@
 <p>The example application for this module is an extended version of <code>docker-gs-ping</code> application you've used in the previous modules. You have two options:</p>
 <ul>
 <li>You can update your local copy of <code>docker-gs-ping</code> to match the new extended version presented in this chapter; or</li>
-<li>You can clone the 
-  <a class="link" href="https://github.com/docker/docker-gs-ping-dev" rel="noopener">
-    docker/docker-gs-ping-dev
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> repository. This latter approach is recommended.</li>
+<li>You can clone the <a class="link" href="https://github.com/docker/docker-gs-ping-dev" rel="noopener">docker/docker-gs-ping-dev</a> repository. This latter approach is recommended.</li>
 </ul>
 <p>To checkout the example application, run:</p>
 <div
@@ -2704,7 +2647,6 @@
 </div>
 <p>This Docker Compose configuration is super convenient as you don't have to type all the parameters to pass to the <code>docker run</code> command. You can declaratively do that in the Docker Compose file. The 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/">Docker Compose documentation pages</a> are quite extensive and include a full reference for the Docker Compose file format.</p>
 
@@ -2776,7 +2718,6 @@
 
 <p>One of the really cool features of Docker Compose is 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/interpolation/">variable substitution</a>. You can see some examples in the Compose file, <code>environment</code> section. By means of an example:</p>
 <ul>
@@ -2784,7 +2725,6 @@
 <li><code>PGPASSWORD=${PGPASSWORD:?database password not set}</code> means that if the environment variable <code>PGPASSWORD</code> isn't set on the host, Docker Compose will display an error. This is OK, because you don't want to hard-code default values for the password. You set the password value in the <code>.env</code> file, which is local to your machine. It is always a good idea to add <code>.env</code> to <code>.gitignore</code> to prevent the secrets being checked into the version control.</li>
 </ul>
 <p>Other ways of dealing with undefined or empty values exist, as documented in the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/interpolation/">variable substitution</a> section of the Docker documentation.</p>
@@ -2966,10 +2906,8 @@
     </div>
   </div>
 </div>
-<p>Because of the way you set up your deployment using <code>restart_policy</code>, the failing container is being restarted every 20 seconds. So, in order to fix the problem, you need to log in to the database engine and create the user. You've done it before in 
-  <a class="link" href="#configure-the-database-engine">Configure the database engine</a>.</p>
-<p>This isn't a big deal. All you have to do is to connect to CockroachDB instance and run the three SQL commands to create the database and the user, as described in 
-  <a class="link" href="#configure-the-database-engine">Configure the database engine</a>.</p>
+<p>Because of the way you set up your deployment using <code>restart_policy</code>, the failing container is being restarted every 20 seconds. So, in order to fix the problem, you need to log in to the database engine and create the user. You've done it before in <a class="link" href="#configure-the-database-engine">Configure the database engine</a>.</p>
+<p>This isn't a big deal. All you have to do is to connect to CockroachDB instance and run the three SQL commands to create the database and the user, as described in <a class="link" href="#configure-the-database-engine">Configure the database engine</a>.</p>
 <p>So, log in to the database engine from another terminal:</p>
 <div
   data-pagefind-ignore
@@ -3172,7 +3110,6 @@
 
 <p>A managed volume isn't the only way to provide your container with persistent storage. It is highly recommended to get acquainted with available storage options and their use cases, covered in 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/engine/storage/">Manage data in Docker</a>.</p>
 
@@ -3186,19 +3123,11 @@
 <p>Such distributed set-up offers interesting possibilities, such as applying Chaos Engineering techniques to simulate parts of the cluster failing and evaluating your application's ability to cope with such failures.</p>
 <p>If you are interested in experimenting with CockroachDB clusters, check out:</p>
 <ul>
-<li>
-  <a class="link" href="https://www.cockroachlabs.com/docs/v20.2/start-a-local-cluster-in-docker-mac.html" rel="noopener">
-    Start a CockroachDB Cluster in Docker
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> article; and</li>
+<li><a class="link" href="https://www.cockroachlabs.com/docs/v20.2/start-a-local-cluster-in-docker-mac.html" rel="noopener">Start a CockroachDB Cluster in Docker</a> article; and</li>
 <li>Documentation for Docker Compose keywords 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/legacy-versions/"><code>deploy</code></a> and 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/legacy-versions/"><code>replicas</code></a>.</li>
@@ -3210,13 +3139,7 @@
   </a>
 </h3>
 
-<p>Since you didn't run a cluster of CockroachDB instances, you might be wondering whether you could have used a non-distributed database engine. The answer is 'yes', and if you were to pick a more traditional SQL database, such as 
-  <a class="link" href="https://www.postgresql.org/" rel="noopener">
-    PostgreSQL
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, the process described in this chapter would have been very similar.</p>
+<p>Since you didn't run a cluster of CockroachDB instances, you might be wondering whether you could have used a non-distributed database engine. The answer is 'yes', and if you were to pick a more traditional SQL database, such as <a class="link" href="https://www.postgresql.org/" rel="noopener">PostgreSQL</a>, the process described in this chapter would have been very similar.</p>
 
 <h2 class=" scroll-mt-20" id="next-steps">
   <a class="text-black dark:text-white no-underline hover:underline" href="#next-steps">

@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13969,7 +13969,6 @@ respective network interfaces — just like they can interact with
 external hosts. When you specify public ports for your containers or use
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/engine/network/links/">links</a>
 then IP traffic is allowed between containers. They can ping each other,
@@ -13979,26 +13978,14 @@ containers on a given Docker host are sitting on bridge interfaces. This
 means that they are just like physical machines connected through a
 common Ethernet switch; no more, no less.</p>
 <p>How mature is the code providing kernel namespaces and private
-networking? Kernel namespaces were introduced 
-  <a class="link" href="https://man7.org/linux/man-pages/man7/namespaces.7.html" rel="noopener">
-    between kernel version
+networking? Kernel namespaces were introduced <a class="link" href="https://man7.org/linux/man-pages/man7/namespaces.7.html" rel="noopener">between kernel version
 2.6.15 and
-2.6.26
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.
+2.6.26</a>.
 This means that since July 2008 (date of the 2.6.26 release
 ), namespace code has been exercised and scrutinized on a large
 number of production systems. And there is more: the design and
 inspiration for the namespaces code are even older. Namespaces are
-actually an effort to reimplement the features of 
-  <a class="link" href="https://en.wikipedia.org/wiki/OpenVZ" rel="noopener">
-    OpenVZ
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> in such a way that they could be
+actually an effort to reimplement the features of <a class="link" href="https://en.wikipedia.org/wiki/OpenVZ" rel="noopener">OpenVZ</a> in such a way that they could be
 merged within the mainstream kernel. And OpenVZ was initially released
 in 2005, so both the design and the implementation are pretty mature.</p>
 
@@ -14031,8 +14018,7 @@ started in 2006, and initially merged in kernel 2.6.24.</p>
 
 <p>Running containers (and applications) with Docker implies running the
 Docker daemon. This daemon requires <code>root</code> privileges unless you opt-in
-to 
-  <a class="link" href="https://docker.qubitpi.org/engine/security/rootless/">Rootless mode</a>, and you should therefore be aware of
+to <a class="link" href="https://docker.qubitpi.org/engine/security/rootless/">Rootless mode</a>, and you should therefore be aware of
 some important details.</p>
 <p>First of all, only trusted users should be allowed to control your
 Docker daemon. This is a direct consequence of some powerful Docker
@@ -14062,12 +14048,10 @@ Note that even if you have a firewall to limit accesses to the REST API
 endpoint from other hosts in the network, the endpoint can be still accessible
 from containers, and it can easily result in the privilege escalation.
 Therefore it is <em>mandatory</em> to secure API endpoints with
-
-  <a class="link" href="https://docker.qubitpi.org/engine/security/protect-access/">HTTPS and certificates</a>.
+<a class="link" href="https://docker.qubitpi.org/engine/security/protect-access/">HTTPS and certificates</a>.
 Exposing the daemon API over HTTP without TLS is not permitted,
 and such a configuration causes the daemon to fail early on startup, see
-
-  <a class="link" href="https://docker.qubitpi.org/engine/deprecated/#unauthenticated-tcp-connections">Unauthenticated TCP connections</a>.
+<a class="link" href="https://docker.qubitpi.org/engine/deprecated/#unauthenticated-tcp-connections">Unauthenticated TCP connections</a>.
 It is also recommended to ensure that it is reachable only from a trusted
 network or VPN.</p>
 <p>You can also use <code>DOCKER_HOST=ssh://USER@HOST</code> or <code>ssh -L /path/to/docker.sock:/var/run/docker.sock</code>
@@ -14138,23 +14122,11 @@ container, it is much harder to do serious damage, or to escalate
 to the host.</p>
 <p>This doesn't affect regular web apps, but reduces the vectors of attack by
 malicious users considerably. By default Docker
-drops all capabilities except 
-  <a class="link" href="https://github.com/moby/moby/blob/master/oci/caps/defaults.go#L6-L19" rel="noopener">
-    those
-needed
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+drops all capabilities except <a class="link" href="https://github.com/moby/moby/blob/master/oci/caps/defaults.go#L6-L19" rel="noopener">those
+needed</a>,
 an allowlist instead of a denylist approach. You can see a full list of
-available capabilities in 
-  <a class="link" href="https://man7.org/linux/man-pages/man7/capabilities.7.html" rel="noopener">
-    Linux
-manpages
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+available capabilities in <a class="link" href="https://man7.org/linux/man-pages/man7/capabilities.7.html" rel="noopener">Linux
+manpages</a>.</p>
 <p>One primary risk with running Docker containers is that the default set
 of capabilities and mounts given to a container may provide incomplete
 isolation, either independently, or when used in combination with
@@ -14179,8 +14151,7 @@ only repositories signed with a user-specified root key can be pulled and run.</
 <p>This feature provides more insight to administrators than previously available with
 the CLI for enforcing and performing image signature verification.</p>
 <p>For more information on configuring Docker Content Trust Signature Verification, go to
-
-  <a class="link" href="https://docker.qubitpi.org/engine/security/trust/">Content trust in Docker</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/security/trust/">Content trust in Docker</a>.</p>
 
 <h2 class=" scroll-mt-20" id="other-kernel-security-features">
   <a class="text-black dark:text-white no-underline hover:underline" href="#other-kernel-security-features">
@@ -14219,19 +14190,12 @@ risks of container breakout. This facility is available but not enabled
 by default.</p>
 <p>Refer to the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/dockerd/#daemon-user-namespace-options">daemon command</a>
 in the command line reference for more information on this feature.
 Additional information on the implementation of User Namespaces in Docker
 can be found in
-
-  <a class="link" href="https://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/" rel="noopener">
-    this blog post
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://integratedcode.us/2015/10/13/user-namespaces-have-arrived-in-docker/" rel="noopener">this blog post</a>.</p>
 
 <h2 class=" scroll-mt-20" id="conclusions">
   <a class="text-black dark:text-white no-underline hover:underline" href="#conclusions">
@@ -14253,21 +14217,11 @@ pull requests, or comments on the Docker community forums.</p>
 </h2>
 
 <ul>
+<li><a class="link" href="https://docker.qubitpi.org/engine/security/trust/">Use trusted images</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/security/seccomp/">Seccomp security profiles for Docker</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/security/apparmor/">AppArmor security profiles for Docker</a></li>
+<li><a class="link" href="https://medium.com/@ewindisch/on-the-security-of-containers-2c60ffe25a9e" rel="noopener">On the Security of Containers (2014)</a></li>
 <li>
-  <a class="link" href="https://docker.qubitpi.org/engine/security/trust/">Use trusted images</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/security/seccomp/">Seccomp security profiles for Docker</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/security/apparmor/">AppArmor security profiles for Docker</a></li>
-<li>
-  <a class="link" href="https://medium.com/@ewindisch/on-the-security-of-containers-2c60ffe25a9e" rel="noopener">
-    On the Security of Containers (2014)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/network/drivers/overlay/">Docker swarm mode overlay network security model</a></li>

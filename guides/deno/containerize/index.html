@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -881,13 +881,7 @@
 </h2>
 
 <ul>
-<li>You have a 
-  <a class="link" href="https://git-scm.com/downloads" rel="noopener">
-    Git client
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>. The examples in this section use a command-line based Git client, but you can use any client.</li>
+<li>You have a <a class="link" href="https://git-scm.com/downloads" rel="noopener">Git client</a>. The examples in this section use a command-line based Git client, but you can use any client.</li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="overview">
@@ -896,13 +890,7 @@
   </a>
 </h2>
 
-<p>For a long time, Node.js has been the go-to runtime for server-side JavaScript applications. However, recent years have introduced new alternative runtimes, including 
-  <a class="link" href="https://deno.land/" rel="noopener">
-    Deno
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>. Like Node.js, Deno is a JavaScript and TypeScript runtime, but it takes a fresh approach with modern security features, a built-in standard library, and native support for TypeScript.</p>
+<p>For a long time, Node.js has been the go-to runtime for server-side JavaScript applications. However, recent years have introduced new alternative runtimes, including <a class="link" href="https://deno.land/" rel="noopener">Deno</a>. Like Node.js, Deno is a JavaScript and TypeScript runtime, but it takes a fresh approach with modern security features, a built-in standard library, and native support for TypeScript.</p>
 <p>Why develop Deno applications with Docker? Having a choice of runtimes is exciting, but managing multiple runtimes and their dependencies consistently across environments can be tricky. This is where Docker proves invaluable. Using containers to create and destroy environments on demand simplifies runtime management and ensures consistency. Additionally, as Deno continues to grow and evolve, Docker helps establish a reliable and reproducible development environment, minimizing setup challenges and streamlining the workflow.</p>
 
 <h2 class=" scroll-mt-20" id="get-the-sample-application">
@@ -1061,13 +1049,7 @@ command to clone the repository:</p>
 </h2>
 
 <p>In the Dockerfile, you'll notice that the <code>FROM</code> instruction uses <code>denoland/deno:latest</code>
-as the base image. This is the official image for Deno. This image is 
-  <a class="link" href="https://hub.docker.com/r/denoland/deno" rel="noopener">
-    available on the Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+as the base image. This is the official image for Deno. This image is <a class="link" href="https://hub.docker.com/r/denoland/deno" rel="noopener">available on the Docker Hub</a>.</p>
 <div
   data-pagefind-ignore
   x-data
@@ -1174,13 +1156,7 @@ as the base image. This is the official image for Deno. This image is
     </div>
   </div>
 </div>
-<p>Open a browser and view the application at 
-  <a class="link" href="http://localhost:8000" rel="noopener">
-    http://localhost:8000
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>. You will see a message <code>{&quot;Status&quot; : &quot;OK&quot;}</code> in the browser.</p>
+<p>Open a browser and view the application at <a class="link" href="http://localhost:8000" rel="noopener">http://localhost:8000</a>. You will see a message <code>{&quot;Status&quot; : &quot;OK&quot;}</code> in the browser.</p>
 <p>In the terminal, press <code>ctrl</code>+<code>c</code> to stop the application.</p>
 
 <h3 class=" scroll-mt-20" id="run-the-application-in-the-background">
@@ -1229,13 +1205,7 @@ in a terminal.</p>
     </div>
   </div>
 </div>
-<p>Open a browser and view the application at 
-  <a class="link" href="http://localhost:8000" rel="noopener">
-    http://localhost:8000
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>Open a browser and view the application at <a class="link" href="http://localhost:8000" rel="noopener">http://localhost:8000</a>.</p>
 <p>In the terminal, run the following command to stop the application.</p>
 <div
   data-pagefind-ignore
@@ -1287,21 +1257,17 @@ application using Docker.</p>
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/">Dockerfile reference</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#dockerignore-file">.dockerignore file</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/">Docker Compose overview</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/">Compose file reference</a></li>

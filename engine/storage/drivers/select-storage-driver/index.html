@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13960,8 +13960,7 @@ to write to the container's writable layer. This is where storage drivers come
 in.</p>
 <p>Docker supports several storage drivers, using a pluggable architecture. The
 storage driver controls how images and containers are stored and managed on your
-Docker host. After you have read the 
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/">storage driver overview</a>, the
+Docker host. After you have read the <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/">storage driver overview</a>, the
 next step is to choose the best storage driver for your workloads. Use the storage
 driver with the best overall performance and stability in the most usual scenarios.</p>
 
@@ -13985,8 +13984,7 @@ driver with the best overall performance and stability in the most usual scenari
       <p>This page discusses storage drivers for Docker Engine on Linux. If you're
 running the Docker daemon with Windows as the host OS, the only supported
 storage driver is windowsfilter. For more information, see
-
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/windowsfilter-driver/">windowsfilter</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/windowsfilter-driver/">windowsfilter</a>.</p>
     </div>
   </blockquote>
 
@@ -14015,7 +14013,6 @@ storage driver is windowsfilter. For more information, see
             <td
               class="p-2" style="text-align: left"><code>fuse-overlayfs</code>is preferred only for running Rootless Docker on an old host that does not provide support for rootless <code>overlay2</code>. The <code>fuse-overlayfs</code> driver does not need to be used since Linux kernel 5.11, and <code>overlay2</code> works even in rootless mode. Refer to the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/engine/security/rootless/">rootless mode documentation</a> for details.</td>
         </tr>
@@ -14038,22 +14035,14 @@ storage driver is windowsfilter. For more information, see
 <p id="storage-driver-order">The Docker Engine has a prioritized list of which storage driver to use if no
 storage driver is explicitly configured, assuming that the storage driver meets
 the prerequisites, and automatically selects a compatible storage driver. You
-can see the order in the 
-  <a class="link" href="https://github.com/moby/moby/blob/v28.2.1/daemon/graphdriver/driver_linux.go#L52-L53" rel="noopener">
-    source code for Docker Engine 28.2.1
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+can see the order in the <a class="link" href="https://github.com/moby/moby/blob/v28.2.2/daemon/graphdriver/driver_linux.go#L52-L53" rel="noopener">source code for Docker Engine 28.2.2</a>.</p>
 <!-- markdownlint-enable reference-links-images -->
 <p>Some storage drivers require you to use a specific format for the backing filesystem.
 If you have external requirements to use a specific backing filesystem, this may
-limit your choices. See 
-  <a class="link" href="#supported-backing-filesystems">Supported backing filesystems</a>.</p>
+limit your choices. See <a class="link" href="#supported-backing-filesystems">Supported backing filesystems</a>.</p>
 <p>After you have narrowed down which storage drivers you can choose from, your choice
 is determined by the characteristics of your workload and the level of stability
-you need. See 
-  <a class="link" href="#other-considerations">Other considerations</a> for help in making
+you need. See <a class="link" href="#other-considerations">Other considerations</a> for help in making
 the final decision.</p>
 
 <h2 class=" scroll-mt-20" id="supported-storage-drivers-per-linux-distribution">
@@ -14084,12 +14073,10 @@ the final decision.</p>
 supported on Docker Desktop. Only the default <code>overlay2</code> driver or the
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/desktop/features/containerd/">containerd storage</a> are supported. The
 following table is also not applicable for the Docker Engine in rootless
 mode. For the drivers available in rootless mode, see the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/security/rootless/">Rootless mode
@@ -14173,8 +14160,7 @@ to the container's writable layer.</p>
 <p>The <code>vfs</code> storage driver is usually not the best choice, and primarily intended
 for debugging purposes in situations where no other storage-driver is supported.
 Before using the <code>vfs</code> storage driver, be sure to read about
-
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/vfs-driver/">its performance and storage characteristics and limitations</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/vfs-driver/">its performance and storage characteristics and limitations</a>.</p>
 <p>The recommendations in the table above are known to work for a large number of
 users. If you use a recommended configuration and find a reproducible issue,
 it's likely to be fixed very quickly. If the driver that you want to use is
@@ -14405,16 +14391,11 @@ inaccessible.</p>
 </h2>
 
 <ul>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/">Storage drivers</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/overlayfs-driver/"><code>overlay2</code> storage driver</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/btrfs-driver/"><code>btrfs</code> storage driver</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/zfs-driver/"><code>zfs</code> storage driver</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/windowsfilter-driver/"><code>windowsfilter</code> storage driver</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/">Storage drivers</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/overlayfs-driver/"><code>overlay2</code> storage driver</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/btrfs-driver/"><code>btrfs</code> storage driver</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/zfs-driver/"><code>zfs</code> storage driver</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/storage/drivers/windowsfilter-driver/"><code>windowsfilter</code> storage driver</a></li>
 </ul>
 
   </article>

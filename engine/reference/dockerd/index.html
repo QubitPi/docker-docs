@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -1055,8 +1055,7 @@
 uses different binaries for the daemon and client. To run the daemon you
 type <code>dockerd</code>.</p>
 <p>To run the daemon with debug output, use <code>dockerd --debug</code> or add <code>&quot;debug&quot;: true</code>
-to 
-  <a class="link" href="#daemon-configuration-file">the <code>daemon.json</code> file</a>.</p>
+to <a class="link" href="#daemon-configuration-file">the <code>daemon.json</code> file</a>.</p>
 
 
   
@@ -1090,13 +1089,7 @@ flag or adding <code>&quot;experimental&quot;: true</code> to the <code>daemon.j
 
 <p>The following list of environment variables are supported by the <code>dockerd</code> daemon.
 Some of these environment variables are supported both by the Docker Daemon and
-the <code>docker</code> CLI. Refer to 
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/#environment-variables" rel="noopener">
-    Environment variables
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+the <code>docker</code> CLI. Refer to <a class="link" href="https://docs.docker.com/reference/cli/docker/#environment-variables" rel="noopener">Environment variables</a>
 to learn about environment variables supported by the <code>docker</code> CLI.</p>
 <div class="overflow-x-auto">
   <table
@@ -1114,13 +1107,7 @@ to learn about environment variables supported by the <code>docker</code> CLI.</
             <td
               class="p-2" style="text-align: left"><code>DOCKER_CERT_PATH</code></td>
             <td
-              class="p-2" style="text-align: left">Location of your authentication keys. This variable is used both by the 
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/" rel="noopener">
-    <code>docker</code> CLI
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and the <code>dockerd</code> daemon.</td>
+              class="p-2" style="text-align: left">Location of your authentication keys. This variable is used both by the <a class="link" href="https://docs.docker.com/reference/cli/docker/" rel="noopener"><code>docker</code> CLI</a> and the <code>dockerd</code> daemon.</td>
         </tr>
         <tr>
             <td
@@ -1138,13 +1125,7 @@ to learn about environment variables supported by the <code>docker</code> CLI.</
             <td
               class="p-2" style="text-align: left"><code>DOCKER_TLS_VERIFY</code></td>
             <td
-              class="p-2" style="text-align: left">When set Docker uses TLS and verifies the remote. This variable is used both by the 
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/" rel="noopener">
-    <code>docker</code> CLI
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and the <code>dockerd</code> daemon.</td>
+              class="p-2" style="text-align: left">When set Docker uses TLS and verifies the remote. This variable is used both by the <a class="link" href="https://docs.docker.com/reference/cli/docker/" rel="noopener"><code>docker</code> CLI</a> and the <code>dockerd</code> daemon.</td>
         </tr>
         <tr>
             <td
@@ -1156,49 +1137,25 @@ to learn about environment variables supported by the <code>docker</code> CLI.</
             <td
               class="p-2" style="text-align: left"><code>HTTP_PROXY</code></td>
             <td
-              class="p-2" style="text-align: left">Proxy URL for HTTP requests unless overridden by NoProxy. See the 
-  <a class="link" href="https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config" rel="noopener">
-    Go specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> for details.</td>
+              class="p-2" style="text-align: left">Proxy URL for HTTP requests unless overridden by NoProxy. See the <a class="link" href="https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config" rel="noopener">Go specification</a> for details.</td>
         </tr>
         <tr>
             <td
               class="p-2" style="text-align: left"><code>HTTPS_PROXY</code></td>
             <td
-              class="p-2" style="text-align: left">Proxy URL for HTTPS requests unless overridden by NoProxy. See the 
-  <a class="link" href="https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config" rel="noopener">
-    Go specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> for details.</td>
+              class="p-2" style="text-align: left">Proxy URL for HTTPS requests unless overridden by NoProxy. See the <a class="link" href="https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config" rel="noopener">Go specification</a> for details.</td>
         </tr>
         <tr>
             <td
               class="p-2" style="text-align: left"><code>MOBY_DISABLE_PIGZ</code></td>
             <td
-              class="p-2" style="text-align: left">Disables the use of 
-  <a class="link" href="https://linux.die.net/man/1/pigz" rel="noopener">
-    <code>unpigz</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> to decompress layers in parallel when pulling images, even if it is installed.</td>
+              class="p-2" style="text-align: left">Disables the use of <a class="link" href="https://linux.die.net/man/1/pigz" rel="noopener"><code>unpigz</code></a> to decompress layers in parallel when pulling images, even if it is installed.</td>
         </tr>
         <tr>
             <td
               class="p-2" style="text-align: left"><code>NO_PROXY</code></td>
             <td
-              class="p-2" style="text-align: left">Comma-separated values specifying hosts that should be excluded from proxying. See the 
-  <a class="link" href="https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config" rel="noopener">
-    Go specification
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> for details.</td>
+              class="p-2" style="text-align: left">Comma-separated values specifying hosts that should be excluded from proxying. See the <a class="link" href="https://pkg.go.dev/golang.org/x/net/http/httpproxy#Config" rel="noopener">Go specification</a> for details.</td>
         </tr>
     </tbody>
   </table>
@@ -1235,20 +1192,8 @@ to learn about environment variables supported by the <code>docker</code> CLI.</
       </span>
     </div>
     <div class="admonition-content">
-      <p>Refer to the 
-  <a class="link" href="https://docs.docker.com/desktop/networking/#httphttps-proxy-support" rel="noopener">
-    Docker Desktop manual
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
-if you are running 
-  <a class="link" href="https://docs.docker.com/desktop/" rel="noopener">
-    Docker Desktop
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+      <p>Refer to the <a class="link" href="https://docs.docker.com/desktop/networking/#httphttps-proxy-support" rel="noopener">Docker Desktop manual</a>
+if you are running <a class="link" href="https://docs.docker.com/desktop/" rel="noopener">Docker Desktop</a>.</p>
     </div>
   </blockquote>
 
@@ -1259,19 +1204,12 @@ in three ways:</p>
 <ol>
 <li>Using environment variables (<code>HTTP_PROXY</code>, <code>HTTPS_PROXY</code>, and <code>NO_PROXY</code>).</li>
 <li>Using the <code>http-proxy</code>, <code>https-proxy</code>, and <code>no-proxy</code> fields in the
-
-  <a class="link" href="#daemon-configuration-file">daemon configuration file</a> (Docker Engine version 23.0 or later).</li>
+<a class="link" href="#daemon-configuration-file">daemon configuration file</a> (Docker Engine version 23.0 or later).</li>
 <li>Using the <code>--http-proxy</code>, <code>--https-proxy</code>, and <code>--no-proxy</code> command-line
 options. (Docker Engine version 23.0 or later).</li>
 </ol>
 <p>The command-line and configuration file options take precedence over environment
-variables. Refer to 
-  <a class="link" href="https://docs.docker.com/engine/daemon/proxy/" rel="noopener">
-    control and configure Docker with systemd
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+variables. Refer to <a class="link" href="https://docs.docker.com/engine/daemon/proxy/" rel="noopener">control and configure Docker with systemd</a>
 to set these environment variables on a host using <code>systemd</code>.</p>
 
 <h3 class=" scroll-mt-20" id="daemon-socket-option">
@@ -1280,13 +1218,7 @@ to set these environment variables on a host using <code>systemd</code>.</p>
   </a>
 </h3>
 
-<p>The Docker daemon can listen for 
-  <a class="link" href="https://docs.docker.com/engine/api/" rel="noopener">
-    Docker Engine API
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<p>The Docker daemon can listen for <a class="link" href="https://docs.docker.com/engine/api/" rel="noopener">Docker Engine API</a>
 requests via three different types of Socket: <code>unix</code>, <code>tcp</code>, and <code>fd</code>.</p>
 <p>By default, a <code>unix</code> domain socket (or IPC socket) is created at
 <code>/var/run/docker.sock</code>, requiring either <code>root</code> permission, or <code>docker</code> group
@@ -1545,13 +1477,7 @@ daemon. So when used in real projects, understand the security risks, and use it
 <p>If you need to access the Docker daemon remotely, you need to enable the tcp
 Socket. When using a TCP socket, the Docker daemon provides un-encrypted and
 un-authenticated direct access to the Docker daemon by default. You should secure
-the daemon either using the 
-  <a class="link" href="https://docs.docker.com/engine/security/protect-access/" rel="noopener">
-    built in HTTPS encrypted socket
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+the daemon either using the <a class="link" href="https://docs.docker.com/engine/security/protect-access/" rel="noopener">built in HTTPS encrypted socket</a>,
 or by putting a secure web proxy in front of it. You can listen on port <code>2375</code> on all
 network interfaces with <code>-H tcp://0.0.0.0:2375</code>, or on a particular network
 interface using its IP address: <code>-H tcp://192.168.59.103:2375</code>. It is
@@ -1582,24 +1508,12 @@ supported for security reasons.</p>
   </blockquote>
 
 <p>On systemd based systems, you can communicate with the daemon via
-
-  <a class="link" href="https://0pointer.de/blog/projects/socket-activation.html" rel="noopener">
-    systemd socket activation
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+<a class="link" href="https://0pointer.de/blog/projects/socket-activation.html" rel="noopener">systemd socket activation</a>,
 with <code>dockerd -H fd://</code>. Using <code>fd://</code> works for most setups, but
 you can also specify individual sockets: <code>dockerd -H fd://3</code>. If the
 specified socket activated files aren't found, the daemon exits. You can
 find examples of using systemd socket activation with Docker and systemd in the
-
-  <a class="link" href="https://github.com/docker/docker/tree/master/contrib/init/systemd/" rel="noopener">
-    Docker source tree
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://github.com/docker/docker/tree/master/contrib/init/systemd/" rel="noopener">Docker source tree</a>.</p>
 <p>You can configure the Docker daemon to listen to multiple sockets at the same
 time using multiple <code>-H</code> options:</p>
 <p>The example below runs the daemon listening on the default Unix socket, and
@@ -2038,13 +1952,7 @@ drivers: <code>overlay2</code>, <code>fuse-overlayfs</code>, <code>btrfs</code>,
 <p><code>overlay2</code> is the preferred storage driver for all currently supported Linux distributions,
 and is selected by default. Unless users have a strong reason to prefer another storage driver,
 <code>overlay2</code> should be used.</p>
-<p>You can find out more about storage drivers and how to select one in 
-  <a class="link" href="https://docs.docker.com/engine/storage/drivers/select-storage-driver/" rel="noopener">
-    Select a storage driver
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>You can find out more about storage drivers and how to select one in <a class="link" href="https://docs.docker.com/engine/storage/drivers/select-storage-driver/" rel="noopener">Select a storage driver</a>.</p>
 <p>On Windows, the Docker daemon only supports the <code>windowsfilter</code> storage driver.</p>
 
 <h3 class=" scroll-mt-20" id="options-per-storage-driver">
@@ -2306,13 +2214,7 @@ Defaults to 20G.</p>
 </h3>
 
 <p>The Docker daemon relies on a
-
-  <a class="link" href="https://github.com/opencontainers/runtime-spec" rel="noopener">
-    OCI
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> compliant runtime
+<a class="link" href="https://github.com/opencontainers/runtime-spec" rel="noopener">OCI</a> compliant runtime
 (invoked via the <code>containerd</code> daemon) as its interface to the Linux
 kernel <code>namespaces</code>, <code>cgroups</code>, and <code>SELinux</code>.</p>
 
@@ -2369,13 +2271,7 @@ runtime with <code>docker run</code> without having to edit the daemon's configu
 installed outside of <code>PATH</code>, must be registered with the daemon, either via the
 configuration file or using the <code>--add-runtime</code> command line flag.</p>
 <p>For examples on how to use other container runtimes, see
-
-  <a class="link" href="https://docs.docker.com/engine/daemon/alternative-runtimes/" rel="noopener">
-    Alternative container runtimes
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></p>
+<a class="link" href="https://docs.docker.com/engine/daemon/alternative-runtimes/" rel="noopener">Alternative container runtimes</a></p>
 
 <h5 class=" scroll-mt-20" id="configure-runtimes-using-daemonjson">
   <a class="text-black dark:text-white no-underline hover:underline" href="#configure-runtimes-using-daemonjson">
@@ -2478,8 +2374,7 @@ a <code>runtimeType</code> field and an optional <code>options</code> field.</p>
     </div>
   </div>
 </div>
-<p>See 
-  <a class="link" href="#configure-containerd-shims">Configure shims</a>.</p>
+<p>See <a class="link" href="#configure-containerd-shims">Configure shims</a>.</p>
 </li>
 <li>
 <p>If the runtime is designed to be a drop-in replacement for runc,
@@ -2527,8 +2422,7 @@ the object contains a <code>path</code> field, and an optional <code>runtimeArgs
     </div>
   </div>
 </div>
-<p>See 
-  <a class="link" href="#configure-runc-drop-in-replacements">Configure runc drop-in replacements</a>.</p>
+<p>See <a class="link" href="#configure-runc-drop-in-replacements">Configure runc drop-in replacements</a>.</p>
 </li>
 </ul>
 <p>After changing the runtimes configuration in the configuration file,
@@ -2745,13 +2639,7 @@ For example:</p>
 <p>The <code>options</code> field takes a special set of configuration parameters when used
 with <code>&quot;runtimeType&quot;: &quot;io.containerd.runc.v2&quot;</code>. For more information about runc
 parameters, refer to the runc configuration section in
-
-  <a class="link" href="https://github.com/containerd/containerd/blob/v1.7.2/docs/cri/config.md#full-configuration" rel="noopener">
-    CRI Plugin Config Guide
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://github.com/containerd/containerd/blob/v1.7.2/docs/cri/config.md#full-configuration" rel="noopener">CRI Plugin Config Guide</a>.</p>
 
 <h5 class=" scroll-mt-20" id="configure-runc-drop-in-replacements">
   <a class="text-black dark:text-white no-underline hover:underline" href="#configure-runc-drop-in-replacements">
@@ -2893,13 +2781,7 @@ runtime binary.</p>
 </div>
 <p>Defining runtime arguments via the command line is not supported.</p>
 <p>For an example configuration for a runc drop-in replacment, see
-
-  <a class="link" href="https://docs.docker.com/engine/daemon/alternative-runtimes/#youki" rel="noopener">
-    Alternative container runtimes &gt; youki
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></p>
+<a class="link" href="https://docs.docker.com/engine/daemon/alternative-runtimes/#youki" rel="noopener">Alternative container runtimes &gt; youki</a></p>
 
 <h5 class=" scroll-mt-20" id="configure-the-default-container-runtime">
   <a class="text-black dark:text-white no-underline hover:underline" href="#configure-the-default-container-runtime">
@@ -3293,13 +3175,7 @@ proxy is set up to require authentication.</li>
 </ol>
 <p>This only adds the proxy and authentication to the Docker daemon's requests.
 To use the proxy when building images and running containers, see
-
-  <a class="link" href="https://docs.docker.com/engine/cli/proxy/" rel="noopener">
-    Configure Docker to use a proxy server
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></p>
+<a class="link" href="https://docs.docker.com/engine/cli/proxy/" rel="noopener">Configure Docker to use a proxy server</a></p>
 
 <h3 class=" scroll-mt-20" id="default-ulimit-settings">
   <a class="text-black dark:text-white no-underline hover:underline" href="#default-ulimit-settings">
@@ -3313,13 +3189,7 @@ these defaults aren't set, <code>ulimit</code> settings are inherited from the D
 Any <code>--ulimit</code> options passed to <code>docker run</code> override the daemon defaults.</p>
 <p>Be careful setting <code>nproc</code> with the <code>ulimit</code> flag, as <code>nproc</code> is designed by Linux to
 set the maximum number of processes available to a user, not to a container.
-For details, see 
-  <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#ulimit" rel="noopener">
-    <code>docker run</code> reference
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+For details, see <a class="link" href="https://docs.docker.com/reference/cli/docker/container/run/#ulimit" rel="noopener"><code>docker run</code> reference</a>.</p>
 
 <h3 class=" scroll-mt-20" id="access-authorization">
   <a class="text-black dark:text-white no-underline hover:underline" href="#access-authorization">
@@ -3377,13 +3247,7 @@ command line or Docker's Engine API are allowed or denied by the plugin.
 If you have multiple plugins installed, each plugin, in order, must
 allow the request for it to complete.</p>
 <p>For information about how to create an authorization plugin, refer to the
-
-  <a class="link" href="https://docs.docker.com/engine/extend/plugins_authorization/" rel="noopener">
-    authorization plugin
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> section.</p>
+<a class="link" href="https://docs.docker.com/engine/extend/plugins_authorization/" rel="noopener">authorization plugin</a> section.</p>
 
 <h3 class=" scroll-mt-20" id="daemon-user-namespace-options">
   <a class="text-black dark:text-white no-underline hover:underline" href="#daemon-user-namespace-options">
@@ -3392,13 +3256,7 @@ allow the request for it to complete.</p>
 </h3>
 
 <p>The Linux kernel
-
-  <a class="link" href="https://man7.org/linux/man-pages/man7/user_namespaces.7.html" rel="noopener">
-    user namespace support
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://man7.org/linux/man-pages/man7/user_namespaces.7.html" rel="noopener">user namespace support</a>
 provides additional security by enabling a process, and therefore a container,
 to have a unique range of user and group IDs which are outside the traditional
 user and group range utilized by the host system. One of the most important
@@ -3407,13 +3265,7 @@ security improvements is that, by default, container processes running as the
 inside the container, but are effectively mapped to an unprivileged <code>uid</code> on
 the host.</p>
 <p>For details about how to use this feature, as well as limitations, see
-
-  <a class="link" href="https://docs.docker.com/engine/security/userns-remap/" rel="noopener">
-    Isolate containers with a user namespace
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.docker.com/engine/security/userns-remap/" rel="noopener">Isolate containers with a user namespace</a>.</p>
 
 <h3 class=" scroll-mt-20" id="configure-host-gateway-ip">
   <a class="text-black dark:text-white no-underline hover:underline" href="#configure-host-gateway-ip">
@@ -3513,13 +3365,7 @@ daemon, a single IP address can also be specified as a JSON string in option
   </blockquote>
 
 <p>Container Device Interface (CDI) is a
-
-  <a class="link" href="https://github.com/cncf-tags/container-device-interface/blob/main/SPEC.md" rel="noopener">
-    standardized
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://github.com/cncf-tags/container-device-interface/blob/main/SPEC.md" rel="noopener">standardized</a>
 mechanism for container runtimes to create containers which are able to
 interact with third party devices.</p>
 <p>The Docker daemon supports running containers with CDI devices if the requested
@@ -3582,8 +3428,7 @@ directories using the <code>docker info</code> command.</p>
   </a>
 </h4>
 
-<p>The <code>--log-format</code> option or &quot;log-format&quot; option in the 
-  <a class="link" href="#daemon-configuration-file">daemon configuration file</a>
+<p>The <code>--log-format</code> option or &quot;log-format&quot; option in the <a class="link" href="#daemon-configuration-file">daemon configuration file</a>
 lets you set the format for logs produced by the daemon. The logging format should
 only be configured either through the <code>--log-format</code> command line option or
 through the &quot;log-format&quot; field in the configuration file; using both
@@ -3760,31 +3605,13 @@ This feature is still experimental, therefore, the daemon must be running in exp
 mode for this feature to work.</p>
 <p>To serve the metrics API on <code>localhost:9323</code> you would specify <code>--metrics-addr 127.0.0.1:9323</code>,
 allowing you to make requests on the API at <code>127.0.0.1:9323/metrics</code> to receive metrics in the
-
-  <a class="link" href="https://prometheus.io/docs/instrumenting/exposition_formats/" rel="noopener">
-    prometheus
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> format.</p>
-<p>Port <code>9323</code> is the 
-  <a class="link" href="https://github.com/prometheus/prometheus/wiki/Default-port-allocations" rel="noopener">
-    default port associated with Docker
-metrics
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://prometheus.io/docs/instrumenting/exposition_formats/" rel="noopener">prometheus</a> format.</p>
+<p>Port <code>9323</code> is the <a class="link" href="https://github.com/prometheus/prometheus/wiki/Default-port-allocations" rel="noopener">default port associated with Docker
+metrics</a>
 to avoid collisions with other Prometheus exporters and services.</p>
 <p>If you are running a Prometheus server you can add this address to your scrape configs
 to have Prometheus collect metrics on Docker. For more information, see
-
-  <a class="link" href="https://docs.docker.com/engine/daemon/prometheus/" rel="noopener">
-    Collect Docker metrics with Prometheus
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.docker.com/engine/daemon/prometheus/" rel="noopener">Collect Docker metrics with Prometheus</a>.</p>
 
 <h4 class=" scroll-mt-20" id="node-generic-resources">
   <a class="text-black dark:text-white no-underline hover:underline" href="#node-generic-resources">
@@ -3848,8 +3675,7 @@ the task to run.</p>
 </h3>
 
 <p>The <code>--feature</code> option lets you enable or disable a feature in the daemon.
-This option corresponds with the &quot;features&quot; field in the 
-  <a class="link" href="#daemon-configuration-file">daemon.json configuration file</a>.
+This option corresponds with the &quot;features&quot; field in the <a class="link" href="#daemon-configuration-file">daemon.json configuration file</a>.
 Features should only be configured either through the <code>--feature</code> command line
 option or through the &quot;features&quot; field in the configuration file; using both
 the command-line option and the &quot;features&quot; field in the configuration
@@ -4203,13 +4029,7 @@ non-default location.</p>
 daemon startup as a flag.
 On systems that use systemd to start the Docker daemon, <code>-H</code> is already set, so
 you can't use the <code>hosts</code> key in <code>daemon.json</code> to add listening addresses.
-See 
-  <a class="link" href="https://docs.docker.com/engine/daemon/proxy/#systemd-unit-file" rel="noopener">
-    custom Docker daemon options
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+See <a class="link" href="https://docs.docker.com/engine/daemon/proxy/#systemd-unit-file" rel="noopener">custom Docker daemon options</a>
 for an example on how to configure the daemon using systemd drop-in files.</p>
     </div>
   </blockquote>
@@ -4365,13 +4185,7 @@ daemon features.</p>
 <p><code>containerd-snapshotter</code>: when set to <code>true</code>, the daemon uses containerd
 snapshotters instead of the classic storage drivers for storing image and
 container data. For more information, see
-
-  <a class="link" href="https://docs.docker.com/engine/storage/containerd/" rel="noopener">
-    containerd storage
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.docker.com/engine/storage/containerd/" rel="noopener">containerd storage</a>.</p>
 </li>
 <li>
 <p><code>windows-dns-proxy</code>: when set to <code>true</code>, the daemon's internal DNS resolver
@@ -4451,13 +4265,7 @@ to reconfigure itself if there are conflicts, but it won't stop execution.</p>
             <td
               class="p-2"><code>live-restore</code></td>
             <td
-              class="p-2">Toggles 
-  <a class="link" href="https://docs.docker.com/engine/containers/live-restore/" rel="noopener">
-    live restore
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</td>
+              class="p-2">Toggles <a class="link" href="https://docs.docker.com/engine/containers/live-restore/" rel="noopener">live restore</a>.</td>
         </tr>
         <tr>
             <td
@@ -4555,8 +4363,7 @@ You may encounter unsolved problems, and things may not work as expected in some
 <p>This section describes how to run multiple Docker daemons on a single host. To
 run multiple daemons, you must configure each daemon so that it doesn't
 conflict with other daemons on the same host. You can set these options either
-by providing them as flags, or by using a 
-  <a class="link" href="#daemon-configuration-file">daemon configuration file</a>.</p>
+by providing them as flags, or by using a <a class="link" href="#daemon-configuration-file">daemon configuration file</a>.</p>
 <p>The following daemon options must be configured for each daemon:</p>
 <div
   data-pagefind-ignore
@@ -4732,13 +4539,7 @@ using the <code>daemon.json</code> file.</p>
   </div>
 </div>
 <p>This example uses the <code>bridge</code> network driver. Refer to the
-
-  <a class="link" href="https://docs.docker.com/engine/network/drivers/bridge/#options" rel="noopener">
-    bridge network driver page
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://docs.docker.com/engine/network/drivers/bridge/#options" rel="noopener">bridge network driver page</a>
 for an overview of available driver options.</p>
 <p>After changing the configuration and restarting the daemon, new networks that
 you create use these option configurations as defaults.</p>

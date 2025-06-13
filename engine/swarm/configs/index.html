@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13976,8 +13976,7 @@
 such as configuration files, outside a service's image or running containers.
 This allows you to keep your images as generic as possible, without the need to
 bind-mount configuration files into the containers or use environment variables.</p>
-<p>Configs operate in a similar way to 
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/secrets/">secrets</a>, except that they are
+<p>Configs operate in a similar way to <a class="link" href="https://docker.qubitpi.org/engine/swarm/secrets/">secrets</a>, except that they are
 not encrypted at rest and are mounted directly into the container's filesystem
 without the use of RAM disks. Configs can be added or removed from a service at
 any time, and services can share a config. You can even use configs in
@@ -14039,8 +14038,7 @@ container.</p>
 <code>config://&lt;config-name&gt;</code> format.  This passes the gMSA credentials file
 directly to nodes before a container starts. No gMSA credentials are written
 to disk on worker nodes. For more information, refer to
-
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/services/#gmsa-for-swarm">Deploy services to a swarm</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/engine/swarm/services/#gmsa-for-swarm">Deploy services to a swarm</a>.</p>
 </li>
 </ul>
 
@@ -14082,8 +14080,7 @@ with access to a config, the task container still has access to its configs, but
 cannot receive updates until the node reconnects to the swarm.</p>
 <p>You can add or inspect an individual config at any time, or list all
 configs. You cannot remove a config that a running service is
-using. See 
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/configs/#example-rotate-a-config">Rotate a config</a> for a way to
+using. See <a class="link" href="https://docker.qubitpi.org/engine/swarm/configs/#example-rotate-a-config">Rotate a config</a> for a way to
 remove a config without disrupting running services.</p>
 <p>To update or roll back configs more easily, consider adding a version
 number or date to the config name. This is made easier by the ability to control
@@ -14104,26 +14101,21 @@ those remaining after a <code>docker service update --config-rm</code>.</p>
 </h2>
 
 <p>Use these links to read about specific commands, or continue to the
-
-  <a class="link" href="#advanced-example-use-configs-with-a-nginx-service">example about using configs with a service</a>.</p>
+<a class="link" href="#advanced-example-use-configs-with-a-nginx-service">example about using configs with a service</a>.</p>
 <ul>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/config/create/"><code>docker config create</code></a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/config/inspect/"><code>docker config inspect</code></a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/config/ls/"><code>docker config ls</code></a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/config/rm/"><code>docker config rm</code></a></li>
@@ -14172,7 +14164,6 @@ support configs.</p>
 However, the <code>configs</code> key is not supported for <code>docker compose</code>. See
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/legacy-versions/">the Compose file reference</a> for details.</p>
 
@@ -14184,8 +14175,7 @@ However, the <code>configs</code> key is not supported for <code>docker compose<
 
 <p>This simple example shows how configs work in just a few commands. For a
 real-world example, continue to
-
-  <a class="link" href="#advanced-example-use-configs-with-a-nginx-service">Advanced example: Use configs with a Nginx service</a>.</p>
+<a class="link" href="#advanced-example-use-configs-with-a-nginx-service">Advanced example: Use configs with a Nginx service</a>.</p>
 <ol>
 <li>
 <p>Add a config to Docker. The <code>docker config create</code> command reads standard
@@ -14970,11 +14960,9 @@ that the correct output is being served.</p>
 </h3>
 
 <p>This example is divided into two parts.
-
-  <a class="link" href="#generate-the-site-certificate">The first part</a> is all about generating
+<a class="link" href="#generate-the-site-certificate">The first part</a> is all about generating
 the site certificate and does not directly involve Docker configs at all, but
-it sets up 
-  <a class="link" href="#configure-the-nginx-container">the second part</a>, where you store
+it sets up <a class="link" href="#configure-the-nginx-container">the second part</a>, where you store
 and use the site certificate as a series of secrets and the Nginx configuration
 as a config. The example shows how to set options on the config, such as the
 target location within the container and the file permissions (<code>mode</code>).</p>
@@ -14990,17 +14978,10 @@ sites, you may want to use a service such as <code>Let’s Encrypt</code> to gen
 TLS certificate and key, but this example uses command-line tools. This step
 is a little complicated, but is only a set-up step so that you have
 something to store as a Docker secret. If you want to skip these sub-steps,
-you can 
-  <a class="link" href="https://letsencrypt.org/getting-started/" rel="noopener">
-    use Let's Encrypt
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> to
+you can <a class="link" href="https://letsencrypt.org/getting-started/" rel="noopener">use Let's Encrypt</a> to
 generate the site key and certificate, name the files <code>site.key</code> and
 <code>site.crt</code>, and skip to
-
-  <a class="link" href="#configure-the-nginx-container">Configure the Nginx container</a>.</p>
+<a class="link" href="#configure-the-nginx-container">Configure the Nginx container</a>.</p>
 <ol>
 <li>
 <p>Generate a root key.</p>

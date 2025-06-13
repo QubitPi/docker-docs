@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6368,22 +6368,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7199,6 +7183,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -14039,8 +14039,7 @@
 <li>Open the Docker Desktop Dashboard and navigate to <strong>Settings</strong>.</li>
 <li>Select the <strong>Kubernetes</strong> tab.</li>
 <li>Toggle on <strong>Enable Kubernetes</strong>.</li>
-<li>Choose your 
-  <a class="link" href="#cluster-provisioning-method">cluster provisioning method</a>.</li>
+<li>Choose your <a class="link" href="#cluster-provisioning-method">cluster provisioning method</a>.</li>
 <li>Select <strong>Apply &amp; Restart</strong> to save the settings.</li>
 </ol>
 <p>This sets up the images required to run the Kubernetes server as containers, and installs the <code>kubectl</code> command-line tool on your system at <code>/usr/local/bin/kubectl</code> (Mac) or <code>C:\Program Files\Docker\Docker\resources\bin\kubectl.exe</code> (Windows).</p>
@@ -14062,13 +14061,7 @@
       </span>
     </div>
     <div class="admonition-content">
-      <p>Docker Desktop for Linux does not include <code>kubectl</code> by default. You can install it separately by following the 
-  <a class="link" href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" rel="noopener">
-    Kubernetes installation guide
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>. Ensure the <code>kubectl</code> binary is installed at <code>/usr/local/bin/kubectl</code>.</p>
+      <p>Docker Desktop for Linux does not include <code>kubectl</code> by default. You can install it separately by following the <a class="link" href="https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/" rel="noopener">Kubernetes installation guide</a>. Ensure the <code>kubectl</code> binary is installed at <code>/usr/local/bin/kubectl</code>.</p>
     </div>
   </blockquote>
 
@@ -14123,7 +14116,6 @@ provisioners.</p>
 <p><code>kubeadm</code> is the older provisioner. It supports a single-node cluster, you can't select the kubernetes
 version, it's slower to provision than <code>kind</code>, and it's not supported by 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/enhanced-container-isolation/">Enhanced Container Isolation</a> (ECI),
 meaning that if ECI is enabled the cluster works but it's not protected by ECI.</p>
@@ -14133,8 +14125,7 @@ a more realistic Kubernetes setup), you can choose the Kubernetes version, it's
 faster to provision than <code>kubeadm</code>, and it's supported by ECI (i.e., when ECI is
 enabled, the Kubernetes cluster runs in unprivileged Docker containers, thus
 making it more secure). Note however that <code>kind</code> requires that Docker Desktop be
-configured to use the 
-  <a class="link" href="https://docker.qubitpi.org/desktop/features/containerd/">containerd image store</a> (the default image
+configured to use the <a class="link" href="https://docker.qubitpi.org/desktop/features/containerd/">containerd image store</a> (the default image
 store in Docker Desktop 4.34 and later).</p>
 <p>The following table summarizes this comparison.</p>
 <div class="overflow-x-auto">
@@ -14342,13 +14333,7 @@ pointing to some other environment, such as <code>minikube</code> or a Google Ku
 <p>If you installed <code>kubectl</code> using Homebrew, or by some other method, and
 experience conflicts, remove <code>/usr/local/bin/kubectl</code>.</p>
 <p>For more information about <code>kubectl</code>, see the
-
-  <a class="link" href="https://kubernetes.io/docs/reference/kubectl/overview/" rel="noopener">
-    <code>kubectl</code> documentation
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://kubernetes.io/docs/reference/kubectl/overview/" rel="noopener"><code>kubectl</code> documentation</a>.</p>
 
 <h2 class=" scroll-mt-20" id="upgrade-your-cluster">
   <a class="text-black dark:text-white no-underline hover:underline" href="#upgrade-your-cluster">
@@ -14381,8 +14366,7 @@ experience conflicts, remove <code>/usr/local/bin/kubectl</code>.</p>
 </h3>
 
 <p>Docker Desktop uses containers to run the Kubernetes control plane. By default, Docker Desktop pulls
-the associated container images from Docker Hub. The images pulled depend on the 
-  <a class="link" href="#cluster-provisioning-method">cluster provisioning mode</a>.</p>
+the associated container images from Docker Hub. The images pulled depend on the <a class="link" href="#cluster-provisioning-method">cluster provisioning mode</a>.</p>
 <p>For example, in <code>kind</code> mode it requires the following images:</p>
 <div
   data-pagefind-ignore
@@ -14475,8 +14459,7 @@ the associated container images from Docker Hub. The images pulled depend on the
 factors, including the version of Kubernetes being used. The tags vary for each image.</p>
 <p>To accommodate scenarios where access to Docker Hub is not allowed, admins can
 configure Docker Desktop to pull the above listed images from a different registry (e.g., a mirror)
-using the 
-  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/#kubernetes">KubernetesImagesRepository</a> setting as follows.</p>
+using the <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/#kubernetes">KubernetesImagesRepository</a> setting as follows.</p>
 <p>An image name can be broken into <code>[registry[:port]/][namespace/]repository[:tag]</code> components.
 The <code>KubernetesImagesRepository</code> setting allows users to override the <code>[registry[:port]/][namespace]</code>
 portion of the image's name.</p>
@@ -14599,10 +14582,8 @@ to set up the Kubernetes cluster. It has no effect on other Kubernetes pods.</p>
       </span>
     </div>
     <div class="admonition-content">
-      <p>When using <code>KubernetesImagesRepository</code> and 
-  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/enhanced-container-isolation/">Enhanced Container Isolation (ECI)</a>
-is enabled, add the following images to the 
-  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/#enhanced-container-isolation">ECI Docker socket mount image list</a>:</p>
+      <p>When using <code>KubernetesImagesRepository</code> and <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/enhanced-container-isolation/">Enhanced Container Isolation (ECI)</a>
+is enabled, add the following images to the <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/#enhanced-container-isolation">ECI Docker socket mount image list</a>:</p>
 <ul>
 <li>[imagesRepository]/desktop-cloud-provider-kind:*</li>
 <li>[imagesRepository]/desktop-containerd-registry-mirror:*</li>
@@ -14659,8 +14640,7 @@ ECI will block the mount and Kubernetes won't start.</p>
     </div>
   </div>
 </div>
-You can then try checking the logs of the 
-  <a class="link" href="#viewing-system-containers">Kubernetes system containers</a> if you have enabled that setting.</li>
+You can then try checking the logs of the <a class="link" href="#viewing-system-containers">Kubernetes system containers</a> if you have enabled that setting.</li>
 <li>If you're experiencing cluster issues after updating, reset your Kubernetes cluster. Resetting a Kubernetes cluster can help resolve issues by essentially reverting the cluster to a clean state, and clearing out misconfigurations, corrupted data, or stuck resources that may be causing problems. If the issue still persists, you may need to clean and purge data, and then restart Docker Desktop.</li>
 </ul>
 

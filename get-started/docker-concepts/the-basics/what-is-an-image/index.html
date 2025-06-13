@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -1512,16 +1512,9 @@
   </a>
 </h2>
 
-<p>Seeing a 
-  <a class="link" href="https://docker.qubitpi.org/get-started/docker-concepts/the-basics/what-is-a-container/">container</a> is an isolated process, where does it get its files and configuration? How do you share those environments?</p>
+<p>Seeing a <a class="link" href="https://docker.qubitpi.org/get-started/docker-concepts/the-basics/what-is-a-container/">container</a> is an isolated process, where does it get its files and configuration? How do you share those environments?</p>
 <p>That's where container images come in. A container image is a standardized package that includes all of the files, binaries, libraries, and configurations to run a container.</p>
-<p>For a 
-  <a class="link" href="https://hub.docker.com/_/postgres" rel="noopener">
-    PostgreSQL
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> image, that image will package the database binaries, config files, and other dependencies. For a Python web app, it'll include the Python runtime, your app code, and all of its dependencies.</p>
+<p>For a <a class="link" href="https://hub.docker.com/_/postgres" rel="noopener">PostgreSQL</a> image, that image will package the database binaries, config files, and other dependencies. For a Python web app, it'll include the Python runtime, your app code, and all of its dependencies.</p>
 <p>There are two important principles of images:</p>
 <ol>
 <li>
@@ -1531,13 +1524,7 @@
 <p>Container images are composed of layers. Each layer represents a set of file system changes that add, remove, or modify files.</p>
 </li>
 </ol>
-<p>These two principles let you to extend or add to existing images. For example, if you are building a Python app, you can start from the 
-  <a class="link" href="https://hub.docker.com/_/python" rel="noopener">
-    Python image
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and add additional layers to install your app's dependencies and add your code. This lets you focus on your app, rather than Python itself.</p>
+<p>These two principles let you to extend or add to existing images. For example, if you are building a Python app, you can start from the <a class="link" href="https://hub.docker.com/_/python" rel="noopener">Python image</a> and add additional layers to install your app's dependencies and add your code. This lets you focus on your app, rather than Python itself.</p>
 
 <h3 class=" scroll-mt-20" id="finding-images">
   <a class="text-black dark:text-white no-underline hover:underline" href="#finding-images">
@@ -1545,56 +1532,14 @@
   </a>
 </h3>
 
-<p>
-  <a class="link" href="https://hub.docker.com" rel="noopener">
-    Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> is the default global marketplace for storing and distributing images. It has over 100,000 images created by developers that you can run locally. You can search for Docker Hub images and run them directly from Docker Desktop.</p>
+<p><a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a> is the default global marketplace for storing and distributing images. It has over 100,000 images created by developers that you can run locally. You can search for Docker Hub images and run them directly from Docker Desktop.</p>
 <p>Docker Hub provides a variety of Docker-supported and endorsed images known as Docker Trusted Content. These provide fully managed services or great starters for your own images. These include:</p>
 <ul>
-<li>
-  <a class="link" href="https://hub.docker.com/search?q=&amp;type=image&amp;image_filter=official" rel="noopener">
-    Docker Official Images
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> - a curated set of Docker repositories, serve as the starting point for the majority of users, and are some of the most secure on Docker Hub</li>
-<li>
-  <a class="link" href="https://hub.docker.com/search?q=&amp;image_filter=store" rel="noopener">
-    Docker Verified Publishers
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> - high-quality images from commercial publishers verified by Docker</li>
-<li>
-  <a class="link" href="https://hub.docker.com/search?q=&amp;image_filter=open_source" rel="noopener">
-    Docker-Sponsored Open Source
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> - images published and maintained by open-source projects sponsored by Docker through Docker's open source program</li>
+<li><a class="link" href="https://hub.docker.com/search?q=&amp;type=image&amp;image_filter=official" rel="noopener">Docker Official Images</a> - a curated set of Docker repositories, serve as the starting point for the majority of users, and are some of the most secure on Docker Hub</li>
+<li><a class="link" href="https://hub.docker.com/search?q=&amp;image_filter=store" rel="noopener">Docker Verified Publishers</a> - high-quality images from commercial publishers verified by Docker</li>
+<li><a class="link" href="https://hub.docker.com/search?q=&amp;image_filter=open_source" rel="noopener">Docker-Sponsored Open Source</a> - images published and maintained by open-source projects sponsored by Docker through Docker's open source program</li>
 </ul>
-<p>For example, 
-  <a class="link" href="https://hub.docker.com/_/redis" rel="noopener">
-    Redis
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> and 
-  <a class="link" href="https://hub.docker.com/_/memcached" rel="noopener">
-    Memcached
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> are a few popular ready-to-go Docker Official Images. You can download these images and have these services up and running in a matter of seconds. There are also base images, like the 
-  <a class="link" href="https://hub.docker.com/_/node" rel="noopener">
-    Node.js
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> Docker image, that you can use as a starting point and add your own files and configurations.</p>
+<p>For example, <a class="link" href="https://hub.docker.com/_/redis" rel="noopener">Redis</a> and <a class="link" href="https://hub.docker.com/_/memcached" rel="noopener">Memcached</a> are a few popular ready-to-go Docker Official Images. You can download these images and have these services up and running in a matter of seconds. There are also base images, like the <a class="link" href="https://hub.docker.com/_/node" rel="noopener">Node.js</a> Docker image, that you can use as a starting point and add your own files and configurations.</p>
 
 <h2 class=" scroll-mt-20" id="try-it-out">
   <a class="text-black dark:text-white no-underline hover:underline" href="#try-it-out">
@@ -1948,7 +1893,6 @@
 <li>
 <p>Open a terminal and search for images using the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/search/"><code>docker search</code></a> command:</p>
 <div
@@ -2031,7 +1975,6 @@
 </li>
 <li>
 <p>Pull the image using the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/image/pull/"><code>docker pull</code></a> command.</p>
@@ -2136,7 +2079,6 @@
 <li>
 <p>List your downloaded images using the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/image/ls/"><code>docker image ls</code></a> command:</p>
 <div
@@ -2231,7 +2173,6 @@
 </li>
 <li>
 <p>List the image's layers using the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/image/history/"><code>docker image history</code></a> command:</p>
@@ -2359,26 +2300,17 @@
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/">Docker trusted content</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/use-desktop/images/">Explore the Image view in Docker Desktop</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/concepts/overview/">Docker Build overview</a></li>
-<li>
-  <a class="link" href="https://hub.docker.com" rel="noopener">
-    Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a></li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="next-steps">

@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13961,7 +13961,6 @@
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/install/">Installed the latest version of Docker Compose</a></li>
 <li>A basic understanding of Docker concepts and how Docker works</li>
@@ -14321,16 +14320,9 @@ the following:</p>
 <p>This Compose file defines two services: <code>web</code> and <code>redis</code>.</p>
 <p>The <code>web</code> service uses an image that's built from the <code>Dockerfile</code> in the current directory.
 It then binds the container and the host machine to the exposed port, <code>8000</code>. This example service uses the default port for the Flask web server, <code>5000</code>.</p>
-<p>The <code>redis</code> service uses a public 
-  <a class="link" href="https://registry.hub.docker.com/_/redis/" rel="noopener">
-    Redis
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<p>The <code>redis</code> service uses a public <a class="link" href="https://registry.hub.docker.com/_/redis/" rel="noopener">Redis</a>
 image pulled from the Docker Hub registry.</p>
-<p>For more information on the <code>compose.yaml</code> file, see 
-  <a class="link" href="https://docker.qubitpi.org/compose/intro/compose-application-model/">How Compose works</a>.</p>
+<p>For more information on the <code>compose.yaml</code> file, see <a class="link" href="https://docker.qubitpi.org/compose/intro/compose-application-model/">How Compose works</a>.</p>
 
 <h2 class=" scroll-mt-20" id="step-3-build-and-run-your-app-with-compose">
   <a class="text-black dark:text-white no-underline hover:underline" href="#step-3-build-and-run-your-app-with-compose">
@@ -14683,10 +14675,8 @@ hitting <code>CTRL+C</code> in the original terminal where you started the app.<
 <p>Whenever a file is changed, Compose syncs the file to the corresponding location under <code>/code</code> inside the container. Once copied, the bundler updates the running application without a restart.</p>
 <p>For more information on how Compose Watch works, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/how-tos/file-watch/">Use Compose Watch</a>. Alternatively, see 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/storage/volumes/">Manage data in containers</a> for other options.</p>
@@ -14977,7 +14967,6 @@ counter should still be incrementing.</p>
 </ol>
 <p>This is a simplified example, but it demonstrates the basic principle of <code>include</code> and how it can make it easier to modularize complex applications into sub-Compose files. For more information on <code>include</code> and working with multiple Compose files, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/">Working with multiple Compose files</a>.</p>
 
@@ -15093,30 +15082,16 @@ counter should still be incrementing.</p>
 </h2>
 
 <ul>
-<li>Try the 
-  <a class="link" href="https://github.com/docker/awesome-compose" rel="noopener">
-    Sample apps with Compose
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li>Try the <a class="link" href="https://github.com/docker/awesome-compose" rel="noopener">Sample apps with Compose</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/compose/">Explore the full list of Compose commands</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/">Explore the Compose file reference</a></li>
-<li>
-  <a class="link" href="https://www.linkedin.com/learning/learning-docker-compose/" rel="noopener">
-    Check out the Learning Docker Compose video on LinkedIn Learning
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://www.linkedin.com/learning/learning-docker-compose/" rel="noopener">Check out the Learning Docker Compose video on LinkedIn Learning</a></li>
 </ul>
 
   </article>

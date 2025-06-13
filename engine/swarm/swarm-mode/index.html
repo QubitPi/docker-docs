@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13935,8 +13935,7 @@ services managed through the <code>docker service</code> command.</p>
 <p>There are two ways to run the engine in Swarm mode:</p>
 <ul>
 <li>Create a new swarm, covered in this article.</li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/join-nodes/">Join an existing swarm</a>.</li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/swarm/join-nodes/">Join an existing swarm</a>.</li>
 </ul>
 <p>When you run the engine in Swarm mode on your local machine, you can create and
 test services based upon images you've created or other available images. In
@@ -13944,10 +13943,8 @@ your production environment, Swarm mode provides a fault-tolerant platform with
 cluster management features to keep your services running and available.</p>
 <p>These instructions assume you have installed the Docker Engine on
 a machine to serve as a manager node in your swarm.</p>
-<p>If you haven't already, read through the 
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/key-concepts/">Swarm mode key concepts</a>
-and try the 
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/swarm-tutorial/">Swarm mode tutorial</a>.</p>
+<p>If you haven't already, read through the <a class="link" href="https://docker.qubitpi.org/engine/swarm/key-concepts/">Swarm mode key concepts</a>
+and try the <a class="link" href="https://docker.qubitpi.org/engine/swarm/swarm-tutorial/">Swarm mode tutorial</a>.</p>
 
 <h2 class=" scroll-mt-20" id="create-a-swarm">
   <a class="text-black dark:text-white no-underline hover:underline" href="#create-a-swarm">
@@ -13957,7 +13954,6 @@ and try the
 
 <p>When you run the command to create a swarm, Docker Engine starts running in Swarm mode.</p>
 <p>Run 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/swarm/init/"><code>docker swarm init</code></a>
@@ -14166,10 +14162,8 @@ and <code>docker network create -d overlay net2</code> will result in <code>10.2
 all the subnets are exhausted.</p>
 <p>Refer to the following pages for more information:</p>
 <ul>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/networking/">Swarm networking</a> for more information about the default address pool usage</li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/swarm/networking/">Swarm networking</a> for more information about the default address pool usage</li>
 <li><code>docker swarm init</code> 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/swarm/init/">CLI reference</a> for more detail on the <code>--default-addr-pool</code> flag.</li>
@@ -14234,7 +14228,6 @@ you use for access from outside that region. In this case, specify the external
 address with <code>--advertise-addr</code> so that the node can propagate that information
 to other nodes that subsequently connect to it.</p>
 <p>Refer to the <code>docker swarm init</code> 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/swarm/init/">CLI reference</a>
@@ -14452,15 +14445,12 @@ nodes:</p>
 </h2>
 
 <ul>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/join-nodes/">Join nodes to a swarm</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/swarm/join-nodes/">Join nodes to a swarm</a></li>
 <li><code>swarm init</code> 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/swarm/init/">command line reference</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/engine/swarm/swarm-tutorial/">Swarm mode tutorial</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/engine/swarm/swarm-tutorial/">Swarm mode tutorial</a></li>
 </ul>
 
   </article>

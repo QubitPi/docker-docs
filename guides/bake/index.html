@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -769,21 +769,17 @@ testing, and artifact generation.</p>
 <li>Docker</li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/concepts/overview/#buildx">Buildx</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/concepts/overview/#buildkit">BuildKit</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/building/multi-stage/">Multi-stage builds</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/building/multi-platform/">Multi-platform builds</a></li>
@@ -799,7 +795,6 @@ testing, and artifact generation.</p>
 <li>You have a recent version of Docker installed on your machine.</li>
 <li>You have Git installed for cloning repositories.</li>
 <li>You're using the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/features/containerd/">containerd</a> image store.</li>
@@ -919,7 +914,6 @@ line. Here's a quick summary of the options for the <code>default</code> target:
 </li>
 <li>
 <p><code>attest</code>: 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/">Attestations</a> to attach to the image.</p>
@@ -1240,7 +1234,6 @@ stage here is based on the same base stage as the build stage.</p>
     <div class="admonition-content">
       <p>The 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/cache/optimize/#use-cache-mounts"><code>--mount=type=cache</code> directive</a>
 caches Go modules between builds, improving build performance by avoiding the
@@ -1457,7 +1450,6 @@ single invocation.</p>
 example uses Bake to build separate &quot;release&quot; and &quot;debug&quot; variants of the
 program, using 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/matrices/">matrices</a>. Using matrices lets
 you run parallel builds with different configurations, saving time and ensuring
@@ -1647,13 +1639,7 @@ set the tag depending on the matrix variable value.</p>
 <p>Finally, update the Dockerfile to consume the <code>BUILD_TAGS</code> argument during the
 compilation stage. When the <code>-tags=&quot;${BUILD_TAGS}&quot;</code> option evaluates to
 <code>-tags=&quot;debug&quot;</code>, the compiler uses the <code>configureLogging</code> function in the
-
-  <a class="link" href="https://github.com/dvdksn/bakeme/blob/75c8a41e613829293c4bd3fc3b4f0c573f458f42/debug.go#L1" rel="noopener">
-    <code>debug.go</code>
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<a class="link" href="https://github.com/dvdksn/bakeme/blob/75c8a41e613829293c4bd3fc3b4f0c573f458f42/debug.go#L1" rel="noopener"><code>debug.go</code></a>
 file.</p>
 <div
   data-pagefind-ignore
@@ -1911,7 +1897,6 @@ the <code>output</code> attribute to a local filesystem path. Buildx automatical
 that the output looks like a filepath, and exports the results to the specified
 path using the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/exporters/local-tar/">local exporter</a>.</p>
 <div
@@ -2000,13 +1985,7 @@ from the build stage.</p>
   </div>
 </div>
 <p>Now you can export your local platform version of the binary with <code>docker buildx bake bin</code>. For example, on macOS, this build target generates an
-executable in the 
-  <a class="link" href="https://en.wikipedia.org/wiki/Mach-O" rel="noopener">
-    Mach-O format
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> — the
+executable in the <a class="link" href="https://en.wikipedia.org/wiki/Mach-O" rel="noopener">Mach-O format</a> — the
 standard executable format for macOS.</p>
 <div
   data-pagefind-ignore
@@ -2049,7 +2028,6 @@ standard executable format for macOS.</p>
 </div>
 <p>Next, let's add a target to build all of the platform variants of the program.
 To do this, you can 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/inheritance/">inherit</a> the <code>bin</code>
@@ -2282,26 +2260,17 @@ deployment processes.</p>
 <ul>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/">Bake documentation</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/matrices/">Matrix targets</a></li>
 <li>
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/reference/">Bake file reference</a></li>
-<li>
-  <a class="link" href="https://github.com/docker/bake-action" rel="noopener">
-    Bake GitHub Action
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
+<li><a class="link" href="https://github.com/docker/bake-action" rel="noopener">Bake GitHub Action</a></li>
 </ul>
 
   </article>

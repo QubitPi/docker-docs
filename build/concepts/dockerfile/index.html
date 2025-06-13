@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13990,7 +13990,6 @@ Dockerfile is a text file containing instructions for building your source
 code. The Dockerfile instruction syntax is defined by the specification
 reference in the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/">Dockerfile reference</a>.</p>
 <p>Here are the most common types of instructions:</p>
@@ -14010,7 +14009,6 @@ reference in the
             <td
               class="p-2">
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#from"><code>FROM &lt;image&gt;</code></a></td>
             <td
@@ -14019,7 +14017,6 @@ reference in the
         <tr>
             <td
               class="p-2">
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#run"><code>RUN &lt;command&gt;</code></a></td>
@@ -14030,7 +14027,6 @@ reference in the
             <td
               class="p-2">
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#workdir"><code>WORKDIR &lt;directory&gt;</code></a></td>
             <td
@@ -14040,7 +14036,6 @@ reference in the
             <td
               class="p-2">
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#copy"><code>COPY &lt;src&gt; &lt;dest&gt;</code></a></td>
             <td
@@ -14049,7 +14044,6 @@ reference in the
         <tr>
             <td
               class="p-2">
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#cmd"><code>CMD &lt;command&gt;</code></a></td>
@@ -14077,7 +14071,6 @@ convention is to name these <code>&lt;something&gt;.Dockerfile</code>. You can s
 Dockerfile filename using the <code>--file</code> flag for the <code>docker build</code> command.
 Refer to the
 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/build/#file"><code>docker build</code> CLI reference</a>
@@ -14226,24 +14219,15 @@ dependencies installed and that automatically starts your application.</p>
 </div>
 <p>Here's a breakdown of what this Dockerfile does:</p>
 <ul>
-<li>
-  <a class="link" href="#dockerfile-syntax">Dockerfile syntax</a></li>
-<li>
-  <a class="link" href="#base-image">Base image</a></li>
-<li>
-  <a class="link" href="#environment-setup">Environment setup</a></li>
-<li>
-  <a class="link" href="#comments">Comments</a></li>
-<li>
-  <a class="link" href="#installing-dependencies">Installing dependencies</a></li>
-<li>
-  <a class="link" href="#copying-files">Copying files</a></li>
-<li>
-  <a class="link" href="#setting-environment-variables">Setting environment variables</a></li>
-<li>
-  <a class="link" href="#exposed-ports">Exposed ports</a></li>
-<li>
-  <a class="link" href="#starting-the-application">Starting the application</a></li>
+<li><a class="link" href="#dockerfile-syntax">Dockerfile syntax</a></li>
+<li><a class="link" href="#base-image">Base image</a></li>
+<li><a class="link" href="#environment-setup">Environment setup</a></li>
+<li><a class="link" href="#comments">Comments</a></li>
+<li><a class="link" href="#installing-dependencies">Installing dependencies</a></li>
+<li><a class="link" href="#copying-files">Copying files</a></li>
+<li><a class="link" href="#setting-environment-variables">Setting environment variables</a></li>
+<li><a class="link" href="#exposed-ports">Exposed ports</a></li>
+<li><a class="link" href="#starting-the-application">Starting the application</a></li>
 </ul>
 
 <h3 class=" scroll-mt-20" id="dockerfile-syntax">
@@ -14254,16 +14238,12 @@ dependencies installed and that automatically starts your application.</p>
 
 <p>The first line to add to a Dockerfile is a 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#syntax"><code># syntax</code> parser directive</a>.
 While optional, this directive instructs the Docker builder what syntax to use
-when parsing the Dockerfile, and allows older Docker versions with 
-  <a class="link" href="https://docker.qubitpi.org/build/buildkit/#getting-started">BuildKit enabled</a>
-to use a specific 
-  <a class="link" href="https://docker.qubitpi.org/build/buildkit/frontend/">Dockerfile frontend</a> before
+when parsing the Dockerfile, and allows older Docker versions with <a class="link" href="https://docker.qubitpi.org/build/buildkit/#getting-started">BuildKit enabled</a>
+to use a specific <a class="link" href="https://docker.qubitpi.org/build/buildkit/frontend/">Dockerfile frontend</a> before
 starting the build. 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#parser-directives">Parser directives</a>
@@ -14380,7 +14360,6 @@ the syntax before building, making sure you are using the most current version.<
 </div>
 <p>The 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#from"><code>FROM</code> instruction</a> sets your base
 image to the 22.04 release of Ubuntu. All instructions that follow are executed
@@ -14389,13 +14368,7 @@ the <code>name:tag</code> standard for naming Docker images. When you build imag
 use this notation to name your images. There are many public images you can
 leverage in your projects, by importing them into your build steps using the
 Dockerfile <code>FROM</code> instruction.</p>
-<p>
-  <a class="link" href="https://hub.docker.com/search?image_filter=official&amp;q=&amp;type=image" rel="noopener">
-    Docker Hub
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<p><a class="link" href="https://hub.docker.com/search?image_filter=official&amp;q=&amp;type=image" rel="noopener">Docker Hub</a>
 contains a large set of official images that you can use for this purpose.</p>
 
 <h3 class=" scroll-mt-20" id="environment-setup">
@@ -14444,7 +14417,6 @@ contains a large set of official images that you can use for this purpose.</p>
 </div>
 <p>This 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#run"><code>RUN</code> instruction</a> executes a
 shell in Ubuntu that updates the APT package index and installs Python tools in
@@ -14479,8 +14451,7 @@ and editors of the file, including your future self!</p>
     </div>
     <div class="admonition-content">
       <p>You might've noticed that comments are denoted using the same symbol as the
-
-  <a class="link" href="#dockerfile-syntax">syntax directive</a> on the first line of the file.
+<a class="link" href="#dockerfile-syntax">syntax directive</a> on the first line of the file.
 The symbol is only interpreted as a directive if the pattern matches a
 directive and appears at the beginning of the Dockerfile. Otherwise, it's
 treated as a comment.</p>
@@ -14545,7 +14516,6 @@ use the command to install the flask web framework.</p>
 <p>The next instruction uses the
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#copy"><code>COPY</code> instruction</a> to copy the
 <code>hello.py</code> file from the local build context into the root directory of our image.</p>
@@ -14585,8 +14555,7 @@ use the command to install the flask web framework.</p>
     </div>
   </div>
 </div>
-<p>A 
-  <a class="link" href="https://docker.qubitpi.org/build/concepts/context/">build context</a> is the set of files that you can access
+<p>A <a class="link" href="https://docker.qubitpi.org/build/concepts/context/">build context</a> is the set of files that you can access
 in Dockerfile instructions such as <code>COPY</code> and <code>ADD</code>.</p>
 <p>After the <code>COPY</code> instruction, the <code>hello.py</code> file is added to the filesystem
 of the build container.</p>
@@ -14599,7 +14568,6 @@ of the build container.</p>
 
 <p>If your application uses environment variables, you can set environment variables
 in your Docker build using the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#env"><code>ENV</code> instruction</a>.</p>
@@ -14651,7 +14619,6 @@ flask wouldn't know where to find our application to be able to run it.</p>
 
 <p>The 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#expose"><code>EXPOSE</code> instruction</a> marks that
 our final image has a service listening on port <code>8000</code>.</p>
@@ -14701,7 +14668,6 @@ team members understand what this application is doing.</p>
 </h3>
 
 <p>Finally, 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#cmd"><code>CMD</code> instruction</a> sets the
@@ -14786,7 +14752,6 @@ for example in how they trap signals like <code>SIGTERM</code> and <code>SIGKILL
 For more information about these differences, see
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/dockerfile/#shell-and-exec-form">Shell and exec form</a></p>
 
@@ -14797,8 +14762,7 @@ For more information about these differences, see
 </h2>
 
 <p>To build a container image using the Dockerfile example from the
-
-  <a class="link" href="#example">previous section</a>, you use the <code>docker build</code> command:</p>
+<a class="link" href="#example">previous section</a>, you use the <code>docker build</code> command:</p>
 <div
   data-pagefind-ignore
   x-data
@@ -14838,8 +14802,7 @@ For more information about these differences, see
 </div>
 <p>The <code>-t test:latest</code> option specifies the name and tag of the image.</p>
 <p>The single dot (<code>.</code>) at the end of the command sets the
-
-  <a class="link" href="https://docker.qubitpi.org/build/concepts/context/">build context</a> to the current directory. This means that the
+<a class="link" href="https://docker.qubitpi.org/build/concepts/context/">build context</a> to the current directory. This means that the
 build expects to find the Dockerfile and the <code>hello.py</code> file in the directory
 where the command is invoked. If those files aren't there, the build fails.</p>
 <p>After the image has been built, you can run the application as a container with
@@ -14907,13 +14870,7 @@ Docker host.</p>
     </div>
     <div class="admonition-content">
       <p>Want a better editing experience for Dockerfiles in VS Code?
-Check out the 
-  <a class="link" href="https://marketplace.visualstudio.com/items?itemName=docker.docker" rel="noopener">
-    Docker VS Code Extension (Beta)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> for linting, code navigation, and vulnerability scanning.</p>
+Check out the <a class="link" href="https://marketplace.visualstudio.com/items?itemName=docker.docker" rel="noopener">Docker VS Code Extension (Beta)</a> for linting, code navigation, and vulnerability scanning.</p>
     </div>
   </blockquote>
 

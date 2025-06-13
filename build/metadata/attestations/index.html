@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -14048,7 +14048,6 @@ lost.</p>
 a registry directly.</li>
 <li>Enable the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/desktop/features/containerd/">containerd image store</a>.</li>
 </ul>
@@ -14077,12 +14076,10 @@ a registry directly.</li>
 You can disable provenance attestations using the <code>--provenance=false</code> flag,
 or by setting the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/building/variables/#buildx_no_default_attestations"><code>BUILDX_NO_DEFAULT_ATTESTATIONS</code></a> environment variable.</p>
 <p>Using the <code>--provenance=true</code> flag attaches provenance attestations with <code>mode=min</code>
-by default. See 
-  <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/slsa-provenance/">Provenance attestation</a> for more details.</p>
+by default. See <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/slsa-provenance/">Provenance attestation</a> for more details.</p>
     </div>
   </blockquote>
 
@@ -14096,20 +14093,8 @@ index in a manifest for the final image.</p>
   </a>
 </h2>
 
-<p>BuildKit produces attestations in the 
-  <a class="link" href="https://github.com/in-toto/attestation" rel="noopener">
-    in-toto format
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
-as defined by the 
-  <a class="link" href="https://in-toto.io/" rel="noopener">
-    in-toto framework
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>,
+<p>BuildKit produces attestations in the <a class="link" href="https://github.com/in-toto/attestation" rel="noopener">in-toto format</a>,
+as defined by the <a class="link" href="https://in-toto.io/" rel="noopener">in-toto framework</a>,
 a standard supported by the Linux Foundation.</p>
 <p>Attestations attach to images as a manifest in the image index. The data records
 of the attestations are stored as JSON blobs.</p>
@@ -14222,8 +14207,7 @@ attestation.</p>
   </div>
 </div>
 <p>To deep-dive into the specifics about how attestations are stored, see
-
-  <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/attestation-storage/">Image Attestation Storage (BuildKit)</a>.</p>
+<a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/attestation-storage/">Image Attestation Storage (BuildKit)</a>.</p>
 
 <h2 class=" scroll-mt-20" id="attestation-manifest-format">
   <a class="text-black dark:text-white no-underline hover:underline" href="#attestation-manifest-format">
@@ -14300,20 +14284,13 @@ the &quot;value&quot; of the attestation.</p>
 <p>You can configure the format of the attestation manifest using the
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/exporters/image-registry/#synopsis"><code>oci-artifact</code> option</a>
 for the <code>image</code> and <code>registry</code> exporters. If set to <code>true</code>, the structure of
 the attestation manifest changes as follows:</p>
 <ul>
 <li>An <code>artifactType</code> field is added to the attestation manifest, with a value of <code>application/vnd.docker.attestation.manifest.v1+json</code>.</li>
-<li>The <code>config</code> field is an 
-  <a class="link" href="https://github.com/opencontainers/image-spec/blob/main/manifest.md#guidance-for-an-empty-descriptor" rel="noopener">
-    empty descriptor
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a> instead of a &quot;dummy&quot; config.</li>
+<li>The <code>config</code> field is an <a class="link" href="https://github.com/opencontainers/image-spec/blob/main/manifest.md#guidance-for-an-empty-descriptor" rel="noopener">empty descriptor</a> instead of a &quot;dummy&quot; config.</li>
 <li>A <code>subject</code> field is also added, pointing to the image manifest that the attestation refers to.</li>
 </ul>
 <p>The following example shows an attestation with the OCI artifact format:</p>
@@ -14391,10 +14368,8 @@ the attestation manifest changes as follows:</p>
 
 <p>Learn more about the available attestation types and how to use them:</p>
 <ul>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/slsa-provenance/">Provenance</a></li>
-<li>
-  <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/sbom/">SBOM</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/slsa-provenance/">Provenance</a></li>
+<li><a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/sbom/">SBOM</a></li>
 </ul>
 
   </article>

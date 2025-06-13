@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -779,14 +779,8 @@ for using Docker in GitHub Actions workflows.</p>
 
 <p>This guide is project-agnostic and assumes you have an application with a
 Dockerfile.</p>
-<p>If you need a sample project to follow along, you can use 
-  <a class="link" href="https://github.com/dvdksn/rpg-name-generator.git" rel="noopener">
-    this sample
-application
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>, which includes
+<p>If you need a sample project to follow along, you can use <a class="link" href="https://github.com/dvdksn/rpg-name-generator.git" rel="noopener">this sample
+application</a>, which includes
 a Dockerfile for building a containerized version of the app. Alternatively,
 use your own GitHub project or create a new repository from the template.</p>
 <div
@@ -884,7 +878,6 @@ that, you must authenticate with your Docker credentials (username and access
 token) as part of the GitHub Actions workflow.</p>
 <p>For instructions on how to create a Docker access token, see
 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/security/for-developers/access-tokens/">Create and manage access tokens</a>.</p>
@@ -1072,8 +1065,7 @@ can push your built image to the registry.</p>
     </div>
   </div>
 </div>
-<p>This step uses the Docker credentials 
-  <a class="link" href="#configure-your-github-repository">configured in the repository settings</a>.</p>
+<p>This step uses the Docker credentials <a class="link" href="#configure-your-github-repository">configured in the repository settings</a>.</p>
 
 <h2 class=" scroll-mt-20" id="build-and-push-the-image">
   <a class="text-black dark:text-white no-underline hover:underline" href="#build-and-push-the-image">
@@ -1132,7 +1124,6 @@ builds and tests images for pull requests but only pushes images for commits
 to the main branch.</li>
 <li><code>tags</code> and <code>annotations</code> use the outputs from the metadata action to apply
 consistent tags and 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/metadata/annotations/">annotations</a> to
@@ -1209,7 +1200,6 @@ provenance attestations.</li>
 </div>
 <p>For more details about attestations, refer to
 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/build/metadata/attestations/">the documentation</a>.</p>
@@ -1300,7 +1290,6 @@ using GitHub Actions. This configuration can be used as-is or extended with
 additional features based on your project's needs, such as
 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/building/multi-platform/">multi-platform</a>.</p>
 
@@ -1313,20 +1302,16 @@ additional features based on your project's needs, such as
 <ul>
 <li>Learn more about advanced configurations and examples in the 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/ci/github-actions/">Docker Build GitHub Actions</a> section.</li>
 <li>For more complex build setups, you may want to consider 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/build/bake/">Bake</a>. (See also the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/guides/bake/">Mastering Buildx Bake guide</a>.)</li>
 <li>Learn about Docker's managed build service, designed for faster, multi-platform builds, see 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/guides/docker-build-cloud/">Docker Build Cloud</a>.</li>

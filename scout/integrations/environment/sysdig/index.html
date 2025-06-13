@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6368,22 +6368,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7199,6 +7183,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7821,22 +7821,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13935,13 +13935,7 @@ builds with what's running in production.</p>
 <p>The Sysdig Agent captures the images of your container workloads. Docker Scout
 integrates with the Sysdig API to discover the images in your cluster. This
 integration uses Sysdig's Risk Spotlight feature. For more information, see
-
-  <a class="link" href="https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/" rel="noopener">
-    Risk Spotlight Integrations (Sysdig docs)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<a class="link" href="https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/" rel="noopener">Risk Spotlight Integrations (Sysdig docs)</a>.</p>
 
 
   
@@ -13981,8 +13975,7 @@ the corresponding environment. This lets you use the environment filters to see
 vulnerability status and policy compliance for an environment.</p>
 <p>Only images analyzed by Docker Scout can be assigned to an environment. The
 Sysdig runtime integration doesn't trigger image analysis by itself. To analyze
-images automatically, enable a 
-  <a class="link" href="https://docker.qubitpi.org/scout/integrations/#container-registries">registry integration</a>.</p>
+images automatically, enable a <a class="link" href="https://docker.qubitpi.org/scout/integrations/#container-registries">registry integration</a>.</p>
 <p>Image analysis must not necessarily precede the runtime integration, but the
 environment assignment only takes place once Docker Scout has analyzed the
 image.</p>
@@ -13994,20 +13987,8 @@ image.</p>
 </h2>
 
 <ul>
-<li>Install the Sysdig Agent in the cluster that you want to integrate, see 
-  <a class="link" href="https://docs.sysdig.com/en/docs/installation/sysdig-monitor/install-sysdig-agent/" rel="noopener">
-    Install Sysdig Agent (Sysdig docs)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</li>
-<li>Enable profiling for Risk Spotlight Integrations in Sysdig, see 
-  <a class="link" href="https://docs.sysdig.com/en/docs/sysdig-secure/policies/profiling/#enablement" rel="noopener">
-    Profiling (Sysdig docs)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</li>
+<li>Install the Sysdig Agent in the cluster that you want to integrate, see <a class="link" href="https://docs.sysdig.com/en/docs/installation/sysdig-monitor/install-sysdig-agent/" rel="noopener">Install Sysdig Agent (Sysdig docs)</a>.</li>
+<li>Enable profiling for Risk Spotlight Integrations in Sysdig, see <a class="link" href="https://docs.sysdig.com/en/docs/sysdig-secure/policies/profiling/#enablement" rel="noopener">Profiling (Sysdig docs)</a>.</li>
 <li>You must be an organization owner to enable the integration in the Docker Scout Dashboard.</li>
 </ul>
 
@@ -14019,13 +14000,7 @@ image.</p>
 
 <ol>
 <li>
-<p>Go to the 
-  <a class="link" href="https://scout.docker.com/settings/integrations/sysdig/" rel="noopener">
-    Sysdig integration page
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<p>Go to the <a class="link" href="https://scout.docker.com/settings/integrations/sysdig/" rel="noopener">Sysdig integration page</a>
 on the Docker Scout Dashboard.</p>
 </li>
 <li>
@@ -14040,13 +14015,7 @@ integration.</p>
 <p>Enter a Risk Spotlight API token and select the region in the drop-down list.</p>
 <p>The Risk Spotlight API token is the Sysdig token that Docker Scout needs to
 integrate with Sysdig. For more instructions on how to generate a Risk
-Spotlight token, See 
-  <a class="link" href="https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/docker-scout/#generate-a-token-for-the-integration" rel="noopener">
-    Risk Spotlight Integrations (Sysdig docs)
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+Spotlight token, See <a class="link" href="https://docs.sysdig.com/en/docs/sysdig-secure/integrations-for-sysdig-secure/risk-spotlight-integrations/docker-scout/#generate-a-token-for-the-integration" rel="noopener">Risk Spotlight Integrations (Sysdig docs)</a>.</p>
 <p>The region corresponds to the <code>global.sysdig.region</code> configuration parameter
 set when deploying the Sysdig Agent.</p>
 </li>
@@ -14076,8 +14045,7 @@ integration. Go back and verify that the configuration details are correct.</p>
 </ol>
 <p>After enabling the integration, Docker Scout automatically detects images
 running in the cluster, and assigns those images to the environment associated
-with the cluster. For more information about environments, see 
-  <a class="link" href="https://docker.qubitpi.org/scout/integrations/environment/">Environment
+with the cluster. For more information about environments, see <a class="link" href="https://docker.qubitpi.org/scout/integrations/environment/">Environment
 monitoring</a>.</p>
 
 
@@ -14098,21 +14066,14 @@ monitoring</a>.</p>
     </div>
     <div class="admonition-content">
       <p>Docker Scout only detects images that have been analyzed. To trigger an image
-analysis, enable a 
-  <a class="link" href="https://docker.qubitpi.org/scout/integrations/#container-registries">registry integration</a>
+analysis, enable a <a class="link" href="https://docker.qubitpi.org/scout/integrations/#container-registries">registry integration</a>
 and push an image to your registry.</p>
 <p>If you created a new environment for this integration, the environment
 appears in Docker Scout when at least one image has been analyzed.</p>
     </div>
   </blockquote>
 
-<p>To integrate more clusters, go to the 
-  <a class="link" href="https://scout.docker.com/settings/integrations/sysdig/" rel="noopener">
-    Sysdig integrations page
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>
+<p>To integrate more clusters, go to the <a class="link" href="https://scout.docker.com/settings/integrations/sysdig/" rel="noopener">Sysdig integrations page</a>
 and select the <strong>Add</strong> button.</p>
 
   </article>

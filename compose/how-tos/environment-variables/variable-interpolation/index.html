@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -6372,22 +6372,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/bridge/advanced-integration/"
-        title="Advanced"
-      >
-        
-  Advanced
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -7203,6 +7187,22 @@
       </a>
     </li>
 
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/desktop/setup/install/enterprise-deployment/dev-box/"
+        title="Microsoft Dev Box"
+      >
+        
+  Microsoft Dev Box
+
+      </a>
+    </li>
+
 
 
     </ul>
@@ -7825,22 +7825,6 @@
 
     </ul>
   </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/desktop/features/dev-box/"
-        title="Docker Desktop in Microsoft Dev Box"
-      >
-        
-  Docker Desktop in Microsoft Dev Box
-
-      </a>
-    </li>
 
 
 
@@ -13489,6 +13473,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-provisioning/"
+        title="Troubleshoot provisioning"
+      >
+        
+  Troubleshoot provisioning
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/troubleshoot/troubleshoot-sso/"
         title="Troubleshoot SSO"
       >
@@ -13992,10 +13992,8 @@ environment, you don't need to edit the Compose file each time, you can just set
     </div>
   </div>
 </div>
-<p>When you run <code>docker compose up</code>, the <code>web</code> service defined in the Compose file 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/">interpolates</a> in the image <code>webapp:v1.5</code> which was set in the <code>.env</code> file. You can verify this with the
+<p>When you run <code>docker compose up</code>, the <code>web</code> service defined in the Compose file <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/variable-interpolation/">interpolates</a> in the image <code>webapp:v1.5</code> which was set in the <code>.env</code> file. You can verify this with the
 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/compose/config/">config command</a>, which prints your resolved application config to the terminal:</p>
@@ -14076,7 +14074,6 @@ Both braced (<code>${VAR}</code>) and unbraced (<code>$VAR</code>) expressions a
 </ul>
 <p>For more information, see 
     
-    
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/interpolation/">Interpolation</a> in the Compose Specification.</p>
 
@@ -14102,8 +14099,7 @@ Both braced (<code>${VAR}</code>) and unbraced (<code>$VAR</code>) expressions a
 </h3>
 
 <p>An <code>.env</code> file in Docker Compose is a text file used to define variables that should be made available for interpolation when running <code>docker compose up</code>. This file typically contains key-value pairs of variables, and it lets you  centralize and manage configuration in one place. The <code>.env</code> file is useful if you have multiple variables you need to store.</p>
-<p>The <code>.env</code> file is the default method for setting variables. The <code>.env</code> file should be placed at the root of the project directory next to your <code>compose.yaml</code> file. For more information on formatting an environment file, see 
-  <a class="link" href="#env-file-syntax">Syntax for environment files</a>.</p>
+<p>The <code>.env</code> file is the default method for setting variables. The <code>.env</code> file should be placed at the root of the project directory next to your <code>compose.yaml</code> file. For more information on formatting an environment file, see <a class="link" href="#env-file-syntax">Syntax for environment files</a>.</p>
 <p>Basic example:</p>
 <div
   data-pagefind-ignore
@@ -14167,7 +14163,6 @@ Both braced (<code>${VAR}</code>) and unbraced (<code>$VAR</code>) expressions a
 <ul>
 <li>
 <p>If you define a variable in your <code>.env</code> file, you can reference it directly in your <code>compose.yaml</code> with the 
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/reference/compose-file/services/#environment"><code>environment</code> attribute</a>. For example, if your <code>.env</code> file contains the environment variable <code>DEBUG=1</code> and your <code>compose.yaml</code> file looks like this:</p>
@@ -14235,19 +14230,16 @@ Both braced (<code>${VAR}</code>) and unbraced (<code>$VAR</code>) expressions a
       </span>
     </div>
     <div class="admonition-content">
-      <p>Be aware of 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/envvars-precedence/">Environment variables precedence</a> when using variables in an <code>.env</code> file that  as environment variables in your container's environment.</p>
+      <p>Be aware of <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/envvars-precedence/">Environment variables precedence</a> when using variables in an <code>.env</code> file that  as environment variables in your container's environment.</p>
     </div>
   </blockquote>
 
 </li>
 <li>
-<p>You can place your <code>.env</code> file in a location other than the root of your project's directory, and then use the 
-  <a class="link" href="#substitute-with---env-file"><code>--env-file</code> option in the CLI</a> so Compose can navigate to it.</p>
+<p>You can place your <code>.env</code> file in a location other than the root of your project's directory, and then use the <a class="link" href="#substitute-with---env-file"><code>--env-file</code> option in the CLI</a> so Compose can navigate to it.</p>
 </li>
 <li>
-<p>Your <code>.env</code> file can be overridden by another <code>.env</code> if it is 
-  <a class="link" href="#substitute-with---env-file">substituted with <code>--env-file</code></a>.</p>
+<p>Your <code>.env</code> file can be overridden by another <code>.env</code> if it is <a class="link" href="#substitute-with---env-file">substituted with <code>--env-file</code></a>.</p>
 </li>
 </ul>
 
@@ -14638,15 +14630,8 @@ When an invalid file path is being passed as an <code>--env-file</code> argument
   </a>
 </h3>
 
-<p>An <code>.env</code> file can also be used to declare 
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/envvars/">pre-defined environment variables</a> used to control Compose behavior and files to be loaded.</p>
-<p>When executed without an explicit <code>--env-file</code> flag, Compose searches for an <code>.env</code> file in your working directory (
-  <a class="link" href="https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-PWD" rel="noopener">
-    PWD
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>) and loads values
+<p>An <code>.env</code> file can also be used to declare <a class="link" href="https://docker.qubitpi.org/compose/how-tos/environment-variables/envvars/">pre-defined environment variables</a> used to control Compose behavior and files to be loaded.</p>
+<p>When executed without an explicit <code>--env-file</code> flag, Compose searches for an <code>.env</code> file in your working directory (<a class="link" href="https://www.gnu.org/software/bash/manual/html_node/Bash-Variables.html#index-PWD" rel="noopener">PWD</a>) and loads values
 both for self-configuration and interpolation. If the values in this file define the <code>COMPOSE_FILE</code> pre-defined variable, which results in a project directory being set to another folder,
 Compose will load a second <code>.env</code> file, if present. This second <code>.env</code> file has a lower precedence.</p>
 <p>This mechanism makes it possible to invoke an existing Compose project with a custom set of variables as overrides, without the need to pass environment variables by the command line.</p>

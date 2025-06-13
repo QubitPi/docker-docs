@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.a5d4df8cb92ad37dce81d0505e5ed4df0c0430f4f14a777208bf6a87f5d13491.css"
-            integrity="sha256-pdTfjLkq033OgdBQXl7U3wwEMPTxSndyCL9qh/XRNJE="
+            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
+            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
             crossorigin="anonymous"
           />
         
@@ -887,10 +887,8 @@
 </h2>
 
 <ul>
-<li>Complete all the previous sections of this guide, starting with 
-  <a class="link" href="https://docker.qubitpi.org/guides/nodejs/containerize/">Containerize a Node.js application</a>.</li>
+<li>Complete all the previous sections of this guide, starting with <a class="link" href="https://docker.qubitpi.org/guides/nodejs/containerize/">Containerize a Node.js application</a>.</li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/features/kubernetes/#install-and-turn-on-kubernetes">Turn on Kubernetes</a> in Docker Desktop.</li>
@@ -916,8 +914,7 @@ before deploying.</p>
 <p>In the cloned repository's directory, create a file named
 <code>docker-node-kubernetes.yaml</code>. Open the file in an IDE or text editor and add
 the following contents. Replace <code>DOCKER_USERNAME/REPO_NAME</code> with your Docker
-username and the name of the repository that you created in 
-  <a class="link" href="https://docker.qubitpi.org/guides/nodejs/configure-ci-cd/">Configure CI/CD for
+username and the name of the repository that you created in <a class="link" href="https://docker.qubitpi.org/guides/nodejs/configure-ci-cd/">Configure CI/CD for
 your Node.js application</a>.</p>
 <div
   data-pagefind-ignore
@@ -992,20 +989,13 @@ your Node.js application</a>.</p>
 <li>A Deployment, describing a scalable group of identical pods. In this case,
 you'll get just one replica, or copy of your pod. That pod, which is
 described under <code>template</code>, has just one container in it. The container is
-created from the image built by GitHub Actions in 
-  <a class="link" href="https://docker.qubitpi.org/guides/nodejs/configure-ci-cd/">Configure CI/CD for your
+created from the image built by GitHub Actions in <a class="link" href="https://docker.qubitpi.org/guides/nodejs/configure-ci-cd/">Configure CI/CD for your
 Node.js application</a>.</li>
 <li>A NodePort service, which will route traffic from port 30001 on your host to
 port 3000 inside the pods it routes to, allowing you to reach your app
 from the network.</li>
 </ul>
-<p>To learn more about Kubernetes objects, see the 
-  <a class="link" href="https://kubernetes.io/docs/home/" rel="noopener">
-    Kubernetes documentation
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a>.</p>
+<p>To learn more about Kubernetes objects, see the <a class="link" href="https://kubernetes.io/docs/home/" rel="noopener">Kubernetes documentation</a>.</p>
 
 <h2 class=" scroll-mt-20" id="deploy-and-check-your-application">
   <a class="text-black dark:text-white no-underline hover:underline" href="#deploy-and-check-your-application">
@@ -1304,20 +1294,12 @@ application.</p>
 <p>In this section, you learned how to use Docker Desktop to deploy your application to a fully-featured Kubernetes environment on your development machine.</p>
 <p>Related information:</p>
 <ul>
+<li><a class="link" href="https://kubernetes.io/docs/home/" rel="noopener">Kubernetes documentation</a></li>
 <li>
-  <a class="link" href="https://kubernetes.io/docs/home/" rel="noopener">
-    Kubernetes documentation
-    <span class="pl-1 icon-svg icon-sm">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h249q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5H180v600h600v-249q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v249q0 24-18 42t-42 18H180Zm600-617L403-360q-9 9-21 8.5t-21-9.5q-9-9-9-21t9-21l377-377H549q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h261q12.75 0 21.38 8.62Q840-822.75 840-810v261q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-188Z"/></svg>
-    </span>
-  </a></li>
-<li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/desktop/features/kubernetes/">Deploy on Kubernetes with Docker Desktop</a></li>
 <li>
-    
     
   
   <a class="link" href="https://docker.qubitpi.org/engine/swarm/">Swarm mode overview</a></li>
