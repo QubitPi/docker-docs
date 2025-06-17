@@ -17,6 +17,8 @@ know.
 
 - [Develop and test AWS Cloud applications using LocalStack and Docker](https://docs.docker.com/guides/localstack/)
 
+- [Introduction to Azure Pipelines with Docker](https://docs.docker.com/guides/azure-pipelines/)
+
 - [Building Compose projects with Bake](https://docs.docker.com/guides/compose-bake/)
 
 - [Bun language-specific guide](https://docs.docker.com/guides/bun/)

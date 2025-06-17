@@ -39,6 +39,8 @@ subscription management for organizations.
 
 - [Docker Engine](https://docs.docker.com/engine/)
 
+- [Docker Hardened Images](https://docs.docker.com/dhi/)
+
 - [Billing and payments](https://docs.docker.com/billing/)
 
 - [Docker Build](https://docs.docker.com/build/)

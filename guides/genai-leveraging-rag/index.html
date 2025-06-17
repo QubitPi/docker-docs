@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.c15af1eab436e4087b5636ad19b646c3960b20580547e1ef1001be84c38850ea.css"
-            integrity="sha256-wVrx6rQ25Ah7VjatGbZGw5YLIFgFR&#43;HvEAG&#43;hMOIUOo="
+            href="/css/style.c0e619703a74e4e64f1b5e4c5c0276615a85225388705736a57d42ab7cad297a.css"
+            integrity="sha256-wOYZcDp05OZPG15MXAJ2YVqFIlOIcFc2pX1Cq3ytKXo="
             crossorigin="anonymous"
           />
         
@@ -799,7 +799,6 @@
 <ol>
 <li>Questions get turned into mathematical patterns that capture their meaning</li>
 <li>These patterns help find matching information in a database</li>
-<li>The found information gets added to the original question before passed to LLM</li>
 <li>The LLM generates responses that blend the model's inherent knowledge with the this extra information.</li>
 </ol>
 <p>To hold this vector information in an efficient manner, we need a special type of database.</p>
@@ -924,11 +923,45 @@
   </div>
 </div>
 <p>In the <code>.env</code> file, make sure following lines are commented out. Set your own credentials for security</p>
-<pre><code>NEO4J_URI=neo4j://database:7687
-NEO4J_USERNAME=neo4j
-NEO4J_PASSWORD=password
-OLLAMA_BASE_URL=http://llm-gpu:11434
-</code></pre>
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
+  
+  <div class="relative w-full">
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'ICBORU80Sl9VUkk9bmVvNGo6Ly9kYXRhYmFzZTo3Njg3CiAgTkVPNEpfVVNFUk5BTUU9bmVvNGoKICBORU80Sl9QQVNTV09SRD1wYXNzd29yZAogIE9MTEFNQV9CQVNFX1VSTD1odHRwOi8vbGxtLWdwdToxMTQzNA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+      >
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">  NEO4J_URI=neo4j://database:7687
+</span></span><span class="line"><span class="cl">  NEO4J_USERNAME=neo4j
+</span></span><span class="line"><span class="cl">  NEO4J_PASSWORD=password
+</span></span><span class="line"><span class="cl">  OLLAMA_BASE_URL=http://llm-gpu:11434</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
 
 <h3 class=" scroll-mt-20" id="cpu-powered">
   <a class="text-black dark:text-white no-underline hover:underline" href="#cpu-powered">
@@ -976,11 +1009,45 @@ OLLAMA_BASE_URL=http://llm-gpu:11434
   </div>
 </div>
 <p>In the <code>.env</code> file, make sure following lines are commented out. Set your own credentials for security</p>
-<pre><code>NEO4J_URI=neo4j://database:7687
-NEO4J_USERNAME=neo4j
-NEO4J_PASSWORD=password
-OLLAMA_BASE_URL=http://llm:11434
-</code></pre>
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
+  
+  <div class="relative w-full">
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'ICBORU80Sl9VUkk9bmVvNGo6Ly9kYXRhYmFzZTo3Njg3CiAgTkVPNEpfVVNFUk5BTUU9bmVvNGoKICBORU80Sl9QQVNTV09SRD1wYXNzd29yZAogIE9MTEFNQV9CQVNFX1VSTD1odHRwOi8vbGxtOjExNDM0', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+      >
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">  NEO4J_URI=neo4j://database:7687
+</span></span><span class="line"><span class="cl">  NEO4J_USERNAME=neo4j
+</span></span><span class="line"><span class="cl">  NEO4J_PASSWORD=password
+</span></span><span class="line"><span class="cl">  OLLAMA_BASE_URL=http://llm:11434</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
 
 <h3 class=" scroll-mt-20" id="setting-up-on-other-platforms">
   <a class="text-black dark:text-white no-underline hover:underline" href="#setting-up-on-other-platforms">
@@ -1042,15 +1109,47 @@ OLLAMA_BASE_URL=http://llm:11434
   </div>
 </div>
 <p>Wait for specific lines in the logs indicating that the download is complete and the stack is ready. These lines typically confirm successful setup and initialization.</p>
-<pre><code>pull-model-1 exited with code 0
-database-1    | 2024-12-29 09:35:53.269+0000 INFO  Started.
-pdf_bot-1     |   You can now view your Streamlit app in your browser.
-loader-1      |   You can now view your Streamlit app in your browser.
-bot-1         |   You can now view your Streamlit app in your browser.
-
-
-You can now access the interface at [http://localhost:8501/](http://localhost:8501/) to ask questions. For example, you can try the sample question:
-</code></pre>
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
+  
+  <div class="relative w-full">
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'ICBwdWxsLW1vZGVsLTEgZXhpdGVkIHdpdGggY29kZSAwCiAgZGF0YWJhc2UtMSAgICB8IDIwMjQtMTItMjkgMDk6MzU6NTMuMjY5KzAwMDAgSU5GTyAgU3RhcnRlZC4KICBwZGZfYm90LTEgICAgIHwgICBZb3UgY2FuIG5vdyB2aWV3IHlvdXIgU3RyZWFtbGl0IGFwcCBpbiB5b3VyIGJyb3dzZXIuCiAgbG9hZGVyLTEgICAgICB8ICAgWW91IGNhbiBub3cgdmlldyB5b3VyIFN0cmVhbWxpdCBhcHAgaW4geW91ciBicm93c2VyLgogIGJvdC0xICAgICAgICAgfCAgIFlvdSBjYW4gbm93IHZpZXcgeW91ciBTdHJlYW1saXQgYXBwIGluIHlvdXIgYnJvd3Nlci4=', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+      >
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">  pull-model-1 exited with code 0
+</span></span><span class="line"><span class="cl">  database-1    | 2024-12-29 09:35:53.269+0000 INFO  Started.
+</span></span><span class="line"><span class="cl">  pdf_bot-1     |   You can now view your Streamlit app in your browser.
+</span></span><span class="line"><span class="cl">  loader-1      |   You can now view your Streamlit app in your browser.
+</span></span><span class="line"><span class="cl">  bot-1         |   You can now view your Streamlit app in your browser.</span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>You can now access the interface at <a class="link" href="http://localhost:8501/" rel="noopener">http://localhost:8501/</a> to ask questions. For example, you can try the sample question:</p>
 <p>When we see those lines in the logs, web apps are ready to be used.</p>
 <p>Since our goal is to teach AI about things it does not yet know, we begin by asking it a simple question about Nifi at
 <a class="link" href="http://localhost:8501/" rel="noopener">http://localhost:8501/</a>.
@@ -1112,7 +1211,7 @@ You can now access the interface at [http://localhost:8501/](http://localhost:85
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'UXVlc3Rpb246IFdoYXQgaXMgQXBhY2hlIE5pZmk/IApSQUc6IERpc2FibGVkCkhlbGxvISBJJ20gaGVyZSB0byBoZWxwIHlvdSB3aXRoIHlvdXIgcXVlc3Rpb24gYWJvdXQgQXBhY2hlIE5pRmkuIFVuZm9ydHVuYXRlbHksIEkgZG9uJ3Qga25vdyB0aGUgYW5zd2VyIHRvIHRoYXQgcXVlc3Rpb24uIEknbSBqdXN0IGFuIEFJIGFuZCBteSBrbm93bGVkZ2UgY3V0b2ZmIGlzIERlY2VtYmVyIDIwMjIsIHNvIEkgbWF5IG5vdCBiZSBmYW1pbGlhciB3aXRoIHRoZSBsYXRlc3QgdGVjaG5vbG9naWVzIG9yIHNvZnR3YXJlLiBDYW4geW91IHBsZWFzZSBwcm92aWRlIG1vcmUgY29udGV4dCBvciBkZXRhaWxzIGFib3V0IEFwYWNoZSBOaUZpPyBNYXliZSB0aGVyZSdzIHNvbWV0aGluZyBJIGNhbiBoZWxwIHlvdSB3aXRoIHJlbGF0ZWQgdG8gaXQu', copying: false }"
+        x-data="{ code: 'UXVlc3Rpb246IFdoYXQgaXMgQXBhY2hlIE5pZmk/ClJBRzogRGlzYWJsZWQKSGVsbG8hIEknbSBoZXJlIHRvIGhlbHAgeW91IHdpdGggeW91ciBxdWVzdGlvbiBhYm91dCBBcGFjaGUgTmlGaS4gVW5mb3J0dW5hdGVseSwgSSBkb24ndCBrbm93IHRoZSBhbnN3ZXIgdG8gdGhhdCBxdWVzdGlvbi4gSSdtIGp1c3QgYW4gQUkgYW5kIG15IGtub3dsZWRnZSBjdXRvZmYgaXMgRGVjZW1iZXIgMjAyMiwgc28gSSBtYXkgbm90IGJlIGZhbWlsaWFyIHdpdGggdGhlIGxhdGVzdCB0ZWNobm9sb2dpZXMgb3Igc29mdHdhcmUuIENhbiB5b3UgcGxlYXNlIHByb3ZpZGUgbW9yZSBjb250ZXh0IG9yIGRldGFpbHMgYWJvdXQgQXBhY2hlIE5pRmk/IE1heWJlIHRoZXJlJ3Mgc29tZXRoaW5nIEkgY2FuIGhlbHAgeW91IHdpdGggcmVsYXRlZCB0byBpdC4=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -1131,7 +1230,7 @@ You can now access the interface at [http://localhost:8501/](http://localhost:85
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Question: What is Apache Nifi? 
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Question: What is Apache Nifi?
 </span></span><span class="line"><span class="cl">RAG: Disabled
 </span></span><span class="line"><span class="cl">Hello! I&#39;m here to help you with your question about Apache NiFi. Unfortunately, I don&#39;t know the answer to that question. I&#39;m just an AI and my knowledge cutoff is December 2022, so I may not be familiar with the latest technologies or software. Can you please provide more context or details about Apache NiFi? Maybe there&#39;s something I can help you with related to it.</span></span></code></pre></div>
       
@@ -1219,9 +1318,9 @@ You can now access the interface at [http://localhost:8501/](http://localhost:85
         >
       </button>
       
-        <pre tabindex="0"><code class="language-cypher" data-lang="cypher">MATCH (n)
-RETURN DISTINCT labels(n) AS NodeTypes, count(*) AS Count
-ORDER BY Count DESC;</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">MATCH (n)
+</span></span><span class="line"><span class="cl">RETURN DISTINCT labels(n) AS NodeTypes, count(*) AS Count
+</span></span><span class="line"><span class="cl">ORDER BY Count DESC;</span></span></code></pre></div>
       
     </div>
   </div>
@@ -1305,7 +1404,7 @@ ORDER BY Count DESC;</code></pre>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-cypher" data-lang="cypher">CALL db.schema.visualization()</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">CALL db.schema.visualization()</span></span></code></pre></div>
       
     </div>
   </div>
@@ -1342,7 +1441,7 @@ ORDER BY Count DESC;</code></pre>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-cypher" data-lang="cypher">CALL db.relationshipTypes()</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">CALL db.relationshipTypes()</span></span></code></pre></div>
       
     </div>
   </div>
@@ -1406,7 +1505,7 @@ ORDER BY Count DESC;</code></pre>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'UXVlc3Rpb246IFdoYXQgaXMgQXBhY2hlIE5pZmk/IApSQUc6IEVuYWJsZWQKCkFuc3dlcjoKQXBhY2hlIE5pRmkgaXMgYW4gb3Blbi1zb3VyY2UsIGRpc3RyaWJ1dGVkIGRhdGEgcHJvY2Vzc2luZyBzeXN0ZW0gdGhhdCBhbGxvd3MgeW91IHRvIGNvbGxlY3QsIHRyYW5zZm9ybSwgYW5kIHRyYW5zcG9ydCBkYXRhIGFjcm9zcyB2YXJpb3VzIHNvdXJjZXMgYW5kIHNpbmtzLiBJdCBwcm92aWRlcyBhIGdyYXBoaWNhbCB1c2VyIGludGVyZmFjZSBmb3IgZGVzaWduaW5nIGFuZCBtYW5hZ2luZyBkYXRhIGZsb3dzLCBhcyB3ZWxsIGFzIGEgc2V0IG9mIEFQSXMgZm9yIGludGVncmF0aW5nIHdpdGggb3RoZXIgc3lzdGVtcy4KQWNjb3JkaW5nIHRvIHRoaXMgU3RhY2sgT3ZlcmZsb3cgcXVlc3Rpb24sIHRoZSBmcmVlIE5lbzRKIEpEQkMgZHJpdmVyIGRvZXNuJ3QgdW5kZXJzdGFuZCBTUUwsIG9ubHkgQ3lwaGVyLCBzbyB5b3Ugd291bGQgbmVlZCB0byB1c2UgYSBub24tZnJlZSBCSSBDb25uZWN0b3IgdG8gY29ubmVjdCB0byBOZW80aiBmcm9tIEFwYWNoZSBEcmlsbC4KQWRkaXRpb25hbGx5LCB0aGlzIFN0YWNrIE92ZXJmbG93IHF1ZXN0aW9uIHN1Z2dlc3RzIHRoYXQgQXBhY2hlIFBPSSBkb2VzIHdvcmsgaW4gYSBOZW80aiBVc2VyIERlZmluZWQgRnVuY3Rpb24uIEhvd2V2ZXIsIHRoZXJlIG1heSBiZSBhbiB1bmtub3duIGdsaXRjaCBpbiB0aGUgc3RhbmRhbG9uZSBVREYgbWVudGlvbmVkIGluIHRoZSBpbml0aWFsIHF1ZXN0aW9uLgpUbyBleHBvcnQgZGF0YSBmcm9tIE5lbzRqIHRvIEV4Y2VsIHVzaW5nIEFQT0MgRXh0ZW5kZWQgcHJvY2VkdXJlcywgeW91IGNhbiB1c2UgYXBvYy5leHBvcnQueGxzLnF1ZXJ5IHdoaWNoIHRha2VzIGEgQ3lwaGVyIHF1ZXJ5IGFuZCBleHBvcnRzIHRoZSByZXN1bHRzIHRvIGFuIEV4Y2VsIGZpbGUuCgpSZWZlcmVuY2VzOgpIb3cgdG8gY29ubmVjdCBhbmQgcXVlcnkgTmVvNGogRGF0YWJhc2Ugb24gQXBhY2hlIERyaWxsPwpJcyBhIE5lbzRqIFVERiBjb21wYXRpYmxlIHdpdGggQXBhY2hlIFBPST8=', copying: false }"
+        x-data="{ code: 'UXVlc3Rpb246IFdoYXQgaXMgQXBhY2hlIE5pZmk/ClJBRzogRW5hYmxlZAoKQW5zd2VyOgpBcGFjaGUgTmlGaSBpcyBhbiBvcGVuLXNvdXJjZSwgZGlzdHJpYnV0ZWQgZGF0YSBwcm9jZXNzaW5nIHN5c3RlbSB0aGF0IGFsbG93cyB5b3UgdG8gY29sbGVjdCwgdHJhbnNmb3JtLCBhbmQgdHJhbnNwb3J0IGRhdGEgYWNyb3NzIHZhcmlvdXMgc291cmNlcyBhbmQgc2lua3MuIEl0IHByb3ZpZGVzIGEgZ3JhcGhpY2FsIHVzZXIgaW50ZXJmYWNlIGZvciBkZXNpZ25pbmcgYW5kIG1hbmFnaW5nIGRhdGEgZmxvd3MsIGFzIHdlbGwgYXMgYSBzZXQgb2YgQVBJcyBmb3IgaW50ZWdyYXRpbmcgd2l0aCBvdGhlciBzeXN0ZW1zLgpBY2NvcmRpbmcgdG8gdGhpcyBTdGFjayBPdmVyZmxvdyBxdWVzdGlvbiwgdGhlIGZyZWUgTmVvNEogSkRCQyBkcml2ZXIgZG9lc24ndCB1bmRlcnN0YW5kIFNRTCwgb25seSBDeXBoZXIsIHNvIHlvdSB3b3VsZCBuZWVkIHRvIHVzZSBhIG5vbi1mcmVlIEJJIENvbm5lY3RvciB0byBjb25uZWN0IHRvIE5lbzRqIGZyb20gQXBhY2hlIERyaWxsLgpBZGRpdGlvbmFsbHksIHRoaXMgU3RhY2sgT3ZlcmZsb3cgcXVlc3Rpb24gc3VnZ2VzdHMgdGhhdCBBcGFjaGUgUE9JIGRvZXMgd29yayBpbiBhIE5lbzRqIFVzZXIgRGVmaW5lZCBGdW5jdGlvbi4gSG93ZXZlciwgdGhlcmUgbWF5IGJlIGFuIHVua25vd24gZ2xpdGNoIGluIHRoZSBzdGFuZGFsb25lIFVERiBtZW50aW9uZWQgaW4gdGhlIGluaXRpYWwgcXVlc3Rpb24uClRvIGV4cG9ydCBkYXRhIGZyb20gTmVvNGogdG8gRXhjZWwgdXNpbmcgQVBPQyBFeHRlbmRlZCBwcm9jZWR1cmVzLCB5b3UgY2FuIHVzZSBhcG9jLmV4cG9ydC54bHMucXVlcnkgd2hpY2ggdGFrZXMgYSBDeXBoZXIgcXVlcnkgYW5kIGV4cG9ydHMgdGhlIHJlc3VsdHMgdG8gYW4gRXhjZWwgZmlsZS4KClJlZmVyZW5jZXM6CkhvdyB0byBjb25uZWN0IGFuZCBxdWVyeSBOZW80aiBEYXRhYmFzZSBvbiBBcGFjaGUgRHJpbGw/CklzIGEgTmVvNGogVURGIGNvbXBhdGlibGUgd2l0aCBBcGFjaGUgUE9JPw==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -1425,7 +1524,7 @@ ORDER BY Count DESC;</code></pre>
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Question: What is Apache Nifi? 
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Question: What is Apache Nifi?
 </span></span><span class="line"><span class="cl">RAG: Enabled
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">Answer:
@@ -1474,8 +1573,8 @@ ORDER BY Count DESC;</code></pre>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-cypher" data-lang="cypher">MATCH (n)
-DETACH DELETE n;</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-txt" data-lang="txt"><span class="line"><span class="cl">MATCH (n)
+</span></span><span class="line"><span class="cl">DETACH DELETE n;</span></span></code></pre></div>
       
     </div>
   </div>
