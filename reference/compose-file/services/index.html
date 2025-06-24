@@ -9800,6 +9800,11 @@
           >
         </li>
         <li>
+          <a class="link lg:no-underline" href="#use_api_socket"
+            ><code>use_api_socket</code></a
+          >
+        </li>
+        <li>
           <a class="link lg:no-underline" href="#user"
             ><code>user</code></a
           >
@@ -16203,6 +16208,16 @@ or as mapping for soft/hard limits.</p>
   </div>
 </div>
 
+<h3 class=" scroll-mt-20" id="use_api_socket">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#use_api_socket">
+    <code>use_api_socket</code>
+  </a>
+</h3>
+
+<p>When <code>use_api_socket</code> is set, the container is able to interact with the underlying container engine through the API socket.
+Your credentials are mounted inside the container so the container acts as a pure delegate for your commands relating to the container engine.
+Typically, commands ran by container can <code>pull</code> and <code>push</code> to your registry.</p>
+
 <h3 class=" scroll-mt-20" id="user">
   <a class="text-black dark:text-white no-underline hover:underline" href="#user">
     <code>user</code>
@@ -17187,6 +17202,11 @@ read-only access <code>ro</code> or read-write <code>rw</code>. If no access lev
         <li>
           <a class="link lg:no-underline" href="#ulimits"
             ><code>ulimits</code></a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#use_api_socket"
+            ><code>use_api_socket</code></a
           >
         </li>
         <li>
