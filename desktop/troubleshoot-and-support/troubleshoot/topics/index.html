@@ -14834,6 +14834,14 @@
   </ul>
   </ul>
         <li>
+          <a class="link lg:no-underline" href="#docker-desktop-with-windows-containers-fails-with-the-media-is-write-protected"
+            >Docker Desktop with Windows Containers fails with &quot;The media is write protected&quot;&quot;</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#docker-desktop-access-denied-error-message-when-starting-docker-desktop"
             ><code>Docker Desktop Access Denied</code> error message when starting Docker Desktop</a
           >
@@ -16363,6 +16371,69 @@ Virtual Box) and video game installers turn off hypervisor on boot. To turn it b
   
   <a class="link" href="https://docker.qubitpi.org/desktop/setup/vm-vdi/#turn-on-nested-virtualization">enabling nested virtualization</a>.</p>
 
+<h3 class=" scroll-mt-20" id="docker-desktop-with-windows-containers-fails-with-the-media-is-write-protected">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#docker-desktop-with-windows-containers-fails-with-the-media-is-write-protected">
+    Docker Desktop with Windows Containers fails with &quot;The media is write protected&quot;&quot;
+  </a>
+</h3>
+
+
+<h4 class=" scroll-mt-20" id="error-message-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#error-message-5">
+    Error message
+  </a>
+</h4>
+
+<p><code>FSCTL_EXTEND_VOLUME \\?\Volume{GUID}: The media is write protected</code></p>
+
+<h4 class=" scroll-mt-20" id="cause-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-14">
+    Cause
+  </a>
+</h4>
+
+<p>If you're encountering failures when running Docker Desktop with Windows Containers, it might be due to
+a specific Windows configuration policy: FDVDenyWriteAccess.</p>
+<p>This policy, when enabled, causes Windows to mount all fixed drives not encrypted by BitLocker-encrypted as read-only.
+This also affects virtual machine volumes and as a result, Docker Desktop may not be able to start or run containers
+correctly because it requires read-write access to these volumes.</p>
+<p>FDVDenyWriteAccess is a Windows Group Policy setting that, when enabled, prevents write access to fixed data drives that are not protected
+by BitLocker. This is often used in security-conscious environments but can interfere with development tools like Docker.
+In the Windows registry it can be found at <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Policies\Microsoft\FVE\FDVDenyWriteAccess</code>.</p>
+
+<h4 class=" scroll-mt-20" id="solutions-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#solutions-1">
+    Solutions
+  </a>
+</h4>
+
+<p>Docker Desktop does not support running Windows Containers on systems where FDVDenyWriteAccess is enabled. This setting interferes with the
+ability of Docker to mount volumes correctly, which is critical for container functionality.</p>
+<p>To use Docker Desktop with Windows Containers, ensure that FDVDenyWriteAccess is disabled. You can check and change this setting in the registry or through Group Policy Editor (<code>gpedit.msc</code>) under:</p>
+<p><strong>Computer Configuration</strong> &gt; <strong>Administrative Templates</strong> &gt; <strong>Windows Components</strong> &gt; <strong>BitLocker Drive Encryption</strong> &gt; <strong>Fixed Data Drives</strong> &gt; <strong>Deny write access to fixed drives not protected by BitLocker</strong></p>
+
+
+  
+
+  <blockquote
+    
+    class="admonition admonition-note admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>
+      <span class="admonition-title">
+        Note
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>Modifying Group Policy settings may require administrator privileges and should comply with your organization's IT policies. If the setting gets reset after some time this usually means that it was overriden by the centralized configuration of your IT department. Talk to them before making any changes.</p>
+    </div>
+  </blockquote>
+
+
 <h3 class=" scroll-mt-20" id="docker-desktop-access-denied-error-message-when-starting-docker-desktop">
   <a class="text-black dark:text-white no-underline hover:underline" href="#docker-desktop-access-denied-error-message-when-starting-docker-desktop">
     <code>Docker Desktop Access Denied</code> error message when starting Docker Desktop
@@ -16370,8 +16441,8 @@ Virtual Box) and video game installers turn off hypervisor on boot. To turn it b
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="error-message-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#error-message-5">
+<h4 class=" scroll-mt-20" id="error-message-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#error-message-6">
     Error message
   </a>
 </h4>
@@ -16414,8 +16485,8 @@ Virtual Box) and video game installers turn off hypervisor on boot. To turn it b
   </div>
 </div>
 
-<h4 class=" scroll-mt-20" id="cause-14">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-14">
+<h4 class=" scroll-mt-20" id="cause-15">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#cause-15">
     Cause
   </a>
 </h4>
@@ -16649,6 +16720,14 @@ Virtual Box) and video game installers turn off hypervisor on boot. To turn it b
         
   <ul class="pl-2">
   </ul>
+  </ul>
+        <li>
+          <a class="link lg:no-underline" href="#docker-desktop-with-windows-containers-fails-with-the-media-is-write-protected"
+            >Docker Desktop with Windows Containers fails with &quot;The media is write protected&quot;&quot;</a
+          >
+        </li>
+        
+  <ul class="pl-2">
   </ul>
         <li>
           <a class="link lg:no-underline" href="#docker-desktop-access-denied-error-message-when-starting-docker-desktop"

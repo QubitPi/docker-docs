@@ -51,6 +51,27 @@ on:
       - main
 
 jobs:
+  lint-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run pre-commit hooks
+        run: pre-commit run --all-files
+
+      - name: Run pyright
+        run: pyright
+
   build_and_push:
     runs-on: ubuntu-latest
     steps:
@@ -88,7 +109,11 @@ When the workflow is complete, go to your [repositories on Docker Hub](https://h
 
 ## Summary
 
-In this section, you learned how to set up a GitHub Actions workflow for your Python application.
+In this section, you learned how to set up a GitHub Actions workflow for your Python application that includes:
+
+- Running pre-commit hooks for linting and formatting
+- Static type checking with Pyright
+- Building and pushing Docker images
 
 Related information:
 
@@ -98,5 +123,5 @@ Related information:
 
 ## Next steps
 
-In the next section, you'll learn how you can develop your application using containers.
+In the next section, you'll learn how you can develop locally using kubernetes.
 
