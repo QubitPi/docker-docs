@@ -14674,13 +14674,18 @@
             >Deprecated engine features</a
           >
         </li>
+        
+  <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#emptynil-fields-in-image-config-from-inspect-api"
+            >Empty/nil fields in image Config from inspect API</a
+          >
+        </li>
         <li>
           <a class="link lg:no-underline" href="#configuration-for-pushing-non-distributable-artifacts"
             >Configuration for pushing non-distributable artifacts</a
           >
         </li>
-        
-  <ul class="pl-2">
         <li>
           <a class="link lg:no-underline" href="#--time-option-on-docker-stop-and-docker-restart"
             ><code>--time</code> option on <code>docker stop</code> and <code>docker restart</code></a
@@ -15081,6 +15086,16 @@ printed, and users should not rely on this feature.</p>
         </tr>
     </thead>
     <tbody>
+        <tr>
+            <td
+              class="p-2">Deprecated</td>
+            <td
+              class="p-2"><a class="link" href="#emptynil-fields-in-image-config-from-inspect-api">Empty/nil fields in image Config from inspect API</a></td>
+            <td
+              class="p-2">v28.3</td>
+            <td
+              class="p-2">v29.0</td>
+        </tr>
         <tr>
             <td
               class="p-2">Deprecated</td>
@@ -15745,11 +15760,40 @@ printed, and users should not rely on this feature.</p>
   </table>
 </div>
 
-<h2 class=" scroll-mt-20" id="configuration-for-pushing-non-distributable-artifacts">
+<h3 class=" scroll-mt-20" id="emptynil-fields-in-image-config-from-inspect-api">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#emptynil-fields-in-image-config-from-inspect-api">
+    Empty/nil fields in image Config from inspect API
+  </a>
+</h3>
+
+<p><strong>Deprecated in Release: v28.3</strong>
+<strong>Target For Removal In Release: v29.0</strong></p>
+<p>The <code>Config</code> field returned by <code>docker image inspect</code> (and the <code>GET /images/{name}/json</code>
+API endpoint) currently includes certain fields even when they are empty or nil.
+Starting in Docker v29.0, the following fields will be omitted from the API response
+when they contain empty or default values:</p>
+<ul>
+<li><code>Cmd</code></li>
+<li><code>Entrypoint</code></li>
+<li><code>Env</code></li>
+<li><code>Labels</code></li>
+<li><code>OnBuild</code></li>
+<li><code>User</code></li>
+<li><code>Volumes</code></li>
+<li><code>WorkingDir</code></li>
+</ul>
+<p>Applications consuming the image inspect API should be updated to handle the
+absence of these fields gracefully, treating missing fields as having their
+default/empty values.</p>
+<p>For API version corresponding to Docker v29.0, these fields will be omitted when
+empty. They will continue to be included when using clients that request an older
+API version for backward compatibility.</p>
+
+<h3 class=" scroll-mt-20" id="configuration-for-pushing-non-distributable-artifacts">
   <a class="text-black dark:text-white no-underline hover:underline" href="#configuration-for-pushing-non-distributable-artifacts">
     Configuration for pushing non-distributable artifacts
   </a>
-</h2>
+</h3>
 
 <p><strong>Deprecated in Release: v28.0</strong>
 <strong>Target For Removal In Release: v29.0</strong></p>
@@ -17247,13 +17291,18 @@ of the <code>--changes</code> flag that allows to pass <code>Dockerfile</code> c
             >Deprecated engine features</a
           >
         </li>
+        
+  <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#emptynil-fields-in-image-config-from-inspect-api"
+            >Empty/nil fields in image Config from inspect API</a
+          >
+        </li>
         <li>
           <a class="link lg:no-underline" href="#configuration-for-pushing-non-distributable-artifacts"
             >Configuration for pushing non-distributable artifacts</a
           >
         </li>
-        
-  <ul class="pl-2">
         <li>
           <a class="link lg:no-underline" href="#--time-option-on-docker-stop-and-docker-restart"
             ><code>--time</code> option on <code>docker stop</code> and <code>docker restart</code></a

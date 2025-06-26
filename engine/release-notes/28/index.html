@@ -14670,6 +14670,14 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#2830"
+            >28.3.0</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#2822"
             >28.2.2</a
           >
@@ -14683,7 +14691,7 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#packaging-updates"
+          <a class="link lg:no-underline" href="#packaging-updates-1"
             >Packaging updates</a
           >
         </li>
@@ -14770,6 +14778,111 @@
   <a class="link" href="https://docker.qubitpi.org/reference/api/engine/version-history/">Engine API version history</a>.</li>
 </ul>
 
+<h2 class=" scroll-mt-20" id="2830">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#2830">
+    28.3.0
+  </a>
+</h2>
+
+<em class="text-gray-200 italic dark:text-gray-500">2025-06-24</em>
+
+<p>For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones:</p>
+<ul>
+<li><a class="link" href="https://github.com/docker/cli/issues?q=is%3Aclosed&#43;milestone%3A28.3.0" rel="noopener">docker/cli, 28.3.0 milestone</a></li>
+<li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.3.0" rel="noopener">moby/moby, 28.3.0 milestone</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="new">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new">
+    New
+  </a>
+</h3>
+
+<ul>
+<li>Add support for AMD GPUs in <code>docker run --gpus</code>. <a class="link" href="https://github.com/moby/moby/pull/49952" rel="noopener">moby/moby#49952</a></li>
+<li>Use <code>DOCKER_AUTH_CONFIG</code> as a credential store. <a class="link" href="https://github.com/docker/cli/pull/6008" rel="noopener">docker/cli#6008</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements">
+    Bug fixes and enhancements
+  </a>
+</h3>
+
+<ul>
+<li>Ensure that the state of the container in the daemon database (used by <a class="link" href="https://docs.docker.com/reference/api/engine/version/v1.49/#tag/Container/operation/ContainerList" rel="noopener">/containers/json</a> API) is up to date when the container is stopped using the <a class="link" href="https://docs.docker.com/reference/api/engine/version/v1.49/#tag/Container/operation/ContainerStop" rel="noopener">/containers/{id}/stop</a> API (before response of API). <a class="link" href="https://github.com/moby/moby/pull/50136" rel="noopener">moby/moby#50136</a></li>
+<li>Fix <code>docker image inspect inspect</code> omitting empty fields. <a class="link" href="https://github.com/moby/moby/pull/50135" rel="noopener">moby/moby#50135</a></li>
+<li>Fix <code>docker images --tree</code> not marking images as in-use when the containerd image store is disabled. <a class="link" href="https://github.com/docker/cli/pull/6140" rel="noopener">docker/cli#6140</a></li>
+<li>Fix <code>docker pull/push</code> hang in non-interactive when authentication is required caused by prompting for login credentials. <a class="link" href="https://github.com/docker/cli/pull/6141" rel="noopener">docker/cli#6141</a></li>
+<li>Fix a potential resource leak when a node leaves a Swarm. <a class="link" href="https://github.com/moby/moby/pull/50115" rel="noopener">moby/moby#50115</a></li>
+<li>Fix a regression where a login prompt on <code>docker pull</code> would show Docker Hub-specific hints when logging in on other registries. <a class="link" href="https://github.com/docker/cli/pull/6135" rel="noopener">docker/cli#6135</a></li>
+<li>Fix an issue where all new tasks in the Swarm could get stuck in the PENDING state forever after scaling up a service with placement preferences. <a class="link" href="https://github.com/moby/moby/pull/50211" rel="noopener">moby/moby#50211</a></li>
+<li>Remove an undocumented, hidden, top-level <code>docker remove</code> command that was accidentally introduced in Docker 23.0. <a class="link" href="https://github.com/docker/cli/pull/6144" rel="noopener">docker/cli#6144</a></li>
+<li>Validate registry-mirrors configuration as part of <code>dockerd --validate</code> and improve error messages for invalid mirrors. <a class="link" href="https://github.com/moby/moby/pull/50240" rel="noopener">moby/moby#50240</a></li>
+<li><code>dockerd-rootless-setuptool.sh</code>: Fix the script from silently returning with no error message when subuid/subgid system requirements are not satisfied. <a class="link" href="https://github.com/moby/moby/pull/50059" rel="noopener">moby/moby#50059</a></li>
+<li>containerd image store: Fix <code>docker push</code> not creating a tag on the remote repository. <a class="link" href="https://github.com/moby/moby/pull/50199" rel="noopener">moby/moby#50199</a></li>
+<li>containerd image store: Improve handling of errors returned by the token server during <code>docker pull/push</code>. <a class="link" href="https://github.com/moby/moby/pull/50176" rel="noopener">moby/moby#50176</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="packaging-updates">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates">
+    Packaging updates
+  </a>
+</h3>
+
+<ul>
+<li>Allow customizing containerd service name for OpenRC. <a class="link" href="https://github.com/moby/moby/pull/50156" rel="noopener">moby/moby#50156</a></li>
+<li>Update BuildKit to <a class="link" href="https://github.com/moby/buildkit/releases/tag/v0.23.1" rel="noopener">v0.23.1</a>. <a class="link" href="https://github.com/moby/moby/pull/50243" rel="noopener">moby/moby#50243</a></li>
+<li>Update Buildx to <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.25.0" rel="noopener">v0.25.0</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1217" rel="noopener">docker/docker-ce-packaging#1217</a></li>
+<li>Update Compose to <a class="link" href="https://github.com/docker/compose/releases/tag/v2.37.2" rel="noopener">v2.37.2</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1219" rel="noopener">docker/docker-ce-packaging#1219</a></li>
+<li>Update Docker Model CLI plugin to <a class="link" href="https://github.com/docker/model-cli/releases/tag/v0.1.30" rel="noopener">v0.1.30</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1218" rel="noopener">docker/docker-ce-packaging#1218</a></li>
+<li>Update Go runtime to <a class="link" href="https://go.dev/doc/devel/release#go1.24.4" rel="noopener">1.24.4</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1213" rel="noopener">docker/docker-ce-packaging#1213</a>, <a class="link" href="https://github.com/moby/moby/pull/50153" rel="noopener">moby/moby#50153</a>, <a class="link" href="https://github.com/docker/cli/pull/6124" rel="noopener">docker/cli#6124</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="networking">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking">
+    Networking
+  </a>
+</h3>
+
+<ul>
+<li>Revert Swarm related changes added in 28.2.x builds, due to a regression reported in <a class="link" href="https://github.com/moby/moby/issues/50129" rel="noopener">https://github.com/moby/moby/issues/50129</a>. <a class="link" href="https://github.com/moby/moby/pull/50169" rel="noopener">moby/moby#50169</a>
+<ul>
+<li>Revert: Fix an issue where <code>docker network inspect --verbose</code> could sometimes crash the daemon (<a class="link" href="https://github.com/moby/moby/pull/49937%29" rel="noopener">https://github.com/moby/moby/pull/49937)</a>.</li>
+<li>Revert: Fix an issue where the load-balancer IP address for an overlay network would not be released in certain cases if the Swarm was lacking an ingress network (<a class="link" href="https://github.com/moby/moby/pull/49948%29" rel="noopener">https://github.com/moby/moby/pull/49948)</a>.</li>
+<li>Revert: Improve the reliability of NetworkDB in busy clusters and lossy networks (<a class="link" href="https://github.com/moby/moby/pull/49932%29" rel="noopener">https://github.com/moby/moby/pull/49932)</a>.</li>
+<li>Revert: Improvements to the reliability and convergence speed of NetworkDB (<a class="link" href="https://github.com/moby/moby/pull/49939%29" rel="noopener">https://github.com/moby/moby/pull/49939)</a>.</li>
+</ul>
+</li>
+<li>Fix an issue that could cause container startup to fail, or lead to failed UDP port mappings, when some container ports are mapped to <code>0.0.0.0</code> and others are mapped to specific host addresses. <a class="link" href="https://github.com/moby/moby/pull/50054" rel="noopener">moby/moby#50054</a></li>
+<li>The <code>network inspect</code> response for an overlay network now reports that <code>EnableIPv4</code> is true. <a class="link" href="https://github.com/moby/moby/pull/50147" rel="noopener">moby/moby#50147</a></li>
+<li>Windows: Improve daemon startup time in cases where the host has networks of type <code>&quot;Mirrored&quot;</code>. <a class="link" href="https://github.com/moby/moby/pull/50155" rel="noopener">moby/moby#50155</a></li>
+<li>Windows: Make sure <code>docker system prune</code> and <code>docker network prune</code> only remove networks created by Docker. <a class="link" href="https://github.com/moby/moby/pull/50154" rel="noopener">moby/moby#50154</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="api">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#api">
+    API
+  </a>
+</h3>
+
+<ul>
+<li>Update API version to 1.51. <a class="link" href="https://github.com/moby/moby/pull/50145" rel="noopener">moby/moby#50145</a></li>
+<li><code>GET /images/json</code> now sets the value of the <code>Containers</code> field for all images to the count of containers using the image. <a class="link" href="https://github.com/moby/moby/pull/50146" rel="noopener">moby/moby#50146</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="deprecations">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations">
+    Deprecations
+  </a>
+</h3>
+
+<ul>
+<li>Empty/nil image config fields in the <code>GET /images/{name}/json</code> response are now deprecated and will be removed in v29.0. <a class="link" href="https://github.com/docker/cli/pull/6129" rel="noopener">docker/cli#6129</a></li>
+<li>api/types/container: deprecate <code>ExecOptions.Detach</code>. This field is not used, and will be removed in a future release. <a class="link" href="https://github.com/moby/moby/pull/50219" rel="noopener">moby/moby#50219</a></li>
+<li>pkg/idtools: deprecate <code>IdentityMapping</code> and <code>Identity.Chown</code>. <a class="link" href="https://github.com/moby/moby/pull/50210" rel="noopener">moby/moby#50210</a></li>
+</ul>
+
 <h2 class=" scroll-mt-20" id="2822">
   <a class="text-black dark:text-white no-underline hover:underline" href="#2822">
     28.2.2
@@ -14784,8 +14897,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.2.2" rel="noopener">moby/moby, 28.2.2 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-1">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -14794,8 +14907,8 @@
 <li>containerd image store: Fix a regression causing <code>docker build --push</code> to fail. This reverts <a class="link" href="https://github.com/moby/moby/pull/49702" rel="noopener">the fix</a> for <code>docker build</code> not persisting overridden images as dangling. <a class="link" href="https://github.com/moby/moby/pull/50105" rel="noopener">moby/moby#50105</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking">
+<h3 class=" scroll-mt-20" id="networking-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-1">
     Networking
   </a>
 </h3>
@@ -14813,8 +14926,8 @@
 <em class="text-gray-200 italic dark:text-gray-500">2025-05-29</em>
 
 
-<h2 class=" scroll-mt-20" id="packaging-updates">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates">
+<h2 class=" scroll-mt-20" id="packaging-updates-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-1">
     Packaging updates
   </a>
 </h2>
@@ -14859,8 +14972,8 @@
   </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="new">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new">
+<h3 class=" scroll-mt-20" id="new-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-1">
     New
   </a>
 </h3>
@@ -14874,8 +14987,8 @@
 <li>containerd image store: Initial BuildKit support for building Windows container images on Windows (requires an opt-in with <code>DOCKER_BUILDKIT=1</code>). <a class="link" href="https://github.com/moby/moby/pull/49740" rel="noopener">moby/moby#49740</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-1">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-2">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -14899,8 +15012,8 @@
 <li>containerd image store: Fix duplicate <code>PUT</code> requests when pushing a multi-platform image. <a class="link" href="https://github.com/moby/moby/pull/49949" rel="noopener">moby/moby#49949</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-1">
+<h3 class=" scroll-mt-20" id="packaging-updates-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-2">
     Packaging updates
   </a>
 </h3>
@@ -14914,8 +15027,8 @@
 <li>Update Go runtime to <a class="link" href="https://go.dev/doc/devel/release#go1.24.3" rel="noopener">1.24.3</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1192" rel="noopener">docker/docker-ce-packaging#1192</a>, <a class="link" href="https://github.com/docker/cli/pull/6060" rel="noopener">docker/cli#6060</a>, <a class="link" href="https://github.com/moby/moby/pull/49174" rel="noopener">moby/moby#49174</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-1">
+<h3 class=" scroll-mt-20" id="networking-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-2">
     Networking
   </a>
 </h3>
@@ -14931,8 +15044,8 @@
 <li>Improvements to the reliability and convergence speed of NetworkDB. <a class="link" href="https://github.com/moby/moby/pull/49939" rel="noopener">moby/moby#49939</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="api">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#api">
+<h3 class=" scroll-mt-20" id="api-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#api-1">
     API
   </a>
 </h3>
@@ -14955,8 +15068,8 @@
 <li><code>api/types</code>: deprecate <code>BuildResult</code>, <code>ImageBuildOptions</code>, <code>ImageBuildOutput</code>, <code>ImageBuildResponse</code>, <code>BuilderVersion</code>, <code>BuilderV1</code>, and <code>BuilderBuildKi</code> which were moved to <code>api/types/build</code>. <a class="link" href="https://github.com/moby/moby/pull/50025" rel="noopener">moby/moby#50025</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="deprecations">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations">
+<h3 class=" scroll-mt-20" id="deprecations-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-1">
     Deprecations
   </a>
 </h3>
@@ -14993,8 +15106,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.1.1" rel="noopener">moby/moby, 28.1.1 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-2">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-3">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15004,8 +15117,8 @@
 <li>containerd image store: Fix a potential daemon crash when using <code>docker load</code> with archives containing zero-size tar headers. <a class="link" href="https://github.com/moby/moby/pull/49837" rel="noopener">moby/moby#49837</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-2">
+<h3 class=" scroll-mt-20" id="packaging-updates-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-3">
     Packaging updates
   </a>
 </h3>
@@ -15015,8 +15128,8 @@
 <li>Update Compose to <a class="link" href="https://github.com/docker/compose/releases/tag/v2.35.1" rel="noopener">v2.35.1</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1188" rel="noopener">docker/docker-ce-packaging#1188</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-2">
+<h3 class=" scroll-mt-20" id="networking-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-3">
     Networking
   </a>
 </h3>
@@ -15039,8 +15152,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.1.0" rel="noopener">moby/moby, 28.1.0 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="new-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-1">
+<h3 class=" scroll-mt-20" id="new-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-2">
     New
   </a>
 </h3>
@@ -15051,8 +15164,8 @@
 <li><code>docker image inspect</code> now supports a <code>--platform</code> flag to inspect a specific platform of a multi-platform image. <a class="link" href="https://github.com/docker/cli/pull/5934" rel="noopener">docker/cli#5934</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-3">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-4">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15074,8 +15187,8 @@
 <li>containerd image store: Show pull progress for non-layer image blobs. <a class="link" href="https://github.com/moby/moby/pull/49746" rel="noopener">moby/moby#49746</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-3">
+<h3 class=" scroll-mt-20" id="packaging-updates-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-4">
     Packaging updates
   </a>
 </h3>
@@ -15089,8 +15202,8 @@
 <li>Update Go runtime to <a class="link" href="https://go.dev/doc/devel/release#go1.23.8" rel="noopener">1.23.8</a>. <a class="link" href="https://github.com/docker/cli/pull/5986" rel="noopener">docker/cli#5986</a>, <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1180" rel="noopener">docker/docker-ce-packaging#1180</a>, <a class="link" href="https://github.com/moby/moby/pull/49737" rel="noopener">moby/moby#49737</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-3">
+<h3 class=" scroll-mt-20" id="networking-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-4">
     Networking
   </a>
 </h3>
@@ -15103,8 +15216,8 @@
 <li>Improve the &quot;has active endpoints&quot; error message by including the name of endpoints still connected to the network being deleted. <a class="link" href="https://github.com/moby/moby/pull/49773" rel="noopener">moby/moby#49773</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="api-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#api-1">
+<h3 class=" scroll-mt-20" id="api-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#api-2">
     API
   </a>
 </h3>
@@ -15127,8 +15240,8 @@
 <li>client: Keep image references in canonical format where possible. <a class="link" href="https://github.com/moby/moby/pull/49609" rel="noopener">moby/moby#49609</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="deprecations-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-1">
+<h3 class=" scroll-mt-20" id="deprecations-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-2">
     Deprecations
   </a>
 </h3>
@@ -15158,8 +15271,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.4" rel="noopener">moby/moby, 28.0.4 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-4">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-5">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15182,8 +15295,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.3" rel="noopener">moby/moby, 28.0.3 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-5">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-6">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15192,8 +15305,8 @@
 <li>Fix <code>docker run</code> truncating the <code>STDOUT</code>/<code>STDERR</code> prematurely when the container exits before the data is consumed. <a class="link" href="https://github.com/docker/cli/pull/5957" rel="noopener">docker/cli#5957</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-4">
+<h3 class=" scroll-mt-20" id="packaging-updates-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-5">
     Packaging updates
   </a>
 </h3>
@@ -15218,8 +15331,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.2" rel="noopener">moby/moby, 28.0.2 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-6">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-7">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15238,8 +15351,8 @@
 <li>containerd image store: Improve performance of <code>docker ps</code> when running a large number of containers. <a class="link" href="https://github.com/moby/moby/pull/49365" rel="noopener">moby/moby#49365</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-5">
+<h3 class=" scroll-mt-20" id="packaging-updates-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-6">
     Packaging updates
   </a>
 </h3>
@@ -15253,8 +15366,8 @@
 <li>Update containerd (static binaries only) to <a class="link" href="https://www.github.com/containerd/containerd/releases/tag/v1.7.27" rel="noopener">v1.7.27</a>. <a class="link" href="https://github.com/moby/moby/pull/49656" rel="noopener">moby/moby#49656</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-4">
+<h3 class=" scroll-mt-20" id="networking-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-5">
     Networking
   </a>
 </h3>
@@ -15281,8 +15394,8 @@
 <li>runconfig/errors: split <code>ErrConflictHostNetwork</code> into <code>ErrConflictConnectToHostNetwork</code> and <code>ErrConflictDisconnectFromHostNetwork</code>. <a class="link" href="https://github.com/moby/moby/pull/49605" rel="noopener">moby/moby#49605</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="deprecations-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-2">
+<h3 class=" scroll-mt-20" id="deprecations-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-3">
     Deprecations
   </a>
 </h3>
@@ -15314,8 +15427,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.1" rel="noopener">moby/moby, 28.0.1 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-5">
+<h3 class=" scroll-mt-20" id="networking-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-6">
     Networking
   </a>
 </h3>
@@ -15336,8 +15449,8 @@
 <li>Update <code>--help</code> output and man page lo state which options only apply to the default bridge network. <a class="link" href="https://github.com/moby/moby/pull/49522" rel="noopener">moby/moby#49522</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-7">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-8">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15352,8 +15465,8 @@
 <li>Fix compilation on i386 <a class="link" href="https://github.com/moby/moby/pull/49526" rel="noopener">moby/moby#49526</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-6">
+<h3 class=" scroll-mt-20" id="packaging-updates-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-7">
     Packaging updates
   </a>
 </h3>
@@ -15364,8 +15477,8 @@
 <li>Update Compose to <a class="link" href="https://github.com/docker/compose/releases/tag/v2.33.1" rel="noopener">v2.33.1</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1168" rel="noopener">docker/docker-ce-packaging#1168</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="api-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#api-2">
+<h3 class=" scroll-mt-20" id="api-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#api-3">
     API
   </a>
 </h3>
@@ -15391,8 +15504,8 @@
 <li>Changes to the Engine API, see <a class="link" href="https://github.com/moby/moby/blob/v28.0.0/docs/api/version-history.md" rel="noopener">API version history</a>.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="new-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-2">
+<h3 class=" scroll-mt-20" id="new-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-3">
     New
   </a>
 </h3>
@@ -15410,8 +15523,8 @@
 <li>Windows: Add support for running containerd as a child process of the daemon, instead of using a system-installed containerd. <a class="link" href="https://github.com/moby/moby/pull/47955" rel="noopener">moby/moby#47955</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="networking-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-6">
+<h3 class=" scroll-mt-20" id="networking-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#networking-7">
     Networking
   </a>
 </h3>
@@ -15524,8 +15637,8 @@
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-8">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-9">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15572,8 +15685,8 @@
 <li>Faster connection to bridge networks, in most cases. <a class="link" href="https://github.com/moby/moby/pull/49302" rel="noopener">moby/moby#49302</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-7">
+<h3 class=" scroll-mt-20" id="packaging-updates-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-8">
     Packaging updates
   </a>
 </h3>
@@ -15610,8 +15723,8 @@
 <li><code>api/types/container</code>: introduce <code>ExecCreateResponse</code> type. This is currently an alias for <code>IDResponse</code>, but may become a distinct type in a future release. <a class="link" href="https://github.com/moby/moby/pull/49444" rel="noopener">moby/moby#49444</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="api-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#api-3">
+<h3 class=" scroll-mt-20" id="api-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#api-4">
     API
   </a>
 </h3>
@@ -15692,8 +15805,8 @@
 <li>Remove deprecated <code>Daemon.Exists()</code> and <code>Daemon.IsPaused()</code> methods. <a class="link" href="https://github.com/moby/moby/pull/48723" rel="noopener">moby/moby#48723</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="deprecations-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-3">
+<h3 class=" scroll-mt-20" id="deprecations-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#deprecations-4">
     Deprecations
   </a>
 </h3>
@@ -15797,6 +15910,14 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#2830"
+            >28.3.0</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#2822"
             >28.2.2</a
           >
@@ -15810,7 +15931,7 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#packaging-updates"
+          <a class="link lg:no-underline" href="#packaging-updates-1"
             >Packaging updates</a
           >
         </li>

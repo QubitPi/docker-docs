@@ -6619,6 +6619,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/reference/api/engine/version/v1.51/"
+        title="v1.51"
+      >
+        
+  v1.51
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/reference/api/engine/version/v1.50/"
         title="v1.50"
       >
@@ -9304,6 +9320,11 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#v151-api-changes"
+            >v1.51 API changes</a
+          >
+        </li>
+        <li>
           <a class="link lg:no-underline" href="#v150-api-changes"
             >v1.50 API changes</a
           >
@@ -9490,6 +9511,19 @@
      requests which include edits to this file in other repositories
      will be rejected.
 -->
+
+<h2 class=" scroll-mt-20" id="v151-api-changes">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#v151-api-changes">
+    v1.51 API changes
+  </a>
+</h2>
+
+<p><a class="link" href="https://docs.docker.com/reference/api/engine/version/v1.51/" rel="noopener">Docker Engine API v1.51</a> documentation</p>
+<ul>
+<li><code>GET /images/json</code> now sets the value of <code>Containers</code> field for all images
+to the count of containers using the image.
+This field was previously always -1.</li>
+</ul>
 
 <h2 class=" scroll-mt-20" id="v150-api-changes">
   <a class="text-black dark:text-white no-underline hover:underline" href="#v150-api-changes">
@@ -10814,6 +10848,11 @@ end point now returns the new boolean fields <code>CpuCfsPeriod</code>, <code>Cp
     <nav class="toc">
       
   <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#v151-api-changes"
+            >v1.51 API changes</a
+          >
+        </li>
         <li>
           <a class="link lg:no-underline" href="#v150-api-changes"
             >v1.50 API changes</a

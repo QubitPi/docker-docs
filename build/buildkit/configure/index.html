@@ -15257,7 +15257,7 @@ in BuildKit as an example. Feel free to include your own CNI configuration.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQoKQVJHIEJVSUxES0lUX1ZFUlNJT049djAuMjIuMApBUkcgQ05JX1ZFUlNJT049djEuMC4xCgpGUk9NIC0tcGxhdGZvcm09JEJVSUxEUExBVEZPUk0gYWxwaW5lIEFTIGNuaS1wbHVnaW5zClJVTiBhcGsgYWRkIC0tbm8tY2FjaGUgY3VybApBUkcgQ05JX1ZFUlNJT04KQVJHIFRBUkdFVE9TCkFSRyBUQVJHRVRBUkNICldPUktESVIgL29wdC9jbmkvYmluClJVTiBjdXJsIC1McyBodHRwczovL2dpdGh1Yi5jb20vY29udGFpbmVybmV0d29ya2luZy9wbHVnaW5zL3JlbGVhc2VzL2Rvd25sb2FkLyRDTklfVkVSU0lPTi9jbmktcGx1Z2lucy0kVEFSR0VUT1MtJFRBUkdFVEFSQ0gtJENOSV9WRVJTSU9OLnRneiB8IHRhciB4enYKCkZST00gbW9ieS9idWlsZGtpdDoke0JVSUxES0lUX1ZFUlNJT059CkFSRyBCVUlMREtJVF9WRVJTSU9OClJVTiBhcGsgYWRkIC0tbm8tY2FjaGUgaXB0YWJsZXMKQ09QWSAtLWZyb209Y25pLXBsdWdpbnMgL29wdC9jbmkvYmluIC9vcHQvY25pL2JpbgpBREQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21vYnkvYnVpbGRraXQvJHtCVUlMREtJVF9WRVJTSU9OfS9oYWNrL2ZpeHR1cmVzL2NuaS5qc29uIC9ldGMvYnVpbGRraXQvY25pLmpzb24=', copying: false }"
+        x-data="{ code: 'IyBzeW50YXg9ZG9ja2VyL2RvY2tlcmZpbGU6MQoKQVJHIEJVSUxES0lUX1ZFUlNJT049djAuMjMuMQpBUkcgQ05JX1ZFUlNJT049djEuMC4xCgpGUk9NIC0tcGxhdGZvcm09JEJVSUxEUExBVEZPUk0gYWxwaW5lIEFTIGNuaS1wbHVnaW5zClJVTiBhcGsgYWRkIC0tbm8tY2FjaGUgY3VybApBUkcgQ05JX1ZFUlNJT04KQVJHIFRBUkdFVE9TCkFSRyBUQVJHRVRBUkNICldPUktESVIgL29wdC9jbmkvYmluClJVTiBjdXJsIC1McyBodHRwczovL2dpdGh1Yi5jb20vY29udGFpbmVybmV0d29ya2luZy9wbHVnaW5zL3JlbGVhc2VzL2Rvd25sb2FkLyRDTklfVkVSU0lPTi9jbmktcGx1Z2lucy0kVEFSR0VUT1MtJFRBUkdFVEFSQ0gtJENOSV9WRVJTSU9OLnRneiB8IHRhciB4enYKCkZST00gbW9ieS9idWlsZGtpdDoke0JVSUxES0lUX1ZFUlNJT059CkFSRyBCVUlMREtJVF9WRVJTSU9OClJVTiBhcGsgYWRkIC0tbm8tY2FjaGUgaXB0YWJsZXMKQ09QWSAtLWZyb209Y25pLXBsdWdpbnMgL29wdC9jbmkvYmluIC9vcHQvY25pL2JpbgpBREQgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21vYnkvYnVpbGRraXQvJHtCVUlMREtJVF9WRVJTSU9OfS9oYWNrL2ZpeHR1cmVzL2NuaS5qc29uIC9ldGMvYnVpbGRraXQvY25pLmpzb24=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15278,7 +15278,7 @@ in BuildKit as an example. Feel free to include your own CNI configuration.</p>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dockerfile" data-lang="dockerfile"><span class="line"><span class="cl"><span class="c"># syntax=docker/dockerfile:1</span><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
-</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">ARG</span> <span class="nv">BUILDKIT_VERSION</span><span class="o">=</span>v0.22.0<span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">ARG</span> <span class="nv">BUILDKIT_VERSION</span><span class="o">=</span>v0.23.1<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">ARG</span> <span class="nv">CNI_VERSION</span><span class="o">=</span>v1.0.1<span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="k">FROM</span><span class="s"> --platform=$BUILDPLATFORM alpine AS cni-plugins</span><span class="err">
