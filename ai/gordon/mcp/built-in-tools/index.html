@@ -14754,8 +14754,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#ai-tool-catalog"
-            >AI Tool Catalog</a
+          <a class="link lg:no-underline" href="#docker-mcp-catalog"
+            >Docker MCP Catalog</a
           >
         </li>
   </ul>
@@ -14802,7 +14802,7 @@ throughout the Gordon interfaces, including both Docker Desktop and the CLI.</p>
 >
   <img
     loading="lazy"
-    src="https://docker.qubitpi.org/ai/gordon/images/gordon.webp"
+    src="https://docker.qubitpi.org/ai/gordon/images/gordon.png"
     alt="Gordon page with the toolbox button"
     
     
@@ -14822,7 +14822,7 @@ throughout the Gordon interfaces, including both Docker Desktop and the CLI.</p>
       <img
         loading="lazy"
         class="max-h-full max-w-full rounded-sm"
-        src="https://docker.qubitpi.org/ai/gordon/images/gordon.webp"
+        src="https://docker.qubitpi.org/ai/gordon/images/gordon.png"
         alt="Gordon page with the toolbox button"
       />
     </div>
@@ -14830,7 +14830,7 @@ throughout the Gordon interfaces, including both Docker Desktop and the CLI.</p>
 </figure>
 </li>
 <li>
-<p>Choose the tools you want to make available. Selecting a card lets you view extra information regarding each tool and what it does.</p>
+<p>To enable or disable a tool, select it in the left-menu and select the toggle.</p>
 
   
   
@@ -14850,7 +14850,7 @@ throughout the Gordon interfaces, including both Docker Desktop and the CLI.</p>
 >
   <img
     loading="lazy"
-    src="https://docker.qubitpi.org/ai/gordon/images/toolbox.webp"
+    src="https://docker.qubitpi.org/ai/gordon/images/toolbox.png"
     alt="Gordon&#39;s Toolbox"
     
     
@@ -14870,13 +14870,13 @@ throughout the Gordon interfaces, including both Docker Desktop and the CLI.</p>
       <img
         loading="lazy"
         class="max-h-full max-w-full rounded-sm"
-        src="https://docker.qubitpi.org/ai/gordon/images/toolbox.webp"
+        src="https://docker.qubitpi.org/ai/gordon/images/toolbox.png"
         alt="Gordon&#39;s Toolbox"
       />
     </div>
   </template>
 </figure>
-<p>For more information on the possible tools, see <a class="link" href="#reference">Reference</a>.</p>
+<p>For more information on the available Docker tools, see <a class="link" href="#reference">Reference</a>.</p>
 </li>
 </ol>
 
@@ -15172,7 +15172,7 @@ tools.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'IyBTY2FuICBmb3IgQ1ZFcwokIGRvY2tlciBhaSAiU2NhbiBteSBhcHBsaWNhdGlvbiBmb3Igc2VjdXJpdHkgdnVsbmVyYWJpbGl0aWVzIgoKIyBHZXQgc2VjdXJpdHkgcmVjb21tZW5kYXRpb25zCiQgZG9ja2VyIGFpICJHaXZlIG1lIHJlY29tbWVuZGF0aW9ucyBmb3IgaW1wcm92aW5nIHRoZSBzZWN1cml0eSBvZiBteSBub2RlanMtYXBwIGltYWdlIg==', copying: false }"
+        x-data="{ code: 'IyBTY2FuIGZvciBDVkVzCiQgZG9ja2VyIGFpICJTY2FuIG15IGFwcGxpY2F0aW9uIGZvciBzZWN1cml0eSB2dWxuZXJhYmlsaXRpZXMiCgojIEdldCBzZWN1cml0eSByZWNvbW1lbmRhdGlvbnMKJCBkb2NrZXIgYWkgIkdpdmUgbWUgcmVjb21tZW5kYXRpb25zIGZvciBpbXByb3ZpbmcgdGhlIHNlY3VyaXR5IG9mIG15IG5vZGVqcy1hcHAgaW1hZ2Ui', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15191,7 +15191,7 @@ tools.</p>
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">#</span> Scan  <span class="k">for</span> CVEs
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">#</span> Scan <span class="k">for</span> CVEs
 </span></span><span class="line"><span class="cl"><span class="gp">$</span> docker ai <span class="s2">&#34;Scan my application for security vulnerabilities&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="err">
 </span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">#</span> Get security recommendations
@@ -15287,33 +15287,21 @@ in Gordon's toolbox.</p>
     <tbody>
         <tr>
             <td
-              class="p-2"><code>list_containers</code></td>
+              class="p-2"><code>docker</code></td>
             <td
-              class="p-2">List all Docker containers</td>
+              class="p-2">Access to the Docker CLI</td>
         </tr>
         <tr>
             <td
-              class="p-2"><code>remove_containers</code></td>
+              class="p-2"><code>list_builds</code></td>
             <td
-              class="p-2">Remove one or more Docker containers</td>
+              class="p-2">List the builds in the Docker daemon</td>
         </tr>
         <tr>
             <td
-              class="p-2"><code>stop_container</code></td>
+              class="p-2"><code>build_logs</code></td>
             <td
-              class="p-2">Stop a running Docker container</td>
-        </tr>
-        <tr>
-            <td
-              class="p-2"><code>fetch_container_logs</code></td>
-            <td
-              class="p-2">Retrieve logs from a Docker container</td>
-        </tr>
-        <tr>
-            <td
-              class="p-2"><code>run_container</code></td>
-            <td
-              class="p-2">Run a new Docker container</td>
+              class="p-2">Show the build logs.</td>
         </tr>
     </tbody>
   </table>
@@ -15689,13 +15677,13 @@ in Gordon's toolbox.</p>
             <td
               class="p-2"><code>list_models</code></td>
             <td
-              class="p-2">List all available AI models</td>
+              class="p-2">List all available Docker models</td>
         </tr>
         <tr>
             <td
               class="p-2"><code>pull_model</code></td>
             <td
-              class="p-2">Download an AI model</td>
+              class="p-2">Download an Docker model</td>
         </tr>
         <tr>
             <td
@@ -15707,23 +15695,20 @@ in Gordon's toolbox.</p>
             <td
               class="p-2"><code>remove_model</code></td>
             <td
-              class="p-2">Remove an AI model</td>
+              class="p-2">Remove an Docker model</td>
         </tr>
     </tbody>
   </table>
 </div>
 
-<h3 class=" scroll-mt-20" id="ai-tool-catalog">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#ai-tool-catalog">
-    AI Tool Catalog
+<h3 class=" scroll-mt-20" id="docker-mcp-catalog">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#docker-mcp-catalog">
+    Docker MCP Catalog
   </a>
 </h3>
 
-<p>When the <a class="link" href="https://open.docker.com/extensions/marketplace?extensionId=docker/labs-ai-tools-for-devs" rel="noopener">AI Tool
-Catalog</a>
-Docker Desktop extension is installed, all the tools enabled in the catalog are
-available for Gordon to use. After installation, you can enable the usage of the
-AI Tool Catalog tools in the toolbox section of Gordon.</p>
+<p>If you have enabled the <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/">MCP Toolkit feature</a>,
+all the tools you have enabled and configured are available for Gordon to use.</p>
 
   </article>
   <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">
@@ -15865,8 +15850,8 @@ AI Tool Catalog tools in the toolbox section of Gordon.</p>
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#ai-tool-catalog"
-            >AI Tool Catalog</a
+          <a class="link lg:no-underline" href="#docker-mcp-catalog"
+            >Docker MCP Catalog</a
           >
         </li>
   </ul>

@@ -42,6 +42,8 @@ https://github.com/docker/compose
 
 - [docker compose ps](https://docs.docker.com/reference/cli/docker/compose/ps/)
 
+- [docker compose publish](https://docs.docker.com/reference/cli/docker/compose/publish/)
+
 - [docker compose pull](https://docs.docker.com/reference/cli/docker/compose/pull/)
 
 - [docker compose push](https://docs.docker.com/reference/cli/docker/compose/push/)

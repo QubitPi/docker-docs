@@ -10,10 +10,10 @@
   </title>
 
 
-<meta name="description" content="How to refer and interact with UI content" />
+<meta name="description" content="How to refer to and write about UI elements in technical documentation." />
 <meta
   name="keywords"
-  content="ui, contribute, style, guide"
+  content="ui, contribute, style, guide, docker, docs"
 />
 <link rel="canonical" href="https://docker.qubitpi.org/contribute/ui/" />
 
@@ -44,7 +44,7 @@
   name="twitter:description"
   property="og:description"
   itemprop="description"
-  content="How to refer and interact with UI content"
+  content="How to refer to and write about UI elements in technical documentation."
 />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:domain" content="https://docker.qubitpi.org/" />
@@ -56,7 +56,7 @@
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="UI elements in content" />
-<meta property="og:description" content="How to refer and interact with UI content" />
+<meta property="og:description" content="How to refer to and write about UI elements in technical documentation." />
 <meta property="og:type" content="website" />
 <meta
   property="og:updated_time"
@@ -76,7 +76,7 @@
   itemprop="datePublished"
   content="2025-06-04 01:15:09 &#43;0800 &#43;0800"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"UI elements in content\"","description":"\"How to refer and interact with UI content\"","url":"https:\/\/docker.qubitpi.org\/contribute\/ui\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"UI elements in content\"","description":"\"How to refer to and write about UI elements in technical documentation.\"","url":"https:\/\/docker.qubitpi.org\/contribute\/ui\/"}</script>
 
 
   
@@ -1145,23 +1145,31 @@
       
   <ul class="pl-2">
         <li>
-          <a class="link lg:no-underline" href="#format-names-of-ui-elements"
-            >Format names of UI elements</a
+          <a class="link lg:no-underline" href="#format-ui-element-names"
+            >Format UI element names</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#capitalization"
+            >Capitalization</a
+          >
+        </li>
+  </ul>
+        <li>
+          <a class="link lg:no-underline" href="#write-task-focused-instructions"
+            >Write task-focused instructions</a
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#focus-on-the-task"
-            >Focus on the task</a
+          <a class="link lg:no-underline" href="#use-correct-prepositions-with-ui-elements"
+            >Use correct prepositions with UI elements</a
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#refer-to-ui-elements"
-            >Refer to UI elements</a
-          >
-        </li>
-        <li>
-          <a class="link lg:no-underline" href="#prepositions"
-            >Prepositions</a
+          <a class="link lg:no-underline" href="#use-consistent-ui-element-terms"
+            >Use consistent UI element terms</a
           >
         </li>
   </ul>
@@ -1170,123 +1178,211 @@
 
       <hr />
     </div>
-    <p>This page contains information on how to write technical content that involves a user interface (UI).</p>
+    <p>Use this guide when writing documentation that refers to buttons, fields, menus, dialogs, or other user interface (UI) elements. It explains how to format UI terms, write task-focused instructions, and refer to common UI patterns consistently and clearly.</p>
 
-<h2 class=" scroll-mt-20" id="format-names-of-ui-elements">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#format-names-of-ui-elements">
-    Format names of UI elements
+<h2 class=" scroll-mt-20" id="format-ui-element-names">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#format-ui-element-names">
+    Format UI element names
   </a>
 </h2>
 
-<p>Always bold UI elements when referring to them by name.</p>
-<p>This includes names for buttons, menus, dialogs, windows, list items, or any other feature on the page that has a visible name.</p>
-<p>Don't make an official feature name or product name bold, except when it directly refers to an element on the page that uses the name, such as a window title or button name.</p>
-<p>In most cases, follow the capitalization as it appears on the page. However, if labels are inconsistent or they're all uppercase, use sentence case.</p>
+<p>Use bold formatting for the visible names of UI elements:</p>
+<ul>
+<li>Buttons</li>
+<li>Dialogs</li>
+<li>Windows</li>
+<li>Tabs</li>
+<li>Menu items</li>
+<li>List items</li>
+<li>Form labels</li>
+<li>Section headings</li>
+</ul>
+<p>For example:</p>
+<p><em>Select <strong>Create</strong>, then fill out the <strong>Name</strong> field.</em></p>
+<p>Do not bold product names or features unless they appear exactly as a label in the UI.</p>
 
-<h2 class=" scroll-mt-20" id="focus-on-the-task">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#focus-on-the-task">
-    Focus on the task
+<h3 class=" scroll-mt-20" id="capitalization">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#capitalization">
+    Capitalization
+  </a>
+</h3>
+
+<ul>
+<li>Follow the capitalization as it appears in the UI.</li>
+<li>If UI labels are all uppercase or inconsistent, use sentence case in your docs for readability.</li>
+</ul>
+
+<h2 class=" scroll-mt-20" id="write-task-focused-instructions">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#write-task-focused-instructions">
+    Write task-focused instructions
   </a>
 </h2>
 
-<p>When practical, state instructions in terms of what the user should accomplish, rather than focusing on the widgets and gestures. By avoiding reference to UI elements, you help the user understand the purpose of an instruction, and it can help future-proof procedures.</p>
+<p>When possible, guide users based on what they’re trying to do, not just what they should select. This makes docs more goal-oriented and adaptable to UI changes.</p>
 <div class="overflow-x-auto">
   <table
   >
     <thead class="bg-gray-100 dark:bg-gray-800">
         <tr>
             <th
-              class="p-2" style="text-align: left">Correct</th>
+              class="p-2">Do this</th>
             <th
-              class="p-2" style="text-align: left">Incorrect</th>
+              class="p-2">Avoid this</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td
-              class="p-2" style="text-align: left">Expand the <strong>Advanced options</strong> section</td>
+              class="p-2">Expand the <strong>Advanced options</strong> section.</td>
             <td
-              class="p-2" style="text-align: left">Select the zippy to expand the <strong>Advanced options</strong> section</td>
+              class="p-2">Select the zippy to expand the <strong>Advanced options</strong> section.</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2">Choose a base image for your container.</td>
+            <td
+              class="p-2">Select a dropdown and pick something.</td>
         </tr>
     </tbody>
   </table>
 </div>
 
-<h2 class=" scroll-mt-20" id="refer-to-ui-elements">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#refer-to-ui-elements">
-    Refer to UI elements
+<h2 class=" scroll-mt-20" id="use-correct-prepositions-with-ui-elements">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#use-correct-prepositions-with-ui-elements">
+    Use correct prepositions with UI elements
   </a>
 </h2>
 
-<p>Don't use UI elements as if they were English verbs or nouns.</p>
+<p>Choose the right preposition based on the type of UI element you're referencing.</p>
 <div class="overflow-x-auto">
   <table
   >
     <thead class="bg-gray-100 dark:bg-gray-800">
         <tr>
             <th
-              class="p-2" style="text-align: left">Correct</th>
+              class="p-2">Preposition</th>
             <th
-              class="p-2" style="text-align: left">Incorrect</th>
+              class="p-2">Use with...</th>
+            <th
+              class="p-2">Example</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td
-              class="p-2" style="text-align: left">In the <strong>Name</strong> field, enter an account name.</td>
+              class="p-2"><strong>in</strong></td>
             <td
-              class="p-2" style="text-align: left"><strong>Name</strong> the account.</td>
+              class="p-2">dialogs, fields, lists, menus, panes, windows</td>
+            <td
+              class="p-2">In the <strong>Name</strong> field, enter your project name.</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">To save the settings, select <strong>Save</strong>.</td>
+              class="p-2"><strong>on</strong></td>
             <td
-              class="p-2" style="text-align: left"><strong>Save</strong> the settings.</td>
+              class="p-2">pages, tabs, toolbars</td>
+            <td
+              class="p-2">On the <strong>Settings</strong> tab, select <strong>General</strong>.</td>
         </tr>
     </tbody>
   </table>
 </div>
 
-<h2 class=" scroll-mt-20" id="prepositions">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#prepositions">
-    Prepositions
+<h2 class=" scroll-mt-20" id="use-consistent-ui-element-terms">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#use-consistent-ui-element-terms">
+    Use consistent UI element terms
   </a>
 </h2>
 
-<p>When documenting the UI, use the following prepositions.</p>
+<p>Use these standard terms when referring to elements in Docker products:</p>
 <div class="overflow-x-auto">
   <table
   >
     <thead class="bg-gray-100 dark:bg-gray-800">
         <tr>
             <th
-              class="p-2" style="text-align: left">Preposition</th>
+              class="p-2">Preferred Term</th>
             <th
-              class="p-2" style="text-align: left">UI element</th>
-            <th
-              class="p-2" style="text-align: left">Example</th>
+              class="p-2">Use When Referring To...</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td
-              class="p-2" style="text-align: left">in</td>
+              class="p-2"><strong>button</strong></td>
             <td
-              class="p-2" style="text-align: left">dialogs <br>fields <br>lists <br>menus <br>panes <br>windows <br></td>
-            <td
-              class="p-2" style="text-align: left">In the <strong>Alert</strong> dialog, select <strong>OK</strong>. <br> In the <strong>Name</strong> field, enter <code>wsfc-1</code>. <br> In the <strong>Item</strong> list, select <strong>Desktop</strong>. <br>In the <strong>File</strong> menu, click <strong>Tools</strong>.<br> In the <strong>Metrics</strong> pane, select <strong>New</strong>. <br>In the <strong>Task</strong> window, select <strong>Start</strong>.</td>
+              class="p-2">A clickable action element (e.g., <strong>Start</strong>)</td>
         </tr>
         <tr>
             <td
-              class="p-2" style="text-align: left">on</td>
+              class="p-2"><strong>field</strong></td>
             <td
-              class="p-2" style="text-align: left">pages <br>tabs <br>toolbars</td>
+              class="p-2">A place to enter text or select a value</td>
+        </tr>
+        <tr>
             <td
-              class="p-2" style="text-align: left">On the <strong>Create an instance</strong> page, select <strong>Add</strong>. <br> On the <strong>Edit</strong> tab, select <strong>Save</strong>.<br> On the <strong>Dashboard toolbar</strong>, select <strong>Edit</strong>.<br></td>
+              class="p-2"><strong>menu</strong> / <strong>menu item</strong></td>
+            <td
+              class="p-2">A drop-down or navigation option</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>drop-down</strong></td>
+            <td
+              class="p-2">A drop-down menu  item</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>context switcher</strong></td>
+            <td
+              class="p-2">Specific to toggling on cloud mode</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>tab</strong></td>
+            <td
+              class="p-2">A selectable view within a window or page</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>dialog</strong></td>
+            <td
+              class="p-2">A popup window for confirmations or options</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>section</strong></td>
+            <td
+              class="p-2">A logical grouping of content on a page</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>list</strong> / <strong>list item</strong></td>
+            <td
+              class="p-2">A scrollable list of selectable entries</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>toggle</strong></td>
+            <td
+              class="p-2">A binary control (on/off)</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>checkbox</strong></td>
+            <td
+              class="p-2">A multi-select control</td>
+        </tr>
+        <tr>
+            <td
+              class="p-2"><strong>tooltip</strong></td>
+            <td
+              class="p-2">Text that appears on hover</td>
         </tr>
     </tbody>
   </table>
 </div>
+<p>Finally, instead of saying “click the control,” say “select the <strong>Create</strong> button.”</p>
 
   </article>
   <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">
@@ -1344,23 +1440,31 @@
       
   <ul class="pl-2">
         <li>
-          <a class="link lg:no-underline" href="#format-names-of-ui-elements"
-            >Format names of UI elements</a
+          <a class="link lg:no-underline" href="#format-ui-element-names"
+            >Format UI element names</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#capitalization"
+            >Capitalization</a
+          >
+        </li>
+  </ul>
+        <li>
+          <a class="link lg:no-underline" href="#write-task-focused-instructions"
+            >Write task-focused instructions</a
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#focus-on-the-task"
-            >Focus on the task</a
+          <a class="link lg:no-underline" href="#use-correct-prepositions-with-ui-elements"
+            >Use correct prepositions with UI elements</a
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#refer-to-ui-elements"
-            >Refer to UI elements</a
-          >
-        </li>
-        <li>
-          <a class="link lg:no-underline" href="#prepositions"
-            >Prepositions</a
+          <a class="link lg:no-underline" href="#use-consistent-ui-element-terms"
+            >Use consistent UI element terms</a
           >
         </li>
   </ul>

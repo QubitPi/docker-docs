@@ -14771,8 +14771,17 @@
 <li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
 <li>Select <strong>My Hub</strong> &gt; <strong>Repositories</strong>.</li>
 <li>Select the repository where you want to enable immutable tags.</li>
-<li>Select the <strong>Settings</strong> tab</li>
-<li>Under <strong>Tag mutability settings</strong>, select <strong>Immutable</strong>.</li>
+<li>Go to <strong>Settings</strong> &gt; <strong>General</strong>.</li>
+<li>Under <strong>Tag mutability settings</strong>, select one of the following options:
+<ul>
+<li><strong>All tags are mutable (Default)</strong>:<br>
+Tags can be changed to reference a different image. This lets you retarget a tag without creating a new one.</li>
+<li><strong>All tags are immutable</strong>:<br>
+Tags cannot be updated to point to a different image after creation. This ensures consistency and prevents accidental changes. This includes the <code>latest</code> tag.</li>
+<li><strong>Specific tags are immutable</strong>:<br>
+Define specific tags that cannot be updated after creation using regex values.</li>
+</ul>
+</li>
 <li>Select <strong>Save</strong>.</li>
 </ol>
 <p>Once enabled, all tags are locked to their specific images, ensuring that each tag always points to the same image version and cannot be modified.</p>
@@ -14794,7 +14803,7 @@
       </span>
     </div>
     <div class="admonition-content">
-      <p>All tags in the repository become immutable, including the <code>latest</code> tag.</p>
+      <p>This implementation of regular expressions follows the <a class="link" href="https://pkg.go.dev/regexp" rel="noopener">Go regexp package</a>, which is based on the RE2 engine. For more information, visit <a class="link" href="https://github.com/google/re2/wiki/Syntax" rel="noopener">RE2 Regular Expression Syntax</a>.</p>
     </div>
   </blockquote>
 
