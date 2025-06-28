@@ -10801,22 +10801,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/scout/integrations/registry/artifactory/"
-        title="Artifactory"
-      >
-        
-  Artifactory
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/scout/integrations/registry/acr/"
         title="Azure Container Registry"
       >
@@ -14769,10 +14753,11 @@ and auditable build process that protects against supply chain threats.</p>
 </li>
 <li>
 <p>Distroless approach: Unlike traditional base images that bundle an entire OS
-with shells and package managers, <a class="link" href="https://docker.qubitpi.org/dhi/core-concepts/distroless/">distroless
-images</a> exclude the OS layer and include only
-your app and its runtime dependencies, reducing the attack surface by up to 95
-percent and improving performance.</p>
+with shells, package managers, and debugging tools, <a class="link" href="https://docker.qubitpi.org/dhi/core-concepts/distroless/">distroless
+images</a> retain only the minimal OS components
+required to run your application. By excluding unnecessary tooling and
+libraries, they reduce the attack surface by up to 95% and can improve
+performance and image size.</p>
 </li>
 <li>
 <p>Continuous maintenance: All DHIs are continuously monitored and updated to
