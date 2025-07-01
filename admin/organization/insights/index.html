@@ -14697,6 +14697,19 @@
         </li>
   </ul>
         <li>
+          <a class="link lg:no-underline" href="#export-docker-desktop-user-data"
+            >Export Docker Desktop user data</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#understanding-export-data"
+            >Understanding export data</a
+          >
+        </li>
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#troubleshoot-insights"
             >Troubleshoot Insights</a
           >
@@ -14792,11 +14805,12 @@ features provided by a Docker subscription.</li>
 feature enabled. Once the feature is enabled, access Insights using the following
 steps:</p>
 <ol>
-<li>Go to the <a class="link" href="https://app.docker.com/admin/" rel="noopener">Admin Console</a> and sign in to an
-account that is an organization owner.</li>
-<li>Select your company on the <strong>Choose profile</strong> page.</li>
-<li>Select <strong>Insights</strong>.</li>
-<li>On the <strong>Insights</strong> page, select the period of time for the data.</li>
+<li>Open <a class="link" href="https://app.docker.com/" rel="noopener">Docker Home</a> and select your organization
+on the <strong>Choose profile</strong> page.</li>
+<li>Select <strong>Admin Console</strong> in the left-hand navigation menu.</li>
+<li>Select <strong>Desktop insights</strong>.</li>
+<li>Choose a timeframe for your insights data: <strong>1 Week</strong>, <strong>1 Month</strong>, or
+<strong>3 Months</strong>.</li>
 </ol>
 
 
@@ -14843,7 +14857,7 @@ status. This chart helps you understand the engagement levels within your
 organization, providing insights into how many users are actively using Docker
 Desktop. Note that users who opt out of analytics aren't included in the active
 counts.</p>
-<p>The chart contains the following data.</p>
+<p>The chart contains the following data:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -14895,7 +14909,7 @@ counts.</p>
 <p>Monitor development efficiency and the time your team invests in builds with
 this chart. It provides a clear view of the build activity, helping you identify
 patterns, optimize build times, and enhance overall development productivity.</p>
-<p>The chart contains the following data.</p>
+<p>The chart contains the following data:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -14945,7 +14959,7 @@ patterns, optimize build times, and enhance overall development productivity.</p
 <p>View the total and average number of containers run by users with this chart. It
 lets you gauge container usage across your organization, helping you understand
 usage trends and manage resources effectively.</p>
-<p>The chart contains the following data.</p>
+<p>The chart contains the following data:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -14990,7 +15004,7 @@ usage trends and manage resources effectively.</p>
 workflows and ensure compatibility. It provides valuable insights into how
 Docker Desktop is being utilized, enabling you to streamline processes and
 improve efficiency.</p>
-<p>The chart contains the following data.</p>
+<p>The chart contains the following data:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -15065,7 +15079,7 @@ registries and mirrors aren't included.</p>
     </div>
   </blockquote>
 
-<p>The chart contains the following data.</p>
+<p>The chart contains the following data:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -15109,7 +15123,7 @@ registries and mirrors aren't included.</p>
 <p>Monitor extension installation activity with this chart. It provides visibility
 into the Docker Desktop extensions your team are using, letting you track
 adoption and identify popular tools that enhance productivity.</p>
-<p>The chart contains the following data.</p>
+<p>The chart contains the following data:</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -15137,6 +15151,56 @@ adoption and identify popular tools that enhance productivity.</p>
     </tbody>
   </table>
 </div>
+
+<h2 class=" scroll-mt-20" id="export-docker-desktop-user-data">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#export-docker-desktop-user-data">
+    Export Docker Desktop user data
+  </a>
+</h2>
+
+<p>You can export Docker Desktop user data as a CSV file:</p>
+<ol>
+<li>Open <a class="link" href="https://app.docker.com" rel="noopener">Docker Home</a> and select your organization
+on the <strong>Choose profile</strong> page.</li>
+<li>Select <strong>Admin Console</strong> in the left-hand navigation menu.</li>
+<li>Select <strong>Desktop insights</strong>.</li>
+<li>Choose a timeframe for your insights data: <strong>1 Week</strong>, <strong>1 Month</strong>, or
+<strong>3 Months</strong>.</li>
+<li>Select <strong>Export</strong> and choose <strong>Docker Desktop users</strong> from the drop-down.</li>
+</ol>
+<p>Your export will automatically download. Open the file to view
+the export data.</p>
+
+<h3 class=" scroll-mt-20" id="understanding-export-data">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#understanding-export-data">
+    Understanding export data
+  </a>
+</h3>
+
+<p>A Docker Desktop user export file contains the following data points:</p>
+<ul>
+<li>Name: User's name</li>
+<li>Username: User's Docker ID</li>
+<li>Email: User's email address associated with their Docker ID</li>
+<li>Type: User type</li>
+<li>Role: User 
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/for-admins/roles-and-permissions/">role</a></li>
+<li>Teams: Team(s) within your organization the user is a
+member of</li>
+<li>Date Joined: The date the user joined your organization</li>
+<li>Last Logged-In Date: The last date the user logged into Docker using
+their web browser (this include Docker Hub and Docker Home)</li>
+<li>Docker Desktop Version: The version of Docker Desktop the user has
+installed</li>
+<li>Last Seen Date: The last date the user used the Docker Desktop application</li>
+<li>Opted Out Analytics: Whether the user has opted out of the
+
+    
+  
+  <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/settings-reference/#send-usage-statistics">Send usage statistics</a> setting in Docker Desktop</li>
+</ul>
 
 <h2 class=" scroll-mt-20" id="troubleshoot-insights">
   <a class="text-black dark:text-white no-underline hover:underline" href="#troubleshoot-insights">
@@ -15275,6 +15339,19 @@ sign-in</a>.</p>
         <li>
           <a class="link lg:no-underline" href="#extensions"
             >Extensions</a
+          >
+        </li>
+  </ul>
+        <li>
+          <a class="link lg:no-underline" href="#export-docker-desktop-user-data"
+            >Export Docker Desktop user data</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#understanding-export-data"
+            >Understanding export data</a
           >
         </li>
   </ul>
