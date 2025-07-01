@@ -66,6 +66,8 @@ https://github.com/docker/compose
 
 - [docker compose version](https://docs.docker.com/reference/cli/docker/compose/version/)
 
+- [docker compose volumes](https://docs.docker.com/reference/cli/docker/compose/volumes/)
+
 - [docker compose wait](https://docs.docker.com/reference/cli/docker/compose/wait/)
 
 - [docker compose watch](https://docs.docker.com/reference/cli/docker/compose/watch/)

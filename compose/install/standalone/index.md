@@ -6,7 +6,8 @@ This page contains instructions on how to install Docker Compose standalone on L
 > [!WARNING]
 >
 > The Docker Compose standalone uses the `-compose` syntax instead of the current standard syntax `compose`.  
-> For example, you must type `docker-compose up` when using Docker Compose standalone, instead of `docker compose up`.
+> For example, you must type `docker-compose up` when using Docker Compose standalone, instead of `docker compose up`. 
+> Use it only for backward compatibility.
 
 ## On Linux
 
@@ -68,3 +69,8 @@ on Microsoft Windows Server](/manuals/engine/install/binaries.md#install-server-
     $ docker-compose.exe version
     Docker Compose version {{% param "compose_version" %}}
     ```
+
+## What's next?
+
+- [Understand how Compose works](/manuals/compose/intro/compose-application-model.md)
+- [Try the Quickstart guide](/manuals/compose/gettingstarted.md)

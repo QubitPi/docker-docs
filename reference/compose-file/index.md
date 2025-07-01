@@ -44,6 +44,8 @@ Use the following links to navigate key sections of the Compose Specification.
 
 - [Include](https://docs.docker.com/reference/compose-file/include/)
 
+- [Models](https://docs.docker.com/reference/compose-file/models/)
+
 - [Profiles](https://docs.docker.com/reference/compose-file/profiles/)
 
 - [Compose Build Specification](https://docs.docker.com/reference/compose-file/build/)

@@ -88,8 +88,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.371abddab0ba0316110d91ce16441cc09d81f112f1c154f3260b5bc996ed4419.css"
-            integrity="sha256-Nxq92rC6AxYRDZHOFkQcwJ2B8RLxwVTzJgtbyZbtRBk="
+            href="/css/style.7d1b8f7a846c415fb0e434f8c49ad56e6349b55c3173af7853776ceaa2e0dbba.css"
+            integrity="sha256-fRuPeoRsQV&#43;w5DT4xJrVbmNJtVwxc694U3ds6qLg27o="
             crossorigin="anonymous"
           />
         
@@ -346,7 +346,7 @@
             searchBarResults.classList.add("hidden");
           }
 
-          let resultsHTML = `<div class="p-2 text-gray-200 dark:text-gray-500">${resultsLength} results</div>`;
+          let resultsHTML = `<div class="p-2 text-gray-400 dark:text-gray-500">${resultsLength} results</div>`;
           resultsHTML += results
             .map((item) => {
               return `<div class="p-2">
@@ -646,14 +646,14 @@
         }
 
         
-        let resultsHTML = `<div class="text-gray-200 dark:text-gray-500 p-2">${resultsLength} results</div>`;
+        let resultsHTML = `<div class="text-gray-400 dark:text-gray-500 p-2">${resultsLength} results</div>`;
 
         
         resultsHTML += results
           .map((item) => {
             return `<div class="p-4">
          <div class="flex flex-col">
-           <span class="text-gray-200 dark:texty-gray-dark text-sm">${item.meta.breadcrumbs}</span>
+           <span class="text-gray-400 dark:texty-gray-dark text-sm">${item.meta.breadcrumbs}</span>
            <a class="link" href="${item.url}" data-query="${query}" data-index="${item.index}">${item.meta.title}</a>
            <p class="text-black dark:text-white overflow-hidden">…${item.excerpt}…</p>
          </div>
@@ -666,12 +666,12 @@
           resultsHTML += `<ul class="flex flex-wrap gap-1 pt-4 pb-8 justify-center text-sm">`;
           for (let i = 1; i <= resultsLength / 10; i++) {
             if (i == currentPage) {
-              resultsHTML += `<li class="text-center text-white">
-                <a href="/search/?q=${query}&page=${i}" class="block h-6 w-6 rounded-sm bg-blue-light dark:bg-blue-dark">${i}</a>
+              resultsHTML += `<li class="flex items-center justify-center">
+                 <a href="/search/?q=${query}&page=${i}" class="pagination-link bg-gray-200 dark:bg-gray-800 dark:text-gray-200">${i}</a>
               </li>`;
             } else {
-              resultsHTML += `<li class="text-center text-gray-200 dark:text-gray-500">
-                <a href="/search/?q=${query}&page=${i}" class="block h-6 w-6 rounded-sm bg-gray-200 dark:bg-gray-800">${i}</a>
+              resultsHTML += `<li class="flex items-center justify-center">
+                <a href="/search/?q=${query}&page=${i}" class="pagination-link bg-gray-100 dark:bg-gray-900 dark:text-gray-400">${i}</a>
               </li>`;
             }
           }

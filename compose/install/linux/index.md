@@ -63,9 +63,9 @@ To update the Docker Compose plugin, run the following commands:
 
 ## Install the plugin manually
 
-> [!IMPORTANT]
+> [!WARNING]
 >
-> This option requires you to manage upgrades manually. It is recommended that you set up Docker's repository for easier maintenance.
+> Manual installations don’t auto-update. For ease of maintenance, use the Docker repository method.
 
 1.  To download and install the Docker Compose CLI plugin, run:
 
@@ -99,4 +99,8 @@ To update the Docker Compose plugin, run the following commands:
     ```console
     $ docker compose version
     ```
-    
+
+## What's next?
+
+- [Understand how Compose works](/manuals/compose/intro/compose-application-model.md)
+- [Try the Quickstart guide](/manuals/compose/gettingstarted.md)

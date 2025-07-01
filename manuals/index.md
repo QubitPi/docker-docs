@@ -57,6 +57,8 @@ subscription management for organizations.
 
 - [Docker MCP Catalog and Toolkit](https://docs.docker.com/ai/mcp-catalog-and-toolkit/)
 
+- [AI and Docker Compose](https://docs.docker.com)
+
 - [Docker Scout](https://docs.docker.com/scout/)
 
 - [Security](https://docs.docker.com/security/)

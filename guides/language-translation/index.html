@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.371abddab0ba0316110d91ce16441cc09d81f112f1c154f3260b5bc996ed4419.css"
-            integrity="sha256-Nxq92rC6AxYRDZHOFkQcwJ2B8RLxwVTzJgtbyZbtRBk="
+            href="/css/style.7d1b8f7a846c415fb0e434f8c49ad56e6349b55c3173af7853776ceaa2e0dbba.css"
+            integrity="sha256-fRuPeoRsQV&#43;w5DT4xJrVbmNJtVwxc694U3ds6qLg27o="
             crossorigin="anonymous"
           />
         
@@ -344,7 +344,7 @@
             searchBarResults.classList.add("hidden");
           }
 
-          let resultsHTML = `<div class="p-2 text-gray-200 dark:text-gray-500">${resultsLength} results</div>`;
+          let resultsHTML = `<div class="p-2 text-gray-400 dark:text-gray-500">${resultsLength} results</div>`;
           resultsHTML += results
             .map((item) => {
               return `<div class="p-2">
@@ -574,11 +574,11 @@ models for NLP tasks.</div>
       <div class="md-dropdown ml-auto hidden lg:block">
         <details id="markdownDropdown" class="group relative z-10 inline-block" data-heap-id="markdown-dropdown">
     <summary
-      class="inline-flex cursor-pointer items-center gap-0 rounded-sm border border-gray-600 bg-white px-2 py-2
+      class="inline-flex cursor-pointer items-center gap-0 rounded-sm border border-gray-600 bg-white  py-1 pl-2
       text-base font-semibold text-gray-600 transition-colors hover:bg-gray-50 dark:border-gray-50 dark:bg-gray-950 dark:text-gray-100 dark:hover:bg-gray-900"
       data-heap-id="markdown-dropdown-toggle"
     >
-      <span>Page options</span>
+      <span class="font-normal">Page options</span>
       <span class="icon-svg transition-transform group-open:rotate-180">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
       </span>
@@ -588,7 +588,7 @@ models for NLP tasks.</div>
 
     
     <div
-      class="absolute right-0 z-50 mt-2 w-56 origin-top-right rounded-sm border border-gray-300 bg-white p-2 text-sm text-black shadow-md [display:none] group-open:[display:block] dark:border-gray-100 dark:text-gray-100 dark:bg-gray-950"
+      class="absolute right-0 z-50 mt-1 w-56 origin-top-right rounded-sm border border-gray-300 bg-white p-2 text-sm text-black shadow-md [display:none] group-open:[display:block] dark:border-gray-100 dark:text-gray-100 dark:bg-gray-950"
       data-heap-id="markdown-dropdown-menu"
     >
       <button
