@@ -13498,22 +13498,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/security/for-admins/domain-audit/"
-        title="Domain audit"
-      >
-        
-  Domain audit
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/for-admins/domain-management/"
         title="Domain management"
       >
@@ -14824,22 +14808,12 @@
 
 <p>Before deactivating an organization, complete the following:</p>
 <ul>
-<li>
-<p>Download any images and tags you want to keep:
-<code>docker pull -a &lt;image&gt;:&lt;tag&gt;</code>.</p>
-</li>
-<li>
-<p>If you have an active Docker subscription, <a class="link" href="https://docker.qubitpi.org/subscription/change/">downgrade it to a free subscription</a>.</p>
-</li>
-<li>
-<p>Remove all other members within the organization.</p>
-</li>
-<li>
-<p>Unlink your <a class="link" href="https://docker.qubitpi.org/docker-hub/repos/manage/builds/link-source/#unlink-a-github-user-account">Github and Bitbucket accounts</a>.</p>
-</li>
-<li>
-<p>For Business organizations, <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/manage/#remove-an-organization">remove your SSO connection</a>.</p>
-</li>
+<li>Download any images and tags you want to keep:
+<code>docker pull -a &lt;image&gt;:&lt;tag&gt;</code>.</li>
+<li>If you have an active Docker subscription, <a class="link" href="https://docker.qubitpi.org/subscription/change/">downgrade it to a free subscription</a>.</li>
+<li>Remove all other members within the organization.</li>
+<li>Unlink your <a class="link" href="https://docker.qubitpi.org/docker-hub/repos/manage/builds/link-source/#unlink-a-github-user-account">Github and Bitbucket accounts</a>.</li>
+<li>For Business organizations, <a class="link" href="https://docker.qubitpi.org/security/for-admins/single-sign-on/manage/#remove-an-organization">remove your SSO connection</a>.</li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="deactivate">
@@ -14922,8 +14896,10 @@
         :class="selected !== 'Admin-Console' && 'hidden'"
       >
         <ol>
-<li>In Admin Console, choose the organization you want to deactivate.</li>
-<li>Under <strong>Organization settings</strong>, select <strong>Deactivate</strong>.</li>
+<li>Sign in to <a class="link" href="https://app.docker.com" rel="noopener">Docker Home</a> and select the organization
+you want to deactivate.</li>
+<li>Select <strong>Admin Console</strong>, then <strong>Deactivate</strong>. If this button is greyed out,
+you must complete the <a class="link" href="#prerequisites">Prerequisites</a>.</li>
 <li>Enter the organization name to confirm deactivation.</li>
 <li>Select <strong>Deactivate organization</strong>.</li>
 </ol>
@@ -14964,9 +14940,10 @@ Access to these features in Docker Hub will end soon. Explore the <a class="link
   </blockquote>
 
 <ol>
-<li>On Docker Hub, select <strong>My Hub</strong>.</li>
+<li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
 <li>Choose the organization you want to deactivate.</li>
-<li>In <strong>Settings</strong>, select the <strong>Deactivate org</strong> and then <strong>Deactivate organization</strong>.</li>
+<li>In <strong>Settings</strong>, select <strong>Deactivate org</strong>.</li>
+<li>Select <strong>Deactivate organization</strong>.</li>
 </ol>
 
       </div>

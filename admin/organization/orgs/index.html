@@ -13498,22 +13498,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/security/for-admins/domain-audit/"
-        title="Domain audit"
-      >
-        
-  Domain audit
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/security/for-admins/domain-management/"
         title="Domain management"
       >
@@ -14890,19 +14874,20 @@ detailed instructions on converting an existing user account to an organization,
         <p>To create an organization:</p>
 <ol>
 <li>
-<p>Sign in to <a class="link" href="https://app.docker.com/" rel="noopener">Docker Home</a>.</p>
+<p>Sign in to <a class="link" href="https://app.docker.com/" rel="noopener">Docker Home</a> and navigate to the bottom
+of the organization list.</p>
 </li>
 <li>
-<p>Under Settings and administration, select <strong>Go to Admin Console</strong>.</p>
-</li>
-<li>
-<p>Select the <strong>Organization</strong> drop-down in the left-hand navigation and then <strong>Create Organization</strong>.</p>
+<p>Select <strong>Create new organization</strong>.</p>
 </li>
 <li>
 <p>Choose a subscription for your organization, a billing cycle, and specify how many seats you need. See <a class="link" href="https://www.docker.com/pricing/" rel="noopener">Docker Pricing</a> for details on the features offered in the Team and Business subscription.</p>
 </li>
 <li>
 <p>Select <strong>Continue to profile</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Create an organization</strong> to create a new one.</p>
 </li>
 <li>
 <p>Enter an <strong>Organization namespace</strong>. This is the official, unique name for
@@ -14947,7 +14932,7 @@ to your organization's <strong>Settings</strong> page.</p>
 <p>Enter your organization's billing information and select <strong>Continue to payment</strong> to continue to the billing portal.</p>
 </li>
 <li>
-<p>Provide your card details and select <strong>Purchase</strong>.</p>
+<p>Provide your payment details and select <strong>Purchase</strong>.</p>
 </li>
 </ol>
 <p>You've now created an organization.</p>
@@ -15107,40 +15092,12 @@ to your organization's <strong>Settings</strong> page.</p>
       >
         <p>To view an organization in the Admin Console:</p>
 <ol>
-<li>Sign in to <a class="link" href="https://app.docker.com" rel="noopener">Docker Home</a>.</li>
-<li>Under Settings and administration, select <strong>Go to Admin Console</strong>.</li>
-<li>Select your organization from the <strong>Organization</strong> drop-down in the left-hand navigation.</li>
+<li>Sign in to <a class="link" href="https://app.docker.com" rel="noopener">Docker Home</a> and select your
+organization.</li>
+<li>From the left-hand navigation menu, select <strong>Admin Console</strong>.</li>
 </ol>
-<p>The Admin Console displays various options that let you to
+<p>The Admin Console contains many options that let you to
 configure your organization.</p>
-<ul>
-<li>
-<p><strong>Members</strong>: Displays a list of team members. You
-can invite new members using the <strong>Invite members</strong> button. See <a class="link" href="https://docker.qubitpi.org/admin/organization/members/">Manage members</a> for details.</p>
-</li>
-<li>
-<p><strong>Teams</strong>: Displays a list of existing teams and the number of
-members in each team. See <a class="link" href="https://docker.qubitpi.org/admin/organization/manage-a-team/">Create a team</a> for details.</p>
-</li>
-<li>
-<p><strong>Activity</strong> Displays the audit logs, a chronological list of activities that
-occur at organization and repository levels. It provides the org owners a
-report of all their team member activities. See <a class="link" href="https://docker.qubitpi.org/admin/organization/activity-logs/">Audit logs</a> for
-details.</p>
-</li>
-<li>
-<p><strong>Security and access</strong>: Manage security settings. For more information, see 
-    
-  
-  <a class="link" href="https://docker.qubitpi.org/security/">Security</a>.</p>
-</li>
-<li>
-<p><strong>Organization settings</strong>: Update organization information or 
-    
-  
-  <a class="link" href="https://docker.qubitpi.org/admin/organization/deactivate-account/">deactivate your organization</a>.</p>
-</li>
-</ul>
 
       </div>
     
@@ -15223,27 +15180,18 @@ organization from the list.</p>
 <p>The organization landing page displays various options that let you to
 configure your organization.</p>
 <ul>
-<li>
-<p><strong>Members</strong>: Displays a list of team members. You
-can invite new members using the <strong>Invite members</strong> button. See <a class="link" href="https://docker.qubitpi.org/admin/organization/members/">Manage members</a> for details.</p>
-</li>
-<li>
-<p><strong>Teams</strong>: Displays a list of existing teams and the number of
-members in each team. See <a class="link" href="https://docker.qubitpi.org/admin/organization/manage-a-team/">Create a team</a> for details.</p>
-</li>
-<li>
-<p><strong>Repositories</strong>: Displays a list of repositories associated with the
+<li><strong>Members</strong>: Displays a list of team members. You
+can invite new members using the <strong>Invite members</strong> button. See <a class="link" href="https://docker.qubitpi.org/admin/organization/members/">Manage members</a> for details.</li>
+<li><strong>Teams</strong>: Displays a list of existing teams and the number of
+members in each team. See <a class="link" href="https://docker.qubitpi.org/admin/organization/manage-a-team/">Create a team</a> for details.</li>
+<li><strong>Repositories</strong>: Displays a list of repositories associated with the
 organization. See <a class="link" href="https://docker.qubitpi.org/docker-hub/repos/">Repositories</a> for detailed information about
-working with repositories.</p>
-</li>
-<li>
-<p><strong>Activity</strong> Displays the audit logs, a chronological list of activities that
+working with repositories.</li>
+<li><strong>Activity</strong> Displays the audit logs, a chronological list of activities that
 occur at organization and repository levels. It provides the org owners a
 report of all their team member activities. See <a class="link" href="https://docker.qubitpi.org/admin/organization/activity-logs/">Audit logs</a> for
-details.</p>
-</li>
-<li>
-<p><strong>Settings</strong>: Displays information about your
+details.</li>
+<li><strong>Settings</strong>: Displays information about your
 organization, and you to view and change your repository privacy
 settings, configure org permissions such as
 
@@ -15253,12 +15201,9 @@ settings, configure org permissions such as
     
   
   <a class="link" href="https://docker.qubitpi.org/admin/organization/deactivate-account/#deactivate-an-organization">deactivate</a> You can also update your organization name and company name that appear on your organization landing page. You must be an owner to access the
-organization's <strong>Settings</strong> page.</p>
-</li>
-<li>
-<p><strong>Billing</strong>: Displays information about your existing
-<a class="link" href="https://docker.qubitpi.org/subscription/">Docker subscription</a>, including the number of seats and next payment due date. For how to access the billing history and payment methods for your organization, see <a class="link" href="https://docker.qubitpi.org/billing/history/">View billing history</a>.</p>
-</li>
+organization's <strong>Settings</strong> page.</li>
+<li><strong>Billing</strong>: Displays information about your existing
+<a class="link" href="https://docker.qubitpi.org/subscription/">Docker subscription</a>, including the number of seats and next payment due date. For how to access the billing history and payment methods for your organization, see <a class="link" href="https://docker.qubitpi.org/billing/history/">View billing history</a>.</li>
 </ul>
 
       </div>
