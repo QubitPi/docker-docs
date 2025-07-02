@@ -8925,6 +8925,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/fips/"
+        title="FIPS"
+      >
+        
+  FIPS
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/glibc-musl/"
         title="glibc and musl"
       >
@@ -14840,9 +14856,9 @@ run for longer than 90 minutes are automatically cancelled.</p>
 
 <p>To enable your CI/CD system to build and push images using Docker Build Cloud, provide both an access token and a username. The type of token and the username you use depend on your account type and permissions.</p>
 <ul>
-<li>If you are an organization administrator or have permission to create <a class="link" href="https://docker.qubitpi.org/security/for-admins/access-tokens/">organization access tokens (OAT)</a>, use an OAT and set <code>DOCKER_USER</code> to your Docker Hub organization name.</li>
+<li>If you are an organization administrator or have permission to create <a class="link" href="https://docker.qubitpi.org/security/for-admins/access-tokens/">organization access tokens (OAT)</a>, use an OAT and set <code>DOCKER_ACCOUNT</code> to your Docker Hub organization name.</li>
 <li>If you do not have permission to create OATs or are using a personal account, use a 
-  <a class="link" href="/security/for-developers/access-tokens/">personal access token (PAT)</a> and set <code>DOCKER_USER</code> to your Docker Hub username.</li>
+  <a class="link" href="/security/for-developers/access-tokens/">personal access token (PAT)</a> and set <code>DOCKER_ACCOUNT</code> to your Docker Hub username.</li>
 </ul>
 
 <h3 class=" scroll-mt-20" id="creating-access-tokens">
@@ -14859,11 +14875,9 @@ run for longer than 90 minutes are automatically cancelled.</p>
 </h4>
 
 <p>If you are an organization administrator:</p>
+<ul>
+<li>Create an <a class="link" href="https://docker.qubitpi.org/security/for-admins/access-tokens/">organization access token (OAT)</a>. The token must have these permissions:
 <ol>
-<li>Create an <a class="link" href="https://docker.qubitpi.org/security/for-admins/access-tokens/">organization access token (OAT)</a>:
-<ul>
-<li>The token must have these permissions:
-<ul>
 <li><strong>cloud-connect</strong> scope</li>
 <li><strong>Read public repositories</strong> permission</li>
 <li><strong>Repository access</strong> with <strong>Image push</strong> permission for the target repository:
@@ -14873,11 +14887,9 @@ run for longer than 90 minutes are automatically cancelled.</p>
 <li>Set the <strong>Image push</strong> permission for the repository.</li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-</li>
 </ol>
+</li>
+</ul>
 <p>If you are not an organization administrator:</p>
 <ul>
 <li>Ask your organization administrator for an access token with the permissions listed above, or use a personal access token.</li>
@@ -14889,18 +14901,18 @@ run for longer than 90 minutes are automatically cancelled.</p>
   </a>
 </h4>
 
-<ol>
-<li>Create a 
-  <a class="link" href="/security/for-developers/access-tokens/">personal access token (PAT)</a>:
 <ul>
-<li>Create a new token with <strong>Read &amp; write</strong> access.
+<li>Create a 
+  <a class="link" href="/security/for-developers/access-tokens/">personal access token (PAT)</a> with the following permissions:
+<ol>
+<li><strong>Read &amp; write</strong> access.
 <ul>
 <li>Note: Building with Docker Build Cloud only requires read access, but you need write access to push images to a Docker Hub repository.</li>
 </ul>
 </li>
-</ul>
-</li>
 </ol>
+</li>
+</ul>
 
 <h2 class=" scroll-mt-20" id="ci-platform-examples">
   <a class="text-black dark:text-white no-underline hover:underline" href="#ci-platform-examples">
@@ -14926,10 +14938,11 @@ run for longer than 90 minutes are automatically cancelled.</p>
       </span>
     </div>
     <div class="admonition-content">
-      <p>In your CI/CD configuration, set the following variables:</p>
+      <p>In your CI/CD configuration, set the following variables/secrets:</p>
 <ul>
-<li><code>DOCKER_PAT</code> — your access token (PAT or OAT)</li>
-<li><code>DOCKER_USER</code> — your Docker Hub username (for PAT) or organization name (for OAT)</li>
+<li><code>DOCKER_ACCESS_TOKEN</code> — your access token (PAT or OAT). Use a secret to store the token.</li>
+<li><code>DOCKER_ACCOUNT</code> — your Docker Hub organization name (for OAT) or username (for PAT)</li>
+<li><code>CLOUD_BUILDER_NAME</code> — the name of the cloud builder you created in the <a class="link" href="https://app.docker.com/build/" rel="noopener">Docker Build Cloud Dashboard</a></li>
 </ul>
 <p>This ensures your builds authenticate correctly with Docker Build Cloud.</p>
     </div>
@@ -14954,7 +14967,7 @@ run for longer than 90 minutes are automatically cancelled.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'bmFtZTogY2kKCm9uOgogIHB1c2g6CiAgICBicmFuY2hlczoKICAgICAgLSAibWFpbiIKCmpvYnM6CiAgZG9ja2VyOgogICAgcnVucy1vbjogdWJ1bnR1LWxhdGVzdAogICAgc3RlcHM6CiAgICAgIC0gbmFtZTogTG9naW4gdG8gRG9ja2VyIEh1YgogICAgICAgIHVzZXM6IGRvY2tlci9sb2dpbi1hY3Rpb25AdjMKICAgICAgICB3aXRoOgogICAgICAgICAgdXNlcm5hbWU6ICR7eyB2YXJzLkRPQ0tFUl9VU0VSIH19CiAgICAgICAgICBwYXNzd29yZDogJHt7IHNlY3JldHMuRE9DS0VSX1BBVCB9fQogICAgICAKICAgICAgLSBuYW1lOiBTZXQgdXAgRG9ja2VyIEJ1aWxkeAogICAgICAgIHVzZXM6IGRvY2tlci9zZXR1cC1idWlsZHgtYWN0aW9uQHYzCiAgICAgICAgd2l0aDoKICAgICAgICAgIGRyaXZlcjogY2xvdWQKICAgICAgICAgIGVuZHBvaW50OiAiPE9SRz4vZGVmYXVsdCIKICAgICAgICAgIGluc3RhbGw6IHRydWUKICAgICAgCiAgICAgIC0gbmFtZTogQnVpbGQgYW5kIHB1c2gKICAgICAgICB1c2VzOiBkb2NrZXIvYnVpbGQtcHVzaC1hY3Rpb25AdjYKICAgICAgICB3aXRoOgogICAgICAgICAgdGFnczogIjxJTUFHRT4iCiAgICAgICAgICAjIEZvciBwdWxsIHJlcXVlc3RzLCBleHBvcnQgcmVzdWx0cyB0byB0aGUgYnVpbGQgY2FjaGUuCiAgICAgICAgICAjIE90aGVyd2lzZSwgcHVzaCB0byBhIHJlZ2lzdHJ5LgogICAgICAgICAgb3V0cHV0czogJHt7IGdpdGh1Yi5ldmVudF9uYW1lID09ICdwdWxsX3JlcXVlc3QnICYmICd0eXBlPWNhY2hlb25seScgfHwgJ3R5cGU9cmVnaXN0cnknIH19', copying: false }"
+        x-data="{ code: 'bmFtZTogY2kKCm9uOgogIHB1c2g6CiAgICBicmFuY2hlczoKICAgICAgLSAibWFpbiIKCmpvYnM6CiAgZG9ja2VyOgogICAgcnVucy1vbjogdWJ1bnR1LWxhdGVzdAogICAgc3RlcHM6CiAgICAgIC0gbmFtZTogTG9naW4gdG8gRG9ja2VyIEh1YgogICAgICAgIHVzZXM6IGRvY2tlci9sb2dpbi1hY3Rpb25AdjMKICAgICAgICB3aXRoOgogICAgICAgICAgdXNlcm5hbWU6ICR7eyB2YXJzLkRPQ0tFUl9BQ0NPVU5UIH19CiAgICAgICAgICBwYXNzd29yZDogJHt7IHNlY3JldHMuRE9DS0VSX0FDQ0VTU19UT0tFTiB9fQogICAgICAKICAgICAgLSBuYW1lOiBTZXQgdXAgRG9ja2VyIEJ1aWxkeAogICAgICAgIHVzZXM6IGRvY2tlci9zZXR1cC1idWlsZHgtYWN0aW9uQHYzCiAgICAgICAgd2l0aDoKICAgICAgICAgIGRyaXZlcjogY2xvdWQKICAgICAgICAgIGVuZHBvaW50OiAiJHt7IHZhcnMuRE9DS0VSX0FDQ09VTlQgfX0vJHt7IHZhcnMuQ0xPVURfQlVJTERFUl9OQU1FIH19IiAjIGZvciBleGFtcGxlLCAiYWNtZS9kZWZhdWx0IgogICAgICAgICAgaW5zdGFsbDogdHJ1ZQogICAgICAKICAgICAgLSBuYW1lOiBCdWlsZCBhbmQgcHVzaAogICAgICAgIHVzZXM6IGRvY2tlci9idWlsZC1wdXNoLWFjdGlvbkB2NgogICAgICAgIHdpdGg6CiAgICAgICAgICB0YWdzOiAiPElNQUdFPiIgIyBmb3IgZXhhbXBsZSwgImFjbWUvbXktaW1hZ2U6bGF0ZXN0IgogICAgICAgICAgIyBGb3IgcHVsbCByZXF1ZXN0cywgZXhwb3J0IHJlc3VsdHMgdG8gdGhlIGJ1aWxkIGNhY2hlLgogICAgICAgICAgIyBPdGhlcndpc2UsIHB1c2ggdG8gYSByZWdpc3RyeS4KICAgICAgICAgIG91dHB1dHM6ICR7eyBnaXRodWIuZXZlbnRfbmFtZSA9PSAncHVsbF9yZXF1ZXN0JyAmJiAndHlwZT1jYWNoZW9ubHknIHx8ICd0eXBlPXJlZ2lzdHJ5JyB9fQ==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -14987,20 +15000,20 @@ run for longer than 90 minutes are automatically cancelled.</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Login to Docker Hub</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">docker/login-action@v3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">${{ vars.DOCKER_USER }}</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.DOCKER_PAT }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">${{ vars.DOCKER_ACCOUNT }}</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">${{ secrets.DOCKER_ACCESS_TOKEN }}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Set up Docker Buildx</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">docker/setup-buildx-action@v3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">driver</span><span class="p">:</span><span class="w"> </span><span class="l">cloud</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;ORG&gt;/default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;${{ vars.DOCKER_ACCOUNT }}/${{ vars.CLOUD_BUILDER_NAME }}&#34;</span><span class="w"> </span><span class="c"># for example, &#34;acme/default&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">install</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">Build and push</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l">docker/build-push-action@v6</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">with</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;IMAGE&gt;&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">tags</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;&lt;IMAGE&gt;&#34;</span><span class="w"> </span><span class="c"># for example, &#34;acme/my-image:latest&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="c"># For pull requests, export results to the build cache.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="c"># Otherwise, push to a registry.</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">outputs</span><span class="p">:</span><span class="w"> </span><span class="l">${{ github.event_name == &#39;pull_request&#39; &amp;&amp; &#39;type=cacheonly&#39; || &#39;type=registry&#39; }}</span></span></span></code></pre></div>
@@ -15027,7 +15040,7 @@ run for longer than 90 minutes are automatically cancelled.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'ZGVmYXVsdDoKICBpbWFnZTogZG9ja2VyOjI0LWRpbmQKICBzZXJ2aWNlczoKICAgIC0gZG9ja2VyOjI0LWRpbmQKICBiZWZvcmVfc2NyaXB0OgogICAgLSBkb2NrZXIgaW5mbwogICAgLSBlY2hvICIkRE9DS0VSX1BBVCIgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSAiJERPQ0tFUl9VU0VSIiAtLXBhc3N3b3JkLXN0ZGluCiAgICAtIHwKICAgICAgYXBrIGFkZCBjdXJsIGpxCiAgICAgIEFSQ0g9JHtDSV9SVU5ORVJfRVhFQ1VUQUJMRV9BUkNIIyovfQogICAgICBCVUlMRFhfVVJMPSQoY3VybCAtcyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZG9ja2VyL2FjdGlvbnMtdG9vbGtpdC9tYWluLy5naXRodWIvYnVpbGR4LWxhYi1yZWxlYXNlcy5qc29uIHwganEgLXIgIi5sYXRlc3QuYXNzZXRzW10gfCBzZWxlY3QoZW5kc3dpdGgoXCJsaW51eC0kQVJDSFwiKSkiKQogICAgICBta2RpciAtdnAgfi8uZG9ja2VyL2NsaS1wbHVnaW5zLwogICAgICBjdXJsIC0tc2lsZW50IC1MIC0tb3V0cHV0IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4ICRCVUlMRFhfVVJMCiAgICAgIGNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeAogICAgLSBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAke0RPQ0tFUl9PUkd9L2RlZmF1bHQKCnZhcmlhYmxlczoKICBJTUFHRV9OQU1FOiA8SU1BR0U&#43;CiAgRE9DS0VSX09SRzogPE9SRz4KCiMgQnVpbGQgbXVsdGktcGxhdGZvcm0gaW1hZ2UgYW5kIHB1c2ggdG8gYSByZWdpc3RyeQpidWlsZF9wdXNoOgogIHN0YWdlOiBidWlsZAogIHNjcmlwdDoKICAgIC0gfAogICAgICBkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgICAgICAtLXBsYXRmb3JtIGxpbnV4L2FtZDY0LGxpbnV4L2FybTY0IFwKICAgICAgICAtLXRhZyAiJHtJTUFHRV9OQU1FfToke0NJX0NPTU1JVF9TSE9SVF9TSEF9IiBcCiAgICAgICAgLS1wdXNoIC4KCiMgQnVpbGQgYW4gaW1hZ2UgYW5kIGRpc2NhcmQgdGhlIHJlc3VsdApidWlsZF9jYWNoZToKICBzdGFnZTogYnVpbGQKICBzY3JpcHQ6CiAgICAtIHwKICAgICAgZG9ja2VyIGJ1aWxkeCBidWlsZCBcCiAgICAgICAgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCxsaW51eC9hcm02NCBcCiAgICAgICAgLS10YWcgIiR7SU1BR0VfTkFNRX06JHtDSV9DT01NSVRfU0hPUlRfU0hBfSIgXAogICAgICAgIC0tb3V0cHV0IHR5cGU9Y2FjaGVvbmx5IFwKICAgICAgICAu', copying: false }"
+        x-data="{ code: 'ZGVmYXVsdDoKICBpbWFnZTogZG9ja2VyOjI0LWRpbmQKICBzZXJ2aWNlczoKICAgIC0gZG9ja2VyOjI0LWRpbmQKICBiZWZvcmVfc2NyaXB0OgogICAgLSBkb2NrZXIgaW5mbwogICAgLSBlY2hvICIkRE9DS0VSX0FDQ0VTU19UT0tFTiIgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSAiJERPQ0tFUl9BQ0NPVU5UIiAtLXBhc3N3b3JkLXN0ZGluCiAgICAtIHwKICAgICAgYXBrIGFkZCBjdXJsIGpxCiAgICAgIEFSQ0g9JHtDSV9SVU5ORVJfRVhFQ1VUQUJMRV9BUkNIIyovfQogICAgICBCVUlMRFhfVVJMPSQoY3VybCAtcyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZG9ja2VyL2FjdGlvbnMtdG9vbGtpdC9tYWluLy5naXRodWIvYnVpbGR4LWxhYi1yZWxlYXNlcy5qc29uIHwganEgLXIgIi5sYXRlc3QuYXNzZXRzW10gfCBzZWxlY3QoZW5kc3dpdGgoXCJsaW51eC0kQVJDSFwiKSkiKQogICAgICBta2RpciAtdnAgfi8uZG9ja2VyL2NsaS1wbHVnaW5zLwogICAgICBjdXJsIC0tc2lsZW50IC1MIC0tb3V0cHV0IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4ICRCVUlMRFhfVVJMCiAgICAgIGNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeAogICAgLSBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAke0RPQ0tFUl9BQ0NPVU5UfS8ke0NMT1VEX0JVSUxERVJfTkFNRX0KCnZhcmlhYmxlczoKICBJTUFHRV9OQU1FOiA8SU1BR0U&#43;CiAgRE9DS0VSX0FDQ09VTlQ6IDxET0NLRVJfQUNDT1VOVD4gIyB5b3VyIERvY2tlciBIdWIgb3JnYW5pemF0aW9uIG5hbWUgKG9yIHVzZXJuYW1lIHdoZW4gdXNpbmcgYSBwZXJzb25hbCBhY2NvdW50KQogIENMT1VEX0JVSUxERVJfTkFNRTogPENMT1VEX0JVSUxERVJfTkFNRT4gIyB0aGUgbmFtZSBvZiB0aGUgY2xvdWQgYnVpbGRlciB5b3UgY3JlYXRlZCBpbiB0aGUgW0RvY2tlciBCdWlsZCBDbG91ZCBEYXNoYm9hcmRdKGh0dHBzOi8vYXBwLmRvY2tlci5jb20vYnVpbGQvKQoKIyBCdWlsZCBtdWx0aS1wbGF0Zm9ybSBpbWFnZSBhbmQgcHVzaCB0byBhIHJlZ2lzdHJ5CmJ1aWxkX3B1c2g6CiAgc3RhZ2U6IGJ1aWxkCiAgc2NyaXB0OgogICAgLSB8CiAgICAgIGRvY2tlciBidWlsZHggYnVpbGQgXAogICAgICAgIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgXAogICAgICAgIC0tdGFnICIke0lNQUdFX05BTUV9OiR7Q0lfQ09NTUlUX1NIT1JUX1NIQX0iIFwKICAgICAgICAtLXB1c2ggLgoKIyBCdWlsZCBhbiBpbWFnZSBhbmQgZGlzY2FyZCB0aGUgcmVzdWx0CmJ1aWxkX2NhY2hlOgogIHN0YWdlOiBidWlsZAogIHNjcmlwdDoKICAgIC0gfAogICAgICBkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgICAgICAtLXBsYXRmb3JtIGxpbnV4L2FtZDY0LGxpbnV4L2FybTY0IFwKICAgICAgICAtLXRhZyAiJHtJTUFHRV9OQU1FfToke0NJX0NPTU1JVF9TSE9SVF9TSEF9IiBcCiAgICAgICAgLS1vdXRwdXQgdHlwZT1jYWNoZW9ubHkgXAogICAgICAgIC4=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15052,7 +15065,7 @@ run for longer than 90 minutes are automatically cancelled.</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">docker:24-dind</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">before_script</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">docker info</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">echo &#34;$DOCKER_PAT&#34; | docker login --username &#34;$DOCKER_USER&#34; --password-stdin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">echo &#34;$DOCKER_ACCESS_TOKEN&#34; | docker login --username &#34;$DOCKER_ACCOUNT&#34; --password-stdin</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">      apk add curl jq
 </span></span></span><span class="line"><span class="cl"><span class="sd">      ARCH=${CI_RUNNER_EXECUTABLE_ARCH#*/}
@@ -15060,11 +15073,12 @@ run for longer than 90 minutes are automatically cancelled.</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">      mkdir -vp ~/.docker/cli-plugins/
 </span></span></span><span class="line"><span class="cl"><span class="sd">      curl --silent -L --output ~/.docker/cli-plugins/docker-buildx $BUILDX_URL
 </span></span></span><span class="line"><span class="cl"><span class="sd">      chmod a+x ~/.docker/cli-plugins/docker-buildx</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">docker buildx create --use --driver cloud ${DOCKER_ORG}/default</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">docker buildx create --use --driver cloud ${DOCKER_ACCOUNT}/${CLOUD_BUILDER_NAME}</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">variables</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">IMAGE_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;IMAGE&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">DOCKER_ORG</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;ORG&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">DOCKER_ACCOUNT</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;DOCKER_ACCOUNT&gt;</span><span class="w"> </span><span class="c"># your Docker Hub organization name (or username when using a personal account)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">CLOUD_BUILDER_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;CLOUD_BUILDER_NAME&gt;</span><span class="w"> </span><span class="c"># the name of the cloud builder you created in the [Docker Build Cloud Dashboard](https://app.docker.com/build/)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Build multi-platform image and push to a registry</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">build_push</span><span class="p">:</span><span class="w">
@@ -15109,7 +15123,7 @@ run for longer than 90 minutes are automatically cancelled.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'dmVyc2lvbjogMi4xCgpqb2JzOgogICMgQnVpbGQgbXVsdGktcGxhdGZvcm0gaW1hZ2UgYW5kIHB1c2ggdG8gYSByZWdpc3RyeQogIGJ1aWxkX3B1c2g6CiAgICBtYWNoaW5lOgogICAgICBpbWFnZTogdWJ1bnR1LTIyMDQ6Y3VycmVudAogICAgc3RlcHM6CiAgICAgIC0gY2hlY2tvdXQKCiAgICAgIC0gcnVuOiB8CiAgICAgICAgICBta2RpciAtdnAgfi8uZG9ja2VyL2NsaS1wbHVnaW5zLwogICAgICAgICAgQVJDSD1hbWQ2NAogICAgICAgICAgQlVJTERYX1VSTD0kKGN1cmwgLXMgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RvY2tlci9hY3Rpb25zLXRvb2xraXQvbWFpbi8uZ2l0aHViL2J1aWxkeC1sYWItcmVsZWFzZXMuanNvbiB8IGpxIC1yICIubGF0ZXN0LmFzc2V0c1tdIHwgc2VsZWN0KGVuZHN3aXRoKFwibGludXgtJEFSQ0hcIikpIikKICAgICAgICAgIGN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKICAgICAgICAgIGNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeAoKICAgICAgLSBydW46IGVjaG8gIiRET0NLRVJfUEFUIiB8IGRvY2tlciBsb2dpbiAtLXVzZXJuYW1lICRET0NLRVJfVVNFUiAtLXBhc3N3b3JkLXN0ZGluCiAgICAgIC0gcnVuOiBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiPE9SRz4vZGVmYXVsdCIKCiAgICAgIC0gcnVuOiB8CiAgICAgICAgICBkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgICAgICAgIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgXAogICAgICAgICAgLS1wdXNoIFwKICAgICAgICAgIC0tdGFnICI8SU1BR0U&#43;IiAuCgogICMgQnVpbGQgYW4gaW1hZ2UgYW5kIGRpc2NhcmQgdGhlIHJlc3VsdAogIGJ1aWxkX2NhY2hlOgogICAgbWFjaGluZToKICAgICAgaW1hZ2U6IHVidW50dS0yMjA0OmN1cnJlbnQKICAgIHN0ZXBzOgogICAgICAtIGNoZWNrb3V0CgogICAgICAtIHJ1bjogfAogICAgICAgICAgbWtkaXIgLXZwIH4vLmRvY2tlci9jbGktcGx1Z2lucy8KICAgICAgICAgIEFSQ0g9YW1kNjQKICAgICAgICAgIEJVSUxEWF9VUkw9JChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcImxpbnV4LSRBUkNIXCIpKSIpCiAgICAgICAgICBjdXJsIC0tc2lsZW50IC1MIC0tb3V0cHV0IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4ICRCVUlMRFhfVVJMCiAgICAgICAgICBjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgKCiAgICAgIC0gcnVuOiBlY2hvICIkRE9DS0VSX1BBVCIgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSAkRE9DS0VSX1VTRVIgLS1wYXNzd29yZC1zdGRpbgogICAgICAtIHJ1bjogZG9ja2VyIGJ1aWxkeCBjcmVhdGUgLS11c2UgLS1kcml2ZXIgY2xvdWQgIjxPUkc&#43;L2RlZmF1bHQiCgogICAgICAtIHJ1bjogfAogICAgICAgICAgZG9ja2VyIGJ1aWxkeCBidWlsZCBcCiAgICAgICAgICAtLXRhZyB0ZW1wIFwKICAgICAgICAgIC0tb3V0cHV0IHR5cGU9Y2FjaGVvbmx5IFwKICAgICAgICAgIC4KCndvcmtmbG93czoKICBwdWxsX3JlcXVlc3Q6CiAgICBqb2JzOgogICAgICAtIGJ1aWxkX2NhY2hlCiAgcmVsZWFzZToKICAgIGpvYnM6CiAgICAgIC0gYnVpbGRfcHVzaA==', copying: false }"
+        x-data="{ code: 'dmVyc2lvbjogMi4xCgpqb2JzOgogICMgQnVpbGQgbXVsdGktcGxhdGZvcm0gaW1hZ2UgYW5kIHB1c2ggdG8gYSByZWdpc3RyeQogIGJ1aWxkX3B1c2g6CiAgICBtYWNoaW5lOgogICAgICBpbWFnZTogdWJ1bnR1LTIyMDQ6Y3VycmVudAogICAgc3RlcHM6CiAgICAgIC0gY2hlY2tvdXQKCiAgICAgIC0gcnVuOiB8CiAgICAgICAgICBta2RpciAtdnAgfi8uZG9ja2VyL2NsaS1wbHVnaW5zLwogICAgICAgICAgQVJDSD1hbWQ2NAogICAgICAgICAgQlVJTERYX1VSTD0kKGN1cmwgLXMgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RvY2tlci9hY3Rpb25zLXRvb2xraXQvbWFpbi8uZ2l0aHViL2J1aWxkeC1sYWItcmVsZWFzZXMuanNvbiB8IGpxIC1yICIubGF0ZXN0LmFzc2V0c1tdIHwgc2VsZWN0KGVuZHN3aXRoKFwibGludXgtJEFSQ0hcIikpIikKICAgICAgICAgIGN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKICAgICAgICAgIGNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeAoKICAgICAgLSBydW46IGVjaG8gIiRET0NLRVJfQUNDRVNTX1RPS0VOIiB8IGRvY2tlciBsb2dpbiAtLXVzZXJuYW1lICRET0NLRVJfIC0tcGFzc3dvcmQtc3RkaW4KICAgICAgLSBydW46IGRvY2tlciBidWlsZHggY3JlYXRlIC0tdXNlIC0tZHJpdmVyIGNsb3VkICIke0RPQ0tFUl9BQ0NPVU5UfS8ke0NMT1VEX0JVSUxERVJfTkFNRX0iCgogICAgICAtIHJ1bjogfAogICAgICAgICAgZG9ja2VyIGJ1aWxkeCBidWlsZCBcCiAgICAgICAgICAtLXBsYXRmb3JtIGxpbnV4L2FtZDY0LGxpbnV4L2FybTY0IFwKICAgICAgICAgIC0tcHVzaCBcCiAgICAgICAgICAtLXRhZyAiPElNQUdFPiIgLgoKICAjIEJ1aWxkIGFuIGltYWdlIGFuZCBkaXNjYXJkIHRoZSByZXN1bHQKICBidWlsZF9jYWNoZToKICAgIG1hY2hpbmU6CiAgICAgIGltYWdlOiB1YnVudHUtMjIwNDpjdXJyZW50CiAgICBzdGVwczoKICAgICAgLSBjaGVja291dAoKICAgICAgLSBydW46IHwKICAgICAgICAgIG1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCiAgICAgICAgICBBUkNIPWFtZDY0CiAgICAgICAgICBCVUlMRFhfVVJMPSQoY3VybCAtcyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZG9ja2VyL2FjdGlvbnMtdG9vbGtpdC9tYWluLy5naXRodWIvYnVpbGR4LWxhYi1yZWxlYXNlcy5qc29uIHwganEgLXIgIi5sYXRlc3QuYXNzZXRzW10gfCBzZWxlY3QoZW5kc3dpdGgoXCJsaW51eC0kQVJDSFwiKSkiKQogICAgICAgICAgY3VybCAtLXNpbGVudCAtTCAtLW91dHB1dCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeCAkQlVJTERYX1VSTAogICAgICAgICAgY2htb2QgYSt4IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4CgogICAgICAtIHJ1bjogZWNobyAiJERPQ0tFUl9BQ0NFU1NfVE9LRU4iIHwgZG9ja2VyIGxvZ2luIC0tdXNlcm5hbWUgJERPQ0tFUl8gLS1wYXNzd29yZC1zdGRpbgogICAgICAtIHJ1bjogZG9ja2VyIGJ1aWxkeCBjcmVhdGUgLS11c2UgLS1kcml2ZXIgY2xvdWQgIiR7RE9DS0VSX0FDQ09VTlR9LyR7Q0xPVURfQlVJTERFUl9OQU1FfSIKCiAgICAgIC0gcnVuOiB8CiAgICAgICAgICBkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgICAgICAgIC0tdGFnIHRlbXAgXAogICAgICAgICAgLS1vdXRwdXQgdHlwZT1jYWNoZW9ubHkgXAogICAgICAgICAgLgoKd29ya2Zsb3dzOgogIHB1bGxfcmVxdWVzdDoKICAgIGpvYnM6CiAgICAgIC0gYnVpbGRfY2FjaGUKICByZWxlYXNlOgogICAgam9iczoKICAgICAgLSBidWlsZF9wdXNo', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15145,8 +15159,8 @@ run for longer than 90 minutes are automatically cancelled.</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">          curl --silent -L --output ~/.docker/cli-plugins/docker-buildx $BUILDX_URL
 </span></span></span><span class="line"><span class="cl"><span class="sd">          chmod a+x ~/.docker/cli-plugins/docker-buildx</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">echo &#34;$DOCKER_PAT&#34; | docker login --username $DOCKER_USER --password-stdin</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">docker buildx create --use --driver cloud &#34;&lt;ORG&gt;/default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">echo &#34;$DOCKER_ACCESS_TOKEN&#34; | docker login --username $DOCKER_ --password-stdin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">docker buildx create --use --driver cloud &#34;${DOCKER_ACCOUNT}/${CLOUD_BUILDER_NAME}&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">          docker buildx build \
@@ -15168,8 +15182,8 @@ run for longer than 90 minutes are automatically cancelled.</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">          curl --silent -L --output ~/.docker/cli-plugins/docker-buildx $BUILDX_URL
 </span></span></span><span class="line"><span class="cl"><span class="sd">          chmod a+x ~/.docker/cli-plugins/docker-buildx</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">echo &#34;$DOCKER_PAT&#34; | docker login --username $DOCKER_USER --password-stdin</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">docker buildx create --use --driver cloud &#34;&lt;ORG&gt;/default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">echo &#34;$DOCKER_ACCESS_TOKEN&#34; | docker login --username $DOCKER_ --password-stdin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l">docker buildx create --use --driver cloud &#34;${DOCKER_ACCOUNT}/${CLOUD_BUILDER_NAME}&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">          docker buildx build \
@@ -15212,7 +15226,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'IyEvYmluL2Jhc2gKc2V0IC1ldW8gcGlwZWZhaWwKCmlmIFtbICIkQlVJTERLSVRFX1BJUEVMSU5FX05BTUUiID09ICJidWlsZC1wdXNoLWRvY2tlciIgXV07IHRoZW4KIGV4cG9ydCBET0NLRVJfUEFUPSI8RE9DS0VSX1BFUlNPTkFMX0FDQ0VTU19UT0tFTj4iCmZp', copying: false }"
+        x-data="{ code: 'IyEvYmluL2Jhc2gKc2V0IC1ldW8gcGlwZWZhaWwKCmlmIFtbICIkQlVJTERLSVRFX1BJUEVMSU5FX05BTUUiID09ICJidWlsZC1wdXNoLWRvY2tlciIgXV07IHRoZW4KIGV4cG9ydCBET0NLRVJfQUNDRVNTX1RPS0VOPSI8RE9DS0VSX0FDQ0VTU19UT0tFTj4iCmZp', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15235,7 +15249,7 @@ this to your needs.</p>
 </span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">set</span> -euo pipefail
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[[</span> <span class="s2">&#34;</span><span class="nv">$BUILDKITE_PIPELINE_NAME</span><span class="s2">&#34;</span> <span class="o">==</span> <span class="s2">&#34;build-push-docker&#34;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
-</span></span><span class="line"><span class="cl"> <span class="nb">export</span> <span class="nv">DOCKER_PAT</span><span class="o">=</span><span class="s2">&#34;&lt;DOCKER_PERSONAL_ACCESS_TOKEN&gt;&#34;</span>
+</span></span><span class="line"><span class="cl"> <span class="nb">export</span> <span class="nv">DOCKER_ACCESS_TOKEN</span><span class="o">=</span><span class="s2">&#34;&lt;DOCKER_ACCESS_TOKEN&gt;&#34;</span>
 </span></span><span class="line"><span class="cl"><span class="k">fi</span></span></span></code></pre></div>
       
     </div>
@@ -15254,7 +15268,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'ZW52OgogIERPQ0tFUl9PUkc6IDxPUkc&#43;CiAgSU1BR0VfTkFNRTogPElNQUdFPgoKc3RlcHM6CiAgLSBjb21tYW5kOiAuL2J1aWxkLnNoCiAgICBrZXk6IGJ1aWxkLXB1c2gKICAgIHBsdWdpbnM6CiAgICAgIC0gZG9ja2VyLWxvZ2luI3YyLjEuMDoKICAgICAgICAgIHVzZXJuYW1lOiA8RE9DS0VSX1VTRVI&#43;CiAgICAgICAgICBwYXNzd29yZC1lbnY6IERPQ0tFUl9QQVQgIyB0aGUgdmFyaWFibGUgbmFtZSBpbiB0aGUgZW52aXJvbm1lbnQgaG9vaw==', copying: false }"
+        x-data="{ code: 'ZW52OgogIERPQ0tFUl9BQ0NPVU5UOiA8RE9DS0VSX0FDQ09VTlQ&#43;ICMgeW91ciBEb2NrZXIgSHViIG9yZ2FuaXphdGlvbiBuYW1lIChvciB1c2VybmFtZSB3aGVuIHVzaW5nIGEgcGVyc29uYWwgYWNjb3VudCkKICBDTE9VRF9CVUlMREVSX05BTUU6IDxDTE9VRF9CVUlMREVSX05BTUU&#43;ICMgdGhlIG5hbWUgb2YgdGhlIGNsb3VkIGJ1aWxkZXIgeW91IGNyZWF0ZWQgaW4gdGhlIFtEb2NrZXIgQnVpbGQgQ2xvdWQgRGFzaGJvYXJkXShodHRwczovL2FwcC5kb2NrZXIuY29tL2J1aWxkLykKICBJTUFHRV9OQU1FOiA8SU1BR0U&#43;CgpzdGVwczoKICAtIGNvbW1hbmQ6IC4vYnVpbGQuc2gKICAgIGtleTogYnVpbGQtcHVzaAogICAgcGx1Z2luczoKICAgICAgLSBkb2NrZXItbG9naW4jdjIuMS4wOgogICAgICAgICAgdXNlcm5hbWU6IERPQ0tFUl9BQ0NPVU5UCiAgICAgICAgICBwYXNzd29yZC1lbnY6IERPQ0tFUl9BQ0NFU1NfVE9LRU4gIyB0aGUgdmFyaWFibGUgbmFtZSBpbiB0aGUgZW52aXJvbm1lbnQgaG9vaw==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15274,7 +15288,8 @@ this to your needs.</p>
       </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">env</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">DOCKER_ORG</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;ORG&gt;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">DOCKER_ACCOUNT</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;DOCKER_ACCOUNT&gt;</span><span class="w"> </span><span class="c"># your Docker Hub organization name (or username when using a personal account)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">CLOUD_BUILDER_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;CLOUD_BUILDER_NAME&gt;</span><span class="w"> </span><span class="c"># the name of the cloud builder you created in the [Docker Build Cloud Dashboard](https://app.docker.com/build/)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">IMAGE_NAME</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;IMAGE&gt;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">steps</span><span class="p">:</span><span class="w">
@@ -15282,8 +15297,8 @@ this to your needs.</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l">build-push</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">plugins</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span>- <span class="nt">docker-login#v2.1.0</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">&lt;DOCKER_USER&gt;</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">password-env</span><span class="p">:</span><span class="w"> </span><span class="l">DOCKER_PAT</span><span class="w"> </span><span class="c"># the variable name in the environment hook</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">DOCKER_ACCOUNT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span><span class="nt">password-env</span><span class="p">:</span><span class="w"> </span><span class="l">DOCKER_ACCESS_TOKEN</span><span class="w"> </span><span class="c"># the variable name in the environment hook</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -15301,7 +15316,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'RE9DS0VSX0RJUj0vdXNyL2xpYmV4ZWMvZG9ja2VyCgojIEdldCBkb3dubG9hZCBsaW5rIGZvciBsYXRlc3QgYnVpbGR4IGJpbmFyeS4KIyBTZXQgJEFSQ0ggdG8gdGhlIENQVSBhcmNoaXRlY3R1cmUgKGUuZy4gYW1kNjQsIGFybTY0KQpVTkFNRV9BUkNIPWB1bmFtZSAtbWAKY2FzZSAkVU5BTUVfQVJDSCBpbgogIGFhcmNoNjQpCiAgICBBUkNIPSJhcm02NCI7CiAgICA7OwogIGFtZDY0KQogICAgQVJDSD0iYW1kNjQiOwogICAgOzsKICAqKQogICAgQVJDSD0iYW1kNjQiOwogICAgOzsKZXNhYwpCVUlMRFhfVVJMPSQoY3VybCAtcyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZG9ja2VyL2FjdGlvbnMtdG9vbGtpdC9tYWluLy5naXRodWIvYnVpbGR4LWxhYi1yZWxlYXNlcy5qc29uIHwganEgLXIgIi5sYXRlc3QuYXNzZXRzW10gfCBzZWxlY3QoZW5kc3dpdGgoXCJsaW51eC0kQVJDSFwiKSkiKQoKIyBEb3dubG9hZCBkb2NrZXIgYnVpbGR4IHdpdGggQnVpbGQgQ2xvdWQgc3VwcG9ydApjdXJsIC0tc2lsZW50IC1MIC0tb3V0cHV0ICRET0NLRVJfRElSL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKY2htb2QgYSt4IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4CgojIENvbm5lY3QgdG8geW91ciBidWlsZGVyIGFuZCBzZXQgaXQgYXMgdGhlIGRlZmF1bHQgYnVpbGRlcgpkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiJERPQ0tFUl9PUkcvZGVmYXVsdCIKCiMgQ2FjaGUtb25seSBpbWFnZSBidWlsZApkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgXAogICAgLS10YWcgIiRJTUFHRV9OQU1FOiRCVUlMREtJVEVfQ09NTUlUIiBcCiAgICAtLW91dHB1dCB0eXBlPWNhY2hlb25seSBcCiAgICAuCgojIEJ1aWxkLCB0YWcsIGFuZCBwdXNoIGEgbXVsdGktYXJjaCBkb2NrZXIgaW1hZ2UKZG9ja2VyIGJ1aWxkeCBidWlsZCBcCiAgICAtLXBsYXRmb3JtIGxpbnV4L2FtZDY0LGxpbnV4L2FybTY0IFwKICAgIC0tcHVzaCBcCiAgICAtLXRhZyAiJElNQUdFX05BTUU6JEJVSUxES0lURV9DT01NSVQiIFwKICAgIC4=', copying: false }"
+        x-data="{ code: 'RE9DS0VSX0RJUj0vdXNyL2xpYmV4ZWMvZG9ja2VyCgojIEdldCBkb3dubG9hZCBsaW5rIGZvciBsYXRlc3QgYnVpbGR4IGJpbmFyeS4KIyBTZXQgJEFSQ0ggdG8gdGhlIENQVSBhcmNoaXRlY3R1cmUgKGUuZy4gYW1kNjQsIGFybTY0KQpVTkFNRV9BUkNIPWB1bmFtZSAtbWAKY2FzZSAkVU5BTUVfQVJDSCBpbgogIGFhcmNoNjQpCiAgICBBUkNIPSJhcm02NCI7CiAgICA7OwogIGFtZDY0KQogICAgQVJDSD0iYW1kNjQiOwogICAgOzsKICAqKQogICAgQVJDSD0iYW1kNjQiOwogICAgOzsKZXNhYwpCVUlMRFhfVVJMPSQoY3VybCAtcyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZG9ja2VyL2FjdGlvbnMtdG9vbGtpdC9tYWluLy5naXRodWIvYnVpbGR4LWxhYi1yZWxlYXNlcy5qc29uIHwganEgLXIgIi5sYXRlc3QuYXNzZXRzW10gfCBzZWxlY3QoZW5kc3dpdGgoXCJsaW51eC0kQVJDSFwiKSkiKQoKIyBEb3dubG9hZCBkb2NrZXIgYnVpbGR4IHdpdGggQnVpbGQgQ2xvdWQgc3VwcG9ydApjdXJsIC0tc2lsZW50IC1MIC0tb3V0cHV0ICRET0NLRVJfRElSL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKY2htb2QgYSt4IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4CgojIENvbm5lY3QgdG8geW91ciBidWlsZGVyIGFuZCBzZXQgaXQgYXMgdGhlIGRlZmF1bHQgYnVpbGRlcgpkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiJHtET0NLRVJfQUNDT1VOVH0vJHtDTE9VRF9CVUlMREVSX05BTUV9IgoKIyBDYWNoZS1vbmx5IGltYWdlIGJ1aWxkCmRvY2tlciBidWlsZHggYnVpbGQgXAogICAgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCxsaW51eC9hcm02NCBcCiAgICAtLXRhZyAiJElNQUdFX05BTUU6JEJVSUxES0lURV9DT01NSVQiIFwKICAgIC0tb3V0cHV0IHR5cGU9Y2FjaGVvbmx5IFwKICAgIC4KCiMgQnVpbGQsIHRhZywgYW5kIHB1c2ggYSBtdWx0aS1hcmNoIGRvY2tlciBpbWFnZQpkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgXAogICAgLS1wdXNoIFwKICAgIC0tdGFnICIkSU1BR0VfTkFNRTokQlVJTERLSVRFX0NPTU1JVCIgXAogICAgLg==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15343,7 +15358,7 @@ this to your needs.</p>
 </span></span><span class="line"><span class="cl">chmod a+x ~/.docker/cli-plugins/docker-buildx
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Connect to your builder and set it as the default builder</span>
-</span></span><span class="line"><span class="cl">docker buildx create --use --driver cloud <span class="s2">&#34;</span><span class="nv">$DOCKER_ORG</span><span class="s2">/default&#34;</span>
+</span></span><span class="line"><span class="cl">docker buildx create --use --driver cloud <span class="s2">&#34;</span><span class="si">${</span><span class="nv">DOCKER_ACCOUNT</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">CLOUD_BUILDER_NAME</span><span class="si">}</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Cache-only image build</span>
 </span></span><span class="line"><span class="cl">docker buildx build <span class="se">\
@@ -15381,7 +15396,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'cGlwZWxpbmUgewogIGFnZW50IGFueQoKICBlbnZpcm9ubWVudCB7CiAgICBBUkNIID0gJ2FtZDY0JwogICAgRE9DS0VSX1BBVCA9IGNyZWRlbnRpYWxzKCdkb2NrZXItcGVyc29uYWwtYWNjZXNzLXRva2VuJykKICAgIERPQ0tFUl9VU0VSID0gY3JlZGVudGlhbHMoJ2RvY2tlci11c2VybmFtZScpCiAgICBET0NLRVJfT1JHID0gJzxPUkc&#43;JwogICAgSU1BR0VfTkFNRSA9ICc8SU1BR0U&#43;JwogIH0KCiAgc3RhZ2VzIHsKICAgIHN0YWdlKCdCdWlsZCcpIHsKICAgICAgZW52aXJvbm1lbnQgewogICAgICAgIEJVSUxEWF9VUkwgPSBzaCAocmV0dXJuU3Rkb3V0OiB0cnVlLCBzY3JpcHQ6ICdjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcXCJsaW51eC0kQVJDSFxcIikpIicpLnRyaW0oKQogICAgICB9CiAgICAgIHN0ZXBzIHsKICAgICAgICBzaCAnbWtkaXIgLXZwIH4vLmRvY2tlci9jbGktcGx1Z2lucy8nCiAgICAgICAgc2ggJ2N1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwnCiAgICAgICAgc2ggJ2NobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeCcKICAgICAgICBzaCAnZWNobyAiJERPQ0tFUl9QQVQiIHwgZG9ja2VyIGxvZ2luIC0tdXNlcm5hbWUgJERPQ0tFUl9VU0VSIC0tcGFzc3dvcmQtc3RkaW4nCiAgICAgICAgc2ggJ2RvY2tlciBidWlsZHggY3JlYXRlIC0tdXNlIC0tZHJpdmVyIGNsb3VkICIkRE9DS0VSX09SRy9kZWZhdWx0IicKICAgICAgICAvLyBDYWNoZS1vbmx5IGJ1aWxkCiAgICAgICAgc2ggJ2RvY2tlciBidWlsZHggYnVpbGQgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCxsaW51eC9hcm02NCAtLXRhZyAiJElNQUdFX05BTUUiIC0tb3V0cHV0IHR5cGU9Y2FjaGVvbmx5IC4nCiAgICAgICAgLy8gQnVpbGQgYW5kIHB1c2ggYSBtdWx0aS1wbGF0Zm9ybSBpbWFnZQogICAgICAgIHNoICdkb2NrZXIgYnVpbGR4IGJ1aWxkIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgLS1wdXNoIC0tdGFnICIkSU1BR0VfTkFNRSIgLicKICAgICAgfQogICAgfQogIH0KfQ==', copying: false }"
+        x-data="{ code: 'cGlwZWxpbmUgewogIGFnZW50IGFueQoKICBlbnZpcm9ubWVudCB7CiAgICBBUkNIID0gJ2FtZDY0JwogICAgRE9DS0VSX0FDQ0VTU19UT0tFTiA9IGNyZWRlbnRpYWxzKCdkb2NrZXItYWNjZXNzLXRva2VuJykKICAgIERPQ0tFUl9BQ0NPVU5UID0gY3JlZGVudGlhbHMoJ2RvY2tlci1hY2NvdW50JykKICAgIENMT1VEX0JVSUxERVJfTkFNRSA9ICc8Q0xPVURfQlVJTERFUl9OQU1FPicKICAgIElNQUdFX05BTUUgPSAnPElNQUdFPicKICB9CgogIHN0YWdlcyB7CiAgICBzdGFnZSgnQnVpbGQnKSB7CiAgICAgIGVudmlyb25tZW50IHsKICAgICAgICBCVUlMRFhfVVJMID0gc2ggKHJldHVyblN0ZG91dDogdHJ1ZSwgc2NyaXB0OiAnY3VybCAtcyBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vZG9ja2VyL2FjdGlvbnMtdG9vbGtpdC9tYWluLy5naXRodWIvYnVpbGR4LWxhYi1yZWxlYXNlcy5qc29uIHwganEgLXIgIi5sYXRlc3QuYXNzZXRzW10gfCBzZWxlY3QoZW5kc3dpdGgoXFwibGludXgtJEFSQ0hcXCIpKSInKS50cmltKCkKICAgICAgfQogICAgICBzdGVwcyB7CiAgICAgICAgc2ggJ21rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvJwogICAgICAgIHNoICdjdXJsIC0tc2lsZW50IC1MIC0tb3V0cHV0IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4ICRCVUlMRFhfVVJMJwogICAgICAgIHNoICdjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgnCiAgICAgICAgc2ggJ2VjaG8gIiRET0NLRVJfQUNDRVNTX1RPS0VOIiB8IGRvY2tlciBsb2dpbiAtLXVzZXJuYW1lICRET0NLRVJfQUNDT1VOVCAtLXBhc3N3b3JkLXN0ZGluJwogICAgICAgIHNoICdkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiJHtET0NLRVJfQUNDT1VOVH0vJHtDTE9VRF9CVUlMREVSX05BTUV9IicKICAgICAgICAvLyBDYWNoZS1vbmx5IGJ1aWxkCiAgICAgICAgc2ggJ2RvY2tlciBidWlsZHggYnVpbGQgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCxsaW51eC9hcm02NCAtLXRhZyAiJElNQUdFX05BTUUiIC0tb3V0cHV0IHR5cGU9Y2FjaGVvbmx5IC4nCiAgICAgICAgLy8gQnVpbGQgYW5kIHB1c2ggYSBtdWx0aS1wbGF0Zm9ybSBpbWFnZQogICAgICAgIHNoICdkb2NrZXIgYnVpbGR4IGJ1aWxkIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgLS1wdXNoIC0tdGFnICIkSU1BR0VfTkFNRSIgLicKICAgICAgfQogICAgfQogIH0KfQ==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15405,9 +15420,9 @@ this to your needs.</p>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">  <span class="n">environment</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">ARCH</span> <span class="o">=</span> <span class="s1">&#39;amd64&#39;</span>
-</span></span><span class="line"><span class="cl">    <span class="n">DOCKER_PAT</span> <span class="o">=</span> <span class="n">credentials</span><span class="o">(</span><span class="s1">&#39;docker-personal-access-token&#39;</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">DOCKER_USER</span> <span class="o">=</span> <span class="n">credentials</span><span class="o">(</span><span class="s1">&#39;docker-username&#39;</span><span class="o">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">DOCKER_ORG</span> <span class="o">=</span> <span class="s1">&#39;&lt;ORG&gt;&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DOCKER_ACCESS_TOKEN</span> <span class="o">=</span> <span class="n">credentials</span><span class="o">(</span><span class="s1">&#39;docker-access-token&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DOCKER_ACCOUNT</span> <span class="o">=</span> <span class="n">credentials</span><span class="o">(</span><span class="s1">&#39;docker-account&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">CLOUD_BUILDER_NAME</span> <span class="o">=</span> <span class="s1">&#39;&lt;CLOUD_BUILDER_NAME&gt;&#39;</span>
 </span></span><span class="line"><span class="cl">    <span class="n">IMAGE_NAME</span> <span class="o">=</span> <span class="s1">&#39;&lt;IMAGE&gt;&#39;</span>
 </span></span><span class="line"><span class="cl">  <span class="o">}</span>
 </span></span><span class="line"><span class="cl">
@@ -15420,8 +15435,8 @@ this to your needs.</p>
 </span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;mkdir -vp ~/.docker/cli-plugins/&#39;</span>
 </span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;curl --silent -L --output ~/.docker/cli-plugins/docker-buildx $BUILDX_URL&#39;</span>
 </span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;chmod a+x ~/.docker/cli-plugins/docker-buildx&#39;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;echo &#34;$DOCKER_PAT&#34; | docker login --username $DOCKER_USER --password-stdin&#39;</span>
-</span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;docker buildx create --use --driver cloud &#34;$DOCKER_ORG/default&#34;&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;echo &#34;$DOCKER_ACCESS_TOKEN&#34; | docker login --username $DOCKER_ACCOUNT --password-stdin&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">sh</span> <span class="s1">&#39;docker buildx create --use --driver cloud &#34;${DOCKER_ACCOUNT}/${CLOUD_BUILDER_NAME}&#34;&#39;</span>
 </span></span><span class="line"><span class="cl">        <span class="c1">// Cache-only build
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="n">sh</span> <span class="s1">&#39;docker buildx build --platform linux/amd64,linux/arm64 --tag &#34;$IMAGE_NAME&#34; --output type=cacheonly .&#39;</span>
 </span></span><span class="line"><span class="cl">        <span class="c1">// Build and push a multi-platform image
@@ -15453,7 +15468,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'bGFuZ3VhZ2U6IG1pbmltYWwgCmRpc3Q6IGphbW15IAoKc2VydmljZXM6CiAgLSBkb2NrZXIKCmVudjoKICBnbG9iYWw6CiAgICAtIElNQUdFX05BTUU9dXNlcm5hbWUvcmVwbwoKYmVmb3JlX2luc3RhbGw6IHwKICBlY2hvICIkRE9DS0VSX1BBVCIgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSAiJERPQ0tFUl9VU0VSIiAtLXBhc3N3b3JkLXN0ZGluCgppbnN0YWxsOiB8CiAgc2V0IC1lIAogIEJVSUxEWF9VUkw9JChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcImxpbnV4LSRUUkFWSVNfQ1BVX0FSQ0hcIikpIikKICBta2RpciAtdnAgfi8uZG9ja2VyL2NsaS1wbHVnaW5zLwogIGN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKICBjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgKICBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiPE9SRz4vZGVmYXVsdCIKCnNjcmlwdDogfAogIGRvY2tlciBidWlsZHggYnVpbGQgXAogIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQgXAogIC0tcHVzaCBcCiAgLS10YWcgIiRJTUFHRV9OQU1FIiAu', copying: false }"
+        x-data="{ code: 'bGFuZ3VhZ2U6IG1pbmltYWwgCmRpc3Q6IGphbW15IAoKc2VydmljZXM6CiAgLSBkb2NrZXIKCmVudjoKICBnbG9iYWw6CiAgICAtIElNQUdFX05BTUU9PElNQUdFPiAjIGZvciBleGFtcGxlLCAiYWNtZS9teS1pbWFnZTpsYXRlc3QiCgpiZWZvcmVfaW5zdGFsbDogfAogIGVjaG8gIiRET0NLRVJfQUNDRVNTX1RPS0VOIiB8IGRvY2tlciBsb2dpbiAtLXVzZXJuYW1lICIkRE9DS0VSX0FDQ09VTlQiIC0tcGFzc3dvcmQtc3RkaW4KCmluc3RhbGw6IHwKICBzZXQgLWUgCiAgQlVJTERYX1VSTD0kKGN1cmwgLXMgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RvY2tlci9hY3Rpb25zLXRvb2xraXQvbWFpbi8uZ2l0aHViL2J1aWxkeC1sYWItcmVsZWFzZXMuanNvbiB8IGpxIC1yICIubGF0ZXN0LmFzc2V0c1tdIHwgc2VsZWN0KGVuZHN3aXRoKFwibGludXgtJFRSQVZJU19DUFVfQVJDSFwiKSkiKQogIG1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCiAgY3VybCAtLXNpbGVudCAtTCAtLW91dHB1dCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeCAkQlVJTERYX1VSTAogIGNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeAogIGRvY2tlciBidWlsZHggY3JlYXRlIC0tdXNlIC0tZHJpdmVyIGNsb3VkICIke0RPQ0tFUl9BQ0NPVU5UfS8ke0NMT1VEX0JVSUxERVJfTkFNRX0iCgpzY3JpcHQ6IHwKICBkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAtLXBsYXRmb3JtIGxpbnV4L2FtZDY0LGxpbnV4L2FybTY0IFwKICAtLXB1c2ggXAogIC0tdGFnICIkSU1BR0VfTkFNRSIgLg==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15480,10 +15495,10 @@ this to your needs.</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">env</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">global</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">IMAGE_NAME=username/repo</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span>- <span class="l">IMAGE_NAME=&lt;IMAGE&gt;</span><span class="w"> </span><span class="c"># for example, &#34;acme/my-image:latest&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">before_install</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
-</span></span></span><span class="line"><span class="cl"><span class="sd">  echo &#34;$DOCKER_PAT&#34; | docker login --username &#34;$DOCKER_USER&#34; --password-stdin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="sd">  echo &#34;$DOCKER_ACCESS_TOKEN&#34; | docker login --username &#34;$DOCKER_ACCOUNT&#34; --password-stdin</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">install</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">  set -e 
@@ -15491,7 +15506,7 @@ this to your needs.</p>
 </span></span></span><span class="line"><span class="cl"><span class="sd">  mkdir -vp ~/.docker/cli-plugins/
 </span></span></span><span class="line"><span class="cl"><span class="sd">  curl --silent -L --output ~/.docker/cli-plugins/docker-buildx $BUILDX_URL
 </span></span></span><span class="line"><span class="cl"><span class="sd">  chmod a+x ~/.docker/cli-plugins/docker-buildx
-</span></span></span><span class="line"><span class="cl"><span class="sd">  docker buildx create --use --driver cloud &#34;&lt;ORG&gt;/default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="sd">  docker buildx create --use --driver cloud &#34;${DOCKER_ACCOUNT}/${CLOUD_BUILDER_NAME}&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="p">|</span><span class="sd">
 </span></span></span><span class="line"><span class="cl"><span class="sd">  docker buildx build \
@@ -15521,7 +15536,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'IyBQcmVyZXF1aXNpdGVzOiAkRE9DS0VSX1VTRVIsICRET0NLRVJfUEFUIHNldHVwIGFzIGRlcGxveW1lbnQgdmFyaWFibGVzCiMgVGhpcyBwaXBlbGluZSBhc3N1bWVzICRCSVRCVUNLRVRfUkVQT19TTFVHIGFzIHRoZSBpbWFnZSBuYW1lCiMgUmVwbGFjZSA8T1JHPiBpbiB0aGUgYGRvY2tlciBidWlsZHggY3JlYXRlYCBjb21tYW5kIHdpdGggeW91ciBEb2NrZXIgb3JnCgppbWFnZTogYXRsYXNzaWFuL2RlZmF1bHQtaW1hZ2U6MwoKcGlwZWxpbmVzOgogIGRlZmF1bHQ6CiAgICAtIHN0ZXA6CiAgICAgICAgbmFtZTogQnVpbGQgbXVsdGktcGxhdGZvcm0gaW1hZ2UKICAgICAgICBzY3JpcHQ6CiAgICAgICAgICAtIG1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCiAgICAgICAgICAtIEFSQ0g9YW1kNjQKICAgICAgICAgIC0gQlVJTERYX1VSTD0kKGN1cmwgLXMgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RvY2tlci9hY3Rpb25zLXRvb2xraXQvbWFpbi8uZ2l0aHViL2J1aWxkeC1sYWItcmVsZWFzZXMuanNvbiB8IGpxIC1yICIubGF0ZXN0LmFzc2V0c1tdIHwgc2VsZWN0KGVuZHN3aXRoKFwibGludXgtJEFSQ0hcIikpIikKICAgICAgICAgIC0gY3VybCAtLXNpbGVudCAtTCAtLW91dHB1dCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeCAkQlVJTERYX1VSTAogICAgICAgICAgLSBjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgKICAgICAgICAgIC0gZWNobyAiJERPQ0tFUl9QQVQiIHwgZG9ja2VyIGxvZ2luIC0tdXNlcm5hbWUgJERPQ0tFUl9VU0VSIC0tcGFzc3dvcmQtc3RkaW4KICAgICAgICAgIC0gZG9ja2VyIGJ1aWxkeCBjcmVhdGUgLS11c2UgLS1kcml2ZXIgY2xvdWQgIjxPUkc&#43;L2RlZmF1bHQiCiAgICAgICAgICAtIElNQUdFX05BTUU9JEJJVEJVQ0tFVF9SRVBPX1NMVUcKICAgICAgICAgIC0gZG9ja2VyIGJ1aWxkeCBidWlsZAogICAgICAgICAgICAtLXBsYXRmb3JtIGxpbnV4L2FtZDY0LGxpbnV4L2FybTY0CiAgICAgICAgICAgIC0tcHVzaAogICAgICAgICAgICAtLXRhZyAiJElNQUdFX05BTUUiIC4KICAgICAgICBzZXJ2aWNlczoKICAgICAgICAgIC0gZG9ja2Vy', copying: false }"
+        x-data="{ code: 'IyBQcmVyZXF1aXNpdGVzOiAkRE9DS0VSX0FDQ09VTlQsICRDTE9VRF9CVUlMREVSX05BTUUsICRET0NLRVJfQUNDRVNTX1RPS0VOIHNldHVwIGFzIGRlcGxveW1lbnQgdmFyaWFibGVzCiMgVGhpcyBwaXBlbGluZSBhc3N1bWVzICRCSVRCVUNLRVRfUkVQT19TTFVHIGFzIHRoZSBpbWFnZSBuYW1lCgppbWFnZTogYXRsYXNzaWFuL2RlZmF1bHQtaW1hZ2U6MwoKcGlwZWxpbmVzOgogIGRlZmF1bHQ6CiAgICAtIHN0ZXA6CiAgICAgICAgbmFtZTogQnVpbGQgbXVsdGktcGxhdGZvcm0gaW1hZ2UKICAgICAgICBzY3JpcHQ6CiAgICAgICAgICAtIG1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCiAgICAgICAgICAtIEFSQ0g9YW1kNjQKICAgICAgICAgIC0gQlVJTERYX1VSTD0kKGN1cmwgLXMgaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2RvY2tlci9hY3Rpb25zLXRvb2xraXQvbWFpbi8uZ2l0aHViL2J1aWxkeC1sYWItcmVsZWFzZXMuanNvbiB8IGpxIC1yICIubGF0ZXN0LmFzc2V0c1tdIHwgc2VsZWN0KGVuZHN3aXRoKFwibGludXgtJEFSQ0hcIikpIikKICAgICAgICAgIC0gY3VybCAtLXNpbGVudCAtTCAtLW91dHB1dCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeCAkQlVJTERYX1VSTAogICAgICAgICAgLSBjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHgKICAgICAgICAgIC0gZWNobyAiJERPQ0tFUl9BQ0NFU1NfVE9LRU4iIHwgZG9ja2VyIGxvZ2luIC0tdXNlcm5hbWUgJERPQ0tFUl9BQ0NPVU5UIC0tcGFzc3dvcmQtc3RkaW4KICAgICAgICAgIC0gZG9ja2VyIGJ1aWxkeCBjcmVhdGUgLS11c2UgLS1kcml2ZXIgY2xvdWQgIiR7RE9DS0VSX0FDQ09VTlR9LyR7Q0xPVURfQlVJTERFUl9OQU1FfSIKICAgICAgICAgIC0gSU1BR0VfTkFNRT0kQklUQlVDS0VUX1JFUE9fU0xVRwogICAgICAgICAgLSBkb2NrZXIgYnVpbGR4IGJ1aWxkCiAgICAgICAgICAgIC0tcGxhdGZvcm0gbGludXgvYW1kNjQsbGludXgvYXJtNjQKICAgICAgICAgICAgLS1wdXNoCiAgICAgICAgICAgIC0tdGFnICIkSU1BR0VfTkFNRSIgLgogICAgICAgIHNlcnZpY2VzOgogICAgICAgICAgLSBkb2NrZXI=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15540,9 +15555,8 @@ this to your needs.</p>
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Prerequisites: $DOCKER_USER, $DOCKER_PAT setup as deployment variables</span><span class="w">
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># Prerequisites: $DOCKER_ACCOUNT, $CLOUD_BUILDER_NAME, $DOCKER_ACCESS_TOKEN setup as deployment variables</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># This pipeline assumes $BITBUCKET_REPO_SLUG as the image name</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># Replace &lt;ORG&gt; in the `docker buildx create` command with your Docker org</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l">atlassian/default-image:3</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
@@ -15556,8 +15570,8 @@ this to your needs.</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">BUILDX_URL=$(curl -s https://raw.githubusercontent.com/docker/actions-toolkit/main/.github/buildx-lab-releases.json | jq -r &#34;.latest.assets[] | select(endswith(\&#34;linux-$ARCH\&#34;))&#34;)</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">curl --silent -L --output ~/.docker/cli-plugins/docker-buildx $BUILDX_URL</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">chmod a+x ~/.docker/cli-plugins/docker-buildx</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">echo &#34;$DOCKER_PAT&#34; | docker login --username $DOCKER_USER --password-stdin</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">docker buildx create --use --driver cloud &#34;&lt;ORG&gt;/default&#34;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">echo &#34;$DOCKER_ACCESS_TOKEN&#34; | docker login --username $DOCKER_ACCOUNT --password-stdin</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">docker buildx create --use --driver cloud &#34;${DOCKER_ACCOUNT}/${CLOUD_BUILDER_NAME}&#34;</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">IMAGE_NAME=$BITBUCKET_REPO_SLUG</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="l">docker buildx build</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">            </span>--<span class="l">platform linux/amd64,linux/arm64</span><span class="w">
@@ -15588,7 +15602,7 @@ this to your needs.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'IyEvYmluL2Jhc2gKCiMgR2V0IGRvd25sb2FkIGxpbmsgZm9yIGxhdGVzdCBidWlsZHggYmluYXJ5LiBTZXQgJEFSQ0ggdG8gdGhlIENQVSBhcmNoaXRlY3R1cmUgKGUuZy4gYW1kNjQsIGFybTY0KQpBUkNIPWFtZDY0CkJVSUxEWF9VUkw9JChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcImxpbnV4LSRBUkNIXCIpKSIpCgojIERvd25sb2FkIGRvY2tlciBidWlsZHggd2l0aCBCdWlsZCBDbG91ZCBzdXBwb3J0Cm1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCmN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKY2htb2QgYSt4IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4CgojIExvZ2luIHRvIERvY2tlciBIdWIuIEZvciBzZWN1cml0eSByZWFzb25zICRET0NLRVJfUEFUIHNob3VsZCBiZSBhIFBlcnNvbmFsIEFjY2VzcyBUb2tlbi4gU2VlIGh0dHBzOi8vZG9jcy5kb2NrZXIuY29tL2J1aWxkLWNsb3VkL2NpLyNjcmVhdGluZy1hY2Nlc3MtdG9rZW5zCmVjaG8gIiRET0NLRVJfUEFUIiB8IGRvY2tlciBsb2dpbiAtLXVzZXJuYW1lICRET0NLRVJfVVNFUiAtLXBhc3N3b3JkLXN0ZGluCgojIENvbm5lY3QgdG8geW91ciBidWlsZGVyIGFuZCBzZXQgaXQgYXMgdGhlIGRlZmF1bHQgYnVpbGRlcgpkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiPE9SRz4vZGVmYXVsdCIKCiMgQ2FjaGUtb25seSBpbWFnZSBidWlsZApkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgIC0tdGFnIHRlbXAgXAogICAgLS1vdXRwdXQgdHlwZT1jYWNoZW9ubHkgXAogICAgLgoKIyBCdWlsZCwgdGFnLCBhbmQgcHVzaCBhIG11bHRpLWFyY2ggZG9ja2VyIGltYWdlCmRvY2tlciBidWlsZHggYnVpbGQgXAogICAgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCxsaW51eC9hcm02NCBcCiAgICAtLXB1c2ggXAogICAgLS10YWcgIjxJTUFHRT4iIFwKICAgIC4=', copying: false }"
+        x-data="{ code: 'IyEvYmluL2Jhc2gKCiMgR2V0IGRvd25sb2FkIGxpbmsgZm9yIGxhdGVzdCBidWlsZHggYmluYXJ5LiBTZXQgJEFSQ0ggdG8gdGhlIENQVSBhcmNoaXRlY3R1cmUgKGUuZy4gYW1kNjQsIGFybTY0KQpBUkNIPWFtZDY0CkJVSUxEWF9VUkw9JChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcImxpbnV4LSRBUkNIXCIpKSIpCgojIERvd25sb2FkIGRvY2tlciBidWlsZHggd2l0aCBCdWlsZCBDbG91ZCBzdXBwb3J0Cm1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCmN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKY2htb2QgYSt4IH4vLmRvY2tlci9jbGktcGx1Z2lucy9kb2NrZXItYnVpbGR4CgojIExvZ2luIHRvIERvY2tlciBIdWIgd2l0aCBhbiBhY2Nlc3MgdG9rZW4uIFNlZSBodHRwczovL2RvY3MuZG9ja2VyLmNvbS9idWlsZC1jbG91ZC9jaS8jY3JlYXRpbmctYWNjZXNzLXRva2VucwplY2hvICIkRE9DS0VSX0FDQ0VTU19UT0tFTiIgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSAkRE9DS0VSX0FDQ09VTlQgLS1wYXNzd29yZC1zdGRpbgoKIyBDb25uZWN0IHRvIHlvdXIgYnVpbGRlciBhbmQgc2V0IGl0IGFzIHRoZSBkZWZhdWx0IGJ1aWxkZXIKZG9ja2VyIGJ1aWxkeCBjcmVhdGUgLS11c2UgLS1kcml2ZXIgY2xvdWQgIiR7RE9DS0VSX0FDQ09VTlR9LyR7Q0xPVURfQlVJTERFUl9OQU1FfSIKCiMgQ2FjaGUtb25seSBpbWFnZSBidWlsZApkb2NrZXIgYnVpbGR4IGJ1aWxkIFwKICAgIC0tdGFnIHRlbXAgXAogICAgLS1vdXRwdXQgdHlwZT1jYWNoZW9ubHkgXAogICAgLgoKIyBCdWlsZCwgdGFnLCBhbmQgcHVzaCBhIG11bHRpLWFyY2ggZG9ja2VyIGltYWdlCmRvY2tlciBidWlsZHggYnVpbGQgXAogICAgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCxsaW51eC9hcm02NCBcCiAgICAtLXB1c2ggXAogICAgLS10YWcgIjxJTUFHRT4iIFwKICAgIC4=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15618,11 +15632,11 @@ this to your needs.</p>
 </span></span><span class="line"><span class="cl">curl --silent -L --output ~/.docker/cli-plugins/docker-buildx <span class="nv">$BUILDX_URL</span>
 </span></span><span class="line"><span class="cl">chmod a+x ~/.docker/cli-plugins/docker-buildx
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Login to Docker Hub. For security reasons $DOCKER_PAT should be a Personal Access Token. See https://docs.docker.com/build-cloud/ci/#creating-access-tokens</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$DOCKER_PAT</span><span class="s2">&#34;</span> <span class="p">|</span> docker login --username <span class="nv">$DOCKER_USER</span> --password-stdin
+</span></span><span class="line"><span class="cl"><span class="c1"># Login to Docker Hub with an access token. See https://docs.docker.com/build-cloud/ci/#creating-access-tokens</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$DOCKER_ACCESS_TOKEN</span><span class="s2">&#34;</span> <span class="p">|</span> docker login --username <span class="nv">$DOCKER_ACCOUNT</span> --password-stdin
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Connect to your builder and set it as the default builder</span>
-</span></span><span class="line"><span class="cl">docker buildx create --use --driver cloud <span class="s2">&#34;&lt;ORG&gt;/default&#34;</span>
+</span></span><span class="line"><span class="cl">docker buildx create --use --driver cloud <span class="s2">&#34;</span><span class="si">${</span><span class="nv">DOCKER_ACCOUNT</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">CLOUD_BUILDER_NAME</span><span class="si">}</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Cache-only image build</span>
 </span></span><span class="line"><span class="cl">docker buildx build <span class="se">\
@@ -15661,7 +15675,7 @@ Docker Build Cloud in CI.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'IyEvYmluL2Jhc2gKCiMgR2V0IGRvd25sb2FkIGxpbmsgZm9yIGxhdGVzdCBidWlsZHggYmluYXJ5LiBTZXQgJEFSQ0ggdG8gdGhlIENQVSBhcmNoaXRlY3R1cmUgKGUuZy4gYW1kNjQsIGFybTY0KQpBUkNIPWFtZDY0CkJVSUxEWF9VUkw9JChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcImxpbnV4LSRBUkNIXCIpKSIpCkNPTVBPU0VfVVJMPSQoY3VybCAtc0wgXAogIC1IICJBY2NlcHQ6IGFwcGxpY2F0aW9uL3ZuZC5naXRodWIranNvbiIgXAogIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgPEdJVEhVQl9UT0tFTj4iIFwKICAtSCAiWC1HaXRIdWItQXBpLVZlcnNpb246IDIwMjItMTEtMjgiIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zL2RvY2tlci9jb21wb3NlLWRlc2t0b3AvcmVsZWFzZXMgXAogIHwganEgIlsgLltdIHwgc2VsZWN0KC5wcmVyZWxlYXNlPT1mYWxzZSBhbmQgLmRyYWZ0PT1mYWxzZSkgXSB8IC5bMF0uYXNzZXRzLltdIHwgc2VsZWN0KC5uYW1lIHwgZW5kc3dpdGgoXCJsaW51eC0ke0FSQ0h9XCIpKSB8IC5icm93c2VyX2Rvd25sb2FkX3VybCIpCgojIERvd25sb2FkIGRvY2tlciBidWlsZHggd2l0aCBCdWlsZCBDbG91ZCBzdXBwb3J0Cm1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCmN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKY3VybCAtLXNpbGVudCAtTCAtLW91dHB1dCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWNvbXBvc2UgJENPTVBPU0VfVVJMCmNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeApjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1jb21wb3NlCgojIExvZ2luIHRvIERvY2tlciBIdWIuIEZvciBzZWN1cml0eSByZWFzb25zICRET0NLRVJfUEFUIHNob3VsZCBiZSBhIFBlcnNvbmFsIEFjY2VzcyBUb2tlbi4gU2VlIGh0dHBzOi8vZG9jcy5kb2NrZXIuY29tL2J1aWxkLWNsb3VkL2NpLyNjcmVhdGluZy1hY2Nlc3MtdG9rZW5zCmVjaG8gIiRET0NLRVJfUEFUIiB8IGRvY2tlciBsb2dpbiAtLXVzZXJuYW1lICRET0NLRVJfVVNFUiAtLXBhc3N3b3JkLXN0ZGluCgojIENvbm5lY3QgdG8geW91ciBidWlsZGVyIGFuZCBzZXQgaXQgYXMgdGhlIGRlZmF1bHQgYnVpbGRlcgpkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWRyaXZlciBjbG91ZCAiPE9SRz4vZGVmYXVsdCIKCiMgQnVpbGQgdGhlIGltYWdlIGJ1aWxkCmRvY2tlciBjb21wb3NlIGJ1aWxk', copying: false }"
+        x-data="{ code: 'IyEvYmluL2Jhc2gKCiMgR2V0IGRvd25sb2FkIGxpbmsgZm9yIGxhdGVzdCBidWlsZHggYmluYXJ5LiBTZXQgJEFSQ0ggdG8gdGhlIENQVSBhcmNoaXRlY3R1cmUgKGUuZy4gYW1kNjQsIGFybTY0KQpBUkNIPWFtZDY0CkJVSUxEWF9VUkw9JChjdXJsIC1zIGh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9kb2NrZXIvYWN0aW9ucy10b29sa2l0L21haW4vLmdpdGh1Yi9idWlsZHgtbGFiLXJlbGVhc2VzLmpzb24gfCBqcSAtciAiLmxhdGVzdC5hc3NldHNbXSB8IHNlbGVjdChlbmRzd2l0aChcImxpbnV4LSRBUkNIXCIpKSIpCkNPTVBPU0VfVVJMPSQoY3VybCAtc0wgXAogIC1IICJBY2NlcHQ6IGFwcGxpY2F0aW9uL3ZuZC5naXRodWIranNvbiIgXAogIC1IICJBdXRob3JpemF0aW9uOiBCZWFyZXIgPEdJVEhVQl9UT0tFTj4iIFwKICAtSCAiWC1HaXRIdWItQXBpLVZlcnNpb246IDIwMjItMTEtMjgiIFwKICBodHRwczovL2FwaS5naXRodWIuY29tL3JlcG9zL2RvY2tlci9jb21wb3NlLWRlc2t0b3AvcmVsZWFzZXMgXAogIHwganEgIlsgLltdIHwgc2VsZWN0KC5wcmVyZWxlYXNlPT1mYWxzZSBhbmQgLmRyYWZ0PT1mYWxzZSkgXSB8IC5bMF0uYXNzZXRzLltdIHwgc2VsZWN0KC5uYW1lIHwgZW5kc3dpdGgoXCJsaW51eC0ke0FSQ0h9XCIpKSB8IC5icm93c2VyX2Rvd25sb2FkX3VybCIpCgojIERvd25sb2FkIGRvY2tlciBidWlsZHggd2l0aCBCdWlsZCBDbG91ZCBzdXBwb3J0Cm1rZGlyIC12cCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvCmN1cmwgLS1zaWxlbnQgLUwgLS1vdXRwdXQgfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1idWlsZHggJEJVSUxEWF9VUkwKY3VybCAtLXNpbGVudCAtTCAtLW91dHB1dCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWNvbXBvc2UgJENPTVBPU0VfVVJMCmNobW9kIGEreCB&#43;Ly5kb2NrZXIvY2xpLXBsdWdpbnMvZG9ja2VyLWJ1aWxkeApjaG1vZCBhK3ggfi8uZG9ja2VyL2NsaS1wbHVnaW5zL2RvY2tlci1jb21wb3NlCgojIExvZ2luIHRvIERvY2tlciBIdWIgd2l0aCBhbiBhY2Nlc3MgdG9rZW4uIFNlZSBodHRwczovL2RvY3MuZG9ja2VyLmNvbS9idWlsZC1jbG91ZC9jaS8jY3JlYXRpbmctYWNjZXNzLXRva2VucwplY2hvICIkRE9DS0VSX0FDQ0VTU19UT0tFTiIgfCBkb2NrZXIgbG9naW4gLS11c2VybmFtZSAkRE9DS0VSX0FDQ09VTlQgLS1wYXNzd29yZC1zdGRpbgoKIyBDb25uZWN0IHRvIHlvdXIgYnVpbGRlciBhbmQgc2V0IGl0IGFzIHRoZSBkZWZhdWx0IGJ1aWxkZXIKZG9ja2VyIGJ1aWxkeCBjcmVhdGUgLS11c2UgLS1kcml2ZXIgY2xvdWQgIiR7RE9DS0VSX0FDQ09VTlR9LyR7Q0xPVURfQlVJTERFUl9OQU1FfSIKCiMgQnVpbGQgdGhlIGltYWdlIGJ1aWxkCmRvY2tlciBjb21wb3NlIGJ1aWxk', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15699,11 +15713,11 @@ Docker Build Cloud in CI.</p>
 </span></span><span class="line"><span class="cl">chmod a+x ~/.docker/cli-plugins/docker-buildx
 </span></span><span class="line"><span class="cl">chmod a+x ~/.docker/cli-plugins/docker-compose
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># Login to Docker Hub. For security reasons $DOCKER_PAT should be a Personal Access Token. See https://docs.docker.com/build-cloud/ci/#creating-access-tokens</span>
-</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$DOCKER_PAT</span><span class="s2">&#34;</span> <span class="p">|</span> docker login --username <span class="nv">$DOCKER_USER</span> --password-stdin
+</span></span><span class="line"><span class="cl"><span class="c1"># Login to Docker Hub with an access token. See https://docs.docker.com/build-cloud/ci/#creating-access-tokens</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$DOCKER_ACCESS_TOKEN</span><span class="s2">&#34;</span> <span class="p">|</span> docker login --username <span class="nv">$DOCKER_ACCOUNT</span> --password-stdin
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Connect to your builder and set it as the default builder</span>
-</span></span><span class="line"><span class="cl">docker buildx create --use --driver cloud <span class="s2">&#34;&lt;ORG&gt;/default&#34;</span>
+</span></span><span class="line"><span class="cl">docker buildx create --use --driver cloud <span class="s2">&#34;</span><span class="si">${</span><span class="nv">DOCKER_ACCOUNT</span><span class="si">}</span><span class="s2">/</span><span class="si">${</span><span class="nv">CLOUD_BUILDER_NAME</span><span class="si">}</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Build the image build</span>
 </span></span><span class="line"><span class="cl">docker compose build</span></span></code></pre></div>

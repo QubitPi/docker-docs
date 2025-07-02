@@ -8929,6 +8929,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/fips/"
+        title="FIPS"
+      >
+        
+  FIPS
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/glibc-musl/"
         title="glibc and musl"
       >
@@ -14737,6 +14753,11 @@
             >Development and runtime variants</a
           >
         </li>
+        <li>
+          <a class="link lg:no-underline" href="#fips-variants"
+            >FIPS variants</a
+          >
+        </li>
   </ul>
     </nav>
   </div>
@@ -14826,6 +14847,29 @@ in a secure build environment and deploy it using a lean runtime image.</p>
 <li><code>3.9.23-debian12-dev</code>: development image for Python 3.9.23</li>
 </ul>
 
+<h2 class=" scroll-mt-20" id="fips-variants">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#fips-variants">
+    FIPS variants
+  </a>
+</h2>
+
+<p>Some Docker Hardened Images include a <code>-fips</code> variant. These variants use
+cryptographic modules that have been validated under <a class="link" href="https://docker.qubitpi.org/dhi/core-concepts/fips/">FIPS
+140</a>, a U.S. government standard for secure
+cryptographic operations.</p>
+<p>FIPS variants are designed to help organizations meet regulatory and compliance
+requirements related to cryptographic use in sensitive or regulated
+environments.</p>
+<p>You can recognize FIPS variants by their tag that includes <code>-fips</code>.</p>
+<p>For example:</p>
+<ul>
+<li><code>3.13-fips</code>: FIPS variant of the Python 3.13 image</li>
+<li><code>3.9.23-debian12-fips</code>: FIPS variant of the Debian-based Python 3.9.23 image</li>
+</ul>
+<p>FIPS variants can be used in the same way as any other Docker Hardened Image and
+are ideal for teams operating in regulated industries or under compliance
+frameworks that require cryptographic validation.</p>
+
   </article>
   <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">
     <aside
@@ -14894,6 +14938,11 @@ in a secure build environment and deploy it using a lean runtime image.</p>
         <li>
           <a class="link lg:no-underline" href="#development-and-runtime-variants"
             >Development and runtime variants</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#fips-variants"
+            >FIPS variants</a
           >
         </li>
   </ul>

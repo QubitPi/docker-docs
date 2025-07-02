@@ -8929,6 +8929,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/fips/"
+        title="FIPS"
+      >
+        
+  FIPS
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/glibc-musl/"
         title="glibc and musl"
       >
@@ -15026,7 +15042,7 @@ backing filesystems.</p>
             <td
               class="p-2" style="text-align: left"><code>overlay2</code></td>
             <td
-              class="p-2" style="text-align: left"><code>xfs</code> with ftype=1, <code>ext4</code></td>
+              class="p-2" style="text-align: left"><code>xfs</code> with ftype=1, <code>ext4</code>, <code>btrfs</code>, (and more)</td>
         </tr>
         <tr>
             <td
@@ -15055,6 +15071,30 @@ backing filesystems.</p>
     </tbody>
   </table>
 </div>
+
+
+  
+
+  <blockquote
+    
+    class="admonition admonition-note admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>
+      <span class="admonition-title">
+        Note
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>Most filesystems should work if they have the required features.
+Consult <a class="link" href="https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html" rel="noopener">OverlayFS</a>
+for more information.</p>
+    </div>
+  </blockquote>
+
 
 <h2 class=" scroll-mt-20" id="other-considerations">
   <a class="text-black dark:text-white no-underline hover:underline" href="#other-considerations">

@@ -8929,6 +8929,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/fips/"
+        title="FIPS"
+      >
+        
+  FIPS
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/glibc-musl/"
         title="glibc and musl"
       >
@@ -14718,6 +14734,11 @@
           >
         </li>
         <li>
+          <a class="link lg:no-underline" href="#requirements"
+            >Requirements</a
+          >
+        </li>
+        <li>
           <a class="link lg:no-underline" href="#how-it-works"
             >How it works</a
           >
@@ -14881,7 +14902,7 @@
     
       <div class="flex flex-wrap gap-1">
         <span class="font-bold">For:</span>
-        <span>Docker Desktop for Mac with Apple Silicon or Windows with NVIDIA GPUs</span>
+        <span>See Requirements section below</span>
         
       </div>
     
@@ -14915,6 +14936,134 @@ with AI models locally.</p>
 <li>Run and interact with AI models directly from the command line or from the Docker Desktop GUI</li>
 <li>Manage local models and display logs</li>
 </ul>
+
+<h2 class=" scroll-mt-20" id="requirements">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#requirements">
+    Requirements
+  </a>
+</h2>
+
+<p>Docker Model Runner is supported on the following platforms:</p>
+
+
+
+
+
+
+
+<div
+  class="tabs"
+  
+    x-data="{ selected: 'Windows' }"
+  
+  aria-role="tabpanel"
+>
+  <div aria-role="tablist" class="tablist">
+    
+      <button
+        class="tab-item"
+        :class="selected === 'Windows' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'Windows'"
+        
+      >
+        Windows
+      </button>
+    
+      <button
+        class="tab-item"
+        :class="selected === 'MacOS' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'MacOS'"
+        
+      >
+        MacOS
+      </button>
+    
+      <button
+        class="tab-item"
+        :class="selected === 'Linux' &&
+          'border-blue border-b-4 dark:border-b-blue-600'"
+        
+          @click="selected = 'Linux'"
+        
+      >
+        Linux
+      </button>
+    
+  </div>
+  <div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'Windows' && 'hidden'"
+      >
+        <p>Windows(amd64):</p>
+<ul>
+<li>NVIDIA GPUs</li>
+<li>NVIDIA drivers 576.57+</li>
+</ul>
+<p>Windows(arm64):</p>
+<ul>
+<li>
+<p>OpenCL for Adreno</p>
+</li>
+<li>
+<p>Qualcomm Adreno GPU (6xx series and later)</p>
+
+
+  
+
+  <blockquote
+    
+    class="admonition admonition-note admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>
+      <span class="admonition-title">
+        Note
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>Some llama.cpp features might not be fully supported on the 6xx series.</p>
+    </div>
+  </blockquote>
+
+</li>
+</ul>
+
+      </div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'MacOS' && 'hidden'"
+      >
+        <ul>
+<li>Apple Silicon</li>
+</ul>
+
+      </div>
+    
+      <div
+        aria-role="tab"
+        :class="selected !== 'Linux' && 'hidden'"
+      >
+        <p>Docker Engine only:</p>
+<ul>
+<li>Linux CPU &amp; Linux NVIDIA</li>
+<li>NVIDIA drivers 575.57.08+</li>
+</ul>
+
+      </div>
+    
+  </div>
+</div>
+
 
 <h2 class=" scroll-mt-20" id="how-it-works">
   <a class="text-black dark:text-white no-underline hover:underline" href="#how-it-works">
@@ -16363,6 +16512,11 @@ RAM.</p>
         <li>
           <a class="link lg:no-underline" href="#key-features"
             >Key features</a
+          >
+        </li>
+        <li>
+          <a class="link lg:no-underline" href="#requirements"
+            >Requirements</a
           >
         </li>
         <li>

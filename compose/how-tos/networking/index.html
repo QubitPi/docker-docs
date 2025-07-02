@@ -8929,6 +8929,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/fips/"
+        title="FIPS"
+      >
+        
+  FIPS
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/glibc-musl/"
         title="glibc and musl"
       >
@@ -14748,8 +14764,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#use-a-pre-existing-network"
-            >Use a pre-existing network</a
+          <a class="link lg:no-underline" href="#use-an-existing-network"
+            >Use an existing network</a
           >
         </li>
         <li>
@@ -15183,12 +15199,13 @@ to learn about multi-host overlay networks.</p>
   </div>
 </div>
 
-<h2 class=" scroll-mt-20" id="use-a-pre-existing-network">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#use-a-pre-existing-network">
-    Use a pre-existing network
+<h2 class=" scroll-mt-20" id="use-an-existing-network">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#use-an-existing-network">
+    Use an existing network
   </a>
 </h2>
 
+<p>If you've manually created a bridge network outside of Compose using the <code>docker network create</code> command, you can connect your Compose services to it by marking the network as <code>external</code>.</p>
 <p>If you want your containers to join a pre-existing network, use the 
     
   
@@ -15335,8 +15352,8 @@ to learn about multi-host overlay networks.</p>
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#use-a-pre-existing-network"
-            >Use a pre-existing network</a
+          <a class="link lg:no-underline" href="#use-an-existing-network"
+            >Use an existing network</a
           >
         </li>
         <li>
