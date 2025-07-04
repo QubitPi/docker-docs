@@ -9361,6 +9361,10 @@ can be removed entirely in a future release.</p>
 </h3>
 
 <p>You can pull GGUF models directly from <a class="link" href="https://huggingface.co/models?library=gguf" rel="noopener">Hugging Face</a>.</p>
+<p><strong>Note about quantization:</strong> If no tag is specified, the command tries to pull the <code>Q4_K_M</code> version of the model.
+If <code>Q4_K_M</code> doesn't exist, the command pulls the first GGUF found in the <strong>Files</strong> view of the model on HuggingFace.
+To specify the quantization, provide it as a tag, for example:
+<code>docker model pull hf.co/bartowski/Llama-3.2-1B-Instruct-GGUF:Q4_K_S</code></p>
 <div
   data-pagefind-ignore
   x-data

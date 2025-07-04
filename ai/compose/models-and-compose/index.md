@@ -32,7 +32,7 @@ services:
 
 models:
   llm:
-    image: ai/smollm2
+    model: ai/smollm2
 ```
 
 This example defines:
@@ -46,7 +46,7 @@ Models support various configuration options:
 ```yaml
 models:
   llm:
-    image: ai/smollm2
+    model: ai/smollm2
     context_size: 1024
     runtime_flags:
       - "--a-flag"
@@ -77,9 +77,9 @@ services:
 
 models:
   llm:
-    image: ai/smollm2
+    model: ai/smollm2
   embedding-model:
-    image: ai/all-minilm
+    model: ai/all-minilm
 ```
 
 With short syntax, the platform automatically generates environment variables based on the model name:
@@ -106,9 +106,9 @@ services:
 
 models:
   llm:
-    image: ai/smollm2
+    model: ai/smollm2
   embedding-model:
-    image: ai/all-minilm
+    model: ai/all-minilm
 ```
 
 With this configuration, your service receives:
@@ -132,7 +132,7 @@ services:
 
 models:
   llm:
-    image: ai/smollm2
+    model: ai/smollm2
 ```
 
 Docker Model Runner will:
@@ -153,9 +153,9 @@ services:
 
 models:
   llm:
-    image: ai/smollm2
+    model: ai/smollm2
     # Cloud-specific configurations
-    labels:
+    x-cloud-options:
       - "cloud.instance-type=gpu-small"
       - "cloud.region=us-west-2"
 ```
@@ -171,4 +171,4 @@ Cloud providers might:
 - [`models` top-level element](/reference/compose-file/models.md)
 - [`models` attribute](/reference/compose-file/services.md#models)
 - [Docker Model Runner documentation](/manuals/ai/model-runner.md)
-- [Compose Model Runner documentation](/manuals/compose/how-tos/model-runner.md)]
+- [Compose Model Runner documentation](/manuals/ai/compose/model-runner.md)

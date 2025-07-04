@@ -6251,28 +6251,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/how-tos/model-runner/"
-        title="Use Docker Model Runner"
-      >
-        
-  Use Docker Model Runner
-    <span><span
-  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
-  >New</span
->
-
-    </span>
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/compose/how-tos/provider-services/"
         title="Use provider services"
       >
@@ -6906,6 +6884,28 @@
       >
         
   Use AI models in Compose
+    <span><span
+  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
+  >New</span
+>
+
+    </span>
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/ai/compose/model-runner/"
+        title="Use Docker Model Runner"
+      >
+        
+  Use Docker Model Runner
     <span><span
   class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
   >New</span
@@ -15085,7 +15085,7 @@ and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelr
 
     
   
-  <a class="link" href="https://docker.qubitpi.org/compose/how-tos/model-runner/">Docker Compose</a> now support Docker Model Runner.</p>
+  <a class="link" href="https://docker.qubitpi.org/ai/compose/model-runner/">Docker Compose</a> now support Docker Model Runner.</p>
     </div>
   </blockquote>
 
@@ -15104,9 +15104,17 @@ and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelr
 </h3>
 
 <ol>
-<li>Navigate to the <strong>Beta features</strong> tab in settings.</li>
+<li>In the settings view, navigate to the <strong>Beta features</strong> tab.</li>
 <li>Tick the <strong>Enable Docker Model Runner</strong> setting.</li>
 <li>If you are running on Windows with a supported NVIDIA GPU, you should also see and be able to tick the <strong>Enable GPU-backed inference</strong> setting.</li>
+<li>Optional: If you want to enable TCP support, select the <strong>Enable host-side TCP support</strong>
+<ol>
+<li>In the <strong>Port</strong> field, type the port of your choice.</li>
+<li>If you are interacting with Model Runner from a local frontend web app,
+in <strong>CORS Allows Origins</strong>, select the origins that Model Runner should accept requests from.
+An origin is the URL where your web app is running, for example <code>http://localhost:3131</code>.</li>
+</ol>
+</li>
 </ol>
 <p>You can now use the <code>docker model</code> command in the CLI and view and interact with your local models in the <strong>Models</strong> tab in the Docker Desktop Dashboard.</p>
 
@@ -15132,7 +15140,7 @@ and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelr
       </span>
     </div>
     <div class="admonition-content">
-      <p>For Docker Desktop versions 4.41 and earlier, this settings lived under the <strong>Experimental features</strong> tab on the <strong>Features in development</strong> page.</p>
+      <p>For Docker Desktop versions 4.41 and earlier, this setting lived under the <strong>Experimental features</strong> tab on the <strong>Features in development</strong> page.</p>
     </div>
   </blockquote>
 
@@ -15326,6 +15334,17 @@ and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelr
   </div>
 </div>
 </li>
+<li>
+<p>Optional: To enable TCP support, set the port with the <code>DMR_RUNNER_PORT</code> environment variable.</p>
+</li>
+<li>
+<p>Optional: If you enabled TCP support, you can configure CORS allowed origins with the <code>DMR_ORIGINS</code> environment variable. Possible values are:</p>
+<ul>
+<li><code>*</code>: Allow all origins</li>
+<li>Comma-separated list of allowed origins</li>
+<li>When unspecified, all origins are denied.</li>
+</ul>
+</li>
 </ol>
 
 <h2 class=" scroll-mt-20" id="pull-a-model">
@@ -15412,6 +15431,51 @@ and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelr
 <li>Select <strong>Models</strong> and select the <strong>Docker Hub</strong> tab.</li>
 <li>Find the model of your choice and select <strong>Pull</strong>.</li>
 </ol>
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<figure
+  x-data="{ zoom: false }"
+  @click="zoom = ! zoom"
+  class="cursor-pointer hover:opacity-90"
+>
+  <img
+    loading="lazy"
+    src="https://docker.qubitpi.org/ai/model-runner/images/dmr-catalog.png"
+    alt="screencapture of the Docker Hub view"
+    
+    
+    class="mx-auto rounded-sm"
+  />
+  
+  <template x-teleport="body">
+    <div
+      x-show="zoom"
+      @click="zoom = false"
+      x-transition.opacity.duration.250ms
+      class="fixed inset-0 z-20 flex items-center justify-center bg-black/100 p-6"
+    >
+      <button class="icon-svg fixed top-6 right-8 z-30 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M480-438 270-228q-9 9-21 9t-21-9q-9-9-9-21t9-21l210-210-210-210q-9-9-9-21t9-21q9-9 21-9t21 9l210 210 210-210q9-9 21-9t21 9q9 9 9 21t-9 21L522-480l210 210q9 9 9 21t-9 21q-9 9-21 9t-21-9L480-438Z"/></svg>
+      </button>
+      <img
+        loading="lazy"
+        class="max-h-full max-w-full rounded-sm"
+        src="https://docker.qubitpi.org/ai/model-runner/images/dmr-catalog.png"
+        alt="screencapture of the Docker Hub view"
+      />
+    </div>
+  </template>
+</figure>
 
       </div>
     
@@ -15577,8 +15641,55 @@ and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelr
         aria-role="tab"
         :class="selected !== 'From-Docker-Desktop' && 'hidden'"
       >
-        <p>Select <strong>Models</strong> and select the <strong>Local</strong> tab and click the play button.
-The interactive chat screen opens.</p>
+        <ol>
+<li>Select <strong>Models</strong> and select the <strong>Local</strong> tab</li>
+<li>Click the play button. The interactive chat screen opens.</li>
+</ol>
+
+  
+  
+    
+
+
+
+
+
+
+
+
+<figure
+  x-data="{ zoom: false }"
+  @click="zoom = ! zoom"
+  class="cursor-pointer hover:opacity-90"
+>
+  <img
+    loading="lazy"
+    src="https://docker.qubitpi.org/ai/model-runner/images/dmr-run.png"
+    alt="screencapture of the Local view"
+    
+    
+    class="mx-auto rounded-sm"
+  />
+  
+  <template x-teleport="body">
+    <div
+      x-show="zoom"
+      @click="zoom = false"
+      x-transition.opacity.duration.250ms
+      class="fixed inset-0 z-20 flex items-center justify-center bg-black/100 p-6"
+    >
+      <button class="icon-svg fixed top-6 right-8 z-30 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M480-438 270-228q-9 9-21 9t-21-9q-9-9-9-21t9-21l210-210-210-210q-9-9-9-21t9-21q9-9 21-9t21 9l210 210 210-210q9-9 21-9t21 9q9 9 9 21t-9 21L522-480l210 210q9 9 9 21t-9 21q-9 9-21 9t-21-9L480-438Z"/></svg>
+      </button>
+      <img
+        loading="lazy"
+        class="max-h-full max-w-full rounded-sm"
+        src="https://docker.qubitpi.org/ai/model-runner/images/dmr-run.png"
+        alt="screencapture of the Local view"
+      />
+    </div>
+  </template>
+</figure>
 
       </div>
     
@@ -15655,6 +15766,51 @@ The interactive chat screen opens.</p>
       >
         <p>Select <strong>Models</strong> and select the <strong>Logs</strong> tab.</p>
 
+  
+  
+    
+
+
+
+
+
+
+
+
+<figure
+  x-data="{ zoom: false }"
+  @click="zoom = ! zoom"
+  class="cursor-pointer hover:opacity-90"
+>
+  <img
+    loading="lazy"
+    src="https://docker.qubitpi.org/ai/model-runner/images/dmr-logs.png"
+    alt="screencapture of the Models view"
+    
+    
+    class="mx-auto rounded-sm"
+  />
+  
+  <template x-teleport="body">
+    <div
+      x-show="zoom"
+      @click="zoom = false"
+      x-transition.opacity.duration.250ms
+      class="fixed inset-0 z-20 flex items-center justify-center bg-black/100 p-6"
+    >
+      <button class="icon-svg fixed top-6 right-8 z-30 text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M480-438 270-228q-9 9-21 9t-21-9q-9-9-9-21t9-21l210-210-210-210q-9-9-9-21t9-21q9-9 21-9t21 9l210 210 210-210q9-9 21-9t21 9q9 9 9 21t-9 21L522-480l210 210q9 9 9 21t-9 21q-9 9-21 9t-21-9L480-438Z"/></svg>
+      </button>
+      <img
+        loading="lazy"
+        class="max-h-full max-w-full rounded-sm"
+        src="https://docker.qubitpi.org/ai/model-runner/images/dmr-logs.png"
+        alt="screencapture of the Models view"
+      />
+    </div>
+  </template>
+</figure>
+
       </div>
     
       <div
@@ -15698,7 +15854,7 @@ The interactive chat screen opens.</p>
     </div>
   </blockquote>
 
-<p>You can tag existing models with a new name and publish them under a different namespace and repository:</p>
+<p>You can tag existing models with a new name and publish them under a different namespaceand repository:</p>
 <div
   data-pagefind-ignore
   x-data

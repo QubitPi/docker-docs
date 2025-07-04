@@ -6251,28 +6251,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/compose/how-tos/model-runner/"
-        title="Use Docker Model Runner"
-      >
-        
-  Use Docker Model Runner
-    <span><span
-  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
-  >New</span
->
-
-    </span>
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/compose/how-tos/provider-services/"
         title="Use provider services"
       >
@@ -6902,6 +6880,28 @@
       >
         
   Use AI models in Compose
+    <span><span
+  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
+  >New</span
+>
+
+    </span>
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/ai/compose/model-runner/"
+        title="Use Docker Model Runner"
+      >
+        
+  Use Docker Model Runner
     <span><span
   class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
   >New</span
@@ -14878,11 +14878,11 @@ command. Replace <code>&lt;image-name&gt;:&lt;tag&gt;</code> with the image name
   </a>
 </h2>
 
-<p>Since Docker Hardened Images come with signed SBOMs, you can use Cosign to
+<p>Since Docker Hardened Images come with signed SBOMs, you can use Docker Scout to
 verify the authenticity and integrity of the SBOM attached to the image. This
 ensures that the SBOM has not been tampered with and that the image's contents
 are trustworthy.</p>
-<p>To verify the SBOM of a Docker Hardened Image using Cosign, use the following command:</p>
+<p>To verify the SBOM of a Docker Hardened Image using Docker Scout, use the following command:</p>
 <div
   data-pagefind-ignore
   x-data
@@ -14895,7 +14895,7 @@ are trustworthy.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBjb3NpZ24gdmVyaWZ5LWF0dGVzdGF0aW9uIFwKICAtLWtleSBodHRwczovL3JlZ2lzdHJ5LnNjb3V0LmRvY2tlci5jb20va2V5cmluZy9kaGkvbGF0ZXN0LnB1YiBcCiAgLS10eXBlIHNib20gXAogIDxpbWFnZS1yZWZlcmVuY2U&#43;', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCA8aW1hZ2UtbmFtZT46PHRhZz4gXAogICAtLXByZWRpY2F0ZS10eXBlIGh0dHBzOi8vc2NvdXQuZG9ja2VyLmNvbS9zYm9tL3YwLjEgLS12ZXJpZnkgLS1wbGF0Zm9ybSA8cGxhdGZvcm0&#43;', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -14914,16 +14914,14 @@ are trustworthy.</p>
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> cosign verify-attestation <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --key https://registry.scout.docker.com/keyring/dhi/latest.pub \
-</span></span></span><span class="line"><span class="cl"><span class="go">  --type sbom \
-</span></span></span><span class="line"><span class="cl"><span class="go">  &lt;image-reference&gt;
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker scout attest get &lt;image-name&gt;:&lt;tag&gt; <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">   --predicate-type https://scout.docker.com/sbom/v0.1 --verify --platform &lt;platform&gt;
 </span></span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>For example, to verify the SBOM attestation for the dhi/node image:</p>
+<p>For example, to verify the SBOM attestation for the <code>dhi/node:20.19-debian12-fips-20250701182639</code> image:</p>
 <div
   data-pagefind-ignore
   x-data
@@ -14936,7 +14934,7 @@ are trustworthy.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBjb3NpZ24gdmVyaWZ5LWF0dGVzdGF0aW9uIFwKICAtLWtleSBodHRwczovL3JlZ2lzdHJ5LnNjb3V0LmRvY2tlci5jb20va2V5cmluZy9kaGkvbGF0ZXN0LnB1YiBcCiAgLS10eXBlIHNib20gXAogIHJlZ2lzdHJ5LnNjb3V0LmRvY2tlci5jb20vZGhpL25vZGVAc2hhMjU2OjZkZThhYzljMDczNjc2NTI0OTZiZjkyNjY3NTQyNWEyMmJmOTNlNDg3Y2MyNjkwZDY3NzhhODJkZDAxNTljNGY=', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCBkb2NzL2RoaS1ub2RlOjIwLjE5LWRlYmlhbjEyLWZpcHMtMjAyNTA3MDExODI2MzkgXAogICAtLXByZWRpY2F0ZS10eXBlIGh0dHBzOi8vc2NvdXQuZG9ja2VyLmNvbS9zYm9tL3YwLjEgLS12ZXJpZnkgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NA==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -14955,10 +14953,8 @@ are trustworthy.</p>
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> cosign verify-attestation <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --key https://registry.scout.docker.com/keyring/dhi/latest.pub \
-</span></span></span><span class="line"><span class="cl"><span class="go">  --type sbom \
-</span></span></span><span class="line"><span class="cl"><span class="go">  registry.scout.docker.com/dhi/node@sha256:6de8ac9c07367652496bf926675425a22bf93e487cc2690d6778a82dd0159c4f
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker scout attest get docs/dhi-node:20.19-debian12-fips-20250701182639 <span class="se">\
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">   --predicate-type https://scout.docker.com/sbom/v0.1 --verify --platform linux/amd64
 </span></span></span></code></pre></div>
       
     </div>
