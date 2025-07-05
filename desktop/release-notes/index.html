@@ -6890,28 +6890,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/ai/compose/model-runner/"
-        title="Use Docker Model Runner"
-      >
-        
-  Use Docker Model Runner
-    <span><span
-  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
-  >New</span
->
-
-    </span>
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -14718,6 +14696,17 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#4431"
+            >4.43.1</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+        
+  <ul class="pl-2">
+  </ul>
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#4430"
             >4.43.0</a
           >
@@ -15877,6 +15866,75 @@
   </blockquote>
 
 
+<h2 class=" scroll-mt-20" id="4431">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#4431">
+    4.43.1
+  </a>
+</h2>
+
+<em class="text-gray-200 italic dark:text-gray-500">2025-07-04</em>
+
+<blockquote  class="not-prose download-links">
+<p>Download Docker Desktop:</p>
+<div class="download-links-subcontainer">
+    <div>
+      <a rel="noopener"
+         href="https://desktop.docker.com/win/main/amd64/198352/Docker%20Desktop%20Installer.exe">Windows</a>
+      (<a rel="noopener"
+          href="https://desktop.docker.com/win/main/amd64/198352/checksums.txt">checksum</a>)
+    </div>
+  
+    <div>
+      <a rel="noopener"
+         href="https://desktop.docker.com/win/main/arm64/198352/Docker%20Desktop%20Installer.exe">Windows ARM Beta</a>
+      (<a rel="noopener"
+          href="https://desktop.docker.com/win/main/arm64/198352/checksums.txt">checksum</a>)
+    </div>
+  
+    <div>
+      <a rel="noopener" href="https://desktop.docker.com/mac/main/arm64/198352/Docker.dmg">Mac with Apple chip</a>
+      (<a rel="noopener"
+          href="https://desktop.docker.com/mac/main/arm64/198352/checksums.txt">checksum</a>)
+    </div>
+    <div>
+      <a rel="noopener" href="https://desktop.docker.com/mac/main/amd64/198352/Docker.dmg">Mac with Intel chip</a>
+      (<a rel="noopener"
+          href="https://desktop.docker.com/mac/main/amd64/198352/checksums.txt">checksum</a>)
+    </div>
+  
+    <div>
+      <a rel="noopener"
+         href="https://desktop.docker.com/linux/main/amd64/198352/docker-desktop-amd64.deb">Debian</a>
+      -
+      <a rel="noopener"
+         href="https://desktop.docker.com/linux/main/amd64/198352/docker-desktop-x86_64.rpm">RPM</a>
+      -
+      <a rel="noopener"
+         href="https://desktop.docker.com/linux/main/amd64/198352/docker-desktop-x86_64.pkg.tar.zst">Arch</a>
+      (<a rel="noopener"
+          href="https://desktop.docker.com/linux/main/amd64/198352/checksums.txt">checksum</a>)
+    </div></div>
+</blockquote>
+
+
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements">
+    Bug fixes and enhancements
+  </a>
+</h3>
+
+
+<h4 class=" scroll-mt-20" id="for-all-platforms">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms">
+    For all platforms
+  </a>
+</h4>
+
+<ul>
+<li>Fixed an issue that caused Docker Desktop UI to break when Ask Gordon responses contained HTML tags.</li>
+<li>Fixed an issue that prevented extensions from communicating with their backends.</li>
+</ul>
+
 <h2 class=" scroll-mt-20" id="4430">
   <a class="text-black dark:text-white no-underline hover:underline" href="#4430">
     4.43.0
@@ -15964,15 +16022,15 @@
 <li>Fixed <a class="link" href="https://www.cve.org/CVERecord?id=CVE-2025-6587" rel="noopener">CVE-2025-6587</a> where sensitive system environment variables were included in Docker Desktop diagnostic logs, allowing for potential secret exposure.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-1">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms">
+<h4 class=" scroll-mt-20" id="for-all-platforms-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-1">
     For all platforms
   </a>
 </h4>
@@ -16026,14 +16084,21 @@
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-1">
+<h4 class=" scroll-mt-20" id="for-all-platforms-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-2">
     For all platforms
   </a>
 </h4>
 
 <ul>
 <li><code>docker buildx bake</code> will not build images in Compose files with a top-level models attribute. Use <code>docker compose build</code> instead.</li>
+<li>Gordon responses containing HTML can cause Desktop UI to be permanently broken. As a workaround, you can delete <code>persisted-state.json</code> file to reset the UI. The file is located in the following directories:
+<ul>
+<li>Windows: <code>%APPDATA%\Docker Desktop\persisted-state.json</code></li>
+<li>Linux: <code>$XDG_CONFIG_HOME/Docker Desktop/persisted-state.json</code> or <code>~/.config/Docker Desktop/persisted-state.json</code></li>
+<li>Mac: <code>~/Library/Application Support/Docker Desktop/persisted-state.json</code></li>
+</ul>
+</li>
 </ul>
 
 <h4 class=" scroll-mt-20" id="for-windows-1">
@@ -16107,15 +16172,15 @@
 <li><a class="link" href="https://github.com/docker/compose/releases/tag/v2.37.1" rel="noopener">Docker Compose v2.37.1</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-1">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-2">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-2">
+<h4 class=" scroll-mt-20" id="for-all-platforms-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-3">
     For all platforms
   </a>
 </h4>
@@ -16226,15 +16291,15 @@
 <li><a class="link" href="https://github.com/docker/scout-cli/releases/tag/v1.18.0" rel="noopener">Docker Scout CLI v1.18.0</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-2">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-3">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-3">
+<h4 class=" scroll-mt-20" id="for-all-platforms-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-4">
     For all platforms
   </a>
 </h4>
@@ -16294,8 +16359,8 @@
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-4">
+<h4 class=" scroll-mt-20" id="for-all-platforms-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-5">
     For all platforms
   </a>
 </h4>
@@ -16366,15 +16431,15 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-3">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-4">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-5">
+<h4 class=" scroll-mt-20" id="for-all-platforms-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-6">
     For all platforms
   </a>
 </h4>
@@ -16434,15 +16499,15 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-4">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-5">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-6">
+<h4 class=" scroll-mt-20" id="for-all-platforms-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-7">
     For all platforms
   </a>
 </h4>
@@ -16528,7 +16593,7 @@
 <li>
     
   
-  <a class="link" href="https://docker.qubitpi.org/ai/compose/model-runner/">Docker Compose</a> and Testcontainers <a class="link" href="https://java.testcontainers.org/modules/docker_model_runner/" rel="noopener">Java</a> and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelrunner/" rel="noopener">Go</a> now support Docker Model Runner.</li>
+  <a class="link" href="https://docker.qubitpi.org/ai/compose/models-and-compose/">Docker Compose</a> and Testcontainers <a class="link" href="https://java.testcontainers.org/modules/docker_model_runner/" rel="noopener">Java</a> and <a class="link" href="https://golang.testcontainers.org/modules/dockermodelrunner/" rel="noopener">Go</a> now support Docker Model Runner.</li>
 <li>Introducing Docker Desktop in the <a class="link" href="https://apps.microsoft.com/detail/xp8cbj40xlbwkx?hl=en-GB&amp;gl=GB" rel="noopener">Microsoft App Store</a>.</li>
 </ul>
 
@@ -16558,15 +16623,15 @@
 <li>Fixed <a class="link" href="https://www.cve.org/CVERecord?id=CVE-2025-3911" rel="noopener">CVE-2025-3911</a> allowing an attacker with read access to a user's machine to obtain sensitive information from Docker Desktop log files, including environment variables configured for running containers.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-5">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-6">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-7">
+<h4 class=" scroll-mt-20" id="for-all-platforms-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-8">
     For all platforms
   </a>
 </h4>
@@ -16617,8 +16682,8 @@
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-8">
+<h4 class=" scroll-mt-20" id="for-all-platforms-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-9">
     For all platforms
   </a>
 </h4>
@@ -16716,15 +16781,15 @@
 <li><a class="link" href="https://github.com/NVIDIA/nvidia-container-toolkit/releases/tag/v1.17.5" rel="noopener">NVIDIA Container Toolkit v1.17.5</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-6">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-7">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-9">
+<h4 class=" scroll-mt-20" id="for-all-platforms-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-10">
     For all platforms
   </a>
 </h4>
@@ -16875,15 +16940,15 @@
 <li>Fixed <a class="link" href="https://www.cve.org/CVERecord?id=CVE-2025-1696" rel="noopener">CVE-2025-1696</a> which could disclose proxy authentication credentials in plaintext in log files.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-7">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-8">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-10">
+<h4 class=" scroll-mt-20" id="for-all-platforms-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-11">
     For all platforms
   </a>
 </h4>
@@ -17034,15 +17099,15 @@
 <li>Docker Debug <code>v0.0.38</code></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-8">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-9">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-11">
+<h4 class=" scroll-mt-20" id="for-all-platforms-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-12">
     For all platforms
   </a>
 </h4>
@@ -17109,8 +17174,8 @@
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-12">
+<h4 class=" scroll-mt-20" id="for-all-platforms-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-13">
     For all platforms
   </a>
 </h4>
@@ -17144,8 +17209,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-9">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-10">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -17229,15 +17294,15 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-10">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-11">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-13">
+<h4 class=" scroll-mt-20" id="for-all-platforms-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-14">
     For all platforms
   </a>
 </h4>
@@ -17346,15 +17411,15 @@
 <li><a class="link" href="https://github.com/NVIDIA/nvidia-container-toolkit/releases/tag/v1.17.2" rel="noopener">NVIDIA Container Toolkit v1.17.2</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-11">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-12">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-14">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-14">
+<h4 class=" scroll-mt-20" id="for-all-platforms-15">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-15">
     For all platforms
   </a>
 </h4>
@@ -17403,8 +17468,8 @@
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-15">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-15">
+<h4 class=" scroll-mt-20" id="for-all-platforms-16">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-16">
     For all platforms
   </a>
 </h4>
@@ -17466,8 +17531,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-12">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-13">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -17603,15 +17668,15 @@
 <li>Linux kernel <code>v6.10.13</code></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-13">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-14">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-16">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-16">
+<h4 class=" scroll-mt-20" id="for-all-platforms-17">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-17">
     For all platforms
   </a>
 </h4>
@@ -17688,8 +17753,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-14">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-14">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-15">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-15">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -17773,8 +17838,8 @@
 </blockquote>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-17">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-17">
+<h4 class=" scroll-mt-20" id="for-all-platforms-18">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-18">
     For all platforms
   </a>
 </h4>
@@ -17866,15 +17931,15 @@
 <li>Linux kernel <code>v6.10.9</code></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-15">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-15">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-16">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-16">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-18">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-18">
+<h4 class=" scroll-mt-20" id="for-all-platforms-19">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-19">
     For all platforms
   </a>
 </h4>
@@ -17999,8 +18064,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-16">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-16">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-17">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-17">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -18157,15 +18222,15 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-17">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-17">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-18">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-18">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-19">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-19">
+<h4 class=" scroll-mt-20" id="for-all-platforms-20">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-20">
     For all platforms
   </a>
 </h4>
@@ -18213,8 +18278,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-18">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-18">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-19">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-19">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -18327,15 +18392,15 @@
 <li>Linux kernel <code>v6.10.1</code></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-19">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-19">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-20">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-20">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-20">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-20">
+<h4 class=" scroll-mt-20" id="for-all-platforms-21">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-21">
     For all platforms
   </a>
 </h4>
@@ -18445,8 +18510,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-20">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-20">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-21">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-21">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -18507,8 +18572,8 @@
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-21">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-21">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-22">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-22">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -18610,15 +18675,15 @@
 <li>Linux kernel <code>v6.10</code></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-22">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-22">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-23">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-23">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-21">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-21">
+<h4 class=" scroll-mt-20" id="for-all-platforms-22">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-22">
     For all platforms
   </a>
 </h4>
@@ -18683,8 +18748,8 @@
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-22">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-22">
+<h4 class=" scroll-mt-20" id="for-all-platforms-23">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-23">
     For all platforms
   </a>
 </h4>
@@ -18746,8 +18811,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-23">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-23">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-24">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-24">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -18858,15 +18923,15 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 <li>Docker Init v1.3.0</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-24">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-24">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-25">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-25">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-23">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-23">
+<h4 class=" scroll-mt-20" id="for-all-platforms-24">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-24">
     For all platforms
   </a>
 </h4>
@@ -18936,8 +19001,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-24">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-24">
+<h4 class=" scroll-mt-20" id="for-all-platforms-25">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-25">
     For all platforms
   </a>
 </h4>
@@ -18980,8 +19045,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-25">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-25">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-26">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-26">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -19074,15 +19139,15 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 <li>Linux kernel <code>v6.6.31</code></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-26">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-26">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-27">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-27">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-25">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-25">
+<h4 class=" scroll-mt-20" id="for-all-platforms-26">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-26">
     For all platforms
   </a>
 </h4>
@@ -19150,8 +19215,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-26">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-26">
+<h4 class=" scroll-mt-20" id="for-all-platforms-27">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-27">
     For all platforms
   </a>
 </h4>
@@ -19178,8 +19243,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-27">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-27">
+<h4 class=" scroll-mt-20" id="for-all-platforms-28">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-28">
     For all platforms
   </a>
 </h4>
@@ -19276,8 +19341,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-28">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-28">
+<h4 class=" scroll-mt-20" id="for-all-platforms-29">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-29">
     For all platforms
   </a>
 </h4>
@@ -19331,15 +19396,15 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.22.2" rel="noopener">Go 1.22.2</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-27">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-27">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-28">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-28">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-29">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-29">
+<h4 class=" scroll-mt-20" id="for-all-platforms-30">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-30">
     For all platforms
   </a>
 </h4>
@@ -19399,8 +19464,8 @@ For more information, see <a class="link" href="https://github.com/microsoft/WSL
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-30">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-30">
+<h4 class=" scroll-mt-20" id="for-all-platforms-31">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-31">
     For all platforms
   </a>
 </h4>
@@ -19533,15 +19598,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <li>Docker Debug v0.0.27</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-28">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-28">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-29">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-29">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-31">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-31">
+<h4 class=" scroll-mt-20" id="for-all-platforms-32">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-32">
     For all platforms
   </a>
 </h4>
@@ -19697,15 +19762,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-29">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-29">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-30">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-30">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-32">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-32">
+<h4 class=" scroll-mt-20" id="for-all-platforms-33">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-33">
     For all platforms
   </a>
 </h4>
@@ -19798,15 +19863,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <li>Docker Debug v0.0.24</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-30">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-30">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-31">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-31">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-33">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-33">
+<h4 class=" scroll-mt-20" id="for-all-platforms-34">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-34">
     For all platforms
   </a>
 </h4>
@@ -19866,8 +19931,8 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <li><a class="link" href="https://github.com/opencontainers/runc/releases/tag/v1.1.12" rel="noopener">Runc v1.1.12</a> which contains a fix for <a class="link" href="https://scout.docker.com/vulnerabilities/id/CVE-2024-21626" rel="noopener">CVE-2024-21626</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-31">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-31">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-32">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-32">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -19940,15 +20005,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <li><a class="link" href="https://github.com/docker/scout-cli/releases/tag/v1.3.0" rel="noopener">Docker Scout v1.3.0</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-32">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-32">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-33">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-33">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-34">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-34">
+<h4 class=" scroll-mt-20" id="for-all-platforms-35">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-35">
     For all platforms
   </a>
 </h4>
@@ -20047,8 +20112,8 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-35">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-35">
+<h4 class=" scroll-mt-20" id="for-all-platforms-36">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-36">
     For all platforms
   </a>
 </h4>
@@ -20076,15 +20141,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <em class="text-gray-200 italic dark:text-gray-500">2023-12-14</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-33">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-33">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-34">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-34">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-36">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-36">
+<h4 class=" scroll-mt-20" id="for-all-platforms-37">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-37">
     For all platforms
   </a>
 </h4>
@@ -20156,15 +20221,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <li><a class="link" href="https://github.com/opencontainers/runc/releases/tag/v1.1.10" rel="noopener">runc v1.1.10</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-34">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-34">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-35">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-35">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-37">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-37">
+<h4 class=" scroll-mt-20" id="for-all-platforms-38">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-38">
     For all platforms
   </a>
 </h4>
@@ -20253,15 +20318,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <em class="text-gray-200 italic dark:text-gray-500">2023-11-21</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-35">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-35">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-36">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-36">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-38">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-38">
+<h4 class=" scroll-mt-20" id="for-all-platforms-39">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-39">
     For all platforms
   </a>
 </h4>
@@ -20289,15 +20354,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <em class="text-gray-200 italic dark:text-gray-500">2023-11-13</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-36">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-36">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-37">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-37">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-39">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-39">
+<h4 class=" scroll-mt-20" id="for-all-platforms-40">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-40">
     For all platforms
   </a>
 </h4>
@@ -20366,15 +20431,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-37">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-37">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-38">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-38">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-40">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-40">
+<h4 class=" scroll-mt-20" id="for-all-platforms-41">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-41">
     For all platforms
   </a>
 </h4>
@@ -20470,8 +20535,8 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
   <a class="link" href="https://docker.qubitpi.org/desktop/settings-and-maintenance/settings/"><code>settings.json</code> file</a> and set <code>&quot;displaySwitchWinLinContainers&quot;: true</code>.</li>
 </ul>
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-41">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-41">
+<h4 class=" scroll-mt-20" id="for-all-platforms-42">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-42">
     For all platforms
   </a>
 </h4>
@@ -20489,15 +20554,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 <em class="text-gray-200 italic dark:text-gray-500">2023-10-12</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-38">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-38">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-39">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-39">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-42">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-42">
+<h4 class=" scroll-mt-20" id="for-all-platforms-43">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-43">
     For all platforms
   </a>
 </h4>
@@ -20526,8 +20591,8 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-39">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-39">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-40">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-40">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -20589,15 +20654,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-40">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-40">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-41">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-41">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-43">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-43">
+<h4 class=" scroll-mt-20" id="for-all-platforms-44">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-44">
     For all platforms
   </a>
 </h4>
@@ -20733,15 +20798,15 @@ This can be resolved by adding the user to the <strong>docker-users</strong> gro
   <a class="link" href="https://docker.qubitpi.org/compose/releases/migrate/">Migrate to Compose V2</a>.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-41">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-41">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-42">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-42">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-44">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-44">
+<h4 class=" scroll-mt-20" id="for-all-platforms-45">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-45">
     For all platforms
   </a>
 </h4>
@@ -20811,8 +20876,8 @@ This issue would occur after an OS restart, or on a cold start of Docker Desktop
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-45">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-45">
+<h4 class=" scroll-mt-20" id="for-all-platforms-46">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-46">
     For all platforms
   </a>
 </h4>
@@ -20841,15 +20906,15 @@ This issue would occur after an OS restart, or on a cold start of Docker Desktop
 <em class="text-gray-200 italic dark:text-gray-500">2023-08-24</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-42">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-42">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-43">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-43">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-46">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-46">
+<h4 class=" scroll-mt-20" id="for-all-platforms-47">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-47">
     For all platforms
   </a>
 </h4>
@@ -20926,15 +20991,15 @@ This issue would occur after an OS restart, or on a cold start of Docker Desktop
   <a class="link" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/include/"><code>include</code></a>.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-43">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-43">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-44">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-44">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-47">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-47">
+<h4 class=" scroll-mt-20" id="for-all-platforms-48">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-48">
     For all platforms
   </a>
 </h4>
@@ -21004,8 +21069,8 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2023-07-03</em>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-48">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-48">
+<h4 class=" scroll-mt-20" id="for-all-platforms-49">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-49">
     For all platforms
   </a>
 </h4>
@@ -21062,15 +21127,15 @@ containers.</li>
 <li><a class="link" href="https://github.com/etcd-io/etcd/releases/tag/v3.5.7" rel="noopener">etcd v3.5.7</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-44">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-44">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-45">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-45">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-49">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-49">
+<h4 class=" scroll-mt-20" id="for-all-platforms-50">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-50">
     For all platforms
   </a>
 </h4>
@@ -21126,15 +21191,15 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2023-06-05</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-45">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-45">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-46">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-46">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-50">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-50">
+<h4 class=" scroll-mt-20" id="for-all-platforms-51">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-51">
     For all platforms
   </a>
 </h4>
@@ -21177,15 +21242,15 @@ containers.</li>
 <li><a class="link" href="https://github.com/opencontainers/runc/releases/tag/v1.1.5" rel="noopener">runc v1.1.7</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-46">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-46">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-47">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-47">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-51">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-51">
+<h4 class=" scroll-mt-20" id="for-all-platforms-52">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-52">
     For all platforms
   </a>
 </h4>
@@ -21288,15 +21353,15 @@ containers.</li>
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.20.3" rel="noopener">Go v1.20.3</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-47">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-47">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-48">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-48">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-52">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-52">
+<h4 class=" scroll-mt-20" id="for-all-platforms-53">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-53">
     For all platforms
   </a>
 </h4>
@@ -21365,8 +21430,8 @@ containers.</li>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-53">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-53">
+<h4 class=" scroll-mt-20" id="for-all-platforms-54">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-54">
     For all platforms
   </a>
 </h4>
@@ -21418,15 +21483,15 @@ containers.</li>
 <a class="link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-28842" rel="noopener">CVE-2023-28842</a>.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-48">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-48">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-49">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-49">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-54">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-54">
+<h4 class=" scroll-mt-20" id="for-all-platforms-55">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-55">
     For all platforms
   </a>
 </h4>
@@ -21485,8 +21550,8 @@ containers.</li>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-55">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-55">
+<h4 class=" scroll-mt-20" id="for-all-platforms-56">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-56">
     For all platforms
   </a>
 </h4>
@@ -21524,8 +21589,8 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2023-03-20</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-49">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-49">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-50">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-50">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -21592,15 +21657,15 @@ containers.</li>
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.19.5" rel="noopener">Go 1.19.5</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-50">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-50">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-51">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-51">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-56">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-56">
+<h4 class=" scroll-mt-20" id="for-all-platforms-57">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-57">
     For all platforms
   </a>
 </h4>
@@ -21682,8 +21747,8 @@ containers.</li>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-57">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-57">
+<h4 class=" scroll-mt-20" id="for-all-platforms-58">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-58">
     For all platforms
   </a>
 </h4>
@@ -21702,8 +21767,8 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2023-01-30</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-51">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-51">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-52">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-52">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -21729,15 +21794,15 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2023-01-19</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-52">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-52">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-53">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-53">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-58">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-58">
+<h4 class=" scroll-mt-20" id="for-all-platforms-59">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-59">
     For all platforms
   </a>
 </h4>
@@ -21776,15 +21841,15 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2023-01-13</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-53">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-53">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-54">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-54">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-59">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-59">
+<h4 class=" scroll-mt-20" id="for-all-platforms-60">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-60">
     For all platforms
   </a>
 </h4>
@@ -21832,15 +21897,15 @@ containers.</li>
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.19.4" rel="noopener">Go 1.19.4</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-54">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-54">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-55">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-55">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-60">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-60">
+<h4 class=" scroll-mt-20" id="for-all-platforms-61">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-61">
     For all platforms
   </a>
 </h4>
@@ -21950,15 +22015,15 @@ containers.</li>
 <li><a class="link" href="https://github.com/docker/scan-cli-plugin/releases/tag/v0.22.0" rel="noopener">Docker Scan v0.22.0</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-55">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-55">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-56">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-56">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-61">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-61">
+<h4 class=" scroll-mt-20" id="for-all-platforms-62">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-62">
     For all platforms
   </a>
 </h4>
@@ -22013,15 +22078,15 @@ containers.</li>
 <em class="text-gray-200 italic dark:text-gray-500">2022-11-17</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-56">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-56">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-57">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-57">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-62">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-62">
+<h4 class=" scroll-mt-20" id="for-all-platforms-63">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-63">
     For all platforms
   </a>
 </h4>
@@ -22080,15 +22145,15 @@ and updates the handling of <code>image:tag@digest</code> image references.</li>
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.19.3" rel="noopener">Go 1.19.3</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-57">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-57">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-58">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-58">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-63">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-63">
+<h4 class=" scroll-mt-20" id="for-all-platforms-64">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-64">
     For all platforms
   </a>
 </h4>
@@ -22168,15 +22233,15 @@ and updates the handling of <code>image:tag@digest</code> image references.</li>
 <li><a class="link" href="https://github.com/docker/compose/releases/tag/v2.12.1" rel="noopener">Docker Compose v2.12.1</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-58">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-58">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-59">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-59">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-64">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-64">
+<h4 class=" scroll-mt-20" id="for-all-platforms-65">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-65">
     For all platforms
   </a>
 </h4>
@@ -22254,15 +22319,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li><a class="link" href="https://hub.docker.com/layers/docker/for-desktop-kernel/5.15.49-13422a825f833d125942948cf8a8688cef721ead/images/sha256-ebf1f6f0cb58c70eaa260e9d55df7c43968874d62daced966ef6a5c5cd96b493?context=explore" rel="noopener">Linux kernel 5.15.49</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-59">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-59">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-60">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-60">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-65">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-65">
+<h4 class=" scroll-mt-20" id="for-all-platforms-66">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-66">
     For all platforms
   </a>
 </h4>
@@ -22372,8 +22437,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-66">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-66">
+<h4 class=" scroll-mt-20" id="for-all-platforms-67">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-67">
     For all platforms
   </a>
 </h4>
@@ -22401,8 +22466,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-67">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-67">
+<h4 class=" scroll-mt-20" id="for-all-platforms-68">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-68">
     For all platforms
   </a>
 </h4>
@@ -22466,15 +22531,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <em class="text-gray-200 italic dark:text-gray-500">2022-08-05</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-60">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-60">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-61">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-61">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-68">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-68">
+<h4 class=" scroll-mt-20" id="for-all-platforms-69">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-69">
     For all platforms
   </a>
 </h4>
@@ -22534,15 +22599,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.18.4" rel="noopener">Go 1.18.4</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-61">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-61">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-62">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-62">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-69">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-69">
+<h4 class=" scroll-mt-20" id="for-all-platforms-70">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-70">
     For all platforms
   </a>
 </h4>
@@ -22607,8 +22672,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <em class="text-gray-200 italic dark:text-gray-500">2022-07-05</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-62">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-62">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-63">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-63">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -22686,15 +22751,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.18.3" rel="noopener">Go 1.18.3</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-63">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-63">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-64">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-64">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-70">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-70">
+<h4 class=" scroll-mt-20" id="for-all-platforms-71">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-71">
     For all platforms
   </a>
 </h4>
@@ -22802,15 +22867,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-64">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-64">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-65">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-65">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-71">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-71">
+<h4 class=" scroll-mt-20" id="for-all-platforms-72">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-72">
     For all platforms
   </a>
 </h4>
@@ -22865,15 +22930,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li><a class="link" href="https://github.com/golang/go/releases/tag/go1.18.2" rel="noopener">Go 1.18.2</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-65">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-65">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-66">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-66">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-72">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-72">
+<h4 class=" scroll-mt-20" id="for-all-platforms-73">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-73">
     For all platforms
   </a>
 </h4>
@@ -23000,8 +23065,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li><a class="link" href="https://www.docker.com/blog/announcing-compose-v2-general-availability/" rel="noopener">Compose V2 is now GA</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-66">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-66">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-67">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-67">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -23074,8 +23139,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-73">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-73">
+<h4 class=" scroll-mt-20" id="for-all-platforms-74">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-74">
     For all platforms
   </a>
 </h4>
@@ -23133,8 +23198,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-74">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-74">
+<h4 class=" scroll-mt-20" id="for-all-platforms-75">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-75">
     For all platforms
   </a>
 </h4>
@@ -23162,15 +23227,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <em class="text-gray-200 italic dark:text-gray-500">2022-04-19</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-67">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-67">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-68">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-68">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-75">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-75">
+<h4 class=" scroll-mt-20" id="for-all-platforms-76">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-76">
     For all platforms
   </a>
 </h4>
@@ -23239,15 +23304,15 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li>Update containerd to v1.5.11 to address <a class="link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-24769" rel="noopener">CVE-2022-24769</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-68">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-68">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-69">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-69">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-76">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-76">
+<h4 class=" scroll-mt-20" id="for-all-platforms-77">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-77">
     For all platforms
   </a>
 </h4>
@@ -23301,8 +23366,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 <li><a class="link" href="https://github.com/docker/buildx/releases/tag/v0.8.1" rel="noopener">Buildx 0.8.1</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-69">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-69">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-70">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-70">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -23329,8 +23394,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-77">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-77">
+<h4 class=" scroll-mt-20" id="for-all-platforms-78">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-78">
     For all platforms
   </a>
 </h4>
@@ -23359,8 +23424,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-78">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-78">
+<h4 class=" scroll-mt-20" id="for-all-platforms-79">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-79">
     For all platforms
   </a>
 </h4>
@@ -23385,8 +23450,8 @@ and updated handling of <code>image:tag@digest</code> image references, as well 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-79">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-79">
+<h4 class=" scroll-mt-20" id="for-all-platforms-80">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-80">
     For all platforms
   </a>
 </h4>
@@ -23416,15 +23481,15 @@ If using the WSL 2 backend, you must update WSL 2 by running <code>wsl --update<
 <li><a class="link" href="https://wiki.qemu.org/ChangeLog/6.2" rel="noopener">Qemu 6.2.0</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-70">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-70">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-71">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-71">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-80">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-80">
+<h4 class=" scroll-mt-20" id="for-all-platforms-81">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-81">
     For all platforms
   </a>
 </h4>
@@ -23488,8 +23553,8 @@ If using the WSL 2 backend, you must update WSL 2 by running <code>wsl --update<
 <em class="text-gray-200 italic dark:text-gray-500">2022-02-15</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-71">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-71">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-72">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-72">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -23565,15 +23630,15 @@ Alternatively, you can edit the Docker Desktop settings file located at <code>%A
 <li>Fixed <a class="link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-23774" rel="noopener">CVE-2022-23774</a> where Docker Desktop allows attackers to move arbitrary files.</li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-72">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-72">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-73">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-73">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-81">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-81">
+<h4 class=" scroll-mt-20" id="for-all-platforms-82">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-82">
     For all platforms
   </a>
 </h4>
@@ -23631,8 +23696,8 @@ Alternatively, you can edit the Docker Desktop settings file located at <code>%A
 <em class="text-gray-200 italic dark:text-gray-500">2022-01-24</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-73">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-73">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-74">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-74">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -23676,8 +23741,8 @@ Alternatively, you can edit the Docker Desktop settings file located at <code>%A
 <em class="text-gray-200 italic dark:text-gray-500">2022-01-14</em>
 
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-74">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-74">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-75">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-75">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -23764,15 +23829,15 @@ Alternatively, you can edit the Docker Desktop settings file located at <code>%A
 <p>Docker Desktop version 4.3.0 and 4.3.1 has a bug that may log sensitive information (access token or password) on the user's machine during login.
 This only affects users if they are on Docker Desktop 4.3.0, 4.3.1 and the user has logged in while on 4.3.0, 4.3.1. Gaining access to this data would require having access to the user’s local files.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-75">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-75">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-76">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-76">
     Bug fixes and enhancements
   </a>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-82">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-82">
+<h4 class=" scroll-mt-20" id="for-all-platforms-83">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-83">
     For all platforms
   </a>
 </h4>
@@ -23811,8 +23876,8 @@ This only affects users if they are on Docker Desktop 4.3.0, 4.3.1 and the user 
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-83">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-83">
+<h4 class=" scroll-mt-20" id="for-all-platforms-84">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-84">
     For all platforms
   </a>
 </h4>
@@ -23941,8 +24006,8 @@ CVE-2021-44228</a>.</p>
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-84">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-84">
+<h4 class=" scroll-mt-20" id="for-all-platforms-85">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-85">
     For all platforms
   </a>
 </h4>
@@ -24058,8 +24123,8 @@ actual memory usage. See
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-85">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-85">
+<h4 class=" scroll-mt-20" id="for-all-platforms-86">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-86">
     For all platforms
   </a>
 </h4>
@@ -24253,8 +24318,8 @@ actual memory usage. See
 </h3>
 
 
-<h4 class=" scroll-mt-20" id="for-all-platforms-86">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-86">
+<h4 class=" scroll-mt-20" id="for-all-platforms-87">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#for-all-platforms-87">
     For all platforms
   </a>
 </h4>
@@ -24401,6 +24466,17 @@ For more information, see <a class="link" href="https://docker.qubitpi.org/subsc
     <nav class="toc">
       
   <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#4431"
+            >4.43.1</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+        
+  <ul class="pl-2">
+  </ul>
+  </ul>
         <li>
           <a class="link lg:no-underline" href="#4430"
             >4.43.0</a

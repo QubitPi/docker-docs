@@ -1,4 +1,4 @@
-Migrate to Compose v2
+Migrate from Docker Compose v1 to v2
 
 
 From July 2023, Compose v1 stopped receiving updates. It’s also no longer available in new releases of Docker Desktop.

@@ -23,8 +23,8 @@ production. These changes might include:
 - Adding extra services such as a log aggregator
 
 For this reason, consider defining an additional Compose file, for example
-`compose.production.yaml`, which specifies production-appropriate
-configuration. This configuration file only needs to include the changes you want to make from the original Compose file. The additional Compose file
+`compose.production.yaml`, with production-specific
+configuration details. This configuration file only needs to include the changes you want to make from the original Compose file. The additional Compose file
 is then applied over the original `compose.yaml` to create a new configuration.
 
 Once you have a second configuration file, you can use it with the
@@ -49,7 +49,7 @@ $ docker compose up --no-deps -d web
 
 This first command rebuilds the image for `web` and then stops, destroys, and recreates
 just the `web` service. The `--no-deps` flag prevents Compose from also
-recreating any services which `web` depends on.
+recreating any services that `web` depends on.
 
 ### Running Compose on a single server
 
@@ -59,3 +59,8 @@ appropriately. For more information, see [pre-defined environment variables](env
 
 Once you've set up your environment variables, all the normal `docker compose`
 commands work with no further configuration.
+
+## Next steps
+
+- [Using multiple Compose files](multiple-compose-files/_index.md)
+

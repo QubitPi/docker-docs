@@ -1,4 +1,4 @@
-Using Docker Compose with OCI artifacts
+Package and deploy Docker Compose applications as OCI artifacts
 
 
 {{< summary-bar feature_name="Compose OCI artifact" >}}
@@ -8,7 +8,7 @@ Docker Compose supports working with [OCI artifacts](/manuals/docker-hub/repos/m
 ## Publish your Compose application as an OCI artifact
 
 To distribute your Compose application as an OCI artifact, you can use the `docker compose publish` command, to publish it to an OCI-compliant registry. 
-This allows others to deploy your application directly from the registry.
+This allows others to then deploy your application directly from the registry.
 
 The publish function supports most of the composition capabilities of Compose, like overrides, extends or include, [with some limitations](#limitations).
 
@@ -74,12 +74,12 @@ Are you ok to publish these environment variables? [y/N]:
 
 If you decline, the publish process stops without sending anything to the registry.
 
-### Limitations
+## Limitations
 
-There is limitations to publishing Compose applications as OCI artifacts. You can't publish a Compose configuration:
+There are limitations to publishing Compose applications as OCI artifacts. You can't publish a Compose configuration:
 - With service(s) containing bind mounts
 - With service(s) containing only a `build` section
-- That includes local files with the `include` attribute. To publish successfully, ensure that any included local files are also published. You can then `include` to reference these files as remote `include` is supported.
+- That includes local files with the `include` attribute. To publish successfully, ensure that any included local files are also published. You can then use  `include` to reference these files as remote `include` is supported.
 
 ## Start an OCI artifact application
 
@@ -137,3 +137,9 @@ The `docker compose publish` command supports non-interactive execution, letting
 ```console
 $ docker compose publish -y username/my-compose-app:latest
 ```
+
+## Next steps
+
+- [Learn about OCI artifacts in Docker Hub](/manuals/docker-hub/repos/manage/hub-images/oci-artifacts.md)
+- [Compose publish command](/reference/cli/docker/compose/publish.md)
+- [Understand `include`](/reference/compose-file/include.md)

@@ -1,4 +1,4 @@
-How to use secrets in Docker Compose
+Manage secrets securely in Docker Compose
 
 
 A secret is any piece of data, such as a password, certificate, or API key, that shouldn’t be transmitted over a network or stored unencrypted in a Dockerfile or in your application’s source code.
@@ -17,7 +17,7 @@ Unlike the other methods, this permits granular access control within a service 
 
 ## Examples
 
-### Simple
+### Single-service secret injection
 
 In the following example, the frontend service is given access to the `my_secret` secret. In the container, `/run/secrets/my_secret` is set to the contents of the file `./my_secret.txt`.
 
@@ -32,7 +32,7 @@ secrets:
     file: ./my_secret.txt
 ```
 
-### Advanced
+### Multi-service secret sharing and password management
 
 ```yaml
 services:

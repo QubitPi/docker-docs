@@ -20,7 +20,7 @@ configuration. Tracking which fragment of a service is relative to which path is
 difficult and confusing, so to keep paths easier to understand, all paths must
 be defined relative to the base file. 
 
-## How it works
+## How the `extends` attribute works
 
 ### Extending services from another file
 
@@ -53,7 +53,7 @@ You get exactly the same result as if you wrote
 `compose.yaml` with the same `build`, `ports`, and `volumes` configuration
 values defined directly under `web`.
 
-To include the service `webapp` in the final project when extending services from another file, you need to explicitly include both services in your current Compose file. For example (note this is a non-normative example):
+To include the service `webapp` in the final project when extending services from another file, you need to explicitly include both services in your current Compose file. For example (this is for illustrative purposes only):
 
 ```yaml
 services:

@@ -10,10 +10,10 @@
   </title>
 
 
-<meta name="description" content="How to use Docker Compose&#39;s extends keyword to share configuration between files and projects" />
+<meta name="description" content="Learn how to reuse service configurations across files and projects using Docker Compose’s extends attribute." />
 <meta
   name="keywords"
-  content="fig, composition, compose, docker, orchestration, documentation, docs"
+  content="fig, composition, compose, docker, orchestration, documentation, docs, compose, file, modularization"
 />
 <link rel="canonical" href="https://docker.qubitpi.org/compose/how-tos/multiple-compose-files/extends/" />
 
@@ -44,7 +44,7 @@
   name="twitter:description"
   property="og:description"
   itemprop="description"
-  content="How to use Docker Compose&#39;s extends keyword to share configuration between files and projects"
+  content="Learn how to reuse service configurations across files and projects using Docker Compose’s extends attribute."
 />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:domain" content="https://docker.qubitpi.org/" />
@@ -56,7 +56,7 @@
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
 <meta property="og:title" content="Extend" />
-<meta property="og:description" content="How to use Docker Compose&#39;s extends keyword to share configuration between files and projects" />
+<meta property="og:description" content="Learn how to reuse service configurations across files and projects using Docker Compose’s extends attribute." />
 <meta property="og:type" content="website" />
 <meta
   property="og:updated_time"
@@ -76,7 +76,7 @@
   itemprop="datePublished"
   content="2025-06-04 01:15:09 &#43;0800 &#43;0800"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Extend\"","description":"\"How to use Docker Compose's extends keyword to share configuration between files and projects\"","url":"https:\/\/docker.qubitpi.org\/compose\/how-tos\/multiple-compose-files\/extends\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Extend\"","description":"\"Learn how to reuse service configurations across files and projects using Docker Compose’s extends attribute.\"","url":"https:\/\/docker.qubitpi.org\/compose\/how-tos\/multiple-compose-files\/extends\/"}</script>
 
 
   
@@ -6884,28 +6884,6 @@
       >
         
   Use AI models in Compose
-    <span><span
-  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
-  >New</span
->
-
-    </span>
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/ai/compose/model-runner/"
-        title="Use Docker Model Runner"
-      >
-        
-  Use Docker Model Runner
     <span><span
   class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
   >New</span
@@ -14728,8 +14706,8 @@
       
   <ul class="pl-2">
         <li>
-          <a class="link lg:no-underline" href="#how-it-works"
-            >How it works</a
+          <a class="link lg:no-underline" href="#how-the-extends-attribute-works"
+            >How the <code>extends</code> attribute works</a
           >
         </li>
         
@@ -14820,9 +14798,9 @@ be defined relative to the base file.</p>
   </blockquote>
 
 
-<h2 class=" scroll-mt-20" id="how-it-works">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#how-it-works">
-    How it works
+<h2 class=" scroll-mt-20" id="how-the-extends-attribute-works">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#how-the-extends-attribute-works">
+    How the <code>extends</code> attribute works
   </a>
 </h2>
 
@@ -14923,7 +14901,7 @@ looks like this:</p>
 <p>You get exactly the same result as if you wrote
 <code>compose.yaml</code> with the same <code>build</code>, <code>ports</code>, and <code>volumes</code> configuration
 values defined directly under <code>web</code>.</p>
-<p>To include the service <code>webapp</code> in the final project when extending services from another file, you need to explicitly include both services in your current Compose file. For example (note this is a non-normative example):</p>
+<p>To include the service <code>webapp</code> in the final project when extending services from another file, you need to explicitly include both services in your current Compose file. For example (this is for illustrative purposes only):</p>
 <div
   data-pagefind-ignore
   x-data
@@ -15408,8 +15386,8 @@ which inspects the actual model:</p>
       
   <ul class="pl-2">
         <li>
-          <a class="link lg:no-underline" href="#how-it-works"
-            >How it works</a
+          <a class="link lg:no-underline" href="#how-the-extends-attribute-works"
+            >How the <code>extends</code> attribute works</a
           >
         </li>
         

@@ -6894,28 +6894,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/ai/compose/model-runner/"
-        title="Use Docker Model Runner"
-      >
-        
-  Use Docker Model Runner
-    <span><span
-  class="not-prose bg-green-500 dark:bg-green-700 rounded-sm px-1 text-xs text-white"
-  >New</span
->
-
-    </span>
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -14733,8 +14711,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#include-and-overrides"
-            >Include and overrides</a
+          <a class="link lg:no-underline" href="#using-overrides-with-included-compose-files"
+            >Using overrides with included Compose files</a
           >
         </li>
         <li>
@@ -14807,7 +14785,7 @@
       </span>
     </div>
     <div class="admonition-content">
-      <p><code>include</code> applies recursively so an included Compose file which declares its own <code>include</code> section, results in those other files being included as well.</p>
+      <p><code>include</code> applies recursively so an included Compose file which declares its own <code>include</code> section, causes those files to also be included.</p>
     </div>
   </blockquote>
 
@@ -14907,14 +14885,14 @@
 <p><code>include</code> allows you to reference Compose files from remote sources, such as OCI artifacts or Git repositories.<br>
 Here <code>serviceB</code> is defined in a Compose file stored on Docker Hub.</p>
 
-<h2 class=" scroll-mt-20" id="include-and-overrides">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#include-and-overrides">
-    Include and overrides
+<h2 class=" scroll-mt-20" id="using-overrides-with-included-compose-files">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#using-overrides-with-included-compose-files">
+    Using overrides with included Compose files
   </a>
 </h2>
 
 <p>Compose reports an error if any resource from <code>include</code> conflicts with resources from the included Compose file. This rule prevents
-unexpected conflicts with resources defined by the included compose file author. However, there may be some circumstances where you might want to tweak the
+unexpected conflicts with resources defined by the included compose file author. However, there may be some circumstances where you might want to customize the
 included model. This can be achieved by adding an override file to the include directive:</p>
 <div
   data-pagefind-ignore
@@ -14956,7 +14934,7 @@ included model. This can be achieved by adding an override file to the include d
   </div>
 </div>
 <p>The main limitation with this approach is that you need to maintain a dedicated override file per include. For complex projects with multiple
-includes this would result into many Compose files.</p>
+includes this would result in many Compose files.</p>
 <p>The other option is to use a <code>compose.override.yaml</code> file. While conflicts will be rejected from the file using <code>include</code> when same
 resource is declared, a global Compose override file can override the resulting merged model, as demonstrated in following example:</p>
 <p>Main <code>compose.yaml</code> file:</p>
@@ -15118,8 +15096,8 @@ resource is declared, a global Compose override file can override the resulting 
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#include-and-overrides"
-            >Include and overrides</a
+          <a class="link lg:no-underline" href="#using-overrides-with-included-compose-files"
+            >Using overrides with included Compose files</a
           >
         </li>
         <li>

@@ -1,4 +1,4 @@
-Compose FAQs
+Frequently asked questions about Docker Compose
 
 
 ### What is the difference between `docker compose` and `docker-compose`
