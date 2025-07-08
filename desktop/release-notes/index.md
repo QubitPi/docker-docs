@@ -17,7 +17,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-07-04" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.43.1" build_path="/198352/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Early Access" version="4.43.1" build_path="/198352/" >}}
 
 ### Bug fixes and enhancements
 
@@ -30,7 +30,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-07-03" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.43.0" build_path="/198134/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Early Access" version="4.43.0" build_path="/198134/" >}}
 
 ### New
 
@@ -87,7 +87,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-06-18" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.42.1" build_path="/196648/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Early Access" version="4.42.1" build_path="/196648/" >}}
 
 ### Upgrades
 
@@ -113,7 +113,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-06-04" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.42.0" build_path="/195023/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Early Access" version="4.42.0" build_path="/195023/" >}}
 
 ### New
 
@@ -185,7 +185,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-05-06" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.41.2" build_path="/191736/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.41.2" build_path="/191736/" >}}
 
 ### Bug fixes and enhancements
 
@@ -197,7 +197,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-04-30" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.41.1" build_path="/191279/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.41.1" build_path="/191279/" >}}
 
 ### Bug fixes and enhancements
 
@@ -213,7 +213,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-04-28" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.41.0" build_path="/190950/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.41.0" build_path="/190950/" >}}
 
 ### New
 
@@ -277,7 +277,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-03-31" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.40.0" build_path="/187762/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.40.0" build_path="/187762/" >}}
 
 ### New
 
@@ -326,7 +326,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-03-05" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.39.0" build_path="/184744/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.39.0" build_path="/184744/" >}}
 
 ### New
 
@@ -382,7 +382,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2025-01-30" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.38.0" build_path="/181591/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.38.0" build_path="/181591/" >}}
 
 ### New
 
@@ -467,7 +467,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-12-17" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.37.1" build_path="/178610/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.37.1" build_path="/178610/" >}}
 
 ### Bug fixes and enhancements
 
@@ -486,7 +486,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-12-12" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.37.0" build_path="/178034/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.37.0" build_path="/178034/" >}}
 
 ### New
 
@@ -564,7 +564,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-11-18" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.36.0" build_path="/175267/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.36.0" build_path="/175267/" >}}
 
 ### New
 
@@ -644,7 +644,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-10-30" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.35.1" build_path="/173168/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.35.1" build_path="/173168/" >}}
 
 #### For all platforms
 
@@ -654,7 +654,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-10-24" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.35.0" build_path="/172550/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.35.0" build_path="/172550/" >}}
 
 ### New
 
@@ -748,7 +748,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-10-09" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.34.3" build_path="/170107/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.34.3" build_path="/170107/" >}}
 
 ### Upgrades
 
@@ -764,7 +764,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-09-12" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.34.2" build_path="/167172/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.34.2" build_path="/167172/" >}}
 
 ### Bug fixes and enhancements
 
@@ -781,7 +781,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-09-05" >}}
 
-{{< desktop-install-v2 win=true beta_win_arm=true version="4.34.1" build_path="/166053/" >}}
+{{< desktop-install-v2 win=true win_arm_release="Beta" version="4.34.1" build_path="/166053/" >}}
 
 ### Bug fixes and enhancements
 
@@ -793,7 +793,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-08-29" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.34.0" build_path="/165256/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.34.0" build_path="/165256/" >}}
 
 ### New
 
@@ -873,7 +873,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-07-31" >}}
 
-{{< desktop-install-v2 win=true beta_win_arm=true version="4.33.0" build_path="/161083/" >}}
+{{< desktop-install-v2 win=true win_arm_release="Beta" version="4.33.0" build_path="/161083/" >}}
 
 ### Bug fixes and enhancements
 
@@ -885,7 +885,7 @@ For more frequently asked questions, see the [FAQs](/manuals/desktop/troubleshoo
 
 {{< release-date date="2024-07-25" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.33.0" build_path="/160616/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.33.0" build_path="/160616/" >}}
 
 ### New
 
@@ -977,7 +977,7 @@ For more information, see [microsoft/WSL#11794](https://github.com/microsoft/WSL
 
 {{< release-date date="2024-07-04" >}}
 
-{{< desktop-install-v2 all=true beta_win_arm=true version="4.32.0" build_path="/157355/" >}}
+{{< desktop-install-v2 all=true win_arm_release="Beta" version="4.32.0" build_path="/157355/" >}}
 
 ### New
 
@@ -1045,10 +1045,6 @@ For more information, see [microsoft/WSL#11794](https://github.com/microsoft/WSL
 
 ## 4.31.1
 
-{{< release-date date="2024-06-10" >}}
-
-{{< desktop-install win=true beta_win_arm=true version="4.31.1" build_path="/153621/" >}}
-
 ### Bug fixes and enhancements
 
 #### For Windows
@@ -1056,10 +1052,6 @@ For more information, see [microsoft/WSL#11794](https://github.com/microsoft/WSL
 - Fixed a bug where containers, images and volumes created before the update were potentially invisible for users. Fixes [docker/for-win#14118](https://github.com/docker/for-win/issues/14118).
 
 ## 4.31.0
-
-{{< release-date date="2024-06-06" >}}
-
-{{< desktop-install all=true beta_win_arm=true version="4.31.0" build_path="/153195/" >}}
 
 ### New
 
@@ -1145,7 +1137,7 @@ For more information, see [microsoft/WSL#11794](https://github.com/microsoft/WSL
 
 {{< release-date date="2024-05-06" >}}
 
-{{< desktop-install all=true beta_win_arm=true version="4.30.0" build_path="/149282/" >}}
+{{< desktop-install all=true win_arm_release="Beta" version="4.30.0" build_path="/149282/" >}}
 
 ### New
 
@@ -1227,7 +1219,7 @@ This can be resolved by adding the user to the **docker-users** group. Before st
 
 {{< release-date date="2024-04-08" >}}
 
-{{< desktop-install all=true beta_win_arm=true version="4.29.0" build_path="/145265/" >}}
+{{< desktop-install all=true win_arm_release="Beta" version="4.29.0" build_path="/145265/" >}}
 
 ### New
 

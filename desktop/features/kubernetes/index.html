@@ -15387,14 +15387,14 @@ to set up the Kubernetes cluster. It has no effect on other Kubernetes pods.</p>
       </span>
     </div>
     <div class="admonition-content">
-      <p>When using <code>KubernetesImagesRepository</code> and <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/enhanced-container-isolation/">Enhanced Container Isolation (ECI)</a>
+      <p>In Docker Desktop versions 4.43 or earlier: when using <code>KubernetesImagesRepository</code> and <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/enhanced-container-isolation/">Enhanced Container Isolation (ECI)</a>
 is enabled, add the following images to the <a class="link" href="https://docker.qubitpi.org/security/for-admins/hardened-desktop/settings-management/configure-json-file/#enhanced-container-isolation">ECI Docker socket mount image list</a>:</p>
-<ul>
-<li>[imagesRepository]/desktop-cloud-provider-kind:*</li>
-<li>[imagesRepository]/desktop-containerd-registry-mirror:*</li>
-</ul>
-<p>These containers mount the Docker socket, so you must add the images to the ECI images list. If not,
-ECI will block the mount and Kubernetes won't start.</p>
+<p><code>[imagesRepository]/desktop-cloud-provider-kind:*</code>
+<code>[imagesRepository]/desktop-containerd-registry-mirror:*</code></p>
+<p>These containers mount the Docker socket, so you must add the images to the
+ECI images list. If not, ECI will block the mount and Kubernetes won't
+start. This does not apply to Docker Desktop 4.44 or later because it
+automatically allows these images to mount the Docker socket.</p>
     </div>
   </blockquote>
 
