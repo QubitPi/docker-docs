@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.7d1b8f7a846c415fb0e434f8c49ad56e6349b55c3173af7853776ceaa2e0dbba.css"
-            integrity="sha256-fRuPeoRsQV&#43;w5DT4xJrVbmNJtVwxc694U3ds6qLg27o="
+            href="/css/style.ea2df714b2bad0b769069dd781a6e81f71289f7b0479ea7fcbde1916986eac7b.css"
+            integrity="sha256-6i33FLK60LdpBp3XgaboH3Eon3sEeep/y94ZFphurHs="
             crossorigin="anonymous"
           />
         
@@ -12615,10 +12615,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/admin/organization/general-settings/"
-        title="Organization settings"
+        title="Organization information"
       >
         
-  Organization settings
+  Organization information
 
       </a>
     </li>
@@ -14535,7 +14535,7 @@
     <nav
   id="breadcrumbs"
   data-pagefind-ignore
-  class="mb-4 flex min-w-0 items-center gap-2 text-gray-400 dark:text-gray-300"
+  class="breadcrumbs mb-4 flex min-w-0 items-center gap-2 text-gray-400 dark:text-gray-300"
 >
   
     
@@ -14563,7 +14563,7 @@
     <div class="flex items-start justify-between">
       <h1 data-pagefind-weight="10">Build release notes</h1>
       <div class="md-dropdown ml-auto hidden lg:block">
-        <details id="markdownDropdown" class="group relative z-10 inline-block" data-heap-id="markdown-dropdown">
+        <details id="markdownDropdown" class="ml-3 group relative z-10 inline-block" data-heap-id="markdown-dropdown">
     <summary
       class="inline-flex cursor-pointer items-center gap-0 rounded-sm border border-gray-600 bg-white  py-1 pl-2
       text-base font-semibold text-gray-600 transition-colors hover:bg-gray-50 dark:border-gray-50 dark:bg-gray-950 dark:text-gray-100 dark:hover:bg-gray-900"
@@ -14695,6 +14695,14 @@
     <nav class="toc">
       
   <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#0250"
+            >0.25.0</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
         <li>
           <a class="link lg:no-underline" href="#0240"
             >0.24.0</a
@@ -15104,6 +15112,53 @@
     <p>This page contains information about the new features, improvements, and bug
 fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">Docker Buildx</a>.</p>
 
+<h2 class=" scroll-mt-20" id="0250">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#0250">
+    0.25.0
+  </a>
+</h2>
+
+<em class="text-gray-200 italic dark:text-gray-500">2025-06-17</em>
+
+<p>The full release notes for this release are available
+<a class="link" href="https://github.com/docker/buildx/releases/tag/v0.25.0" rel="noopener">on GitHub</a>.</p>
+
+<h3 class=" scroll-mt-20" id="new">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new">
+    New
+  </a>
+</h3>
+
+<ul>
+<li>Bake now supports defining <code>extra-hosts</code>. <a class="link" href="https://github.com/docker/buildx/pull/3234" rel="noopener">docker/buildx#3234</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="enhancements">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements">
+    Enhancements
+  </a>
+</h3>
+
+<ul>
+<li>Add support for bearer token auth. <a class="link" href="https://github.com/docker/buildx/pull/3233" rel="noopener">docker/buildx#3233</a></li>
+<li>Add custom exit codes for internal, resource, and canceled errors in commands. <a class="link" href="https://github.com/docker/buildx/pull/3214" rel="noopener">docker/buildx#3214</a></li>
+<li>Show variable type when using <code>--list=variables</code> with Bake. <a class="link" href="https://github.com/docker/buildx/pull/3207" rel="noopener">docker/buildx#3207</a></li>
+<li>Consider typed, value-less variables to have <code>null</code> value in Bake. <a class="link" href="https://github.com/docker/buildx/pull/3198" rel="noopener">docker/buildx#3198</a></li>
+<li>Add support for multiple IPs in extra hosts configuration. <a class="link" href="https://github.com/docker/buildx/pull/3244" rel="noopener">docker/buildx#3244</a></li>
+<li>Support for updated SLSA V1 provenance in <code>buildx history</code> commands. <a class="link" href="https://github.com/docker/buildx/pull/3245" rel="noopener">docker/buildx#3245</a></li>
+<li>Add support for <code>RegistryToken</code> configuration in imagetools commands. <a class="link" href="https://github.com/docker/buildx/pull/3233" rel="noopener">docker/buildx#3233</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="bug-fixes">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes">
+    Bug fixes
+  </a>
+</h3>
+
+<ul>
+<li>Fix <code>keep-storage</code> flag deprecation notice for <code>prune</code> command. <a class="link" href="https://github.com/docker/buildx/pull/3216" rel="noopener">docker/buildx#3216</a></li>
+</ul>
+
 <h2 class=" scroll-mt-20" id="0240">
   <a class="text-black dark:text-white no-underline hover:underline" href="#0240">
     0.24.0
@@ -15115,8 +15170,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.24.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="enhancements">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements">
+<h3 class=" scroll-mt-20" id="enhancements-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-1">
     Enhancements
   </a>
 </h3>
@@ -15127,8 +15182,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <li>Compose compatibility has been updated to v2.6.3. <a class="link" href="https://github.com/docker/buildx/pull/3191" rel="noopener">docker/buildx#3191</a>, <a class="link" href="https://github.com/docker/buildx/pull/3171" rel="noopener">docker/buildx#3171</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes">
+<h3 class=" scroll-mt-20" id="bug-fixes-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-1">
     Bug fixes
   </a>
 </h3>
@@ -15153,8 +15208,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.23.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new">
+<h3 class=" scroll-mt-20" id="new-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-1">
     New
   </a>
 </h3>
@@ -15164,8 +15219,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
   <a class="link" href="/desktop/">Docker Desktop</a>. <a class="link" href="https://github.com/docker/buildx/pull/3073" rel="noopener">docker/buildx#3073</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-1">
+<h3 class=" scroll-mt-20" id="enhancements-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-2">
     Enhancements
   </a>
 </h3>
@@ -15176,8 +15231,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <li>Support CLI environment variables in standalone mode. <a class="link" href="https://github.com/docker/buildx/pull/3087" rel="noopener">docker/buildx#3087</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-1">
+<h3 class=" scroll-mt-20" id="bug-fixes-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-2">
     Bug fixes
   </a>
 </h3>
@@ -15199,8 +15254,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.22.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-1">
+<h3 class=" scroll-mt-20" id="new-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-2">
     New
   </a>
 </h3>
@@ -15211,8 +15266,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
   <a class="link" href="/desktop/">Docker Desktop</a> to be installed. <a class="link" href="https://github.com/docker/buildx/pull/3039" rel="noopener">docker/buildx#3039</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-2">
+<h3 class=" scroll-mt-20" id="enhancements-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-3">
     Enhancements
   </a>
 </h3>
@@ -15226,8 +15281,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <li>The <code>inspect</code> and <code>create</code> commands now return an error if a node fails to boot. <a class="link" href="https://github.com/docker/buildx/pull/3062" rel="noopener">docker/buildx#3062</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-2">
+<h3 class=" scroll-mt-20" id="bug-fixes-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-3">
     Bug fixes
   </a>
 </h3>
@@ -15248,8 +15303,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.21.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-2">
+<h3 class=" scroll-mt-20" id="new-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-3">
     New
   </a>
 </h3>
@@ -15258,8 +15313,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <li>New command <code>buildx history trace</code> lets you inspect traces of a build in a Jaeger UI-based viewer and compare one trace with another. <a class="link" href="https://github.com/docker/buildx/pull/2904" rel="noopener">docker/buildx#2904</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-3">
+<h3 class=" scroll-mt-20" id="enhancements-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-4">
     Enhancements
   </a>
 </h3>
@@ -15271,8 +15326,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <li>When using <a class="link" href="https://docker.qubitpi.org/build/cache/backends/gha/">GitHub Cache backend <code>type=gha</code></a>, the URL for the Version 2 or API is now read from the environment and sent to BuildKit. Version 2 backend requires BuildKit v0.20.0 or later. <a class="link" href="https://github.com/docker/buildx/pull/2983" rel="noopener">docker/buildx#2983</a>, <a class="link" href="https://github.com/docker/buildx/pull/3001" rel="noopener">docker/buildx#3001</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-3">
+<h3 class=" scroll-mt-20" id="bug-fixes-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-4">
     Bug fixes
   </a>
 </h3>
@@ -15298,8 +15353,8 @@ fixes in <a class="link" href="https://github.com/docker/buildx" rel="noopener">
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.20.1" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-4">
+<h3 class=" scroll-mt-20" id="bug-fixes-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-5">
     Bug fixes
   </a>
 </h3>
@@ -15352,8 +15407,8 @@ produces an error. For more information, see the
   </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="new-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-3">
+<h3 class=" scroll-mt-20" id="new-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-4">
     New
   </a>
 </h3>
@@ -15362,8 +15417,8 @@ produces an error. For more information, see the
 <li>New <code>buildx history</code> command has been added that allows working with build records of completed and running builds. You can use these commands to list, inspect, remove your builds, replay the logs of already completed builds, and quickly open your builds in Docker Desktop Build UI for further debugging. This is an early version of this command and we expect to add more features in the future releases. <a class="link" href="https://github.com/docker/buildx/pull/2891" rel="noopener">#2891</a>, <a class="link" href="https://github.com/docker/buildx/pull/2925" rel="noopener">#2925</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-4">
+<h3 class=" scroll-mt-20" id="enhancements-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-5">
     Enhancements
   </a>
 </h3>
@@ -15376,8 +15431,8 @@ produces an error. For more information, see the
 <li>Bake: Update lookup order for default definition files to load the files with &quot;override&quot; suffix later. <a class="link" href="https://github.com/docker/buildx/pull/2886" rel="noopener">docker/buildx#2886</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-5">
+<h3 class=" scroll-mt-20" id="bug-fixes-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-6">
     Bug fixes
   </a>
 </h3>
@@ -15412,8 +15467,8 @@ produces an error. For more information, see the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.19.1" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-6">
+<h3 class=" scroll-mt-20" id="bug-fixes-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-7">
     Bug fixes
   </a>
 </h3>
@@ -15437,8 +15492,8 @@ edge cases. This feature has now been postponed to the v0.20.0 release.
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.19.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-4">
+<h3 class=" scroll-mt-20" id="new-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-5">
     New
   </a>
 </h3>
@@ -15458,8 +15513,8 @@ release. To enable the error in the current release, you can set
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-5">
+<h3 class=" scroll-mt-20" id="enhancements-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-6">
     Enhancements
   </a>
 </h3>
@@ -15504,8 +15559,8 @@ release. To enable the error in the current release, you can set
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-7">
+<h3 class=" scroll-mt-20" id="bug-fixes-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-8">
     Bug fixes
   </a>
 </h3>
@@ -15535,8 +15590,8 @@ release. To enable the error in the current release, you can set
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.18.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-5">
+<h3 class=" scroll-mt-20" id="new-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-6">
     New
   </a>
 </h3>
@@ -15547,8 +15602,8 @@ release. To enable the error in the current release, you can set
 <li>The <code>docker buildx prune</code> command now supports new <code>--max-used-space</code> and <code>--min-free-space</code> filters with BuildKit v0.17.0+ builders. <a class="link" href="https://github.com/docker/buildx/pull/2766" rel="noopener">docker/buildx#2766</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-6">
+<h3 class=" scroll-mt-20" id="enhancements-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-7">
     Enhancements
   </a>
 </h3>
@@ -15566,8 +15621,8 @@ release. To enable the error in the current release, you can set
 <li>The <code>--list-targets</code> and <code>--list-variables</code> flags for <code>docker buildx bake</code> no longer require initialization of the builder. <a class="link" href="https://github.com/docker/buildx/pull/2763" rel="noopener">docker/buildx#2763</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-8">
+<h3 class=" scroll-mt-20" id="bug-fixes-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-9">
     Bug fixes
   </a>
 </h3>
@@ -15604,8 +15659,8 @@ release. To enable the error in the current release, you can set
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.17.1" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-9">
+<h3 class=" scroll-mt-20" id="bug-fixes-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-10">
     Bug fixes
   </a>
 </h3>
@@ -15632,8 +15687,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.17.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-6">
+<h3 class=" scroll-mt-20" id="new-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-7">
     New
   </a>
 </h3>
@@ -15643,8 +15698,8 @@ in the
 <li>Enable support for Bake entitlements to allow privileged operations during builds. <a class="link" href="https://github.com/docker/buildx/pull/2666/" rel="noopener">docker/buildx#2666</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-7">
+<h3 class=" scroll-mt-20" id="enhancements-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-8">
     Enhancements
   </a>
 </h3>
@@ -15663,8 +15718,8 @@ in the
 <li>Use shared session for local contexts used by multiple Bake targets. <a class="link" href="https://github.com/docker/buildx/pull/2615/" rel="noopener">docker/buildx#2615</a>, <a class="link" href="https://github.com/docker/buildx/pull/2607/" rel="noopener">docker/buildx#2607</a>, <a class="link" href="https://github.com/docker/buildx/pull/2663/" rel="noopener">docker/buildx#2663</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-10">
+<h3 class=" scroll-mt-20" id="bug-fixes-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-11">
     Bug fixes
   </a>
 </h3>
@@ -15694,8 +15749,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.16.2" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-11">
+<h3 class=" scroll-mt-20" id="bug-fixes-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-12">
     Bug fixes
   </a>
 </h3>
@@ -15715,8 +15770,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.16.1" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-12">
+<h3 class=" scroll-mt-20" id="bug-fixes-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-13">
     Bug fixes
   </a>
 </h3>
@@ -15737,8 +15792,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.16.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-7">
+<h3 class=" scroll-mt-20" id="new-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-8">
     New
   </a>
 </h3>
@@ -15757,8 +15812,8 @@ in the
 <li>Bake now supports printing warnings for build check violations. <a class="link" href="https://github.com/docker/buildx/pull/2501/" rel="noopener">docker/buildx#2501</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-8">
+<h3 class=" scroll-mt-20" id="enhancements-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-9">
     Enhancements
   </a>
 </h3>
@@ -15770,8 +15825,8 @@ in the
 <li>Improve message of the <code>--check</code> flag when no warnings are detected. <a class="link" href="https://github.com/docker/buildx/pull/2549/" rel="noopener">docker/buildx#2549</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-13">
+<h3 class=" scroll-mt-20" id="bug-fixes-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-14">
     Bug fixes
   </a>
 </h3>
@@ -15806,8 +15861,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.15.1" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-14">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-14">
+<h3 class=" scroll-mt-20" id="bug-fixes-15">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-15">
     Bug fixes
   </a>
 </h3>
@@ -15828,8 +15883,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.15.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-8">
+<h3 class=" scroll-mt-20" id="new-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-9">
     New
   </a>
 </h3>
@@ -15909,8 +15964,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.14.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="enhancements-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-9">
+<h3 class=" scroll-mt-20" id="enhancements-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-10">
     Enhancements
   </a>
 </h3>
@@ -15944,8 +15999,8 @@ in the
 <a class="link" href="https://github.com/docker/buildx/pull/2344" rel="noopener">docker/buildx#2344</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-15">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-15">
+<h3 class=" scroll-mt-20" id="bug-fixes-16">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-16">
     Bug fixes
   </a>
 </h3>
@@ -15982,8 +16037,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.13.1" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-16">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-16">
+<h3 class=" scroll-mt-20" id="bug-fixes-17">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-17">
     Bug fixes
   </a>
 </h3>
@@ -16004,8 +16059,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.13.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-9">
+<h3 class=" scroll-mt-20" id="new-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-10">
     New
   </a>
 </h3>
@@ -16024,8 +16079,8 @@ in the
  Buildx can now export OpenTelemetry metrics for build duration and transfer sizes. <a class="link" href="https://github.com/docker/buildx/pull/2235" rel="noopener">docker/buildx#2235</a>, <a class="link" href="https://github.com/docker/buildx/pull/2258" rel="noopener">docker/buildx#2258</a> <a class="link" href="https://github.com/docker/buildx/pull/2225" rel="noopener">docker/buildx#2225</a> <a class="link" href="https://github.com/docker/buildx/pull/2224" rel="noopener">docker/buildx#2224</a> <a class="link" href="https://github.com/docker/buildx/pull/2155" rel="noopener">docker/buildx#2155</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-10">
+<h3 class=" scroll-mt-20" id="enhancements-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-11">
     Enhancements
   </a>
 </h3>
@@ -16051,8 +16106,8 @@ in the
 <li><code>--add-host</code> flag now permits a <code>=</code> separator for IPv6 addresses. <a class="link" href="https://github.com/docker/buildx/pull/2121" rel="noopener">docker/buildx#2121</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-17">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-17">
+<h3 class=" scroll-mt-20" id="bug-fixes-18">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-18">
     Bug fixes
   </a>
 </h3>
@@ -16097,8 +16152,8 @@ in the
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.12.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-10">
+<h3 class=" scroll-mt-20" id="new-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-11">
     New
   </a>
 </h3>
@@ -16264,8 +16319,8 @@ validation. <a class="link" href="https://github.com/docker/buildx/pull/1879" re
 <p>The full release notes for this release are available
 <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.11.0" rel="noopener">on GitHub</a>.</p>
 
-<h3 class=" scroll-mt-20" id="new-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-11">
+<h3 class=" scroll-mt-20" id="new-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-12">
     New
   </a>
 </h3>
@@ -16588,8 +16643,8 @@ using <code>--provenance=false</code>.</p>
   </blockquote>
 
 
-<h3 class=" scroll-mt-20" id="new-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-12">
+<h3 class=" scroll-mt-20" id="new-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-13">
     New
   </a>
 </h3>
@@ -16721,8 +16776,8 @@ build block. <a class="link" href="https://github.com/docker/buildx/issues/1277"
 <em class="text-gray-200 italic dark:text-gray-500">2022-08-17</em>
 
 
-<h3 class=" scroll-mt-20" id="new-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-13">
+<h3 class=" scroll-mt-20" id="new-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-14">
     New
   </a>
 </h3>
@@ -16901,8 +16956,8 @@ definition. <a class="link" href="https://github.com/docker/buildx/issues/1080" 
 <em class="text-gray-200 italic dark:text-gray-500">2022-03-09</em>
 
 
-<h3 class=" scroll-mt-20" id="new-14">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#new-14">
+<h3 class=" scroll-mt-20" id="new-15">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#new-15">
     New
   </a>
 </h3>
@@ -17015,8 +17070,8 @@ container with <code>docker-container</code> and <code>kubernetes</code> drivers
 <li><code>kubernetes</code> driver now supports installing QEMU emulators with driver-opt. <a class="link" href="https://github.com/docker/buildx/issues/682" rel="noopener">docker/buildx#682</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-11">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-11">
+<h3 class=" scroll-mt-20" id="enhancements-12">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-12">
     Enhancements
   </a>
 </h3>
@@ -17102,8 +17157,8 @@ incremental context transfer for better performance. <a class="link" href="https
 <em class="text-gray-200 italic dark:text-gray-500">2021-07-30</em>
 
 
-<h3 class=" scroll-mt-20" id="enhancements-12">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-12">
+<h3 class=" scroll-mt-20" id="enhancements-13">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-13">
     Enhancements
   </a>
 </h3>
@@ -17163,8 +17218,8 @@ in variables and vice-versa.
 Docker image. <a class="link" href="https://github.com/docker/buildx/issues/656" rel="noopener">docker/buildx#656</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-13">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-13">
+<h3 class=" scroll-mt-20" id="enhancements-14">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-14">
     Enhancements
   </a>
 </h3>
@@ -17243,8 +17298,8 @@ Docker config. <a class="link" href="https://github.com/docker/buildx/issues/385
 return objects even if only one <code>--platform</code> specified. <a class="link" href="https://github.com/docker/buildx/issues/467" rel="noopener">docker/buildx#467</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-14">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-14">
+<h3 class=" scroll-mt-20" id="enhancements-15">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-15">
     Enhancements
   </a>
 </h3>
@@ -17303,8 +17358,8 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <li>Support <code>cacheonly</code> exporter. <a class="link" href="https://github.com/docker/buildx/issues/337" rel="noopener">docker/buildx#337</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-15">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-15">
+<h3 class=" scroll-mt-20" id="enhancements-16">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-16">
     Enhancements
   </a>
 </h3>
@@ -17370,8 +17425,8 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <li>You can now set the new <code>pull</code> and <code>no-cache</code> options for HCL targets. <a class="link" href="https://github.com/docker/buildx/issues/165" rel="noopener">docker/buildx#165</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-16">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-16">
+<h3 class=" scroll-mt-20" id="enhancements-17">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-17">
     Enhancements
   </a>
 </h3>
@@ -17393,8 +17448,8 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <em class="text-gray-200 italic dark:text-gray-500">2019-09-27</em>
 
 
-<h3 class=" scroll-mt-20" id="enhancements-17">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-17">
+<h3 class=" scroll-mt-20" id="enhancements-18">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-18">
     Enhancements
   </a>
 </h3>
@@ -17437,8 +17492,8 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <li>Driver-specific options on <code>create</code>. <a class="link" href="https://github.com/docker/buildx/issues/122" rel="noopener">docker/buildx#122</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-18">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-18">
+<h3 class=" scroll-mt-20" id="enhancements-19">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-19">
     Enhancements
   </a>
 </h3>
@@ -17470,8 +17525,8 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <em class="text-gray-200 italic dark:text-gray-500">2019-05-30</em>
 
 
-<h3 class=" scroll-mt-20" id="enhancements-19">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-19">
+<h3 class=" scroll-mt-20" id="enhancements-20">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-20">
     Enhancements
   </a>
 </h3>
@@ -17501,8 +17556,8 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <li>Add <code>local</code> platform. <a class="link" href="https://github.com/docker/buildx/issues/70" rel="noopener">docker/buildx#70</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="enhancements-20">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-20">
+<h3 class=" scroll-mt-20" id="enhancements-21">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#enhancements-21">
     Enhancements
   </a>
 </h3>
@@ -17544,7 +17599,7 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
 <p>For more details, see the complete release notes in the <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.2.0" rel="noopener">Buildx GitHub repository</a>.</p>
 
   </article>
-  <div class="-mt-8 -mr-8 hidden min-w-52 flex-1 lg:block">
+  <div class="-mt-8 -mr-20 hidden min-w-48 flex-1 lg:block">
     <aside
   class="sticky top-16 h-[calc(100vh-64px)] min-w-52 space-y-4 overflow-y-auto py-4 w-full"
 >
@@ -17552,7 +17607,7 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
   
   
 <p class="flex items-center gap-1">
-  <span class="icon-svg icon-sm">
+  <span class="icon-svg-stroke icon-sm">
     
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_5432_2123" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="1" width="22" height="22">
@@ -17571,7 +17626,7 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
   
   
 <p class="flex items-center gap-1">
-  <span class="icon-svg icon-sm">
+  <span class="icon-svg-stroke icon-sm">
     
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0_5432_1323" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="2" width="21" height="21">
@@ -17598,6 +17653,14 @@ when possible. <a class="link" href="https://github.com/docker/buildx/issues/469
     <nav class="toc">
       
   <ul class="pl-2">
+        <li>
+          <a class="link lg:no-underline" href="#0250"
+            >0.25.0</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
         <li>
           <a class="link lg:no-underline" href="#0240"
             >0.24.0</a
