@@ -33,6 +33,8 @@ With Docker Hub and the MCP Toolkit, you can:
 
 
 
+- [Docker Hub MCP server](https://docs.docker.com/ai/mcp-catalog-and-toolkit/hub-mcp/)
+
 - [Docker MCP Catalog](https://docs.docker.com/ai/mcp-catalog-and-toolkit/catalog/)
 
 - [MCP Toolkit](https://docs.docker.com/ai/mcp-catalog-and-toolkit/toolkit/)

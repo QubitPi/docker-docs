@@ -7,7 +7,7 @@ Compose file reference
 
 The Compose Specification is the latest and recommended version of the Compose file format. It helps you define a [Compose file](/manuals/compose/intro/compose-application-model.md) which is used to configure your Docker application’s services, networks, volumes, and more.
 
-Legacy versions 2.x and 3.x of the Compose file format were merged into the Compose Specification. It is implemented in versions 1.27.0 and above (also known as Compose V2) of the Docker Compose CLI.
+Legacy versions 2.x and 3.x of the Compose file format were merged into the Compose Specification. It is implemented in versions 1.27.0 and above (also known as Compose v2) of the Docker Compose CLI.
 
 The Compose Specification on Docker Docs is the Docker Compose implementation. If you wish to implement your own version of the Compose Specification, see the [Compose Specification repository](https://github.com/compose-spec/compose-spec).
 
@@ -24,15 +24,15 @@ Use the following links to navigate key sections of the Compose Specification.
 
 - [Version and name top-level elements](https://docs.docker.com/reference/compose-file/version-and-name/)
 
-- [Services top-level elements](https://docs.docker.com/reference/compose-file/services/)
+- [Define services in Docker Compose](https://docs.docker.com/reference/compose-file/services/)
 
-- [Networks top-level elements](https://docs.docker.com/reference/compose-file/networks/)
+- [Define and manage networks in Docker Compose](https://docs.docker.com/reference/compose-file/networks/)
 
-- [Volumes top-level element](https://docs.docker.com/reference/compose-file/volumes/)
+- [Define and manage volumes in Docker Compose](https://docs.docker.com/reference/compose-file/volumes/)
 
 - [Configs top-level elements](https://docs.docker.com/reference/compose-file/configs/)
 
-- [Secrets top-level elements](https://docs.docker.com/reference/compose-file/secrets/)
+- [Secrets](https://docs.docker.com/reference/compose-file/secrets/)
 
 - [Fragments](https://docs.docker.com/reference/compose-file/fragments/)
 
@@ -40,15 +40,15 @@ Use the following links to navigate key sections of the Compose Specification.
 
 - [Interpolation](https://docs.docker.com/reference/compose-file/interpolation/)
 
-- [Merge](https://docs.docker.com/reference/compose-file/merge/)
+- [Merge Compose files](https://docs.docker.com/reference/compose-file/merge/)
 
-- [Include](https://docs.docker.com/reference/compose-file/include/)
+- [Use include to modularize Compose files](https://docs.docker.com/reference/compose-file/include/)
 
-- [Models](https://docs.docker.com/reference/compose-file/models/)
-
-- [Profiles](https://docs.docker.com/reference/compose-file/profiles/)
+- [Learn how to use profiles in Docker Compose](https://docs.docker.com/reference/compose-file/profiles/)
 
 - [Compose Build Specification](https://docs.docker.com/reference/compose-file/build/)
+
+- [Models](https://docs.docker.com/reference/compose-file/models/)
 
 - [Compose Deploy Specification](https://docs.docker.com/reference/compose-file/deploy/)
 

@@ -1,4 +1,4 @@
-Merge
+Merge Compose files
 
 
 {{% include "compose/merge.md" %}}

@@ -75,6 +75,8 @@ subscription management for organizations.
 
 - [Deprecated and retired Docker products and features](https://docs.docker.com/retired/)
 
+- [MCP Gateway](https://docs.docker.com/ai/mcp-gateway/)
+
 - [Project Harmonia](https://docs.docker.com/harmonia/)
 
 - [Docker's product release lifecycle](https://docs.docker.com/release-lifecycle/)

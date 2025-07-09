@@ -1,4 +1,4 @@
-Networks top-level elements
+Define and manage networks in Docker Compose
 
 
 {{% include "compose/networks.md" %}}
@@ -54,7 +54,7 @@ networks:
     driver: custom-driver
 ```
 
-The advanced example shows a Compose file which defines two custom networks. The `proxy` service is isolated from the `db` service, because they do not share a network in common. Only `app` can talk to both.
+This example shows a Compose file which defines two custom networks. The `proxy` service is isolated from the `db` service, because they do not share a network in common. Only `app` can talk to both.
 
 ## The default network
 
@@ -164,7 +164,7 @@ Compose doesn't attempt to create these networks, and returns an error if one do
  - All other attributes apart from name are irrelevant. If Compose detects any other attribute, it rejects the Compose file as invalid.
 
 In the following example, `proxy` is the gateway to the outside world. Instead of attempting to create a network, Compose
-queries the platform for an existing network simply called `outside` and connects the
+queries the platform for an existing network called `outside` and connects the
 `proxy` service's containers to it.
 
 ```yml

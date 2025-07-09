@@ -1,4 +1,4 @@
-Secrets top-level elements
+Secrets
 
 
 Secrets are a flavor of [Configs](configs.md) focusing on sensitive data, with specific constraint for this usage. 

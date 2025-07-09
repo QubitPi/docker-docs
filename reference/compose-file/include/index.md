@@ -1,12 +1,12 @@
-Include
+Use include to modularize Compose files
 
 
 {{< summary-bar feature_name="Composefile include" >}}
 
-A Compose application can declare dependency on another Compose application. This is useful if:
+You can reuse and modularize Docker Compose configurations by including other Compose files. This is useful if:
 - You want to reuse other Compose files.
 - You need to factor out parts of your application model into separate Compose files so they can be managed separately or shared with others.
-- Teams need to keep a Compose file reasonably complicated for the limited amount of resources it has to declare for its own sub-domain within a larger deployment.
+- Teams need to maintain a Compose file with only necessary complexity for the limited amount of resources it has to declare for its own sub-domain within a larger deployment.
 
 The `include` top-level section is used to define the dependency on another Compose application, or sub-domain.
 Each path listed in the `include` section is loaded as an individual Compose application model, with its own project directory, in order to resolve relative paths.
