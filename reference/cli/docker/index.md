@@ -57,6 +57,8 @@ https://github.com/docker/cli
 
 - [docker node](https://docs.docker.com/reference/cli/docker/node/)
 
+- [docker offload](https://docs.docker.com/reference/cli/docker/offload/)
+
 - [docker plugin](https://docs.docker.com/reference/cli/docker/plugin/)
 
 - [docker ps](https://docs.docker.com)

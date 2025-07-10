@@ -6,14 +6,14 @@
 
 
   <title>
-    Company administration | Docker Docs
+    Company administration overview | Docker Docs
   </title>
 
 
 <meta name="description" content="Learn how to manage multiple organizations using companies, including managing users, owners, and security." />
 <meta
   name="keywords"
-  content="company, multiple, organizations, manage, companies"
+  content="company, multiple, organizations, manage, companies, admin, console, Docker, Business, settings"
 />
 <link rel="canonical" href="https://docker.qubitpi.org/admin/company/" />
 
@@ -39,7 +39,7 @@
 <meta name="theme-color" content="#2496ed" />
 
 
-<meta name="twitter:title" itemprop="title name" content="Company administration" />
+<meta name="twitter:title" itemprop="title name" content="Company administration overview" />
 <meta
   name="twitter:description"
   property="og:description"
@@ -55,7 +55,7 @@
   content="https://docker.qubitpi.org/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
-<meta property="og:title" content="Company administration" />
+<meta property="og:title" content="Company administration overview" />
 <meta property="og:description" content="Learn how to manage multiple organizations using companies, including managing users, owners, and security." />
 <meta property="og:type" content="website" />
 <meta
@@ -76,7 +76,7 @@
   itemprop="datePublished"
   content="2025-06-04 01:15:09 &#43;0800 &#43;0800"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Company administration\"","description":"\"Learn how to manage multiple organizations using companies, including managing users, owners, and security.\"","url":"https:\/\/docker.qubitpi.org\/admin\/company\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Company administration overview\"","description":"\"Learn how to manage multiple organizations using companies, including managing users, owners, and security.\"","url":"https:\/\/docker.qubitpi.org\/admin\/company\/"}</script>
 
 
   
@@ -9158,6 +9158,156 @@
           <a
             
             class="hover:text-blue block select-none hover:dark:text-blue-400"
+            href="https://docker.qubitpi.org/offload/"
+          >
+            
+  Docker Offload
+    <span><span
+  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
+  >Beta</span
+>
+
+    </span>
+
+          </a>
+      </div>
+      
+      <button
+        @click="expanded = !expanded"
+        class="rounded-sm hover:bg-gray-200 hover:dark:bg-gray-800"
+      >
+        <span
+          :class="{ 'hidden' : expanded }"
+          class="icon-svg "
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
+        </span>
+        <span
+          :class="{ 'hidden' : !expanded }"
+          class="icon-svg hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M316-400q-6.75 0-10.87-4.64-4.13-4.63-4.13-10.81 0-1.55 5-10.55l158-157q3-3 7.06-5 4.07-2 8.94-2 4.88 0 8.94 2t7.06 5l158 157q2 2 3.5 4.76 1.5 2.77 1.5 5.92 0 6.32-4.12 10.82-4.13 4.5-10.88 4.5H316Z"/></svg>
+        </span>
+      </button>
+    </div>
+    <ul
+      :class="{ 'hidden' : !expanded }"
+      class="hidden ml-3"
+    >
+      
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/quickstart/"
+        title="Quickstart"
+      >
+        
+  Quickstart
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/about/"
+        title="About"
+      >
+        
+  About
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/configuration/"
+        title="Configure"
+      >
+        
+  Configure
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/usage/"
+        title="Usage &amp; billing"
+      >
+        
+  Usage &amp; billing
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/optimize/"
+        title="Optimize usage"
+      >
+        
+  Optimize usage
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/troubleshoot/"
+        title="Troubleshoot"
+      >
+        
+  Troubleshoot
+
+      </a>
+    </li>
+
+
+
+    </ul>
+  </li>
+
+  
+  
+  <li class="" x-data="{ expanded: false }">
+    <div
+      class=" flex w-full items-center justify-between rounded-sm"
+    >
+      <div class="navbar-entry-margin w-full truncate">
+          
+          
+          <a
+            
+            class="hover:text-blue block select-none hover:dark:text-blue-400"
             href="https://docker.qubitpi.org/build-cloud/"
           >
             
@@ -12723,7 +12873,7 @@
             href="https://docker.qubitpi.org/admin/company/"
           >
             
-  Company administration
+  Company administration overview
 
           </a>
       </div>
@@ -12774,6 +12924,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/admin/company/users/"
+        title="Manage company members"
+      >
+        
+  Manage company members
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/admin/company/organizations/"
         title="Manage company organizations"
       >
@@ -12799,22 +12965,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/admin/company/users/"
-        title="Manage company users"
-      >
-        
-  Manage company users
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -12834,7 +12984,7 @@
             class="hover:text-blue w-full text-left select-none hover:dark:text-blue-400"
           >
             
-  Account and admin FAQ
+  FAQ
 
           </button>
       </div>
@@ -12870,10 +13020,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/admin/faqs/general-faqs/"
-        title="General"
+        title="Accounts"
       >
         
-  General
+  Accounts
 
       </a>
     </li>
@@ -14620,12 +14770,12 @@
   <span
     data-pagefind-meta="breadcrumbs:Home / Manuals / Administration"
     class="truncate"
-    >Company administration</span
+    >Company administration overview</span
   >
 </nav>
 
     <div class="flex items-start justify-between">
-      <h1 data-pagefind-weight="10">Company administration</h1>
+      <h1 data-pagefind-weight="10">Company administration overview</h1>
       <div class="md-dropdown ml-auto hidden lg:block">
         <details id="markdownDropdown" class="ml-3 group relative z-10 inline-block" data-heap-id="markdown-dropdown">
     <summary
@@ -14765,8 +14915,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#prerequisites"
-            >Prerequisites</a
+          <a class="link lg:no-underline" href="#create-and-manage-your-company"
+            >Create and manage your company</a
           >
         </li>
   </ul>
@@ -14821,8 +14971,12 @@
   </div>
 
 
-<p>A company provides a single point of visibility across multiple organizations. This view simplifies the management of Docker organizations and settings. Organization owners with a Docker Business subscription can create a company and then manage it through the <a class="link" href="https://app.docker.com/admin" rel="noopener">Docker Admin Console</a>.</p>
-<p>The following diagram depicts the setup of a company and how it relates to associated organizations.</p>
+<p>A company provides a single point of visibility across multiple organizations,
+simplifying organization and settings management.</p>
+<p>Organization owners with a Docker Business subscription can create a company
+and manage it through the <a class="link" href="https://app.docker.com/admin" rel="noopener">Docker Admin Console</a>.</p>
+<p>The following diagram shows how a company relates to its associated
+organizations.</p>
 
 
 
@@ -14839,7 +14993,7 @@
   <img
     loading="lazy"
     src="/admin/images/docker-admin-structure.webp"
-    alt="company-hierarchy"
+    alt="Diagram showing how companies relate to Docker organizations"
     
     
     class="mx-auto rounded-sm"
@@ -14859,7 +15013,7 @@
         loading="lazy"
         class="max-h-full max-w-full rounded-sm"
         src="/admin/images/docker-admin-structure.webp"
-        alt="company-hierarchy"
+        alt="Diagram showing how companies relate to Docker organizations"
       />
     </div>
   </template>
@@ -14873,25 +15027,21 @@
 
 <p>With a company, administrators can:</p>
 <ul>
-<li>View and manage all nested organizations and configure settings centrally</li>
-<li>Carefully control access to the company and company settings</li>
-<li>Have up to ten unique users assigned the company owner role</li>
+<li>View and manage all nested organizations</li>
+<li>Configure company and organization settings centrally</li>
+<li>Control access to the company</li>
+<li>Have up to ten unique users assigned to the company owner role</li>
 <li>Configure SSO and SCIM for all nested organizations</li>
 <li>Enforce SSO for all users in the company</li>
 </ul>
 
-<h2 class=" scroll-mt-20" id="prerequisites">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#prerequisites">
-    Prerequisites
+<h2 class=" scroll-mt-20" id="create-and-manage-your-company">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#create-and-manage-your-company">
+    Create and manage your company
   </a>
 </h2>
 
-<p>Before you create a company, verify the following:</p>
-<ul>
-<li>Any organizations you want to add to a company have a Docker Business subscription</li>
-<li>You're an organization owner for your organization and any additional organizations you want to add</li>
-</ul>
-<p>Learn how to administer a company in the following sections.</p>
+<p>Learn how to create and manage a company in the following sections.</p>
 
 <div
   class="not-prose md:grid-cols-2 lg:grid-cols-3 grid grid-cols-1 gap-4 mb-6"
@@ -14955,33 +15105,6 @@
     
     <div class="card">
   
-    <a href="/admin/company/users/" class="card-link">
-  
-    <div class="card-header">
-      
-      
-      <div class="card-icon">
-        
-          <span class="card-img svg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M474-486q26-32 38.5-66t12.5-79q0-45-12.5-79T474-776q76-17 133.5 23T665-631q0 82-57.5 122T474-486Zm202 326q5-15 9.5-29.5T690-220v-34q0-51-26-95t-90-74q173 22 236.5 64T874-254v34q0 24.75-17.62 42.37Q838.75-160 814-160H676Zm124-389h-70q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h70v-70q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v70h70q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5h-70v70q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-70Zm-485 68q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM0-220v-34q0-35 18.5-63.5T68-360q72-32 128.5-46T315-420q62 0 118 14t128 46q31 14 50 42.5t19 63.5v34q0 24.75-17.62 42.37Q594.75-160 570-160H60q-24.75 0-42.37-17.63Q0-195.25 0-220Z"/></svg>
-          </span>
-        
-      </div>
-      
-      <h3 class="card-title">Manage users</h3>
-    </div>
-    <div class="card-content">
-      <p class="card-description">Explore how to manage users in all organizations.</p>
-    </div>
-  
-    </a>
-  
-</div>
-
-  
-    
-    <div class="card">
-  
     <a href="/admin/company/owners/" class="card-link">
   
     <div class="card-header">
@@ -15009,6 +15132,33 @@
     
     <div class="card">
   
+    <a href="/admin/company/users/" class="card-link">
+  
+    <div class="card-header">
+      
+      
+      <div class="card-icon">
+        
+          <span class="card-img svg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M474-486q26-32 38.5-66t12.5-79q0-45-12.5-79T474-776q76-17 133.5 23T665-631q0 82-57.5 122T474-486Zm202 326q5-15 9.5-29.5T690-220v-34q0-51-26-95t-90-74q173 22 236.5 64T874-254v34q0 24.75-17.62 42.37Q838.75-160 814-160H676Zm124-389h-70q-12.75 0-21.37-8.68-8.63-8.67-8.63-21.5 0-12.82 8.63-21.32 8.62-8.5 21.37-8.5h70v-70q0-12.75 8.68-21.38 8.67-8.62 21.5-8.62 12.82 0 21.32 8.62 8.5 8.63 8.5 21.38v70h70q12.75 0 21.38 8.68 8.62 8.67 8.62 21.5 0 12.82-8.62 21.32-8.63 8.5-21.38 8.5h-70v70q0 12.75-8.68 21.37-8.67 8.63-21.5 8.63-12.82 0-21.32-8.63-8.5-8.62-8.5-21.37v-70Zm-485 68q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM0-220v-34q0-35 18.5-63.5T68-360q72-32 128.5-46T315-420q62 0 118 14t128 46q31 14 50 42.5t19 63.5v34q0 24.75-17.62 42.37Q594.75-160 570-160H60q-24.75 0-42.37-17.63Q0-195.25 0-220Z"/></svg>
+          </span>
+        
+      </div>
+      
+      <h3 class="card-title">Manage users</h3>
+    </div>
+    <div class="card-content">
+      <p class="card-description">Explore how to manage users in all organizations.</p>
+    </div>
+  
+    </a>
+  
+</div>
+
+  
+    
+    <div class="card">
+  
     <a href="/security/for-admins/single-sign-on/" class="card-link">
   
     <div class="card-header">
@@ -15022,7 +15172,7 @@
         
       </div>
       
-      <h3 class="card-title">Configure Single Sign-On</h3>
+      <h3 class="card-title">Configure single sign-on</h3>
     </div>
     <div class="card-content">
       <p class="card-description">Discover how to configure SSO for your entire company.</p>
@@ -15079,7 +15229,7 @@
       <h3 class="card-title">Domain management</h3>
     </div>
     <div class="card-content">
-      <p class="card-description">Add and verify your domains.</p>
+      <p class="card-description">Add and verify your company's domains.</p>
     </div>
   
     </a>
@@ -15106,7 +15256,7 @@
       <h3 class="card-title">FAQs</h3>
     </div>
     <div class="card-content">
-      <p class="card-description">Explore common company FAQs.</p>
+      <p class="card-description">Explore frequently asked questions about companies.</p>
     </div>
   
     </a>
@@ -15178,8 +15328,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#prerequisites"
-            >Prerequisites</a
+          <a class="link lg:no-underline" href="#create-and-manage-your-company"
+            >Create and manage your company</a
           >
         </li>
   </ul>

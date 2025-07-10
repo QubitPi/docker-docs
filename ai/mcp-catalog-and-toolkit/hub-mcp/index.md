@@ -67,6 +67,7 @@ If want to integrate the Docker Hub MCP Server into your own development environ
   }
 }
 ```
+
 1. Save the configuration file and completely restart Claude Desktop for the changes to take effect.
 
 ## Usage with VS Code
@@ -74,6 +75,7 @@ If want to integrate the Docker Hub MCP Server into your own development environ
 1. Add the Docker Hub MCP Server configuration to your User Settings (JSON) file in VS Code. You can do this by opening the `Command Palette` and typing `Preferences: Open User Settings (JSON)`.
 
 ### For public repositories only
+
 
    - `/FULL/PATH/TO/YOUR/docker-hub-mcp-server` - The complete path to where you cloned this repository
 ```json
@@ -108,6 +110,7 @@ If want to integrate the Docker Hub MCP Server into your own development environ
   }
 }
 ```
+
 1. Open the `Command Palette` and type `MCP: List Servers`.
 1. Select `docker-hub` and select `Start Server`.
 
@@ -116,8 +119,8 @@ If want to integrate the Docker Hub MCP Server into your own development environ
 This section provides task-oriented examples for common operations with Docker Hub
 tools.
 
-
 ### Finding images
+
 
 ```console
 # Search for official images
@@ -159,6 +162,7 @@ $ docker ai "Show me information about my '<repository-name>' repository"
 ```
 
 ### Pull/push images
+
 
 ```console
 # Pull latest PostgreSQL version

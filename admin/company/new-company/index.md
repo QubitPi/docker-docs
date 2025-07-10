@@ -3,7 +3,13 @@ Create a company
 
 {{< summary-bar feature_name="Company" >}}
 
-You can create a new company in the Docker Admin Console. Before you begin, you must:
+Learn how to create a new company in the Docker Admin Console, a centralized
+dashboard for managing organizations.
+
+## Prerequisites
+
+Before you begin, you must:
+
 - Be the owner of the organization you want to add to your company
 - Have a Docker Business subscription
 
@@ -19,12 +25,13 @@ organization.
 
     > [!TIP]
     >
-    > The name for your company can't be the same as an existing user, organization, or company namespace.
+    > The name for your company can't be the same as an existing user,
+    organization, or company namespace.
 
-1. Review the company migration details and then select **Create company**.
+1. Review the migration details and then select **Create company**.
 
-For more information on how you can add organizations to your company, see [Add organizations to a company](./organizations.md#add-organizations-to-a-company).
-
+For more information on how you can add organizations to your company,
+see [Add organizations to a company](./organizations.md#add-organizations-to-a-company).
 
 ## Next steps
 

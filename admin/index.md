@@ -69,6 +69,6 @@ Learn how to manage companies and organizations in the following sections.
 
 - [Organization administration overview](https://docs.docker.com/admin/organization/)
 
-- [Company administration](https://docs.docker.com/admin/company/)
+- [Company administration overview](https://docs.docker.com/admin/company/)
 
 - [Account and admin FAQ](https://docs.docker.com)

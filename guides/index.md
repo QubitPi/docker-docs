@@ -13,6 +13,8 @@ know.
 
 - [Set up your company for success with Docker](https://docs.docker.com/guides/admin-set-up/)
 
+- [Build and run agentic AI applications with Docker](https://docs.docker.com/guides/agentic-ai/)
+
 - [Angular language-specific guide](https://docs.docker.com/guides/angular/)
 
 - [Develop and test AWS Cloud applications using LocalStack and Docker](https://docs.docker.com/guides/localstack/)

@@ -881,7 +881,7 @@ know.</p>
         x-data="{
         filters: { tags: [], languages: [] },
         hidden: [],
-        total: 49,
+        total: 50,
 
         noFilters() {
           return Object.values(this.filters).every(arr=> Array.isArray(arr) && arr.length === 0);
@@ -1496,6 +1496,42 @@ remediation.</p>
             </div>
             <div
               id="guide-2"
+              data-languages="[]"
+              data-tags="[&#34;AI&#34;]"
+              x-show="isVisible($el);"
+              class="border-divider-light dark:border-divider-dark flex flex-col justify-between border-b p-4 hover:bg-gray-100 hover:dark:bg-gray-800"
+            >
+              <div class="flex flex-col justify-between xl:flex-row">
+                <a
+                  href="https://docker.qubitpi.org/guides/agentic-ai/"
+                  class="mb-2 truncate text-lg hover:underline xl:mb-0"
+                  >Build and run agentic AI applications with Docker</a
+                >
+                
+  <div
+    class="flex items-center justify-between gap-8 text-sm text-gray-400 dark:text-gray-300"
+  >
+    <div class="flex flex-wrap gap-2 md:flex-nowrap">
+      
+        
+  <span class="chip">
+    <span class="icon-svg icon-sm pb-0.5">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m338-319-35 137q-2 10-9.5 16t-17.5 6q-14 0-23-11t-5-25l31-123H158q-14 0-23.5-11.5T129-356q2-10 10-16.5t19-6.5h136l51-202H224q-14 0-23.5-11.5T195-618q2-10 10-16.5t19-6.5h136l34-137q2-10 9.5-16t17.5-6q14 0 22.5 10.5T449-765l-30 124h203l34-137q2-10 9.5-16t17.5-6q14 0 22.5 10.5T711-765l-30 124h121q14 0 23.5 11.5T831-604q-2 10-10 16.5t-19 6.5H666l-51 202h121q14 0 23.5 11.5T765-342q-2 10-10 16.5t-19 6.5H600l-35 137q-2 10-9.5 16t-17.5 6q-14 0-23-11t-5-25l31-123H338Zm15-60h203l51-202H404l-51 202Z"/></svg>
+    </span>
+    AI
+  </span>
+    </div>
+      <div class="flex flex-shrink gap-2 whitespace-nowrap">
+        <span class="icon-svg"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M513-492v-171q0-13-8.5-21.5T483-693q-13 0-21.5 8.5T453-663v183q0 6 2 11t6 10l144 149q9 10 22.5 9.5T650-310q9-9 9-22t-9-22L513-492ZM480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-82 31.5-155t86-127.5Q252-817 325-848.5T480-880q82 0 155 31.5t127.5 86Q817-708 848.5-635T880-480q0 82-31.5 155t-86 127.5Q708-143 635-111.5T480-80Z"/></svg></span
+        >
+        <span>30 minutes</span>
+      </div>
+  </div>
+              </div>
+            </div>
+            <div
+              id="guide-3"
               data-languages="[&#34;js&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -1534,7 +1570,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-3"
+              id="guide-4"
               data-languages="[&#34;js&#34;]"
               data-tags="[&#34;cloud-services&#34;]"
               x-show="isVisible($el);"
@@ -1580,7 +1616,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-4"
+              id="guide-5"
               data-languages="[]"
               data-tags="[&#34;devops&#34;]"
               x-show="isVisible($el);"
@@ -1616,7 +1652,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-5"
+              id="guide-6"
               data-languages="[]"
               data-tags="[&#34;devops&#34;]"
               x-show="isVisible($el);"
@@ -1652,7 +1688,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-6"
+              id="guide-7"
               data-languages="[&#34;js&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -1691,7 +1727,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-7"
+              id="guide-8"
               data-languages="[&#34;c-sharp&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -1730,7 +1766,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-8"
+              id="guide-9"
               data-languages="[&#34;cpp&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -1769,7 +1805,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-9"
+              id="guide-10"
               data-languages="[]"
               data-tags="[&#34;app-dev&#34;]"
               x-show="isVisible($el);"
@@ -1805,7 +1841,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-10"
+              id="guide-11"
               data-languages="[&#34;python&#34;]"
               data-tags="[&#34;data-science&#34;]"
               x-show="isVisible($el);"
@@ -1851,7 +1887,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-11"
+              id="guide-12"
               data-languages="[&#34;js&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -1890,7 +1926,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-12"
+              id="guide-13"
               data-languages="[]"
               data-tags="[&#34;deploy&#34;]"
               x-show="isVisible($el);"
@@ -1926,7 +1962,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-13"
+              id="guide-14"
               data-languages="[]"
               data-tags="[&#34;deploy&#34;]"
               x-show="isVisible($el);"
@@ -1962,7 +1998,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-14"
+              id="guide-15"
               data-languages="[]"
               data-tags="[&#34;deploy&#34;]"
               x-show="isVisible($el);"
@@ -1998,7 +2034,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-15"
+              id="guide-16"
               data-languages="[]"
               data-tags="[&#34;product-demo&#34;]"
               x-show="isVisible($el);"
@@ -2034,7 +2070,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-16"
+              id="guide-17"
               data-languages="[]"
               data-tags="[&#34;product-demo&#34;]"
               x-show="isVisible($el);"
@@ -2070,7 +2106,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-17"
+              id="guide-18"
               data-languages="[]"
               data-tags="[&#34;product-demo&#34;]"
               x-show="isVisible($el);"
@@ -2106,7 +2142,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-18"
+              id="guide-19"
               data-languages="[&#34;js&#34;]"
               data-tags="[&#34;distributed-systems&#34;]"
               x-show="isVisible($el);"
@@ -2152,7 +2188,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-19"
+              id="guide-20"
               data-languages="[&#34;js&#34;]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -2198,7 +2234,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-20"
+              id="guide-21"
               data-languages="[]"
               data-tags="[&#34;devops&#34;]"
               x-show="isVisible($el);"
@@ -2234,7 +2270,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-21"
+              id="guide-22"
               data-languages="[&#34;go&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2273,7 +2309,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-22"
+              id="guide-23"
               data-languages="[]"
               data-tags="[&#34;networking&#34;]"
               x-show="isVisible($el);"
@@ -2309,7 +2345,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-23"
+              id="guide-24"
               data-languages="[&#34;java&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2348,7 +2384,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-24"
+              id="guide-25"
               data-languages="[&#34;python&#34;]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -2394,7 +2430,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-25"
+              id="guide-26"
               data-languages="[&#34;php&#34;]"
               data-tags="[&#34;frameworks&#34;]"
               x-show="isVisible($el);"
@@ -2440,7 +2476,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-26"
+              id="guide-27"
               data-languages="[]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -2476,7 +2512,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-27"
+              id="guide-28"
               data-languages="[&#34;go&#34;]"
               data-tags="[&#34;devops&#34;]"
               x-show="isVisible($el);"
@@ -2522,7 +2558,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-28"
+              id="guide-29"
               data-languages="[]"
               data-tags="[&#34;admin&#34;]"
               x-show="isVisible($el);"
@@ -2558,7 +2594,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-29"
+              id="guide-30"
               data-languages="[&#34;js&#34;]"
               data-tags="[&#34;app-dev&#34;,&#34;distributed-systems&#34;]"
               x-show="isVisible($el);"
@@ -2611,7 +2647,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-30"
+              id="guide-31"
               data-languages="[]"
               data-tags="[&#34;app-dev&#34;,&#34;distributed-systems&#34;]"
               x-show="isVisible($el);"
@@ -2654,7 +2690,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-31"
+              id="guide-32"
               data-languages="[&#34;go&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2693,7 +2729,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-32"
+              id="guide-33"
               data-languages="[&#34;python&#34;]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -2739,7 +2775,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-33"
+              id="guide-34"
               data-languages="[&#34;js&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2778,7 +2814,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-34"
+              id="guide-35"
               data-languages="[]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -2814,7 +2850,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-35"
+              id="guide-36"
               data-languages="[&#34;php&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2853,7 +2889,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-36"
+              id="guide-37"
               data-languages="[]"
               data-tags="[&#34;app-dev&#34;,&#34;databases&#34;]"
               x-show="isVisible($el);"
@@ -2896,7 +2932,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-37"
+              id="guide-38"
               data-languages="[&#34;python&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2935,7 +2971,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-38"
+              id="guide-39"
               data-languages="[&#34;r&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -2974,7 +3010,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-39"
+              id="guide-40"
               data-languages="[]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -3010,7 +3046,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-40"
+              id="guide-41"
               data-languages="[&#34;js&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -3049,7 +3085,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-41"
+              id="guide-42"
               data-languages="[&#34;ruby&#34;]"
               data-tags="[&#34;frameworks&#34;]"
               x-show="isVisible($el);"
@@ -3095,7 +3131,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-42"
+              id="guide-43"
               data-languages="[&#34;rust&#34;]"
               data-tags="[]"
               x-show="isVisible($el);"
@@ -3134,7 +3170,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-43"
+              id="guide-44"
               data-languages="[&#34;python&#34;]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -3180,7 +3216,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-44"
+              id="guide-45"
               data-languages="[]"
               data-tags="[&#34;product-demo&#34;]"
               x-show="isVisible($el);"
@@ -3217,7 +3253,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-45"
+              id="guide-46"
               data-languages="[&#34;python&#34;]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -3263,7 +3299,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-46"
+              id="guide-47"
               data-languages="[&#34;python&#34;]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"
@@ -3309,7 +3345,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-47"
+              id="guide-48"
               data-languages="[]"
               data-tags="[&#34;databases&#34;]"
               x-show="isVisible($el);"
@@ -3345,7 +3381,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-48"
+              id="guide-49"
               data-languages="[]"
               data-tags="[&#34;networking&#34;,&#34;admin&#34;]"
               x-show="isVisible($el);"
@@ -3388,7 +3424,7 @@ remediation.</p>
               </div>
             </div>
             <div
-              id="guide-49"
+              id="guide-50"
               data-languages="[]"
               data-tags="[&#34;ai&#34;]"
               x-show="isVisible($el);"

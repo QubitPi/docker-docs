@@ -41,6 +41,8 @@ subscription management for organizations.
 
 - [Docker Hardened Images](https://docs.docker.com/dhi/)
 
+- [Docker Offload](https://docs.docker.com/offload/)
+
 - [Billing and payments](https://docs.docker.com/billing/)
 
 - [Docker Build](https://docs.docker.com/build/)
@@ -76,8 +78,6 @@ subscription management for organizations.
 - [Deprecated and retired Docker products and features](https://docs.docker.com/retired/)
 
 - [MCP Gateway](https://docs.docker.com/ai/mcp-gateway/)
-
-- [Project Harmonia](https://docs.docker.com/harmonia/)
 
 - [Docker's product release lifecycle](https://docs.docker.com/release-lifecycle/)
 

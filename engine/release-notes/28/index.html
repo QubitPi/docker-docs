@@ -9162,6 +9162,156 @@
           <a
             
             class="hover:text-blue block select-none hover:dark:text-blue-400"
+            href="https://docker.qubitpi.org/offload/"
+          >
+            
+  Docker Offload
+    <span><span
+  class="not-prose bg-blue-500 dark:bg-blue-400 rounded-sm px-1 text-xs text-white"
+  >Beta</span
+>
+
+    </span>
+
+          </a>
+      </div>
+      
+      <button
+        @click="expanded = !expanded"
+        class="rounded-sm hover:bg-gray-200 hover:dark:bg-gray-800"
+      >
+        <span
+          :class="{ 'hidden' : expanded }"
+          class="icon-svg "
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
+        </span>
+        <span
+          :class="{ 'hidden' : !expanded }"
+          class="icon-svg hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M316-400q-6.75 0-10.87-4.64-4.13-4.63-4.13-10.81 0-1.55 5-10.55l158-157q3-3 7.06-5 4.07-2 8.94-2 4.88 0 8.94 2t7.06 5l158 157q2 2 3.5 4.76 1.5 2.77 1.5 5.92 0 6.32-4.12 10.82-4.13 4.5-10.88 4.5H316Z"/></svg>
+        </span>
+      </button>
+    </div>
+    <ul
+      :class="{ 'hidden' : !expanded }"
+      class="hidden ml-3"
+    >
+      
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/quickstart/"
+        title="Quickstart"
+      >
+        
+  Quickstart
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/about/"
+        title="About"
+      >
+        
+  About
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/configuration/"
+        title="Configure"
+      >
+        
+  Configure
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/usage/"
+        title="Usage &amp; billing"
+      >
+        
+  Usage &amp; billing
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/optimize/"
+        title="Optimize usage"
+      >
+        
+  Optimize usage
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/offload/troubleshoot/"
+        title="Troubleshoot"
+      >
+        
+  Troubleshoot
+
+      </a>
+    </li>
+
+
+
+    </ul>
+  </li>
+
+  
+  
+  <li class="" x-data="{ expanded: false }">
+    <div
+      class=" flex w-full items-center justify-between rounded-sm"
+    >
+      <div class="navbar-entry-margin w-full truncate">
+          
+          
+          <a
+            
+            class="hover:text-blue block select-none hover:dark:text-blue-400"
             href="https://docker.qubitpi.org/build-cloud/"
           >
             
@@ -12723,7 +12873,7 @@
             href="https://docker.qubitpi.org/admin/company/"
           >
             
-  Company administration
+  Company administration overview
 
           </a>
       </div>
@@ -12774,6 +12924,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/admin/company/users/"
+        title="Manage company members"
+      >
+        
+  Manage company members
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/admin/company/organizations/"
         title="Manage company organizations"
       >
@@ -12799,22 +12965,6 @@
       </a>
     </li>
 
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/admin/company/users/"
-        title="Manage company users"
-      >
-        
-  Manage company users
-
-      </a>
-    </li>
-
 
 
     </ul>
@@ -12834,7 +12984,7 @@
             class="hover:text-blue w-full text-left select-none hover:dark:text-blue-400"
           >
             
-  Account and admin FAQ
+  FAQ
 
           </button>
       </div>
@@ -12870,10 +13020,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/admin/faqs/general-faqs/"
-        title="General"
+        title="Accounts"
       >
         
-  General
+  Accounts
 
       </a>
     </li>
@@ -14765,6 +14915,14 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#2832"
+            >28.3.2</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#2831"
             >28.3.1</a
           >
@@ -14794,7 +14952,7 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#packaging-updates-2"
+          <a class="link lg:no-underline" href="#packaging-updates-3"
             >Packaging updates</a
           >
         </li>
@@ -14881,6 +15039,45 @@
   <a class="link" href="https://docker.qubitpi.org/reference/api/engine/version-history/">Engine API version history</a>.</li>
 </ul>
 
+<h2 class=" scroll-mt-20" id="2832">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#2832">
+    28.3.2
+  </a>
+</h2>
+
+<em class="text-gray-200 italic dark:text-gray-500">2025-07-09</em>
+
+<p>For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones:</p>
+<ul>
+<li><a class="link" href="https://github.com/docker/cli/issues?q=is%3Aclosed&#43;milestone%3A28.3.2" rel="noopener">docker/cli, 28.3.2 milestone</a></li>
+<li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.3.2" rel="noopener">moby/moby, 28.3.2 milestone</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements">
+    Bug fixes and enhancements
+  </a>
+</h3>
+
+<ul>
+<li>Fix <code>--use-api-socket</code> not working correctly when targeting a remote daemon. <a class="link" href="https://github.com/docker/cli/pull/6157" rel="noopener">docker/cli#6157</a></li>
+<li>Fix stray &quot;otel error&quot; logs being printed if debug logging is enabled. <a class="link" href="https://github.com/docker/cli/pull/6160" rel="noopener">docker/cli#6160</a></li>
+<li>Quote SSH arguments when connecting to a remote daemon over an SSH connection to avoid unexpected expansion. <a class="link" href="https://github.com/docker/cli/pull/6147" rel="noopener">docker/cli#6147</a></li>
+<li>Warn when <code>DOCKER_AUTH_CONFIG</code> is set during <code>docker login</code> and <code>docker logout</code>. <a class="link" href="https://github.com/docker/cli/pull/6163" rel="noopener">docker/cli#6163</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="packaging-updates">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates">
+    Packaging updates
+  </a>
+</h3>
+
+<ul>
+<li>Update Compose to <a class="link" href="https://github.com/docker/compose/releases/tag/v2.38.2" rel="noopener">v2.38.2</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1225" rel="noopener">docker/docker-ce-packaging#1225</a></li>
+<li>Update Docker Model CLI plugin to <a class="link" href="https://github.com/docker/model-cli/releases/tag/v0.1.33" rel="noopener">v0.1.33</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1227" rel="noopener">docker/docker-ce-packaging#1227</a></li>
+<li>Update Go runtime to 1.24.5. <a class="link" href="https://github.com/moby/moby/pull/50354" rel="noopener">moby/moby#50354</a></li>
+</ul>
+
 <h2 class=" scroll-mt-20" id="2831">
   <a class="text-black dark:text-white no-underline hover:underline" href="#2831">
     28.3.1
@@ -14895,8 +15092,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.3.1" rel="noopener">moby/moby, 28.3.1 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates">
+<h3 class=" scroll-mt-20" id="packaging-updates-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-1">
     Packaging updates
   </a>
 </h3>
@@ -14932,8 +15129,8 @@
 <li>Use <code>DOCKER_AUTH_CONFIG</code> as a credential store. <a class="link" href="https://github.com/docker/cli/pull/6008" rel="noopener">docker/cli#6008</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-1">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -14953,8 +15150,8 @@
 <li>containerd image store: Improve handling of errors returned by the token server during <code>docker pull/push</code>. <a class="link" href="https://github.com/moby/moby/pull/50176" rel="noopener">moby/moby#50176</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-1">
+<h3 class=" scroll-mt-20" id="packaging-updates-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-2">
     Packaging updates
   </a>
 </h3>
@@ -15026,8 +15223,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.2.2" rel="noopener">moby/moby, 28.2.2 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-1">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-2">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15055,8 +15252,8 @@
 <em class="text-gray-200 italic dark:text-gray-500">2025-05-29</em>
 
 
-<h2 class=" scroll-mt-20" id="packaging-updates-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-2">
+<h2 class=" scroll-mt-20" id="packaging-updates-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-3">
     Packaging updates
   </a>
 </h2>
@@ -15116,8 +15313,8 @@
 <li>containerd image store: Initial BuildKit support for building Windows container images on Windows (requires an opt-in with <code>DOCKER_BUILDKIT=1</code>). <a class="link" href="https://github.com/moby/moby/pull/49740" rel="noopener">moby/moby#49740</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-2">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-3">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15141,8 +15338,8 @@
 <li>containerd image store: Fix duplicate <code>PUT</code> requests when pushing a multi-platform image. <a class="link" href="https://github.com/moby/moby/pull/49949" rel="noopener">moby/moby#49949</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-3">
+<h3 class=" scroll-mt-20" id="packaging-updates-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-4">
     Packaging updates
   </a>
 </h3>
@@ -15235,8 +15432,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.1.1" rel="noopener">moby/moby, 28.1.1 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-3">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-4">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15246,8 +15443,8 @@
 <li>containerd image store: Fix a potential daemon crash when using <code>docker load</code> with archives containing zero-size tar headers. <a class="link" href="https://github.com/moby/moby/pull/49837" rel="noopener">moby/moby#49837</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-4">
+<h3 class=" scroll-mt-20" id="packaging-updates-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-5">
     Packaging updates
   </a>
 </h3>
@@ -15293,8 +15490,8 @@
 <li><code>docker image inspect</code> now supports a <code>--platform</code> flag to inspect a specific platform of a multi-platform image. <a class="link" href="https://github.com/docker/cli/pull/5934" rel="noopener">docker/cli#5934</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-4">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-5">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15316,8 +15513,8 @@
 <li>containerd image store: Show pull progress for non-layer image blobs. <a class="link" href="https://github.com/moby/moby/pull/49746" rel="noopener">moby/moby#49746</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-5">
+<h3 class=" scroll-mt-20" id="packaging-updates-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-6">
     Packaging updates
   </a>
 </h3>
@@ -15400,8 +15597,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.4" rel="noopener">moby/moby, 28.0.4 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-5">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-6">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15424,8 +15621,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.3" rel="noopener">moby/moby, 28.0.3 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-6">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-7">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15434,8 +15631,8 @@
 <li>Fix <code>docker run</code> truncating the <code>STDOUT</code>/<code>STDERR</code> prematurely when the container exits before the data is consumed. <a class="link" href="https://github.com/docker/cli/pull/5957" rel="noopener">docker/cli#5957</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-6">
+<h3 class=" scroll-mt-20" id="packaging-updates-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-7">
     Packaging updates
   </a>
 </h3>
@@ -15460,8 +15657,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.0.2" rel="noopener">moby/moby, 28.0.2 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-7">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-8">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15480,8 +15677,8 @@
 <li>containerd image store: Improve performance of <code>docker ps</code> when running a large number of containers. <a class="link" href="https://github.com/moby/moby/pull/49365" rel="noopener">moby/moby#49365</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-7">
+<h3 class=" scroll-mt-20" id="packaging-updates-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-8">
     Packaging updates
   </a>
 </h3>
@@ -15578,8 +15775,8 @@
 <li>Update <code>--help</code> output and man page lo state which options only apply to the default bridge network. <a class="link" href="https://github.com/moby/moby/pull/49522" rel="noopener">moby/moby#49522</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-8">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-9">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15594,8 +15791,8 @@
 <li>Fix compilation on i386 <a class="link" href="https://github.com/moby/moby/pull/49526" rel="noopener">moby/moby#49526</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-8">
+<h3 class=" scroll-mt-20" id="packaging-updates-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-9">
     Packaging updates
   </a>
 </h3>
@@ -15766,8 +15963,8 @@
 </li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-9">
+<h3 class=" scroll-mt-20" id="bug-fixes-and-enhancements-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#bug-fixes-and-enhancements-10">
     Bug fixes and enhancements
   </a>
 </h3>
@@ -15814,8 +16011,8 @@
 <li>Faster connection to bridge networks, in most cases. <a class="link" href="https://github.com/moby/moby/pull/49302" rel="noopener">moby/moby#49302</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-9">
+<h3 class=" scroll-mt-20" id="packaging-updates-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-10">
     Packaging updates
   </a>
 </h3>
@@ -16039,6 +16236,14 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#2832"
+            >28.3.2</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#2831"
             >28.3.1</a
           >
@@ -16068,7 +16273,7 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#packaging-updates-2"
+          <a class="link lg:no-underline" href="#packaging-updates-3"
             >Packaging updates</a
           >
         </li>
