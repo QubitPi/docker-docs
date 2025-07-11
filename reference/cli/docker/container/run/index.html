@@ -15479,33 +15479,12 @@ and produces an error if the container isolation is <code>hyperv</code>.</p>
   </a>
 </h4>
 
-
-
-  
-
-  <blockquote
-    
-    class="admonition admonition-note admonition not-prose">
-    <div class="admonition-header">
-      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-      </span>
-      <span class="admonition-title">
-        Note
-      </span>
-    </div>
-    <div class="admonition-content">
-      <p>The CDI feature is experimental, and potentially subject to change.
-CDI is currently only supported for Linux containers.</p>
-    </div>
-  </blockquote>
-
 <p><a class="link" href="https://github.com/cncf-tags/container-device-interface/blob/main/SPEC.md" rel="noopener">Container Device Interface
 (CDI)</a>
 is a standardized mechanism for container runtimes to create containers which
 are able to interact with third party devices.</p>
+<p>CDI is currently only supported for Linux containers and is enabled by default
+since Docker Engine 28.3.0.</p>
 <p>With CDI, device configurations are declaratively defined using a JSON or YAML
 file. In addition to enabling the container to interact with the device node,
 it also lets you specify additional configuration for the device, such as
@@ -15557,7 +15536,7 @@ fully-qualified name of the device, as shown in the following example:</p>
 available on the system running the daemon, in one of the configured CDI
 specification directories.</li>
 <li>The CDI feature has been enabled in the daemon; see 
-  <a class="link" href="/reference/cli/dockerd/#enable-cdi-devices">Enable CDI
+  <a class="link" href="/reference/cli/dockerd/#configure-cdi-devices">Enable CDI
 devices</a>.</li>
 </ul>
 

@@ -25,3 +25,5 @@ for your workflows, and troubleshoot common issues.
 - [Optimize Docker Offload usage](https://docs.docker.com/offload/optimize/)
 
 - [Troubleshoot Docker Offload](https://docs.docker.com/offload/troubleshoot/)
+
+- [Give feedback](https://docs.docker.com/offload/feedback/)

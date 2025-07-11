@@ -9632,8 +9632,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#enable-cdi-devices"
-            >Enable CDI devices</a
+          <a class="link lg:no-underline" href="#configure-cdi-devices"
+            >Configure CDI devices</a
           >
         </li>
         
@@ -12116,50 +12116,35 @@ daemon, a single IP address can also be specified as a JSON string in option
   </div>
 </div>
 
-<h3 class=" scroll-mt-20" id="enable-cdi-devices">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#enable-cdi-devices">
-    Enable CDI devices
+<h3 class=" scroll-mt-20" id="configure-cdi-devices">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#configure-cdi-devices">
+    Configure CDI devices
   </a>
 </h3>
-
-
-
-  
-
-  <blockquote
-    
-    class="admonition admonition-note admonition not-prose">
-    <div class="admonition-header">
-      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-      </span>
-      <span class="admonition-title">
-        Note
-      </span>
-    </div>
-    <div class="admonition-content">
-      <p>This is experimental feature and as such doesn't represent a stable API.</p>
-<p>This feature isn't enabled by default. To this feature, set <code>features.cdi</code> to
-<code>true</code> in the <code>daemon.json</code> configuration file.</p>
-    </div>
-  </blockquote>
 
 <p>Container Device Interface (CDI) is a
 <a class="link" href="https://github.com/cncf-tags/container-device-interface/blob/main/SPEC.md" rel="noopener">standardized</a>
 mechanism for container runtimes to create containers which are able to
 interact with third party devices.</p>
+<p>CDI is currently only supported for Linux containers and is enabled by default
+since Docker Engine 28.3.0.</p>
 <p>The Docker daemon supports running containers with CDI devices if the requested
 device specifications are available on the filesystem of the daemon.</p>
-<p>The default specification directors are:</p>
+<p>The default specification directories are:</p>
 <ul>
 <li><code>/etc/cdi/</code> for static CDI Specs</li>
 <li><code>/var/run/cdi</code> for generated CDI Specs</li>
 </ul>
-<p>Alternatively, you can set custom locations for CDI specifications using the
+
+<h4 class=" scroll-mt-20" id="set-custom-locations">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#set-custom-locations">
+    Set custom locations
+  </a>
+</h4>
+
+<p>To set custom locations for CDI specifications, use the
 <code>cdi-spec-dirs</code> option in the <code>daemon.json</code> configuration file, or the
-<code>--cdi-spec-dir</code> flag for the <code>dockerd</code> CLI.</p>
+<code>--cdi-spec-dir</code> flag for the <code>dockerd</code> CLI:</p>
 <div
   data-pagefind-ignore
   x-data
@@ -12172,7 +12157,7 @@ device specifications are available on the filesystem of the daemon.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'ewogICJmZWF0dXJlcyI6IHsKICAgICAiY2RpIjogdHJ1ZQogIH0sCiAgImNkaS1zcGVjLWRpcnMiOiBbIi9ldGMvY2RpLyIsICIvdmFyL3J1bi9jZGkiXQp9', copying: false }"
+        x-data="{ code: 'ewogICJjZGktc3BlYy1kaXJzIjogWyIvZXRjL2NkaS8iLCAiL3Zhci9ydW4vY2RpIl0KfQ==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -12192,17 +12177,60 @@ device specifications are available on the filesystem of the daemon.</p>
       </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">  <span class="nt">&#34;features&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">     <span class="nt">&#34;cdi&#34;</span><span class="p">:</span> <span class="kc">true</span>
-</span></span><span class="line"><span class="cl">  <span class="p">},</span>
 </span></span><span class="line"><span class="cl">  <span class="nt">&#34;cdi-spec-dirs&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;/etc/cdi/&#34;</span><span class="p">,</span> <span class="s2">&#34;/var/run/cdi&#34;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>When CDI is enabled for a daemon, you can view the configured CDI specification
-directories using the <code>docker info</code> command.</p>
+<p>You can view the configured CDI specification directories using the <code>docker info</code> command.</p>
+
+<h4 class=" scroll-mt-20" id="disable-cdi-devices">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#disable-cdi-devices">
+    Disable CDI devices
+  </a>
+</h4>
+
+<p>The feature in enabled by default. To disable it, use the <code>cdi</code> options in the <code>deamon.json</code> file:</p>
+<div
+  data-pagefind-ignore
+  x-data
+  x-ref="root"
+  class="group mt-2 mb-4 flex w-full scroll-mt-2 flex-col items-start gap-4 rounded bg-gray-50 p-2 outline outline-1 outline-offset-[-1px] outline-gray-200 dark:bg-gray-900 dark:outline-gray-800"
+>
+  
+  <div class="relative w-full">
+    
+    
+    <div class="syntax-light dark:syntax-dark not-prose w-full">
+      <button
+        x-data="{ code: 'ImZlYXR1cmVzIjogewogICJjZGkiOiBmYWxzZQp9LA==', copying: false }"
+        class="
+          top-1
+         absolute right-2 z-10 text-gray-300 dark:text-gray-500"
+        title="copy"
+        @click="window.navigator.clipboard.writeText(atob(code).replaceAll(/^[\$>]\s+/gm, ''));
+      copying = true;
+      setTimeout(() => copying = false, 2000);"
+      >
+        <span
+          :class="{ 'group-hover:block' : !copying }"
+          class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M300-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300ZM180-80q-24 0-42-18t-18-42v-590q0-13 8.5-21.5T150-760q13 0 21.5 8.5T180-730v590h470q13 0 21.5 8.5T680-110q0 13-8.5 21.5T650-80H180Z"/></svg></span
+        >
+        <span :class="{ 'group-hover:block' : copying }" class="icon-svg hidden"
+          ><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="m421-389-98-98q-9-9-22-9t-23 10q-9 9-9 22t9 22l122 123q9 9 21 9t21-9l239-239q10-10 10-23t-10-23q-10-9-23.5-8.5T635-603L421-389Zm59 309q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z"/></svg></span
+        >
+      </button>
+      
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="s2">&#34;features&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;cdi&#34;</span><span class="p">:</span> <span class="kc">false</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span><span class="err">,</span></span></span></code></pre></div>
+      
+    </div>
+  </div>
+</div>
+<p>To check the status of the CDI devices, run <code>docker info</code>.</p>
 
 <h4 class=" scroll-mt-20" id="log-format">
   <a class="text-black dark:text-white no-underline hover:underline" href="#log-format">
@@ -13567,8 +13595,8 @@ daemon configuration. The CLI flag expects a value with the following format:
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#enable-cdi-devices"
-            >Enable CDI devices</a
+          <a class="link lg:no-underline" href="#configure-cdi-devices"
+            >Configure CDI devices</a
           >
         </li>
         
