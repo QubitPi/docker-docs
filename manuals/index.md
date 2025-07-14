@@ -25,19 +25,28 @@ End-to-end developer solutions for innovative teams.
 ## Platform
 
 Documentation related to the Docker platform, such as administration and
-subscription management for organizations.
+subscription management.
 
 {{< grid items=platform >}}
 
+## Enterprise
+
+Targeted at IT administrators with help on deploying Docker Desktop at scale with configuration guidance on security related features. 
+
+{{< grid items=enterprise >}}
 
 
 - [Administration](https://docs.docker.com/admin/)
 
 - [Ask Gordon](https://docs.docker.com/ai/gordon/)
 
+- [Deploy Docker Desktop](https://docs.docker.com/enterprise/enterprise-deployment/)
+
 - [Docker Desktop](https://docs.docker.com/desktop/)
 
 - [Docker Engine](https://docs.docker.com/engine/)
+
+- [Security](https://docs.docker.com)
 
 - [Docker Hardened Images](https://docs.docker.com/dhi/)
 

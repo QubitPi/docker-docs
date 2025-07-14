@@ -26,8 +26,6 @@ See how you can protect your local environments, infrastructure, and networks wi
 
 
 
-- [For admins](https://docs.docker.com)
-
 - [For developers](https://docs.docker.com)
 
 - [FAQs](https://docs.docker.com)

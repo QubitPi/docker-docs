@@ -33,7 +33,7 @@ Create a repository
      is only accessible to you and collaborators. In addition, if you selected
      an organization's namespace, then the repository is accessible to those
      with applicable roles or permissions. For more details, see [Roles and
-     permissions](../../security/for-admins/roles-and-permissions.md).
+     permissions](/manuals/enterprise/security/roles-and-permissions.md).
 
    > [!NOTE]
    >
