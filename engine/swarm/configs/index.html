@@ -15529,9 +15529,10 @@ to the config. The container ID is different, because the
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">$ docker container exec -it $(docker ps --filter name=redis -q) cat /my-config
-
-cat: can&#39;t open &#39;/my-config&#39;: No such file or directory</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker container <span class="nb">exec</span> -it <span class="k">$(</span>docker ps --filter <span class="nv">name</span><span class="o">=</span>redis -q<span class="k">)</span> cat /my-config
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go">cat: can&#39;t open &#39;/my-config&#39;: No such file or directory
+</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -16143,10 +16144,10 @@ leaf certificates and not intermediate CAs.</p>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">[root_ca]
-basicConstraints = critical,CA:TRUE,pathlen:1
-keyUsage = critical, nonRepudiation, cRLSign, keyCertSign
-subjectKeyIdentifier=hash</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[root_ca]</span>
+</span></span><span class="line"><span class="cl"><span class="na">basicConstraints</span> <span class="o">=</span> <span class="s">critical,CA:TRUE,pathlen:1</span>
+</span></span><span class="line"><span class="cl"><span class="na">keyUsage</span> <span class="o">=</span> <span class="s">critical, nonRepudiation, cRLSign, keyCertSign</span>
+</span></span><span class="line"><span class="cl"><span class="na">subjectKeyIdentifier</span><span class="o">=</span><span class="s">hash</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -16312,13 +16313,13 @@ can't be used to sign certificates.</p>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">[server]
-authorityKeyIdentifier=keyid,issuer
-basicConstraints = critical,CA:FALSE
-extendedKeyUsage=serverAuth
-keyUsage = critical, digitalSignature, keyEncipherment
-subjectAltName = DNS:localhost, IP:127.0.0.1
-subjectKeyIdentifier=hash</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[server]</span>
+</span></span><span class="line"><span class="cl"><span class="na">authorityKeyIdentifier</span><span class="o">=</span><span class="s">keyid,issuer</span>
+</span></span><span class="line"><span class="cl"><span class="na">basicConstraints</span> <span class="o">=</span> <span class="s">critical,CA:FALSE</span>
+</span></span><span class="line"><span class="cl"><span class="na">extendedKeyUsage</span><span class="o">=</span><span class="s">serverAuth</span>
+</span></span><span class="line"><span class="cl"><span class="na">keyUsage</span> <span class="o">=</span> <span class="s">critical, digitalSignature, keyEncipherment</span>
+</span></span><span class="line"><span class="cl"><span class="na">subjectAltName</span> <span class="o">=</span> <span class="s">DNS:localhost, IP:127.0.0.1</span>
+</span></span><span class="line"><span class="cl"><span class="na">subjectKeyIdentifier</span><span class="o">=</span><span class="s">hash</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -16417,17 +16418,17 @@ following contents:</p>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">server {
-    listen                443 ssl;
-    server_name           localhost;
-    ssl_certificate       /run/secrets/site.crt;
-    ssl_certificate_key   /run/secrets/site.key;
-
-    location / {
-        root   /usr/share/nginx/html;
-        index  index.html index.htm;
-    }
-}</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">listen</span>                <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">server_name</span>           <span class="s">localhost</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate</span>       <span class="s">/run/secrets/site.crt</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate_key</span>   <span class="s">/run/secrets/site.key</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">root</span>   <span class="s">/usr/share/nginx/html</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">index</span>  <span class="s">index.html</span> <span class="s">index.htm</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -16901,17 +16902,17 @@ save the file.</p>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">server {
-    listen                443 ssl;
-    server_name           localhost;
-    ssl_certificate       /run/secrets/site.crt;
-    ssl_certificate_key   /run/secrets/site.key;
-
-    location / {
-        root   /usr/share/nginx/html;
-        index  index.html index.htm index.php;
-    }
-}</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-nginx" data-lang="nginx"><span class="line"><span class="cl"><span class="k">server</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">listen</span>                <span class="mi">443</span> <span class="s">ssl</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">server_name</span>           <span class="s">localhost</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate</span>       <span class="s">/run/secrets/site.crt</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kn">ssl_certificate_key</span>   <span class="s">/run/secrets/site.key</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kn">location</span> <span class="s">/</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">root</span>   <span class="s">/usr/share/nginx/html</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kn">index</span>  <span class="s">index.html</span> <span class="s">index.htm</span> <span class="s">index.php</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div>
       
     </div>
   </div>

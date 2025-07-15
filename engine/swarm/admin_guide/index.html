@@ -15532,13 +15532,14 @@ passing the <code>--force</code> flag. For instance, if <code>node9</code> becom
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">$ docker node rm node9
-
-Error response from daemon: rpc error: code = 9 desc = node node9 is not down and can&#39;t be removed
-
-$ docker node rm --force node9
-
-Node node9 removed from swarm</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker node rm node9
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go">Error response from daemon: rpc error: code = 9 desc = node node9 is not down and can&#39;t be removed
+</span></span></span><span class="line"><span class="cl"><span class="go"></span><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="gp">$</span> docker node rm --force node9
+</span></span><span class="line"><span class="cl"><span class="err">
+</span></span></span><span class="line"><span class="cl"><span class="err"></span><span class="go">Node node9 removed from swarm
+</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -15777,7 +15778,7 @@ an error occurs:</p>
         >
       </button>
       
-        <pre tabindex="0"><code class="language-none" data-lang="none">Error response from daemon: rpc error: code = 4 desc = context deadline exceeded</code></pre>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">Error response from daemon: rpc error: code = 4 desc = context deadline exceeded</span></span></code></pre></div>
       
     </div>
   </div>
