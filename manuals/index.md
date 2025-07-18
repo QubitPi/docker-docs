@@ -86,6 +86,8 @@ Targeted at IT administrators with help on deploying Docker Desktop at scale wit
 
 - [Deprecated and retired Docker products and features](https://docs.docker.com/retired/)
 
+- [Manage unassociated machines](https://docs.docker.com/unassociated-machines/)
+
 - [MCP Gateway](https://docs.docker.com/ai/mcp-gateway/)
 
 - [Docker's product release lifecycle](https://docs.docker.com/release-lifecycle/)
