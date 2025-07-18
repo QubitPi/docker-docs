@@ -46,7 +46,7 @@ Targeted at IT administrators with help on deploying Docker Desktop at scale wit
 
 - [Docker Engine](https://docs.docker.com/engine/)
 
-- [Security](https://docs.docker.com)
+- [Security for enterprises](https://docs.docker.com/enterprise/security/)
 
 - [Docker Hardened Images](https://docs.docker.com/dhi/)
 
@@ -72,7 +72,9 @@ Targeted at IT administrators with help on deploying Docker Desktop at scale wit
 
 - [Docker Scout](https://docs.docker.com/scout/)
 
-- [Security](https://docs.docker.com/security/)
+- [Security for developers](https://docs.docker.com/security/)
+
+- [Troubleshoot](https://docs.docker.com)
 
 - [Docker for GitHub Copilot](https://docs.docker.com/copilot/)
 

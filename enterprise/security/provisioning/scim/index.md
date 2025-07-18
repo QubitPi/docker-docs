@@ -402,4 +402,4 @@ The following videos demonstrate how to configure SCIM for your IdP:
 
 Refer to the following troubleshooting guide if needed:
 
-- [Troubleshoot provisioning](/manuals/security/troubleshoot/troubleshoot-provisioning.md)
+- [Troubleshoot provisioning](/manuals/enterprise/troubleshoot/troubleshoot-provisioning.md)

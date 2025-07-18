@@ -32,8 +32,8 @@ in to your Docker account, you will need to enter a security code.
 
 
 
-- [Generate a new recovery code](https://docs.docker.com/security/for-developers/2fa/new-recovery-code/)
+- [Generate a new recovery code](https://docs.docker.com/security/2fa/new-recovery-code/)
 
-- [Recover your Docker account](https://docs.docker.com/security/for-developers/2fa/recover-hub-account/)
+- [Recover your Docker account](https://docs.docker.com/security/2fa/recover-hub-account/)
 
-- [Disable two-factor authentication on your Docker account](https://docs.docker.com/security/for-developers/2fa/disable-2fa/)
+- [Disable two-factor authentication on your Docker account](https://docs.docker.com/security/2fa/disable-2fa/)
