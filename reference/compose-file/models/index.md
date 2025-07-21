@@ -59,3 +59,7 @@ In this advanced setup:
 - `model` (required): The OCI artifact identifier for the model. This is what Compose pulls and runs via the model runner. 
 - `context_size`: Defines the maximum token context size for the model.
 - `runtime_flags`: A list of raw command-line flags passed to the inference engine when the model is started.
+
+## Additional resources
+
+For more examples and information on using `model`, see [Use AI models in Compose](/manuals/ai/compose/models-and-compose.md)

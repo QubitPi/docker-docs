@@ -44,11 +44,11 @@ Use the following links to navigate key sections of the Compose Specification.
 
 - [Use include to modularize Compose files](https://docs.docker.com/reference/compose-file/include/)
 
+- [Models](https://docs.docker.com/reference/compose-file/models/)
+
 - [Learn how to use profiles in Docker Compose](https://docs.docker.com/reference/compose-file/profiles/)
 
 - [Compose Build Specification](https://docs.docker.com/reference/compose-file/build/)
-
-- [Models](https://docs.docker.com/reference/compose-file/models/)
 
 - [Compose Deploy Specification](https://docs.docker.com/reference/compose-file/deploy/)
 
