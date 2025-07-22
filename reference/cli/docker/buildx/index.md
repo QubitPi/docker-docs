@@ -17,6 +17,8 @@ https://github.com/docker/buildx
 
 - [docker buildx create](https://docs.docker.com/reference/cli/docker/buildx/create/)
 
+- [docker buildx dap](https://docs.docker.com/reference/cli/docker/buildx/dap/)
+
 - [docker buildx debug](https://docs.docker.com/reference/cli/docker/buildx/debug/)
 
 - [docker buildx du](https://docs.docker.com/reference/cli/docker/buildx/du/)

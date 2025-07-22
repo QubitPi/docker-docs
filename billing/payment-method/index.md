@@ -198,14 +198,3 @@ Docker also sends an email notification `Action Required - Credit Card Payment F
 
 Once the grace period is over and the invoice is still not paid, the subscription downgrades to a free subscription and all paid features are disabled.
 
-## Redeem a coupon
-
-You can redeem a coupon for any paid Docker subscription.
-
-A coupon can be used when you:
-- Sign up to a new paid subscription from a free subscription
-- Upgrade an existing paid subscription
-
-You are asked to enter your coupon code when you confirm or enter your payment method.
-
-If you use a coupon to pay for a subscription, when the coupon expires, your payment method is charged the full cost of your subscription. If you don't have a saved payment method, your account downgrades to a free subscription.

@@ -13,7 +13,7 @@
 <meta name="description" content="Learn how to add or update a payment method in Docker Hub" />
 <meta
   name="keywords"
-  content="payments, billing, subscription, supported, payment, methods, failed, payments, coupons"
+  content="payments, billing, subscription, supported, payment, methods, failed, payments"
 />
 <link rel="canonical" href="https://docker.qubitpi.org/billing/payment-method/" />
 
@@ -4414,6 +4414,22 @@
       >
         
   Bake file reference
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/build/bake/stdlib/"
+        title="Bake standard library functions"
+      >
+        
+  Bake standard library functions
 
       </a>
     </li>
@@ -14994,11 +15010,6 @@
             >Failed payments</a
           >
         </li>
-        <li>
-          <a class="link lg:no-underline" href="#redeem-a-coupon"
-            >Redeem a coupon</a
-          >
-        </li>
   </ul>
     </nav>
   </div>
@@ -15498,21 +15509,6 @@ based on the retry schedule.</p>
 <p>Docker also sends an email notification <code>Action Required - Credit Card Payment Failed</code> with an attached unpaid invoice after each failed payment attempt.</p>
 <p>Once the grace period is over and the invoice is still not paid, the subscription downgrades to a free subscription and all paid features are disabled.</p>
 
-<h2 class=" scroll-mt-20" id="redeem-a-coupon">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#redeem-a-coupon">
-    Redeem a coupon
-  </a>
-</h2>
-
-<p>You can redeem a coupon for any paid Docker subscription.</p>
-<p>A coupon can be used when you:</p>
-<ul>
-<li>Sign up to a new paid subscription from a free subscription</li>
-<li>Upgrade an existing paid subscription</li>
-</ul>
-<p>You are asked to enter your coupon code when you confirm or enter your payment method.</p>
-<p>If you use a coupon to pay for a subscription, when the coupon expires, your payment method is charged the full cost of your subscription. If you don't have a saved payment method, your account downgrades to a free subscription.</p>
-
   </article>
   <div class="-mt-8 -mr-20 hidden min-w-48 flex-1 lg:block">
     <aside
@@ -15607,11 +15603,6 @@ based on the retry schedule.</p>
         <li>
           <a class="link lg:no-underline" href="#failed-payments"
             >Failed payments</a
-          >
-        </li>
-        <li>
-          <a class="link lg:no-underline" href="#redeem-a-coupon"
-            >Redeem a coupon</a
           >
         </li>
   </ul>

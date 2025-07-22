@@ -70,6 +70,8 @@ To learn how to get started with Bake, head over to the [Bake introduction](./in
 
 - [Bake file reference](https://docs.docker.com/build/bake/reference/)
 
+- [Bake standard library functions](https://docs.docker.com/build/bake/stdlib/)
+
 - [Building with Bake from a Compose file](https://docs.docker.com/build/bake/compose-file/)
 
 - [Overriding configurations](https://docs.docker.com/build/bake/overrides/)
