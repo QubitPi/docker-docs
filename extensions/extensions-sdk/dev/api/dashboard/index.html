@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2eba77b5ec95da271b2816cadb11a70dc2263e7daf38f903cbacb375bd4a468a.css"
-            integrity="sha256-Lrp3teyV2icbKBbK2xGnDcImPn2vOPkDy6yzdb1KRoo="
+            href="/css/style.f300785cc7c4e6018202d685d0b8fd2f2a4a6f138aa8246cc735ae1bb52fe66f.css"
+            integrity="sha256-8wB4XMfE5gGCAtaF0Lj9LypKbxOKqCRsxzWuG7Uv5m8="
             crossorigin="anonymous"
           />
         
@@ -446,7 +446,7 @@
           
           
             
-<div class="px-4 py-2" x-data="{ expanded: false }">
+<div class="px-2 py-4 md:hidden text-gray-700 dark:text-gray-200 card " x-data="{ expanded: false }">
   <div class="flex w-full items-center justify-between">
     
     <a
@@ -456,7 +456,7 @@
         <span class="icon-sm icon-svg pr-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M349-250h262q12.75 0 21.38-8.68 8.62-8.67 8.62-21.5 0-12.82-8.62-21.32-8.63-8.5-21.38-8.5H349q-12.75 0-21.37 8.68-8.63 8.67-8.63 21.5 0 12.82 8.63 21.32 8.62 8.5 21.37 8.5Zm0-170h262q12.75 0 21.38-8.68 8.62-8.67 8.62-21.5 0-12.82-8.62-21.32-8.63-8.5-21.38-8.5H349q-12.75 0-21.37 8.68-8.63 8.67-8.63 21.5 0 12.82 8.63 21.32 8.62 8.5 21.37 8.5ZM220-80q-24 0-42-18t-18-42v-680q0-24 18-42t42-18h336q12.44 0 23.72 5T599-862l183 183q8 8 13 19.28 5 11.28 5 23.72v496q0 24-18 42t-42 18H220Zm331-584q0 12.75 8.63 21.37Q568.25-634 581-634h159L551-820v156Z"/></svg></span>Manuals</a>
     <button
       @click="expanded = !expanded"
-      class="rounded-sm hover:bg-gray-300 hover:dark:bg-gray-300"
+      class="rounded-sm hover:bg-gray-200 hover:dark:bg-gray-800"
     >
       <span x-show="! expanded" class="icon-svg">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
@@ -496,13 +496,10 @@
     
   </ul>
 </div>
-<hr class="m-2 text-gray-200 dark:text-gray-500" />
+
 
             
-<nav class="navbar-font flex flex-col">
-  <div class="block py-4 text-gray-200 md:hidden dark:text-gray-200">
-    This section
-  </div>
+<nav class="navbar-font flex flex-col mt-1 mx-1">
   <ul>
     
     
@@ -8984,6 +8981,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/stig/"
+        title="STIG"
+      >
+        
+  STIG
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/vex/"
         title="VEX"
       >
@@ -14860,19 +14873,7 @@
           <div class="text-base">Ask questions with Docs AI</div>
         </div>
       </button>
-       <button
-        onclick="openInChatGPT()"
-        data-heap-id="search-docs-ai-button"
-        class="sub-button"
-      >
-        <span class="icon-svg mt-[2px] text-base leading-none">
-          <svg fill="currentColor" fill-rule="evenodd" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>OpenAI</title><path d="M21.55 10.004a5.416 5.416 0 00-.478-4.501c-1.217-2.09-3.662-3.166-6.05-2.66A5.59 5.59 0 0010.831 1C8.39.995 6.224 2.546 5.473 4.838A5.553 5.553 0 001.76 7.496a5.487 5.487 0 00.691 6.5 5.416 5.416 0 00.477 4.502c1.217 2.09 3.662 3.165 6.05 2.66A5.586 5.586 0 0013.168 23c2.443.006 4.61-1.546 5.361-3.84a5.553 5.553 0 003.715-2.66 5.488 5.488 0 00-.693-6.497v.001zm-8.381 11.558a4.199 4.199 0 01-2.675-.954c.034-.018.093-.05.132-.074l4.44-2.53a.71.71 0 00.364-.623v-6.176l1.877 1.069c.02.01.033.029.036.05v5.115c-.003 2.274-1.87 4.118-4.174 4.123zM4.192 17.78a4.059 4.059 0 01-.498-2.763c.032.02.09.055.131.078l4.44 2.53c.225.13.504.13.73 0l5.42-3.088v2.138a.068.068 0 01-.027.057L9.9 19.288c-1.999 1.136-4.552.46-5.707-1.51h-.001zM3.023 8.216A4.15 4.15 0 015.198 6.41l-.002.151v5.06a.711.711 0 00.364.624l5.42 3.087-1.876 1.07a.067.067 0 01-.063.005l-4.489-2.559c-1.995-1.14-2.679-3.658-1.53-5.63h.001zm15.417 3.54l-5.42-3.088L14.896 7.6a.067.067 0 01.063-.006l4.489 2.557c1.998 1.14 2.683 3.662 1.529 5.633a4.163 4.163 0 01-2.174 1.807V12.38a.71.71 0 00-.363-.623zm1.867-2.773a6.04 6.04 0 00-.132-.078l-4.44-2.53a.731.731 0 00-.729 0l-5.42 3.088V7.325a.068.068 0 01.027-.057L14.1 4.713c2-1.137 4.555-.46 5.707 1.513.487.833.664 1.809.499 2.757h.001zm-11.741 3.81l-1.877-1.068a.065.065 0 01-.036-.051V6.559c.001-2.277 1.873-4.122 4.181-4.12.976 0 1.92.338 2.671.954-.034.018-.092.05-.131.073l-4.44 2.53a.71.71 0 00-.365.623l-.003 6.173v.002zm1.02-2.168L12 9.25l2.414 1.375v2.75L12 14.75l-2.415-1.375v-2.75z"></path></svg>
-        </span>
-        <div class="leading-tight">
-          <div class="text-base">Open in ChatGPT</div>
-        </div>
-      </button>
-
+      
        <button
         onclick="openInClaude()"
         data-heap-id="search-docs-ai-button"
@@ -14885,11 +14886,12 @@
           <div class="text-base">Open in Claude</div>
         </div>
       </button>
+      
 
     </div>
   </details>
 
-  <script>
+<script>
     function getCurrentPlaintextUrl() {
       const url = window.location.href.split("#")[0].replace(/\/$/, "");
       return `${url}/index.md`;
@@ -14934,43 +14936,13 @@
       }
     }
 
-    function openInChatGPT() {
-      fetch(getCurrentPlaintextUrl())
-        .then((response) => response.text())
-        .then((text) => {
-          const encodedText = encodeURIComponent(text);
-          const chatGPTUrl = `https://chat.openai.com/?q=${encodedText}`;
-          window.open(chatGPTUrl, "_blank");
-        })
-        .catch((err) => {
-          console.error("Error opening in ChatGPT:", err);
-        });
-    }
-
     function openInClaude() {
-      fetch(getCurrentPlaintextUrl())
-        .then((response) => response.text())
-        .then((text) => {
-          const encodedText = encodeURIComponent(text);
-        const claudeUrl = `https://claude.ai/new?q=${encodedText}`;https:
-        window.open(claudeUrl, '_blank');
-        })
-        .catch((err) => {
-          console.error("Error opening in Claude:", err);
-        });
+      const markdownUrl = getCurrentPlaintextUrl();
+      const prompt = `Read ${markdownUrl} so I can ask questions about it.`;
+      const encodedText = encodeURIComponent(prompt);
+      const claudeUrl = `https://claude.ai/new?q=${encodedText}`;
+      window.open(claudeUrl, '_blank');
     }
-
-    document.addEventListener("click", function (event) {
-      const dropdown = document.getElementById("markdownDropdown");
-
-      if (!dropdown) return;
-
-      const isClickInside = dropdown.contains(event.target);
-
-      if (!isClickInside && dropdown.hasAttribute("open")) {
-        dropdown.removeAttribute("open");
-      }
-    });
   </script>
 
       </div>
@@ -15398,7 +15370,7 @@ shouldn't interrupt the user experience. They also don't require user input to d
 <p>From your extension, you can also <a class="link" href="https://docker.qubitpi.org/extensions/extensions-sdk/dev/api/dashboard-routes-navigation/">navigate</a> to other parts of the Docker Desktop Dashboard.</p>
 
   </article>
-  <div class="-mt-8 -mr-20 hidden min-w-48 flex-1 lg:block">
+  <div class="-mt-8 hidden min-w-48 flex-1 lg:block">
     <aside
   class="sticky top-16 h-[calc(100vh-64px)] min-w-52 space-y-4 overflow-y-auto py-4 w-full"
 >
@@ -15443,7 +15415,7 @@ shouldn't interrupt the user experience. They also don't require user input to d
 </p>
 
 
-  <div id="TableOfContents">
+  <div id="TableOfContents" class="overflow-x-auto">
     
   <div data-pagefind-ignore class="not-prose">
     <div class="pb-0 text-lg lg:pb-2">

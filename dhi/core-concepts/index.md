@@ -54,4 +54,6 @@ transparency, and security.
 
 - [Secure Software Development Lifecycle](https://docs.docker.com/dhi/core-concepts/ssdlc/)
 
+- [STIG](https://docs.docker.com/dhi/core-concepts/stig/)
+
 - [Vulnerability Exploitability eXchange (VEX)](https://docs.docker.com/dhi/core-concepts/vex/)

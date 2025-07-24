@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.2eba77b5ec95da271b2816cadb11a70dc2263e7daf38f903cbacb375bd4a468a.css"
-            integrity="sha256-Lrp3teyV2icbKBbK2xGnDcImPn2vOPkDy6yzdb1KRoo="
+            href="/css/style.f300785cc7c4e6018202d685d0b8fd2f2a4a6f138aa8246cc735ae1bb52fe66f.css"
+            integrity="sha256-8wB4XMfE5gGCAtaF0Lj9LypKbxOKqCRsxzWuG7Uv5m8="
             crossorigin="anonymous"
           />
         
@@ -446,7 +446,7 @@
           
           
             
-<div class="px-4 py-2" x-data="{ expanded: false }">
+<div class="px-2 py-4 md:hidden text-gray-700 dark:text-gray-200 card " x-data="{ expanded: false }">
   <div class="flex w-full items-center justify-between">
     
     <a
@@ -456,7 +456,7 @@
         <span class="icon-sm icon-svg pr-2"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm0-60h680v-436H140v436Zm221-218-83-83q-9-9-8.5-21t9.5-21q9-9 21-9t21 9l104 104q9 9 9 21t-9 21L321-313q-9 9-21 9t-21-9q-9-9-9-21t9-21l82-83Zm159 150q-13 0-21.5-8.5T490-318q0-13 8.5-21.5T520-348h160q13 0 21.5 8.5T710-318q0 13-8.5 21.5T680-288H520Z"/></svg></span>Reference</a>
     <button
       @click="expanded = !expanded"
-      class="rounded-sm hover:bg-gray-300 hover:dark:bg-gray-300"
+      class="rounded-sm hover:bg-gray-200 hover:dark:bg-gray-800"
     >
       <span x-show="! expanded" class="icon-svg">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 -960 960 960"><path d="M464-376 306-533q-2-2-3.5-4.76-1.5-2.77-1.5-5.92 0-6.32 4.13-10.82 4.12-4.5 10.87-4.5h328q6.75 0 10.88 4.64 4.12 4.63 4.12 10.81 0 1.55-5 10.55L496-376q-3 3-7.06 5t-8.94 2q-4.87 0-8.94-2-4.06-2-7.06-5Z"/></svg>
@@ -496,13 +496,10 @@
     
   </ul>
 </div>
-<hr class="m-2 text-gray-200 dark:text-gray-500" />
+
 
             
-<nav class="navbar-font flex flex-col">
-  <div class="block py-4 text-gray-200 md:hidden dark:text-gray-200">
-    This section
-  </div>
+<nav class="navbar-font flex flex-col mt-1 mx-1">
   <ul>
     
   
@@ -9771,6 +9768,34 @@ the canonical format.</p>
                     
                       
                       Produces an override file with image digests
+                    
+                  </td>
+                </tr>
+              
+                <tr class="p-2">
+                  
+                  
+                  <td>
+                    
+                    <code>--models</code>
+                    
+                  </td>
+                  
+                  <td>
+                    
+                      
+                    
+                  </td>
+                  <td>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                      
+                      Print the model names, one per line.
                     
                   </td>
                 </tr>

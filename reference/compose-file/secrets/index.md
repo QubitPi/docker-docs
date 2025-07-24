@@ -1,7 +1,7 @@
 Secrets
 
 
-Secrets are a flavor of [Configs](configs.md) focusing on sensitive data, with specific constraint for this usage. 
+Secrets are a flavor of [Configs](configs.md) focusing on sensitive data, with specific constraint for this usage.
 
 Services can only access secrets when explicitly granted by a [`secrets` attribute](services.md#secrets) within the `services` top-level element.
 
@@ -22,9 +22,9 @@ secrets:
     file: ./server.cert
 ```
 
-## Example 2 
+## Example 2
 
-`token` secret  is created as `<project_name>_token` when the application is deployed,
+`token` secret is created as `<project_name>_token` when the application is deployed,
 by registering the content of the `OAUTH_TOKEN` environment variable as a platform secret.
 
 ```yml
