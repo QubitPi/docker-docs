@@ -12576,10 +12576,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/billing/details/"
-        title="Update billing information"
+        title="Manage your billing information"
       >
         
-  Update billing information
+  Manage your billing information
 
       </a>
     </li>
@@ -12640,10 +12640,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/billing/tax-certificate/"
-        title="Register a tax certificate"
+        title="Submit a tax exemption certificate"
       >
         
-  Register a tax certificate
+  Submit a tax exemption certificate
 
       </a>
     </li>
@@ -15026,7 +15026,7 @@ supports <code>seccomp</code>:</p>
 seccomp and disables around 44 system calls out of 300+. It is moderately
 protective while providing wide application compatibility. The default Docker
 profile can be found
-<a class="link" href="https://github.com/moby/moby/blob/master/profiles/seccomp/default.json" rel="noopener">here</a>.</p>
+<a class="link" href="https://github.com/moby/profiles/blob/main/seccomp/default.json" rel="noopener">here</a>.</p>
 <p>In effect, the profile is an allowlist that denies access to system calls by
 default and then allows specific system calls. The profile works by defining a
 <code>defaultAction</code> of <code>SCMP_ACT_ERRNO</code> and overriding that action only for specific

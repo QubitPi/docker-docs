@@ -40,6 +40,8 @@ Targeted at IT administrators with help on deploying Docker Desktop at scale wit
 
 - [Ask Gordon](https://docs.docker.com/ai/gordon/)
 
+- [Manage billing and payments](https://docs.docker.com/billing/)
+
 - [Deploy Docker Desktop](https://docs.docker.com/enterprise/enterprise-deployment/)
 
 - [Docker Desktop](https://docs.docker.com/desktop/)
@@ -51,8 +53,6 @@ Targeted at IT administrators with help on deploying Docker Desktop at scale wit
 - [Docker Hardened Images](https://docs.docker.com/dhi/)
 
 - [Docker Offload](https://docs.docker.com/offload/)
-
-- [Billing and payments](https://docs.docker.com/billing/)
 
 - [Docker Build](https://docs.docker.com/build/)
 

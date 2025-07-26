@@ -12572,10 +12572,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/billing/details/"
-        title="Update billing information"
+        title="Manage your billing information"
       >
         
-  Update billing information
+  Manage your billing information
 
       </a>
     </li>
@@ -12640,10 +12640,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/billing/tax-certificate/"
-        title="Register a tax certificate"
+        title="Submit a tax exemption certificate"
       >
         
-  Register a tax certificate
+  Submit a tax exemption certificate
 
       </a>
     </li>
@@ -14942,13 +14942,13 @@
       
   <ul class="pl-2">
         <li>
-          <a class="link lg:no-underline" href="#personal-account"
-            >Personal account</a
+          <a class="link lg:no-underline" href="#change-personal-account-to-an-annual-cycle"
+            >Change personal account to an annual cycle</a
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#organization"
-            >Organization</a
+          <a class="link lg:no-underline" href="#change-organization-to-an-annual-cycle"
+            >Change organization to an annual cycle</a
           >
         </li>
   </ul>
@@ -14957,31 +14957,9 @@
 
       <hr />
     </div>
-    <p>You can pay for a subscription on a monthly or yearly billing cycle. You select
-your preferred billing cycle when you buy your subscription.</p>
-
-
-  
-
-  <blockquote
-    
-    class="admonition admonition-note admonition not-prose">
-    <div class="admonition-header">
-      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-      </span>
-      <span class="admonition-title">
-        Note
-      </span>
-    </div>
-    <div class="admonition-content">
-      <p>Business subscriptions are available only on yearly billing cycle.</p>
-    </div>
-  </blockquote>
-
-<p>If you have a monthly billing cycle, you can choose to switch to an annual
+    <p>You can choose between a monthly or annual billing cycle when purchasing a
+Docker subscription. If you have a monthly billing cycle, you can choose to
+switch to an annual
 billing cycle.</p>
 
 
@@ -15001,23 +14979,44 @@ billing cycle.</p>
       </span>
     </div>
     <div class="admonition-content">
-      <p>You can't switch from an annual billing cycle to a monthly cycle.</p>
+      <p>Docker Business subscriptions are only available on an annual billing cycle.</p>
     </div>
   </blockquote>
 
-<p>When you change the billing cycle's duration:</p>
+
+
+  
+
+  <blockquote
+    
+    class="admonition admonition-note admonition not-prose">
+    <div class="admonition-header">
+      <span class="admonition-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 16V12M12 8H12.01M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      </span>
+      <span class="admonition-title">
+        Note
+      </span>
+    </div>
+    <div class="admonition-content">
+      <p>Switching from an annual billing cycle to a monthly cycle isn't supported.</p>
+    </div>
+  </blockquote>
+
+<p>When you change your billing cycle:</p>
 <ul>
-<li>The next billing date reflects the new cycle. To find your next billing date,
+<li>Your next billing date reflects the new cycle. To find your next billing date,
 see <a class="link" href="https://docker.qubitpi.org/billing/history/#view-renewal-date">View renewal date</a>.</li>
-<li>The subscription's start date resets. For example, if the start date of the
-monthly subscription is March 1st and the end date is April 1st, then after
-switching the billing duration to March 15th, 2024 the new start date is March
-15th, 2024, and the new end date is March 15th, 2025.</li>
-<li>Any unused monthly subscription is prorated and applied as credit towards the
-new annual period. For example, if you switch from a $10 monthly subscription to
-a $100 annual subscription, deducting the unused monthly value
-(in this case $5), the migration cost becomes $95 ($100 - $5). The renewal cost
-after March 15, 2025 is $100.</li>
+<li>Your subscription's start date resets. For example, if the monthly
+subscription started on March 1 and ended on April 1, switching the billing
+duration on March 15, 2024, resets the new start date to March 15, 2024, with
+an end date of March 15, 2025.</li>
+<li>Any unused portion of your monthly subscription is prorated and applied as
+credit toward an annual subscription. For example, if your monthly cost is $10
+and you're used value is $5, when you switch to an annual cycle ($100), the
+final charge is $95 ($100-$5).</li>
 </ul>
 
 
@@ -15050,9 +15049,9 @@ updated. If you're exempt from sales tax, see
   </blockquote>
 
 
-<h2 class=" scroll-mt-20" id="personal-account">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#personal-account">
-    Personal account
+<h2 class=" scroll-mt-20" id="change-personal-account-to-an-annual-cycle">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#change-personal-account-to-an-annual-cycle">
+    Change personal account to an annual cycle
   </a>
 </h2>
 
@@ -15101,7 +15100,8 @@ updated. If you're exempt from sales tax, see
         aria-role="tab"
         :class="selected !== 'Docker-subscription' && 'hidden'"
       >
-        <p>To change your billing cycle:</p>
+        <p>Follow these steps to switch from a monthly to annual billing
+cycle for your Docker subscription:</p>
 <ol>
 <li>Sign in to <a class="link" href="https://app.docker.com/" rel="noopener">Docker Home</a> and select
 your organization.</li>
@@ -15135,8 +15135,8 @@ more information, see
     </div>
   </blockquote>
 
-<p>The billing plans and usage page will now reflect your new annual subscription
-details.</p>
+<p>After completing the change, the billing plans and usage page displays
+your updated annual subscription details.</p>
 
       </div>
     
@@ -15144,7 +15144,8 @@ details.</p>
         aria-role="tab"
         :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
-        <p>To change your billing cycle:</p>
+        <p>Follow these steps to switch from a monthly to annual billing cycle for
+a legacy Docker subscription:</p>
 <ol>
 <li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
 <li>Select your organization, then select <strong>Billing</strong>.</li>
@@ -15159,9 +15160,9 @@ page and select <strong>Accept Terms and Purchase</strong> to confirm.</li>
 </div>
 
 
-<h2 class=" scroll-mt-20" id="organization">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#organization">
-    Organization
+<h2 class=" scroll-mt-20" id="change-organization-to-an-annual-cycle">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#change-organization-to-an-annual-cycle">
+    Change organization to an annual cycle
   </a>
 </h2>
 
@@ -15232,7 +15233,8 @@ page and select <strong>Accept Terms and Purchase</strong> to confirm.</li>
         aria-role="tab"
         :class="selected !== 'Docker-subscription' && 'hidden'"
       >
-        <p>To change your organization's billing cycle:</p>
+        <p>Follow these steps to switch from a monthly to annual billing cycle for your
+organization's Docker subscription:</p>
 <ol>
 <li>Sign in to <a class="link" href="https://app.docker.com/" rel="noopener">Docker Home</a> and select
 your organization.</li>
@@ -15273,7 +15275,8 @@ more information, see
         aria-role="tab"
         :class="selected !== 'Legacy-Docker-subscription' && 'hidden'"
       >
-        <p>To change your organization's billing cycle:</p>
+        <p>Follow these steps to switch from a monthly to annual billing cycle for a
+legacy Docker organization subscription:</p>
 <ol>
 <li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
 <li>Select your organization, then select <strong>Billing</strong>.</li>
@@ -15344,13 +15347,13 @@ page and select <strong>Accept Terms and Purchase</strong> to confirm.</li>
       
   <ul class="pl-2">
         <li>
-          <a class="link lg:no-underline" href="#personal-account"
-            >Personal account</a
+          <a class="link lg:no-underline" href="#change-personal-account-to-an-annual-cycle"
+            >Change personal account to an annual cycle</a
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#organization"
-            >Organization</a
+          <a class="link lg:no-underline" href="#change-organization-to-an-annual-cycle"
+            >Change organization to an annual cycle</a
           >
         </li>
   </ul>
