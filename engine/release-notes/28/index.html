@@ -14947,6 +14947,14 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#2833"
+            >28.3.3</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#2832"
             >28.3.2</a
           >
@@ -14984,7 +14992,7 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#packaging-updates-3"
+          <a class="link lg:no-underline" href="#packaging-updates-4"
             >Packaging updates</a
           >
         </li>
@@ -15071,6 +15079,40 @@
   <a class="link" href="https://docker.qubitpi.org/reference/api/engine/version-history/">Engine API version history</a>.</li>
 </ul>
 
+<h2 class=" scroll-mt-20" id="2833">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#2833">
+    28.3.3
+  </a>
+</h2>
+
+<em class="text-gray-200 italic dark:text-gray-500">2025-07-29</em>
+
+<p>For a full list of pull requests and changes in this release, refer to the relevant GitHub milestones:</p>
+<ul>
+<li><a class="link" href="https://github.com/docker/cli/issues?q=is%3Aclosed&#43;milestone%3A28.3.3" rel="noopener">docker/cli, 28.3.3 milestone</a></li>
+<li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.3.3" rel="noopener">moby/moby, 28.3.3 milestone</a></li>
+</ul>
+
+<h3 class=" scroll-mt-20" id="security">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#security">
+    Security
+  </a>
+</h3>
+
+<p>This release fixes an issue where, after a firewalld reload, published container ports could be accessed directly from the local network, even when they were intended to be accessible only via a loopback address. <a class="link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-54388" rel="noopener">CVE-2025-54388</a> /  <a class="link" href="https://github.com/moby/moby/security/advisories/GHSA-x4rx-4gw3-53p4" rel="noopener">GHSA-x4rx-4gw3-53p4</a> / <a class="link" href="https://github.com/moby/moby/pull/50506" rel="noopener">moby/moby#50506</a>.</p>
+
+<h3 class=" scroll-mt-20" id="packaging-updates">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates">
+    Packaging updates
+  </a>
+</h3>
+
+<ul>
+<li>Update Buildx to <a class="link" href="https://github.com/docker/buildx/releases/tag/v0.26.1" rel="noopener">v0.26.1</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1230" rel="noopener">docker/docker-ce-packaging#1230</a></li>
+<li>Update Compose to <a class="link" href="https://github.com/docker/compose/releases/tag/v2.39.1" rel="noopener">v2.39.1</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1234" rel="noopener">docker/docker-ce-packaging#1234</a></li>
+<li>Update Docker Model CLI plugin to <a class="link" href="https://github.com/docker/model-cli/releases/tag/v0.1.36" rel="noopener">v0.1.36</a>. <a class="link" href="https://github.com/docker/docker-ce-packaging/pull/1233" rel="noopener">docker/docker-ce-packaging#1233</a></li>
+</ul>
+
 <h2 class=" scroll-mt-20" id="2832">
   <a class="text-black dark:text-white no-underline hover:underline" href="#2832">
     28.3.2
@@ -15098,8 +15140,8 @@
 <li>Warn when <code>DOCKER_AUTH_CONFIG</code> is set during <code>docker login</code> and <code>docker logout</code>. <a class="link" href="https://github.com/docker/cli/pull/6163" rel="noopener">docker/cli#6163</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates">
+<h3 class=" scroll-mt-20" id="packaging-updates-1">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-1">
     Packaging updates
   </a>
 </h3>
@@ -15124,8 +15166,8 @@
 <li><a class="link" href="https://github.com/moby/moby/issues?q=is%3Aclosed&#43;milestone%3A28.3.1" rel="noopener">moby/moby, 28.3.1 milestone</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-1">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-1">
+<h3 class=" scroll-mt-20" id="packaging-updates-2">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-2">
     Packaging updates
   </a>
 </h3>
@@ -15182,8 +15224,8 @@
 <li>containerd image store: Improve handling of errors returned by the token server during <code>docker pull/push</code>. <a class="link" href="https://github.com/moby/moby/pull/50176" rel="noopener">moby/moby#50176</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-2">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-2">
+<h3 class=" scroll-mt-20" id="packaging-updates-3">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-3">
     Packaging updates
   </a>
 </h3>
@@ -15284,8 +15326,8 @@
 <em class="text-gray-200 italic dark:text-gray-500">2025-05-29</em>
 
 
-<h2 class=" scroll-mt-20" id="packaging-updates-3">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-3">
+<h2 class=" scroll-mt-20" id="packaging-updates-4">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-4">
     Packaging updates
   </a>
 </h2>
@@ -15370,8 +15412,8 @@
 <li>containerd image store: Fix duplicate <code>PUT</code> requests when pushing a multi-platform image. <a class="link" href="https://github.com/moby/moby/pull/49949" rel="noopener">moby/moby#49949</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-4">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-4">
+<h3 class=" scroll-mt-20" id="packaging-updates-5">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-5">
     Packaging updates
   </a>
 </h3>
@@ -15475,8 +15517,8 @@
 <li>containerd image store: Fix a potential daemon crash when using <code>docker load</code> with archives containing zero-size tar headers. <a class="link" href="https://github.com/moby/moby/pull/49837" rel="noopener">moby/moby#49837</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-5">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-5">
+<h3 class=" scroll-mt-20" id="packaging-updates-6">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-6">
     Packaging updates
   </a>
 </h3>
@@ -15545,8 +15587,8 @@
 <li>containerd image store: Show pull progress for non-layer image blobs. <a class="link" href="https://github.com/moby/moby/pull/49746" rel="noopener">moby/moby#49746</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-6">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-6">
+<h3 class=" scroll-mt-20" id="packaging-updates-7">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-7">
     Packaging updates
   </a>
 </h3>
@@ -15663,8 +15705,8 @@
 <li>Fix <code>docker run</code> truncating the <code>STDOUT</code>/<code>STDERR</code> prematurely when the container exits before the data is consumed. <a class="link" href="https://github.com/docker/cli/pull/5957" rel="noopener">docker/cli#5957</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-7">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-7">
+<h3 class=" scroll-mt-20" id="packaging-updates-8">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-8">
     Packaging updates
   </a>
 </h3>
@@ -15709,8 +15751,8 @@
 <li>containerd image store: Improve performance of <code>docker ps</code> when running a large number of containers. <a class="link" href="https://github.com/moby/moby/pull/49365" rel="noopener">moby/moby#49365</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-8">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-8">
+<h3 class=" scroll-mt-20" id="packaging-updates-9">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-9">
     Packaging updates
   </a>
 </h3>
@@ -15823,8 +15865,8 @@
 <li>Fix compilation on i386 <a class="link" href="https://github.com/moby/moby/pull/49526" rel="noopener">moby/moby#49526</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-9">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-9">
+<h3 class=" scroll-mt-20" id="packaging-updates-10">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-10">
     Packaging updates
   </a>
 </h3>
@@ -16043,8 +16085,8 @@
 <li>Faster connection to bridge networks, in most cases. <a class="link" href="https://github.com/moby/moby/pull/49302" rel="noopener">moby/moby#49302</a></li>
 </ul>
 
-<h3 class=" scroll-mt-20" id="packaging-updates-10">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-10">
+<h3 class=" scroll-mt-20" id="packaging-updates-11">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#packaging-updates-11">
     Packaging updates
   </a>
 </h3>
@@ -16268,6 +16310,14 @@
       
   <ul class="pl-2">
         <li>
+          <a class="link lg:no-underline" href="#2833"
+            >28.3.3</a
+          >
+        </li>
+        
+  <ul class="pl-2">
+  </ul>
+        <li>
           <a class="link lg:no-underline" href="#2832"
             >28.3.2</a
           >
@@ -16305,7 +16355,7 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#packaging-updates-3"
+          <a class="link lg:no-underline" href="#packaging-updates-4"
             >Packaging updates</a
           >
         </li>

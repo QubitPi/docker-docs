@@ -14990,8 +14990,8 @@ apply a custom <a class="link" href="https://docker.qubitpi.org/build/buildkit/t
 
     
   
-  <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#config"><code>--config</code> flag</a> to
-the <code>docker buildx create</code> command.</p>
+  <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#buildkitd-config"><code>--buildkitd-config</code> flag</a>
+to the <code>docker buildx create</code> command.</p>
 
 <h2 class=" scroll-mt-20" id="registry-mirror">
   <a class="text-black dark:text-white no-underline hover:underline" href="#registry-mirror">
@@ -15081,7 +15081,7 @@ message that shows when a mirror is being used.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWJvb3RzdHJhcCBcCiAgLS1uYW1lIG15YnVpbGRlciBcCiAgLS1kcml2ZXIgZG9ja2VyLWNvbnRhaW5lciBcCiAgLS1jb25maWcgL2V0Yy9idWlsZGtpdGQudG9tbA==', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWJvb3RzdHJhcCBcCiAgLS1uYW1lIG15YnVpbGRlciBcCiAgLS1kcml2ZXIgZG9ja2VyLWNvbnRhaW5lciBcCiAgLS1idWlsZGtpdGQtY29uZmlnIC9ldGMvYnVpbGRraXRkLnRvbWw=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15103,7 +15103,7 @@ message that shows when a mirror is being used.</p>
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker buildx create --use --bootstrap <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name mybuilder \
 </span></span></span><span class="line"><span class="cl"><span class="go">  --driver docker-container \
-</span></span></span><span class="line"><span class="cl"><span class="go">  --config /etc/buildkitd.toml
+</span></span></span><span class="line"><span class="cl"><span class="go">  --buildkitd-config /etc/buildkitd.toml
 </span></span></span></code></pre></div>
       
     </div>
@@ -15312,7 +15312,7 @@ the certificates in the specified location (<code>/etc/certs</code>).</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWJvb3RzdHJhcCBcCiAgLS1uYW1lIG15YnVpbGRlciBcCiAgLS1kcml2ZXIgZG9ja2VyLWNvbnRhaW5lciBcCiAgLS1jb25maWcgL2V0Yy9idWlsZGtpdGQudG9tbA==', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSAtLWJvb3RzdHJhcCBcCiAgLS1uYW1lIG15YnVpbGRlciBcCiAgLS1kcml2ZXIgZG9ja2VyLWNvbnRhaW5lciBcCiAgLS1idWlsZGtpdGQtY29uZmlnIC9ldGMvYnVpbGRraXRkLnRvbWw=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15334,7 +15334,7 @@ the certificates in the specified location (<code>/etc/certs</code>).</p>
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker buildx create --use --bootstrap <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name mybuilder \
 </span></span></span><span class="line"><span class="cl"><span class="go">  --driver docker-container \
-</span></span></span><span class="line"><span class="cl"><span class="go">  --config /etc/buildkitd.toml
+</span></span></span><span class="line"><span class="cl"><span class="go">  --buildkitd-config /etc/buildkitd.toml
 </span></span></span></code></pre></div>
       
     </div>
@@ -15641,7 +15641,7 @@ for low-powered machines, using a <a class="link" href="https://docker.qubitpi.o
 while creating a builder with the 
     
   
-  <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#config"><code>--config</code> flags</a>.</p>
+  <a class="link" href="https://docker.qubitpi.org/reference/cli/docker/buildx/create/#buildkitd-config"><code>--buildkitd-config</code> flag</a>.</p>
 <div
   data-pagefind-ignore
   x-data
@@ -15697,7 +15697,7 @@ that will use this BuildKit configuration to limit parallelism.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSBcCiAgLS1uYW1lIG15YnVpbGRlciBcCiAgLS1kcml2ZXIgZG9ja2VyLWNvbnRhaW5lciBcCiAgLS1jb25maWcgL2V0Yy9idWlsZGtpdGQudG9tbA==', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgYnVpbGR4IGNyZWF0ZSAtLXVzZSBcCiAgLS1uYW1lIG15YnVpbGRlciBcCiAgLS1kcml2ZXIgZG9ja2VyLWNvbnRhaW5lciBcCiAgLS1idWlsZGtpdGQtY29uZmlnIC9ldGMvYnVpbGRraXRkLnRvbWw=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15719,7 +15719,7 @@ that will use this BuildKit configuration to limit parallelism.</p>
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker buildx create --use <span class="se">\
 </span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --name mybuilder \
 </span></span></span><span class="line"><span class="cl"><span class="go">  --driver docker-container \
-</span></span></span><span class="line"><span class="cl"><span class="go">  --config /etc/buildkitd.toml
+</span></span></span><span class="line"><span class="cl"><span class="go">  --buildkitd-config /etc/buildkitd.toml
 </span></span></span></code></pre></div>
       
     </div>

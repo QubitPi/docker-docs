@@ -14980,11 +14980,6 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#exceptions-and-limitations"
-            >Exceptions and limitations</a
-          >
-        </li>
-        <li>
           <a class="link lg:no-underline" href="#relative-paths"
             >Relative paths</a
           >
@@ -15407,23 +15402,6 @@ configuration:</p>
   </div>
 </div>
 
-<h2 class=" scroll-mt-20" id="exceptions-and-limitations">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#exceptions-and-limitations">
-    Exceptions and limitations
-  </a>
-</h2>
-
-<p><code>volumes_from</code> and <code>depends_on</code> are never shared between services using
-<code>extends</code>. These exceptions exist to avoid implicit dependencies; you always
-define <code>volumes_from</code> locally. This ensures dependencies between services are
-clearly visible when reading the current file. Defining these locally also
-ensures that changes to the referenced file don't break anything.</p>
-<p><code>extends</code> is useful if you only need a single service to be shared and you are
-familiar with the file you're extending to, so you can tweak the
-configuration. But this isn’t an acceptable solution when you want to re-use
-someone else's unfamiliar configurations and you don’t know about its own
-dependencies.</p>
-
 <h2 class=" scroll-mt-20" id="relative-paths">
   <a class="text-black dark:text-white no-underline hover:underline" href="#relative-paths">
     Relative paths
@@ -15652,11 +15630,6 @@ which inspects the actual model:</p>
         <li>
           <a class="link lg:no-underline" href="#additional-example"
             >Additional example</a
-          >
-        </li>
-        <li>
-          <a class="link lg:no-underline" href="#exceptions-and-limitations"
-            >Exceptions and limitations</a
           >
         </li>
         <li>
