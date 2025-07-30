@@ -1,16 +1,23 @@
 Docker accounts
 
 
-You can create a Docker account to secure a Docker ID, which is a username for your account that lets you access Docker products. You can use your Docker account to sign in to Docker products like Docker Hub, Docker Desktop, or Docker Scout. You can centrally manage your [Docker account settings](https://app.docker.com/settings), as well as account security features, in [Docker Home](https://app.docker.com).
+This section covers individual Docker accounts and Docker IDs. It does
+not cover organizations, companies, or administrator roles.
 
-In this section, explore how you can create, manage, or update your account.
+A Docker account is required to:
+- Create a Docker ID
+- Access Docker products and services like Docker Hub and Docker Desktop
+- Receive organization invitations
+- Manage your personal settings and security features
 
 {{< grid >}}
 
 
 
-- [Create an account](https://docs.docker.com/accounts/create-account/)
+- [FAQs on Docker accounts](https://docs.docker.com/accounts/general-faqs/)
 
-- [Manage an account](https://docs.docker.com/accounts/manage-account/)
+- [Create a Docker account](https://docs.docker.com/accounts/create-account/)
 
-- [Deactivate an account](https://docs.docker.com/accounts/deactivate-user-account/)
+- [Manage a Docker account](https://docs.docker.com/accounts/manage-account/)
+
+- [Deactivate a Docker account](https://docs.docker.com/accounts/deactivate-user-account/)

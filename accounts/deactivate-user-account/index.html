@@ -13,7 +13,7 @@
 <meta name="description" content="Learn how to deactivate a Docker user account." />
 <meta
   name="keywords"
-  content="Docker, Hub, delete, deactivate, account, account, management"
+  content="Docker, Hub, delete, deactivate, account, account, management, delete, Docker, account, close, Docker, account, disable, Docker, account"
 />
 <link rel="canonical" href="https://docker.qubitpi.org/accounts/deactivate-user-account/" />
 
@@ -86,8 +86,8 @@
         
           <link
             rel="stylesheet"
-            href="/css/style.f300785cc7c4e6018202d685d0b8fd2f2a4a6f138aa8246cc735ae1bb52fe66f.css"
-            integrity="sha256-8wB4XMfE5gGCAtaF0Lj9LypKbxOKqCRsxzWuG7Uv5m8="
+            href="/css/style.53004875f19459bf63568e76519e85721f1498f4ad79d8d587ce5c8a0ccd90b7.css"
+            integrity="sha256-UwBIdfGUWb9jVo52UZ6Fch8UmPStedjVh85cigzNkLc="
             crossorigin="anonymous"
           />
         
@@ -12715,6 +12715,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/accounts/general-faqs/"
+        title="Accounts"
+      >
+        
+  Accounts
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/accounts/create-account/"
         title="Create an account"
       >
@@ -13757,22 +13773,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/admin/faqs/general-faqs/"
-        title="Accounts"
-      >
-        
-  Accounts
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/admin/faqs/organization-faqs/"
         title="Organization"
       >
@@ -14797,7 +14797,7 @@
 </nav>
 
     <div class="flex items-start justify-between">
-      <h1 data-pagefind-weight="10">Deactivate an account</h1>
+      <h1 data-pagefind-weight="10">Deactivate a Docker account</h1>
       <div class="md-dropdown ml-auto hidden lg:block">
         <details id="markdownDropdown" class="ml-3 group relative z-10 inline-block" data-heap-id="markdown-dropdown">
     <summary
@@ -14957,7 +14957,10 @@
 
       <hr />
     </div>
-    <p>You can deactivate an account at any time. This section describes the prerequisites and steps to deactivate a user account. For information on deactivating an organization, see <a class="link" href="https://docker.qubitpi.org/admin/organization/deactivate-account/">Deactivating an organization</a>.</p>
+    <p>Learn how to deactivate an individual Docker account, including prerequisites required
+for deactivation.</p>
+<p>For information on deactivating an organization,
+see <a class="link" href="https://docker.qubitpi.org/admin/organization/deactivate-account/">Deactivating an organization</a>.</p>
 
 
   
@@ -14981,7 +14984,8 @@
       </span>
     </div>
     <div class="admonition-content">
-      <p>All Docker products and services that use your Docker account will be inaccessible after deactivating your account.</p>
+      <p>All Docker products and services that use your Docker account are
+inaccessible after deactivating your account.</p>
     </div>
   </blockquote>
 
@@ -14994,9 +14998,8 @@
 
 <p>Before deactivating your Docker account, ensure you meet the following requirements:</p>
 <ul>
-<li>
-<p>For owners, you must leave your organization or company before deactivating your Docker account.
-To do this:</p>
+<li>If you are an organization or company owner, you must leave your organization
+or company before deactivating your Docker account:
 <ol>
 <li>Sign in to <a class="link" href="https://app.docker.com/admin" rel="noopener">Docker Home</a> and choose
 your organization.</li>
@@ -15004,18 +15007,14 @@ your organization.</li>
 <li>Select the <strong>Actions</strong> menu and then select <strong>Leave organization</strong>.</li>
 </ol>
 </li>
-<li>
-<p>If you are the sole owner of an organization, you must assign the owner role to another member of the organization and then remove yourself from the organization, or deactivate the organization. Similarly, if you are the sole owner of a company, either add someone else as a company owner and then remove yourself, or deactivate the company.</p>
-</li>
-<li>
-<p>If you have an active Docker subscription, <a class="link" href="https://docker.qubitpi.org/subscription/change/">downgrade it to a Docker Personal subscription</a>.</p>
-</li>
-<li>
-<p>Download any images and tags you want to keep. Use <code>docker pull -a &lt;image&gt;:&lt;tag&gt;</code>.</p>
-</li>
-<li>
-<p>Unlink your <a class="link" href="https://docker.qubitpi.org/docker-hub/repos/manage/builds/link-source/#unlink-a-github-user-account">GitHub and Bitbucket accounts</a>.</p>
-</li>
+<li>If you are the sole owner of an organization, you must assign the owner role
+to another member of the organization and then remove yourself from the
+organization, or deactivate the organization. Similarly, if you are the sole
+owner of a company, either add someone else as a company owner and then remove
+yourself, or deactivate the company.</li>
+<li>If you have an active Docker subscription, <a class="link" href="https://docker.qubitpi.org/subscription/change/">downgrade it to a Docker Personal subscription</a>.</li>
+<li>Download any images and tags you want to keep. Use <code>docker pull -a &lt;image&gt;:&lt;tag&gt;</code>.</li>
+<li>Unlink your <a class="link" href="https://docker.qubitpi.org/docker-hub/repos/manage/builds/link-source/#unlink-a-github-user-account">GitHub and account</a>.</li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="deactivate">
@@ -15048,7 +15047,8 @@ your organization.</li>
       </span>
     </div>
     <div class="admonition-content">
-      <p>This cannot be undone. Be sure you've gathered all the data you need from your account before deactivating it.</p>
+      <p>Deactivating your account is permanent and can't be undone. Make sure
+to back up any important data.</p>
     </div>
   </blockquote>
 
@@ -15057,8 +15057,7 @@ your organization.</li>
 <li>Select your avatar to open the drop-down menu.</li>
 <li>Select <strong>Account settings</strong>.</li>
 <li>Select <strong>Deactivate</strong>.</li>
-<li>Select <strong>Deactivate account</strong>.</li>
-<li>To confirm, select <strong>Deactivate account</strong>.</li>
+<li>Select <strong>Deactivate account</strong>, then select again to confirm.</li>
 </ol>
 
   </article>
