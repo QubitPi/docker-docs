@@ -14967,8 +14967,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#validate-fips-related-tests-using-attestations"
-            >Validate FIPS-related tests using attestations</a
+          <a class="link lg:no-underline" href="#view-the-fips-attestation"
+            >View the FIPS attestation</a
           >
         </li>
   </ul>
@@ -15074,17 +15074,15 @@ in the Docker Hardened Images catalog.</p>
 compliance needs. Image variants that include FIPS support will have a tag
 ending with <code>-fips</code>, such as <code>3.13-fips</code>.</p>
 
-<h2 class=" scroll-mt-20" id="validate-fips-related-tests-using-attestations">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#validate-fips-related-tests-using-attestations">
-    Validate FIPS-related tests using attestations
+<h2 class=" scroll-mt-20" id="view-the-fips-attestation">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#view-the-fips-attestation">
+    View the FIPS attestation
   </a>
 </h2>
 
-<p>Docker Hardened Images include a signed <a class="link" href="https://docker.qubitpi.org/dhi/core-concepts/attestations/">test
-attestation</a> that documents the results of
-automated image validation. For FIPS variants, this includes test cases that
-verify whether the image uses FIPS-validated cryptographic modules.</p>
-<p>You can retrieve and inspect this attestation using the Docker Scout CLI:</p>
+<p>The FIPS variants of Docker Hardened Images contain a FIPS attestation that
+lists the actual cryptographic modules included in the image.</p>
+<p>You can retrieve and inspect the FIPS attestation using the Docker Scout CLI:</p>
 <div
   data-pagefind-ignore
   x-data
@@ -15097,7 +15095,7 @@ verify whether the image uses FIPS-validated cryptographic modules.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCBcCiAgLS1wcmVkaWNhdGUtdHlwZSBodHRwczovL3Njb3V0LmRvY2tlci5jb20vdGVzdHMvdjAuMSBcCiAgLS1wcmVkaWNhdGUgXAogIDx5b3VyLW5hbWVzcGFjZT4vZGhpLTxpbWFnZT46PHRhZz4gLS1wbGF0Zm9ybSA8cGxhdGZvcm0&#43;', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCBcCiAgLS1wcmVkaWNhdGUtdHlwZSBodHRwczovL2RvY2tlci5jb20vZGhpL2ZpcHMvdjAuMSBcCiAgLS1wcmVkaWNhdGUgXAogIDx5b3VyLW5hbWVzcGFjZT4vZGhpLTxpbWFnZT46PHRhZz4=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15117,9 +15115,9 @@ verify whether the image uses FIPS-validated cryptographic modules.</p>
       </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker scout attest get <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --predicate-type https://scout.docker.com/tests/v0.1 \
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --predicate-type https://docker.com/dhi/fips/v0.1 \
 </span></span></span><span class="line"><span class="cl"><span class="go">  --predicate \
-</span></span></span><span class="line"><span class="cl"><span class="go">  &lt;your-namespace&gt;/dhi-&lt;image&gt;:&lt;tag&gt; --platform &lt;platform&gt;
+</span></span></span><span class="line"><span class="cl"><span class="go">  &lt;your-namespace&gt;/dhi-&lt;image&gt;:&lt;tag&gt;
 </span></span></span></code></pre></div>
       
     </div>
@@ -15138,7 +15136,7 @@ verify whether the image uses FIPS-validated cryptographic modules.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCBcCiAgLS1wcmVkaWNhdGUtdHlwZSBodHRwczovL3Njb3V0LmRvY2tlci5jb20vdGVzdHMvdjAuMSBcCiAgLS1wcmVkaWNhdGUgXAogIGRvY3MvZGhpLXB5dGhvbjozLjEzLWZpcHMgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NA==', copying: false }"
+        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCBcCiAgLS1wcmVkaWNhdGUtdHlwZSBodHRwczovL2RvY2tlci5jb20vZGhpL2ZpcHMvdjAuMSBcCiAgLS1wcmVkaWNhdGUgXAogIGRvY3MvZGhpLXB5dGhvbjozLjEzLWZpcHM=', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15158,18 +15156,16 @@ verify whether the image uses FIPS-validated cryptographic modules.</p>
       </button>
       
         <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker scout attest get <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --predicate-type https://scout.docker.com/tests/v0.1 \
+</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --predicate-type https://docker.com/dhi/fips/v0.1 \
 </span></span></span><span class="line"><span class="cl"><span class="go">  --predicate \
-</span></span></span><span class="line"><span class="cl"><span class="go">  docs/dhi-python:3.13-fips --platform linux/amd64
+</span></span></span><span class="line"><span class="cl"><span class="go">  docs/dhi-python:3.13-fips
 </span></span></span></code></pre></div>
       
     </div>
   </div>
 </div>
-<p>The output is a structured JSON report. Individual test outputs are
-base64-encoded under fields like <code>stdout</code>. You can decode them to review the raw
-test output.</p>
-<p>To decode and view test results:</p>
+<p>The attestation output is a JSON array describing the cryptographic modules
+included in the image and their compliance status. For example:</p>
 <div
   data-pagefind-ignore
   x-data
@@ -15182,7 +15178,7 @@ test output.</p>
     
     <div class="syntax-light dark:syntax-dark not-prose w-full">
       <button
-        x-data="{ code: 'JCBkb2NrZXIgc2NvdXQgYXR0ZXN0IGdldCBcCiAgLS1wcmVkaWNhdGUtdHlwZSBodHRwczovL3Njb3V0LmRvY2tlci5jb20vdGVzdHMvdjAuMSBcCiAgLS1wcmVkaWNhdGUgXAogIGRvY3MvZGhpLXB5dGhvbjozLjEzLWZpcHMgLS1wbGF0Zm9ybSBsaW51eC9hbWQ2NCBcCiAgfCBqcSAtciAnLnJlc3VsdHMudGVzdHNbXS5leHRyYS5zdGRvdXQnIFwKICB8IGJhc2U2NCAtZA==', copying: false }"
+        x-data="{ code: 'WwogIHsKICAgICJjZXJ0aWZpY2F0aW9uIjogIkNNVlAgIzQ5ODUiLAogICAgImNlcnRpZmljYXRpb25VcmwiOiAiaHR0cHM6Ly9jc3JjLm5pc3QuZ292L3Byb2plY3RzL2NyeXB0b2dyYXBoaWMtbW9kdWxlLXZhbGlkYXRpb24tcHJvZ3JhbS9jZXJ0aWZpY2F0ZS80OTg1IiwKICAgICJuYW1lIjogIk9wZW5TU0wgRklQUyBQcm92aWRlciIsCiAgICAicGFja2FnZSI6ICJwa2c6ZGhpL29wZW5zc2wtcHJvdmlkZXItZmlwc0AzLjEuMiIsCiAgICAic3RhbmRhcmQiOiAiRklQUyAxNDAtMyIsCiAgICAic3RhdHVzIjogImFjdGl2ZSIsCiAgICAic3Vuc2V0RGF0ZSI6ICIyMDMwLTAzLTEwIiwKICAgICJ2ZXJzaW9uIjogIjMuMS4yIgogIH0KXQ==', copying: false }"
         class="
           top-1
          absolute right-2 z-10 text-gray-300 dark:text-gray-500"
@@ -15201,13 +15197,18 @@ test output.</p>
         >
       </button>
       
-        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> docker scout attest get <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span><span class="go">  --predicate-type https://scout.docker.com/tests/v0.1 \
-</span></span></span><span class="line"><span class="cl"><span class="go">  --predicate \
-</span></span></span><span class="line"><span class="cl"><span class="go">  docs/dhi-python:3.13-fips --platform linux/amd64 \
-</span></span></span><span class="line"><span class="cl"><span class="go">  | jq -r &#39;.results.tests[].extra.stdout&#39; \
-</span></span></span><span class="line"><span class="cl"><span class="go">  | base64 -d
-</span></span></span></code></pre></div>
+        <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;certification&#34;</span><span class="p">:</span> <span class="s2">&#34;CMVP #4985&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;certificationUrl&#34;</span><span class="p">:</span> <span class="s2">&#34;https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4985&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;OpenSSL FIPS Provider&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;package&#34;</span><span class="p">:</span> <span class="s2">&#34;pkg:dhi/openssl-provider-fips@3.1.2&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;standard&#34;</span><span class="p">:</span> <span class="s2">&#34;FIPS 140-3&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;status&#34;</span><span class="p">:</span> <span class="s2">&#34;active&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;sunsetDate&#34;</span><span class="p">:</span> <span class="s2">&#34;2030-03-10&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;version&#34;</span><span class="p">:</span> <span class="s2">&#34;3.1.2&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">]</span></span></span></code></pre></div>
       
     </div>
   </div>
@@ -15289,8 +15290,8 @@ test output.</p>
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#validate-fips-related-tests-using-attestations"
-            >Validate FIPS-related tests using attestations</a
+          <a class="link lg:no-underline" href="#view-the-fips-attestation"
+            >View the FIPS attestation</a
           >
         </li>
   </ul>

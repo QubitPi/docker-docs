@@ -15054,7 +15054,9 @@ tooling or security platforms.</p>
 <p>While every DHI variant includes a set of attestations, the attestations may
 vary based on the image variant. For example, some images may include a STIG
 scan attestation. The following table is a comprehensive list of all
-attestations that may be included with a DHI:</p>
+attestations that may be included with a DHI. To see which attestations are
+available for a specific image variant, you can <a class="link" href="https://docker.qubitpi.org/dhi/how-to/explore/#view-image-variant-details">view the image variant
+details</a> in Docker Hub.</p>
 <div class="overflow-x-auto">
   <table
   >
@@ -15180,6 +15182,14 @@ attestations that may be included with a DHI:</p>
               class="p-2">An SBOM in <a class="link" href="https://spdx.dev/" rel="noopener">SPDX</a> format, widely adopted in open-source ecosystems.</td>
             <td
               class="p-2"><code>https://spdx.dev/Document</code></td>
+        </tr>
+        <tr>
+            <td
+              class="p-2">FIPS compliance</td>
+            <td
+              class="p-2">An attestation that verifies the image uses FIPS 140-validated cryptographic modules.</td>
+            <td
+              class="p-2"><code>https://docker.com/dhi/fips/v0.1</code></td>
         </tr>
     </tbody>
   </table>
