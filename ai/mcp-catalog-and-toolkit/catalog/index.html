@@ -6693,7 +6693,7 @@
             href="https://docker.qubitpi.org/ai/gordon/mcp/"
           >
             
-  MCP
+  Model Context Protocol (MCP)
 
           </a>
       </div>
@@ -6729,10 +6729,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/ai/gordon/mcp/built-in-tools/"
-        title="Built-in tools"
+        title="Built-in tools in Gordon"
       >
         
-  Built-in tools
+  Built-in tools in Gordon
 
       </a>
     </li>
@@ -6745,10 +6745,10 @@
         
         class="block w-full truncate"
         href="https://docker.qubitpi.org/ai/gordon/mcp/yaml/"
-        title="YAML configuration"
+        title="Configure MCP servers with YAML"
       >
         
-  YAML configuration
+  Configure MCP servers with YAML
 
       </a>
     </li>
@@ -14983,17 +14983,23 @@
 
       <hr />
     </div>
-    <p>The <a class="link" href="https://hub.docker.com/mcp" rel="noopener">Docker MCP Catalog</a> is a centralized, trusted registry for discovering, sharing, and running MCP-compatible tools. Seamlessly integrated into Docker Hub, it offers verified, versioned, and curated MCP servers packaged as Docker images. The catalog is also available in Docker Desktop.</p>
+    <p>The <a class="link" href="https://hub.docker.com/mcp" rel="noopener">Docker MCP Catalog</a> is a centralized, trusted
+registry for discovering, sharing, and running MCP-compatible tools. Integrated
+with Docker Hub, it offers verified, versioned, and curated MCP servers
+packaged as Docker images. The catalog is also available in Docker Desktop.</p>
 <p>The catalog solves common MCP server challenges:</p>
 <ul>
-<li>Environment conflicts: Tools often need specific runtimes that may clash with existing setups.</li>
-<li>Lack of isolation: Traditional setups risk exposing the host system.</li>
-<li>Setup complexity: Manual installation and configuration result in slow adoption.</li>
-<li>Inconsistency across platforms: Tools may behave unpredictably on different OSes.</li>
+<li>Environment conflicts. Tools often need specific runtimes that might clash
+with existing setups.</li>
+<li>Lack of isolation. Traditional setups risk exposing the host system.</li>
+<li>Setup complexity. Manual installation and configuration slow adoption.</li>
+<li>Inconsistency across platforms. Tools might behave unpredictably on different
+operating systems.</li>
 </ul>
-<p>With Docker, each MCP server runs as a self-contained container so it is
-portable, isolated, and consistent. You can launch tools instantly using Docker
-CLI or Docker Desktop, without worrying about dependencies or compatibility.</p>
+<p>With Docker, each MCP server runs as a self-contained container. This makes it
+portable, isolated, and consistent. You can launch tools instantly using the
+Docker CLI or Docker Desktop, without worrying about dependencies or
+compatibility.</p>
 
 <h2 class=" scroll-mt-20" id="key-features">
   <a class="text-black dark:text-white no-underline hover:underline" href="#key-features">
@@ -15002,10 +15008,10 @@ CLI or Docker Desktop, without worrying about dependencies or compatibility.</p>
 </h2>
 
 <ul>
-<li>Over 100 verified MCP servers in one place</li>
-<li>Publisher verification and versioned releases</li>
-<li>Pull-based distribution using Docker's infrastructure</li>
-<li>Tools provided by partners such as New Relic, Stripe, Grafana, and more</li>
+<li>Over 100 verified MCP servers in one place.</li>
+<li>Publisher verification and versioned releases.</li>
+<li>Pull-based distribution using Docker infrastructure.</li>
+<li>Tools provided by partners such as New Relic, Stripe, Grafana, and more.</li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="how-it-works">
@@ -15014,18 +15020,19 @@ CLI or Docker Desktop, without worrying about dependencies or compatibility.</p>
   </a>
 </h2>
 
-<p>Each tool in the MCP Catalog is packaged as a Docker image with metadata:</p>
+<p>Each tool in the MCP Catalog is packaged as a Docker image with metadata.</p>
 <ul>
-<li>Discover tools via Docker Hub under the <code>mcp/</code> namespace.</li>
-<li>Connect tools to their preferred agents with simple configuration through the <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/toolkit/">MCP Toolkit</a>.</li>
+<li>Discover tools on Docker Hub under the <code>mcp/</code> namespace.</li>
+<li>Connect tools to your preferred agents with simple configuration through the
+<a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/toolkit/">MCP Toolkit</a>.</li>
 <li>Pull and run tools using Docker Desktop or the CLI.</li>
 </ul>
 <p>Each catalog entry displays:</p>
 <ul>
-<li>Tool description and metadata</li>
-<li>Version history</li>
-<li>List of tools provided by the MCP server</li>
-<li>Example configuration for agent integration</li>
+<li>Tool description and metadata.</li>
+<li>Version history.</li>
+<li>List of tools provided by the MCP server.</li>
+<li>Example configuration for agent integration.</li>
 </ul>
 
 <h2 class=" scroll-mt-20" id="use-an-mcp-server-from-the-catalog">
@@ -15034,7 +15041,7 @@ CLI or Docker Desktop, without worrying about dependencies or compatibility.</p>
   </a>
 </h2>
 
-<p>To use an MCP server from the catalog, see <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/toolkit/">MCP toolkit</a>.</p>
+<p>To use an MCP server from the catalog, see <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/toolkit/">MCP Toolkit</a>.</p>
 
 <h2 class=" scroll-mt-20" id="contribute-an-mcp-server-to-the-catalog">
   <a class="text-black dark:text-white no-underline hover:underline" href="#contribute-an-mcp-server-to-the-catalog">
@@ -15042,13 +15049,16 @@ CLI or Docker Desktop, without worrying about dependencies or compatibility.</p>
   </a>
 </h2>
 
-<p>The MCP server registry is available at <a class="link" href="https://github.com/docker/mcp-registry" rel="noopener">https://github.com/docker/mcp-registry</a>. To submit an MCP server,
-follow the <a class="link" href="https://github.com/docker/mcp-registry/blob/main/CONTRIBUTING.md" rel="noopener">contributing guidelines</a>.</p>
-<p>When your pull request is reviewed and approved, your MCP server is available in 24 hours on:</p>
+<p>The MCP server registry is available at
+<a class="link" href="https://github.com/docker/mcp-registry" rel="noopener">https://github.com/docker/mcp-registry</a>. To submit an MCP server, follow the
+<a class="link" href="https://github.com/docker/mcp-registry/blob/main/CONTRIBUTING.md" rel="noopener">contributing guidelines</a>.</p>
+<p>When your pull request is reviewed and approved, your MCP server is available
+within 24 hours on:</p>
 <ul>
-<li>Docker Desktop's <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/toolkit/">MCP Toolkit feature</a></li>
-<li>The <a class="link" href="https://hub.docker.com/mcp" rel="noopener">Docker MCP catalog</a></li>
-<li>The <a class="link" href="https://hub.docker.com/u/mcp" rel="noopener">Docker Hub</a> <code>mcp</code> namespace (for MCP servers built by Docker)</li>
+<li>Docker Desktop's <a class="link" href="https://docker.qubitpi.org/ai/mcp-catalog-and-toolkit/toolkit/">MCP Toolkit feature</a>.</li>
+<li>The <a class="link" href="https://hub.docker.com/mcp" rel="noopener">Docker MCP Catalog</a>.</li>
+<li>The <a class="link" href="https://hub.docker.com/u/mcp" rel="noopener">Docker Hub</a> <code>mcp</code> namespace (for MCP
+servers built by Docker).</li>
 </ul>
 
   </article>
