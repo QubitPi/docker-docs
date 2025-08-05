@@ -34,6 +34,8 @@ confidently through exploration, implementation, and ongoing maintenance.
 
 - [Mirror a Docker Hardened Image repository](https://docs.docker.com/dhi/how-to/mirror/)
 
+- [Customize a Docker Hardened Image](https://docs.docker.com/dhi/how-to/customize/)
+
 - [Use a Docker Hardened Image](https://docs.docker.com/dhi/how-to/use/)
 
 - [Verify a Docker Hardened Image](https://docs.docker.com/dhi/how-to/verify/)

@@ -111,3 +111,5 @@ know.
 - [Using Docker with Zscaler](https://docs.docker.com/guides/zscaler/)
 
 - [GenAI video transcription and chat](https://docs.docker.com/guides/genai-video-bot/)
+
+- [Vue.js language-specific guide](https://docs.docker.com/guides/vuejs/)

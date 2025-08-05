@@ -14,7 +14,7 @@ DHIs production-ready.
 >}}
 
 
-- [Flexible, repository-based pricing](https://docs.docker.com/dhi/features/flexible/)
+- [Flexibility through pricing and customization](https://docs.docker.com/dhi/features/flexible/)
 
 - [Continuous patching and secure maintenance](https://docs.docker.com/dhi/features/patching/)
 
