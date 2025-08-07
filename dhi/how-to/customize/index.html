@@ -8665,6 +8665,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/how-to/manage/"
+        title="Manage images"
+      >
+        
+  Manage images
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/how-to/scan/"
         title="Scan an image"
       >
@@ -15011,13 +15027,13 @@ repository can create a customized image.</p>
 repository.</p>
 </li>
 <li>
-<p>Select the mirrored DHI repository.</p>
+<p>Select <strong>DHI</strong> &gt; <strong>Management</strong>.</p>
 </li>
 <li>
-<p>Select the <strong>Customizations</strong> tab.</p>
+<p>For the mirrored DHI repository you want to customize, select the menu icon in the far right column.</p>
 </li>
 <li>
-<p>Select <strong>Create customization</strong>.</p>
+<p>Select <strong>Customize</strong>.</p>
 <p>At this point, the on-screen instructions will guide you through the
 customization process. You can continue with the following steps for more
 details.</p>
@@ -15123,14 +15139,33 @@ and your team members can pull it like any other image.</p>
 
 <p>To edit or delete a Docker Hardened Image customization, follow these steps:</p>
 <ol>
-<li>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</li>
-<li>Select <strong>My Hub</strong>.</li>
-<li>In the namespace drop-down, select your organization that has a mirrored DHI.</li>
-<li>Select the mirrored DHI repository.</li>
-<li>Select the <strong>Customizations</strong> tab.</li>
-<li>Select <strong>Edit</strong> to edit the customization, or select the trashcan icon to
-delete the customization.</li>
-<li>Follow the on-screen instructions to complete the edit or deletion.</li>
+<li>
+<p>Sign in to <a class="link" href="https://hub.docker.com" rel="noopener">Docker Hub</a>.</p>
+</li>
+<li>
+<p>Select <strong>My Hub</strong>.</p>
+</li>
+<li>
+<p>In the namespace drop-down, select your organization that has a mirrored DHI.</p>
+</li>
+<li>
+<p>Select <strong>DHI</strong> &gt; <strong>Management</strong>.</p>
+</li>
+<li>
+<p>Select <strong>Customizations</strong>.</p>
+</li>
+<li>
+<p>For the customized DHI repository you want to manage, select the menu icon in the far right column.
+From here, you can:</p>
+<ul>
+<li><strong>Edit</strong>: Edit the customized image.</li>
+<li><strong>Create new</strong>: Create a new customized image based on the source repository.</li>
+<li><strong>Delete</strong>: Delete the customized image.</li>
+</ul>
+</li>
+<li>
+<p>Follow the on-screen instructions to complete the edit or deletion.</p>
+</li>
 </ol>
 
 <h2 class=" scroll-mt-20" id="create-an-oci-artifact-image">

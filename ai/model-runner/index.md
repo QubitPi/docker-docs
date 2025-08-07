@@ -26,6 +26,7 @@ with AI models locally.
 - Package GGUF files as OCI Artifacts and publish them to any Container Registry
 - Run and interact with AI models directly from the command line or from the Docker Desktop GUI
 - Manage local models and display logs
+- Display prompts and responses details
 
 ## Requirements
 
@@ -204,6 +205,7 @@ Use the [`docker model run` command](/reference/cli/docker/model/run/).
 
 ## Troubleshooting
 
+### Display the logs
 To troubleshoot issues, display the logs:
 
 {{< tabs group="release" >}}
@@ -220,6 +222,28 @@ Use the [`docker model logs` command](/reference/cli/docker/model/logs/).
 
 {{< /tab >}}
 {{< /tabs >}}
+
+### Inpect requests and responses
+
+Inspecting requests and responses helps you diagnose model-related issues.
+For example, you can evaluate context usage to verify you stay within the model's context
+window or display the full body of a request to control the parameters you are passing to your models
+when developing with a framework.
+
+In Docker Desktop, to inspect the requests and responses for each model:
+
+1. Select **Models** and select the **Requests** tab. This view displays all the requests to all models:
+   - The time the request was sent.
+   - The model name and version
+   - The prompt/request
+   - The context usage
+   - The time it took for the response to be generated.
+2. Select one of the requests to display further details:
+   - In the **Overview** tab, view the token usage, response metadata and generation speed, and the actual prompt and response.
+   - In the **Request**  and **Response** tabs, view the full JSON payload of the request and the response.
+
+> [!NOTE]
+> You can also display the requests for a specific model when you select a model and then select the **Requests** tab.
 
 ## Publish a model
 
@@ -636,15 +660,6 @@ $ ln -s /Applications/Docker.app/Contents/Resources/cli-plugins/docker-model ~/.
 ```
 
 Once linked, rerun the command.
-
-### No safeguard for running oversized models
-
-Currently, Docker Model Runner doesn't include safeguards to prevent you from
-launching models that exceed your system's available resources. Attempting to
-run a model that is too large for the host machine may result in severe
-slowdowns or may render the system temporarily unusable. This issue is
-particularly common when running LLMs without sufficient GPU memory or system
-RAM.
 
 ### No consistent digest support in Model CLI
 

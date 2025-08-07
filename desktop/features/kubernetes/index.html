@@ -8665,6 +8665,22 @@
       <a
         
         class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/how-to/manage/"
+        title="Manage images"
+      >
+        
+  Manage images
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/how-to/scan/"
         title="Scan an image"
       >
@@ -15652,7 +15668,7 @@ to set up the Kubernetes cluster. It has no effect on other Kubernetes pods.</p>
       </span>
     </div>
     <div class="admonition-content">
-      <p>When using <code>KubernetesImagesRepository</code> and 
+      <p>In Docker Desktop versions 4.43 or earlier, when using <code>KubernetesImagesRepository</code> and 
     
   
   <a class="link" href="https://docker.qubitpi.org/enterprise/security/hardened-desktop/enhanced-container-isolation/">Enhanced Container Isolation (ECI)</a>
@@ -15660,10 +15676,8 @@ is enabled, add the following images to the
     
   
   <a class="link" href="https://docker.qubitpi.org/enterprise/security/hardened-desktop/settings-management/configure-json-file/#enhanced-container-isolation">ECI Docker socket mount image list</a>:</p>
-<ul>
-<li>[imagesRepository]/desktop-cloud-provider-kind:*</li>
-<li>[imagesRepository]/desktop-containerd-registry-mirror:*</li>
-</ul>
+<p><code>[imagesRepository]/desktop-cloud-provider-kind:</code>
+<code>[imagesRepository]/desktop-containerd-registry-mirror:</code></p>
 <p>These containers mount the Docker socket, so you must add the images to the ECI images list. If not,
 ECI will block the mount and Kubernetes won't start.</p>
     </div>

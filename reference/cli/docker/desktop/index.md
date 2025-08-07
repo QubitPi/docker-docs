@@ -10,6 +10,8 @@ docker desktop (Beta)
 
 - [docker desktop engine](https://docs.docker.com/reference/cli/docker/desktop/engine/)
 
+- [docker desktop kubernetes](https://docs.docker.com/reference/cli/docker/desktop/kubernetes/)
+
 - [docker desktop logs](https://docs.docker.com/reference/cli/docker/desktop/logs/)
 
 - [docker desktop module](https://docs.docker.com/reference/cli/docker/desktop/module/)

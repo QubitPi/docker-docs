@@ -40,6 +40,8 @@ confidently through exploration, implementation, and ongoing maintenance.
 
 - [Verify a Docker Hardened Image](https://docs.docker.com/dhi/how-to/verify/)
 
+- [Manage Docker Hardened Images](https://docs.docker.com/dhi/how-to/manage/)
+
 - [Scan Docker Hardened Images](https://docs.docker.com/dhi/how-to/scan/)
 
 - [Enforce Docker Hardened Image usage with policies](https://docs.docker.com/dhi/how-to/policies/)
