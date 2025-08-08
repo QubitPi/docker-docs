@@ -6,7 +6,7 @@
 
 
   <title>
-    Digests | Docker Docs
+    Image digests | Docker Docs
   </title>
 
 
@@ -39,7 +39,7 @@
 <meta name="theme-color" content="#2496ed" />
 
 
-<meta name="twitter:title" itemprop="title name" content="Digests" />
+<meta name="twitter:title" itemprop="title name" content="Image digests" />
 <meta
   name="twitter:description"
   property="og:description"
@@ -55,7 +55,7 @@
   content="https://docker.qubitpi.org/images/thumbnail.webp"
 />
 <meta name="twitter:image:alt" content="Docker Documentation" />
-<meta property="og:title" content="Digests" />
+<meta property="og:title" content="Image digests" />
 <meta property="og:description" content="Learn how Docker Hardened Images help secure every stage of your software supply chain with signed metadata, provenance, and minimal attack surface." />
 <meta property="og:type" content="website" />
 <meta
@@ -76,7 +76,7 @@
   itemprop="datePublished"
   content="2025-06-04 01:15:09 &#43;0800 &#43;0800"
 />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Digests\"","description":"\"Learn how Docker Hardened Images help secure every stage of your software supply chain with signed metadata, provenance, and minimal attack surface.\"","url":"https:\/\/docker.qubitpi.org\/dhi\/core-concepts\/digests\/"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","headline":"\"Image digests\"","description":"\"Learn how Docker Hardened Images help secure every stage of your software supply chain with signed metadata, provenance, and minimal attack surface.\"","url":"https:\/\/docker.qubitpi.org\/dhi\/core-concepts\/digests\/"}</script>
 
 
   
@@ -8832,26 +8832,6 @@
 
     
     <li
-      class="navbar-entry-margin hover:text-blue 
-        navbar-entry-background-current
-       rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-          aria-current="page" id="sidebar-current-page"
-        
-        class="block w-full truncate"
-        href="https://docker.qubitpi.org/dhi/core-concepts/digests/"
-        title="Digests"
-      >
-        
-  Digests
-
-      </a>
-    </li>
-
-    
-    <li
       class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
     >
       <a
@@ -8910,6 +8890,26 @@
       >
         
   Hardening
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue 
+        navbar-entry-background-current
+       rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+          aria-current="page" id="sidebar-current-page"
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/digests/"
+        title="Image digests"
+      >
+        
+  Image digests
 
       </a>
     </li>
@@ -14829,12 +14829,12 @@
   <span
     data-pagefind-meta="breadcrumbs:Home / Manuals / Docker Hardened Images / Core concepts"
     class="truncate"
-    >Digests</span
+    >Image digests</span
   >
 </nav>
 
     <div class="flex items-start justify-between">
-      <h1 data-pagefind-weight="10">Digests</h1>
+      <h1 data-pagefind-weight="10">Image digests</h1>
       <div class="md-dropdown ml-auto hidden lg:block">
         <details id="markdownDropdown" class="ml-3 group relative z-10 inline-block" data-heap-id="markdown-dropdown">
     <summary
@@ -14984,8 +14984,8 @@
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#why-are-digests-important"
-            >Why are digests important?</a
+          <a class="link lg:no-underline" href="#why-are-image-digests-important"
+            >Why are image digests important?</a
           >
         </li>
         <li>
@@ -15087,13 +15087,13 @@ deployments.</p>
 <p>This digest uniquely identifies the specific version of the <code>nginx:latest</code> image,
 ensuring that any changes to the image content result in a different digest.</p>
 
-<h2 class=" scroll-mt-20" id="why-are-digests-important">
-  <a class="text-black dark:text-white no-underline hover:underline" href="#why-are-digests-important">
-    Why are digests important?
+<h2 class=" scroll-mt-20" id="why-are-image-digests-important">
+  <a class="text-black dark:text-white no-underline hover:underline" href="#why-are-image-digests-important">
+    Why are image digests important?
   </a>
 </h2>
 
-<p>Using digests instead of tags offers several advantages:</p>
+<p>Using image digests instead of tags offers several advantages:</p>
 <ul>
 <li>
 <p>Immutability: Once an image is built and its digest is generated, the content
@@ -15119,7 +15119,7 @@ development, staging, and production environments.</p>
   </a>
 </h2>
 
-<p>By using digests to reference DHIs, you can ensure that your applications are
+<p>By using image digests to reference DHIs, you can ensure that your applications are
 always using the exact same secure image version, enhancing security and
 compliance</p>
 
@@ -15136,7 +15136,7 @@ compliance</p>
   </a>
 </h3>
 
-<p>To view the digest of a Docker image, you can use the following command. Replace
+<p>To view the image digest of a Docker image, you can use the following command. Replace
 <code>&lt;image-name&gt;:&lt;tag&gt;</code> with the image name and tag.</p>
 <div
   data-pagefind-ignore
@@ -15422,8 +15422,8 @@ each platform variant is evaluated individually using its digest.</li>
           >
         </li>
         <li>
-          <a class="link lg:no-underline" href="#why-are-digests-important"
-            >Why are digests important?</a
+          <a class="link lg:no-underline" href="#why-are-image-digests-important"
+            >Why are image digests important?</a
           >
         </li>
         <li>

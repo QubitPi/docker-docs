@@ -8841,22 +8841,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/dhi/core-concepts/digests/"
-        title="Digests"
-      >
-        
-  Digests
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/distroless/"
         title="Distroless images"
       >
@@ -8910,6 +8894,22 @@
       >
         
   Hardening
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/digests/"
+        title="Image digests"
+      >
+        
+  Image digests
 
       </a>
     </li>
@@ -15015,7 +15015,7 @@ before the provider has been registered with the system.</p>
 <p>Here is an example of how to listen to these events using the logman utility program
 included in most installations of Windows:</p>
 <ol>
-<li><code>logman start -ets DockerContainerLogs -p {a3693192-9ed6-46d2-a981-f8226c8363bd} 0 0 -o trace.etl</code></li>
+<li><code>logman start -ets DockerContainerLogs -p &quot;{a3693192-9ed6-46d2-a981-f8226c8363bd}&quot; 0x0 -o trace.etl</code></li>
 <li>Run your container(s) with the etwlogs driver, by adding
 <code>--log-driver=etwlogs</code> to the Docker run command, and generate log messages.</li>
 <li><code>logman stop -ets DockerContainerLogs</code></li>

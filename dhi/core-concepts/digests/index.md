@@ -1,4 +1,4 @@
-Digests
+Image digests
 
 
 ## What are Docker image digests?
@@ -18,9 +18,9 @@ sha256:94a00394bc5a8ef503fb59db0a7d0ae9e1110866e8aee8ba40cd864cea69ea1a
 This digest uniquely identifies the specific version of the `nginx:latest` image,
 ensuring that any changes to the image content result in a different digest.
 
-## Why are digests important?
+## Why are image digests important?
 
-Using digests instead of tags offers several advantages:
+Using image digests instead of tags offers several advantages:
 
 - Immutability: Once an image is built and its digest is generated, the content
   tied to that digest cannot change. This means that if you pull an image using
@@ -37,7 +37,7 @@ Using digests instead of tags offers several advantages:
 
 ## Docker Hardened Image digests
 
-By using digests to reference DHIs, you can ensure that your applications are
+By using image digests to reference DHIs, you can ensure that your applications are
 always using the exact same secure image version, enhancing security and
 compliance
 
@@ -45,7 +45,7 @@ compliance
 
 ### Use the Docker CLI
 
-To view the digest of a Docker image, you can use the following command. Replace
+To view the image digest of a Docker image, you can use the following command. Replace
 `<image-name>:<tag>` with the image name and tag.
 
 ```console

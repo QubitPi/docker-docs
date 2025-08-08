@@ -14,8 +14,6 @@ docker desktop (Beta)
 
 - [docker desktop logs](https://docs.docker.com/reference/cli/docker/desktop/logs/)
 
-- [docker desktop module](https://docs.docker.com/reference/cli/docker/desktop/module/)
-
 - [docker desktop restart](https://docs.docker.com/reference/cli/docker/desktop/restart/)
 
 - [docker desktop start](https://docs.docker.com/reference/cli/docker/desktop/start/)

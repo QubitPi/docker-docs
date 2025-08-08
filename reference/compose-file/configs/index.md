@@ -1,4 +1,4 @@
-Configs top-level elements
+Configs top-level element
 
 
 {{% include "compose/configs.md" %}}

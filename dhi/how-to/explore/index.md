@@ -23,7 +23,7 @@ To explore Docker Hardened Images (DHI):
 1. Go to [Docker Hub](https://hub.docker.com) and sign in.
 2. Select **My Hub**.
 3. In the namespace drop-down, select your organization that has access to DHI.
-4. Select **DHI** > **Catalog**.
+4. Select **Hardened Images** > **Catalog**.
 
 On the DHI page, you can browse images, search images, or filter images by
 category.
@@ -35,7 +35,7 @@ To view repository details:
 1. Go to [Docker Hub](https://hub.docker.com) and sign in.
 2. Select **My Hub**.
 3. In the namespace drop-down, select your organization that has access to DHI.
-4. Select **DHI** > **Catalog**.
+4. Select **Hardened Images** > **Catalog**.
 5. Select a repository in the DHI catalog list.
 
 The repository details page provides the following:
@@ -62,7 +62,7 @@ To explore image variants:
 1. Go to [Docker Hub](https://hub.docker.com) and sign in.
 2. Select **My Hub**.
 3. In the namespace drop-down, select your organization that has access to DHI.
-4. Select **DHI** > **Catalog**.
+4. Select **Hardened Images** > **Catalog**.
 5. Select a repository in the DHI catalog list.
 6. Select **Tags**.
 
@@ -93,7 +93,7 @@ To explore the details of an image variant:
 1. Go to [Docker Hub](https://hub.docker.com) and sign in.
 2. Select **My Hub**.
 3. In the namespace drop-down, select your organization that has access to DHI.
-4. Select **DHI** > **Catalog**.
+4. Select **Hardened Images** > **Catalog**.
 5. Select a repository in the DHI catalog list.
 6. Select **Tags**.
 7. Select the image variant's tag in the table.

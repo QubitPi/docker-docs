@@ -8837,22 +8837,6 @@
       <a
         
         class="block w-full truncate"
-        href="https://docker.qubitpi.org/dhi/core-concepts/digests/"
-        title="Digests"
-      >
-        
-  Digests
-
-      </a>
-    </li>
-
-    
-    <li
-      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
-    >
-      <a
-        
-        class="block w-full truncate"
         href="https://docker.qubitpi.org/dhi/core-concepts/distroless/"
         title="Distroless images"
       >
@@ -8910,6 +8894,22 @@
       >
         
   Hardening
+
+      </a>
+    </li>
+
+    
+    <li
+      class="navbar-entry-margin hover:text-blue  rounded-sm hover:dark:text-blue-400"
+    >
+      <a
+        
+        class="block w-full truncate"
+        href="https://docker.qubitpi.org/dhi/core-concepts/digests/"
+        title="Image digests"
+      >
+        
+  Image digests
 
       </a>
     </li>
@@ -15031,7 +15031,13 @@ like shells, compilers, and package managers, which limits the available attack
 surface, making it more difficult for an attacker to gain control or escalate
 privileges inside the container.</p>
 <p>Hardening also involves applying best practices like running as a non-root user,
-reducing writable surfaces, and ensuring consistency through immutability.</p>
+reducing writable surfaces, and ensuring consistency through immutability. While
+<a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#docker-official-images">Docker Official
+Images</a>
+and <a class="link" href="https://docker.qubitpi.org/docker-hub/image-library/trusted-content/#verified-publisher-images">Docker Verified Publisher
+Images</a>
+follow best practices for security, they may not be as hardened as Docker
+Hardened Images, as they are designed to support a broader range of use cases.</p>
 
 <h2 class=" scroll-mt-20" id="why-is-it-important">
   <a class="text-black dark:text-white no-underline hover:underline" href="#why-is-it-important">

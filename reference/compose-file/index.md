@@ -30,7 +30,7 @@ Use the following links to navigate key sections of the Compose Specification.
 
 - [Define and manage volumes in Docker Compose](https://docs.docker.com/reference/compose-file/volumes/)
 
-- [Configs top-level elements](https://docs.docker.com/reference/compose-file/configs/)
+- [Configs top-level element](https://docs.docker.com/reference/compose-file/configs/)
 
 - [Secrets](https://docs.docker.com/reference/compose-file/secrets/)
 

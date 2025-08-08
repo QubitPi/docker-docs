@@ -1,2 +1,0 @@
-docker desktop module ls
-

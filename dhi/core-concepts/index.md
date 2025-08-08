@@ -32,8 +32,6 @@ transparency, and security.
 
 - [Common Vulnerabilities and Exposures (CVEs)](https://docs.docker.com/dhi/core-concepts/cves/)
 
-- [Digests](https://docs.docker.com/dhi/core-concepts/digests/)
-
 - [Minimal or distroless images](https://docs.docker.com/dhi/core-concepts/distroless/)
 
 - [FIPS](https://docs.docker.com/dhi/core-concepts/fips/)
@@ -41,6 +39,8 @@ transparency, and security.
 - [glibc and musl support in Docker Hardened Images](https://docs.docker.com/dhi/core-concepts/glibc-musl/)
 
 - [Base image hardening](https://docs.docker.com/dhi/core-concepts/hardening/)
+
+- [Image digests](https://docs.docker.com/dhi/core-concepts/digests/)
 
 - [Image provenance](https://docs.docker.com/dhi/core-concepts/provenance/)
 
